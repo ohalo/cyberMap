@@ -12,7 +12,7 @@ flag:
     icon: flag-cn
     index: /index.html
 
-search: true
+search: false
 
 userDefinedSearchData:
   custom: false
