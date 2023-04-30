@@ -1,0 +1,3 @@
+[submodule "themes/webstack"]
+	path = themes/webstack
+	url = https://github.com/HCLonely/hexo-theme-webstack.git
