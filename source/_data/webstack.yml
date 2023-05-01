@@ -71,6 +71,106 @@ gptTools:
     url: https://www.chatmind.tech/
     img: https://www.chatmind.tech/favicon.ico 
     description: ChatMind是一个开源的人工智能后台系统,可以帮助企业和开发者快速构建强大的AI产品与服务。
+  - name: llama-index(gpt-index):后chatgpt时代的对话式文档问答解决方案
+    url: https://zhuanlan.zhihu.com/p/613155165
+    img: https://pic1.zhimg.com/50/v2-6b86d96bafc8263c6ea32c0b76f6b50f_xs.jpg
+    description: 人工智能(GPT) 
+  - name: xinsblog/try-llama-index
+    url: https://github.com/xinsblog/try-llama-index
+    img: https://github.githubassets.com/favicons/favicon.png
+    description: xinsblog/try-llama-index 
+  - name: 写了技术文档别人不看?用GPT+llama_index解决!
+    url: https://zhuanlan.zhihu.com/p/615293313 
+    img: https://pic1.zhimg.com/50/v2-6b86d96bafc8263c6ea32c0b76f6b50f_xs.jpg
+    description: 人工智能(GPT)
+  - name: ChatPDF - Chat with any PDF!
+    url:  https://www.chatpdf.com/
+    img: https://www.chatpdf.com/favicon.ico
+    description: ChatPDF 使用人工智能为PDF文件提供自然语言问答交互。
+  - name: ChatMind.Tech
+    url: https://www.chatmind.tech/
+    img: https://www.chatmind.tech/favicon.ico
+    description: ChatMind是一个开源的人工智能后台系统,可以帮助企业和开发者快速构建强大的AI产品与服务。 (已编辑)
+  - name: yetone/openai-translator
+    url: https://github.com/yetone/openai-translator
+    img: https://github.githubassets.com/favicons/favicon.png
+    description: 基于 ChatGPT API 的划词翻译浏览器插件和跨平台桌面端应用 
+  - name: 制作PPT的工具
+    url:  http://Beautiful.ai
+    img: https://www.beautiful.ai/favicon.ico
+    description: Beautiful.ai 
+  - name: 文案生成AI
+    url: https://www.copy.ai/
+    img: https://www.copy.ai/favicon.png
+    description: copy AI 
+  - name: Flash GPT - 聊天
+    url: https://www.deflash.ai/
+    img: https://www.deflash.ai/favicon.ico
+    description: Flash GPT - 聊天 
+  - name: PlexPt/awesome-chatgpt-prompts-zh
+    url: https://github.com/PlexPt/awesome-chatgpt-prompts-zh
+    img: https://github.githubassets.com/favicons/favicon.png
+    description: ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话。 
+  - name: Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality
+    url: https://vicuna.lmsys.org/
+    img: https://vicuna.lmsys.org/favicon.ico
+    description: Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality
+  - name: ChatGPT 中文调教指南
+    url: https://chatguide.plexpt.com/
+    img: https://chatguide.plexpt.com/favicon.ico
+    description: ChatGPT 中文调教指南
+  - name: 词图PromptTool - AI绘画资料管理网站 
+    url: https://www.prompttool.com/NovelAI
+    img: https://www.prompttool.com/NovelAI/favicon.ico
+    description: 词图PromptTool - AI绘画资料管理网站 
+  - name: 元素法典——Novel AI 元素魔法全收录
+    url: https://docs.qq.com/doc/DWHl3am5Zb05QbGVs
+    img: https://qzonestyle.gtimg.cn/qzone/vas/opensns/res/img/favicon.ico
+    description: 元素法典——Novel AI 元素魔法全收录 
+  - name: AI工具集导航
+    url: https://ai-bot.cn/
+    img: https://ai-bot.cn/favicon.ico
+    description: 500+ AI工具导航大全,国内外AI工具集合网站 
+  - name: Sage - Poe
+    url: https://poe.com/
+    img: https://poe.com/favicon.ico
+    description: Sage - Poe 
+  - name: Godmode.space
+    url: https://godmode.space/
+    img: https://godmode.space/favicon.ico
+    description: Godmode.space  
+  - name: Stable Diffusion Prompt Note
+    url: https://atlassc.net/2023/03/24/stable-diffusion-prompt
+    img: https://atlassc.net/favicon.ico
+    description: Stable Diffusion Prompt Note  
+  - name: :指南针: Midjourney 学习导航
+    url: https://learningprompt.wiki/docs/midjourney-learning-path
+    img: https://learningprompt.wiki/favicon.ico
+    description: :指南针: Midjourney 学习导航   
+  - name: AutoGPT 4.11
+    url: https://three-recorder-52a.notion.site/AutoGPT-4-11-7b4bc7a71f8d4d4b940abc9b3232954a
+    img: https://three-recorder-52a.notion.site/favicon.ico
+    description: AutoGPT 4.11 
+  - name: Cognosys: Your personal AI Agent
+    url: https://www.cognosys.ai/create
+    img: https://www.cognosys.ai/favicon.ico
+    description: Cognosys: Your personal AI Agent  
+  - name: 简介
+    url: https://learningprompt.wiki/docs/chatGPT/tutorial-basics/%E7%AE%80%E4%BB%8B
+    img: https://learningprompt.wiki/favicon.ico
+    description: 简介   
+  - name: Hello from Learning Prompt
+    url: https://learningprompt.wiki/
+    img: https://learningprompt.wiki/favicon.ico
+    description: Hello from Learning Prompt  
+  - name: 发现最酷的互联网产品工具和智能神器!
+    url: https://hao.logosc.cn/
+    img: https://hao.logosc.cn/favicon.ico
+    description: 神器集  
+  - name: ShinChven's Blog
+    url: https://atlassc.net/
+    img: https://atlassc.net/favicon.ico
+    description: ShinChven's Blog 
 
 myBlog:
   - name: 彷徨的蜗牛的博客
