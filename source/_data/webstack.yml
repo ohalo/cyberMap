@@ -7,7 +7,7 @@ logo:
   dark: /images/cyberlogo_dark@2x.png
 
 flag:
-  - name: Chinese
+  - name: 中文
     default: true
     icon: flag-cn
     index: /index.html
