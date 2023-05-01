@@ -73,30 +73,18 @@ gptTools:
     description: ChatMind是一个开源的人工智能后台系统,可以帮助企业和开发者快速构建强大的AI产品与服务。
   - name: llama-index(gpt-index):后chatgpt时代的对话式文档问答解决方案
     url: https://zhuanlan.zhihu.com/p/613155165
-    img: https://pic1.zhimg.com/50/v2-6b86d96bafc8263c6ea32c0b76f6b50f_xs.jpg
+    img: https://zhuanlan.zhihu.com/favicon.ico
     description: 人工智能(GPT) 
   - name: xinsblog/try-llama-index
     url: https://github.com/xinsblog/try-llama-index
     img: https://github.githubassets.com/favicons/favicon.png
     description: xinsblog/try-llama-index 
-  - name: 写了技术文档别人不看?用GPT+llama_index解决!
-    url: https://zhuanlan.zhihu.com/p/615293313 
-    img: https://pic1.zhimg.com/50/v2-6b86d96bafc8263c6ea32c0b76f6b50f_xs.jpg
-    description: 人工智能(GPT)
-  - name: ChatPDF - Chat with any PDF!
-    url:  https://www.chatpdf.com/
-    img: https://www.chatpdf.com/favicon.ico
-    description: ChatPDF 使用人工智能为PDF文件提供自然语言问答交互。
-  - name: ChatMind.Tech
-    url: https://www.chatmind.tech/
-    img: https://www.chatmind.tech/favicon.ico
-    description: ChatMind是一个开源的人工智能后台系统,可以帮助企业和开发者快速构建强大的AI产品与服务。 (已编辑)
   - name: yetone/openai-translator
     url: https://github.com/yetone/openai-translator
     img: https://github.githubassets.com/favicons/favicon.png
     description: 基于 ChatGPT API 的划词翻译浏览器插件和跨平台桌面端应用 
   - name: 制作PPT的工具
-    url:  http://Beautiful.ai
+    url: http://Beautiful.ai
     img: https://www.beautiful.ai/favicon.ico
     description: Beautiful.ai 
   - name: 文案生成AI
@@ -111,10 +99,10 @@ gptTools:
     url: https://github.com/PlexPt/awesome-chatgpt-prompts-zh
     img: https://github.githubassets.com/favicons/favicon.png
     description: ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话。 
-  - name: Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality
+  - name: Vicuna
     url: https://vicuna.lmsys.org/
     img: https://vicuna.lmsys.org/favicon.ico
-    description: Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality
+    description: Vicuna: An Open-Source Chatbot
   - name: ChatGPT 中文调教指南
     url: https://chatguide.plexpt.com/
     img: https://chatguide.plexpt.com/favicon.ico
@@ -155,10 +143,6 @@ gptTools:
     url: https://www.cognosys.ai/create
     img: https://www.cognosys.ai/favicon.ico
     description: Cognosys: Your personal AI Agent  
-  - name: 简介
-    url: https://learningprompt.wiki/docs/chatGPT/tutorial-basics/%E7%AE%80%E4%BB%8B
-    img: https://learningprompt.wiki/favicon.ico
-    description: 简介   
   - name: Hello from Learning Prompt
     url: https://learningprompt.wiki/
     img: https://learningprompt.wiki/favicon.ico
