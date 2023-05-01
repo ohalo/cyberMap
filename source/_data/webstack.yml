@@ -60,7 +60,7 @@ devTools:
     description: 面向开源及私有软件项目的托管平台。
 
 myBlog:
-  - name: HCLonely Blog
+  - name: 彷徨的蜗牛的博客
     url: https://blog.csdn.net/ohalo
     img: /images/cyberblog.png
     description: 寻找方向
