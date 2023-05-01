@@ -89,7 +89,7 @@ gptTools:
     description: Beautiful.ai 
   - name: 文案生成AI
     url: https://www.copy.ai/
-    img: https://www.copy.ai/favicon.png
+    img: https://www.copy.ai/favicon.ico
     description: copy AI 
   - name: Flash GPT - 聊天
     url: https://www.deflash.ai/
@@ -97,7 +97,7 @@ gptTools:
     description: Flash GPT - 聊天 
   - name: PlexPt/awesome-chatgpt-prompts-zh
     url: https://github.com/PlexPt/awesome-chatgpt-prompts-zh
-    img: https://github.githubassets.com/favicons/favicon.png
+    img: https://github.com/favicon.ico
     description: ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话。 
   - name: Vicuna
     url: https://vicuna.lmsys.org/
@@ -109,11 +109,11 @@ gptTools:
     description: ChatGPT 中文调教指南
   - name: 词图PromptTool - AI绘画资料管理网站 
     url: https://www.prompttool.com/NovelAI
-    img: https://www.prompttool.com/NovelAI/favicon.ico
+    img: https://www.prompttool.com/favicon.ico
     description: 词图PromptTool - AI绘画资料管理网站 
   - name: 元素法典——Novel AI 元素魔法全收录
     url: https://docs.qq.com/doc/DWHl3am5Zb05QbGVs
-    img: https://qzonestyle.gtimg.cn/qzone/vas/opensns/res/img/favicon.ico
+    img: https://docs.qq.com/favicon.ico
     description: 元素法典——Novel AI 元素魔法全收录 
   - name: AI工具集导航
     url: https://ai-bot.cn/
