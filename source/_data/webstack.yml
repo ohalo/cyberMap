@@ -37,9 +37,9 @@ menu:
   - name: 其他工具
     icon: fas fa-tools
     submenu:
-      - name: 开发工具
+      - name: 人工智能（GPT）
         icon: fas fa-tools
-        config: devTools
+        config: gptTools
       - name: 我的博客
         icon: fas fa-blog
         config: myBlog
@@ -49,7 +49,12 @@ testPage:
     url: /child
     img: /images/logos/myblog.png
     description: 子页面测试
-devTools:
+hotTools:
+  - name: ChatGPT - 用GPT实现聊天机器人
+    url: https://hackernoon.com/building-a-chatbot-using-openais-gpt-3-1c028d309e45
+    img: https://hackernoon.com/favicon.ico
+    description: ChatGPT是一个基于OpenAI的GPT-3 API构建的聊天机器人框架。    
+gptTools:
   - name: ChatGPT - 用GPT实现聊天机器人
     url: https://hackernoon.com/building-a-chatbot-using-openais-gpt-3-1c028d309e45
     img: https://hackernoon.com/favicon.ico
