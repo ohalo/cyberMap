@@ -89,7 +89,7 @@ gptTools:
     description: Beautiful.ai 
   - name: 文案生成AI
     url: https://www.copy.ai/
-    img: https://www.copy.ai/favicon.ico
+    img: https://assets-global.website-files.com/628288c5cd3e8411b90a36a4/629a333177bcc87edf861bbb_favico-2.png
     description: copy AI 
   - name: Flash GPT - 聊天
     url: https://www.deflash.ai/
@@ -101,7 +101,7 @@ gptTools:
     description: ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话。 
   - name: Vicuna
     url: https://vicuna.lmsys.org/
-    img: https://vicuna.lmsys.org/favicon.ico
+    img: https://vicuna.lmsys.org/favicon.jpeg
     description: Vicuna - An Open-Source Chatbot
   - name: ChatGPT 中文调教指南
     url: https://chatguide.plexpt.com/
