@@ -109,11 +109,11 @@ gptTools:
     description: ChatGPT 中文调教指南
   - name: 词图PromptTool - AI绘画资料管理网站 
     url: https://www.prompttool.com/NovelAI
-    img: https://www.prompttool.com/favicon.ico
+    img: https://www.prompttool.com/prompttool.ico
     description: 词图PromptTool - AI绘画资料管理网站 
   - name: 元素法典——Novel AI 元素魔法全收录
     url: https://docs.qq.com/doc/DWHl3am5Zb05QbGVs
-    img: https://docs.qq.com/favicon.ico
+    img: https://docs.gtimg.com/docs-design-resources/mobile/png@3x/file_doc_64@3x-58ec57f56b.png
     description: 元素法典——Novel AI 元素魔法全收录 
   - name: AI工具集导航
     url: https://ai-bot.cn/
@@ -125,7 +125,7 @@ gptTools:
     description: Sage - Poe 
   - name: Godmode.space
     url: https://godmode.space/
-    img: https://godmode.space/favicon.ico
+    img: https://godmode.space/favicon.png
     description: Godmode.space  
   - name: Stable Diffusion Prompt Note
     url: https://atlassc.net/2023/03/24/stable-diffusion-prompt
@@ -133,19 +133,19 @@ gptTools:
     description: Stable Diffusion Prompt Note  
   - name: 指南针- Midjourney 学习导航
     url: https://learningprompt.wiki/docs/midjourney-learning-path
-    img: https://learningprompt.wiki/favicon.ico
+    img: https://learningprompt.wiki/img/favicon.ico
     description: 指南针- Midjourney 学习导航   
   - name: AutoGPT 4.11
     url: https://three-recorder-52a.notion.site/AutoGPT-4-11-7b4bc7a71f8d4d4b940abc9b3232954a
-    img: https://three-recorder-52a.notion.site/favicon.ico
+    img: https://three-recorder-52a.notion.site/images/logo-ios.png
     description: AutoGPT 4.11 
   - name: Cognosys - Your personal AI Agent
     url: https://www.cognosys.ai/create
-    img: https://www.cognosys.ai/favicon.ico
+    img: https://framerusercontent.com/modules/kGe5PQ65Dg7J7GN8OGx2/gwPd9Wln9Sg5rYiZ1QJB/assets/eWXiM6SACMmNKcytzyDksBgMok.png
     description: Cognosys - Your personal AI Agent  
   - name: Hello from Learning Prompt
     url: https://learningprompt.wiki/
-    img: https://learningprompt.wiki/favicon.ico
+    img: https://learningprompt.wiki/img/favicon.ico
     description: Hello from Learning Prompt  
   - name: 发现最酷的互联网产品工具和智能神器!
     url: https://hao.logosc.cn/
