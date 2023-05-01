@@ -50,14 +50,22 @@ testPage:
     img: /images/logos/myblog.png
     description: 子页面测试
 devTools:
-  - name: Github
-    url: https://github.com/
-    img: /images/logos/github.png
-    description: 面向开源及私有软件项目的托管平台。
-  - name: Github
-    url: https://github.com/
-    img: /images/logos/github.png
-    description: 面向开源及私有软件项目的托管平台。
+  - name: ChatGPT - 用GPT实现聊天机器人
+    url: https://hackernoon.com/building-a-chatbot-using-openais-gpt-3-1c028d309e45
+    img: /images/logos/chatgpt.png
+    description: ChatGPT是一个基于OpenAI的GPT-3 API构建的聊天机器人框架。
+  - name: Llama Index - 文档问答
+    url: https://github.com/llama-index/llama-index
+    img: /images/logos/llama-index.png
+    description: Llama Index 是一个开源项目,使用 GPT 模型为技术文档提供问答功能。
+  - name: ChatPDF - 与PDF聊天
+    url: https://www.chatpdf.com/
+    img: /images/logos/chatpdf.png
+    description: ChatPDF 使用人工智能为PDF文件提供自然语言问答交互。
+  - name: ChatMind - 智能后台系统
+    url: https://www.chatmind.tech/
+    img: /images/logos/chatmind.png 
+    description: ChatMind是一个开源的人工智能后台系统,可以帮助企业和开发者快速构建强大的AI产品与服务。
 
 myBlog:
   - name: 彷徨的蜗牛的博客
