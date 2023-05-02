@@ -216,6 +216,30 @@ gptTools:
     url: https://github.com/pengzhile/pandora
     img: https://github.com/favicon.ico
     description: 该工具能直接通过 access token 来访问网站功能。后端优化,绕过 Cloudflare,提升访问速度。除此之外,该工具还提供了以下功能:高峰期能绕过官方限制,继续使用;应答速度直逼 PLUS;官方故障的时候,它可能还是能跑;多模式:网页 / 命令行 / API,私有化部署;不会像官方那样无故断线、报错。
+  - name: perplexity
+    url: https://www.perplexity.ai
+    img: https://www.perplexity.ai/favicon.png
+    description: 需要魔法,主打准确度,胡说八道概率低体验优于ChatGPT,免费不限量
+  - name: 必应
+    url: https://www.bing.com/
+    img: https://www.bing.com/sa/simg/bing_p_rr_teal_min.ico
+    description: 需要魔法,基于GPT-4但是功能做了收束,免费,每轮对话不超过20个问题,每天不超过200个问题
+  - name: chatmindai
+    url: https://chatmindai.cn
+    img: https://chatmindai.cn/favicon.ico
+    description: 不需要魔法,GPT-4每天免费3次
+  - name: What is the Vercel AI Playground
+    url: https://vercel.com/blog/ai-playground
+    img: https://vercel.com/favicon.ico
+    description: 需要魔法,可以对比测试多个模型,包括GPT-4等
+  - name: ora
+    url: https://ora.sh/openai/gpt4
+    img: https://ora.sh/favicon.ico
+    description: 需要魔法,GPT-4每天免费10次
+  - name: 猎研SciRadar
+    url: https://www.sciradar.com/
+    img: https://www.sciradar.com/favicon.ico
+    description: 不需要魔法;每天免费1万字符
 myBlog:
   - name: 彷徨的蜗牛的博客
     url: https://blog.csdn.net/ohalo
