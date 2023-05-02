@@ -115,6 +115,10 @@ techBlog:
     url: https://atlassc.net/
     img: https://atlassc.net/favicon.ico
     description: ShinChven's Blog
+  - name: Stable Diffusion Prompt Note
+    url: https://atlassc.net/2023/03/24/stable-diffusion-prompt
+    img: https://atlassc.net/favicon.ico
+    description: Stable Diffusion Prompt Note
 gptTools:
   - name: ChatPDF - 与PDF聊天
     url: https://www.chatpdf.com/
@@ -180,10 +184,6 @@ gptTools:
     url: https://godmode.space/
     img: https://godmode.space/favicon.png
     description: Godmode.space
-  - name: Stable Diffusion Prompt Note
-    url: https://atlassc.net/2023/03/24/stable-diffusion-prompt
-    img: https://atlassc.net/favicon.ico
-    description: Stable Diffusion Prompt Note
   - name: 指南针- Midjourney 学习导航
     url: https://learningprompt.wiki/docs/midjourney-learning-path
     img: https://learningprompt.wiki/img/favicon.ico
