@@ -119,6 +119,10 @@ techBlog:
     url: https://atlassc.net/2023/03/24/stable-diffusion-prompt
     img: https://atlassc.net/favicon.ico
     description: Stable Diffusion Prompt Note
+  - name: 跟吴恩达和IsaFulford学提示词工程（初级开发者入门课程）
+    url: https://volnet.hashnode.dev/gpt-prompt-dev-deeplearningai
+    img: https://cdn.hashnode.com/res/hashnode/image/upload/v1611242155728/W3_BYVVVh.png
+    description: 【笔记】跟吴恩达和IsaFulford学提示词工程（初级开发者入门课程）
 gptTools:
   - name: ChatPDF - 与PDF聊天
     url: https://www.chatpdf.com/
