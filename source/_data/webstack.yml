@@ -61,6 +61,7 @@ custom:
     <!-- 可设置多行 -->
 
 tittle: Halo 的网址导航网站
+subtitle: 收录关于一些有用的网址
 
 js:
   header: /js/header.js
