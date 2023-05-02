@@ -218,7 +218,7 @@ gptTools:
     description: 该工具能直接通过 access token 来访问网站功能。后端优化,绕过 Cloudflare,提升访问速度。除此之外,该工具还提供了以下功能:高峰期能绕过官方限制,继续使用;应答速度直逼 PLUS;官方故障的时候,它可能还是能跑;多模式:网页 / 命令行 / API,私有化部署;不会像官方那样无故断线、报错。
   - name: perplexity
     url: https://www.perplexity.ai
-    img: https://www.perplexity.ai/static/icons/favicon.ico
+    img: https://www.perplexity.ai/static/icons/favicon-32x32.png
     description: 需要魔法,主打准确度,胡说八道概率低体验优于ChatGPT,免费不限量
   - name: 必应
     url: https://www.bing.com/
