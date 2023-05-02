@@ -60,6 +60,8 @@ custom:
     <!-- 直接添加html内容即可 -->
     <!-- 可设置多行 -->
 
+tittle: Halo 的网址导航网站
+
 js:
   header: /js/header.js
   footer: /js/footer.js
