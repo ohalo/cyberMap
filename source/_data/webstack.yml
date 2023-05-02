@@ -110,15 +110,12 @@ hotTools:
     url: https://www.lowff.net
     img: https://www.lowff.net/favicon.ico
     description: ChatGPT是一个基于OpenAI的GPT-3 API构建的聊天机器人框架。
+techBlog:
+  - name: ShinChven's Blog
+    url: https://atlassc.net/
+    img: https://atlassc.net/favicon.ico
+    description: ShinChven's Blog
 gptTools:
-  - name: ChatGPT - 用GPT实现聊天机器人
-    url: https://hackernoon.com/building-a-chatbot-using-openais-gpt-3-1c028d309e45
-    img: https://hackernoon.com/favicon.ico
-    description: ChatGPT是一个基于OpenAI的GPT-3 API构建的聊天机器人框架。
-  - name: Llama Index - 文档问答
-    url: https://github.com/llama-index/llama-index
-    img: https://github.com/favicon.ico
-    description: Llama Index 是一个开源项目,使用 GPT 模型为技术文档提供问答功能。
   - name: ChatPDF - 与PDF聊天
     url: https://www.chatpdf.com/
     img: https://www.chatpdf.com/favicon.ico
@@ -207,14 +204,6 @@ gptTools:
     url: https://hao.logosc.cn/
     img: https://hao.logosc.cn/favicon.ico
     description: 神器集
-  - name: ShinChven's Blog
-    url: https://atlassc.net/
-    img: https://atlassc.net/favicon.ico
-    description: ShinChven's Blog
-  - name: ShinChven's
-    url: https://atlassc.net/
-    img: https://atlassc.net/favicon.ico
-    description: ShinChven's
   - name: Github + ChatGPT 实现代码对话
     url: https://github.com/peterw/Chat-with-Github-Repo
     img: https://github.com/favicon.ico
