@@ -98,15 +98,12 @@ menu:
   - name: 技术博客
     icon: far fa-star
     config: techBlog
-  - name: 开发工具
+  - name: 人工智能（GPT）
     icon: fas fa-tools
-    submenu:
-      - name: 人工智能（GPT）
-        icon: fas fa-tools
-        config: gptTools
-      - name: 我的博客
-        icon: fas fa-blog
-        config: myBlog
+    config: gptTools
+  - name: 我的博客
+    icon: fas fa-blog
+    config: myBlog
 
 hotTools:
   - name: ChatGPT - 用GPT实现聊天机器人
