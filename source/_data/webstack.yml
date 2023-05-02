@@ -223,6 +223,18 @@ gptTools:
     url: https://atlassc.net/
     img: https://atlassc.net/favicon.ico
     description: ShinChven's
+  - name: Github + ChatGPT 实现代码对话
+    url: https://github.com/peterw/Chat-with-Github-Repo
+    img: https://github.com/favicon.ico
+    description: 该项目包含两个 Python 脚本,演示了如何使用 Streamlit、OpenAI GPT-3.5-turbo 和 Deep Lake 来创建 AI 聊天机器人。聊天机器人会自动搜索存储在 Deep Lake 中的数据集以查找相关信息,并根据用户的输入生成答案,让你直接跟 GitHub 仓库进行对话。
+  - name: 集成GPT,开始跟PDF文档聊天
+    url: https://github.com/bhaskatripathi/pdfGPT
+    img: https://github.com/favicon.ico
+    description: 跟 PDF 文档进行一对一对话;自动切割内容,并使用强大的深度平均网络编码器来生成嵌入;对 PDF 内容执行语义搜索,并将最相关的嵌入传递给 Open AI;自定义逻辑,生成更精确的响应信息,速度要比 OpenAI 的快。
+  - name: 加快ChatGPT访问速度
+    url: https://github.com/pengzhile/pandora
+    img: https://github.com/favicon.ico
+    description: 该工具能直接通过 access token 来访问网站功能。后端优化,绕过 Cloudflare,提升访问速度。除此之外,该工具还提供了以下功能:高峰期能绕过官方限制,继续使用;应答速度直逼 PLUS;官方故障的时候,它可能还是能跑;多模式:网页 / 命令行 / API,私有化部署;不会像官方那样无故断线、报错。
 myBlog:
   - name: 彷徨的蜗牛的博客
     url: https://blog.csdn.net/ohalo
