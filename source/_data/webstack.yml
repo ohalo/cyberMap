@@ -89,9 +89,6 @@ css:
 
 expandAll: false
 menu:
-  - name: 测试页面
-    icon: far fa-star
-    config: testPage
   - name: 常用工具
     icon: far fa-star
     config: hotTools
@@ -108,15 +105,10 @@ menu:
         icon: fas fa-blog
         config: myBlog
 
-testPage:
-  - name: Child Page
-    url: /child
-    img: /images/logos/myblog.png
-    description: 子页面测试
 hotTools:
   - name: ChatGPT - 用GPT实现聊天机器人
-    url: https://hackernoon.com/building-a-chatbot-using-openais-gpt-3-1c028d309e45
-    img: https://hackernoon.com/favicon.ico
+    url: https://www.lowff.net
+    img: https://www.lowff.net/favicon.ico
     description: ChatGPT是一个基于OpenAI的GPT-3 API构建的聊天机器人框架。
 gptTools:
   - name: ChatGPT - 用GPT实现聊天机器人
