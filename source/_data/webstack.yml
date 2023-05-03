@@ -171,6 +171,10 @@ githubGPT:
     url: https://github.com/Vision-CAIR/MiniGPT-4
     img: https://github.com/favicon.ico
     description: 我们现在提供与Vicuna-7B对齐的预训练MiniGPT-4!演示GPU内存消耗现在可以低至12GB
+  - name: 中文LLaMA&Alpaca大语言模型
+    url: https://github.com/ymcui/Chinese-LLaMA-Alpaca.git
+    img: https://github.com/favicon.ico
+    description: 中文LLaMA&Alpaca大语言模型+本地CPU/GPU部署 (Chinese LLaMA & Alpaca LLMs)
   - name: yetone/openai-translator
     url: https://github.com/yetone/openai-translator
     img: https://github.com/favicon.ico
