@@ -263,6 +263,10 @@ gptTools:
     url: https://chat.forefront.ai/
     img: https://uploads-ssl.webflow.com/628193922a4d18e69ba81f14/628193922a4d180bf1a81f46_Favicon.png
     description: 更好的ChatGPT体验。注册可以免费获取GPT-4,图像生成,自定义人物,可共享聊天等更多功能
+  - name: AWS - codewhisperer
+    url: https://aws.amazon.com/cn/codewhisperer/resources/#Getting_started
+    img: https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico
+    description: Amazon CodeWhisperer 是一种采用机器学习（ML）的服务，可以根据开发人员用自然语言编写的注释和集成式开发环境（IDE）中的代码生成代码建议，帮助开发人员提高工作效率。
 
 myBlog:
   - name: 彷徨的蜗牛的博客
