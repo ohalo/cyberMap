@@ -267,6 +267,10 @@ gptTools:
     url: https://ora.sh/openai/gpt4
     img: https://ora.sh/favicon.ico
     description: 需要魔法,GPT-4每天免费10次
+  - name: kaiber.ai
+    url: https://kaiber.ai/
+    img: https://kaiber.ai/apple-touch-icon.png
+    description: 让你的想象力成为现实，使用我们最先进的 AI 生成引擎将您的想法转化为您梦想中的视觉故事。
   - name: 猎研SciRadar
     url: https://www.sciradar.com/
     img: https://www.sciradar.com/favicon.ico
