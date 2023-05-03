@@ -283,7 +283,10 @@ gptTools:
     url: https://aws.amazon.com/cn/codewhisperer/resources/#Getting_started
     img: https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico
     description: Amazon CodeWhisperer 是一种采用机器学习（ML）的服务，可以根据开发人员用自然语言编写的注释和集成式开发环境（IDE）中的代码生成代码建议，帮助开发人员提高工作效率。
-
+  - name: 无聊Ai工具导航 | —发现全球优质AIGC工具
+    url: https://www.wuliaoai.com/
+    img: http://www.wuliaoai.com/wp-content/themes/onenav/images/app-ico.png
+    description: AIGC工具导航.探索全球1240+AI工具，里面有包含国内的一些免费的chatgpt工具
 myBlog:
   - name: 彷徨的蜗牛的博客
     url: https://blog.csdn.net/ohalo
