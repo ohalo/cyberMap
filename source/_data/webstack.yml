@@ -98,6 +98,9 @@ menu:
   - name: 技术博客
     icon: far fa-star
     config: techBlog
+  - name: 学习GPT
+    icon: far fa-star
+    config: studyGPT
   - name: 人工智能（GPT）
     icon: fas fa-tools
     config: gptTools
@@ -123,6 +126,35 @@ techBlog:
     url: https://volnet.hashnode.dev/gpt-prompt-dev-deeplearningai
     img: https://cdn.hashnode.com/res/hashnode/image/upload/v1611242155728/W3_BYVVVh.png
     description: 【笔记】跟吴恩达和IsaFulford学提示词工程（初级开发者入门课程）
+studyGPT:
+  - name: PlexPt/awesome-chatgpt-prompts-zh
+    url: https://github.com/PlexPt/awesome-chatgpt-prompts-zh
+    img: https://github.com/favicon.ico
+    description: ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话。
+  - name: ChatGPT 中文调教指南
+    url: https://chatguide.plexpt.com/
+    img: https://chatguide.plexpt.com/favicon.ico
+    description: ChatGPT 中文调教指南
+  - name: 元素法典——Novel AI 元素魔法全收录
+    url: https://docs.qq.com/doc/DWHl3am5Zb05QbGVs
+    img: https://docs.gtimg.com/docs-design-resources/mobile/png@3x/file_doc_64@3x-58ec57f56b.png
+    description: 元素法典——Novel AI 元素魔法全收录
+  - name: 指南针- Midjourney 学习导航
+    url: https://learningprompt.wiki/docs/midjourney-learning-path
+    img: https://learningprompt.wiki/img/favicon.ico
+    description: 指南针- Midjourney 学习导航
+  - name: AutoGPT 4.11
+    url: https://three-recorder-52a.notion.site/AutoGPT-4-11-7b4bc7a71f8d4d4b940abc9b3232954a
+    img: https://three-recorder-52a.notion.site/images/logo-ios.png
+    description: AutoGPT 4.11
+  - name: Hello from Learning Prompt
+    url: https://learningprompt.wiki/
+    img: https://learningprompt.wiki/img/favicon.ico
+    description: Hello from Learning Prompt
+  - name: ChatGPT Prompt Engineering for Developers 中文版
+    url: https://github.com/datawhalechina/prompt-engineering-for-developers
+    img: https://github.com/favicon.ico
+    description: 主要内容为指导开发者如何构建 Prompt 并基于 OpenAI API 构建新的、基于 LLM 的应用
 gptTools:
   - name: ChatPDF - 与PDF聊天
     url: https://www.chatpdf.com/
@@ -156,26 +188,17 @@ gptTools:
     url: https://www.deflash.ai/
     img: https://www.deflash.ai/favicon.ico
     description: Flash GPT - 聊天
-  - name: PlexPt/awesome-chatgpt-prompts-zh
-    url: https://github.com/PlexPt/awesome-chatgpt-prompts-zh
-    img: https://github.com/favicon.ico
-    description: ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话。
+
   - name: Vicuna
     url: https://vicuna.lmsys.org/
     img: https://vicuna.lmsys.org/favicon.jpeg
     description: Vicuna - An Open-Source Chatbot
-  - name: ChatGPT 中文调教指南
-    url: https://chatguide.plexpt.com/
-    img: https://chatguide.plexpt.com/favicon.ico
-    description: ChatGPT 中文调教指南
+
   - name: 词图PromptTool - AI绘画资料管理网站
     url: https://www.prompttool.com/NovelAI
     img: https://www.prompttool.com/prompttool.ico
     description: 词图PromptTool - AI绘画资料管理网站
-  - name: 元素法典——Novel AI 元素魔法全收录
-    url: https://docs.qq.com/doc/DWHl3am5Zb05QbGVs
-    img: https://docs.gtimg.com/docs-design-resources/mobile/png@3x/file_doc_64@3x-58ec57f56b.png
-    description: 元素法典——Novel AI 元素魔法全收录
+
   - name: AI工具集导航
     url: https://ai-bot.cn/
     img: https://ai-bot.cn/favicon.ico
@@ -188,22 +211,12 @@ gptTools:
     url: https://godmode.space/
     img: https://godmode.space/favicon.png
     description: Godmode.space
-  - name: 指南针- Midjourney 学习导航
-    url: https://learningprompt.wiki/docs/midjourney-learning-path
-    img: https://learningprompt.wiki/img/favicon.ico
-    description: 指南针- Midjourney 学习导航
-  - name: AutoGPT 4.11
-    url: https://three-recorder-52a.notion.site/AutoGPT-4-11-7b4bc7a71f8d4d4b940abc9b3232954a
-    img: https://three-recorder-52a.notion.site/images/logo-ios.png
-    description: AutoGPT 4.11
+
   - name: Cognosys - Your personal AI Agent
     url: https://www.cognosys.ai/create
     img: https://framerusercontent.com/modules/kGe5PQ65Dg7J7GN8OGx2/gwPd9Wln9Sg5rYiZ1QJB/assets/eWXiM6SACMmNKcytzyDksBgMok.png
     description: Cognosys - Your personal AI Agent
-  - name: Hello from Learning Prompt
-    url: https://learningprompt.wiki/
-    img: https://learningprompt.wiki/img/favicon.ico
-    description: Hello from Learning Prompt
+
   - name: 发现最酷的互联网产品工具和智能神器!
     url: https://hao.logosc.cn/
     img: https://hao.logosc.cn/favicon.ico
@@ -244,10 +257,7 @@ gptTools:
     url: https://chat.forefront.ai/
     img: https://uploads-ssl.webflow.com/628193922a4d18e69ba81f14/628193922a4d180bf1a81f46_Favicon.png
     description: 更好的ChatGPT体验。注册可以免费获取GPT-4,图像生成,自定义人物,可共享聊天等更多功能
-  - name: ChatGPT Prompt Engineering for Developers 中文版
-    url: https://github.com/datawhalechina/prompt-engineering-for-developers
-    img: https://github.com/favicon.ico
-    description: 主要内容为指导开发者如何构建 Prompt 并基于 OpenAI API 构建新的、基于 LLM 的应用
+
 myBlog:
   - name: 彷徨的蜗牛的博客
     url: https://blog.csdn.net/ohalo
