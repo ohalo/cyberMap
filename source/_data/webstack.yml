@@ -163,6 +163,10 @@ githubGPT:
     url: https://github.com/xinsblog/try-llama-index
     img: https://github.com/favicon.ico
     description: xinsblog/try-llama-index
+  - name: AutoGPT - 中文版
+    url: https://github.com/RealHossie/Auto-GPT-Chinese.git
+    img: https://github.com/favicon.ico
+    description: AutoGPT中文版
   - name: MiniGPT-4
     url: https://github.com/Vision-CAIR/MiniGPT-4
     img: https://github.com/favicon.ico
