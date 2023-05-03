@@ -163,6 +163,10 @@ githubGPT:
     url: https://github.com/xinsblog/try-llama-index
     img: https://github.githubassets.com/favicons/favicon.png
     description: xinsblog/try-llama-index
+  - name: yetone/openai-translator
+    url: https://github.com/yetone/openai-translator
+    img: https://github.githubassets.com/favicons/favicon.png
+    description: 基于 ChatGPT API 的划词翻译浏览器插件和跨平台桌面端应用
   - name: Github + ChatGPT 实现代码对话
     url: https://github.com/peterw/Chat-with-Github-Repo
     img: https://github.com/favicon.ico
@@ -189,10 +193,6 @@ gptTools:
     img: https://zhuanlan.zhihu.com/favicon.ico
     description: 人工智能(GPT)
 
-  - name: yetone/openai-translator
-    url: https://github.com/yetone/openai-translator
-    img: https://github.githubassets.com/favicons/favicon.png
-    description: 基于 ChatGPT API 的划词翻译浏览器插件和跨平台桌面端应用
   - name: 制作PPT的工具
     url: http://Beautiful.ai
     img: https://www.beautiful.ai/favicon.ico
