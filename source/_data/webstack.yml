@@ -236,6 +236,10 @@ gptTools:
     url: https://www.sciradar.com/
     img: https://www.sciradar.com/favicon.ico
     description: 不需要魔法;每天免费1万字符
+  - name: forefront.ai
+    url: https://chat.forefront.ai/
+    img: https://uploads-ssl.webflow.com/628193922a4d18e69ba81f14/628193922a4d180bf1a81f46_Favicon.png
+    description: 更好的ChatGPT体验。注册可以免费获取GPT-4,图像生成,自定义人物,可共享聊天等更多功能
 myBlog:
   - name: 彷徨的蜗牛的博客
     url: https://blog.csdn.net/ohalo
