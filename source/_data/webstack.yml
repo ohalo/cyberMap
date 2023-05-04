@@ -196,7 +196,7 @@ GPTModels:
     description: 中文LLaMA&Alpaca大语言模型+本地CPU/GPU部署 (Chinese LLaMA & Alpaca LLMs)
   - name: THUDM/ChatGLM-6B
     url: https://github.com/THUDM/ChatGLM-6B
-    img: https://avatars.githubusercontent.com/u/66486303?s=400&v=4
+    img: https://github.com/favicon.ico
     description: ChatGLM-6B An Open Bilingual Dialogue Language Model | 开源双语对话语言模型
 githubGPT:
   - name: xinsblog/try-llama-index
