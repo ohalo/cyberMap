@@ -104,6 +104,9 @@ menu:
   - name: 学习GPT
     icon: far fa-star
     config: studyGPT
+  - name: 大语言模型
+    icon: far fa-star
+    config: GPTModels
   - name: GitHub项目
     icon: far fa-star
     config: githubGPT
@@ -170,24 +173,15 @@ studyGPT:
     url: https://github.com/datawhalechina/prompt-engineering-for-developers
     img: https://github.com/favicon.ico
     description: 主要内容为指导开发者如何构建 Prompt 并基于 OpenAI API 构建新的、基于 LLM 的应用
-
-githubGPT:
+GPTModels:
   - name: lm-sys/FastChat
     url: https://github.com/lm-sys/FastChat
     img: https://github.githubassets.com/favicons/favicon.png
     description: 这是一个用于训练,服务和评估大型语言的开放平台。Vicuna和FastChat-T5的发布仓库。
-  - name: xinsblog/try-llama-index
-    url: https://github.com/xinsblog/try-llama-index
-    img: https://github.com/favicon.ico
-    description: xinsblog/try-llama-index
   - name: OpenLMLab/MOSS
     url: https://github.com/OpenLMLab/MOSS
     img: https://github.com/favicon.ico
     description: 来自复旦大学的开源工具增强会话语言模型
-  - name: AutoGPT - 中文版
-    url: https://github.com/RealHossie/Auto-GPT-Chinese.git
-    img: https://github.com/favicon.ico
-    description: AutoGPT中文版
   - name: facebookresearch/llama
     url: https://github.com/facebookresearch/llama
     img: https://github.com/favicon.ico
@@ -200,6 +194,17 @@ githubGPT:
     url: https://github.com/ymcui/Chinese-LLaMA-Alpaca.git
     img: https://github.com/favicon.ico
     description: 中文LLaMA&Alpaca大语言模型+本地CPU/GPU部署 (Chinese LLaMA & Alpaca LLMs)
+githubGPT:
+  - name: xinsblog/try-llama-index
+    url: https://github.com/xinsblog/try-llama-index
+    img: https://github.com/favicon.ico
+    description: xinsblog/try-llama-index
+
+  - name: AutoGPT - 中文版
+    url: https://github.com/RealHossie/Auto-GPT-Chinese.git
+    img: https://github.com/favicon.ico
+    description: AutoGPT中文版
+
   - name: yetone/openai-translator
     url: https://github.com/yetone/openai-translator
     img: https://github.com/favicon.ico
