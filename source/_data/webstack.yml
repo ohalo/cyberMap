@@ -198,6 +198,10 @@ GPTModels:
     url: https://github.com/THUDM/ChatGLM-6B
     img: https://github.com/favicon.ico
     description: ChatGLM-6B An Open Bilingual Dialogue Language Model | 开源双语对话语言模型
+  - name: lamini-ai/lamini
+    url: https://github.com/lamini-ai/lamini
+    img: https://avatars.githubusercontent.com/u/28521550
+    description: LLM引擎用于快速定制模型。Lamini通过利用数据解锁每个公司的生成AI的力量。
 githubGPT:
   - name: xinsblog/try-llama-index
     url: https://github.com/xinsblog/try-llama-index
