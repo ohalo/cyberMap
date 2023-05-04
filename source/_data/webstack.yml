@@ -299,6 +299,46 @@ gptTools:
     url: https://www.wuliaoai.com/
     img: http://www.wuliaoai.com/wp-content/themes/onenav/images/app-ico.png
     description: AIGC工具导航.探索全球1240+AI工具，里面有包含国内的一些免费的chatgpt工具
+  - name: Textblaze
+    url: http://Textblaze.me/ai
+    img: https://textblaze.me/favicon.ico
+    description: Text Blaze是一个Chrome插件,用于快速插入常用文本,大幅提高工作效率
+  - name: AppIcons.ai
+    url: http://AppIcons.ai
+    img: https://appicons.ai/favicon.ico
+    description: Appicons AI是一个利用人工智能技术为开发者自动生成漂亮app图标的在线工具。它简单易用,适合不同技术水平的人,可以在几分钟内生成多种专业级的图标设计,提高开发效率,降低设计成本。
+  - name: StockImg.ai
+    url: http://StockImg.ai
+    img: https://stockimg.ai/favicon.ico
+    description: 这是一个AI图像设计工具,提供许多免版税的AI生成图像素材。
+  - name: TelePortHQ
+    url: http://TelePortHQ.io
+    img: https://teleporthq.io/favicon.ico
+    description: 这是一个AI编码工具,可以自动生成代码段和脚本。
+  - name: Elai
+    url: http://Elai.io
+    img: https://elai.io/favicon.ico
+    description: 这是一个AI视频工具,可以自动生成和编辑视频片段。
+  - name: Midjourney
+    url: http://Midjourney.com
+    img: https://midjourney.com/favicon.ico
+    description: 这是一个AI图像生成工具,可以生成各种风格的AI艺术图像。
+  - name: Sendsteps
+    url: http://Sendsteps.com
+    img: https://www.sendsteps.com/favicon.ico
+    description: 这是一个AI幻灯片工具,可以自动设计和生成幻灯片。
+  - name: Remail
+    url: http://Remail.ai
+    img: https://www.remail.ai/favicon.ico
+    description: 这是一个AI电子邮件助手,可以自动回复和组织电子邮件。
+  - name: Hocoos
+    url: http://Hocoos.com
+    img: https://www.hocoos.com/favicon.ico
+    description: 这是一个AI网站生成工具,可以自动设计和生成网站。
+  - name: Otter.ai
+    url: http://Otter.ai
+    img: https://otter.ai/favicon.ico
+    description: 这是一个AI会议工具,可以自动记录、转录和总结会议
 myBlog:
   - name: 彷徨的蜗牛的博客
     url: https://blog.csdn.net/ohalo
