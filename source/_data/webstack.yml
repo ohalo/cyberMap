@@ -116,6 +116,10 @@ hotTools:
     url: https://www.lowff.net
     img: https://www.lowff.net/favicon.ico
     description: ChatGPT是一个基于OpenAI的GPT-3 API构建的聊天机器人框架。
+  - name: Spring-cloud-gateway 中文文档
+    url: https://spring-cloud-gateway.lowff.net/
+    img: https://app.gitbook.com/public/images/icon-512.png
+    description: 该项目是基于Spring生态系统构建的API网关，包括Spring 6、Spring Boot 3和Project Reactor
 techBlog:
   - name: ShinChven's Blog
     url: https://atlassc.net/
