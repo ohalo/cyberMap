@@ -180,6 +180,10 @@ githubGPT:
     url: https://github.com/xinsblog/try-llama-index
     img: https://github.com/favicon.ico
     description: xinsblog/try-llama-index
+  - name: OpenLMLab/MOSS
+    url: https://github.com/OpenLMLab/MOSS
+    img: https://github.com/favicon.ico
+    description: 来自复旦大学的开源工具增强会话语言模型
   - name: AutoGPT - 中文版
     url: https://github.com/RealHossie/Auto-GPT-Chinese.git
     img: https://github.com/favicon.ico
