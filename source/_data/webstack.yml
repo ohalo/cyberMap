@@ -171,6 +171,10 @@ studyGPT:
     img: https://github.com/favicon.ico
     description: 主要内容为指导开发者如何构建 Prompt 并基于 OpenAI API 构建新的、基于 LLM 的应用
 githubGPT:
+  - name: lm-sys/FastChat
+    url: https://github.com/lm-sys/FastChat
+    img: https://github.githubassets.com/favicons/favicon.png
+    description: 这是一个用于训练,服务和评估大型语言的开放平台。Vicuna和FastChat-T5的发布仓库。
   - name: xinsblog/try-llama-index
     url: https://github.com/xinsblog/try-llama-index
     img: https://github.com/favicon.ico
