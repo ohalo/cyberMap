@@ -92,6 +92,9 @@ css:
 
 expandAll: false
 menu:
+  - name: 问卷调查（GPT）
+    icon: far fa-star
+    config: likeGPT
   - name: 常用工具
     icon: far fa-star
     config: hotTools
@@ -111,10 +114,15 @@ menu:
     icon: fas fa-blog
     config: myBlog
 
+likeGPT:
+  - name: 填写你最喜欢使用的AI地址
+    url: https://fmhitm4i2c.feishu.cn/share/base/form/shrcnVmzXGaoLJWDf84a8fstb7c
+    img: https://cybermap.lowff.net/favicon.ico
+    description: 填写你最喜欢使用的AI地址
 hotTools:
   - name: ChatGPT - 用GPT实现聊天机器人
     url: https://www.lowff.net
-    img: https://www.lowff.net/favicon.ico
+    img: https://cybermap.lowff.net/favicon.ico
     description: ChatGPT是一个基于OpenAI的GPT-3 API构建的聊天机器人框架。
   - name: Spring-cloud-gateway 中文文档
     url: https://spring-cloud-gateway.lowff.net/
