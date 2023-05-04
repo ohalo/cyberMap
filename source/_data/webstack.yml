@@ -271,10 +271,6 @@ gptTools:
     url: https://www.bing.com/
     img: https://www.bing.com/sa/simg/bing_p_rr_teal_min.ico
     description: 需要魔法,基于GPT-4但是功能做了收束,免费,每轮对话不超过20个问题,每天不超过200个问题
-  - name: chatmindai
-    url: https://chatmindai.cn
-    img: https://chatmindai.ucaiji.com/favicon.ico
-    description: 不需要魔法,GPT-4每天免费3次
   - name: ora
     url: https://ora.sh/openai/gpt4
     img: https://ora.sh/favicon.ico
@@ -313,7 +309,7 @@ gptTools:
     description: 这是一个AI图像设计工具,提供许多免版税的AI生成图像素材。
   - name: TelePortHQ
     url: http://TelePortHQ.io
-    img: https://teleporthq.io/favicon.ico
+    img: https://teleporthq.io/playground_assets/favicon_32x32.png
     description: 这是一个AI编码工具,可以自动生成代码段和脚本。
   - name: Elai
     url: http://Elai.io
@@ -329,11 +325,11 @@ gptTools:
     description: 这是一个AI幻灯片工具,可以自动设计和生成幻灯片。
   - name: Remail
     url: http://Remail.ai
-    img: https://www.remail.ai/favicon.ico
+    img: https://remail.ai/logo.svg
     description: 这是一个AI电子邮件助手,可以自动回复和组织电子邮件。
   - name: Hocoos
     url: http://Hocoos.com
-    img: https://www.hocoos.com/favicon.ico
+    img: https://hocoos.com/wp-content/themes/hocoos/media/favicon.png
     description: 这是一个AI网站生成工具,可以自动设计和生成网站。
   - name: Otter.ai
     url: http://Otter.ai
