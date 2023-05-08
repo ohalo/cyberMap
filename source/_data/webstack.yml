@@ -202,11 +202,17 @@ GPTModels:
     url: https://github.com/lamini-ai/lamini
     img: https://github.com/favicon.ico
     description: LLM引擎用于快速定制模型。Lamini通过利用数据解锁每个公司的生成AI的力量。
+  - name: Chinese-LLaMA基础模型;ChatFlow中文对话模型;NLP预训练/指令微调数据集
+    url: https://github.com/CVI-SZU/Linly
+    img: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+    description: Linly是一个中文NLP工具包,提供预训练语言模型、词典、数据集和工具。其主要目的是研究中文NLP,推动开源人工智能技术的发展。Linly通过集成多个中文NLP资源,能显著降低中文NLP建模的门槛,加速研究与开发过程。
+
+githubGPT:
   - name: Segment Anything Model(SAM)
     url: https://github.com/facebookresearch/segment-anything/
     img: https://github.com/favicon.ico
     description: 该仓库提供了使用Segment Anything Model(SAM)进行推理的代码、训练的模型检查点的下载链接
-githubGPT:
+
   - name: xinsblog/try-llama-index
     url: https://github.com/xinsblog/try-llama-index
     img: https://github.com/favicon.ico
