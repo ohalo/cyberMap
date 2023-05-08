@@ -365,6 +365,10 @@ gptTools:
     url: http://Otter.ai
     img: https://otter.ai/favicon.ico
     description: 这是一个AI会议工具,可以自动记录、转录和总结会议
+  - name: Segment Anything | Meta AI
+    url: https://segment-anything.com/
+    img: https://segment-anything.com/assets/M_Favicon.ico
+    description: Segment Anything是一个强大的实例分割模型,它可以根据输入提示(如点或框)生成高质量的对象遮罩,并可以用于生成图像中的所有对象的遮罩。它在1100万个遮罩和1100万张图像的大型数据集上进行了训练,在各种分割任务上的零样本性能非常强。
 myBlog:
   - name: 彷徨的蜗牛的博客
     url: https://blog.csdn.net/ohalo
