@@ -59,6 +59,15 @@ custom:
   body: |- # 以下内容插入到</body>标签之前，可设置多行，注意每行开头至少四个空格
     <!-- 直接添加html内容即可 -->
     <!-- 可设置多行 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YGLB3LVYFC"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-YGLB3LVYFC');
+    </script>
+
 
 tittle: Halo 的网址导航网站
 subtitle: 收录关于一些有用的网址有关于gpt/github/blog等
@@ -131,6 +140,10 @@ hotTools:
     url: https://spring-cloud-gateway.lowff.net/
     img: https://app.gitbook.com/public/images/icon-512.png
     description: 该项目是基于Spring生态系统构建的API网关，包括Spring 6、Spring Boot 3和Project Reactor
+  - name: xmind转化xls工具
+    url: http://39.104.72.229/
+    img: https://cybermap.lowff.net/favicon.ico
+    description: xmind转化xls工具
 techBlog:
   - name: ShinChven's Blog
     url: https://atlassc.net/
