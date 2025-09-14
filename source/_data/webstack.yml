@@ -164,7 +164,7 @@ studyGPT:
     description: ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话。
   - name: ChatGPT 中文调教指南
     url: https://chatguide.plexpt.com/
-    img: https://chatguide.plexpt.com/favicon.ico
+    img: https://cybermap.lowff.net/favicon.ico
     description: ChatGPT 中文调教指南
   - name: 元素法典——Novel AI 元素魔法全收录
     url: https://docs.qq.com/doc/DWHl3am5Zb05QbGVs
@@ -276,12 +276,12 @@ gptTools:
     description: copy AI
   - name: Flash GPT - 聊天
     url: https://www.deflash.ai/
-    img: https://www.deflash.ai/favicon.ico
+    img: https://cybermap.lowff.net/favicon.ico
     description: Flash GPT - 聊天
 
   - name: Vicuna
     url: https://vicuna.lmsys.org/
-    img: https://vicuna.lmsys.org/favicon.jpeg
+    img: https://cybermap.lowff.net/favicon.ico
     description: Vicuna - An Open-Source Chatbot
 
   - name: 词图PromptTool - AI绘画资料管理网站
@@ -295,11 +295,11 @@ gptTools:
     description: 500+ AI工具导航大全,国内外AI工具集合网站
   - name: Sage - Poe
     url: https://poe.com/
-    img: https://poe.com/favicon.ico
+    img: https://cybermap.lowff.net/favicon.ico
     description: Sage - Poe
   - name: Godmode.space
     url: https://godmode.space/
-    img: https://godmode.space/favicon.png
+    img: https://cybermap.lowff.net/favicon.ico
     description: Godmode.space
 
   - name: Cognosys - Your personal AI Agent
@@ -309,12 +309,12 @@ gptTools:
 
   - name: 发现最酷的互联网产品工具和智能神器!
     url: https://hao.logosc.cn/
-    img: https://hao.logosc.cn/favicon.ico
+    img: https://cybermap.lowff.net/favicon.ico
     description: 神器集
 
   - name: perplexity
     url: https://www.perplexity.ai
-    img: https://www.perplexity.ai/static/icons/favicon-32x32.png
+    img: https://cybermap.lowff.net/favicon.ico
     description: 需要魔法,主打准确度,胡说八道概率低体验优于ChatGPT,免费不限量
   - name: 必应
     url: https://www.bing.com/
@@ -342,7 +342,7 @@ gptTools:
     description: Amazon CodeWhisperer 是一种采用机器学习（ML）的服务，可以根据开发人员用自然语言编写的注释和集成式开发环境（IDE）中的代码生成代码建议，帮助开发人员提高工作效率。
   - name: 无聊Ai工具导航 | —发现全球优质AIGC工具
     url: https://www.wuliaoai.com/
-    img: http://www.wuliaoai.com/wp-content/themes/onenav/images/app-ico.png
+    img: https://cybermap.lowff.net/favicon.ico
     description: AIGC工具导航.探索全球1240+AI工具，里面有包含国内的一些免费的chatgpt工具
   - name: Textblaze
     url: http://Textblaze.me/ai
@@ -358,15 +358,15 @@ gptTools:
     description: 这是一个AI图像设计工具,提供许多免版税的AI生成图像素材。
   - name: TelePortHQ
     url: http://TelePortHQ.io
-    img: https://teleporthq.io/playground_assets/favicon_32x32.png
+    img: https://cybermap.lowff.net/favicon.ico
     description: 这是一个AI编码工具,可以自动生成代码段和脚本。
   - name: Elai
     url: http://Elai.io
-    img: https://elai.io/favicon.ico
+    img: https://cybermap.lowff.net/favicon.ico
     description: 这是一个AI视频工具,可以自动生成和编辑视频片段。
   - name: Midjourney
     url: http://Midjourney.com
-    img: https://midjourney.com/favicon.ico
+    img: https://cybermap.lowff.net/favicon.ico
     description: 这是一个AI图像生成工具,可以生成各种风格的AI艺术图像。
   - name: Sendsteps
     url: http://Sendsteps.com
@@ -374,15 +374,15 @@ gptTools:
     description: 这是一个AI幻灯片工具,可以自动设计和生成幻灯片。
   - name: Remail
     url: http://Remail.ai
-    img: https://remail.ai/logo.svg
+    img: https://cybermap.lowff.net/favicon.ico
     description: 这是一个AI电子邮件助手,可以自动回复和组织电子邮件。
   - name: Hocoos
     url: http://Hocoos.com
-    img: https://hocoos.com/wp-content/themes/hocoos/media/favicon.png
+    img: https://cybermap.lowff.net/favicon.ico
     description: 这是一个AI网站生成工具,可以自动设计和生成网站。
   - name: Otter.ai
     url: http://Otter.ai
-    img: https://otter.ai/favicon.ico
+    img: https://cybermap.lowff.net/favicon.ico
     description: 这是一个AI会议工具,可以自动记录、转录和总结会议
   - name: Segment Anything | Meta AI
     url: https://segment-anything.com/
