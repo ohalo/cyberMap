@@ -126,6 +126,9 @@ menu:
     icon: fas fa-blog
     config: myBlog
 
+  - name: "每日 AI 新发现"
+    icon: fas fa-rocket
+    config: dailyAI
 likeGPT:
   - name: 填写你最喜欢使用的AI地址
     url: https://fmhitm4i2c.feishu.cn/share/base/form/shrcnVmzXGaoLJWDf84a8fstb7c
@@ -393,3 +396,17 @@ myBlog:
     url: https://blog.csdn.net/ohalo
     img: /images/cyberblog.png
     description: 寻找方向
+
+dailyAI:
+  - name: unclecode/crawl4ai
+    url: https://github.com/unclecode/crawl4ai
+    img: https://github.com/favicon.ico
+    description: "面向大模型与 AI 智能体的开源网页抓取工具，把网页转成 LLM 就绪的 Markdown，支持自托管。"
+  - name: browser-use/browser-use
+    url: https://github.com/browser-use/browser-use
+    img: https://github.com/favicon.ico
+    description: "开源浏览器智能体框架，让大模型在真实浏览器中自动点击、输入并完成任务，兼容任意 LLM。"
+  - name: Ollama
+    url: https://ollama.com
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "在本地或云端运行开源大模型的工具，支持 macOS、Windows、Linux，一条命令即可启动模型。"
