@@ -99,33 +99,56 @@ css:
   xenonSkins: /css/xenon-skins.min.css
   nav: /css/nav.min.css
 
-expandAll: false
+expandAll: true
 menu:
-  - name: 问卷调查（GPT）
-    icon: far fa-star
-    config: likeGPT
-  - name: 常用工具
-    icon: far fa-star
-    config: hotTools
-  - name: 技术博客
-    icon: far fa-star
-    config: techBlog
-  - name: 学习GPT
-    icon: far fa-star
-    config: studyGPT
-  - name: 大语言模型
-    icon: far fa-star
-    config: GPTModels
-  - name: GitHub项目
-    icon: far fa-star
-    config: githubGPT
-  - name: 人工智能（GPT）
-    icon: fas fa-tools
-    config: gptTools
-  - name: 我的博客
-    icon: fas fa-blog
-    config: myBlog
-
+  - name: "AI 工具箱"
+    icon: fas fa-toolbox
+    submenu:
+      - name: "对话与搜索"
+        icon: fas fa-comments
+        config: aiChat
+      - name: "图像与设计"
+        icon: fas fa-palette
+        config: aiImage
+      - name: "视频与音频"
+        icon: fas fa-video
+        config: aiVideo
+      - name: "编程与开发"
+        icon: fas fa-code
+        config: aiCode
+      - name: "办公与效率"
+        icon: fas fa-briefcase
+        config: aiOffice
+      - name: "智能体与自动化"
+        icon: fas fa-robot
+        config: aiAgent
+  - name: "模型与开源"
+    icon: fas fa-cubes
+    submenu:
+      - name: "大语言模型"
+        icon: fas fa-brain
+        config: GPTModels
+      - name: "GitHub 项目"
+        icon: fab fa-github
+        config: githubGPT
+      - name: "推理与训练框架"
+        icon: fas fa-microchip
+        config: aiFrameworks
+  - name: "学习与资源"
+    icon: fas fa-graduation-cap
+    submenu:
+      - name: "提示词与教程"
+        icon: fas fa-book
+        config: studyGPT
+      - name: "技术博客"
+        icon: fas fa-feather-alt
+        config: techBlog
+      - name: "AI 导航站"
+        icon: fas fa-compass
+        config: aiNav
+      - name: "社区与问卷"
+        icon: fas fa-users
+        config: likeGPT
   - name: "每日 AI 新发现"
     icon: fas fa-rocket
     submenu:
@@ -138,67 +161,400 @@ menu:
       - name: "模型框架"
         icon: fas fa-cubes
         config: dailyAI_model
-likeGPT:
-  - name: 填写你最喜欢使用的AI地址
-    url: https://fmhitm4i2c.feishu.cn/share/base/form/shrcnVmzXGaoLJWDf84a8fstb7c
-    img: https://sf3-scmcdn2-cn.feishucdn.com/ccm/pc/web/resource/bear/src/common/assets/favicons/icon_file_bitable_nor-32x32.0e0cacddafbc7fd2d308.png
-    description: 填写你最喜欢使用的AI地址
-hotTools:
-  - name: ChatGPT - 用GPT实现聊天机器人
-    url: https://www.lowff.net
+  - name: "站点与常用"
+    icon: fas fa-star
+    submenu:
+      - name: "常用工具"
+        icon: far fa-star
+        config: hotTools
+      - name: "我的博客"
+        icon: fas fa-blog
+        config: myBlog
+aiChat:
+  - name: "腾讯元宝"
+    url: https://yuanbao.tencent.com
+    img: https://yuanbao.tencent.com/favicon.ico
+    description: "腾讯混元大模型助手，支持多模态问答与微信生态文件解析。"
+  - name: "智谱清言"
+    url: https://chatglm.cn
+    img: https://chatglm.cn/favicon.ico
+    description: "智谱 AI 基于 GLM 系列的对话助手，支持写作、代码与工具调用。"
+  - name: "讯飞星火"
+    url: https://xinghuo.xfyun.cn
+    img: https://xinghuo.xfyun.cn/favicon.ico
+    description: "科大讯飞星火大模型对话服务，语音与中文理解能力突出。"
+  - name: "秘塔 AI 搜索"
+    url: https://metaso.cn
+    img: https://metaso.cn/favicon.ico
+    description: "无广告 AI 搜索引擎，聚合资料并给出带来源的结构化回答。"
+  - name: Kimi
+    url: https://www.kimi.com
+    img: https://www.kimi.com/favicon.ico
+    description: "月之暗面长文本对话助手，擅长超长文档阅读与资料整理。"
+  - name: "天工 AI"
+    url: https://www.tiangong.cn
+    img: https://www.tiangong.cn/favicon.ico
+    description: "昆仑万维 AI 助手，提供搜索、对话与文档解读。"
+  - name: "文心一言"
+    url: https://yiyan.baidu.com
     img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: ChatGPT是一个基于OpenAI的GPT-3 API构建的聊天机器人框架。
-  - name: Spring-cloud-gateway 中文文档
-    url: https://spring-cloud-gateway.lowff.net/
-    img: https://app.gitbook.com/public/images/icon-512.png
-    description: 该项目是基于Spring生态系统构建的API网关，包括Spring 6、Spring Boot 3和Project Reactor
-  - name: xmind转化xls工具
-    url: http://39.104.72.229/
+    description: "百度文心大模型对话助手，支持中文创作、问答与多模态生成。"
+  - name: "通义千问"
+    url: https://tongyi.aliyun.com
     img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: xmind转化xls工具
-techBlog:
-  - name: ShinChven's Blog
-    url: https://atlassc.net/
-    img: https://atlassc.net/favicon.ico
-    description: ShinChven's Blog
-  - name: Stable Diffusion Prompt Note
-    url: https://atlassc.net/2023/03/24/stable-diffusion-prompt
-    img: https://atlassc.net/favicon.ico
-    description: Stable Diffusion Prompt Note
-  - name: 跟吴恩达和IsaFulford学提示词工程（初级开发者入门课程）
-    url: https://volnet.hashnode.dev/gpt-prompt-dev-deeplearningai
-    img: https://cdn.hashnode.com/res/hashnode/image/upload/v1611242155728/W3_BYVVVh.png
-    description: 【笔记】跟吴恩达和IsaFulford学提示词工程（初级开发者入门课程）
-studyGPT:
-  - name: PlexPt/awesome-chatgpt-prompts-zh
-    url: https://github.com/PlexPt/awesome-chatgpt-prompts-zh
-    img: https://github.com/favicon.ico
-    description: ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话。
-  - name: ChatGPT 中文调教指南
-    url: https://chatguide.plexpt.com/
+    description: "阿里云通义大模型对话服务，提供问答、创作与文档分析。"
+  - name: "豆包"
+    url: https://www.doubao.com
+    img: https://www.doubao.com/favicon.ico
+    description: "字节跳动 AI 对话助手，支持聊天、写作、绘图与文件解析。"
+  - name: "DeepSeek 对话"
+    url: https://chat.deepseek.com
+    img: https://chat.deepseek.com/favicon.ico
+    description: "深度求索官方对话服务，提供 DeepSeek 系列推理与通用模型。"
+  - name: Claude
+    url: https://claude.ai
+    img: https://claude.ai/favicon.ico
+    description: "Anthropic 官方 Claude 对话助手，擅长长文写作、分析与代码。"
+  - name: Phind
+    url: https://www.phind.com
     img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: ChatGPT 中文调教指南
-  - name: 元素法典——Novel AI 元素魔法全收录
-    url: https://docs.qq.com/doc/DWHl3am5Zb05QbGVs
-    img: https://docs.gtimg.com/docs-design-resources/mobile/png@3x/file_doc_64@3x-58ec57f56b.png
-    description: 元素法典——Novel AI 元素魔法全收录
-  - name: 指南针- Midjourney 学习导航
-    url: https://learningprompt.wiki/docs/midjourney-learning-path
-    img: https://learningprompt.wiki/img/favicon.ico
-    description: 指南针- Midjourney 学习导航
-  - name: AutoGPT 4.11
-    url: https://three-recorder-52a.notion.site/AutoGPT-4-11-7b4bc7a71f8d4d4b940abc9b3232954a
-    img: https://three-recorder-52a.notion.site/images/logo-ios.png
-    description: AutoGPT 4.11
-  - name: Hello from Learning Prompt
-    url: https://learningprompt.wiki/
-    img: https://learningprompt.wiki/img/favicon.ico
-    description: Hello from Learning Prompt
-  - name: ChatGPT Prompt Engineering for Developers 中文版
-    url: https://github.com/datawhalechina/prompt-engineering-for-developers
-    img: https://github.com/favicon.ico
-    description: 主要内容为指导开发者如何构建 Prompt 并基于 OpenAI API 构建新的、基于 LLM 的应用
+    description: "面向开发者的 AI 搜索与问答，答案附技术文档来源。"
+  - name: Flash GPT - 聊天
+    url: https://www.deflash.ai/
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: Flash GPT - 聊天
+  - name: Vicuna
+    url: https://vicuna.lmsys.org/
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: Vicuna - An Open-Source Chatbot
+  - name: Sage - Poe
+    url: https://poe.com/
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: Sage - Poe
+  - name: perplexity
+    url: https://www.perplexity.ai
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: 需要魔法,主打准确度,胡说八道概率低体验优于ChatGPT,免费不限量
+  - name: 必应
+    url: https://www.bing.com/
+    img: https://www.bing.com/sa/simg/bing_p_rr_teal_min.ico
+    description: 需要魔法,基于GPT-4但是功能做了收束,免费,每轮对话不超过20个问题,每天不超过200个问题
+  - name: ora
+    url: https://ora.sh/openai/gpt4
+    img: https://ora.sh/favicon.ico
+    description: 需要魔法,GPT-4每天免费10次
+  - name: forefront.ai
+    url: https://chat.forefront.ai/
+    img: https://uploads-ssl.webflow.com/628193922a4d18e69ba81f14/628193922a4d180bf1a81f46_Favicon.png
+    description: 更好的ChatGPT体验。注册可以免费获取GPT-4,图像生成,自定义人物,可共享聊天等更多功能
+
+aiImage:
+  - name: "即梦 AI"
+    url: https://jimeng.jianying.com
+    img: https://jimeng.jianying.com/favicon.ico
+    description: "字节跳动 AI 创作平台，支持图片生成与视频生成。"
+  - name: Recraft
+    url: https://www.recraft.ai
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "可生成矢量图与品牌设计素材的 AI 设计工具。"
+  - name: Canva
+    url: https://www.canva.com
+    img: https://www.canva.com/favicon.ico
+    description: "在线设计平台，内置 AI 生成图片、排版与文案能力。"
+  - name: Remove.bg
+    url: https://www.remove.bg
+    img: https://www.remove.bg/favicon.ico
+    description: "AI 一键去除图片背景的在线工具，支持批量处理。"
+  - name: "Stability AI"
+    url: https://stability.ai
+    img: https://stability.ai/favicon.ico
+    description: "Stable Diffusion 系列图像生成模型的官方站点与开放平台。"
+  - name: Upscayl
+    url: https://www.upscayl.org
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "开源 AI 图像超分辨率工具，可在本地离线放大图片。"
+  - name: "Adobe Firefly"
+    url: https://www.adobe.com/products/firefly.html
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "Adobe 生成式 AI 创意工具，集成于 Photoshop 等设计软件。"
+  - name: 词图PromptTool - AI绘画资料管理网站
+    url: https://www.prompttool.com/NovelAI
+    img: https://www.prompttool.com/prompttool.ico
+    description: 词图PromptTool - AI绘画资料管理网站
+  - name: AppIcons.ai
+    url: http://AppIcons.ai
+    img: https://appicons.ai/favicon.ico
+    description: Appicons AI是一个利用人工智能技术为开发者自动生成漂亮app图标的在线工具。它简单易用,适合不同技术水平的人,可以在几分钟内生成多种专业级的图标设计,提高开发效率,降低设计成本。
+  - name: StockImg.ai
+    url: http://StockImg.ai
+    img: https://stockimg.ai/favicon.ico
+    description: 这是一个AI图像设计工具,提供许多免版税的AI生成图像素材。
+  - name: Midjourney
+    url: http://Midjourney.com
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: 这是一个AI图像生成工具,可以生成各种风格的AI艺术图像。
+  - name: Segment Anything | Meta AI
+    url: https://segment-anything.com/
+    img: https://segment-anything.com/assets/M_Favicon.ico
+    description: Segment Anything是一个强大的实例分割模型,它可以根据输入提示(如点或框)生成高质量的对象遮罩,并可以用于生成图像中的所有对象的遮罩。它在1100万个遮罩和1100万张图像的大型数据集上进行了训练,在各种分割任务上的零样本性能非常强。
+
+aiVideo:
+  - name: "可灵 AI"
+    url: https://klingai.com
+    img: https://klingai.com/favicon.ico
+    description: "快手 AI 视频生成平台，支持文生视频与图生视频。"
+  - name: Runway
+    url: https://runwayml.com
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "AI 视频生成与编辑平台，提供 Gen 系列视频模型。"
+  - name: Synthesia
+    url: https://www.synthesia.io
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "企业向 AI 虚拟主播视频生成工具，用于培训与宣介内容。"
+  - name: ElevenLabs
+    url: https://elevenlabs.io
+    img: https://elevenlabs.io/favicon.ico
+    description: "AI 语音合成与声音克隆平台，支持多语言配音。"
+  - name: "海螺 AI"
+    url: https://hailuoai.com
+    img: https://hailuoai.com/favicon.ico
+    description: "MiniMax 旗下 AI 创作平台，提供视频生成与语音合成。"
+  - name: Descript
+    url: https://www.descript.com
+    img: https://www.descript.com/favicon.ico
+    description: "以文字稿方式剪辑音视频的工具，含转录与 AI 降噪。"
+  - name: Udio
+    url: https://www.udio.com
+    img: https://www.udio.com/favicon.ico
+    description: "AI 音乐生成工具，可按风格与歌词生成歌曲片段。"
+  - name: CapCut
+    url: https://www.capcut.com
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "剪映国际版视频编辑器，内置字幕、抠像等 AI 功能。"
+  - name: kaiber.ai
+    url: https://kaiber.ai/
+    img: https://kaiber.ai/apple-touch-icon.png
+    description: 让你的想象力成为现实，使用我们最先进的 AI 生成引擎将您的想法转化为您梦想中的视觉故事。
+  - name: Elai
+    url: http://Elai.io
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: 这是一个AI视频工具,可以自动生成和编辑视频片段。
+
+aiCode:
+  - name: Cursor
+    url: https://www.cursor.com
+    img: https://www.cursor.com/favicon.ico
+    description: "AI 原生代码编辑器，支持整库上下文理解与代理式改码。"
+  - name: Windsurf
+    url: https://windsurf.com
+    img: https://windsurf.com/favicon.ico
+    description: "Codeium 出品的 AI IDE，具备跨文件上下文与自动执行能力。"
+  - name: v0
+    url: https://v0.dev
+    img: https://v0.dev/favicon.png
+    description: "Vercel 的 AI 前端生成工具，用提示词产出 React 界面代码。"
+  - name: TRAE
+    url: https://www.trae.ai
+    img: https://www.trae.ai/favicon.ico
+    description: "字节跳动 AI IDE，提供 Builder 模式与中文交互。"
+  - name: Bolt.new
+    url: https://bolt.new
+    img: https://bolt.new/favicon.ico
+    description: "浏览器内 AI 全栈应用生成工具，用对话搭建并运行项目。"
+  - name: Tabnine
+    url: https://www.tabnine.com
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "代码补全与 AI 编程助手，支持私有代码库私有化部署。"
+  - name: Codeium
+    url: https://codeium.com
+    img: https://codeium.com/favicon.ico
+    description: "提供免费 AI 代码补全与聊天能力的开发插件。"
+  - name: "Sourcegraph Cody"
+    url: https://sourcegraph.com/cody
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "基于全代码库检索的 AI 编码助手，适合大型仓库。"
+  - name: StackBlitz
+    url: https://stackblitz.com
+    img: https://stackblitz.com/favicon.ico
+    description: "浏览器内运行的在线 IDE，可即时预览 Web 项目。"
+  - name: Supermaven
+    url: https://supermaven.com
+    img: https://supermaven.com/favicon.ico
+    description: "主打低延迟长上下文的 AI 代码补全工具。"
+  - name: Continue
+    url: https://continue.dev
+    img: https://continue.dev/favicon.png
+    description: "开源 AI 编码助手插件，可对接本地或云端模型。"
+  - name: Replit
+    url: https://replit.com
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "在线开发环境，内置 AI 编程助手与应用一键部署。"
+  - name: Lovable
+    url: https://lovable.dev
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "用自然语言生成完整 Web 应用的 AI 开发平台。"
+  - name: llama-index(gpt-index):后chatgpt时代的对话式文档问答解决方案
+    url: https://zhuanlan.zhihu.com/p/613155165
+    img: https://zhuanlan.zhihu.com/favicon.ico
+    description: 人工智能(GPT)
+  - name: AWS - codewhisperer
+    url: https://aws.amazon.com/cn/codewhisperer/resources/#Getting_started
+    img: https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico
+    description: Amazon CodeWhisperer 是一种采用机器学习（ML）的服务，可以根据开发人员用自然语言编写的注释和集成式开发环境（IDE）中的代码生成代码建议，帮助开发人员提高工作效率。
+  - name: TelePortHQ
+    url: http://TelePortHQ.io
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: 这是一个AI编码工具,可以自动生成代码段和脚本。
+  - name: Hocoos
+    url: http://Hocoos.com
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: 这是一个AI网站生成工具,可以自动设计和生成网站。
+
+aiOffice:
+  - name: Grammarly
+    url: https://www.grammarly.com
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "AI 英文写作校对工具，检查语法、语气与表达清晰度。"
+  - name: Jasper
+    url: https://www.jasper.ai
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "面向营销团队的 AI 文案生成与品牌语气管理平台。"
+  - name: Zapier
+    url: https://zapier.com
+    img: https://zapier.com/favicon.ico
+    description: "应用间自动化工作流平台，内置 AI 步骤与智能体能力。"
+  - name: "Notion AI"
+    url: https://www.notion.so/product/ai
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "Notion 内置 AI 助手，用于写作、总结与知识库问答。"
+  - name: Make
+    url: https://www.make.com
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "可视化自动化编排平台，可串联 SaaS 与 AI 服务。"
+  - name: "Napkin AI"
+    url: https://www.napkin.ai
+    img: https://www.napkin.ai/favicon.ico
+    description: "把文字自动转成图表、流程图与信息图的 AI 工具。"
+  - name: Whimsical
+    url: https://whimsical.com
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "在线流程图与思维导图工具，支持 AI 辅助生成结构。"
+  - name: Fireflies.ai
+    url: https://fireflies.ai
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "AI 会议助手，自动录音、转录并提取待办与摘要。"
+  - name: ChatPDF - 与PDF聊天
+    url: https://www.chatpdf.com/
+    img: https://www.chatpdf.com/favicon.ico
+    description: ChatPDF 使用人工智能为PDF文件提供自然语言问答交互。
+  - name: 制作PPT的工具
+    url: http://Beautiful.ai
+    img: https://www.beautiful.ai/favicon.ico
+    description: Beautiful.ai
+  - name: 文案生成AI
+    url: https://www.copy.ai/
+    img: https://assets-global.website-files.com/628288c5cd3e8411b90a36a4/629a333177bcc87edf861bbb_favico-2.png
+    description: copy AI
+  - name: 猎研SciRadar
+    url: https://www.sciradar.com/
+    img: https://www.sciradar.com/favicon.ico
+    description: 不需要魔法;每天免费1万字符
+  - name: Textblaze
+    url: http://Textblaze.me/ai
+    img: https://textblaze.me/favicon.ico
+    description: Text Blaze是一个Chrome插件,用于快速插入常用文本,大幅提高工作效率
+  - name: Sendsteps
+    url: http://Sendsteps.com
+    img: https://www.sendsteps.com/favicon.ico
+    description: 这是一个AI幻灯片工具,可以自动设计和生成幻灯片。
+  - name: Remail
+    url: http://Remail.ai
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: 这是一个AI电子邮件助手,可以自动回复和组织电子邮件。
+  - name: Otter.ai
+    url: http://Otter.ai
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: 这是一个AI会议工具,可以自动记录、转录和总结会议
+
+aiAgent:
+  - name: Coze
+    url: https://www.coze.com
+    img: https://www.coze.com/favicon.ico
+    description: "AI Bot 搭建平台，可配置插件、知识库并发布到多渠道。"
+  - name: Flowise
+    url: https://flowiseai.com
+    img: https://flowiseai.com/favicon.ico
+    description: "开源低代码 LLM 流程编排器，拖拽即可构建问答链。"
+  - name: n8n
+    url: https://n8n.io
+    img: https://n8n.io/favicon.ico
+    description: "开源工作流自动化平台，内置 AI 节点与自托管智能体。"
+  - name: Langflow
+    url: https://www.langflow.org
+    img: https://www.langflow.org/favicon.ico
+    description: "可视化搭建 LangChain 流程与智能体的开源工具。"
+  - name: AutoGPT
+    url: https://agpt.co
+    img: https://agpt.co/favicon.png
+    description: "自主智能体平台，可让 AI 拆解目标并连续执行任务。"
+  - name: CrewAI
+    url: https://www.crewai.com
+    img: https://www.crewai.com/favicon.ico
+    description: "多智能体协作框架，用角色分工完成复杂任务。"
+  - name: LangChain
+    url: https://www.langchain.com
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "LLM 应用开发框架与生态，提供链、智能体与可观测工具。"
+  - name: Dify
+    url: https://dify.ai
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "开源 LLM 应用开发平台，可视化编排智能体与知识库。"
+  - name: ChatMind - 智能后台系统
+    url: https://www.chatmind.tech/
+    img: https://www.chatmind.tech/favicon.ico
+    description: ChatMind是一个开源的人工智能后台系统,可以帮助企业和开发者快速构建强大的AI产品与服务。
+  - name: Godmode.space
+    url: https://godmode.space/
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: Godmode.space
+  - name: Cognosys - Your personal AI Agent
+    url: https://www.cognosys.ai/create
+    img: https://framerusercontent.com/modules/kGe5PQ65Dg7J7GN8OGx2/gwPd9Wln9Sg5rYiZ1QJB/assets/eWXiM6SACMmNKcytzyDksBgMok.png
+    description: Cognosys - Your personal AI Agent
+
 GPTModels:
+  - name: Qwen
+    url: https://qwenlm.github.io
+    img: https://qwenlm.github.io/favicon.png
+    description: "通义千问 Qwen 开源模型的项目主页与文档入口。"
+  - name: DeepSeek
+    url: https://www.deepseek.com
+    img: https://www.deepseek.com/favicon.ico
+    description: "深度求索官网，发布 DeepSeek 系列模型与开放 API。"
+  - name: "魔搭 ModelScope"
+    url: https://modelscope.cn
+    img: https://modelscope.cn/favicon.ico
+    description: "阿里魔搭模型社区，提供中文模型下载、体验与数据集。"
+  - name: Groq
+    url: https://groq.com
+    img: https://groq.com/favicon.ico
+    description: "基于 LPU 的低延迟大模型推理服务与开发者平台。"
+  - name: "智谱 AI"
+    url: https://www.zhipuai.cn
+    img: https://www.zhipuai.cn/favicon.ico
+    description: "智谱华章官网，发布 GLM 系列模型与开放平台。"
+  - name: OpenRouter
+    url: https://openrouter.ai
+    img: https://openrouter.ai/favicon.ico
+    description: "多厂商大模型 API 聚合与路由平台，可统一计费切换模型。"
+  - name: Replicate
+    url: https://replicate.com
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "云端运行开源模型的平台，提供 API 与一键部署。"
+  - name: "Together AI"
+    url: https://www.together.ai
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "开源模型推理与微调云服务，提供兼容 OpenAI 的 API。"
   - name: lm-sys/FastChat
     url: https://github.com/lm-sys/FastChat
     img: https://github.githubassets.com/favicons/favicon.png
@@ -233,21 +589,74 @@ GPTModels:
     description: Linly是一个中文NLP工具包,提供预训练语言模型、词典、数据集和工具。其主要目的是研究中文NLP,推动开源人工智能技术的发展。Linly通过集成多个中文NLP资源,能显著降低中文NLP建模的门槛,加速研究与开发过程。
 
 githubGPT:
+  - name: open-webui/open-webui
+    url: https://github.com/open-webui/open-webui
+    img: https://github.com/favicon.ico
+    description: "自托管的 AI 对话 Web 界面，可对接 Ollama 与多种 API。"
+  - name: firecrawl/firecrawl
+    url: https://github.com/firecrawl/firecrawl
+    img: https://github.com/favicon.ico
+    description: "把网站抓取并转成 LLM 就绪数据的开源服务与 API。"
+  - name: run-llama/llama_index
+    url: https://github.com/run-llama/llama_index
+    img: https://github.com/favicon.ico
+    description: "面向私有数据的 RAG 索引与查询开源框架。"
+  - name: langchain-ai/langchain
+    url: https://github.com/langchain-ai/langchain
+    img: https://github.com/favicon.ico
+    description: "构建大模型应用的开源框架，提供链、工具与智能体抽象。"
+  - name: chroma-core/chroma
+    url: https://github.com/chroma-core/chroma
+    img: https://github.com/favicon.ico
+    description: "开源向量数据库，常用于 RAG 应用的嵌入检索。"
+  - name: milvus-io/milvus
+    url: https://github.com/milvus-io/milvus
+    img: https://github.com/favicon.ico
+    description: "分布式开源向量数据库，面向大规模相似性检索。"
+  - name: qdrant/qdrant
+    url: https://github.com/qdrant/qdrant
+    img: https://github.com/favicon.ico
+    description: "开源向量搜索引擎，提供过滤与混合检索能力。"
+  - name: CherryHQ/cherry-studio
+    url: https://github.com/CherryHQ/cherry-studio
+    img: https://github.com/favicon.ico
+    description: "桌面端多模型 AI 助手，支持本地知识库与多服务商。"
+  - name: Mintplex-Labs/anything-llm
+    url: https://github.com/Mintplex-Labs/anything-llm
+    img: https://github.com/favicon.ico
+    description: "把文档转成可问答知识库的开源桌面与服务端应用。"
+  - name: gradio-app/gradio
+    url: https://github.com/gradio-app/gradio
+    img: https://github.com/favicon.ico
+    description: "用几行 Python 为机器学习模型生成 Web 演示界面。"
+  - name: n8n-io/n8n
+    url: https://github.com/n8n-io/n8n
+    img: https://github.com/favicon.ico
+    description: "可自托管的工作流自动化工具，支持 AI 与数百种集成。"
+  - name: streamlit/streamlit
+    url: https://github.com/streamlit/streamlit
+    img: https://github.com/favicon.ico
+    description: "把 Python 脚本快速变成数据应用的开源框架。"
+  - name: langgenius/dify
+    url: https://github.com/langgenius/dify
+    img: https://github.com/favicon.ico
+    description: "开源 LLM 应用开发平台，含编排、知识库与运营能力。"
+  - name: facebookresearch/faiss
+    url: https://github.com/facebookresearch/faiss
+    img: https://github.com/favicon.ico
+    description: "Meta 开源的高效向量相似性搜索与聚类库。"
   - name: Segment Anything Model(SAM)
     url: https://github.com/facebookresearch/segment-anything/
     img: https://github.com/favicon.ico
     description: 该仓库提供了使用Segment Anything Model(SAM)进行推理的代码、训练的模型检查点的下载链接
-
   - name: xinsblog/try-llama-index
     url: https://github.com/xinsblog/try-llama-index
     img: https://github.com/favicon.ico
     description: xinsblog/try-llama-index
-
   - name: AutoGPT - 中文版
     url: https://github.com/RealHossie/Auto-GPT-Chinese.git
     img: https://github.com/favicon.ico
     description: AutoGPT中文版
-
   - name: yetone/openai-translator
     url: https://github.com/yetone/openai-translator
     img: https://github.com/favicon.ico
@@ -264,147 +673,200 @@ githubGPT:
     url: https://github.com/pengzhile/pandora
     img: https://github.com/favicon.ico
     description: 该工具能直接通过 access token 来访问网站功能。后端优化,绕过 Cloudflare,提升访问速度。除此之外,该工具还提供了以下功能:高峰期能绕过官方限制,继续使用;应答速度直逼 PLUS;官方故障的时候,它可能还是能跑;多模式:网页 / 命令行 / API,私有化部署;不会像官方那样无故断线、报错。
-gptTools:
-  - name: ChatPDF - 与PDF聊天
-    url: https://www.chatpdf.com/
-    img: https://www.chatpdf.com/favicon.ico
-    description: ChatPDF 使用人工智能为PDF文件提供自然语言问答交互。
-  - name: ChatMind - 智能后台系统
-    url: https://www.chatmind.tech/
-    img: https://www.chatmind.tech/favicon.ico
-    description: ChatMind是一个开源的人工智能后台系统,可以帮助企业和开发者快速构建强大的AI产品与服务。
-  - name: llama-index(gpt-index):后chatgpt时代的对话式文档问答解决方案
-    url: https://zhuanlan.zhihu.com/p/613155165
-    img: https://zhuanlan.zhihu.com/favicon.ico
-    description: 人工智能(GPT)
 
-  - name: 制作PPT的工具
-    url: http://Beautiful.ai
-    img: https://www.beautiful.ai/favicon.ico
-    description: Beautiful.ai
-  - name: 文案生成AI
-    url: https://www.copy.ai/
-    img: https://assets-global.website-files.com/628288c5cd3e8411b90a36a4/629a333177bcc87edf861bbb_favico-2.png
-    description: copy AI
-  - name: Flash GPT - 聊天
-    url: https://www.deflash.ai/
+aiFrameworks:
+  - name: ollama/ollama
+    url: https://github.com/ollama/ollama
+    img: https://github.com/favicon.ico
+    description: "在本地一键运行与管理开源大模型的工具，支持多平台。"
+  - name: ggml-org/llama.cpp
+    url: https://github.com/ggml-org/llama.cpp
+    img: https://github.com/favicon.ico
+    description: "C/C++ 实现的大模型推理引擎，支持 CPU 与量化模型。"
+  - name: vllm-project/vllm
+    url: https://github.com/vllm-project/vllm
+    img: https://github.com/favicon.ico
+    description: "高吞吐大模型推理与服务框架，采用 PagedAttention。"
+  - name: huggingface/transformers
+    url: https://github.com/huggingface/transformers
+    img: https://github.com/favicon.ico
+    description: "主流预训练模型库，统一加载与训练各类 Transformer 模型。"
+  - name: sgl-project/sglang
+    url: https://github.com/sgl-project/sglang
+    img: https://github.com/favicon.ico
+    description: "面向大模型的高效推理与服务框架，支持复杂生成流程。"
+  - name: InternLM/lmdeploy
+    url: https://github.com/InternLM/lmdeploy
+    img: https://github.com/favicon.ico
+    description: "大模型压缩、部署与推理工具链，支持多后端。"
+  - name: NVIDIA/TensorRT-LLM
+    url: https://github.com/NVIDIA/TensorRT-LLM
+    img: https://github.com/favicon.ico
+    description: "NVIDIA GPU 上的大模型推理优化库，提供高吞吐服务。"
+  - name: AUTOMATIC1111/stable-diffusion-webui
+    url: https://github.com/AUTOMATIC1111/stable-diffusion-webui
+    img: https://github.com/favicon.ico
+    description: "Stable Diffusion 的本地 Web 界面，支持插件与多种生成方式。"
+  - name: comfyanonymous/ComfyUI
+    url: https://github.com/comfyanonymous/ComfyUI
+    img: https://github.com/favicon.ico
+    description: "节点式扩散模型工作流界面，可自由编排图像生成流程。"
+  - name: microsoft/DeepSpeed
+    url: https://github.com/microsoft/DeepSpeed
+    img: https://github.com/favicon.ico
+    description: "大模型分布式训练与推理优化库，显著降低显存占用。"
+  - name: ggml-org/whisper.cpp
+    url: https://github.com/ggml-org/whisper.cpp
+    img: https://github.com/favicon.ico
+    description: "Whisper 语音识别模型的 C/C++ 本地推理实现。"
+  - name: pytorch/pytorch
+    url: https://github.com/pytorch/pytorch
+    img: https://github.com/favicon.ico
+    description: "主流深度学习框架，提供张量计算与自动微分能力。"
+
+studyGPT:
+  - name: "Prompt Engineering Guide"
+    url: https://www.promptingguide.ai
     img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: Flash GPT - 聊天
-
-  - name: Vicuna
-    url: https://vicuna.lmsys.org/
+    description: "系统化提示词工程教程，覆盖技巧、模型与应用场景。"
+  - name: DeepLearning.AI
+    url: https://www.deeplearning.ai
+    img: https://www.deeplearning.ai/favicon.ico
+    description: "吴恩达团队的 AI 课程平台，提供短课与实战项目。"
+  - name: arXiv
+    url: https://arxiv.org
+    img: https://arxiv.org/favicon.ico
+    description: "开放预印本平台，AI 领域最新论文的主要发布地。"
+  - name: "LangChain 文档"
+    url: https://python.langchain.com
+    img: https://python.langchain.com/favicon.ico
+    description: "LangChain Python 版官方文档与开发教程。"
+  - name: "Kaggle Learn"
+    url: https://www.kaggle.com/learn
     img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: Vicuna - An Open-Source Chatbot
+    description: "Kaggle 免费实战微课程，覆盖 Python、机器学习与 LLM。"
+  - name: "Learn Prompting"
+    url: https://learnprompting.org
+    img: https://learnprompting.org/favicon.ico
+    description: "开源提示词工程课程，从入门到进阶并提供多语言版本。"
+  - name: "Anthropic 文档"
+    url: https://docs.anthropic.com
+    img: https://docs.anthropic.com/favicon.ico
+    description: "Claude API 官方文档与提示词工程指南。"
+  - name: "OpenAI 文档"
+    url: https://platform.openai.com/docs
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "OpenAI API 官方文档，包含模型、接口与最佳实践说明。"
+  - name: PlexPt/awesome-chatgpt-prompts-zh
+    url: https://github.com/PlexPt/awesome-chatgpt-prompts-zh
+    img: https://github.com/favicon.ico
+    description: ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话。
+  - name: ChatGPT 中文调教指南
+    url: https://chatguide.plexpt.com/
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: ChatGPT 中文调教指南
+  - name: 元素法典——Novel AI 元素魔法全收录
+    url: https://docs.qq.com/doc/DWHl3am5Zb05QbGVs
+    img: https://docs.gtimg.com/docs-design-resources/mobile/png@3x/file_doc_64@3x-58ec57f56b.png
+    description: 元素法典——Novel AI 元素魔法全收录
+  - name: 指南针- Midjourney 学习导航
+    url: https://learningprompt.wiki/docs/midjourney-learning-path
+    img: https://learningprompt.wiki/img/favicon.ico
+    description: 指南针- Midjourney 学习导航
+  - name: AutoGPT 4.11
+    url: https://three-recorder-52a.notion.site/AutoGPT-4-11-7b4bc7a71f8d4d4b940abc9b3232954a
+    img: https://three-recorder-52a.notion.site/images/logo-ios.png
+    description: AutoGPT 4.11
+  - name: Hello from Learning Prompt
+    url: https://learningprompt.wiki/
+    img: https://learningprompt.wiki/img/favicon.ico
+    description: Hello from Learning Prompt
+  - name: ChatGPT Prompt Engineering for Developers 中文版
+    url: https://github.com/datawhalechina/prompt-engineering-for-developers
+    img: https://github.com/favicon.ico
+    description: 主要内容为指导开发者如何构建 Prompt 并基于 OpenAI API 构建新的、基于 LLM 的应用
 
-  - name: 词图PromptTool - AI绘画资料管理网站
-    url: https://www.prompttool.com/NovelAI
-    img: https://www.prompttool.com/prompttool.ico
-    description: 词图PromptTool - AI绘画资料管理网站
+techBlog:
+  - name: "Lil'Log"
+    url: https://lilianweng.github.io
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "Lilian Weng 的深度技术博客，系统梳理大模型与智能体主题。"
+  - name: "Anthropic Research"
+    url: https://www.anthropic.com/research
+    img: https://www.anthropic.com/favicon.ico
+    description: "Anthropic 研究博客，发布对齐、可解释性与模型评估文章。"
+  - name: "The Illustrated Transformer"
+    url: https://jalammar.github.io
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "用图解方式讲清 Transformer、BERT 等模型原理的技术博客。"
+  - name: "The Batch"
+    url: https://www.deeplearning.ai/the-batch/
+    img: https://www.deeplearning.ai/favicon.ico
+    description: "DeepLearning.AI 的 AI 行业周刊，追踪研究与产品动态。"
+  - name: "OpenAI News"
+    url: https://openai.com/news/
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "OpenAI 官方动态与研究发布页面。"
+  - name: ShinChven's Blog
+    url: https://atlassc.net/
+    img: https://atlassc.net/favicon.ico
+    description: ShinChven's Blog
+  - name: Stable Diffusion Prompt Note
+    url: https://atlassc.net/2023/03/24/stable-diffusion-prompt
+    img: https://atlassc.net/favicon.ico
+    description: Stable Diffusion Prompt Note
+  - name: 跟吴恩达和IsaFulford学提示词工程（初级开发者入门课程）
+    url: https://volnet.hashnode.dev/gpt-prompt-dev-deeplearningai
+    img: https://cdn.hashnode.com/res/hashnode/image/upload/v1611242155728/W3_BYVVVh.png
+    description: 【笔记】跟吴恩达和IsaFulford学提示词工程（初级开发者入门课程）
 
+aiNav:
+  - name: AIbase
+    url: https://www.aibase.com
+    img: https://www.aibase.com/favicon.ico
+    description: "中文 AI 资讯与 AI 工具库，提供产品收录与榜单。"
+  - name: AIHub
+    url: https://www.aihub.cn
+    img: https://www.aihub.cn/favicon.ico
+    description: "中文 AI 工具与资源导航，覆盖办公、设计与开发场景。"
+  - name: "Future Tools"
+    url: https://www.futuretools.io
+    img: https://www.futuretools.io/favicon.ico
+    description: "curated AI 工具目录，标注免费与付费并附简介。"
+  - name: TopAI.tools
+    url: https://topai.tools
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "按类别与任务筛选 AI 工具的导航目录。"
+  - name: Futurepedia
+    url: https://www.futurepedia.io
+    img: https://www.futurepedia.io/favicon.ico
+    description: "AI 工具目录与教程站，按用途分类并提供评测信息。"
+  - name: "There's An AI For That"
+    url: https://theresanaiforthat.com
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "按任务检索 AI 工具的导航站，收录量庞大并持续更新。"
+  - name: Toolify
+    url: https://www.toolify.ai
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "AI 工具排行榜与分类目录，含流量与热度数据。"
   - name: AI工具集导航
     url: https://ai-bot.cn/
     img: https://ai-bot.cn/favicon.ico
     description: 500+ AI工具导航大全,国内外AI工具集合网站
-  - name: Sage - Poe
-    url: https://poe.com/
-    img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: Sage - Poe
-  - name: Godmode.space
-    url: https://godmode.space/
-    img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: Godmode.space
-
-  - name: Cognosys - Your personal AI Agent
-    url: https://www.cognosys.ai/create
-    img: https://framerusercontent.com/modules/kGe5PQ65Dg7J7GN8OGx2/gwPd9Wln9Sg5rYiZ1QJB/assets/eWXiM6SACMmNKcytzyDksBgMok.png
-    description: Cognosys - Your personal AI Agent
-
   - name: 发现最酷的互联网产品工具和智能神器!
     url: https://hao.logosc.cn/
     img: https://cybermap.halo26812.eu.org/favicon.ico
     description: 神器集
-
-  - name: perplexity
-    url: https://www.perplexity.ai
-    img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: 需要魔法,主打准确度,胡说八道概率低体验优于ChatGPT,免费不限量
-  - name: 必应
-    url: https://www.bing.com/
-    img: https://www.bing.com/sa/simg/bing_p_rr_teal_min.ico
-    description: 需要魔法,基于GPT-4但是功能做了收束,免费,每轮对话不超过20个问题,每天不超过200个问题
-  - name: ora
-    url: https://ora.sh/openai/gpt4
-    img: https://ora.sh/favicon.ico
-    description: 需要魔法,GPT-4每天免费10次
-  - name: kaiber.ai
-    url: https://kaiber.ai/
-    img: https://kaiber.ai/apple-touch-icon.png
-    description: 让你的想象力成为现实，使用我们最先进的 AI 生成引擎将您的想法转化为您梦想中的视觉故事。
-  - name: 猎研SciRadar
-    url: https://www.sciradar.com/
-    img: https://www.sciradar.com/favicon.ico
-    description: 不需要魔法;每天免费1万字符
-  - name: forefront.ai
-    url: https://chat.forefront.ai/
-    img: https://uploads-ssl.webflow.com/628193922a4d18e69ba81f14/628193922a4d180bf1a81f46_Favicon.png
-    description: 更好的ChatGPT体验。注册可以免费获取GPT-4,图像生成,自定义人物,可共享聊天等更多功能
-  - name: AWS - codewhisperer
-    url: https://aws.amazon.com/cn/codewhisperer/resources/#Getting_started
-    img: https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico
-    description: Amazon CodeWhisperer 是一种采用机器学习（ML）的服务，可以根据开发人员用自然语言编写的注释和集成式开发环境（IDE）中的代码生成代码建议，帮助开发人员提高工作效率。
   - name: 无聊Ai工具导航 | —发现全球优质AIGC工具
     url: https://www.wuliaoai.com/
     img: https://cybermap.halo26812.eu.org/favicon.ico
     description: AIGC工具导航.探索全球1240+AI工具，里面有包含国内的一些免费的chatgpt工具
-  - name: Textblaze
-    url: http://Textblaze.me/ai
-    img: https://textblaze.me/favicon.ico
-    description: Text Blaze是一个Chrome插件,用于快速插入常用文本,大幅提高工作效率
-  - name: AppIcons.ai
-    url: http://AppIcons.ai
-    img: https://appicons.ai/favicon.ico
-    description: Appicons AI是一个利用人工智能技术为开发者自动生成漂亮app图标的在线工具。它简单易用,适合不同技术水平的人,可以在几分钟内生成多种专业级的图标设计,提高开发效率,降低设计成本。
-  - name: StockImg.ai
-    url: http://StockImg.ai
-    img: https://stockimg.ai/favicon.ico
-    description: 这是一个AI图像设计工具,提供许多免版税的AI生成图像素材。
-  - name: TelePortHQ
-    url: http://TelePortHQ.io
-    img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: 这是一个AI编码工具,可以自动生成代码段和脚本。
-  - name: Elai
-    url: http://Elai.io
-    img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: 这是一个AI视频工具,可以自动生成和编辑视频片段。
-  - name: Midjourney
-    url: http://Midjourney.com
-    img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: 这是一个AI图像生成工具,可以生成各种风格的AI艺术图像。
-  - name: Sendsteps
-    url: http://Sendsteps.com
-    img: https://www.sendsteps.com/favicon.ico
-    description: 这是一个AI幻灯片工具,可以自动设计和生成幻灯片。
-  - name: Remail
-    url: http://Remail.ai
-    img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: 这是一个AI电子邮件助手,可以自动回复和组织电子邮件。
-  - name: Hocoos
-    url: http://Hocoos.com
-    img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: 这是一个AI网站生成工具,可以自动设计和生成网站。
-  - name: Otter.ai
-    url: http://Otter.ai
-    img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: 这是一个AI会议工具,可以自动记录、转录和总结会议
-  - name: Segment Anything | Meta AI
-    url: https://segment-anything.com/
-    img: https://segment-anything.com/assets/M_Favicon.ico
-    description: Segment Anything是一个强大的实例分割模型,它可以根据输入提示(如点或框)生成高质量的对象遮罩,并可以用于生成图像中的所有对象的遮罩。它在1100万个遮罩和1100万张图像的大型数据集上进行了训练,在各种分割任务上的零样本性能非常强。
-myBlog:
-  - name: 彷徨的蜗牛的博客
-    url: https://blog.csdn.net/ohalo
-    img: /images/cyberblog.png
-    description: 寻找方向
+
+likeGPT:
+  - name: 填写你最喜欢使用的AI地址
+    url: https://fmhitm4i2c.feishu.cn/share/base/form/shrcnVmzXGaoLJWDf84a8fstb7c
+    img: https://sf3-scmcdn2-cn.feishucdn.com/ccm/pc/web/resource/bear/src/common/assets/favicons/icon_file_bitable_nor-32x32.0e0cacddafbc7fd2d308.png
+    description: 填写你最喜欢使用的AI地址
 
 dailyAI_oss:
   - name: unclecode/crawl4ai
@@ -423,3 +885,24 @@ dailyAI_tool:
     description: "在本地或云端运行开源大模型的工具，支持 macOS、Windows、Linux，一条命令即可启动模型。 · 2026-11-13 收录"
 
 dailyAI_model:
+
+hotTools:
+  - name: ChatGPT - 用GPT实现聊天机器人
+    url: https://www.lowff.net
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: ChatGPT是一个基于OpenAI的GPT-3 API构建的聊天机器人框架。
+  - name: Spring-cloud-gateway 中文文档
+    url: https://spring-cloud-gateway.lowff.net/
+    img: https://app.gitbook.com/public/images/icon-512.png
+    description: 该项目是基于Spring生态系统构建的API网关，包括Spring 6、Spring Boot 3和Project Reactor
+  - name: xmind转化xls工具
+    url: http://39.104.72.229/
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: xmind转化xls工具
+
+myBlog:
+  - name: 彷徨的蜗牛的博客
+    url: https://blog.csdn.net/ohalo
+    img: /images/cyberblog.png
+    description: 寻找方向
+
