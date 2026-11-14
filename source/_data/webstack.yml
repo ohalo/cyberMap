@@ -870,6 +870,14 @@ likeGPT:
     description: 填写你最喜欢使用的AI地址
 
 dailyAI_oss:
+  - name: TauricResearch/TradingAgents
+    url: https://github.com/TauricResearch/TradingAgents
+    img: https://github.com/favicon.ico
+    description: "基于多智能体大语言模型的金融交易框架，模拟分析师、研究员与交易员协作完成选股与投资决策。 · 2026-11-14 收录"
+  - name: github/spec-kit
+    url: https://github.com/github/spec-kit
+    img: https://github.com/favicon.ico
+    description: "GitHub 出品的规范驱动开发（SDD）工具包，用自然语言规范引导 AI 从需求到代码的分阶段实现。 · 2026-11-14 收录"
   - name: openclaw/openclaw
     url: https://github.com/openclaw/openclaw
     img: https://github.com/favicon.ico
@@ -884,6 +892,10 @@ dailyAI_oss:
     description: "开源浏览器智能体框架，让大模型在真实浏览器中自动点击、输入并完成任务，兼容任意 LLM。 · 2026-11-13 收录"
 
 dailyAI_tool:
+  - name: webAI
+    url: https://www.webai.com
+    img: https://www.webai.com/favicon.ico
+    description: "在 Mac 本地运行小模型的 AI 应用，可搭建多个 AI 专家（Persona）协作处理私有文档，数据不上云、不计 token 费。 · 2026-11-14 收录"
   - name: DomoAI
     url: https://domoai.app
     img: https://domoai.app/favicon.ico
