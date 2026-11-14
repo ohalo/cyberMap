@@ -54,10 +54,11 @@ busuanzi:
 custom:
   head:
     |- # 以下内容插入到<head></head>标签内，可设置多行，注意每行开头至少四个空格
-    <!-- 直接添加html内容即可 -->
-    <!-- 可设置多行 -->
+    <!-- cyberMap 重设计样式：主题目录是 submodule，所有自定义样式从这里注入 -->
+    <link rel="stylesheet" href="/css/cybermap.css">
   body: |- # 以下内容插入到</body>标签之前，可设置多行，注意每行开头至少四个空格
-    <!-- 直接添加html内容即可 -->
+    <!-- cyberMap 重设计交互增强 -->
+    <script src="/js/cybermap.js"></script>
     <!-- 可设置多行 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YGLB3LVYFC"></script>
     <script>
@@ -869,6 +870,10 @@ likeGPT:
     description: 填写你最喜欢使用的AI地址
 
 dailyAI_oss:
+  - name: openclaw/openclaw
+    url: https://github.com/openclaw/openclaw
+    img: https://github.com/favicon.ico
+    description: "开源个人 AI 助手，可在任意操作系统与平台上代用户执行真实任务，强调数据自持，MIT 协议。 · 2026-11-14 收录"
   - name: unclecode/crawl4ai
     url: https://github.com/unclecode/crawl4ai
     img: https://github.com/favicon.ico
@@ -879,12 +884,20 @@ dailyAI_oss:
     description: "开源浏览器智能体框架，让大模型在真实浏览器中自动点击、输入并完成任务，兼容任意 LLM。 · 2026-11-13 收录"
 
 dailyAI_tool:
+  - name: DomoAI
+    url: https://domoai.app
+    img: https://domoai.app/favicon.ico
+    description: "在线 AI 视频与动画创作平台，支持用文字、图片或视频素材完成生成、风格化与画质提升。 · 2026-11-14 收录"
   - name: Ollama
     url: https://ollama.com
     img: https://cybermap.halo26812.eu.org/favicon.ico
     description: "在本地或云端运行开源大模型的工具，支持 macOS、Windows、Linux，一条命令即可启动模型。 · 2026-11-13 收录"
 
 dailyAI_model:
+  - name: nv-tlabs/lyra
+    url: https://github.com/nv-tlabs/Lyra
+    img: https://github.com/favicon.ico
+    description: "英伟达开源的生成式 3D 世界模型项目，可从输入图像生成可探索的三维场景，开放代码与预训练权重。 · 2026-11-14 收录"
 
 hotTools:
   - name: ChatGPT - 用GPT实现聊天机器人
