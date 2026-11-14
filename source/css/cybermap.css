@@ -193,6 +193,21 @@ body.page-body {
   .page-container .sidebar-menu { width: var(--cm-sidebar-w); }
 }
 
+/* 主题的 .sidebar-menu.fixed .sidebar-menu-inner 是 position:fixed + width:inherit，
+   配合 ps-container 滚动条脚本在部分时序下会把 .main-menu 压缩到 66px 且右对齐（实测）。
+   这里把宽度链全部钉死，菜单文本在 flex 内优雅截断。 */
+@media (min-width: 992px) {
+  .sidebar-menu.fixed .sidebar-menu-inner {
+    width: var(--cm-sidebar-w) !important;
+    left: 0 !important;
+  }
+  .sidebar-menu .main-menu {
+    width: var(--cm-sidebar-w) !important;
+    box-sizing: border-box !important;
+  }
+  .sidebar-menu .main-menu > li { width: 100% !important; box-sizing: border-box !important; }
+}
+
 .sidebar-menu {
   background: var(--cm-sidebar) !important;
   -webkit-backdrop-filter: blur(22px) saturate(1.35);
@@ -212,6 +227,13 @@ body.night .sidebar-menu { box-shadow: 8px 0 34px rgba(0, 0, 0, .3) !important; 
 .sidebar-menu .logo-env::after { display: none !important; }
 .sidebar-menu .logo-expanded img { max-width: 178px; }
 body.night .sidebar-menu .logo-expanded img { filter: brightness(1.5) saturate(.85); }
+/* logo 图是白字设计，浅色模式下垫品牌色深底保证可读 */
+body:not(.night) .sidebar-menu .logo-expanded {
+  display: inline-block;
+  background: linear-gradient(135deg, #101828, #1c2647);
+  border-radius: 12px;
+  padding: 8px 12px 8px 10px;
+}
 
 .sidebar-menu .main-menu {
   padding: 16px 12px 26px !important;
@@ -231,7 +253,14 @@ body.night .sidebar-menu .logo-expanded img { filter: brightness(1.5) saturate(.
   border: 0 !important;
   background: transparent !important;
 }
-.sidebar-menu .main-menu span.title { font-family: var(--cm-font) !important; }
+.sidebar-menu .main-menu span.title {
+  font-family: var(--cm-font) !important;
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
 /* 父分组标题 */
 .sidebar-menu .main-menu > li > a {
