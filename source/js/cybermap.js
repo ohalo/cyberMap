@@ -140,7 +140,21 @@
       }
     }
 
-    /* ---- 2. 侧栏锚点跳转：替换主题写死的 -30 偏移 ----
+    /* ---- 2. 侧栏访问量 / 访客数统计（busuanzi）标记 ----
+       主题把这两条塞在 .main-menu 最末，结构上和「分组标题」一样是
+       `li > a > span`，会继承分组标题的胶囊底色与粗体；同时主题用
+       float:right 靠右放数字，在 flex 父级下会换行并压住下一条统计。
+       这里给这两条 li 打上 cm-stat 标记，由 CSS 单独排版。 */
+    Array.prototype.forEach.call(
+      document.querySelectorAll('#busuanzi_container_site_pv, #busuanzi_container_site_uv'),
+      function (box) {
+        var li = box.closest ? box.closest('li') : null;
+        if (li) li.classList.add('cm-stat');
+        var link = box.closest ? box.closest('a') : null;
+        if (link) link.classList.add('cm-stat-link');
+      });
+
+    /* ---- 3. 侧栏锚点跳转：替换主题写死的 -30 偏移 ----
        主题 footer.js 里是 `$("html,body").animate({scrollTop: target.offset().top - 30})`，
        偏移量写死，标题会被顶栏盖住；这里改成按顶栏实际高度留白。 */
     (function bindSmoothScroll() {
@@ -171,7 +185,7 @@
       });
     })();
 
-    /* ---- 3. Hero 品牌区 + 实时统计 ---- */
+    /* ---- 4. Hero 品牌区 + 实时统计 ---- */
     var sousuo = main.querySelector('section.sousuo');
     if (sousuo && !main.querySelector('.cyber-hero')) {
       var hero = el('div', 'cyber-hero',
@@ -191,7 +205,7 @@
       sousuo.insertBefore(hero, sousuo.firstChild);
     }
 
-    /* ---- 4. 分组标题加站点计数徽章 ---- */
+    /* ---- 5. 分组标题加站点计数徽章 ---- */
     heads.forEach(function (h) {
       if (h.querySelector('.cyber-count')) return;
       var node = h.nextElementSibling;
@@ -201,7 +215,7 @@
       h.appendChild(el('span', 'cyber-count', n + ' 个站点'));
     });
 
-    /* ---- 5. 滚动时高亮侧栏当前分组 ---- */
+    /* ---- 6. 滚动时高亮侧栏当前分组 ---- */
     var links = Array.prototype.slice.call(
       document.querySelectorAll('#main-menu a.smooth'));
     var currentId = null;
@@ -228,7 +242,7 @@
     window.addEventListener('resize', updateActive, { passive: true });
     updateActive();
 
-    /* ---- 6. 卡片入场动画（带兜底，绝不留下隐藏卡片） ---- */
+    /* ---- 7. 卡片入场动画（带兜底，绝不留下隐藏卡片） ---- */
     if (!reduceMotion && 'IntersectionObserver' in window && cols.length) {
       var io = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {

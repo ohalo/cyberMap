@@ -208,6 +208,47 @@ body.page-body {
 .user-info-navbar .user-info-menu > li.cyber-side-toggle-li { margin-right: 0 !important; }
 .user-info-navbar .user-info-menu > li.cyber-top-gh-li { margin-left: auto !important; }
 .cyber-mode-label { font-size: 13px; font-weight: 500; letter-spacing: .02em; }
+
+/* 深色模式补丁：主题在 hclonely.css 里对 body.night 单独写了一套顶栏规则
+     body.night .user-info-navbar .user-info-menu>li>a { height:76px !important }
+     以及 1px 实心边框。这组选择器比上面的浅色规则多一个 body.night，权重更高，
+     结果就是「点一下深色/浅色，顶栏按钮立刻从 32px 撑成 76px、边框变色」。
+   这里用同样的 body.night 前缀 + .navbar 再压一层，保证两种模式按钮尺寸完全一致。 */
+body.night .navbar.user-info-navbar,
+body.night .user-info-navbar {
+  min-height: 52px !important;
+  height: auto !important;
+  background: var(--cm-topbar) !important;
+}
+body.night .navbar.user-info-navbar .user-info-menu,
+body.night .user-info-navbar .user-info-menu {
+  min-height: 51px;
+  height: auto !important;
+}
+body.night .navbar.user-info-navbar .user-info-menu > li,
+body.night .user-info-navbar .user-info-menu > li {
+  min-height: 0 !important;
+  height: auto !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+body.night .navbar.user-info-navbar .user-info-menu > li > a,
+body.night .user-info-navbar .user-info-menu > li > a {
+  height: 32px !important;
+  min-height: 32px !important;
+  max-height: 32px !important;
+  padding: 0 11px !important;
+  border: 1px solid transparent !important;
+  background: transparent !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+}
+body.night .navbar.user-info-navbar .user-info-menu > li > a:hover,
+body.night .user-info-navbar .user-info-menu > li > a:hover {
+  background: var(--cm-accent-wash) !important;
+  border-color: var(--cm-border) !important;
+}
 .user-info-navbar .user-info-menu > li > a.cyber-top-gh { text-decoration: none !important; }
 .user-info-navbar .user-info-menu > li > a.cyber-side-toggle { cursor: pointer !important; }
 
@@ -468,8 +509,57 @@ body:not(.night) .sidebar-menu .logo-expanded {
 }
 
 .sidebar-menu .submit-tag a { font-size: 12.5px !important; }
+
+/* 侧栏底部的访问量 / 访客数统计（busuanzi）
+   主题原本靠 `.main-menu #busuanzi_value_site_pv { float:right }` 把数字推到右侧，
+   但父级 <a> 被改成了 flex，float 失效 → 数字换行并压在下一条统计上，
+   两个数字互相重叠，看起来就是「数字没了」。
+   这里改成 flex 两端对齐：文案在左、数字靠右并用强调色。 */
+.sidebar-menu .main-menu > li.cm-stat {
+  margin-bottom: 4px !important;
+  padding-top: 8px;
+  border-top: 1px solid var(--cm-border);
+}
+.sidebar-menu .main-menu > li.cm-stat > a {
+  display: flex !important;
+  align-items: center !important;
+  gap: 9px !important;
+  padding: 6px 12px !important;
+  border-radius: 8px !important;
+  background: transparent !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0;
+  color: var(--cm-text-faint) !important;
+}
+.sidebar-menu .main-menu > li.cm-stat > a > i {
+  width: 16px !important;
+  font-size: 12px !important;
+  color: var(--cm-text-faint) !important;
+}
 .sidebar-menu #busuanzi_container_site_pv,
-.sidebar-menu #busuanzi_container_site_uv { font-size: 12px !important; color: var(--cm-text-faint) !important; }
+.sidebar-menu #busuanzi_container_site_uv {
+  display: flex !important;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  color: var(--cm-text-faint) !important;
+  white-space: nowrap;
+}
+.sidebar-menu #busuanzi_value_site_pv,
+.sidebar-menu #busuanzi_value_site_uv {
+  float: none !important;
+  margin-left: auto !important;
+  font-weight: 700;
+  color: var(--cm-accent) !important;
+  font-variant-numeric: tabular-nums;
+}
+.sidebar-menu #busuanzi_value_site_pv:empty::before,
+.sidebar-menu #busuanzi_value_site_uv:empty::before { content: "--"; }
 
 /* ---------------------------------------------------------- Hero 与搜索 */
 .sousuo {
