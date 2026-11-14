@@ -112,13 +112,17 @@ body.page-body {
 /* ------------------------------------------------------------ 内容区骨架 */
 .page-container .main-content { padding: 0 34px 46px !important; }
 
+/* 顶栏：压到 52px 的紧凑工具条。
+   主题在 hclonely.css 里写死了 `.user-info-navbar .user-info-menu>li>a{height:76px!important}`，
+   且 xenon-custom 会用 JS 给 li 写入 inline `min-height:76px`——这两处都会把顶栏撑成
+   76px 高的大圆钮，这里用更高优先级 + !important 全部压回紧凑尺寸。 */
 .navbar.user-info-navbar {
   position: sticky !important;
   top: 0;
-  z-index: 40;
-  min-height: 56px !important;
-  margin: 0 -34px 6px !important;
-  padding: 0 22px !important;
+  z-index: 60;
+  min-height: 52px !important;
+  margin: 0 -34px 8px !important;
+  padding: 0 14px !important;
   background: var(--cm-topbar) !important;
   -webkit-backdrop-filter: blur(18px) saturate(1.4);
   backdrop-filter: blur(18px) saturate(1.4);
@@ -129,91 +133,209 @@ body.page-body {
 
 .user-info-navbar .user-info-menu {
   display: flex !important;
-  align-items: center;
+  align-items: center !important;
   gap: 6px;
+  float: none !important;   /* 主题写死了 float:left，会让右侧按钮无法靠右 */
+  width: 100% !important;
   margin: 0 !important;
-  min-height: 55px;
+  padding: 0 !important;
+  min-height: 51px;
+  height: auto !important;
 }
 
-.user-info-navbar .user-info-menu > li > a {
-  color: var(--cm-text-soft) !important;
+/* 覆盖主题 JS 写入的 inline min-height:76px（!important 可压过 inline style） */
+.user-info-navbar .user-info-menu > li {
+  display: flex !important;
+  align-items: center !important;
+  float: none !important;
+  min-height: 0 !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
   border: 0 !important;
   background: transparent !important;
-  border-radius: 10px;
-  padding: 8px 11px !important;
-  min-height: 0 !important;
-  line-height: 1.4 !important;
-  transition: background .2s ease, color .2s ease, transform .2s ease;
-}
-.user-info-navbar .user-info-menu > li > a:hover {
-  background: var(--cm-accent-wash) !important;
-  color: var(--cm-accent) !important;
 }
 
-/* 单一语言选项无意义，隐藏；GitHub 角标改为顶栏按钮 */
-.language-switcher { display: none !important; }
+/* 通用顶栏按钮：32px 高的克制方角钮，不再是夸张的大圆钮 */
+.navbar.user-info-navbar .user-info-menu > li > a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center;
+  gap: 6px;
+  height: 32px !important;
+  min-height: 32px !important;
+  max-width: 220px;
+  padding: 0 11px !important;
+  margin: 0 !important;
+  border: 1px solid transparent !important;
+  background: transparent !important;
+  border-radius: 9px !important;
+  font-family: var(--cm-font) !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+  color: var(--cm-text-muted) !important;
+  text-decoration: none !important;
+  transition: background .18s ease, color .18s ease, border-color .18s ease;
+}
+.navbar.user-info-navbar .user-info-menu > li > a:hover {
+  background: var(--cm-accent-wash) !important;
+  border-color: var(--cm-border) !important;
+  color: var(--cm-text) !important;
+}
+.navbar.user-info-navbar .user-info-menu > li > a i {
+  font-size: 14px !important;
+  color: currentColor !important;
+}
+.navbar.user-info-navbar .user-info-menu > li > a svg {
+  width: 15px !important;
+  height: 15px !important;
+}
+.navbar.user-info-navbar .user-info-menu > li > a svg path { fill: currentColor !important; }
+
+/* 单一语言选项无意义，隐藏；GitHub 角标改为顶栏按钮
+   （选择器要压过上面的 `.user-info-navbar .user-info-menu > li` 通用规则） */
+.user-info-navbar .user-info-menu > li.language-switcher,
+.user-info-navbar .user-info-menu > li.dropdown.language-switcher { display: none !important; }
 .github-corner { display: none !important; }
 
-.cyber-top-gh-li { margin-left: auto !important; }
+/* 主题自带的汉堡按钮在桌面端被侧栏遮挡，且会与新版折叠逻辑互相干扰，直接隐藏 */
+.user-info-navbar .user-info-menu > li.hidden-sm.hidden-xs { display: none !important; }
 
-.user-info-navbar .user-info-menu > li.switch-mode > a {
-  display: inline-flex !important;
-  align-items: center;
-  gap: 8px;
-  border: 1px solid var(--cm-border) !important;
-  background: var(--cm-surface) !important;
-  border-radius: 999px !important;
-  padding: 7px 13px !important;
-}
-.user-info-navbar .user-info-menu > li.switch-mode > a svg { width: 15px; height: 15px; opacity: .85; }
-.user-info-navbar .user-info-menu > li.switch-mode > a svg path { fill: var(--cm-text-soft); }
-.user-info-navbar .user-info-menu > li.switch-mode > a > i { font-size: 14px; color: var(--cm-accent); }
-.cyber-mode-label { font-size: 12px; font-weight: 600; letter-spacing: .02em; }
-
-.user-info-navbar .user-info-menu > li > a.cyber-top-gh {
-  display: inline-flex !important;
-  align-items: center;
-  gap: 7px;
-  border: 1px solid var(--cm-border) !important;
-  background: var(--cm-surface) !important;
-  border-radius: 999px !important;
-  padding: 7px 13px !important;
-  font-size: 12px;
-  font-weight: 600;
-  text-decoration: none;
-}
-.user-info-navbar .user-info-menu > li > a.cyber-top-gh:hover {
-  color: var(--cm-accent) !important;
-  background: var(--cm-accent-wash) !important;
-}
-.user-info-navbar .user-info-menu > li > a.cyber-top-gh i { font-size: 14px; }
+/* 折叠按钮靠左（紧贴侧栏），GitHub / 深色靠右
+   注意：flex 行里只能留一个 auto 外边距，否则自由空间会被两边平分；
+   同时选择器要压过上面的 `.user-info-navbar .user-info-menu > li { margin:0 }`。 */
+.user-info-navbar .user-info-menu > li.cyber-side-toggle-li { margin-right: 0 !important; }
+.user-info-navbar .user-info-menu > li.cyber-top-gh-li { margin-left: auto !important; }
+.cyber-mode-label { font-size: 13px; font-weight: 500; letter-spacing: .02em; }
+.user-info-navbar .user-info-menu > li > a.cyber-top-gh { text-decoration: none !important; }
+.user-info-navbar .user-info-menu > li > a.cyber-side-toggle { cursor: pointer !important; }
 
 /* ---------------------------------------------------------------- 侧栏 */
+/* 桌面端把侧栏彻底从文档流里拿出来，做成真正的视口固定栏：
+   主题原本用 table-cell（.page-container 是 display:table），侧栏高度会跟着
+   主内容一起长到 7500+px，滚动时整条功能栏跟着跑；这里改成 fixed + 独立滚动。
+
+   同时必须把 .main-content 从 table-cell 改成 block：table-cell 会忽略 margin-left，
+   导致主内容（以及顶栏）仍然从 x=0 开始、被固定侧栏压住。 */
 @media (min-width: 992px) {
-  .page-container .sidebar-menu { width: var(--cm-sidebar-w); }
+  .page-container {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 100vh;
+  }
+  .page-container .main-content {
+    display: block !important;
+    margin-left: var(--cm-sidebar-w) !important;
+    margin-right: 0 !important;
+    width: auto !important;
+    max-width: none !important;
+    height: auto !important;
+    padding: 0 34px 46px !important;
+  }
+  .page-container .sidebar-menu.fixed {
+    display: block !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    height: 100vh !important;
+    width: var(--cm-sidebar-w) !important;
+    overflow: visible !important;
+    z-index: 1030;
+  }
+  .page-container .sidebar-menu.fixed .sidebar-menu-inner {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100vh !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .page-container .sidebar-menu.fixed .logo-env { flex: 0 0 auto !important; }
+  .page-container .sidebar-menu.fixed .main-menu {
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+  }
+  /* 主题的 hamburger 只在移动端有意义，桌面端隐藏（改由顶栏按钮控制收起/展开） */
+  .sidebar-menu .mobile-menu-toggle { display: none !important; }
 }
 
-/* 主题的 .sidebar-menu.fixed .sidebar-menu-inner 是 position:fixed + width:inherit，
-   配合 ps-container 滚动条脚本在部分时序下会把 .main-menu 压缩到 66px 且右对齐（实测）。
-   这里把宽度链全部钉死，菜单文本在 flex 内优雅截断。 */
+/* 收起态：只留图标条，子菜单悬停浮出 */
 @media (min-width: 992px) {
-  .sidebar-menu.fixed .sidebar-menu-inner {
-    width: var(--cm-sidebar-w) !important;
-    left: 0 !important;
+  body.cm-collapsed { --cm-sidebar-w: 74px; }
+  body.cm-collapsed .page-container .sidebar-menu.fixed .logo-expanded { display: none !important; }
+  body.cm-collapsed .page-container .sidebar-menu.fixed .logo-collapsed { display: block !important; }
+  body.cm-collapsed .page-container .sidebar-menu.fixed .logo-env { padding: 14px 8px 12px !important; text-align: center; }
+  body.cm-collapsed .page-container .sidebar-menu.fixed .logo-env .logo-collapsed img { max-width: 36px !important; }
+
+  /* 收起后菜单只有图标，改为不裁剪的定位方式，浮层才能飞出侧栏不被切掉 */
+  body.cm-collapsed .page-container .sidebar-menu.fixed .sidebar-menu-inner {
+    position: relative !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    overflow: visible !important;
   }
-  .sidebar-menu .main-menu {
-    width: var(--cm-sidebar-w) !important;
-    box-sizing: border-box !important;
+  body.cm-collapsed .page-container .sidebar-menu.fixed .main-menu {
+    flex: 0 0 auto !important;
+    overflow: visible !important;
+    padding: 10px 8px 20px !important;
   }
-  .sidebar-menu .main-menu > li { width: 100% !important; box-sizing: border-box !important; }
+  body.cm-collapsed .page-container .sidebar-menu.fixed .main-menu > li { margin-bottom: 4px !important; }
+  /* 所有文字（含访问量统计、about）都收起，只留图标 */
+  body.cm-collapsed .page-container .sidebar-menu.fixed .main-menu > li > a > span { display: none !important; }
+  body.cm-collapsed .page-container .sidebar-menu.fixed .main-menu > li > a {
+    justify-content: center !important;
+    padding: 8px 0 !important;
+    min-height: 34px;
+  }
+  body.cm-collapsed .page-container .sidebar-menu.fixed .main-menu > li > a > i { width: auto !important; font-size: 16px; }
+  body.cm-collapsed .page-container .sidebar-menu.fixed .main-menu > li > a.fas.fa-angle-down::before,
+  body.cm-collapsed .page-container .sidebar-menu.fixed .main-menu > li > a.fa-angle-down::before { display: none !important; }
+  body.cm-collapsed .page-container .sidebar-menu.fixed .main-menu > li { position: relative; }
+  body.cm-collapsed .page-container .sidebar-menu.fixed .main-menu > li > ul {
+    position: absolute !important;
+    left: calc(100% + 16px) !important;
+    top: 0 !important;
+    min-width: 208px !important;
+    width: auto !important;
+    padding: 8px !important;
+    margin: 0 !important;
+    background: var(--cm-surface-solid) !important;
+    border: 1px solid var(--cm-border) !important;
+    border-radius: 12px !important;
+    box-shadow: var(--cm-shadow-hover) !important;
+    display: none !important;
+    z-index: 1040;
+  }
+  body.cm-collapsed .page-container .sidebar-menu.fixed .main-menu > li:hover > ul,
+  body.cm-collapsed .page-container .sidebar-menu.fixed .main-menu > li:focus-within > ul { display: block !important; }
+  body.cm-collapsed .page-container .sidebar-menu.fixed .main-menu > li > ul > li > a.smooth {
+    justify-content: flex-start !important;
+    padding: 8px 12px !important;
+  }
+  body.cm-collapsed .page-container .sidebar-menu.fixed .main-menu > li > ul > li > a.smooth > i { width: 16px !important; }
 }
 
 .sidebar-menu {
   background: var(--cm-sidebar) !important;
-  -webkit-backdrop-filter: blur(22px) saturate(1.35);
-  backdrop-filter: blur(22px) saturate(1.35);
   border-right: 1px solid var(--cm-border) !important;
   box-shadow: 8px 0 34px rgba(19, 32, 62, .05) !important;
+}
+/* 毛玻璃放在 inner 上：backdrop-filter 会让所在元素成为 fixed 后代的包含块，
+   放在 .sidebar-menu（高 7536px）上会导致侧栏随页面滚动跑出视口。 */
+.sidebar-menu .sidebar-menu-inner {
+  -webkit-backdrop-filter: blur(22px) saturate(1.35);
+  backdrop-filter: blur(22px) saturate(1.35);
 }
 body.night .sidebar-menu { box-shadow: 8px 0 34px rgba(0, 0, 0, .3) !important; }
 
@@ -519,8 +641,10 @@ button#search-btn.search-btn {
   font-weight: 750 !important;
   letter-spacing: .01em;
   color: var(--cm-text) !important;
-  scroll-margin-top: 78px;
+  scroll-margin-top: 66px;
 }
+/* 锚点实际落在标题里的图标上（id 挂在 i.linecons-tag 上），要一起留出顶栏高度 */
+.main-content > h4.text-gray > i.linecons-tag { scroll-margin-top: 66px; }
 .main-content > h4.text-gray::before {
   content: "";
   position: absolute;
@@ -722,7 +846,14 @@ button#search-btn.search-btn {
 /* ------------------------------------------------------------ 响应式 */
 @media (max-width: 991px) {
   .page-container .main-content { padding: 0 18px 36px !important; }
-  .navbar.user-info-navbar { margin: 0 -18px 6px !important; padding: 0 14px !important; }
+  /* 主题在窄屏把整条 navbar 隐藏了，导致深色模式 / GitHub 无法使用，这里放回来 */
+  .navbar.user-info-navbar {
+    display: block !important;
+    margin: 0 -18px 6px !important;
+    padding: 0 14px !important;
+  }
+  /* 窄屏侧栏是抽屉，不需要折叠按钮 */
+  .user-info-navbar .user-info-menu > li.cyber-side-toggle-li { display: none !important; }
   .main-content > .row { grid-template-columns: repeat(auto-fill, minmax(196px, 1fr)); gap: 12px; }
   .cyber-hero { padding: 26px 0 20px; }
   .main-content > h4.text-gray { margin-top: 28px !important; font-size: 17.5px !important; }
