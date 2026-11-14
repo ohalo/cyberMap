@@ -1,0 +1,200 @@
+/* ==========================================================================
+   AI 插件排行榜 · cyberMap 嵌入层
+   --------------------------------------------------------------------------
+   只在「发布到 cyberMap 的 source/rank/ 副本」里注入；排行榜独立站不加载。
+   自包含：不依赖 /css/cybermap.css，单独打开副本也不会 404。
+   作用：1) 与 cyberMap 一致的配色 / 字体 / 深浅色；2) 站点级导航条。
+   ========================================================================== */
+
+:root {
+  --cm-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+             "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  --cm-bg: #f4f7fc;
+  --cm-glow-a: rgba(56, 189, 248, .20);
+  --cm-glow-b: rgba(167, 139, 250, .18);
+  --cm-grid: rgba(15, 23, 42, .028);
+  --cm-surface: rgba(255, 255, 255, .78);
+  --cm-surface-solid: #ffffff;
+  --cm-topbar: rgba(255, 255, 255, .72);
+  --cm-border: rgba(15, 23, 42, .09);
+  --cm-border-strong: rgba(15, 23, 42, .15);
+  --cm-text: #1b2436;
+  --cm-text-soft: #45526b;
+  --cm-text-muted: #6b7790;
+  --cm-text-faint: #9aa5b9;
+  --cm-accent: #4f46e5;
+  --cm-accent-2: #06b6d4;
+  --cm-accent-soft: rgba(79, 70, 229, .34);
+  --cm-accent-wash: rgba(79, 70, 229, .08);
+  --cm-chip: rgba(79, 70, 229, .09);
+  --cm-shadow-sm: 0 2px 10px rgba(19, 32, 62, .05);
+  --cm-shadow-topbar: 0 8px 28px rgba(19, 32, 62, .06);
+}
+
+body.night {
+  --cm-bg: #080d1a;
+  --cm-glow-a: rgba(34, 211, 238, .16);
+  --cm-glow-b: rgba(139, 92, 246, .18);
+  --cm-grid: rgba(148, 163, 184, .045);
+  --cm-surface: rgba(17, 25, 44, .72);
+  --cm-surface-solid: #121a2e;
+  --cm-topbar: rgba(12, 19, 36, .76);
+  --cm-border: rgba(148, 163, 184, .14);
+  --cm-border-strong: rgba(148, 163, 184, .26);
+  --cm-text: #eef3ff;
+  --cm-text-soft: #c3cee4;
+  --cm-text-muted: #98a6c2;
+  --cm-text-faint: #6d7c99;
+  --cm-accent: #7c8cff;
+  --cm-accent-2: #22d3ee;
+  --cm-accent-soft: rgba(124, 140, 255, .55);
+  --cm-accent-wash: rgba(124, 140, 255, .12);
+  --cm-chip: rgba(124, 140, 255, .15);
+  --cm-shadow-sm: 0 2px 14px rgba(0, 0, 0, .28);
+  --cm-shadow-topbar: 0 10px 30px rgba(0, 0, 0, .3);
+}
+
+/* 覆写排行榜自身 style.css 的变量，让内容区融入导航站外观 */
+body.rank-embedded {
+  --bg: var(--cm-bg);
+  --surface: var(--cm-surface);
+  --line: var(--cm-border);
+  --line2: var(--cm-border-strong);
+  --text: var(--cm-text);
+  --muted: var(--cm-text-muted);
+  --hint: var(--cm-text-faint);
+  --blue: var(--cm-accent);
+  --blue-bg: var(--cm-chip);
+  --green: #2f7d32;
+  --red: #b3261e;
+  --amber: #854f0b;
+  --amber-bg: #faeeda;
+
+  font-family: var(--cm-font);
+  background-color: var(--cm-bg) !important;
+  background-image:
+    radial-gradient(1000px 560px at 10% -10%, var(--cm-glow-a), transparent 72%),
+    radial-gradient(860px 520px at 96% 2%, var(--cm-glow-b), transparent 70%),
+    linear-gradient(to right, var(--cm-grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--cm-grid) 1px, transparent 1px) !important;
+  background-size: auto, auto, 32px 32px, 32px 32px;
+  background-attachment: fixed;
+  color: var(--cm-text) !important;
+  -webkit-font-smoothing: antialiased;
+}
+body.rank-embedded .wrap { padding-top: 24px; }
+body.rank-embedded .stat,
+body.rank-embedded .score-box,
+body.rank-embedded .card {
+  box-shadow: var(--cm-shadow-sm);
+  border: 1px solid var(--cm-border);
+}
+body.rank-embedded .site-head h1 { color: var(--cm-text); }
+body.rank-embedded .site-foot { color: var(--cm-text-faint); }
+/* 顶部导航条已覆盖这些入口，避免同一屏出现两遍 */
+body.rank-embedded .head-links { display: none; }
+body.rank-embedded .site-head { margin-bottom: 20px; }
+body.rank-embedded.night { --green: #7ee08a; --red: #ff9b95; }
+
+/* 深色模式下原站写死的浅色底要单独压掉 */
+body.rank-embedded.night .badge.ok { background: rgba(63, 122, 71, .22); color: #9fd6a4; }
+body.rank-embedded.night .badge.warn,
+body.rank-embedded.night .notice,
+body.rank-embedded.night .method-foot { background: rgba(133, 79, 11, .20); color: #e2b26a; }
+body.rank-embedded.night .row:nth-child(-n+3) .rank { color: var(--cm-accent); }
+body.rank-embedded.night input[type=search],
+body.rank-embedded.night select,
+body.rank-embedded.night .tab { background: var(--cm-surface-solid); }
+
+/* ------------------------------------------------------------- 导航条 */
+.cm-rank-bar {
+  position: sticky;
+  top: 0;
+  z-index: 80;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 52px;
+  padding: 7px 20px;
+  background: var(--cm-topbar);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  backdrop-filter: blur(18px) saturate(1.4);
+  border-bottom: 1px solid var(--cm-border);
+  box-shadow: var(--cm-shadow-topbar);
+  font-family: var(--cm-font);
+}
+.cm-rank-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex: 0 0 auto;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--cm-text-soft) !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+.cm-rank-home:hover { color: var(--cm-accent) !important; }
+.cm-rank-home .cm-rank-back { font-size: 15px; line-height: 1; }
+.cm-rank-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.cm-rank-nav::-webkit-scrollbar { display: none; }
+.cm-rank-nav a {
+  flex: 0 0 auto;
+  padding: 6px 11px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--cm-text-muted) !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+.cm-rank-nav a:hover {
+  background: var(--cm-accent-wash);
+  color: var(--cm-accent) !important;
+}
+.cm-rank-nav a.on {
+  background: var(--cm-chip);
+  border-color: var(--cm-accent-soft);
+  color: var(--cm-accent) !important;
+}
+.cm-rank-side { display: flex; align-items: center; gap: 8px; flex: 0 0 auto; }
+.cm-rank-stamp {
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: var(--cm-chip);
+  color: var(--cm-accent);
+  font-size: 10.5px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.cm-rank-theme {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--cm-border);
+  border-radius: 9px;
+  background: var(--cm-surface-solid);
+  color: var(--cm-text-muted);
+  cursor: pointer;
+  font-family: inherit;
+}
+.cm-rank-theme:hover { color: var(--cm-accent); border-color: var(--cm-accent-soft); }
+.cm-rank-theme svg { width: 15px; height: 15px; }
+
+@media (max-width: 760px) {
+  .cm-rank-bar { gap: 8px; padding: 7px 12px; }
+  .cm-rank-stamp { display: none; }
+  .cm-rank-home { font-size: 0; gap: 0; }
+  .cm-rank-home .cm-rank-back { font-size: 17px; }
+  body.rank-embedded .wrap { padding: 20px 14px 44px; }
+}

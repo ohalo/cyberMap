@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 插件排行榜 · 每日更新 Top 100</title>
+<meta name="description" content="Codex / Claude Code / dsh / WorkBuddy 等 AI Agent 插件的每日排行榜，只采用公开可核验数据，评分算法完全公开。">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/rank-frame.css">
+</head>
+<body class="rank-embedded"><header class="cm-rank-bar">
+  <a class="cm-rank-home" href="/" title="返回 cyberMap 网址导航"><span class="cm-rank-back">←</span> cyberMap 导航</a>
+  <nav class="cm-rank-nav" aria-label="AI 插件排行榜导航">
+    <a href="/rank/" data-key="all">总榜 Top 100</a>
+    <a href="/rank/?platform=codex" data-key="platform">Codex</a>
+    <a href="/rank/?platform=claude_code" data-key="platform">Claude Code</a>
+    <a href="/rank/?platform=dsh" data-key="platform">dsh</a>
+    <a href="/rank/?platform=workbuddy" data-key="platform">WorkBuddy</a>
+    <a href="/rank/marketplace.html">官方市场</a>
+    <a href="/rank/methodology.html">评分口径</a>
+  </nav>
+  <div class="cm-rank-side">
+    <span class="cm-rank-stamp">每日 08:00 更新</span>
+    <button class="cm-rank-theme" id="cm-rank-theme" type="button" title="切换深浅色" aria-label="切换深浅色"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.3 3a9 9 0 1 0 8.7 11.4A7.2 7.2 0 0 1 12.3 3z"/></svg></button>
+  </div>
+</header>
+
+<main class="wrap">
+<header class="site-head">
+  <div>
+    <h1>AI 插件排行榜</h1>
+    <p class="sub">Codex · Claude Code · dsh · WorkBuddy 的 AI Agent 插件生态，每日 08:00 更新，总榜与各平台分榜各取前 100。</p>
+  </div>
+  <div class="head-links">
+    <a class="method-link" href="marketplace.html">官方市场目录 ↗</a>
+    <a class="method-link" href="methodology.html">算法与数据口径 ↗</a>
+  </div>
+</header>
+
+<section class="stats" id="stats">
+  <div class="stat"><span>收录插件</span><strong id="stat-total">—</strong></div>
+  <div class="stat"><span>总榜条目</span><strong id="stat-top">—</strong></div>
+  <div class="stat"><span>官方市场收录</span><strong id="stat-official">—</strong></div>
+  <div class="stat"><span>平台数</span><strong id="stat-platforms">—</strong></div>
+  <div class="stat"><span>数据更新</span><strong id="stat-date">—</strong></div>
+</section>
+
+<div class="notice" id="baseline-note" hidden>
+  当前为首日基线：因缺少历史快照，「势能」维度暂不参与评分，权重已在其余维度间重新归一。明日起显示排名变化与趋势曲线。
+</div>
+
+<section class="toolbar">
+  <div class="tabs" id="tabs"></div>
+  <div class="filters">
+    <input id="search" type="search" placeholder="搜索插件名、作者或描述…" autocomplete="off">
+    <select id="sort">
+      <option value="score">按综合分</option>
+      <option value="stars">按 Stars</option>
+      <option value="pushed">按最近更新</option>
+    </select>
+    <label class="check"><input type="checkbox" id="official-only"> 只看官方收录</label>
+  </div>
+</section>
+
+<div class="list-head"><span>排名</span><span>插件</span><span>平台</span><span>综合分</span><span>变化</span><span>Stars</span></div>
+<div id="list" class="list"><div class="loading">正在加载榜单数据…</div></div>
+<div id="list-foot" class="list-foot"></div>
+
+<footer class="site-foot">
+  全部指标来自 GitHub REST / Search API 与 npm downloads API 的当日快照，第三方榜单数字不采信；
+  每条记录都保留采集 query 与时间戳，可在详情页逐点回溯。
+  分数是当日相对分位，跨日请比较排名与排名变化，不要比较分数绝对值。
+  <span id="foot-time"></span>
+</footer>
+</main>
+<script src="assets/app.js"></script>
+<script src="assets/rank-frame.js"></script>
+</body>
+</html>

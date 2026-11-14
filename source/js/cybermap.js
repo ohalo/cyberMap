@@ -256,6 +256,80 @@
         cols.forEach(function (c) { c.classList.add('is-visible'); });
       }, 2200);
     }
+
+    /* ---- 8. 站点功能入口 · AI 插件排行榜 ----
+       刻意不写进 webstack.yml 的 menu:：那边全是「#锚点 + 网址卡片」，
+       榜单是会跳到独立页面的站点级工具，混进去会被当成第 6 个父分类。
+       这里放在分类树之外的三处，视觉上用强调色胶囊 / 卡片 + 显式标题隔离。 */
+    (function injectRankEntries() {
+      var RANK = '/rank/';
+      var PLATFORMS = [
+        ['codex', 'Codex 分榜', 'fas fa-terminal'],
+        ['claude_code', 'Claude Code', 'fas fa-code'],
+        ['dsh', 'dsh 分榜', 'fas fa-bolt'],
+        ['workbuddy', 'WorkBuddy', 'fas fa-layer-group']
+      ];
+
+      /* 8.1 顶栏常驻主按钮：插在 GitHub 之前（GitHub 带 margin-left:auto 靠右） */
+      var ul2 = document.querySelector('.user-info-navbar .user-info-menu');
+      if (ul2 && !ul2.querySelector('.cm-rank-li')) {
+        var li = el('li', 'cm-rank-li hover-line');
+        li.appendChild(el('a', 'cm-rank-btn',
+          '<i class="fas fa-trophy" aria-hidden="true"></i><span>AI 插件榜</span>' +
+          '<span class="cm-rank-pill">Top 100</span>'));
+        var rankLink = li.firstChild;
+        rankLink.setAttribute('href', RANK);
+        rankLink.setAttribute('title', 'AI 插件排行榜 · 每日 08:00 自动更新');
+        rankLink.setAttribute('aria-label', '打开 AI 插件排行榜');
+        var ghLi = ul2.querySelector('.cyber-top-gh-li');
+        ul2.insertBefore(li, ghLi || ul2.querySelector('li.switch-mode') || null);
+      }
+
+      /* 8.2 侧栏：#main-menu 之前的独立面板，不参与锚点高亮 */
+      var inner = document.querySelector('.sidebar-menu .sidebar-menu-inner');
+      var menu = document.getElementById('main-menu');
+      if (inner && menu && !inner.querySelector('.cm-features')) {
+        var chips = PLATFORMS.map(function (p) {
+          return '<a class="cm-feature-chip" href="' + RANK + '?platform=' + p[0] +
+            '" title="' + p[1] + '"><i class="' + p[2] + '" aria-hidden="true"></i>' + p[1] + '</a>';
+        }).join('') +
+          '<a class="cm-feature-chip" href="' + RANK + 'marketplace.html" title="官方市场目录">' +
+          '<i class="fas fa-store" aria-hidden="true"></i>官方市场</a>' +
+          '<a class="cm-feature-chip" href="' + RANK + 'methodology.html" title="算法与数据口径">' +
+          '<i class="fas fa-balance-scale" aria-hidden="true"></i>评分口径</a>';
+        var panel = el('div', 'cm-features',
+          '<div class="cm-features-label"><span>站点功能</span>' +
+          '<span class="cm-features-sep"></span><span class="cm-features-hint">非网址分类</span></div>' +
+          '<a class="cm-feature-main" href="' + RANK + '" title="AI 插件排行榜总榜 Top 100">' +
+          '<i class="fas fa-trophy" aria-hidden="true"></i>' +
+          '<span class="cm-feature-main-txt">AI 插件排行榜<small>每日 08:00 自动更新</small></span>' +
+          '<span class="cm-feature-arrow">›</span></a>' +
+          '<div class="cm-feature-chips">' + chips + '</div>' +
+          '<div class="cm-features-note">榜单是独立页面，不属于下方网址分类；' +
+          '数据来自 GitHub / npm 公开 API，逐条可核验。</div>');
+        inner.insertBefore(panel, menu);
+      }
+
+      /* 8.3 首页 CTA：搜索区之后、第一个分类卡片之前 */
+      var sousuo2 = main.querySelector('section.sousuo');
+      if (sousuo2 && !main.querySelector('.cm-feature-cta')) {
+        var cta = el('div', 'cm-feature-cta',
+          '<div class="cm-cta-icon"><i class="fas fa-trophy" aria-hidden="true"></i></div>' +
+          '<div class="cm-cta-text">' +
+          '<span class="cm-cta-tag">站点功能 · 非网址分类</span>' +
+          '<strong>AI 插件排行榜</strong>' +
+          '<span class="cm-cta-desc">Codex / Claude Code / dsh / WorkBuddy 生态 · ' +
+          '总榜与各分榜各取前 100 · 每日 08:00 更新</span>' +
+          '</div>' +
+          '<div class="cm-cta-links">' +
+          '<a class="cm-cta-link primary" href="' + RANK + '">查看总榜 →</a>' +
+          '<a class="cm-cta-link" href="' + RANK + '?platform=codex">平台分榜</a>' +
+          '<a class="cm-cta-link" href="' + RANK + 'marketplace.html">官方市场</a>' +
+          '<a class="cm-cta-link" href="' + RANK + 'methodology.html">评分口径</a>' +
+          '</div>');
+        sousuo2.parentNode.insertBefore(cta, sousuo2.nextSibling);
+      }
+    })();
   }
 
   if (document.readyState === 'loading') {

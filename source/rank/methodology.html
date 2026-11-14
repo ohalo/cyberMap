@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>算法与数据口径 · AI 插件排行榜</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/rank-frame.css">
+</head>
+<body class="rank-embedded"><header class="cm-rank-bar">
+  <a class="cm-rank-home" href="/" title="返回 cyberMap 网址导航"><span class="cm-rank-back">←</span> cyberMap 导航</a>
+  <nav class="cm-rank-nav" aria-label="AI 插件排行榜导航">
+    <a href="/rank/" data-key="all">总榜 Top 100</a>
+    <a href="/rank/?platform=codex" data-key="platform">Codex</a>
+    <a href="/rank/?platform=claude_code" data-key="platform">Claude Code</a>
+    <a href="/rank/?platform=dsh" data-key="platform">dsh</a>
+    <a href="/rank/?platform=workbuddy" data-key="platform">WorkBuddy</a>
+    <a href="/rank/marketplace.html">官方市场</a>
+    <a href="/rank/methodology.html">评分口径</a>
+  </nav>
+  <div class="cm-rank-side">
+    <span class="cm-rank-stamp">每日 08:00 更新</span>
+    <button class="cm-rank-theme" id="cm-rank-theme" type="button" title="切换深浅色" aria-label="切换深浅色"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.3 3a9 9 0 1 0 8.7 11.4A7.2 7.2 0 0 1 12.3 3z"/></svg></button>
+  </div>
+</header>
+
+<main class="wrap prose">
+<nav class="crumb"><a href="index.html">← 返回总榜</a><span>/</span><span>算法与数据口径</span></nav>
+<h1>算法与数据口径</h1>
+<p class="sub">这份榜单的每个名次都应该能被复算、被质疑、被回溯。下面把口径全部摊开。</p>
+
+<h2>一、这个榜是什么，不是什么</h2>
+<p>它统计的是 <strong>在 GitHub 上有公开可核验仓库、且属于某个 AI Agent 平台插件生态的项目</strong>，按当日公开指标排序。它不是官方下载量榜，也不代表插件的实际使用人数或质量评审。</p>
+<p>数据分两层：<strong>榜单页</strong>（本页下述评分口径，总榜与各分榜各取前 100）和 <a href="marketplace.html">官方市场目录页</a>（各平台本地市场清单的全量条目，不做分数排序）。</p>
+<div class="callout">最重要的局限：Codex、WorkBuddy 等平台的官方市场里存在大量<strong>没有公开 GitHub 仓库</strong>的闭源技能、连接器与专家包。它们<strong>不参与总榜分数排序</strong>（否则「中性缺失」会把零数据实体抬进 Top 100），但会在官方市场目录页完整列出。这是数据可得性的边界，不是遗漏，也不会用估算值补齐。</div>
+
+<h2>二、评分公式</h2>
+<div class="formula">Score = 100 × Σ( wᵢ · norm(xᵢ) ) / Σ( wᵢ 可用 )</div>
+<p><code>norm</code> 用<strong>当日全样本分位</strong>（并列取平均名次），而不是除以最大值，避免头部仓库碾压长尾；stars / forks / 下载量这类长尾指标先取 <code>log1p</code>。四个维度：</p>
+<table>
+<thead><tr><th>维度</th><th>原始权重</th><th>构成</th><th>数据来源</th></tr></thead>
+<tbody>
+<tr><td>热度 P</td><td>0.40</td><td>stars 0.60 + forks 0.30 + npm 周下载 0.10（子项按可用性重归一）</td><td>GitHub API / npm downloads API</td></tr>
+<tr><td>活跃 A</td><td>0.25</td><td><code>exp(−Δt / 90)</code>，Δt 为最近 push 距今天数</td><td>GitHub <code>pushed_at</code></td></tr>
+<tr><td>势能 M</td><td>0.25</td><td>与 ≤7 天前历史快照比较的 stars 增量分位</td><td>本站 <code>data/history/</code> 快照</td></tr>
+<tr><td>质量 Q</td><td>0.10</td><td>license 0.25、描述完整度 0.20、主页 0.15、topics 0.15、wiki/pages 0.15、语言 0.10</td><td>GitHub 仓库元数据</td></tr>
+</tbody>
+</table>
+
+<h2>三、缺失数据怎么处理</h2>
+<ul>
+<li><strong>不填 0，不估算。</strong>某个维度整体不可用时（例如首日还没有历史快照 → 势能 M 缺失），该维度权重从分母剔除，剩余维度重新归一，并在详情页该维度标 <code>n/a 权重已重归一</code>。</li>
+<li>首日有效权重为 <strong>P 0.5333 / A 0.3333 / Q 0.1333</strong>；从第二天起恢复为 0.40 / 0.25 / 0.25 / 0.10。</li>
+<li>npm 下载量只在仓库主页明确指向 <code>npmjs.com/package/…</code> 时才取，不靠仓库名猜包名；取不到就标 <code>n/a</code>。</li>
+<li>详情页的「数据置信度」按 license / 主页 / 描述长度 / topics 数 / 下载量五项命中数计算，分为高（≥4）、中（≥2）、低。</li>
+</ul>
+
+<h2>四、去重与平台归属</h2>
+<ul>
+<li>唯一实体 <code>canonical = owner/repo</code>（小写）。同一个仓库被多个平台 topic 命中时合并为一个实体，<code>platforms</code> 保留多值 —— 总榜不会被同一插件刷屏。</li>
+<li>平台归属 = 采集 query 来源 <strong>∪</strong> 仓库 topics 交叉命中。例如同时打了 <code>claude-code</code> 与 <code>dsh-plugin</code> 的仓库，会同时出现在两个分榜，但在总榜里只算一个。</li>
+<li>总榜与各平台分榜各自取前 100。某平台样本不足 100 时<strong>如实显示实际条数并标注</strong>，不降低标准凑数。</li>
+</ul>
+
+<h2>五、准入与反作弊</h2>
+<ul>
+<li>剔除：已归档仓库、fork 仓库、无有效描述、资源/清单类仓库（awesome / dataset / benchmark / cheatsheet 等）、stars &lt; 20。</li>
+<li><strong>相关性双判定</strong>：项目自述（描述+名称）必须命中 AI/智能体语义词，且整体命中插件语义词或平台专属 topic。仅靠一个 topic 标签不足以入选 —— 否则通用工具会混进 AI 插件榜。匹配用词边界正则，避免子串假阳性。</li>
+<li><strong>官方市场快速通道</strong>：来自第六节官方清单的条目，官方收录本身即强准入信号，不做 stars ≥ 20 门槛与 AI 语义词筛查（很多官方插件仓库自述根本不提 AI），但仍剔除已归档仓库、空描述与资源清单型仓库，并在榜单中标「官方」。</li>
+<li>新建仓库 &lt; 14 天：分数 ×0.85 冷却；同一作者批量插件（&gt;5 个）：×0.97 轻微降权；增量 &gt; 均值 +3σ 时截断。所有修正都写进详情页「评分拆解」下方。</li>
+</ul>
+
+<h2>六、本地官方市场清单（发现源）</h2>
+<p>GitHub topic 搜索只能发现「打了标签的仓库」，会漏掉各平台市场里已正式收录、但没打 topic 的插件。为此流水线<strong>只读</strong>本机下列清单文件，把它们作为权威发现源（绝不修改用户配置）：</p>
+<table>
+<thead><tr><th>平台</th><th>清单文件</th><th>可得字段</th></tr></thead>
+<tbody>
+<tr><td>Claude Code</td><td><code>~/.claude/plugins/marketplaces/*/.claude-plugin/marketplace.json</code></td><td>插件名、描述、作者、分类、版本 ref、<code>source.url</code>（多为 GitHub 仓库）、子目录路径</td></tr>
+<tr><td>Codex</td><td><code>~/.codex/plugins/cache/**/.codex-plugin/plugin.json</code></td><td>名称、版本、描述、作者、homepage</td></tr>
+<tr><td>WorkBuddy</td><td><code>connectors.json</code>、各 <code>marketplace.json</code>、插件缓存、<code>.skill-list-cache.json</code></td><td>中英双语描述、类型、版本、可见范围、部分 repository</td></tr>
+<tr><td>dsh</td><td><code>dsh --profile web --dump-config</code> + <code>profiles/*/package.json</code></td><td><strong>npm 包名</strong>（可查周下载量）</td></tr>
+</tbody>
+</table>
+<p>三条口径必须分清：</p>
+<ul>
+<li><strong>官方收录 ≠ 指标</strong>。清单只用于「这个插件确实存在、确实被官方收录」的发现与准入，stars / 下载量一律另经公开 API 复核；清单里没有任何数字会被当作评分输入。</li>
+<li><strong>插件 ≠ 仓库</strong>。一个 marketplace 仓库常承载几十个插件（如 <code>git-subdir</code> 子目录）。总榜按 <code>owner/repo</code> 合并成一个实体，避免刷屏；详情页列出该仓库承载的全部官方插件名，目录页则按插件粒度展示。</li>
+<li><strong>闭环留痕</strong>。本机清单每次运行会生成快照提交到 <code>data/marketplace-sources/</code>，GitHub Actions 云端跑不到用户目录时改读快照，口径与本机一致。查不到公开指标的条目标 <code>n/a</code> 并列入运行报告，不猜、不补。</li>
+</ul>
+
+<h2>七、数据源与证据链</h2>
+<p>只使用 <code>api.github.com/search/repositories</code>、<code>api.github.com/repos/*</code> 与 <code>api.npmjs.org/downloads</code> 的公开返回。<strong>第三方榜单的 stars / 安装量一概不采信</strong>，最多作为发现线索，进榜前必须自行调用 API 复核。</p>
+<p>官方清单里指向的仓库先用 Search API 的多个 <code>repo:owner/name</code> 限定符批量取（走 search 独立配额）；实测有一批真实仓库不在搜索索引中（返回 422「资源不可搜索」，例如 <code>anthropics/claude-plugins-public</code>），这些再用 <code>GET /repos/{owner}/{repo}</code> 二次复核，REST 仍 404 才判为不可核验。所有结果含「确认查不到」都写入 <code>data/repo-metadata.json</code> 缓存，7 天内复用，既不臆造也不每天重查死链。</p>
+<p>每条记录保存采集 query、UTC 采集时间、API 端点与当时的原始字段，详情页「证据链」表格可直接对照回查。每日运行报告在 <code>state/run-YYYY-MM-DD.json</code>，含全部淘汰条目与理由。</p>
+
+<h2>八、跨日比较请注意</h2>
+<div class="callout">分数是<strong>当日相对分位</strong>，样本集与有效权重每天都可能变化，因此<strong>分数绝对值不可跨日比较</strong>。跨日只看排名与排名变化（▲/▼），详情页趋势曲线展示的是同一口径下的历史采样，供参考而非精确审计。</div>
+
+<h2>九、怎么自己复算</h2>
+<div class="formula">GITHUB_TOKEN=xxx python pipelines/run_daily.py<br>python pipelines/run_daily.py --dry-run          # 只算不生成榜单产物<br>python pipelines/run_daily.py --no-local-market # 只跑 GitHub topic 采集（对照用）<br>python pipelines/run_daily.py --no-market-npm  # 跳过 dsh 包名下载量查询</div>
+<p>权重、query、准入词表在 <code>pipelines/config.py</code>，评分在 <code>pipelines/score.py</code>，官方清单解析与仓库核验在 <code>pipelines/local_market.py</code>。当日生效权重写进 <code>data/top100.json</code> 的 <code>meta.scoring</code>；官方目录在 <code>data/marketplace.json</code>；仓库/npm 元数据缓存在 <code>data/repo-metadata.json</code> 与 <code>data/npm-metadata.json</code>。改口径请同步改这一页的说明。</p>
+<div class="callout">没有 <code>GITHUB_TOKEN</code> 时，GitHub 未认证限额为 Search 10 次/分钟、core 60 次/小时。首次运行需批量核验约 240 个仓库（约 3 分钟），之后靠缓存几乎零请求。<strong>建议设置 token</strong>，可显著提高限额并缩短首次运行时间。</div>
+
+<footer class="method-foot">每天 08:00 (UTC+8) 重算公开数据并发布到 cyberMap，Vercel 监听 main 自动构建。<a href="index.html">← 返回总榜</a> · <a href="marketplace.html">官方市场目录 →</a></footer>
+</main>
+<script src="assets/rank-frame.js"></script>
+</body>
+</html>

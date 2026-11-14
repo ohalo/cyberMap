@@ -28,7 +28,10 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
+# AI 插件排行榜是已生成的静态站（source/rank/），直接原样复制到 public/rank/，
+# 不要交给 Hexo 的页面渲染器，否则会被套上 webstack 主题的 layout。
 skip_render:
+  - 'rank/**'
 
 # Writing
 new_post_name: :title.md # File name of new posts
