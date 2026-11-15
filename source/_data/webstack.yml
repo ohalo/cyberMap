@@ -870,6 +870,14 @@ likeGPT:
     description: 填写你最喜欢使用的AI地址
 
 dailyAI_oss:
+  - name: langflow-ai/langflow
+    url: https://github.com/langflow-ai/langflow
+    img: https://github.com/favicon.ico
+    description: "可视化拖拽构建 AI 智能体与工作流的开源工具，支持接入主流大模型并部署为 API。 · 2026-11-15 收录"
+  - name: harry0703/MoneyPrinterTurbo
+    url: https://github.com/harry0703/MoneyPrinterTurbo
+    img: https://github.com/favicon.ico
+    description: "基于 AI 大模型自动生成文案、配音与字幕，一键合成高清短视频的开源工作流工具。 · 2026-11-15 收录"
   - name: TauricResearch/TradingAgents
     url: https://github.com/TauricResearch/TradingAgents
     img: https://github.com/favicon.ico
@@ -892,6 +900,10 @@ dailyAI_oss:
     description: "开源浏览器智能体框架，让大模型在真实浏览器中自动点击、输入并完成任务，兼容任意 LLM。 · 2026-11-13 收录"
 
 dailyAI_tool:
+  - name: magpie
+    url: https://usemagpie.ai
+    img: https://usemagpie.ai/favicon.ico
+    description: "本地 AI 模型网关，统一接入 DeepSeek、Claude、Kimi 等模型订阅，供各类编码智能体按需切换。 · 2026-11-15 收录"
   - name: webAI
     url: https://www.webai.com
     img: https://www.webai.com/favicon.ico
