@@ -1,0 +1,5 @@
+# cyberMap - allow all crawlers
+User-agent: *
+Allow: /
+
+Sitemap: https://cybermap.halo26812.eu.org/sitemap.xml

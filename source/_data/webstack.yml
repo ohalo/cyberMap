@@ -1,5 +1,9 @@
 favicon: /favicon.ico
-banner: /images/cybermapbanner.png
+# 主题 common/head.pug 把 banner 直接写进 og:image / twitter:image，必须是绝对 URL
+banner: https://cybermap.halo26812.eu.org/images/cybermapbanner.png
+# 主题会读取 setting.description / setting.keywords 生成 <meta> 标签
+description: "每日更新的 AI 工具与开源项目导航，收录大模型、智能体、开发框架与实用站点，附 AI 插件排行榜和每日 AI 速递。"
+keywords: "AI 工具,AI 导航,开源项目,大模型,智能体,GitHub AI,AI 插件排行榜,每日 AI 速递,cyberMap"
 
 logo:
   expanded: /images/cyberlogo@2x.png
@@ -56,6 +60,24 @@ custom:
     |- # 以下内容插入到<head></head>标签内，可设置多行，注意每行开头至少四个空格
     <!-- cyberMap 重设计样式：主题目录是 submodule，所有自定义样式从这里注入 -->
     <link rel="stylesheet" href="/css/cybermap.css">
+    <!-- canonical 按当前路径动态生成：custom.head 全站共享，写死会把归档页/文章页都指向首页 -->
+    <script>
+    (function () {
+      var p = location.pathname.replace(/index\.html$/, '');
+      var canonical = 'https://cybermap.halo26812.eu.org' + p;
+      var link = document.createElement('link');
+      link.rel = 'canonical';
+      link.href = canonical;
+      document.head.appendChild(link);
+      var og = document.querySelector('meta[property="og:url"]');
+      if (og) og.setAttribute('content', canonical);
+    })();
+    </script>
+    <link rel="alternate" type="application/rss+xml" title="cyberMap 每日 AI 速递" href="/daily/feed.xml">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebSite","name":"cyberMap","url":"https://cybermap.halo26812.eu.org/","description":"每日更新的 AI 工具与开源项目导航，附 AI 插件排行榜与每日 AI 速递。","inLanguage":"zh-CN"}
+    </script>
+    <!-- 站长平台验证位：把 GSC / Bing / 百度提供的 <meta name="..."> 粘贴到这一行下方 -->
   body: |- # 以下内容插入到</body>标签之前，可设置多行，注意每行开头至少四个空格
     <!-- cyberMap 重设计交互增强 -->
     <script src="/js/cybermap.js"></script>
@@ -70,8 +92,8 @@ custom:
     </script>
 
 
-tittle: Halo 的网址导航网站
-subtitle: 收录关于一些有用的网址有关于gpt/github/blog等
+tittle: cyberMap · AI 工具与开源项目导航
+subtitle: 每日更新 AI 网站收录
 
 js:
   header: /js/header.js

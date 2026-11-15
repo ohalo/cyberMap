@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+title: cyberMap
+subtitle: 每日更新 AI 网站收录
+description: 每日更新的 AI 工具与开源项目导航，收录大模型、智能体、开发框架与实用站点，附 AI 插件排行榜和每日 AI 速递。
+keywords: "AI 工具,AI 导航,开源项目,大模型,智能体,GitHub AI,AI 插件排行榜,每日 AI 速递,cyberMap"
+author: ohalo
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://cybermap.halo26812.eu.org
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -28,12 +28,15 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-# 已生成的静态站（source/rank/、source/daily/）直接原样复制到 public/，
-# 不要交给 Hexo 的页面渲染器，否则会被套上 webstack 主题的 layout。
-# daily/ 由 scripts/build_daily.py 从 webstack.yml 生成（时间轴 + RSS）。
+# 静态产物直接原样复制到 public/，不要交给 Hexo 的页面渲染器，
+# 否则会被套上 webstack 主题的 layout。
+# rank/ 由 ai-plugin-rank 独立流水线维护；daily/ 由 scripts/build_daily.py 生成；
+# robots.txt 与 sitemap.xml 由 scripts/build_seo.py 生成。
 skip_render:
   - 'rank/**'
   - 'daily/**'
+  - 'robots.txt'
+  - 'sitemap.xml'
 
 # Writing
 new_post_name: :title.md # File name of new posts
