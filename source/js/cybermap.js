@@ -285,6 +285,19 @@
         ul2.insertBefore(li, ghLi || ul2.querySelector('li.switch-mode') || null);
       }
 
+      /* 8.1b 顶栏次按钮：每日 AI 速递（/daily/ 时间轴 + RSS） */
+      if (ul2 && !ul2.querySelector('.cm-daily-li')) {
+        var dLi = el('li', 'cm-daily-li hover-line');
+        dLi.appendChild(el('a', 'cm-daily-btn',
+          '<i class="fas fa-rss" aria-hidden="true"></i><span>AI 速递</span>'));
+        var dLink = dLi.firstChild;
+        dLink.setAttribute('href', '/daily/');
+        dLink.setAttribute('title', '每日 AI 新发现 · 时间轴与 RSS 订阅');
+        dLink.setAttribute('aria-label', '打开每日 AI 速递');
+        var ghLi2 = ul2.querySelector('.cyber-top-gh-li');
+        ul2.insertBefore(dLi, ghLi2 || ul2.querySelector('li.switch-mode') || null);
+      }
+
       /* 8.2 侧栏：#main-menu 之前的独立面板，不参与锚点高亮 */
       var inner = document.querySelector('.sidebar-menu .sidebar-menu-inner');
       var menu = document.getElementById('main-menu');
@@ -296,7 +309,9 @@
           '<a class="cm-feature-chip" href="' + RANK + 'marketplace.html" title="官方市场目录">' +
           '<i class="fas fa-store" aria-hidden="true"></i>官方市场</a>' +
           '<a class="cm-feature-chip" href="' + RANK + 'methodology.html" title="算法与数据口径">' +
-          '<i class="fas fa-balance-scale" aria-hidden="true"></i>评分口径</a>';
+          '<i class="fas fa-balance-scale" aria-hidden="true"></i>评分口径</a>' +
+          '<a class="cm-feature-chip" href="/daily/" title="每日 AI 新发现时间轴">' +
+          '<i class="fas fa-rss" aria-hidden="true"></i>每日速递</a>';
         var panel = el('div', 'cm-features',
           '<div class="cm-features-label"><span>站点功能</span>' +
           '<span class="cm-features-sep"></span><span class="cm-features-hint">非网址分类</span></div>' +
@@ -326,6 +341,7 @@
           '<a class="cm-cta-link" href="' + RANK + '?platform=codex">平台分榜</a>' +
           '<a class="cm-cta-link" href="' + RANK + 'marketplace.html">官方市场</a>' +
           '<a class="cm-cta-link" href="' + RANK + 'methodology.html">评分口径</a>' +
+          '<a class="cm-cta-link" href="/daily/">每日 AI 速递</a>' +
           '</div>');
         sousuo2.parentNode.insertBefore(cta, sousuo2.nextSibling);
       }

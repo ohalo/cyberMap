@@ -1200,3 +1200,24 @@ button#search-btn.search-btn {
   .cm-rank-pill { display: none; }
   .navbar.user-info-navbar .user-info-menu > li.cm-rank-li > a.cm-rank-btn { padding: 0 10px !important; }
 }
+
+/* ---- 每日 AI 速递 /daily/ 顶栏次要按钮 ----
+   低调描边样式，避免与「AI 插件榜」的渐变主按钮抢视觉层级。 */
+.navbar.user-info-navbar .user-info-menu > li.cm-daily-li > a.cm-daily-btn {
+  gap: 6px;
+  padding: 0 11px !important;
+  border-radius: 999px !important;
+  color: var(--cm-text-soft) !important;
+  border-color: var(--cm-border-strong) !important;
+  font-size: 12.5px !important;
+  font-weight: 650 !important;
+  white-space: nowrap;
+}
+.navbar.user-info-navbar .user-info-menu > li.cm-daily-li > a.cm-daily-btn:hover {
+  color: var(--cm-accent) !important;
+  border-color: var(--cm-accent-soft) !important;
+}
+.cm-daily-btn i { font-size: 12.5px !important; color: var(--cm-accent); }
+@media (max-width: 600px) {
+  .navbar.user-info-navbar .user-info-menu > li.cm-daily-li > a.cm-daily-btn { padding: 0 9px !important; }
+}
