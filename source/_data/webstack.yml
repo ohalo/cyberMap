@@ -892,6 +892,14 @@ likeGPT:
     description: 填写你最喜欢使用的AI地址
 
 dailyAI_oss:
+  - name: vercel-labs/agent-desktop
+    url: https://github.com/vercel-labs/agent-desktop
+    img: https://github.com/favicon.ico
+    description: "Vercel Labs 开源的命令行工具，通过系统无障碍树让 AI 智能体识别并操作桌面应用，支持无头运行与多平台。 · 2026-11-16 收录"
+  - name: heygen-com/hyperframes
+    url: https://github.com/heygen-com/hyperframes
+    img: https://github.com/favicon.ico
+    description: "HeyGen 开源的 TypeScript 视频渲染框架，把 HTML、CSS 与动画确定性输出为 MP4，供 AI 智能体批量生成视频。 · 2026-11-16 收录"
   - name: langflow-ai/langflow
     url: https://github.com/langflow-ai/langflow
     img: https://github.com/favicon.ico
@@ -922,6 +930,10 @@ dailyAI_oss:
     description: "开源浏览器智能体框架，让大模型在真实浏览器中自动点击、输入并完成任务，兼容任意 LLM。 · 2026-11-13 收录"
 
 dailyAI_tool:
+  - name: Cognee
+    url: https://www.cognee.ai
+    img: https://www.cognee.ai/favicon.ico
+    description: "开源 AI 智能体记忆平台，用知识图谱与向量检索为大模型应用构建跨会话持久记忆，支持自托管与云服务。 · 2026-11-16 收录"
   - name: magpie
     url: https://usemagpie.ai
     img: https://usemagpie.ai/favicon.ico

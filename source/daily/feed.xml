@@ -6,8 +6,18 @@
     <description>cyberMap 每日核验收录的 AI 开源项目、工具官网与模型框架，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Sun, 15 Nov 2026 09:38:45 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 09:20:23 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 2026-11-16（3 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-16</link>
+      <guid isPermaLink="true">https://cybermap.halo26812.eu.org/daily/#day-2026-11-16</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 +0800</pubDate>
+      <description>vercel-labs/agent-desktop［开源项目］Vercel Labs 开源的命令行工具，通过系统无障碍树让 AI 智能体识别并操作桌面应用，支持无头运行与多平台。 — https://github.com/vercel-labs/agent-desktop
+heygen-com/hyperframes［开源项目］HeyGen 开源的 TypeScript 视频渲染框架，把 HTML、CSS 与动画确定性输出为 MP4，供 AI 智能体批量生成视频。 — https://github.com/heygen-com/hyperframes
+Cognee［工具官网］开源 AI 智能体记忆平台，用知识图谱与向量检索为大模型应用构建跨会话持久记忆，支持自托管与云服务。 — https://www.cognee.ai</description>
+      <category>AI</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 2026-11-15（3 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-15</link>
