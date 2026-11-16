@@ -1,0 +1,584 @@
+{
+  "days": {
+    "2026-11-13": {
+      "added": 3,
+      "checked": 10,
+      "fail": 0,
+      "pass": 8,
+      "rejected": [
+        {
+          "reason": "本机代理拦截该域名（非站点失效），需用其它通道二次验证；未能提取到页面标题，需人工确认站点内容",
+          "url": "https://lmarena.ai",
+          "verdict": "review"
+        },
+        {
+          "reason": "本机代理拦截该域名（非站点失效），需用其它通道二次验证；未能提取到页面标题，需人工确认站点内容",
+          "url": "https://huggingface.co",
+          "verdict": "review"
+        }
+      ],
+      "review": 2
+    },
+    "2026-11-14": {
+      "added": 6,
+      "checked": 9,
+      "fail": 1,
+      "pass": 7,
+      "rejected": [
+        {
+          "reason": "HTTP 403（反爬/登录墙），需人工确认站点真实存在",
+          "url": "https://agentaus.com.au",
+          "verdict": "review"
+        },
+        {
+          "reason": "页面与仓库元数据中未检出 AI 相关性关键词",
+          "url": "https://eyedaptic.com",
+          "verdict": "fail"
+        }
+      ],
+      "review": 1
+    },
+    "2026-11-15": {
+      "added": 3,
+      "checked": 10,
+      "fail": 2,
+      "pass": 7,
+      "rejected": [
+        {
+          "reason": "GitHub stars < 200，需人工判断价值",
+          "url": "https://github.com/indykite/intent-agent",
+          "verdict": "review"
+        },
+        {
+          "reason": "页面与仓库元数据中未检出 AI 相关性关键词",
+          "url": "https://hy.tencent.com/research/hy4",
+          "verdict": "fail"
+        },
+        {
+          "reason": "站点不可达：ConnectTimeout: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /MiniMaxAI/MiniMax-H3-Image (Caused by ConnectTimeoutError(<HTTPSConnection(host='huggingface.co', port=443) at 0x108f1cf50>, 'Connection to huggingface.co timed out. (connect timeout=14)'))",
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+          "verdict": "fail"
+        }
+      ],
+      "review": 1
+    },
+    "2026-11-16": {
+      "added": 3,
+      "checked": 10,
+      "fail": 2,
+      "pass": 8,
+      "rejected": [
+        {
+          "reason": "页面与仓库元数据中未检出 AI 相关性关键词",
+          "url": "https://github.com/tencent-hunyuan/hy-memory",
+          "verdict": "fail"
+        },
+        {
+          "reason": "页面与仓库元数据中未检出 AI 相关性关键词",
+          "url": "https://github.com/pollen-robotics/microduck",
+          "verdict": "fail"
+        }
+      ],
+      "review": 0
+    }
+  },
+  "evidence": {
+    "cognee.ai/": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "llm"
+      ],
+      "checked_at": "2026-11-16T09:13:40+08:00",
+      "date": "2026-11-16",
+      "http_status": 200,
+      "license": null,
+      "pushed_at": null,
+      "stars": null,
+      "title": "Cognee - Open-Source Agent Memory Platform",
+      "verdict": "pass"
+    },
+    "cursor.com/": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "智能体"
+      ],
+      "checked_at": "2026-11-13T16:08:01+08:00",
+      "date": "2026-11-13",
+      "http_status": 200,
+      "license": null,
+      "pushed_at": null,
+      "stars": null,
+      "title": "AI Coding Agent for Building Ambitious Software | Cursor",
+      "verdict": "pass"
+    },
+    "github.com/anthropics/knowledge-work-plugins": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "anthropic",
+        "claude"
+      ],
+      "checked_at": "2026-11-16T09:13:46+08:00",
+      "date": "2026-11-16",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-13T22:21:52Z",
+      "stars": 36186,
+      "title": "GitHub - anthropics/knowledge-work-plugins: Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/browser-use/browser-use": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "llm"
+      ],
+      "checked_at": "2026-11-13T16:07:29+08:00",
+      "date": "2026-11-13",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-13T06:37:35Z",
+      "stars": 120878,
+      "title": "GitHub - browser-use/browser-use: Open-source Python library for AI browser agents, plus Browser Use Cloud: stealth browsers and a hosted agent API. · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/d4vinci/scrapling": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "\\bai\\b"
+      ],
+      "checked_at": "2026-11-16T09:13:50+08:00",
+      "date": "2026-11-16",
+      "http_status": 200,
+      "license": "BSD-3-Clause",
+      "pushed_at": "2026-11-14T17:28:43Z",
+      "stars": 103314,
+      "title": "GitHub - D4Vinci/Scrapling: 🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don&#39;t be shy, join here: https://discord.gg/",
+      "verdict": "pass"
+    },
+    "github.com/firecrawl/firecrawl": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "llm"
+      ],
+      "checked_at": "2026-11-13T16:07:33+08:00",
+      "date": "2026-11-13",
+      "http_status": 200,
+      "license": "AGPL-3.0",
+      "pushed_at": "2026-11-13T06:18:04Z",
+      "stars": 201367,
+      "title": "GitHub - firecrawl/firecrawl: Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥 · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/gentleman-programming/engram": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-16T09:13:48+08:00",
+      "date": "2026-11-16",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-14T06:18:30Z",
+      "stars": 8172,
+      "title": "GitHub - Gentleman-Programming/engram: Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI. · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/github/spec-kit": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "copilot"
+      ],
+      "checked_at": "2026-11-14T15:20:06+08:00",
+      "date": "2026-11-14",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-12T21:54:10Z",
+      "stars": 149730,
+      "title": "GitHub - github/spec-kit: 💫 Toolkit to help you get started with SDD or any other process! · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/harry0703/moneyprinterturbo": {
+      "ai_hits": 4,
+      "ai_keywords": [
+        "\\bai\\b",
+        "llm",
+        "text[- ]to[- ]",
+        "大模型"
+      ],
+      "checked_at": "2026-11-15T09:15:43+08:00",
+      "date": "2026-11-15",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-13T15:14:28Z",
+      "stars": 143590,
+      "title": "GitHub - harry0703/MoneyPrinterTurbo: 利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow. · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/heygen-com/hyperframes": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude"
+      ],
+      "checked_at": "2026-11-16T09:13:44+08:00",
+      "date": "2026-11-16",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-16T01:13:08Z",
+      "stars": 84753,
+      "title": "GitHub - heygen-com/hyperframes: Write HTML. Render video. Built for agents. · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/langflow-ai/langflow": {
+      "ai_hits": 5,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "chatgpt",
+        "generative",
+        "gpt"
+      ],
+      "checked_at": "2026-11-15T09:15:41+08:00",
+      "date": "2026-11-15",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-15T00:27:16Z",
+      "stars": 156644,
+      "title": "GitHub - langflow-ai/langflow: Langflow is a powerful tool for building and deploying AI-powered agents and workflows. · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/n8n-io/n8n": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "\\bai\\b"
+      ],
+      "checked_at": "2026-11-13T16:07:31+08:00",
+      "date": "2026-11-13",
+      "http_status": 200,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-11-13T08:03:53Z",
+      "stars": 210354,
+      "title": "GitHub - n8n-io/n8n: Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations. · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/nousresearch/hermes-agent": {
+      "ai_hits": 7,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "anthropic",
+        "chatgpt",
+        "claude",
+        "gpt",
+        "llm"
+      ],
+      "checked_at": "2026-11-14T15:20:05+08:00",
+      "date": "2026-11-14",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-14T07:17:41Z",
+      "stars": 263271,
+      "title": "GitHub - NousResearch/hermes-agent: The agent that grows with you · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/obra/superpowers": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-14T15:20:11+08:00",
+      "date": "2026-11-14",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-03T23:24:58Z",
+      "stars": 317332,
+      "title": "GitHub - obra/superpowers: An agentic skills framework &amp; software development methodology that works. · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/ollama/ollama": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "gpt",
+        "llm",
+        "ollama"
+      ],
+      "checked_at": "2026-11-13T16:07:32+08:00",
+      "date": "2026-11-13",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-13T00:02:20Z",
+      "stars": 186843,
+      "title": "GitHub - ollama/ollama: Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models. · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/open-webui/open-webui": {
+      "ai_hits": 5,
+      "ai_keywords": [
+        "\\bai\\b",
+        "llm",
+        "ollama",
+        "openai",
+        "rag\\b"
+      ],
+      "checked_at": "2026-11-13T16:07:30+08:00",
+      "date": "2026-11-13",
+      "http_status": 200,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-11-12T14:24:23Z",
+      "stars": 158529,
+      "title": "GitHub - open-webui/open-webui: User-friendly AI Interface (Supports Ollama, OpenAI API, ...) · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/panniantong/agent-reach": {
+      "ai_hits": 4,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude",
+        "llm"
+      ],
+      "checked_at": "2026-11-15T09:15:47+08:00",
+      "date": "2026-11-15",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-08T02:17:48Z",
+      "stars": 111801,
+      "title": "GitHub - Panniantong/Agent-Reach: Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API ",
+      "verdict": "pass"
+    },
+    "github.com/paperclipai/paperclip": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude"
+      ],
+      "checked_at": "2026-11-14T15:20:09+08:00",
+      "date": "2026-11-14",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-14T07:11:37Z",
+      "stars": 113755,
+      "title": "GitHub - paperclipai/paperclip: The open-source app everyone uses to manage agents at work · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/rasbt/llms-from-scratch": {
+      "ai_hits": 6,
+      "ai_keywords": [
+        "\\bai\\b",
+        "chatgpt",
+        "fine[- ]?tun",
+        "generative",
+        "gpt",
+        "llm"
+      ],
+      "checked_at": "2026-11-15T09:15:46+08:00",
+      "date": "2026-11-15",
+      "http_status": 200,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-11-09T14:59:09Z",
+      "stars": 108416,
+      "title": "GitHub - rasbt/LLMs-from-scratch: Implement a ChatGPT-like LLM in PyTorch from scratch, step by step · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/significant-gravitas/autogpt": {
+      "ai_hits": 6,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude",
+        "gpt",
+        "llm",
+        "openai"
+      ],
+      "checked_at": "2026-11-15T09:15:42+08:00",
+      "date": "2026-11-15",
+      "http_status": 200,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-11-15T01:08:09Z",
+      "stars": 188026,
+      "title": "GitHub - Significant-Gravitas/AutoGPT: AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on wh",
+      "verdict": "pass"
+    },
+    "github.com/stablyai/orca": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude"
+      ],
+      "checked_at": "2026-11-16T09:13:47+08:00",
+      "date": "2026-11-16",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-16T01:13:08Z",
+      "stars": 125794,
+      "title": "GitHub - stablyai/orca: Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime. · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/tauricresearch/tradingagents": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "agent",
+        "llm"
+      ],
+      "checked_at": "2026-11-14T15:20:07+08:00",
+      "date": "2026-11-14",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-04T10:13:58Z",
+      "stars": 122488,
+      "title": "GitHub - TauricResearch/TradingAgents: TradingAgents: Multi-Agents LLM Financial Trading Framework · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/thedotmack/claude-mem": {
+      "ai_hits": 5,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "anthropic",
+        "claude",
+        "copilot"
+      ],
+      "checked_at": "2026-11-14T15:20:08+08:00",
+      "date": "2026-11-14",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-13T18:56:42Z",
+      "stars": 116909,
+      "title": "GitHub - thedotmack/claude-mem: Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevan",
+      "verdict": "pass"
+    },
+    "github.com/topoteretes/cognee": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-16T09:13:45+08:00",
+      "date": "2026-11-16",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-15T18:20:52Z",
+      "stars": 33336,
+      "title": "GitHub - topoteretes/cognee: Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory with small models for free · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/unclecode/crawl4ai": {
+      "ai_hits": 4,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "llm",
+        "rag\\b"
+      ],
+      "checked_at": "2026-11-13T16:07:28+08:00",
+      "date": "2026-11-13",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-12T11:40:21Z",
+      "stars": 87298,
+      "title": "GitHub - unclecode/crawl4ai: Official Crawl4AI Cloud: a hosted web scraping, extraction, and search API for AI agents. Free API key, 1,000 credits a month, no card. Fully open sour",
+      "verdict": "pass"
+    },
+    "github.com/vercel-labs/agent-desktop": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-16T09:13:43+08:00",
+      "date": "2026-11-16",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-15T12:53:40Z",
+      "stars": 24188,
+      "title": "GitHub - vercel-labs/agent-desktop: Computer use CLI for AI agents · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/yetone/magpie": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "agent",
+        "claude",
+        "llm"
+      ],
+      "checked_at": "2026-11-15T09:15:45+08:00",
+      "date": "2026-11-15",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-15T01:02:57Z",
+      "stars": 36551,
+      "title": "GitHub - yetone/magpie: Every agent&#39;s model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar. · GitHub",
+      "verdict": "pass"
+    },
+    "ollama.com/": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "ollama"
+      ],
+      "checked_at": "2026-11-13T16:07:35+08:00",
+      "date": "2026-11-13",
+      "http_status": 200,
+      "license": null,
+      "pushed_at": null,
+      "stars": null,
+      "title": "Ollama · Run AI models locally and in the cloud",
+      "verdict": "pass"
+    },
+    "usemagpie.ai/": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude"
+      ],
+      "checked_at": "2026-11-15T09:15:50+08:00",
+      "date": "2026-11-15",
+      "http_status": 200,
+      "license": null,
+      "pushed_at": null,
+      "stars": null,
+      "title": "magpieï¼Claude CodeãCodexãGemini CLI çæ¨¡åä¸å¤åæ¢",
+      "verdict": "pass"
+    },
+    "webai.com/": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "\\bai\\b"
+      ],
+      "checked_at": "2026-11-14T15:20:15+08:00",
+      "date": "2026-11-14",
+      "http_status": 200,
+      "license": null,
+      "pushed_at": null,
+      "stars": null,
+      "title": "Collaborative Intelligence | webAI",
+      "verdict": "pass"
+    }
+  },
+  "schema": 1,
+  "source": "cybermap-daily/state/reports/verify-YYYY-MM-DD.json",
+  "totals": {
+    "added": 15,
+    "checked": 39,
+    "days": 4,
+    "fail": 5,
+    "pass": 30,
+    "review": 4,
+    "verified_sites": 30
+  },
+  "warnings": []
+}

@@ -49,6 +49,7 @@ except ImportError as exc:  # pragma: no cover
 SITE_URL_DEFAULT = "https://cybermap.halo26812.eu.org"
 DATA_REL = Path("source/_data/webstack.yml")
 OUT_REL = Path("source/daily")
+VERIFY_REL = Path("source/daily/verify.json")
 
 # 分类 -> (中文标签, 短名)。顺序决定同一天内卡片的展示顺序。
 CATEGORY_LABELS = OrderedDict([
@@ -86,6 +87,9 @@ CSS = r"""
   --dy-shadow-hover:0 16px 34px rgba(38,52,92,.15),0 3px 8px rgba(38,52,92,.06);
   --dy-glow-a:rgba(56,189,248,.20);
   --dy-glow-b:rgba(167,139,250,.18);
+  --dy-ok-bg:rgba(16,185,129,.10);
+  --dy-ok-border:rgba(16,185,129,.28);
+  --dy-ok-text:#0f8a63;
 }
 body.night{
   --dy-bg:#080d1a;
@@ -104,6 +108,9 @@ body.night{
   --dy-shadow-hover:0 18px 38px rgba(0,0,0,.42);
   --dy-glow-a:rgba(34,211,238,.16);
   --dy-glow-b:rgba(139,92,246,.18);
+  --dy-ok-bg:rgba(52,211,153,.12);
+  --dy-ok-border:rgba(52,211,153,.30);
+  --dy-ok-text:#6ee7b7;
 }
 html{scroll-behavior:smooth}
 body{
@@ -220,6 +227,32 @@ a{color:inherit;text-decoration:none}
   background:var(--dy-chip);color:var(--dy-accent);font-size:10.5px;font-weight:650;
 }
 .dy-desc{margin:0;font-size:12.5px;color:var(--dy-soft);line-height:1.6}
+/* 收录质量回执：卡片「已核验」徽章 + 页顶漏斗条 */
+.dy-verify{
+  display:inline-flex;align-items:center;gap:4px;flex-wrap:wrap;
+  margin-top:9px;padding:2px 8px;border-radius:6px;
+  border:1px solid var(--dy-ok-border);background:var(--dy-ok-bg);
+  color:var(--dy-ok-text);font-size:10.5px;font-weight:650;line-height:1.5;
+  cursor:help;
+}
+.dy-verify b{font-weight:750}
+.dy-receipt{
+  margin:22px 0 4px;padding:16px 18px;border-radius:14px;
+  border:1px solid var(--dy-border);background:var(--dy-surface);
+  box-shadow:var(--dy-shadow);
+}
+.dy-receipt-head{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:10px}
+.dy-receipt-title{font-size:13.5px;font-weight:750}
+.dy-receipt-date{font-size:11px;color:var(--dy-muted)}
+.dy-receipt-flow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:12.5px;color:var(--dy-soft)}
+.dy-receipt-node{
+  padding:3px 10px;border-radius:8px;background:var(--dy-chip);
+  color:var(--dy-accent);font-weight:700;
+}
+.dy-receipt-node.ok{border:1px solid var(--dy-ok-border);background:var(--dy-ok-bg);color:var(--dy-ok-text)}
+.dy-receipt-arrow{color:var(--dy-muted);font-size:12px}
+.dy-receipt-meta{margin-top:10px;font-size:11.5px;color:var(--dy-muted);line-height:1.7}
+.dy-receipt-meta a{color:var(--dy-accent);font-weight:650}
 .dy-footer{
   margin-top:46px;padding-top:20px;border-top:1px solid var(--dy-border);
   font-size:12px;color:var(--dy-muted);
@@ -263,8 +296,33 @@ ICON_MOON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.3 3a9 9 0 
 
 # ---------------------------------------------------------------- 数据读取
 def esc(value) -> str:
-    """所有来自 YAML 的文本统一转义，避免破坏 HTML 结构。"""
+    """所有来自 YAML / JSON 的文本统一转义，避免破坏 HTML 结构。"""
     return html.escape(str(value if value is not None else ""), quote=True)
+
+
+def norm_url(url: str) -> str:
+    """与 cybermap.py::norm 完全一致，用于按 URL 命中验证证据。"""
+    from urllib.parse import urlparse
+    raw = (url or "").strip().rstrip(",;'\"")
+    p = urlparse(raw if "://" in raw else "https://" + raw)
+    host = (p.hostname or "").lower().removeprefix("www.")
+    path = (p.path or "/").rstrip("/").lower() or "/"
+    if path.endswith(".git"):
+        path = path[:-4]
+    return f"{host}{path}"
+
+
+def load_verify(path: Path) -> tuple[dict, list[str]]:
+    """读取收录质量回执数据。文件缺失/损坏时返回空数据（优雅降级，不阻断生成）。"""
+    if not path.is_file():
+        return {}, []
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(data, dict) or not isinstance(data.get("evidence"), dict):
+            raise ValueError("verify.json 结构不完整")
+        return data, data.get("warnings") or []
+    except (OSError, json.JSONDecodeError, ValueError) as exc:
+        return {}, [f"verify.json 读取失败，已降级为无徽章模式：{exc}"]
 
 
 def load_entries(data_file: Path) -> tuple[list[dict], list[str]]:
@@ -336,7 +394,96 @@ def day_heading(day: str) -> str:
     return f"{d.year} 年 {d.month} 月 {d.day} 日", WEEKDAYS[d.weekday()]
 
 
-def card_html(item: dict) -> str:
+def short_stars(n) -> str:
+    """24188 → 24.2k，便于徽章里紧凑展示。"""
+    try:
+        v = int(n)
+    except (TypeError, ValueError):
+        return ""
+    return f"{v / 1000:.1f}k" if v >= 1000 else str(v)
+
+
+def badge_html(item: dict, evidence: dict) -> str:
+    """卡片上的「已核验」徽章：紧凑摘要 + title 悬停展开完整证据。"""
+    ev = evidence.get(norm_url(item["url"]))
+    if not ev or ev.get("verdict") != "pass":
+        return ""
+    bits = ["✓ 已核验"]
+    if ev.get("http_status"):
+        bits.append(f"HTTP {ev['http_status']}")
+    stars = short_stars(ev.get("stars"))
+    if stars:
+        bits.append(f"★{stars}")
+    if ev.get("ai_hits"):
+        bits.append(f"AI×{ev['ai_hits']}")
+    label = " · ".join(bits)
+
+    details = [
+        f"核验日期：{ev.get('date') or '—'}",
+        f"HTTP 状态：{ev.get('http_status') or '—'}",
+        f"页面标题：{ev.get('title') or '—'}",
+    ]
+    if ev.get("stars") is not None:
+        details.append(f"GitHub stars：{ev['stars']}")
+    if ev.get("pushed_at"):
+        details.append(f"最近推送：{ev['pushed_at']}")
+    if ev.get("license"):
+        details.append(f"开源协议：{ev['license']}")
+    if ev.get("ai_keywords"):
+        details.append("AI 关键词命中：" + ", ".join(str(x) for x in ev["ai_keywords"]))
+    if ev.get("checked_at"):
+        details.append(f"核验时间：{ev['checked_at']}")
+    details.append("判定：pass（可访问 / AI 相关 / 未重复）")
+    return (
+        f'<span class="dy-verify" title="{esc("；".join(details))}">'
+        f'<b>{esc(bits[0])}</b>'
+        + (" · " + esc(" · ".join(bits[1:])) if len(bits) > 1 else "")
+        + "</span>"
+    )
+
+
+def receipt_html(verify: dict, days) -> str:
+    """页顶「收录质量回执」：展示最新一日的候选→通过→收录漏斗与累计数据。"""
+    vdays = verify.get("days") or {}
+    if not vdays or not days:
+        return ""
+    latest = days[0][0]
+    stat = vdays.get(latest)
+    if not stat:
+        return ""
+    totals = verify.get("totals") or {}
+    nodes = [
+        (f"候选 {stat.get('checked', 0)}", ""),
+        (f"通过 {stat.get('pass', 0)}", ""),
+        (f"复核 {stat.get('review', 0)}", ""),
+        (f"淘汰 {stat.get('fail', 0)}", ""),
+        (f"收录 {stat.get('added', 0)}", "ok"),
+    ]
+    flow = '<span class="dy-receipt-arrow">→</span>'.join(
+        f'<span class="dy-receipt-node {cls}">{esc(text)}</span>' for text, cls in nodes
+    )
+    total_checked = totals.get("checked", 0)
+    total_pass = totals.get("pass", 0)
+    total_added = totals.get("added", 0)
+    rate = (total_added / total_checked * 100) if total_checked else 0
+    return (
+        '<section class="dy-receipt" aria-label="收录质量回执">'
+        '<div class="dy-receipt-head">'
+        '<span class="dy-receipt-title">收录质量回执</span>'
+        f'<span class="dy-receipt-date">最近核验日 {esc(latest)} · 每条均经 HTTP 实探、AI 相关性与去重校验</span>'
+        "</div>"
+        f'<div class="dy-receipt-flow">{flow}</div>'
+        '<div class="dy-receipt-meta">'
+        f'累计核验 <b>{total_checked}</b> 个候选、通过 <b>{total_pass}</b> 条、'
+        f'实际收录 <b>{total_added}</b> 个站点（收录率 {rate:.0f}%）。'
+        '「复核 / 淘汰」为经人工判断未收录的候选，不代表站点失效。'
+        '完整证据数据：<a href="/daily/verify.json">/daily/verify.json</a>，'
+        '每张卡片的徽章可悬停查看单条明细。'
+        "</div></section>"
+    )
+
+
+def card_html(item: dict, evidence: dict) -> str:
     initial = esc(next((c for c in item["name"] if not c.isspace()), "A").upper())
     icon = ""
     if item["img"]:
@@ -348,11 +495,14 @@ def card_html(item: dict) -> str:
         f'<span class="dy-card-body">'
         f'<span class="dy-card-name">{esc(item["name"])}</span>'
         f'<span class="dy-tag">{esc(item["label"])}</span>'
-        f'{desc}</span></a>'
+        f'{desc}{badge_html(item, evidence)}</span></a>'
     )
 
 
-def build_html(entries: list[dict], days, undated, site_url: str, generated: datetime) -> str:
+def build_html(entries: list[dict], days, undated, site_url: str, generated: datetime,
+               verify: dict | None = None) -> str:
+    verify = verify or {}
+    evidence = verify.get("evidence") or {}
     dated_count = sum(len(v) for _, v in days)
     latest = days[0][0] if days else "—"
     root = site_url.rstrip("/")
@@ -381,14 +531,15 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
         '<section class="dy-hero">',
         '<span class="dy-kicker">每日更新 · 逐条核验</span>',
         "<h1>每日 AI 速递</h1>",
-        "<p>每天从公开来源核验后收录 2-3 个 AI 站点，按类型归入开源项目 / 工具官网 / 模型框架。"
-        "这里按收录日期倒序回看，不再让新站点淹没在分类列表里。</p>",
+        "<p>每天从公开来源核验后至少收录 3 个 AI 站点（合格候选多则多收），按类型归入开源项目 / 工具官网 / 模型框架。"
+        "这里按收录日期倒序回看，每条都附可核验的证据，不再让新站点淹没在分类列表里。</p>",
         '<div class="dy-stats">',
         f'<div class="dy-stat"><span>累计收录</span><strong>{len(entries)}</strong></div>',
         f'<div class="dy-stat"><span>每日期数</span><strong>{len(days)}</strong></div>',
         f'<div class="dy-stat"><span>最近更新</span><strong>{esc(latest)}</strong></div>',
         f'<div class="dy-stat"><span>生成时间</span><strong>{generated.strftime("%m-%d %H:%M")}</strong></div>',
         "</div></section>",
+        receipt_html(verify, days),
         '<div class="dy-rssbar">订阅地址 <code>' + esc(f"{root}/daily/feed.xml") +
         '</code> · 每天一期，含当日全部新收录站点。<a href="/daily/feed.xml">打开订阅源 →</a></div>',
         '<div class="dy-timeline">',
@@ -405,7 +556,7 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
             f'<h2>{esc(title)}</h2><span class="dy-week">{esc(week)}</span>'
             f'<span class="dy-count">{len(items)} 个站点</span></div>'
         )
-        parts.append('<div class="dy-cards">' + "".join(card_html(i) for i in items) + "</div>")
+        parts.append('<div class="dy-cards">' + "".join(card_html(i, evidence) for i in items) + "</div>")
         parts.append("</section>")
 
     if undated:
@@ -415,14 +566,16 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
             '<span class="dy-week">描述中没有日期尾注</span>'
             f'<span class="dy-count">{len(undated)} 个站点</span></div>'
         )
-        parts.append('<div class="dy-cards">' + "".join(card_html(i) for i in undated) + "</div>")
+        parts.append('<div class="dy-cards">' + "".join(card_html(i, evidence) for i in undated) + "</div>")
         parts.append("</section>")
 
     parts += [
         "</div>",  # /dy-timeline
         '<footer class="dy-footer">',
         f'数据来源：<a href="{esc(root)}/">cyberMap</a> 的 <code>dailyAI_*</code> 分类，'
-        "每条收录前均经过 HTTP 实探与内容核验。日期取自描述尾注「· YYYY-MM-DD 收录」。",
+        "每条收录前均经过 HTTP 实探、GitHub 元数据与 AI 相关性核验；"
+        '徽章明细见 <a href="/daily/verify.json">收录质量回执数据</a>。'
+        "日期取自描述尾注「· YYYY-MM-DD 收录」。",
         f'<br>共 {len(entries)} 个站点、{len(days)} 期（其中 {dated_count} 条有明确日期）；'
         f'最后生成于 {generated.strftime("%Y-%m-%d %H:%M")} (UTC+8)。',
         "</footer>",
@@ -501,6 +654,8 @@ def main() -> None:
     except (FileNotFoundError, ValueError) as exc:
         fail(str(exc))
 
+    verify, verify_warnings = load_verify(repo / VERIFY_REL)
+    warnings += verify_warnings
     days, undated = group_by_day(entries)
     generated = datetime.now(CST)
     summary = {
@@ -509,13 +664,18 @@ def main() -> None:
         "days": len(days),
         "undated": len(undated),
         "latest": days[0][0] if days else None,
+        "verified_badges": sum(
+            1 for e in entries
+            if (verify.get("evidence") or {}).get(norm_url(e["url"]))
+        ),
+        "quality_receipt": bool(verify.get("days") and days),
         "warnings": warnings,
     }
     if args.check:
         print(json.dumps({**summary, "check_only": True}, ensure_ascii=False, indent=2))
         return
 
-    html_text = build_html(entries, days, undated, site_url, generated)
+    html_text = build_html(entries, days, undated, site_url, generated, verify)
     feed_bytes = build_feed(days, site_url, generated)
 
     # 写完再自检一遍，避免把语法错误的产物发布出去
