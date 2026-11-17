@@ -198,17 +198,24 @@ def collect(limit, token, pause):
         if pause and i < len(targets):
             time.sleep(pause)
 
-    with_replies = sum(1 for r in results if r["comments"])
+    # 合并：本次 sent 目标用新结果覆盖；prev 里不在本次 targets 的条目（被拉黑的、
+    # 手工补录的明确拒绝声明等）原样保留，绝不因一次采集把它们抹掉。
+    target_urls = {t["issue_url"] for t in targets}
+    kept = [it for it in prev.get("items", [])
+            if it.get("issue_url") not in target_urls]
+    merged = results + kept
+
+    with_replies = sum(1 for r in merged if r["comments"])
     out = {
         "fetched_at": now_iso(),
-        "total_issues": len(results),
+        "total_issues": len(merged),
         "issues_with_replies": with_replies,
         "new_reply_issues": new_reply_issues,
-        "items": results,
+        "items": merged,
     }
     save_json(REPLIES, out)
-    print("\nDONE: %d issues, %d with replies, %d with new comments this run -> %s" % (
-        len(results), with_replies, new_reply_issues, REPLIES))
+    print("\nDONE: %d collected + %d kept, %d with replies, %d with new comments this run -> %s" % (
+        len(results), len(kept), with_replies, new_reply_issues, REPLIES))
     return out
 
 
