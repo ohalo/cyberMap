@@ -1,0 +1,13 @@
+{
+  "_note": "外联永久黑名单：作者明确要求停止联系（含 issue/comment/PR/email）的 owner 或仓库。send_issues.py 与 build_daily_queue.py 在发送/生成队列前强制过滤；collect_replies.py 仍可只读采集其回复用于看板展示，但绝不写入。scope=owner 表示该账号下所有仓库都不再联系。",
+  "updated_at": "2026-11-17T13:00:00+00:00",
+  "blocked": [
+    {
+      "scope": "owner",
+      "value": "bowenliang123",
+      "reason": "作者 bowenliang123 在 bowenliang123/dsh-context#269 用中英双语明确要求停止一切自动化联系，并威胁向 GitHub 举报滥用、追究法律责任。尊重其意愿，该 owner 下所有仓库永久不再外联。",
+      "evidence": "https://github.com/bowenliang123/dsh-context/issues/269",
+      "since": "2026-11-17"
+    }
+  ]
+}

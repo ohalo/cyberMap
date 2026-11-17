@@ -38,6 +38,10 @@ border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:10px}
 .tag{font-size:11px;padding:3px 8px;border-radius:20px;white-space:nowrap}
 .tag-follow{background:var(--amberbg);color:var(--amber);border:1px solid #fac775}
 .tag-done{background:var(--greenbg);color:var(--green);border:1px solid #9fe1cb}
+.tag-declined{background:var(--redbg);color:var(--red);border:1px solid #f3b7b0}
+.card-declined{border-color:#f0b6ae;background:#fffafa}
+.declined-note{background:var(--redbg);color:#96281b;border:1px solid #f3b7b0;border-radius:8px;
+padding:10px 13px;font-size:13px;margin:0 0 12px;line-height:1.55}
 .resolved{background:var(--greenbg);color:#0b5c47;border-radius:8px;
 padding:8px 12px;font-size:13px;margin:0 0 12px}
 .cmt{padding:9px 0;border-top:1px dashed #eee}
@@ -54,22 +58,54 @@ padding:8px 12px;font-size:13px;margin:0 0 12px}
 @media(max-width:560px){.card-h{flex-direction:column}.tags{justify-content:flex-start}}
 </style></head><body><div class="wrap">
 <h1>cyberMap · 作者回复看板</h1>
-<p class="sub">外联 Issue 的作者/维护者回复，一处看全。采集时间 2026-11-17 12:36 UTC ·
+<p class="sub">外联 Issue 的作者/维护者回复，一处看全。采集时间 2026-11-17 12:56 UTC ·
 <a href="daily-queue/index.html">每日外联发送页 →</a></p>
 <div class="cards-top">
-  <div class="stat"><p class="lbl">有回复的 Issue</p><p class="val">7</p></div>
-  <div class="stat"><p class="lbl">回复总数</p><p class="val">7</p></div>
+  <div class="stat"><p class="lbl">有回复的 Issue</p><p class="val">8</p></div>
+  <div class="stat"><p class="lbl">回复总数</p><p class="val">8</p></div>
   <div class="stat act"><p class="lbl">待跟进</p><p class="val">2</p></div>
   <div class="stat ok"><p class="lbl">已落实</p><p class="val">1</p></div>
+  <div class="stat" style="border-color:#f0b6ae"><p class="lbl" style="color:var(--red)">明确拒绝</p><p class="val" style="color:var(--red)">1</p></div>
 </div>
 <div class="hint">💡 本页随每日排行榜自动更新。带「需跟进」标签的是作者对网站/数据提出的意见，
-点「原文↗」到 GitHub 查看完整讨论；已落实的反馈在卡片里标注了处理结果。</div>
+点「原文↗」到 GitHub 查看完整讨论；已落实的反馈在卡片里标注了处理结果。
+带「⛔ 明确拒绝」的是要求停止一切联系的作者，已永久加入外联黑名单，不会再收到任何 issue。</div>
 <div class="bar">
   <button class="btn on" data-f="all">全部</button>
+  <button class="btn" data-f="declined">明确拒绝</button>
   <button class="btn" data-f="follow">需跟进</button>
   <button class="btn" data-f="done">已落实</button>
 </div>
-<div id="list"><article class="card"><div class="card-h"><div class="repo"><a href="https://github.com/DDDMUC/dsh-free-search/issues/137" target="_blank" rel="noopener">DDDMUC/dsh-free-search</a><span class="issue">#137</span></div><div class="tags"><span class="tag tag-done">已落实</span></div></div><div class="resolved">✅ 已修复：新增可核验 npm 映射，页面周下载量已显示真实值（41,061）</div><div class="cmts"><div class="cmt"><div class="cmt-h"><span class="who">DDDMUC</span><span class="when">2026-11-17</span><a class="cmt-link" href="https://github.com/DDDMUC/dsh-free-search/issues/137#issuecomment-6937723225" target="_blank" rel="noopener">原文↗</a></div><div class="cmt-body">你们这个是中文站吗？我看到里面说npm 周下载 | n/a（无可信包名映射，未臆造），但实际上这个插件是有npm包的呀：https://www.npmjs.com/package/dsh-free-search</div></div></div></article>
+<div id="list"><article class="card card-declined"><div class="card-h"><div class="repo"><a href="https://github.com/bowenliang123/dsh-context/issues/269" target="_blank" rel="noopener">bowenliang123/dsh-context</a><span class="issue">#269</span></div><div class="tags"><span class="tag tag-declined">⛔ 明确拒绝 · 勿再联系</span></div></div><div class="declined-note">⛔ <b>已加入永久外联黑名单</b>：作者明确要求永久停止一切自动化联系，已加入外联永久黑名单，不再发送任何 issue/评论/PR/邮件。（该 owner 下所有仓库今后都不再联系）</div><div class="cmts"><div class="cmt"><div class="cmt-h"><span class="who">bowenliang123</span><span class="when">2026-11-17</span><a class="cmt-link" href="https://github.com/bowenliang123/dsh-context/issues/269#issuecomment-6939631564" target="_blank" rel="noopener">原文↗</a></div><div class="cmt-body">**停止。这是未经请求的自动化推广，本项目不接受。**
+
+@ohalo —— GitHub 账号 `ohalo`，显示名 **halo**，`cybermap.halo26812.eu.org`（cyberMap 导航站）的运营者：
+
+你的账号向大量无关仓库批量发送同一份「排行榜」通知：几分钟内数十条几乎完全相同的内容，每条都带 `cybermap-outreach:v1` 标记，并以通知邮件的形式塞进维护者收件箱——没有人订阅，也无法事先拒收。你仓库里的 `__cybermap_token_probe__` issue 已经说明一切：这是脚本，不是人在沟通。这不是偶发一次——同一脚本已在 GitHub 上持续运行多日，反复消耗本项目维护者的时间、塞满通知收件箱。到此为止。
+
+关于邮件与联系方式：该账号未公开任何邮箱，也未与本项目建立任何订阅关系。所有落进收件箱的「联系」，都是你的脚本开 issue 触发 GitHub 通知邮件（`notifications@github.com`）产生的。要沟通，请使用你自己公开的渠道，不要把我们的 issue 区和收件箱当成你的分发列表。
+
+这些内容与 dsh-context 没有任何关系：不是代码，不是用户，也不是本项目的 issue 区。你页面上的排名不是本项目请求过、同意过或授权过的服务；star 数虽然公开，但这不意味着你有权把我们的 issue 区当作你的分发渠道。
+
+**不要再以任何方式联系本仓库及其维护者**——不要开 issue、不要评论、不要提 PR、不要发邮件。若要把本项目从你的榜单移除，请自行移除；那是你该管理的页面，不是我们该被你填满的收件箱。
+
+本 issue 作为垃圾信息关闭。若继续自动化骚扰，我们将向 GitHub 举报滥用，并保留就反复的未经请求联系及对本项目的干扰追究一切可用救济的全部权利。
+
+---
+
+**Stop. This is unsolicited automated outreach, and it is not welcome here.**
+
+@ohalo — the GitHub account `ohalo`, display name **halo**, operator of `cybermap.halo26812.eu.org` (the cyberMap directory):
+
+Your account posts the same leaderboard notice to unrelated repositories in bulk — dozens of near-identical issues within minutes, each carrying the `cybermap-outreach:v1` marker, each landing in maintainers&#x27; inboxes as notification email nobody asked for and nobody can opt out of in advance. The `__cybermap_token_probe__` issues in your own repository make the picture unambiguous: this is scripted, not a person reaching out. This is not a one-off — the same script has been running across GitHub for days, and it has repeatedly consumed this project&#x27;s maintainer time and filled the notification inbox. It ends here.
+
+On email and contact details: this account publishes no email address and has no subscription relationship with this project. Every message that reached the inbox was generated by your script opening an issue, which triggered GitHub&#x27;s own notification email (`notifications@github.com`). If you have something to say, use a channel you publish yourself — not our issue tracker and not our inbox.
+
+None of this has anything to do with dsh-context — not its code, not its users, not its issue tracker. A ranking on your page is not a service this project requested, agreed to, or consented to. The star count is public, but that does not give you the right to use our issue tracker as your distribution channel.
+
+**Do not contact this repository or its maintainers again** — no issues, no comments, no pull requests, no email. If you want this project removed from your leaderboard, remove it yourself; that is your page to manage, not our inbox to fill.
+
+This issue is closed as spam. Any further automated contact will be reported to GitHub as abuse, and we reserve all rights to pursue every available remedy against repeated unsolicited contact and interference with this project.</div></div></div></article>
+<article class="card"><div class="card-h"><div class="repo"><a href="https://github.com/DDDMUC/dsh-free-search/issues/137" target="_blank" rel="noopener">DDDMUC/dsh-free-search</a><span class="issue">#137</span></div><div class="tags"><span class="tag tag-done">已落实</span></div></div><div class="resolved">✅ 已修复：新增可核验 npm 映射，页面周下载量已显示真实值（41,061）</div><div class="cmts"><div class="cmt"><div class="cmt-h"><span class="who">DDDMUC</span><span class="when">2026-11-17</span><a class="cmt-link" href="https://github.com/DDDMUC/dsh-free-search/issues/137#issuecomment-6937723225" target="_blank" rel="noopener">原文↗</a></div><div class="cmt-body">你们这个是中文站吗？我看到里面说npm 周下载 | n/a（无可信包名映射，未臆造），但实际上这个插件是有npm包的呀：https://www.npmjs.com/package/dsh-free-search</div></div></div></article>
 <article class="card"><div class="card-h"><div class="repo"><a href="https://github.com/QingYunA/answer-me-with-html/issues/422" target="_blank" rel="noopener">QingYunA/answer-me-with-html</a><span class="issue">#422</span></div><div class="tags"></div></div><div class="cmts"><div class="cmt"><div class="cmt-h"><span class="who">QingYunA</span><span class="when">2026-11-17</span><a class="cmt-link" href="https://github.com/QingYunA/answer-me-with-html/issues/422#issuecomment-6937188013" target="_blank" rel="noopener">原文↗</a></div><div class="cmt-body">Thanks for letting us know. There&#x27;s nothing to change in the project for this, so I&#x27;m closing the issue.</div></div></div></article>
 <article class="card"><div class="card-h"><div class="repo"><a href="https://github.com/zhu1090093659/dsh-web/issues/2057" target="_blank" rel="noopener">zhu1090093659/dsh-web</a><span class="issue">#2057</span></div><div class="tags"><span class="tag tag-follow">需跟进 · 流程/模板</span></div></div><div class="cmts"><div class="cmt"><div class="cmt-h"><span class="who">github-actions[bot] <span class="bot">bot</span></span><span class="when">2026-11-16</span><a class="cmt-link" href="https://github.com/zhu1090093659/dsh-web/issues/2057#issuecomment-6912002925" target="_blank" rel="noopener">原文↗</a></div><div class="cmt-body">该 Issue 因未使用仓库要求的 Issue 模板而被自动关闭。
 
@@ -107,7 +143,8 @@ Thanks for the report! To replay it, a maintainer needs the items below. Add the
     [].forEach.call(list.querySelectorAll('.card'),function(c){
       var isDone=!!c.querySelector('.tag-done');
       var isFollow=!!c.querySelector('.tag-follow');
-      var show=(f==='all')||(f==='done'&&isDone)||(f==='follow'&&isFollow);
+      var isDeclined=!!c.querySelector('.tag-declined');
+      var show=(f==='all')||(f==='done'&&isDone)||(f==='follow'&&isFollow)||(f==='declined'&&isDeclined);
       c.style.display=show?'':'none';
     });
     [].forEach.call(btns,function(b){b.classList.toggle('on',b.getAttribute('data-f')===f);});

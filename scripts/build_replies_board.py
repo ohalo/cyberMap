@@ -22,6 +22,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_DIR = os.path.join(ROOT, "outreach")
 REPLIES = os.path.join(OUT_DIR, "replies.json")
 BOARD = os.path.join(OUT_DIR, "replies-board.html")
+BLOCKED = os.path.join(OUT_DIR, "blocked.json")
 
 # 已落实/已回应的反馈：repo_path -> 说明（人工维护，随处理进度更新）
 RESOLVED = {
@@ -41,6 +42,30 @@ def load_json(path, default):
         return default
     with io.open(path, encoding="utf-8") as f:
         return json.load(f)
+
+
+def load_blocked():
+    """读取永久黑名单，返回 (owners_lower, repo_paths_lower, info_by_repo)。"""
+    d = load_json(BLOCKED, {}) or {}
+    owners, repos, info = set(), set(), {}
+    for b in d.get("blocked", []):
+        val = (b.get("value") or "").lower().strip()
+        if not val:
+            continue
+        if b.get("scope") == "owner":
+            owners.add(val)
+        else:
+            repos.add(val)
+            info[val] = b
+    return owners, repos, info
+
+
+def is_declined(repo_path, blocked):
+    """该仓库的 owner/repo 是否在永久拒绝名单里。"""
+    owners, repos, _ = blocked
+    rp = (repo_path or "").lower()
+    owner = rp.split("/", 1)[0] if rp else ""
+    return owner in owners or rp in repos
 
 
 def followup_type(body):
@@ -64,15 +89,22 @@ def esc(s):
 def build():
     data = load_json(REPLIES, {"items": [], "fetched_at": ""})
     items = [it for it in data.get("items", []) if it.get("comments")]
-    # 最近回复优先
+    blocked = load_blocked()
+    # 最近回复优先；明确拒绝的永远排最前
     def latest(it):
         ds = [c.get("created_at", "") for c in it["comments"]]
         return max(ds) if ds else ""
+    items.sort(key=lambda it: (0 if is_declined(it.get("repo_path"), blocked) else 1,
+                               latest(it)), reverse=False)
+    # 上面把 declined 排前面（0<1），但同组要按时间倒序，二次稳定排序
     items.sort(key=latest, reverse=True)
+    items.sort(key=lambda it: 0 if is_declined(it.get("repo_path"), blocked) else 1)
 
     total_comments = sum(len(it["comments"]) for it in items)
+    declined_n = sum(1 for it in items if is_declined(it.get("repo_path"), blocked))
     actionable = sum(1 for it in items
-                     if followup_type(" ".join(c.get("body", "") for c in it["comments"]))
+                     if not is_declined(it.get("repo_path"), blocked)
+                     and followup_type(" ".join(c.get("body", "") for c in it["comments"]))
                      and it["repo_path"].lower() not in {k.lower() for k in RESOLVED})
     resolved_n = sum(1 for it in items if it["repo_path"].lower() in {k.lower() for k in RESOLVED})
 
@@ -80,11 +112,14 @@ def build():
     for it in items:
         repo = it.get("repo_path", "")
         url = it.get("issue_url", "")
+        declined = is_declined(repo, blocked)
         is_resolved = repo.lower() in {k.lower() for k in RESOLVED}
         bodies = " ".join(c.get("body", "") for c in it["comments"])
         ftype = followup_type(bodies)
         badge = ""
-        if is_resolved:
+        if declined:
+            badge = '<span class="tag tag-declined">⛔ 明确拒绝 · 勿再联系</span>'
+        elif is_resolved:
             badge = '<span class="tag tag-done">已落实</span>'
         elif ftype:
             badge = '<span class="tag tag-follow">需跟进 · %s</span>' % esc(ftype)
@@ -94,6 +129,18 @@ def build():
             if k.lower() == repo.lower():
                 resolved_note = '<div class="resolved">✅ %s</div>' % esc(v)
                 break
+        if declined:
+            owners, repos, info = blocked
+            owner = repo.split("/", 1)[0] if repo else ""
+            reason = ""
+            for key in (repo.lower(), owner.lower()):
+                if key in info:
+                    reason = info[key].get("reason", "")
+                    break
+            if not reason:
+                reason = "作者明确要求永久停止一切自动化联系，已加入外联永久黑名单，不再发送任何 issue/评论/PR/邮件。"
+            resolved_note = ('<div class="declined-note">⛔ <b>已加入永久外联黑名单</b>：%s'
+                             '（该 owner 下所有仓库今后都不再联系）</div>' % esc(reason))
 
         comments_html = []
         for c in it["comments"]:
@@ -101,8 +148,8 @@ def build():
             atype = c.get("author_type") or ""
             is_bot = atype.endswith("Bot") or author.endswith("[bot]")
             body = c.get("body", "").strip()
-            # 折叠超长自动评论，保留可读片段
-            long = len(body) > 700
+            # 明确拒绝的声明完整展示（这是重要正式声明，不截断）；其余折叠超长自动评论
+            long = (len(body) > 700) and not declined
             shown = body[:700] + "\n…（完整内容见原 Issue）" if long else body
             who = esc(author) + (' <span class="bot">bot</span>' if is_bot else "")
             comments_html.append(
@@ -114,8 +161,9 @@ def build():
                     who, esc(fmt_date(c.get("created_at"))), esc(c.get("html_url") or url),
                     esc(shown)))
 
+        card_cls = "card card-declined" if declined else "card"
         cards.append(
-            '<article class="card">'
+            '<article class="%s">'
             '<div class="card-h">'
             '<div class="repo"><a href="%s" target="_blank" rel="noopener">%s</a>'
             '<span class="issue">#%s</span></div>'
@@ -123,7 +171,7 @@ def build():
             '%s'
             '<div class="cmts">%s</div>'
             '</article>' % (
-                esc(url), esc(repo), esc(it.get("issue_number")), badge,
+                card_cls, esc(url), esc(repo), esc(it.get("issue_number")), badge,
                 resolved_note, "".join(comments_html)))
 
     if not cards:
@@ -143,6 +191,7 @@ def build():
         "__COMMENTS__": str(total_comments),
         "__ACTIONABLE__": str(actionable),
         "__RESOLVED__": str(resolved_n),
+        "__DECLINED__": str(declined_n),
         "__CARDS__": "\n".join(cards),
     }
     for k, v in repl.items():
@@ -150,8 +199,8 @@ def build():
 
     with io.open(BOARD, "w", encoding="utf-8") as f:
         f.write(tpl)
-    print("WROTE %s (%d issues, %d comments, %d actionable, %d resolved)" % (
-        BOARD, len(items), total_comments, actionable, resolved_n))
+    print("WROTE %s (%d issues, %d comments, %d actionable, %d resolved, %d declined)" % (
+        BOARD, len(items), total_comments, actionable, resolved_n, declined_n))
 
 
 TEMPLATE = r"""<!DOCTYPE html>
@@ -194,6 +243,10 @@ border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:10px}
 .tag{font-size:11px;padding:3px 8px;border-radius:20px;white-space:nowrap}
 .tag-follow{background:var(--amberbg);color:var(--amber);border:1px solid #fac775}
 .tag-done{background:var(--greenbg);color:var(--green);border:1px solid #9fe1cb}
+.tag-declined{background:var(--redbg);color:var(--red);border:1px solid #f3b7b0}
+.card-declined{border-color:#f0b6ae;background:#fffafa}
+.declined-note{background:var(--redbg);color:#96281b;border:1px solid #f3b7b0;border-radius:8px;
+padding:10px 13px;font-size:13px;margin:0 0 12px;line-height:1.55}
 .resolved{background:var(--greenbg);color:#0b5c47;border-radius:8px;
 padding:8px 12px;font-size:13px;margin:0 0 12px}
 .cmt{padding:9px 0;border-top:1px dashed #eee}
@@ -217,11 +270,14 @@ padding:8px 12px;font-size:13px;margin:0 0 12px}
   <div class="stat"><p class="lbl">回复总数</p><p class="val">__COMMENTS__</p></div>
   <div class="stat act"><p class="lbl">待跟进</p><p class="val">__ACTIONABLE__</p></div>
   <div class="stat ok"><p class="lbl">已落实</p><p class="val">__RESOLVED__</p></div>
+  <div class="stat" style="border-color:#f0b6ae"><p class="lbl" style="color:var(--red)">明确拒绝</p><p class="val" style="color:var(--red)">__DECLINED__</p></div>
 </div>
 <div class="hint">💡 本页随每日排行榜自动更新。带「需跟进」标签的是作者对网站/数据提出的意见，
-点「原文↗」到 GitHub 查看完整讨论；已落实的反馈在卡片里标注了处理结果。</div>
+点「原文↗」到 GitHub 查看完整讨论；已落实的反馈在卡片里标注了处理结果。
+带「⛔ 明确拒绝」的是要求停止一切联系的作者，已永久加入外联黑名单，不会再收到任何 issue。</div>
 <div class="bar">
   <button class="btn on" data-f="all">全部</button>
+  <button class="btn" data-f="declined">明确拒绝</button>
   <button class="btn" data-f="follow">需跟进</button>
   <button class="btn" data-f="done">已落实</button>
 </div>
@@ -235,7 +291,8 @@ padding:8px 12px;font-size:13px;margin:0 0 12px}
     [].forEach.call(list.querySelectorAll('.card'),function(c){
       var isDone=!!c.querySelector('.tag-done');
       var isFollow=!!c.querySelector('.tag-follow');
-      var show=(f==='all')||(f==='done'&&isDone)||(f==='follow'&&isFollow);
+      var isDeclined=!!c.querySelector('.tag-declined');
+      var show=(f==='all')||(f==='done'&&isDone)||(f==='follow'&&isFollow)||(f==='declined'&&isDeclined);
       c.style.display=show?'':'none';
     });
     [].forEach.call(btns,function(b){b.classList.toggle('on',b.getAttribute('data-f')===f);});

@@ -92,14 +92,19 @@ def build_rows(si, date_str, include_org=False, no_dedup=False):
                 sent_repos.add(it["repo_path"].lower())
 
     overall = top.get("overall", []) or []
+    blocked = si.load_blocked()  # 作者明确拒绝的 owner/repo —— 永不列入发送页
     rows, seen = [], set()
     for it in overall:
         canonical = it.get("canonical") or ""
         owner = canonical.split("/")[0] if "/" in canonical else (it.get("name") or "")
+        if si.is_blocked({"owner": owner, "repo_path": canonical or owner}, blocked):
+            continue
         if not include_org and owner.lower() in ORG_HINT:
             continue
         repo = normalize_repo(it.get("url") or canonical)
         if not repo or "/" not in repo:
+            continue
+        if si.is_blocked({"owner": owner, "repo_path": repo}, blocked):
             continue
         plugin = it.get("name") or repo.split("/")[1]
         dedup_key = owner.lower() + "|" + plugin
