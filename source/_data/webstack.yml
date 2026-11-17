@@ -15,6 +15,10 @@ flag:
     default: true
     icon: flag-cn
     index: /index.html
+  - name: English
+    default: false
+    icon: flag-us
+    index: /en/
 
 search: true
 
