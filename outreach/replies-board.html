@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>cyberMap · 作者回复看板</title>
+<style>
+:root{--bg:#fbfbfa;--panel:#fff;--ink:#2c2c2a;--ink2:#5f5e5a;--ink3:#8a8984;
+--line:#e6e4dd;--blue:#185fa5;--bluebg:#e6f1fb;--green:#0f6e56;--greenbg:#e1f5ee;
+--amber:#854f0b;--amberbg:#faeeda;--red:#c0392b;--redbg:#fbe9e7}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:14px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:30px 20px 90px}
+h1{font-size:21px;font-weight:500;margin:0 0 6px}
+.sub{color:var(--ink2);font-size:13px;margin:0 0 18px}
+.sub a{color:var(--blue);text-decoration:none}
+.cards-top{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:18px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:12px 14px}
+.stat .lbl{color:var(--ink3);font-size:12px;margin:0 0 4px}
+.stat .val{font-size:23px;font-weight:500;margin:0;font-variant-numeric:tabular-nums}
+.stat.act .val{color:var(--amber)}
+.stat.ok .val{color:var(--green)}
+.hint{background:var(--amberbg);border:1px solid #fac775;border-radius:10px;
+padding:12px 16px;font-size:13px;color:#5c3a08;margin:0 0 18px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:0 0 16px}
+.btn{display:inline-block;padding:7px 13px;border:1px solid var(--line);border-radius:8px;
+background:#fff;color:var(--ink2);font-size:13px;cursor:pointer;text-decoration:none;line-height:1.4}
+.btn:hover{border-color:#b4b2a9;background:#f5f4f1}
+.btn.on{background:var(--blue);border-color:var(--blue);color:#fff}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+padding:16px 18px;margin-bottom:12px}
+.card-h{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;
+border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:10px}
+.repo{font-size:15px;font-weight:500}
+.repo a{color:var(--blue);text-decoration:none}
+.repo a:hover{text-decoration:underline}
+.issue{color:var(--ink3);font-weight:400;margin-left:6px;font-size:13px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.tag{font-size:11px;padding:3px 8px;border-radius:20px;white-space:nowrap}
+.tag-follow{background:var(--amberbg);color:var(--amber);border:1px solid #fac775}
+.tag-done{background:var(--greenbg);color:var(--green);border:1px solid #9fe1cb}
+.resolved{background:var(--greenbg);color:#0b5c47;border-radius:8px;
+padding:8px 12px;font-size:13px;margin:0 0 12px}
+.cmt{padding:9px 0;border-top:1px dashed #eee}
+.cmt:first-child{border-top:0;padding-top:0}
+.cmt-h{display:flex;align-items:center;gap:10px;margin-bottom:4px;flex-wrap:wrap}
+.who{font-weight:500;color:var(--ink)}
+.bot{font-size:10px;color:var(--ink3);background:#f0efeb;border-radius:4px;padding:1px 5px}
+.when{color:var(--ink3);font-size:12px;font-variant-numeric:tabular-nums}
+.cmt-link{margin-left:auto;color:var(--blue);font-size:12px;text-decoration:none}
+.cmt-link:hover{text-decoration:underline}
+.cmt-body{color:var(--ink2);font-size:13px;white-space:pre-wrap;word-break:break-word}
+.empty{text-align:center;color:var(--ink3);padding:50px 0;border:1px dashed var(--line);border-radius:12px}
+.foot{color:var(--ink3);font-size:12px;margin-top:26px;text-align:center}
+@media(max-width:560px){.card-h{flex-direction:column}.tags{justify-content:flex-start}}
+</style></head><body><div class="wrap">
+<h1>cyberMap · 作者回复看板</h1>
+<p class="sub">外联 Issue 的作者/维护者回复，一处看全。采集时间 2026-11-17 12:36 UTC ·
+<a href="daily-queue/index.html">每日外联发送页 →</a></p>
+<div class="cards-top">
+  <div class="stat"><p class="lbl">有回复的 Issue</p><p class="val">7</p></div>
+  <div class="stat"><p class="lbl">回复总数</p><p class="val">7</p></div>
+  <div class="stat act"><p class="lbl">待跟进</p><p class="val">2</p></div>
+  <div class="stat ok"><p class="lbl">已落实</p><p class="val">1</p></div>
+</div>
+<div class="hint">💡 本页随每日排行榜自动更新。带「需跟进」标签的是作者对网站/数据提出的意见，
+点「原文↗」到 GitHub 查看完整讨论；已落实的反馈在卡片里标注了处理结果。</div>
+<div class="bar">
+  <button class="btn on" data-f="all">全部</button>
+  <button class="btn" data-f="follow">需跟进</button>
+  <button class="btn" data-f="done">已落实</button>
+</div>
+<div id="list"><article class="card"><div class="card-h"><div class="repo"><a href="https://github.com/DDDMUC/dsh-free-search/issues/137" target="_blank" rel="noopener">DDDMUC/dsh-free-search</a><span class="issue">#137</span></div><div class="tags"><span class="tag tag-done">已落实</span></div></div><div class="resolved">✅ 已修复：新增可核验 npm 映射，页面周下载量已显示真实值（41,061）</div><div class="cmts"><div class="cmt"><div class="cmt-h"><span class="who">DDDMUC</span><span class="when">2026-11-17</span><a class="cmt-link" href="https://github.com/DDDMUC/dsh-free-search/issues/137#issuecomment-6937723225" target="_blank" rel="noopener">原文↗</a></div><div class="cmt-body">你们这个是中文站吗？我看到里面说npm 周下载 | n/a（无可信包名映射，未臆造），但实际上这个插件是有npm包的呀：https://www.npmjs.com/package/dsh-free-search</div></div></div></article>
+<article class="card"><div class="card-h"><div class="repo"><a href="https://github.com/QingYunA/answer-me-with-html/issues/422" target="_blank" rel="noopener">QingYunA/answer-me-with-html</a><span class="issue">#422</span></div><div class="tags"></div></div><div class="cmts"><div class="cmt"><div class="cmt-h"><span class="who">QingYunA</span><span class="when">2026-11-17</span><a class="cmt-link" href="https://github.com/QingYunA/answer-me-with-html/issues/422#issuecomment-6937188013" target="_blank" rel="noopener">原文↗</a></div><div class="cmt-body">Thanks for letting us know. There&#x27;s nothing to change in the project for this, so I&#x27;m closing the issue.</div></div></div></article>
+<article class="card"><div class="card-h"><div class="repo"><a href="https://github.com/zhu1090093659/dsh-web/issues/2057" target="_blank" rel="noopener">zhu1090093659/dsh-web</a><span class="issue">#2057</span></div><div class="tags"><span class="tag tag-follow">需跟进 · 流程/模板</span></div></div><div class="cmts"><div class="cmt"><div class="cmt-h"><span class="who">github-actions[bot] <span class="bot">bot</span></span><span class="when">2026-11-16</span><a class="cmt-link" href="https://github.com/zhu1090093659/dsh-web/issues/2057#issuecomment-6912002925" target="_blank" rel="noopener">原文↗</a></div><div class="cmt-body">该 Issue 因未使用仓库要求的 Issue 模板而被自动关闭。
+
+请从仓库的 Issue 表单重新发起，并填写所有必填部分：
+
+- 涉及插件
+- Issue 类型
+- 摘要
+- 预期结果
+- 详情 / 复现步骤
+- 环境信息
+
+缺少或为空的必填部分：涉及插件, Issue 类型, 摘要, 预期结果, 详情 / 复现步骤, 环境信息</div></div></div></article>
+<article class="card"><div class="card-h"><div class="repo"><a href="https://github.com/Javis603/token-monitor/issues/1516" target="_blank" rel="noopener">Javis603/token-monitor</a><span class="issue">#1516</span></div><div class="tags"></div></div><div class="cmts"><div class="cmt"><div class="cmt-h"><span class="who">Javis603</span><span class="when">2026-11-16</span><a class="cmt-link" href="https://github.com/Javis603/token-monitor/issues/1516#issuecomment-6910995311" target="_blank" rel="noopener">原文↗</a></div><div class="cmt-body">Thanks!</div></div></div></article>
+<article class="card"><div class="card-h"><div class="repo"><a href="https://github.com/jnMetaCode/agency-agents-zh/issues/120" target="_blank" rel="noopener">jnMetaCode/agency-agents-zh</a><span class="issue">#120</span></div><div class="tags"></div></div><div class="cmts"><div class="cmt"><div class="cmt-h"><span class="who">xukache</span><span class="when">2026-11-16</span><a class="cmt-link" href="https://github.com/jnMetaCode/agency-agents-zh/issues/120#issuecomment-6909545583" target="_blank" rel="noopener">原文↗</a></div><div class="cmt-body">已收到，谢谢！</div></div></div></article>
+<article class="card"><div class="card-h"><div class="repo"><a href="https://github.com/mksglu/context-mode/issues/1391" target="_blank" rel="noopener">mksglu/context-mode</a><span class="issue">#1391</span></div><div class="tags"><span class="tag tag-follow">需跟进 · 数据纠错</span></div></div><div class="cmts"><div class="cmt"><div class="cmt-h"><span class="who">github-actions[bot] <span class="bot">bot</span></span><span class="when">2026-11-16</span><a class="cmt-link" href="https://github.com/mksglu/context-mode/issues/1391#issuecomment-6909542310" target="_blank" rel="noopener">原文↗</a></div><div class="cmt-body">&lt;!-- context-mode-intake --&gt;
+**Intake check: needs-info**
+
+Thanks for the report! To replay it, a maintainer needs the items below. Add them by editing the issue body:
+
+- [ ] **ctx_doctor report**: call the `ctx_doctor` tool and paste its full output unchanged in the `ctx-report` field
+- [ ] **context-mode version**: row D1 of the doctor report, or `npm ls -g context-mode --depth=0`
+- [ ] **agent name and version**: for example `claude --version`, `codex --version`, `opencode --version`
+- [ ] **OS and arch**: `uname -sm`; on Windows, `$env:OS` and `$env:PROCESSOR_ARCHITECTURE`
+- [ ] **Node version**: `node --version`
+- [ ] **numbered repro steps from a fresh project**: start from `mktemp -d`
+…（完整内容见原 Issue）</div></div></div></article>
+<article class="card"><div class="card-h"><div class="repo"><a href="https://github.com/liguobao/ds-harness-remote/issues/459" target="_blank" rel="noopener">liguobao/ds-harness-remote</a><span class="issue">#459</span></div><div class="tags"></div></div><div class="cmts"><div class="cmt"><div class="cmt-h"><span class="who">liguobao</span><span class="when">2026-11-16</span><a class="cmt-link" href="https://github.com/liguobao/ds-harness-remote/issues/459#issuecomment-6908328150" target="_blank" rel="noopener">原文↗</a></div><div class="cmt-body">thanks~</div></div></div></article></div>
+<p class="foot">数据来自 GitHub 公开 Issue 评论 · 仅供内部跟进，不构成投资建议</p>
+</div>
+<script>
+(function(){
+  var btns=document.querySelectorAll('.btn[data-f]'),list=document.getElementById('list');
+  function apply(f){
+    [].forEach.call(list.querySelectorAll('.card'),function(c){
+      var isDone=!!c.querySelector('.tag-done');
+      var isFollow=!!c.querySelector('.tag-follow');
+      var show=(f==='all')||(f==='done'&&isDone)||(f==='follow'&&isFollow);
+      c.style.display=show?'':'none';
+    });
+    [].forEach.call(btns,function(b){b.classList.toggle('on',b.getAttribute('data-f')===f);});
+  }
+  [].forEach.call(btns,function(b){b.addEventListener('click',function(){apply(b.getAttribute('data-f'));});});
+})();
+</script></body></html>

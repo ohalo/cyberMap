@@ -1,0 +1,563 @@
+{
+  "fetched_at": "2026-11-17T12:36:26+00:00",
+  "total_issues": 41,
+  "issues_with_replies": 7,
+  "new_reply_issues": 0,
+  "items": [
+    {
+      "owner": "thedotmack",
+      "plugin": "claude-mem",
+      "repo_path": "thedotmack/claude-mem",
+      "rank": 1,
+      "issue_number": 6201,
+      "issue_url": "https://github.com/thedotmack/claude-mem/issues/6201",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "tt-a1i",
+      "plugin": "archify",
+      "repo_path": "tt-a1i/archify",
+      "rank": 2,
+      "issue_number": 1374,
+      "issue_url": "https://github.com/tt-a1i/archify/issues/1374",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "farion1231",
+      "plugin": "cc-switch",
+      "repo_path": "farion1231/cc-switch",
+      "rank": 3,
+      "issue_number": 9594,
+      "issue_url": "https://github.com/farion1231/cc-switch/issues/9594",
+      "issue_state": "closed",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "coreyhaines31",
+      "plugin": "marketingskills",
+      "repo_path": "coreyhaines31/marketingskills",
+      "rank": 5,
+      "issue_number": 976,
+      "issue_url": "https://github.com/coreyhaines31/marketingskills/issues/976",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "kingcharleslzy-ai",
+      "plugin": "dsh-purge",
+      "repo_path": "kingcharleslzy-ai/dsh-purge",
+      "rank": 9,
+      "issue_number": 239,
+      "issue_url": "https://github.com/kingcharleslzy-ai/dsh-purge/issues/239",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "alchaincyf",
+      "plugin": "nuwa-skill",
+      "repo_path": "alchaincyf/nuwa-skill",
+      "rank": 11,
+      "issue_number": 102,
+      "issue_url": "https://github.com/alchaincyf/nuwa-skill/issues/102",
+      "issue_state": "closed",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "dayuanjiang",
+      "plugin": "next-ai-draw-io",
+      "repo_path": "DayuanJiang/next-ai-draw-io",
+      "rank": 12,
+      "issue_number": 1073,
+      "issue_url": "https://github.com/DayuanJiang/next-ai-draw-io/issues/1073",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "ebony-vinyl",
+      "plugin": "dsh-our-free-model",
+      "repo_path": "Ebony-Vinyl/dsh-our-free-model",
+      "rank": 14,
+      "issue_number": 841,
+      "issue_url": "https://github.com/Ebony-Vinyl/dsh-our-free-model/issues/841",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "dietrichgebert",
+      "plugin": "ponytail",
+      "repo_path": "DietrichGebert/ponytail",
+      "rank": 16,
+      "issue_number": 1436,
+      "issue_url": "https://github.com/DietrichGebert/ponytail/issues/1436",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "ccch1mneyyy",
+      "plugin": "dsh-Go",
+      "repo_path": "ccch1mneyyy/dsh-Go",
+      "rank": 19,
+      "issue_number": 1367,
+      "issue_url": "https://github.com/ccch1mneyyy/dsh-Go/issues/1367",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "fei2411",
+      "plugin": "DS-Bot",
+      "repo_path": "Fei2411/DS-Bot",
+      "rank": 21,
+      "issue_number": 1661,
+      "issue_url": "https://github.com/Fei2411/DS-Bot/issues/1661",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "lemomo-ai",
+      "plugin": "lemo-opuscar",
+      "repo_path": "lemomo-ai/lemo-opuscar",
+      "rank": 22,
+      "issue_number": 63,
+      "issue_url": "https://github.com/lemomo-ai/lemo-opuscar/issues/63",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "haydenschmitty",
+      "plugin": "floorplan",
+      "repo_path": "haydenschmitty/floorplan",
+      "rank": 23,
+      "issue_number": 130,
+      "issue_url": "https://github.com/haydenschmitty/floorplan/issues/130",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "pc2005-cloud",
+      "plugin": "dsh-pet",
+      "repo_path": "PC2005-cloud/dsh-pet",
+      "rank": 24,
+      "issue_number": 379,
+      "issue_url": "https://github.com/PC2005-cloud/dsh-pet/issues/379",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "agricidaniel",
+      "plugin": "claude-seo",
+      "repo_path": "AgriciDaniel/claude-seo",
+      "rank": 25,
+      "issue_number": 500,
+      "issue_url": "https://github.com/AgriciDaniel/claude-seo/issues/500",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "jnmetacode",
+      "plugin": "agency-agents-zh",
+      "repo_path": "jnMetaCode/agency-agents-zh",
+      "rank": 26,
+      "issue_number": 120,
+      "issue_url": "https://github.com/jnMetaCode/agency-agents-zh/issues/120",
+      "issue_state": "open",
+      "comment_count": 1,
+      "comments": [
+        {
+          "author": "xukache",
+          "author_type": "User",
+          "body": "已收到，谢谢！",
+          "created_at": "2026-11-16T06:49:55Z",
+          "html_url": "https://github.com/jnMetaCode/agency-agents-zh/issues/120#issuecomment-6909545583",
+          "issue_author": ""
+        }
+      ],
+      "fetch_code": 200
+    },
+    {
+      "owner": "rehan-remade",
+      "plugin": "universal-modder",
+      "repo_path": "rehan-remade/universal-modder",
+      "rank": 28,
+      "issue_number": 519,
+      "issue_url": "https://github.com/rehan-remade/universal-modder/issues/519",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "mksglu",
+      "plugin": "context-mode",
+      "repo_path": "mksglu/context-mode",
+      "rank": 30,
+      "issue_number": 1391,
+      "issue_url": "https://github.com/mksglu/context-mode/issues/1391",
+      "issue_state": "closed",
+      "comment_count": 1,
+      "comments": [
+        {
+          "author": "github-actions[bot]",
+          "author_type": "Bot",
+          "body": "<!-- context-mode-intake -->\n**Intake check: needs-info**\n\nThanks for the report! To replay it, a maintainer needs the items below. Add them by editing the issue body:\n\n- [ ] **ctx_doctor report**: call the `ctx_doctor` tool and paste its full output unchanged in the `ctx-report` field\n- [ ] **context-mode version**: row D1 of the doctor report, or `npm ls -g context-mode --depth=0`\n- [ ] **agent name and version**: for example `claude --version`, `codex --version`, `opencode --version`\n- [ ] **OS and arch**: `uname -sm`; on Windows, `$env:OS` and `$env:PROCESSOR_ARCHITECTURE`\n- [ ] **Node version**: `node --version`\n- [ ] **numbered repro steps from a fresh project**: start from `mktemp -d` and the agent's own install command\n- [ ] **what you expected**: one line under an `Expected` heading\n- [ ] **what happened instead**: one line under an `Actual` or `What happened` heading\n- [ ] **exact command and exact output**: in a fenced code block, copied unchanged\n\nThis comment updates on each edit of the issue body. Guide for coding agents: https://github.com/mksglu/context-mode/blob/main/.github/AGENT_ISSUE.md",
+          "created_at": "2026-11-16T06:49:44Z",
+          "html_url": "https://github.com/mksglu/context-mode/issues/1391#issuecomment-6909542310",
+          "issue_author": ""
+        }
+      ],
+      "fetch_code": 200
+    },
+    {
+      "owner": "zhu1090093659",
+      "plugin": "dsh-web",
+      "repo_path": "zhu1090093659/dsh-web",
+      "rank": 31,
+      "issue_number": 2057,
+      "issue_url": "https://github.com/zhu1090093659/dsh-web/issues/2057",
+      "issue_state": "closed",
+      "comment_count": 1,
+      "comments": [
+        {
+          "author": "github-actions[bot]",
+          "author_type": "Bot",
+          "body": "该 Issue 因未使用仓库要求的 Issue 模板而被自动关闭。\n\n请从仓库的 Issue 表单重新发起，并填写所有必填部分：\n\n- 涉及插件\n- Issue 类型\n- 摘要\n- 预期结果\n- 详情 / 复现步骤\n- 环境信息\n\n缺少或为空的必填部分：涉及插件, Issue 类型, 摘要, 预期结果, 详情 / 复现步骤, 环境信息",
+          "created_at": "2026-11-16T09:02:12Z",
+          "html_url": "https://github.com/zhu1090093659/dsh-web/issues/2057#issuecomment-6912002925",
+          "issue_author": ""
+        }
+      ],
+      "fetch_code": 200
+    },
+    {
+      "owner": "qingyuna",
+      "plugin": "answer-me-with-html",
+      "repo_path": "QingYunA/answer-me-with-html",
+      "rank": 32,
+      "issue_number": 422,
+      "issue_url": "https://github.com/QingYunA/answer-me-with-html/issues/422",
+      "issue_state": "open",
+      "comment_count": 1,
+      "comments": [
+        {
+          "author": "QingYunA",
+          "author_type": "User",
+          "body": "Thanks for letting us know. There's nothing to change in the project for this, so I'm closing the issue.",
+          "created_at": "2026-11-17T03:26:24Z",
+          "html_url": "https://github.com/QingYunA/answer-me-with-html/issues/422#issuecomment-6937188013",
+          "issue_author": ""
+        }
+      ],
+      "fetch_code": 200
+    },
+    {
+      "owner": "eugeniughelbur",
+      "plugin": "obsidian-second-brain",
+      "repo_path": "eugeniughelbur/obsidian-second-brain",
+      "rank": 33,
+      "issue_number": 413,
+      "issue_url": "https://github.com/eugeniughelbur/obsidian-second-brain/issues/413",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "onehumanbeing",
+      "plugin": "esp32-iphone-agent",
+      "repo_path": "onehumanbeing/esp32-iphone-agent",
+      "rank": 34,
+      "issue_number": 164,
+      "issue_url": "https://github.com/onehumanbeing/esp32-iphone-agent/issues/164",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "jordan-gibbs",
+      "plugin": "hyperresearch",
+      "repo_path": "jordan-gibbs/hyperresearch",
+      "rank": 35,
+      "issue_number": 208,
+      "issue_url": "https://github.com/jordan-gibbs/hyperresearch/issues/208",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "lingfengqaq",
+      "plugin": "webnovel-writer",
+      "repo_path": "lingfengQAQ/webnovel-writer",
+      "rank": 37,
+      "issue_number": 217,
+      "issue_url": "https://github.com/lingfengQAQ/webnovel-writer/issues/217",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "anbeime",
+      "plugin": "skill",
+      "repo_path": "anbeime/skill",
+      "rank": 40,
+      "issue_number": 42,
+      "issue_url": "https://github.com/anbeime/skill/issues/42",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "manavarya09",
+      "plugin": "design-extract",
+      "repo_path": "Manavarya09/design-extract",
+      "rank": 42,
+      "issue_number": 218,
+      "issue_url": "https://github.com/Manavarya09/design-extract/issues/218",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "michael-denyer",
+      "plugin": "pstack-claude",
+      "repo_path": "michael-denyer/pstack-claude",
+      "rank": 46,
+      "issue_number": 462,
+      "issue_url": "https://github.com/michael-denyer/pstack-claude/issues/462",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "liustack",
+      "plugin": "modlens",
+      "repo_path": "liustack/modlens",
+      "rank": 48,
+      "issue_number": 131,
+      "issue_url": "https://github.com/liustack/modlens/issues/131",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "simonlin1212",
+      "plugin": "Vibe-Research",
+      "repo_path": "simonlin1212/Vibe-Research",
+      "rank": 49,
+      "issue_number": 60,
+      "issue_url": "https://github.com/simonlin1212/Vibe-Research/issues/60",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "javis603",
+      "plugin": "token-monitor",
+      "repo_path": "Javis603/token-monitor",
+      "rank": 50,
+      "issue_number": 1516,
+      "issue_url": "https://github.com/Javis603/token-monitor/issues/1516",
+      "issue_state": "closed",
+      "comment_count": 1,
+      "comments": [
+        {
+          "author": "Javis603",
+          "author_type": "User",
+          "body": "Thanks!",
+          "created_at": "2026-11-16T08:11:56Z",
+          "html_url": "https://github.com/Javis603/token-monitor/issues/1516#issuecomment-6910995311",
+          "issue_author": ""
+        }
+      ],
+      "fetch_code": 200
+    },
+    {
+      "owner": "liguobao",
+      "plugin": "ds-harness-remote",
+      "repo_path": "liguobao/ds-harness-remote",
+      "rank": 51,
+      "issue_number": 459,
+      "issue_url": "https://github.com/liguobao/ds-harness-remote/issues/459",
+      "issue_state": "closed",
+      "comment_count": 1,
+      "comments": [
+        {
+          "author": "liguobao",
+          "author_type": "User",
+          "body": "thanks~",
+          "created_at": "2026-11-16T05:36:56Z",
+          "html_url": "https://github.com/liguobao/ds-harness-remote/issues/459#issuecomment-6908328150",
+          "issue_author": ""
+        }
+      ],
+      "fetch_code": 200
+    },
+    {
+      "owner": "wuyoscar",
+      "plugin": "GPT-Image2-Skill",
+      "repo_path": "wuyoscar/GPT-Image2-Skill",
+      "rank": 75,
+      "issue_number": 35,
+      "issue_url": "https://github.com/wuyoscar/GPT-Image2-Skill/issues/35",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "shaobeichen",
+      "plugin": "dsh-pocket",
+      "repo_path": "shaobeichen/dsh-pocket",
+      "rank": 83,
+      "issue_number": 225,
+      "issue_url": "https://github.com/shaobeichen/dsh-pocket/issues/225",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "vincentwei1021",
+      "plugin": "anything2explainer",
+      "repo_path": "Vincentwei1021/anything2explainer",
+      "rank": 84,
+      "issue_number": 27,
+      "issue_url": "https://github.com/Vincentwei1021/anything2explainer/issues/27",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "nanmicoder",
+      "plugin": "dsh-agent-teams",
+      "repo_path": "NanmiCoder/dsh-agent-teams",
+      "rank": 86,
+      "issue_number": 357,
+      "issue_url": "https://github.com/NanmiCoder/dsh-agent-teams/issues/357",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "yexi-by",
+      "plugin": "dsh-unrestricted",
+      "repo_path": "yexi-by/dsh-unrestricted",
+      "rank": 88,
+      "issue_number": 21,
+      "issue_url": "https://github.com/yexi-by/dsh-unrestricted/issues/21",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "foryourhealth111-pixel",
+      "plugin": "Vibe-Skills",
+      "repo_path": "foryourhealth111-pixel/Vibe-Skills",
+      "rank": 89,
+      "issue_number": 360,
+      "issue_url": "https://github.com/foryourhealth111-pixel/Vibe-Skills/issues/360",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "sixtysevenlf",
+      "plugin": "dsh-blender-plugin",
+      "repo_path": "sixtysevenlf/dsh-blender-plugin",
+      "rank": 91,
+      "issue_number": 102,
+      "issue_url": "https://github.com/sixtysevenlf/dsh-blender-plugin/issues/102",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "dddmuc",
+      "plugin": "dsh-free-search",
+      "repo_path": "DDDMUC/dsh-free-search",
+      "rank": 92,
+      "issue_number": 137,
+      "issue_url": "https://github.com/DDDMUC/dsh-free-search/issues/137",
+      "issue_state": "open",
+      "comment_count": 1,
+      "comments": [
+        {
+          "author": "DDDMUC",
+          "author_type": "User",
+          "body": "你们这个是中文站吗？我看到里面说npm 周下载 | n/a（无可信包名映射，未臆造），但实际上这个插件是有npm包的呀：https://www.npmjs.com/package/dsh-free-search\n",
+          "created_at": "2026-11-17T03:53:12Z",
+          "html_url": "https://github.com/DDDMUC/dsh-free-search/issues/137#issuecomment-6937723225",
+          "issue_author": ""
+        }
+      ],
+      "fetch_code": 200
+    },
+    {
+      "owner": "lipu-jpg",
+      "plugin": "Openwrite",
+      "repo_path": "LiPu-jpg/Openwrite",
+      "rank": 97,
+      "issue_number": 172,
+      "issue_url": "https://github.com/LiPu-jpg/Openwrite/issues/172",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    },
+    {
+      "owner": "shengjidaguai-china",
+      "plugin": "goutoujunshi",
+      "repo_path": "shengjidaguai-china/goutoujunshi",
+      "rank": 100,
+      "issue_number": 49,
+      "issue_url": "https://github.com/shengjidaguai-china/goutoujunshi/issues/49",
+      "issue_state": "open",
+      "comment_count": 0,
+      "comments": [],
+      "fetch_code": 200
+    }
+  ]
+}
