@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>cyberMap · 每日 AI 速递 · 工具官网</title>
+    <link>https://cybermap.halo26812.eu.org/daily/</link>
+    <description>cyberMap 每日核验收录的 AI 工具官网，每天一期。</description>
+    <language>zh-CN</language>
+    <generator>cybermap-daily/build_daily.py</generator>
+    <lastBuildDate>Tue, 17 Nov 2026 10:28:59 +0800</lastBuildDate>
+    <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 工具官网 · 2026-11-17（1 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-17</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_tool-2026-11-17</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 +0800</pubDate>
+      <description>Clipwright［工具官网］面向AI智能体的视频制作后端，通过MCP或API拆解热门短视频并生成带口播的广告MP4，渲染前先报价。 — https://clipwright.io</description>
+      <category>工具官网</category>
+    </item>
+    <item>
+      <title>每日 AI 速递 · 工具官网 · 2026-11-16（1 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-16</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_tool-2026-11-16</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 +0800</pubDate>
+      <description>Cognee［工具官网］开源 AI 智能体记忆平台，用知识图谱与向量检索为大模型应用构建跨会话持久记忆，支持自托管与云服务。 — https://www.cognee.ai</description>
+      <category>工具官网</category>
+    </item>
+    <item>
+      <title>每日 AI 速递 · 工具官网 · 2026-11-15（1 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-15</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_tool-2026-11-15</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 +0800</pubDate>
+      <description>magpie［工具官网］本地 AI 模型网关，统一接入 DeepSeek、Claude、Kimi 等模型订阅，供各类编码智能体按需切换。 — https://usemagpie.ai</description>
+      <category>工具官网</category>
+    </item>
+    <item>
+      <title>每日 AI 速递 · 工具官网 · 2026-11-14（2 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-14</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_tool-2026-11-14</guid>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 +0800</pubDate>
+      <description>webAI［工具官网］在 Mac 本地运行小模型的 AI 应用，可搭建多个 AI 专家（Persona）协作处理私有文档，数据不上云、不计 token 费。 — https://www.webai.com
+DomoAI［工具官网］在线 AI 视频与动画创作平台，支持用文字、图片或视频素材完成生成、风格化与画质提升。 — https://domoai.app</description>
+      <category>工具官网</category>
+    </item>
+    <item>
+      <title>每日 AI 速递 · 工具官网 · 2026-11-13（1 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-13</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_tool-2026-11-13</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 +0800</pubDate>
+      <description>Ollama［工具官网］在本地或云端运行开源大模型的工具，支持 macOS、Windows、Linux，一条命令即可启动模型。 — https://ollama.com</description>
+      <category>工具官网</category>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>cyberMap · 每日 AI 速递 · 开源项目</title>
+    <link>https://cybermap.halo26812.eu.org/daily/</link>
+    <description>cyberMap 每日核验收录的 AI 开源项目，每天一期。</description>
+    <language>zh-CN</language>
+    <generator>cybermap-daily/build_daily.py</generator>
+    <lastBuildDate>Tue, 17 Nov 2026 10:28:59 +0800</lastBuildDate>
+    <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 开源项目 · 2026-11-17（5 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-17</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-17</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 +0800</pubDate>
+      <description>bytedance/deer-flow［开源项目］字节跳动开源的长程超级智能体框架，集成沙箱、记忆、技能与子智能体，自主完成研究、编码与创作等多步任务。 — https://github.com/bytedance/deer-flow
+NVIDIA/auto-ontology［开源项目］英伟达开源的Python框架，为数据构建语义图谱推理层，实现确定性查询生成与可解释的LLM智能体分析。 — https://github.com/NVIDIA/auto-ontology
+vercel-labs/agent-browser［开源项目］Vercel开源的Rust浏览器自动化CLI，以无障碍树读取页面并让AI智能体逐步操作网页元素，失败即报错。 — https://github.com/vercel-labs/agent-browser
+homeassistant-ai/ha-mcp［开源项目］通过MCP协议让Claude、ChatGPT等AI助手以自然语言配置和自动化Home Assistant智能家居设备。 — https://github.com/homeassistant-ai/ha-mcp
+The-PR-Agent/pr-agent［开源项目］开源AI代码审查助手，自动为拉取请求生成评审意见，支持多家大模型与主流代码托管平台。 — https://github.com/The-PR-Agent/pr-agent</description>
+      <category>开源项目</category>
+    </item>
+    <item>
+      <title>每日 AI 速递 · 开源项目 · 2026-11-16（2 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-16</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-16</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 +0800</pubDate>
+      <description>vercel-labs/agent-desktop［开源项目］Vercel Labs 开源的命令行工具，通过系统无障碍树让 AI 智能体识别并操作桌面应用，支持无头运行与多平台。 — https://github.com/vercel-labs/agent-desktop
+heygen-com/hyperframes［开源项目］HeyGen 开源的 TypeScript 视频渲染框架，把 HTML、CSS 与动画确定性输出为 MP4，供 AI 智能体批量生成视频。 — https://github.com/heygen-com/hyperframes</description>
+      <category>开源项目</category>
+    </item>
+    <item>
+      <title>每日 AI 速递 · 开源项目 · 2026-11-15（2 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-15</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-15</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 +0800</pubDate>
+      <description>langflow-ai/langflow［开源项目］可视化拖拽构建 AI 智能体与工作流的开源工具，支持接入主流大模型并部署为 API。 — https://github.com/langflow-ai/langflow
+harry0703/MoneyPrinterTurbo［开源项目］基于 AI 大模型自动生成文案、配音与字幕，一键合成高清短视频的开源工作流工具。 — https://github.com/harry0703/MoneyPrinterTurbo</description>
+      <category>开源项目</category>
+    </item>
+    <item>
+      <title>每日 AI 速递 · 开源项目 · 2026-11-14（3 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-14</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-14</guid>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 +0800</pubDate>
+      <description>TauricResearch/TradingAgents［开源项目］基于多智能体大语言模型的金融交易框架，模拟分析师、研究员与交易员协作完成选股与投资决策。 — https://github.com/TauricResearch/TradingAgents
+github/spec-kit［开源项目］GitHub 出品的规范驱动开发（SDD）工具包，用自然语言规范引导 AI 从需求到代码的分阶段实现。 — https://github.com/github/spec-kit
+openclaw/openclaw［开源项目］开源个人 AI 助手，可在任意操作系统与平台上代用户执行真实任务，强调数据自持，MIT 协议。 — https://github.com/openclaw/openclaw</description>
+      <category>开源项目</category>
+    </item>
+    <item>
+      <title>每日 AI 速递 · 开源项目 · 2026-11-13（2 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-13</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-13</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 +0800</pubDate>
+      <description>unclecode/crawl4ai［开源项目］面向大模型与 AI 智能体的开源网页抓取工具，把网页转成 LLM 就绪的 Markdown，支持自托管。 — https://github.com/unclecode/crawl4ai
+browser-use/browser-use［开源项目］开源浏览器智能体框架，让大模型在真实浏览器中自动点击、输入并完成任务，兼容任意 LLM。 — https://github.com/browser-use/browser-use</description>
+      <category>开源项目</category>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>cyberMap · 每日 AI 速递 · 模型框架</title>
+    <link>https://cybermap.halo26812.eu.org/daily/</link>
+    <description>cyberMap 每日核验收录的 AI 模型框架，每天一期。</description>
+    <language>zh-CN</language>
+    <generator>cybermap-daily/build_daily.py</generator>
+    <lastBuildDate>Tue, 17 Nov 2026 10:28:59 +0800</lastBuildDate>
+    <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 模型框架 · 2026-11-17（1 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-17</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_model-2026-11-17</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 +0800</pubDate>
+      <description>FareedKhan-dev/kimi-k3-in-c［模型框架］用纯C99实现的推理引擎，可在单核CPU、8GB内存中运行2.78万亿参数的Kimi K3大模型，零依赖。 — https://github.com/FareedKhan-dev/kimi-k3-in-c</description>
+      <category>模型框架</category>
+    </item>
+    <item>
+      <title>每日 AI 速递 · 模型框架 · 2026-11-14（1 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-14</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_model-2026-11-14</guid>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 +0800</pubDate>
+      <description>nv-tlabs/lyra［模型框架］英伟达开源的生成式 3D 世界模型项目，可从输入图像生成可探索的三维场景，开放代码与预训练权重。 — https://github.com/nv-tlabs/Lyra</description>
+      <category>模型框架</category>
+    </item>
+  </channel>
+</rss>

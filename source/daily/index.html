@@ -8,6 +8,7 @@
 <link rel="canonical" href="https://cybermap.halo26812.eu.org/daily/">
 <link rel="icon" href="/favicon.ico">
 <link rel="alternate" type="application/rss+xml" title="cyberMap 每日 AI 速递" href="/daily/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="cyberMap · 每日 AI 速递 · 开源项目" href="/daily/feed-oss.xml"><link rel="alternate" type="application/rss+xml" title="cyberMap · 每日 AI 速递 · 工具官网" href="/daily/feed-tool.xml"><link rel="alternate" type="application/rss+xml" title="cyberMap · 每日 AI 速递 · 模型框架" href="/daily/feed-model.xml">
 <style>
 *,*::before,*::after{box-sizing:border-box}
 :root{
@@ -124,6 +125,16 @@ a{color:inherit;text-decoration:none}
   word-break:break-all;
 }
 .dy-rssbar a{color:var(--dy-accent);font-weight:650}
+.dy-feed-links{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:9px}
+.dy-feed-links .dy-flabel{font-size:11.5px;font-weight:700;color:var(--dy-muted)}
+.dy-feed-chip{
+  display:inline-flex;align-items:center;gap:5px;
+  padding:4px 11px;border-radius:999px;
+  border:1px solid var(--dy-border-strong);background:var(--dy-solid);
+  font-size:11.5px;font-weight:650;color:var(--dy-soft);
+}
+.dy-feed-chip svg{width:12px;height:12px;fill:currentColor}
+.dy-feed-chip:hover{color:var(--dy-accent);border-color:var(--dy-accent)}
 .dy-timeline{position:relative;margin-top:34px;padding-left:26px}
 .dy-timeline::before{
   content:"";position:absolute;left:6px;top:8px;bottom:8px;width:2px;
@@ -230,10 +241,13 @@ a{color:inherit;text-decoration:none}
 <div class="dy-stat"><span>累计收录</span><strong>22</strong></div>
 <div class="dy-stat"><span>每日期数</span><strong>5</strong></div>
 <div class="dy-stat"><span>最近更新</span><strong>2026-11-17</strong></div>
-<div class="dy-stat"><span>生成时间</span><strong>11-17 09:17</strong></div>
+<div class="dy-stat"><span>生成时间</span><strong>11-17 10:28</strong></div>
 </div></section>
 <section class="dy-receipt" aria-label="收录质量回执"><div class="dy-receipt-head"><span class="dy-receipt-title">收录质量回执</span><span class="dy-receipt-date">最近核验日 2026-11-17 · 每条均经 HTTP 实探、AI 相关性与去重校验</span></div><div class="dy-receipt-flow"><span class="dy-receipt-node ">候选 14</span><span class="dy-receipt-arrow">→</span><span class="dy-receipt-node ">通过 12</span><span class="dy-receipt-arrow">→</span><span class="dy-receipt-node ">复核 1</span><span class="dy-receipt-arrow">→</span><span class="dy-receipt-node ">淘汰 1</span><span class="dy-receipt-arrow">→</span><span class="dy-receipt-node ok">收录 7</span></div><div class="dy-receipt-meta">累计核验 <b>53</b> 个候选、通过 <b>42</b> 条、实际收录 <b>22</b> 个站点（收录率 42%）。「复核 / 淘汰」为经人工判断未收录的候选，不代表站点失效。完整证据数据：<a href="/daily/verify.json">/daily/verify.json</a>，每张卡片的徽章可悬停查看单条明细。</div></section>
-<div class="dy-rssbar">订阅地址 <code>https://cybermap.halo26812.eu.org/daily/feed.xml</code> · 每天一期，含当日全部新收录站点。<a href="/daily/feed.xml">打开订阅源 →</a></div>
+<div class="dy-rssbar">
+<div>订阅每天的新收录 · 全部类型地址 <code>https://cybermap.halo26812.eu.org/daily/feed.xml</code>，也可按类型单独订阅（统一为 RSS 2.0）。</div>
+<div class="dy-feed-links"><span class="dy-flabel">订阅源</span><a class="dy-feed-chip" href="/daily/feed.xml" title="全部类型"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm0-6a15 15 0 0 1 15 15h-3A12 12 0 0 0 4 8V5zm1.8 12.2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg><span>全部</span></a><a class="dy-feed-chip" href="/daily/feed-oss.xml" title="只订阅开源项目"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm0-6a15 15 0 0 1 15 15h-3A12 12 0 0 0 4 8V5zm1.8 12.2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg><span>开源项目</span></a><a class="dy-feed-chip" href="/daily/feed-tool.xml" title="只订阅工具官网"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm0-6a15 15 0 0 1 15 15h-3A12 12 0 0 0 4 8V5zm1.8 12.2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg><span>工具官网</span></a><a class="dy-feed-chip" href="/daily/feed-model.xml" title="只订阅模型框架"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm0-6a15 15 0 0 1 15 15h-3A12 12 0 0 0 4 8V5zm1.8 12.2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg><span>模型框架</span></a>
+</div></div>
 <div class="dy-timeline">
 <section class="dy-day" id="day-2026-11-17">
 <div class="dy-day-head"><h2>2026 年 11 月 17 日</h2><span class="dy-week">周二</span><span class="dy-count">7 个站点</span></div>
@@ -258,7 +272,7 @@ a{color:inherit;text-decoration:none}
 </div>
 <footer class="dy-footer">
 数据来源：<a href="https://cybermap.halo26812.eu.org/">cyberMap</a> 的 <code>dailyAI_*</code> 分类，每条收录前均经过 HTTP 实探、GitHub 元数据与 AI 相关性核验；徽章明细见 <a href="/daily/verify.json">收录质量回执数据</a>。日期取自描述尾注「· YYYY-MM-DD 收录」。
-<br>共 22 个站点、5 期（其中 22 条有明确日期）；最后生成于 2026-11-17 09:17 (UTC+8)。
+<br>共 22 个站点、5 期（其中 22 条有明确日期）；最后生成于 2026-11-17 10:28 (UTC+8)。
 </footer>
 </main>
 <script>

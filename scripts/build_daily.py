@@ -4,7 +4,9 @@
 
 读取 ``source/_data/webstack.yml`` 里 ``dailyAI_oss`` / ``dailyAI_tool`` /
 ``dailyAI_model`` 三个分类，按描述尾注「· YYYY-MM-DD 收录」聚合成时间轴页面
-``source/daily/index.html``，并输出 RSS 2.0 订阅源 ``source/daily/feed.xml``。
+``source/daily/index.html``，并输出 RSS 2.0 订阅源：一份混合流
+``source/daily/feed.xml`` + 三份按分类过滤的独立流 ``feed-oss.xml`` /
+``feed-tool.xml`` / ``feed-model.xml``（供读者只订阅自己关心的类型）。
 
 设计约束
 --------
@@ -56,6 +58,13 @@ CATEGORY_LABELS = OrderedDict([
     ("dailyAI_oss", ("开源项目", "oss")),
     ("dailyAI_tool", ("工具官网", "tool")),
     ("dailyAI_model", ("模型框架", "model")),
+])
+
+# 分类订阅源：category -> (文件名, 分类中文名)。feed.xml 仍是混合全量流。
+CATEGORY_FEEDS = OrderedDict([
+    ("dailyAI_oss", ("feed-oss.xml", "开源项目")),
+    ("dailyAI_tool", ("feed-tool.xml", "工具官网")),
+    ("dailyAI_model", ("feed-model.xml", "模型框架")),
 ])
 
 # 形如「 · 2026-11-15 收录」，允许尾部空白；只匹配结尾，避免误伤正文里的日期。
@@ -182,6 +191,16 @@ a{color:inherit;text-decoration:none}
   word-break:break-all;
 }
 .dy-rssbar a{color:var(--dy-accent);font-weight:650}
+.dy-feed-links{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:9px}
+.dy-feed-links .dy-flabel{font-size:11.5px;font-weight:700;color:var(--dy-muted)}
+.dy-feed-chip{
+  display:inline-flex;align-items:center;gap:5px;
+  padding:4px 11px;border-radius:999px;
+  border:1px solid var(--dy-border-strong);background:var(--dy-solid);
+  font-size:11.5px;font-weight:650;color:var(--dy-soft);
+}
+.dy-feed-chip svg{width:12px;height:12px;fill:currentColor}
+.dy-feed-chip:hover{color:var(--dy-accent);border-color:var(--dy-accent)}
 .dy-timeline{position:relative;margin-top:34px;padding-left:26px}
 .dy-timeline::before{
   content:"";position:absolute;left:6px;top:8px;bottom:8px;width:2px;
@@ -506,6 +525,11 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
     dated_count = sum(len(v) for _, v in days)
     latest = days[0][0] if days else "—"
     root = site_url.rstrip("/")
+    alternates = ''.join(
+        f'<link rel="alternate" type="application/rss+xml" '
+        f'title="cyberMap · 每日 AI 速递 · {label}" href="/daily/{filename}">'
+        for filename, label in CATEGORY_FEEDS.values()
+    )
     parts = [
         "<!doctype html>",
         '<html lang="zh-CN">',
@@ -517,6 +541,7 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
         f'<link rel="canonical" href="{root}/daily/">',
         '<link rel="icon" href="/favicon.ico">',
         '<link rel="alternate" type="application/rss+xml" title="cyberMap 每日 AI 速递" href="/daily/feed.xml">',
+        alternates,
         f"<style>{CSS}</style>",
         "</head>",
         "<body>",
@@ -540,8 +565,17 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
         f'<div class="dy-stat"><span>生成时间</span><strong>{generated.strftime("%m-%d %H:%M")}</strong></div>',
         "</div></section>",
         receipt_html(verify, days),
-        '<div class="dy-rssbar">订阅地址 <code>' + esc(f"{root}/daily/feed.xml") +
-        '</code> · 每天一期，含当日全部新收录站点。<a href="/daily/feed.xml">打开订阅源 →</a></div>',
+        '<div class="dy-rssbar">',
+        '<div>订阅每天的新收录 · 全部类型地址 <code>' + esc(f"{root}/daily/feed.xml") +
+        '</code>，也可按类型单独订阅（统一为 RSS 2.0）。</div>',
+        '<div class="dy-feed-links"><span class="dy-flabel">订阅源</span>'
+        f'<a class="dy-feed-chip" href="/daily/feed.xml" title="全部类型">{ICON_RSS}<span>全部</span></a>'
+        + ''.join(
+            f'<a class="dy-feed-chip" href="/daily/{filename}" title="只订阅{label}">'
+            f'{ICON_RSS}<span>{label}</span></a>'
+            for filename, label in CATEGORY_FEEDS.values()
+        ),
+        '</div></div>',
         '<div class="dy-timeline">',
     ]
 
@@ -587,34 +621,52 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
 
 
 # ---------------------------------------------------------------- RSS 生成
-def build_feed(days, site_url: str, generated: datetime) -> bytes:
-    """每天一个 item；无日期的「早期收录」不进 RSS，避免伪造发布时间。"""
+def build_feed(days, site_url: str, generated: datetime, category: str | None = None) -> bytes:
+    """每天一个 item；无日期的「早期收录」不进 RSS，避免伪造发布时间。
+
+    ``category`` 为 None 时输出混合全量流（feed.xml）；给定分类 key 时只保留
+    该分类的条目，且某天该分类无条目则跳过这一天，不产生空 item。
+    """
     root = site_url.rstrip("/")
-    rss = ET.Element("rss", {"version": "2.0"})
-    channel = ET.SubElement(rss, "channel")
-    ET.SubElement(channel, "title").text = "cyberMap · 每日 AI 速递"
-    ET.SubElement(channel, "link").text = f"{root}/daily/"
-    ET.SubElement(channel, "description").text = (
+    label = CATEGORY_LABELS[category][0] if category else None
+    suffix = f" · {label}" if label else ""
+    title = f"cyberMap · 每日 AI 速递{suffix}"
+    desc = (
+        f"cyberMap 每日核验收录的 AI {label}，每天一期。"
+        if label else
         "cyberMap 每日核验收录的 AI 开源项目、工具官网与模型框架，每天一期。"
     )
+    rss = ET.Element("rss", {"version": "2.0"})
+    channel = ET.SubElement(rss, "channel")
+    ET.SubElement(channel, "title").text = title
+    ET.SubElement(channel, "link").text = f"{root}/daily/"
+    ET.SubElement(channel, "description").text = desc
     ET.SubElement(channel, "language").text = "zh-CN"
     ET.SubElement(channel, "generator").text = "cybermap-daily/build_daily.py"
     ET.SubElement(channel, "lastBuildDate").text = format_datetime(generated)
     ET.SubElement(channel, "ttl").text = "1440"
 
-    for day, items in days:
+    for day, all_items in days:
+        items = [i for i in all_items if i["category"] == category] if category else all_items
+        if not items:
+            continue  # 该分类当天无收录，跳过，避免空 item
         item = ET.SubElement(channel, "item")
-        ET.SubElement(item, "title").text = f"每日 AI 速递 · {day}（{len(items)} 个站点）"
+        ET.SubElement(item, "title").text = (
+            f"每日 AI 速递{suffix} · {day}（{len(items)} 个站点）"
+        )
         link = f"{root}/daily/#day-{day}"
         ET.SubElement(item, "link").text = link
-        ET.SubElement(item, "guid", {"isPermaLink": "true"}).text = link
+        # guid 必须跨 feed 唯一：否则同时订阅「全部」与「某分类」时，
+        # 阅读器会因同日期 guid 相同而把两类内容误判为同一篇。
+        guid = f"{root}/daily/#day-{day}" if not category else f"cybermap-daily-{category}-{day}"
+        ET.SubElement(item, "guid", {"isPermaLink": "false" if category else "true"}).text = guid
         d = datetime.strptime(day, "%Y-%m-%d").date()
         ET.SubElement(item, "pubDate").text = format_datetime(
             datetime.combine(d, time(0, 0), tzinfo=CST)
         )
         lines = [f'{i["name"]}［{i["label"]}］{i["description"]} — {i["url"]}' for i in items]
         ET.SubElement(item, "description").text = "\n".join(lines)
-        ET.SubElement(item, "category").text = "AI"
+        ET.SubElement(item, "category").text = label or "AI"
 
     if hasattr(ET, "indent"):
         ET.indent(rss, space="  ")
@@ -676,28 +728,39 @@ def main() -> None:
         return
 
     html_text = build_html(entries, days, undated, site_url, generated, verify)
-    feed_bytes = build_feed(days, site_url, generated)
+    # 混合全量流 + 三份分类流，共用同一套过滤/渲染逻辑
+    feeds = {"feed.xml": build_feed(days, site_url, generated)}
+    for category, (filename, _label) in CATEGORY_FEEDS.items():
+        feeds[filename] = build_feed(days, site_url, generated, category=category)
 
     # 写完再自检一遍，避免把语法错误的产物发布出去
-    ET.fromstring(feed_bytes)
+    for name, blob in feeds.items():
+        root = ET.fromstring(blob)  # XML 可解析
+        if root.tag != "rss":
+            fail(f"{name} 根节点不是 rss，未写入")
     if "<html" not in html_text or html_text.count('<section class="dy-day"') != (
         len(days) + (1 if undated else 0)
     ):
         fail("生成的 HTML 结构自检未通过，未写入")
+    # 分类订阅条必须出现全部 4 个入口
+    for filename in feeds:
+        if f'href="/daily/{filename}"' not in html_text:
+            fail(f"index.html 缺少订阅入口 {filename}，未写入")
 
     index_path = out_dir / "index.html"
-    feed_path = out_dir / "feed.xml"
     try:
         atomic_write(index_path, html_text.encode("utf-8"))
-        atomic_write(feed_path, feed_bytes)
+        for filename, blob in feeds.items():
+            atomic_write(out_dir / filename, blob)
     except OSError as exc:
         fail(f"写入产物失败：{exc}")
 
     summary["outputs"] = {
         "index": str(index_path),
-        "feed": str(feed_path),
         "index_bytes": index_path.stat().st_size,
-        "feed_bytes": feed_path.stat().st_size,
+        "feeds": {name: str(out_dir / name) for name in feeds},
+        "feed_items": {name: len(ET.fromstring(blob).findall("./channel/item"))
+                       for name, blob in feeds.items()},
     }
     print(json.dumps(summary, ensure_ascii=False, indent=2))
 
