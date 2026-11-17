@@ -6,8 +6,22 @@
     <description>cyberMap 每日核验收录的 AI 开源项目、工具官网与模型框架，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Mon, 16 Nov 2026 09:48:19 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 09:17:48 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 2026-11-17（7 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-17</link>
+      <guid isPermaLink="true">https://cybermap.halo26812.eu.org/daily/#day-2026-11-17</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 +0800</pubDate>
+      <description>bytedance/deer-flow［开源项目］字节跳动开源的长程超级智能体框架，集成沙箱、记忆、技能与子智能体，自主完成研究、编码与创作等多步任务。 — https://github.com/bytedance/deer-flow
+NVIDIA/auto-ontology［开源项目］英伟达开源的Python框架，为数据构建语义图谱推理层，实现确定性查询生成与可解释的LLM智能体分析。 — https://github.com/NVIDIA/auto-ontology
+vercel-labs/agent-browser［开源项目］Vercel开源的Rust浏览器自动化CLI，以无障碍树读取页面并让AI智能体逐步操作网页元素，失败即报错。 — https://github.com/vercel-labs/agent-browser
+homeassistant-ai/ha-mcp［开源项目］通过MCP协议让Claude、ChatGPT等AI助手以自然语言配置和自动化Home Assistant智能家居设备。 — https://github.com/homeassistant-ai/ha-mcp
+The-PR-Agent/pr-agent［开源项目］开源AI代码审查助手，自动为拉取请求生成评审意见，支持多家大模型与主流代码托管平台。 — https://github.com/The-PR-Agent/pr-agent
+Clipwright［工具官网］面向AI智能体的视频制作后端，通过MCP或API拆解热门短视频并生成带口播的广告MP4，渲染前先报价。 — https://clipwright.io
+FareedKhan-dev/kimi-k3-in-c［模型框架］用纯C99实现的推理引擎，可在单核CPU、8GB内存中运行2.78万亿参数的Kimi K3大模型，零依赖。 — https://github.com/FareedKhan-dev/kimi-k3-in-c</description>
+      <category>AI</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 2026-11-16（3 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-16</link>
