@@ -123,3 +123,22 @@ table.evidence .num{font-variant-numeric:tabular-nums;text-align:right}
   table.info th{width:100px}
   .wrap{padding:22px 14px 40px}
 }
+
+/* ===== 中英双语显隐（i18n.js 写入 html[data-lang] / lang） =====
+   只隐藏非当前语言，显示方不设 display，让元素保留自身默认显示类型
+   （span=inline、p/div=block），因此文本片段与整段都能用同一套 class。 */
+html[data-lang="zh"] .i18n-en,
+html[lang="zh-CN"] .i18n-en { display: none !important; }
+html[data-lang="en"] .i18n-zh,
+html[lang="en"] .i18n-zh { display: none !important; }
+
+/* 独立站无顶栏时由 i18n.js 注入的浮动语言切换器 */
+.cm-lang-float{
+  position:fixed;right:16px;bottom:16px;z-index:60;
+  display:inline-flex;gap:2px;padding:3px;
+  border:.5px solid var(--line2);border-radius:999px;
+  background:var(--bg);color:var(--muted);
+  box-shadow:0 4px 16px rgba(0,0,0,.12);cursor:pointer;font-family:inherit;
+}
+.cm-lang-float span{font-size:12px;font-weight:500;padding:4px 9px;border-radius:999px;opacity:.5;line-height:1}
+.cm-lang-float span.active{opacity:1;background:var(--blue-bg);color:var(--blue)}

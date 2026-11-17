@@ -3,28 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>算法与数据口径 · AI 插件排行榜</title>
+<title data-zh="算法与数据口径 · AI 插件排行榜" data-en="Methodology & Data Policy · AI Plugin Leaderboard">算法与数据口径 · AI 插件排行榜</title>
 <link rel="stylesheet" href="assets/style.css">
+<script src="assets/i18n.js"></script>
 <link rel="stylesheet" href="assets/rank-frame.css">
 </head>
 <body class="rank-embedded"><header class="cm-rank-bar">
-  <a class="cm-rank-home" href="/" title="返回 cyberMap 网址导航"><span class="cm-rank-back">←</span> cyberMap 导航</a>
-  <nav class="cm-rank-nav" aria-label="AI 插件排行榜导航">
-    <a href="/rank/" data-key="all">总榜 Top 100</a>
+  <a class="cm-rank-home" href="/" title="cyberMap home"><span class="i18n-zh"><span class='cm-rank-back'>←</span> cyberMap 导航</span><span class="i18n-en"><span class='cm-rank-back'>←</span> cyberMap Home</span></a>
+  <nav class="cm-rank-nav" aria-label="Leaderboard navigation">
+    <a href="/rank/" data-key="all"><span class="i18n-zh">总榜 Top 100</span><span class="i18n-en">Overall Top 100</span></a>
     <a href="/rank/?platform=codex" data-key="platform">Codex</a>
     <a href="/rank/?platform=claude_code" data-key="platform">Claude Code</a>
     <a href="/rank/?platform=dsh" data-key="platform">dsh</a>
     <a href="/rank/?platform=workbuddy" data-key="platform">WorkBuddy</a>
-    <a href="/rank/marketplace.html">官方市场</a>
-    <a href="/rank/methodology.html">评分口径</a>
+    <a href="/rank/marketplace.html"><span class="i18n-zh">官方市场</span><span class="i18n-en">Marketplace</span></a>
+    <a href="/rank/methodology.html"><span class="i18n-zh">评分口径</span><span class="i18n-en">Methodology</span></a>
   </nav>
   <div class="cm-rank-side">
-    <span class="cm-rank-stamp">每日 08:00 更新</span>
+    <span class="cm-rank-stamp"><span class="i18n-zh">每日 08:00 更新</span><span class="i18n-en">Daily 08:00 UTC+8</span></span>
+    <button class="cm-rank-lang" id="cm-rank-lang" type="button" title="切换语言 / Switch language" aria-label="Switch language"><span data-l="zh">中</span><span data-l="en">EN</span></button>
     <button class="cm-rank-theme" id="cm-rank-theme" type="button" title="切换深浅色" aria-label="切换深浅色"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.3 3a9 9 0 1 0 8.7 11.4A7.2 7.2 0 0 1 12.3 3z"/></svg></button>
   </div>
 </header>
 
-<main class="wrap prose">
+<main class="wrap prose i18n-zh">
 <nav class="crumb"><a href="index.html">← 返回总榜</a><span>/</span><span>算法与数据口径</span></nav>
 <h1>算法与数据口径</h1>
 <p class="sub">这份榜单的每个名次都应该能被复算、被质疑、被回溯。下面把口径全部摊开。</p>
@@ -51,7 +53,7 @@
 <ul>
 <li><strong>不填 0，不估算。</strong>某个维度整体不可用时（例如首日还没有历史快照 → 势能 M 缺失），该维度权重从分母剔除，剩余维度重新归一，并在详情页该维度标 <code>n/a 权重已重归一</code>。</li>
 <li>首日有效权重为 <strong>P 0.5333 / A 0.3333 / Q 0.1333</strong>；从第二天起恢复为 0.40 / 0.25 / 0.25 / 0.10。</li>
-<li>npm 下载量只在仓库主页明确指向 <code>npmjs.com/package/…</code> 时才取，不靠仓库名猜包名；取不到就标 <code>n/a</code>。</li>
+<li>npm 下载量只在仓库主页明确指向 <code>npmjs.com/package/…</code> 时才取，不靠仓库名猜包名；取不到就标 <code>n/a</code>。此外，人工确认映射表里只收录 registry 的 repository 字段与仓库精确匹配、且实测过的包，其余一律不臆造。</li>
 <li>详情页的「数据置信度」按 license / 主页 / 描述长度 / topics 数 / 下载量五项命中数计算，分为高（≥4）、中（≥2）、低。</li>
 </ul>
 
@@ -102,6 +104,86 @@
 <div class="callout">没有 <code>GITHUB_TOKEN</code> 时，GitHub 未认证限额为 Search 10 次/分钟、core 60 次/小时。首次运行需批量核验约 240 个仓库（约 3 分钟），之后靠缓存几乎零请求。<strong>建议设置 token</strong>，可显著提高限额并缩短首次运行时间。</div>
 
 <footer class="method-foot">每天 08:00 (UTC+8) 重算公开数据并发布到 cyberMap，Vercel 监听 main 自动构建。<a href="index.html">← 返回总榜</a> · <a href="marketplace.html">官方市场目录 →</a></footer>
+</main>
+
+<main class="wrap prose i18n-en">
+<nav class="crumb"><a href="index.html">← Back to leaderboard</a><span>/</span><span>Methodology & Data Policy</span></nav>
+<h1>Methodology & Data Policy</h1>
+<p class="sub">Every rank on this leaderboard should be reproducible, challengeable and traceable. Below we lay out the full methodology.</p>
+
+<h2>1. What this leaderboard is — and is not</h2>
+<p>It tracks <strong>projects with a public, verifiable GitHub repository that belong to an AI Agent platform's plugin ecosystem</strong>, ranked by the day's public metrics. It is not an official download chart, nor does it represent actual usage or a quality review.</p>
+<p>The data has two layers: the <strong>leaderboard</strong> (the scoring policy described here, top 100 in the overall and each platform chart) and the <a href="marketplace.html">official marketplace directory</a> (all entries from each platform's local marketplace list, without score ranking).</p>
+<div class="callout">The biggest limitation: platform marketplaces such as Codex and WorkBuddy contain many closed-source skills, connectors and expert packs that have <strong>no public GitHub repository</strong>. They <strong>do not take part in the overall score ranking</strong> (otherwise "neutral missing" would lift zero-data entities into the Top 100), but they are listed in full on the marketplace directory. This is a boundary of data availability, not an omission, and no estimated values are used to fill in.</div>
+
+<h2>2. Scoring formula</h2>
+<div class="formula">Score = 100 × Σ( wᵢ · norm(xᵢ) ) / Σ( wᵢ available )</div>
+<p><code>norm</code> uses the <strong>same-day percentile across the full sample</strong> (ties take the average rank) rather than dividing by the maximum, so top repositories don't crush the long tail; long-tail metrics such as stars / forks / downloads first take <code>log1p</code>. Four dimensions:</p>
+<table>
+<thead><tr><th>Dimension</th><th>Base weight</th><th>Composition</th><th>Data source</th></tr></thead>
+<tbody>
+<tr><td>Popularity P</td><td>0.40</td><td>stars 0.60 + forks 0.30 + npm weekly downloads 0.10 (sub-items renormalized by availability)</td><td>GitHub API / npm downloads API</td></tr>
+<tr><td>Activity A</td><td>0.25</td><td><code>exp(−Δt / 90)</code>, where Δt is days since the last push</td><td>GitHub <code>pushed_at</code></td></tr>
+<tr><td>Momentum M</td><td>0.25</td><td>Percentile of stars growth versus a historical snapshot from ≤7 days ago</td><td>Site <code>data/history/</code> snapshots</td></tr>
+<tr><td>Quality Q</td><td>0.10</td><td>license 0.25, description completeness 0.20, homepage 0.15, topics 0.15, wiki/pages 0.15, language 0.10</td><td>GitHub repository metadata</td></tr>
+</tbody>
+</table>
+
+<h2>3. How missing data is handled</h2>
+<ul>
+<li><strong>No zeros, no estimates.</strong> When a whole dimension is unavailable (e.g. no history snapshot yet on day one → momentum M missing), its weight is removed from the denominator, the remaining dimensions are renormalized, and the detail page marks that dimension <code>n/a weight renormalized</code>.</li>
+<li>Day-one effective weights are <strong>P 0.5333 / A 0.3333 / Q 0.1333</strong>; from day two they return to 0.40 / 0.25 / 0.25 / 0.10.</li>
+<li>npm downloads are taken only when the repository homepage explicitly points to <code>npmjs.com/package/…</code>; package names are never guessed from the repo name; if unavailable it is marked <code>n/a</code>. In addition, the curated mapping table includes only packages whose registry repository field exactly matches the GitHub repo and that were actually measured — everything else is never fabricated.</li>
+<li>The detail page "data confidence" is computed from five signals — license / homepage / description length / topic count / downloads — and rated high (≥4), medium (≥2) or low.</li>
+</ul>
+
+<h2>4. Deduplication and platform attribution</h2>
+<ul>
+<li>Unique entity <code>canonical = owner/repo</code> (lowercase). When one repository is matched by multiple platform topics it is merged into a single entity, with <code>platforms</code> keeping all values — the overall chart is not spammed by the same plugin.</li>
+<li>Platform attribution = collection query source <strong>∪</strong> cross-hit repository topics. For example, a repository tagged both <code>claude-code</code> and <code>dsh-plugin</code> appears on both platform charts, but counts as one in the overall chart.</li>
+<li>The overall chart and each platform chart take the top 100 independently. When a platform has fewer than 100 samples, the <strong>actual count is shown and labeled</strong>; standards are not lowered to pad the list.</li>
+</ul>
+
+<h2>5. Inclusion and anti-gaming</h2>
+<ul>
+<li>Excluded: archived repositories, forks, no valid description, resource/list repositories (awesome / dataset / benchmark / cheatsheet, etc.) and stars &lt; 20.</li>
+<li><strong>Dual relevance check</strong>: a project's own description and name must hit AI/agent semantic terms, and overall hit plugin semantic terms or platform-specific topics. A single topic tag alone is not enough — otherwise generic tools would slip into an AI plugin chart. Word-boundary regex is used to avoid substring false positives.</li>
+<li><strong>Official marketplace fast track</strong>: entries from the official lists in section 6 — official inclusion is itself a strong signal, so the stars ≥ 20 gate and AI semantic screening are skipped (many official plugin repos never mention AI in their description). Archived repositories, empty descriptions and resource/list repositories are still excluded, and such entries are labeled "Official".</li>
+<li>Repositories younger than &lt; 14 days: score ×0.85 cooldown; bulk plugins from one author (&gt;5): ×0.97 slight down-weight; growth beyond mean +3σ is clipped. All adjustments are written below "Score breakdown" on the detail page.</li>
+</ul>
+
+<h2>6. Local official marketplace lists (discovery source)</h2>
+<p>GitHub topic search can only find "tagged repositories" and misses plugins officially listed in platform marketplaces but without a topic. To fix this, the pipeline reads the following local list files <strong>read-only</strong> as authoritative discovery sources (user configuration is never modified):</p>
+<table>
+<thead><tr><th>Platform</th><th>List file</th><th>Available fields</th></tr></thead>
+<tbody>
+<tr><td>Claude Code</td><td><code>~/.claude/plugins/marketplaces/*/.claude-plugin/marketplace.json</code></td><td>plugin name, description, author, category, version ref, <code>source.url</code> (mostly GitHub repos), subdirectory path</td></tr>
+<tr><td>Codex</td><td><code>~/.codex/plugins/cache/**/.codex-plugin/plugin.json</code></td><td>name, version, description, author, homepage</td></tr>
+<tr><td>WorkBuddy</td><td><code>connectors.json</code>, each <code>marketplace.json</code>, plugin cache, <code>.skill-list-cache.json</code></td><td>bilingual descriptions, type, version, visibility scope, partial repository</td></tr>
+<tr><td>dsh</td><td><code>dsh --profile web --dump-config</code> + <code>profiles/*/package.json</code></td><td><strong>npm package name</strong> (weekly downloads can be queried)</td></tr>
+</tbody>
+</table>
+<p>Three distinctions must be kept clear:</p>
+<ul>
+<li><strong>Official inclusion ≠ metric</strong>. Lists are used only to discover and admit "this plugin really exists and is officially listed"; stars / downloads are always re-verified through public APIs, and no number in a list is ever used as a scoring input.</li>
+<li><strong>Plugin ≠ repository</strong>. One marketplace repository often hosts dozens of plugins (e.g. <code>git-subdir</code> subdirectories). The overall chart merges by <code>owner/repo</code> to avoid spam; the detail page lists all official plugins hosted by that repo, while the directory page shows them at plugin granularity.</li>
+<li><strong>Closed-loop traceability</strong>. Each run generates a snapshot of the local lists and commits it to <code>data/marketplace-sources/</code>; when GitHub Actions cannot reach user directories it reads the snapshots instead, keeping the same methodology. Entries without public metrics are marked <code>n/a</code> and listed in the run report — never guessed or padded.</li>
+</ul>
+
+<h2>7. Data sources and evidence chain</h2>
+<p>Only public returns from <code>api.github.com/search/repositories</code>, <code>api.github.com/repos/*</code> and <code>api.npmjs.org/downloads</code> are used. <strong>stars / install counts from third-party leaderboards are never trusted</strong>, used at most as discovery leads and re-verified via our own API calls before inclusion.</p>
+<p>Repositories referenced in official lists are first fetched in bulk with multiple <code>repo:owner/name</code> qualifiers through the Search API (separate search quota). In practice a number of real repositories are absent from the search index (HTTP 422 "resource not searchable", e.g. <code>anthropics/claude-plugins-public</code>); those are re-checked with <code>GET /repos/{owner}/{repo}</code>, and only a REST 404 marks them unverifiable. All results, including "confirmed not found", are cached in <code>data/repo-metadata.json</code> for 7 days — no fabrication and no daily re-checking of dead links.</p>
+<p>Each record stores the collection query, UTC collection time, API endpoint and the original fields at that moment; the "Evidence chain" table on detail pages can be checked directly against them. Daily run reports live in <code>state/run-YYYY-MM-DD.json</code>, including all rejected entries and reasons.</p>
+
+<h2>8. A note on cross-day comparison</h2>
+<div class="callout">Scores are <strong>same-day relative percentiles</strong>; the sample set and effective weights can change every day, so <strong>absolute score values cannot be compared across days</strong>. Compare only ranks and rank changes (▲/▼). The trend curve on detail pages shows historical samples under the same methodology, for reference rather than precise auditing.</div>
+
+<h2>9. How to recompute it yourself</h2>
+<div class="formula">GITHUB_TOKEN=xxx python pipelines/run_daily.py<br>python pipelines/run_daily.py --dry-run          # compute only, no leaderboard artifacts<br>python pipelines/run_daily.py --no-local-market # only run GitHub topic collection (for comparison)<br>python pipelines/run_daily.py --no-market-npm  # skip the dsh package download query</div>
+<p>Weights, queries and inclusion word lists are in <code>pipelines/config.py</code>, scoring in <code>pipelines/score.py</code>, official-list parsing and repo verification in <code>pipelines/local_market.py</code>. The effective weights for the day are written to <code>data/top100.json</code> under <code>meta.scoring</code>; the official directory is in <code>data/marketplace.json</code>; repo/npm metadata caches are in <code>data/repo-metadata.json</code> and <code>data/npm-metadata.json</code>. When changing the methodology, update this page accordingly.</p>
+<div class="callout">Without <code>GITHUB_TOKEN</code>, GitHub's unauthenticated limits are Search 10/min and core 60/hour. The first run must verify roughly 240 repositories in bulk (about 3 minutes); afterwards the cache brings requests to nearly zero. <strong>Setting a token is recommended</strong> to significantly raise the limits and shorten the first run.</div>
+
+<footer class="method-foot">Public data is recomputed and published to cyberMap daily at 08:00 (UTC+8); Vercel builds automatically on main. <a href="index.html">← Back to leaderboard</a> · <a href="marketplace.html">Marketplace directory →</a></footer>
 </main>
 <script src="assets/rank-frame.js"></script>
 </body>

@@ -190,6 +190,17 @@ body.rank-embedded.night .tab { background: var(--cm-surface-solid); }
 }
 .cm-rank-theme:hover { color: var(--cm-accent); border-color: var(--cm-accent-soft); }
 .cm-rank-theme svg { width: 15px; height: 15px; }
+.cm-rank-lang {
+  display: inline-flex; align-items: center; gap: 1px;
+  height: 30px; padding: 2px; border: 1px solid var(--cm-border);
+  border-radius: 9px; background: var(--cm-surface-solid); cursor: pointer; font-family: inherit;
+}
+.cm-rank-lang span {
+  font-size: 11px; font-weight: 700; padding: 3px 6px; border-radius: 6px;
+  color: var(--cm-text-muted); opacity: .55; line-height: 1; transition: .15s;
+}
+.cm-rank-lang span.active { opacity: 1; background: var(--cm-chip); color: var(--cm-accent); }
+.cm-rank-lang:hover { border-color: var(--cm-accent-soft); }
 
 @media (max-width: 760px) {
   .cm-rank-bar { gap: 8px; padding: 7px 12px; }
