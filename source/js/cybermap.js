@@ -44,6 +44,91 @@
     img.src = svgPlaceholder(nameEl ? nameEl.textContent : 'AI');
   }, true);
 
+  /* ---- Footer 重设计（全站共用，不依赖 .main-content） ----
+     主题 footer.pug 只输出一行朴素版权文字；这里在 DOM 就绪后把它替换成
+     「品牌 + 导航 + 版权致谢」三段式。幂等：已有 .cm-footer 就跳过。
+     保留原署名链接（ohalo / Viggo / Hexo / hexo-theme-webstack）与 go-up。 */
+  function rebuildFooter() {
+    var inner = document.querySelector('footer.main-footer .footer-inner');
+    if (!inner || inner.querySelector('.cm-footer')) return;
+    var oldP = inner.querySelector('p');
+    if (!oldP) return;
+
+    /* 从原段落抓取署名链接，尊重原作者署名、避免写死 URL */
+    var credits = {};
+    Array.prototype.forEach.call(oldP.querySelectorAll('a'), function (a) {
+      var key = (a.textContent || '').trim();
+      credits[key] = a.getAttribute('href') || '#';
+    });
+    var year = new Date().getFullYear();
+    var authorHref = credits['ohalo'] || 'https://github.com/ohalo';
+    var viggoHref = credits['Viggo'] || 'http://viggoz.com';
+    var hexoHref = credits['Hexo'] || 'https://hexo.io/';
+    var themeHref = credits['hexo-theme-webstack'] ||
+      'https://github.com/HCLonely/hexo-theme-webstack/';
+
+    /* 统计数字只在首页（有卡片）时渲染，其它页面自动省略 */
+    var siteCount = document.querySelectorAll('.main-content .row > .col-sm-3').length;
+    var catCount = document.querySelectorAll('.main-content h4.text-gray').length;
+    var statsHtml = '';
+    if (siteCount && catCount) {
+      statsHtml = '<div class="cm-footer-stats">' +
+        '<span><b>' + siteCount + '</b> 收录站点</span>' +
+        '<span><b>' + catCount + '</b> 精选分类</span>' +
+        '<span><b>每日</b> 自动更新</span></div>';
+    }
+
+    var html =
+      '<div class="cm-footer">' +
+        '<div class="cm-footer-top">' +
+          '<div class="cm-footer-brand">' +
+            '<a class="cm-footer-logo" href="/" aria-label="cyberMap 首页">' +
+              '<span class="cm-footer-logo-mark" aria-hidden="true">' +
+                '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" ' +
+                'stroke="currentColor" stroke-width="2" stroke-linecap="round" ' +
+                'stroke-linejoin="round"><circle cx="5" cy="6" r="2"/>' +
+                '<circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/>' +
+                '<path d="M6.7 7.3 10.6 16M17.3 7.3 13.4 16M7 6h10"/></svg>' +
+              '</span>' +
+              '<span class="cm-footer-logo-word">cyber<b>Map</b></span>' +
+            '</a>' +
+            '<p class="cm-footer-slogan">每日更新的 AI 工具与开源项目导航，' +
+              '每一个链接都经过真实访问验证。</p>' +
+            statsHtml +
+          '</div>' +
+          '<nav class="cm-footer-nav" aria-label="页脚导航">' +
+            '<div class="cm-footer-col"><h5>浏览</h5>' +
+              '<a href="/">全部站点</a>' +
+              '<a href="/#dailyAI_oss">开源项目</a>' +
+              '<a href="/#dailyAI_tool">工具官网</a>' +
+              '<a href="/#dailyAI_model">模型框架</a></div>' +
+            '<div class="cm-footer-col"><h5>站点功能</h5>' +
+              '<a href="/rank/">AI 插件榜</a>' +
+              '<a href="/daily/">每日速递</a>' +
+              '<a href="/daily/feed.xml">RSS 订阅</a></div>' +
+            '<div class="cm-footer-col"><h5>更多</h5>' +
+              '<a href="/about/">关于本站</a>' +
+              '<a href="' + REPO_URL + '" target="_blank" rel="noopener">GitHub</a>' +
+              '<a href="/sitemap.xml">网站地图</a></div>' +
+          '</nav>' +
+        '</div>' +
+        '<div class="cm-footer-bottom">' +
+          '<div class="cm-footer-copy">© 2023 - ' + year + ' ' +
+            '<a href="' + authorHref + '">ohalo</a> · 保留所有权利</div>' +
+          '<div class="cm-footer-credit">' +
+            'Design by <a href="' + viggoHref + '" target="_blank" rel="noopener">Viggo</a>' +
+            ' · Powered by <a href="' + hexoHref + '" target="_blank" rel="noopener">Hexo</a>' +
+            ' &amp; <a href="' + themeHref + '" target="_blank" rel="noopener">' +
+            'hexo-theme-webstack</a></div>' +
+        '</div>' +
+      '</div>';
+
+    var box = document.createElement('div');
+    box.innerHTML = html;
+    inner.insertBefore(box.firstChild, oldP);
+    inner.removeChild(oldP);
+  }
+
   function boot() {
     var main = document.querySelector('.main-content');
     if (!main) return;
@@ -348,9 +433,14 @@
     })();
   }
 
+  function start() {
+    rebuildFooter(); /* 全站 footer，不依赖 .main-content */
+    boot();          /* 首页专属增强，缺 .main-content 时自行返回 */
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', boot);
+    document.addEventListener('DOMContentLoaded', start);
   } else {
-    boot();
+    start();
   }
 })();

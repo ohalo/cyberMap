@@ -901,18 +901,127 @@ button#search-btn.search-btn {
   transition: opacity .42s ease, transform .42s cubic-bezier(.2,.8,.2,1);
 }
 
-/* ------------------------------------------------------------ Footer 等 */
+/* ------------------------------------------------------------ Footer 重设计 */
 .main-footer.sticky {
   background: transparent !important;
   border-top: 1px solid var(--cm-border) !important;
-  color: var(--cm-text-faint) !important;
+  color: var(--cm-text-muted) !important;
   box-shadow: none !important;
-  padding: 18px 0 !important;
+  padding: 0 !important;
 }
-.main-footer .footer-inner { color: var(--cm-text-faint) !important; }
-.main-footer .footer-text a,
-.main-footer .footer-inner a { color: var(--cm-text-muted) !important; }
-.main-footer .footer-text a:hover { color: var(--cm-accent) !important; }
+.main-footer .footer-inner {
+  color: var(--cm-text-muted) !important;
+  padding: 30px 15px 34px !important;
+}
+
+/* 顶部：品牌 + 导航，桌面两栏、窄屏堆叠 */
+.cm-footer-top {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) auto;
+  gap: 40px;
+  align-items: start;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.cm-footer-brand { min-width: 0; }
+.cm-footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none !important;
+}
+.cm-footer-logo-mark {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--cm-accent), var(--cm-accent-2));
+  color: #fff !important;
+  box-shadow: 0 6px 16px var(--cm-accent-soft);
+}
+.cm-footer-logo-word {
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: -.2px;
+  color: var(--cm-text) !important;
+}
+.cm-footer-logo-word b { color: var(--cm-accent); }
+.cm-footer-slogan {
+  margin: 12px 0 0;
+  font-size: 12.5px;
+  line-height: 1.75;
+  color: var(--cm-text-muted) !important;
+}
+.cm-footer-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+.cm-footer-stats span {
+  padding: 4px 11px;
+  border: 1px solid var(--cm-border);
+  border-radius: 999px;
+  background: var(--cm-surface);
+  font-size: 11px;
+  color: var(--cm-text-muted) !important;
+}
+.cm-footer-stats b { color: var(--cm-accent); font-weight: 700; }
+
+.cm-footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px;
+}
+.cm-footer-col { min-width: 92px; }
+.cm-footer-col h5 {
+  margin: 2px 0 12px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  color: var(--cm-text) !important;
+}
+.cm-footer-col a {
+  display: block;
+  padding: 4px 0;
+  font-size: 12.5px;
+  color: var(--cm-text-muted) !important;
+  text-decoration: none !important;
+  transition: color .18s ease, transform .18s ease;
+}
+.cm-footer-col a:hover {
+  color: var(--cm-accent) !important;
+  transform: translateX(2px);
+}
+
+/* 底部：版权 + 致谢，细分隔线隔开 */
+.cm-footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1180px;
+  margin: 26px auto 0;
+  padding-top: 18px;
+  border-top: 1px solid var(--cm-border);
+  font-size: 11.5px;
+  color: var(--cm-text-faint) !important;
+}
+.cm-footer-bottom a {
+  color: var(--cm-text-muted) !important;
+  text-decoration: none !important;
+  transition: color .18s ease;
+}
+.cm-footer-bottom a:hover { color: var(--cm-accent) !important; }
+
+@media (max-width: 767px) {
+  .cm-footer-top { grid-template-columns: 1fr; gap: 26px; }
+  .cm-footer-nav { gap: 32px; }
+  .cm-footer-bottom { justify-content: flex-start; }
+}
 
 .go-up { right: 18px !important; bottom: 22px !important; z-index: 60 !important; }
 .go-up a {
