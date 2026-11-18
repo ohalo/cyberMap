@@ -23,6 +23,17 @@ custom:
       if (og) og.setAttribute('content', canonical);
     })();
     </script>
+    <!-- hreflang: 英文首页与中文首页互指，x-default 指向中文 -->
+    <script>
+    (function () {
+      var base = 'https://cybermap.halo26812.eu.org';
+      [['en', base + '/en/'], ['zh-CN', base + '/'], ['x-default', base + '/']].forEach(function (pair) {
+        var l = document.createElement('link');
+        l.rel = 'alternate'; l.hreflang = pair[0]; l.href = pair[1];
+        document.head.appendChild(l);
+      });
+    })();
+    </script>
     <link rel="alternate" type="application/rss+xml" title="cyberMap Daily AI Digest" href="/daily/feed.xml">
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"WebSite","name":"cyberMap","url":"https://cybermap.halo26812.eu.org/","description":"Daily-updated navigator for AI tools and open-source projects.","inLanguage":"en"}

@@ -42,19 +42,21 @@ about:
 aboutPage:
   website:
     head: 关于本站
-    html: '<blockquote><p>本站是hexo主题<a href="https://github.com/HCLonely/hexo-theme-webstack">hexo-theme-webstack</a>的demo站。</p></blockquote>'
+    html: '<p>cyberMap 是一个每日更新的 AI 工具与开源项目导航站，收录大模型、智能体、开发框架与实用站点，帮助你在快速变化的 AI 生态里快速找到值得关注的项目。</p><blockquote><p><strong>每日 AI 速递</strong>：每天核验并收录真实可访问的 AI 站点，按开源项目 / 工具官网 / 模型框架分类，并附<strong>质量回执</strong>（HTTP 状态、GitHub stars、AI 命中证据）。支持 <a href="/daily/feed.xml">RSS 订阅</a>与方向标签筛选。</p><p><strong>AI 插件排行榜</strong>：<a href="/rank/">/rank/</a> 按公开可核验的 GitHub 数据为 AI Agent 插件生态排名，评分口径完全公开、可复算可回溯。</p></blockquote>'
   webmaster:
-    head: 关于站长
-    name: 彷徨的蜗牛
-    url: https://blog.csdn.net/ohalo
+    head: 关于站长与联系
+    name: ohalo
+    url: https://github.com/ohalo
     img: /images/logos/myblog.png
-    description: 寻找方向
-    html: '<br /><blockquote><p>本站是<a href="https://github.com/ohalo">HCLonely</a>基于<a href="https://github.com/WebStackPage/WebStackPage.github.io">WebStackPage</a>项目做的一款<a href="https://hexo.io/">Hexo</a>主题。</p></blockquote>'
+    description: 开源爱好者
+    html: '<br /><blockquote><p>本站源码开放于 <a href="https://github.com/ohalo/cyberMap">github.com/ohalo/cyberMap</a>。如发现失效链接、错误收录或有收录建议，欢迎提交 Issue 或 Discussion。</p><p>本站由 <a href="https://hexo.io/">Hexo</a> 驱动，使用 <a href="https://github.com/HCLonely/hexo-theme-webstack">hexo-theme-webstack</a> 主题，部署在 Vercel。</p></blockquote>'
 
 since: 2023
 
 busuanzi:
-  enable: true
+  # 不蒜子后端 busuanzi.ibruce.info/busuanzi 已长期返回 502，前台计数无法显示。
+  # 关闭以免出现空转的 0 / NaN；真实访问统计走 GA4（G-YGLB3LVYFC）。
+  enable: false
   position: sidebar # 'footer','sidebar'
   pv: 本站总访问量$pv
   uv: 本站总访客数$uv
@@ -75,6 +77,21 @@ custom:
       document.head.appendChild(link);
       var og = document.querySelector('meta[property="og:url"]');
       if (og) og.setAttribute('content', canonical);
+    })();
+    </script>
+    <!-- hreflang: 中英双语互指。仅首页有完整译文对，内页无译文只声明 x-default 回首页 -->
+    <script>
+    (function () {
+      var base = 'https://cybermap.halo26812.eu.org';
+      var p = location.pathname.replace(/index\.html$/, '').replace(/\/+$/, '') || '/';
+      var pairs = p === '/'
+        ? [['zh-CN', base + '/'], ['en', base + '/en/'], ['x-default', base + '/']]
+        : [['x-default', base + '/']];
+      pairs.forEach(function (pair) {
+        var l = document.createElement('link');
+        l.rel = 'alternate'; l.hreflang = pair[0]; l.href = pair[1];
+        document.head.appendChild(l);
+      });
     })();
     </script>
     <link rel="alternate" type="application/rss+xml" title="cyberMap 每日 AI 速递" href="/daily/feed.xml">
