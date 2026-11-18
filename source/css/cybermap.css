@@ -781,6 +781,64 @@ button#search-btn.search-btn {
   position: relative !important;
 }
 
+/* /about/ 内容页：外层 .row 装的是 .col-md-12 面板（正文），不是首页的
+   .col-sm-3 卡片网格。上面的 grid 规则会把它压成 bootstrap 默认窄列，
+   文字挤成一条竖线。这里对「直接子元素是 .col-md-12」的 .row 关掉 grid，
+   恢复块级全宽；首页卡片无 .col-md-12 直接子级，不受影响。 */
+.main-content > .row:has(> .col-md-12) {
+  display: block !important;
+}
+/* about 页没有侧栏菜单，但 .main-content 继承了首页给侧栏预留的左边距，
+   导致内容整体右移、左侧空一大块。无 sidebar-menu 时取消左边距并居中。 */
+@media (min-width: 992px) {
+  .page-container:not(:has(.sidebar-menu)) .main-content {
+    margin-left: 0 !important;
+    padding-left: 34px !important;
+    padding-right: 34px !important;
+  }
+}
+.main-content > .row > .col-md-12 {
+  float: none !important;
+  width: 100% !important;
+  max-width: 900px !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+}
+/* 正文段落与引用：限制阅读宽度、恢复行高，避免长行 */
+.main-content .panel-body,
+.main-content .panel-body .col-sm-12 {
+  float: none !important;
+  width: 100% !important;
+  max-width: 900px !important;
+}
+.main-content .panel-body p,
+.main-content .panel-body blockquote {
+  font-size: 14px !important;
+  line-height: 1.85 !important;
+  color: var(--cm-text-soft, var(--cm-text)) !important;
+}
+.main-content .panel-body blockquote {
+  margin: 14px 0 !important;
+  padding: 12px 18px !important;
+  border-left: 3px solid var(--cm-accent) !important;
+  background: var(--cm-chip) !important;
+  border-radius: 0 10px 10px 0 !important;
+}
+.main-content .panel-body a { color: var(--cm-accent) !important; }
+/* 站长卡片行：col-sm-4 头像 + col-md-8 文案并排，恢复正常栅格 */
+.main-content .row > .col-sm-4,
+.main-content .row > .col-md-8 {
+  float: left !important;
+}
+/* 站长介绍正文不在 panel-body 里，主题默认深色文字色过暗，补主色与行高 */
+.main-content .col-md-8 p,
+.main-content .col-md-8 .col-sm-12 p {
+  font-size: 14px !important;
+  line-height: 1.85 !important;
+  color: var(--cm-text) !important;
+}
+.main-content .col-md-8 a { color: var(--cm-accent) !important; }
+
 /* 卡片 */
 .main-content .xe-widget.xe-conversations.box2 {
   position: relative !important;
