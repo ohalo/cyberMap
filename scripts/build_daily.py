@@ -72,6 +72,33 @@ DATE_TAG_RE = re.compile(r"[·•]\s*(\d{4}-\d{2}-\d{2})\s*收录\s*$")
 WEEKDAYS = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
 CST = timezone(timedelta(hours=8))
 
+# 方向标签规则表：(标签名, 正则)。与「按类型的分类订阅」正交：
+# 分类回答「是什么类型」（开源/工具/模型），方向标签回答「属于哪个领域」
+# （RAG / 推理 / 安全 / 教育…）。规则顺序即优先级，越具体的排越前；
+# 每条最多打 3 个标签，全不命中时用「AI 应用」兜底，避免出现空标签。
+# 复用 name + description 文本推断，纯标准库、幂等、无新增依赖。
+TAG_RULES = [
+    ("安全审计", r"secur|audit|漏洞|vulnerab|pentest|安全"),
+    ("教育课堂", r"classroom|教学|课堂|education|课程|\blearn|学习|\bcourse"),
+    ("视频图像", r"\bvideo|视频|multimodal|多模态|图像|image|\b3d|世界模型|render|渲染|动画|animation|创意"),
+    ("办公文档", r"powerpoint|\bppt\b|slide|演示|\boffice|办公|文档|document"),
+    ("浏览器自动化", r"browser|浏览器|playwright|无障碍|accessibility|网页自动化"),
+    ("推理引擎", r"inference|推理|vllm|serving|推理引擎|模型服务|\bc99|低延迟"),
+    ("训练微调", r"\btrain|训练|finetun|微调|from scratch|从零"),
+    ("RAG 检索", r"\brag\b|retriev|检索|知识库|向量|embedding"),
+    ("记忆", r"memor|记忆|跨会话"),
+    ("多智能体", r"multi.?agent|多智能体|agent.?team|orchestrat|编排|\bteam|团队|commander|协同|协调|协同完成"),
+    ("MCP", r"\bmcp\b|model context protocol"),
+    ("技能生态", r"\bskill|技能"),
+    ("前端 UI", r"frontend|前端|generative.?ui|生成式.{0,2}ui|react|angular|界面|\bui\b"),
+    ("代码开发", r"coding|代码|code review|审查|developer|开发|\bsdk\b|\bcli\b|pull request|\bpr\b"),
+    ("本地运行", r"local|本地|ollama|desktop|桌面|on.?device|端侧|self.?host"),
+    ("语音", r"voice|语音|\btts\b|whisper|speech|配音"),
+]
+TAG_RULE_PATTERNS = [(label, re.compile(pattern, re.I)) for label, pattern in TAG_RULES]
+MAX_TAGS_PER_ITEM = 3
+FALLBACK_TAG = "AI 应用"
+
 
 # ---------------------------------------------------------------- 内联资源
 # 用独立字符串常量而不是 f-string 模板，避免 CSS 里的大量花括号需要转义。
@@ -201,6 +228,57 @@ a{color:inherit;text-decoration:none}
 }
 .dy-feed-chip svg{width:12px;height:12px;fill:currentColor}
 .dy-feed-chip:hover{color:var(--dy-accent);border-color:var(--dy-accent)}
+/* AI 发现知识库：方向标签云 + 站内搜索（与按类型订阅正交） */
+.dy-kb{
+  margin:22px 0 4px;padding:16px 18px;border-radius:14px;
+  border:1px solid var(--dy-border);background:var(--dy-surface);
+  box-shadow:var(--dy-shadow);
+}
+.dy-kb-head{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:12px}
+.dy-kb-title{font-size:13.5px;font-weight:750}
+.dy-kb-hint{font-size:11px;color:var(--dy-muted)}
+.dy-search{
+  display:flex;align-items:center;gap:7px;margin-left:auto;
+  padding:6px 11px;border-radius:999px;
+  border:1px solid var(--dy-border-strong);background:var(--dy-solid);
+  color:var(--dy-soft);
+}
+.dy-search svg{width:14px;height:14px;fill:currentColor;flex:0 0 auto}
+.dy-search input{
+  border:0;outline:0;background:transparent;color:var(--dy-text);
+  font:500 12.5px var(--dy-font);width:150px;
+}
+.dy-search input::placeholder{color:var(--dy-muted)}
+.dy-search:focus-within{border-color:var(--dy-accent);box-shadow:0 0 0 3px var(--dy-chip)}
+.dy-tagcloud{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.dy-tagbtn{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:5px 11px;border-radius:999px;
+  border:1px solid var(--dy-border-strong);background:var(--dy-solid);
+  color:var(--dy-soft);font:600 11.5px var(--dy-font);cursor:pointer;
+  transition:background .15s ease,color .15s ease,border-color .15s ease;
+}
+.dy-tagbtn:hover{color:var(--dy-accent);border-color:var(--dy-accent)}
+.dy-tagbtn .dy-tagn{font-size:10px;color:var(--dy-muted);font-weight:700}
+.dy-tagbtn.active{background:var(--dy-accent);border-color:var(--dy-accent);color:#fff}
+.dy-tagbtn.active .dy-tagn{color:rgba(255,255,255,.85)}
+body.night .dy-tagbtn.active{color:#0b1020}
+.dy-kb-status{margin-top:10px;font-size:11.5px;color:var(--dy-muted);min-height:1.2em}
+.dy-kb-status b{color:var(--dy-accent)}
+.dy-topic{
+  display:inline-block;margin:2px 4px 5px 0;padding:1px 7px;border-radius:5px;
+  background:var(--dy-icon-bg);border:1px solid var(--dy-border);
+  color:var(--dy-soft);font-size:10px;font-weight:600;
+}
+.dy-card.filtered-out,.dy-day.filtered-out{display:none}
+.dy-cards:empty::after{
+  content:"当前筛选条件下没有匹配的站点";display:block;
+  padding:18px;color:var(--dy-muted);font-size:12.5px;
+}
+@media (max-width:600px){
+  .dy-search{margin-left:0;width:100%}
+  .dy-search input{flex:1;width:auto}
+}
 .dy-timeline{position:relative;margin-top:34px;padding-left:26px}
 .dy-timeline::before{
   content:"";position:absolute;left:6px;top:8px;bottom:8px;width:2px;
@@ -305,12 +383,57 @@ JS = r"""
   Array.prototype.forEach.call(document.querySelectorAll('.dy-icon img'),function(img){
     img.addEventListener('error',function(){if(img.parentNode)img.parentNode.removeChild(img);});
   });
+  // ---- AI 发现知识库：方向标签筛选 + 站内搜索（与按类型订阅正交） ----
+  var kb=document.querySelector('.dy-kb');
+  if(kb){
+    var cards=Array.prototype.slice.call(document.querySelectorAll('.dy-card'));
+    var days=Array.prototype.slice.call(document.querySelectorAll('.dy-day'));
+    var tagbtns=Array.prototype.slice.call(kb.querySelectorAll('.dy-tagbtn'));
+    var search=document.getElementById('dy-search');
+    var status=document.getElementById('dy-kb-status');
+    var activeTag='';
+    function norm(s){return (s||'').toLowerCase();}
+    function applyFilter(){
+      var q=norm(search?search.value.trim():'');
+      var shown=0;
+      cards.forEach(function(card){
+        var tags=norm(card.getAttribute('data-tags'));
+        var hay=norm(card.getAttribute('data-search'));
+        var tagOk=!activeTag||(' '+tags+' ').indexOf(' '+activeTag+' ')>-1;
+        var searchOk=!q||hay.indexOf(q)>-1;
+        var ok=tagOk&&searchOk;
+        card.classList.toggle('filtered-out',!ok);
+        if(ok)shown++;
+      });
+      // 某天下所有卡片都被过滤掉时，连同日期标题一起隐藏
+      days.forEach(function(day){
+        var any=Array.prototype.some.call(day.querySelectorAll('.dy-card'),function(c){
+          return !c.classList.contains('filtered-out');
+        });
+        day.classList.toggle('filtered-out',!any);
+      });
+      if(status){
+        status.innerHTML='显示 <b>'+shown+'</b> / '+cards.length+' 个站点'+
+          (activeTag?' · 方向「'+activeTag+'」':'')+(q?' · 搜索「'+q+'」':'');
+      }
+    }
+    tagbtns.forEach(function(btn){
+      btn.addEventListener('click',function(){
+        var tag=btn.getAttribute('data-tag')||'';
+        if(activeTag===tag){activeTag='';}else{activeTag=tag;}
+        tagbtns.forEach(function(b){b.classList.toggle('active',(b.getAttribute('data-tag')||'')===activeTag);});
+        applyFilter();
+      });
+    });
+    if(search){search.addEventListener('input',applyFilter);}
+  }
 })();
 """
 
 ICON_BACK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>'
 ICON_RSS = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm0-6a15 15 0 0 1 15 15h-3A12 12 0 0 0 4 8V5zm1.8 12.2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>'
 ICON_MOON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.3 3a9 9 0 1 0 8.7 11.4A7.2 7.2 0 0 1 12.3 3z"/></svg>'
+ICON_SEARCH = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.8l-.3-.3a6.5 6.5 0 1 0-.7.7l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/></svg>'
 
 
 # ---------------------------------------------------------------- 数据读取
@@ -329,6 +452,27 @@ def norm_url(url: str) -> str:
     if path.endswith(".git"):
         path = path[:-4]
     return f"{host}{path}"
+
+
+def infer_tags(name: str, description: str) -> list[str]:
+    """根据名称+描述推断方向标签，返回按规则优先级排序的标签列表。
+
+    纯文本匹配、幂等：同样输入永远得到同样标签。全不命中时给 AI 应用兜底，
+    保证每张卡片至少有一个可筛选的标签。
+    """
+    text = f"{name} {description}"
+    hits = [label for label, pattern in TAG_RULE_PATTERNS if pattern.search(text)]
+    return hits[:MAX_TAGS_PER_ITEM] or [FALLBACK_TAG]
+
+
+def build_tag_cloud(entries: list[dict]) -> list[tuple[str, int]]:
+    """统计全站条目的方向标签命中数，按数量降序、同数按规则表顺序。"""
+    counter: dict[str, int] = {}
+    for item in entries:
+        for tag in item["tags"]:
+            counter[tag] = counter.get(tag, 0) + 1
+    order = {label: i for i, (label, _) in enumerate(TAG_RULES)}
+    return sorted(counter.items(), key=lambda kv: (-kv[1], order.get(kv[0], 999)))
 
 
 def load_verify(path: Path) -> tuple[dict, list[str]]:
@@ -390,6 +534,7 @@ def load_entries(data_file: Path) -> tuple[list[dict], list[str]]:
                 "label": label,
                 "short": short,
                 "day": day,
+                "tags": infer_tags(str(name), clean_desc),
             })
     return entries, warnings
 
@@ -461,6 +606,39 @@ def badge_html(item: dict, evidence: dict) -> str:
     )
 
 
+def knowledgebar_html(entries: list[dict]) -> str:
+    """AI 发现知识库工具条：搜索框 + 方向标签云，筛选下方时间轴。
+
+    标签云统计所有条目（含早期收录）的命中数，按数量降序；点选标签或输入
+    关键词即时过滤卡片，与「按类型订阅」完全正交。
+    """
+    cloud = build_tag_cloud(entries)
+    if not cloud:
+        return ""
+    chips = "".join(
+        f'<button class="dy-tagbtn" type="button" data-tag="{esc(tag)}" '
+        f'title="只看「{esc(tag)}」方向的收录">{esc(tag)}'
+        f'<span class="dy-tagn">{count}</span></button>'
+        for tag, count in cloud
+    )
+    return (
+        '<section class="dy-kb" aria-label="AI 发现知识库">'
+        '<div class="dy-kb-head">'
+        '<span class="dy-kb-title">AI 发现知识库</span>'
+        '<span class="dy-kb-hint">按方向筛选 · 支持站内搜索</span>'
+        f'<label class="dy-search">{ICON_SEARCH}'
+        '<input id="dy-search" type="search" autocomplete="off" '
+        'placeholder="搜索名称 / 描述 / 标签" aria-label="搜索收录站点"></label>'
+        "</div>"
+        '<div class="dy-tagcloud">'
+        '<button class="dy-tagbtn active" type="button" data-tag="" '
+        f'title="显示全部方向">全部<span class="dy-tagn">{len(entries)}</span></button>'
+        f'{chips}</div>'
+        '<div class="dy-kb-status" id="dy-kb-status"></div>'
+        "</section>"
+    )
+
+
 def receipt_html(verify: dict, days) -> str:
     """页顶「收录质量回执」：展示最新一日的候选→通过→收录漏斗与累计数据。"""
     vdays = verify.get("days") or {}
@@ -508,13 +686,18 @@ def card_html(item: dict, evidence: dict) -> str:
     if item["img"]:
         icon = f'<img src="{esc(item["img"])}" alt="" loading="lazy">'
     desc = f'<p class="dy-desc">{esc(item["description"])}</p>' if item["description"] else ""
+    tags = item.get("tags") or [FALLBACK_TAG]
+    data_tags = esc(" ".join(tags))
+    data_search = esc(f"{item['name']} {item['description']} {' '.join(tags)} {item['url']}")
+    topics = "".join(f'<span class="dy-topic">{esc(t)}</span>' for t in tags)
     return (
-        f'<a class="dy-card" href="{esc(item["url"])}" target="_blank" rel="noopener noreferrer">'
+        f'<a class="dy-card" href="{esc(item["url"])}" target="_blank" rel="noopener noreferrer" '
+        f'data-tags="{data_tags}" data-search="{data_search}">'
         f'<span class="dy-icon"><span class="dy-initial">{initial}</span>{icon}</span>'
         f'<span class="dy-card-body">'
         f'<span class="dy-card-name">{esc(item["name"])}</span>'
         f'<span class="dy-tag">{esc(item["label"])}</span>'
-        f'{desc}{badge_html(item, evidence)}</span></a>'
+        f'{desc}<span class="dy-topics">{topics}</span>{badge_html(item, evidence)}</span></a>'
     )
 
 
@@ -557,7 +740,7 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
         '<span class="dy-kicker">每日更新 · 逐条核验</span>',
         "<h1>每日 AI 速递</h1>",
         "<p>每天从公开来源核验后至少收录 3 个 AI 站点（合格候选多则多收），按类型归入开源项目 / 工具官网 / 模型框架。"
-        "这里按收录日期倒序回看，每条都附可核验的证据，不再让新站点淹没在分类列表里。</p>",
+        "这里按收录日期倒序回看，每条都附可核验的证据；下方知识库可按方向标签筛选或站内搜索，让沉淀下来的站点随时可查。</p>",
         '<div class="dy-stats">',
         f'<div class="dy-stat"><span>累计收录</span><strong>{len(entries)}</strong></div>',
         f'<div class="dy-stat"><span>每日期数</span><strong>{len(days)}</strong></div>',
@@ -576,6 +759,7 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
             for filename, label in CATEGORY_FEEDS.values()
         ),
         '</div></div>',
+        knowledgebar_html(entries),
         '<div class="dy-timeline">',
     ]
 
@@ -746,6 +930,11 @@ def main() -> None:
     for filename in feeds:
         if f'href="/daily/{filename}"' not in html_text:
             fail(f"index.html 缺少订阅入口 {filename}，未写入")
+    # AI 发现知识库工具条必须存在（搜索框 + 标签云 + 每张卡片带方向标签）
+    if 'class="dy-kb"' not in html_text or 'id="dy-search"' not in html_text:
+        fail("index.html 缺少 AI 发现知识库工具条，未写入")
+    if f'data-tags="{FALLBACK_TAG}"' not in html_text and 'data-tags="' not in html_text:
+        fail("index.html 卡片缺少方向标签数据，未写入")
 
     index_path = out_dir / "index.html"
     try:
