@@ -896,6 +896,26 @@ likeGPT:
     description: 填写你最喜欢使用的AI地址
 
 dailyAI_oss:
+  - name: Orkas-AI/Orkas
+    url: https://github.com/Orkas-AI/Orkas
+    img: https://github.com/favicon.ico
+    description: "本地优先的开源多智能体桌面团队，指挥官把目标拆成待办并协调内置专家与主流编码智能体协同完成。 · 2026-11-18 收录"
+  - name: THU-MAIC/OpenMAIC
+    url: https://github.com/THU-MAIC/OpenMAIC
+    img: https://github.com/favicon.ico
+    description: "清华开源的开放式多智能体互动课堂，一键生成含 AI 教师与同学、白板及讲解的沉浸式学习体验。 · 2026-11-18 收录"
+  - name: cloudflare/security-audit-skill
+    url: https://github.com/cloudflare/security-audit-skill
+    img: https://github.com/favicon.ico
+    description: "Cloudflare 开源的编码智能体技能，执行多阶段安全审计并输出经独立验证、机器可读的漏洞发现结果。 · 2026-11-18 收录"
+  - name: nanocodexyz/nanocode
+    url: https://github.com/nanocodexyz/nanocode
+    img: https://github.com/favicon.ico
+    description: "面向前沿嵌入式场景的智能体 SDK，提供可长期运行、支持代码模式的智能体开发接口与工具链。 · 2026-11-18 收录"
+  - name: ChesterRa/cccc
+    url: https://github.com/ChesterRa/cccc
+    img: https://github.com/favicon.ico
+    description: "零基础设施的编码智能体协调器，用群聊式已读与投递回执从手机远程调度多个智能体持续执行任务。 · 2026-11-18 收录"
   - name: infiniflow/ragflow
     url: https://github.com/infiniflow/ragflow
     img: https://github.com/favicon.ico
@@ -974,6 +994,18 @@ dailyAI_oss:
     description: "开源浏览器智能体框架，让大模型在真实浏览器中自动点击、输入并完成任务，兼容任意 LLM。 · 2026-11-13 收录"
 
 dailyAI_tool:
+  - name: RigSpark
+    url: https://rigspark.si
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "开源本地 AI 选型工具，检测电脑内存与显卡后自动挑选可运行的大模型、图像、视频或语音模型并下载运行。 · 2026-11-18 收录"
+  - name: YouArt
+    url: https://youart.ai
+    img: https://youart.ai/favicon.ico
+    description: "对话式 AI 创意平台，用智能体把需求拆成分镜与配音并在画布生成图像视频，支持多模型聚合与桌面版。 · 2026-11-18 收录"
+  - name: "云策 Omni"
+    url: https://www.yuncehub.com
+    img: https://www.yuncehub.com/favicon.ico
+    description: "跨平台本地 AI 工作台，用模型加技能加插件组合让智能体完成开发、创作与自动化任务，数据存于本机。 · 2026-11-18 收录"
   - name: Clipwright
     url: https://clipwright.io
     img: https://clipwright.io/favicon.ico

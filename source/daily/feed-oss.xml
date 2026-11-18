@@ -6,14 +6,19 @@
     <description>cyberMap 每日核验收录的 AI 开源项目，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Wed, 18 Nov 2026 10:23:36 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 10:33:36 +0800</lastBuildDate>
     <ttl>1440</ttl>
     <item>
-      <title>每日 AI 速递 · 开源项目 · 2026-11-18（5 个站点）</title>
+      <title>每日 AI 速递 · 开源项目 · 2026-11-18（10 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-18</link>
       <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-18</guid>
       <pubDate>Wed, 18 Nov 2026 00:00:00 +0800</pubDate>
-      <description>infiniflow/ragflow［开源项目］面向智能体的原生 RAG 检索引擎，提供确定性解析、可解释引用与企业级知识库问答能力。 — https://github.com/infiniflow/ragflow
+      <description>Orkas-AI/Orkas［开源项目］本地优先的开源多智能体桌面团队，指挥官把目标拆成待办并协调内置专家与主流编码智能体协同完成。 — https://github.com/Orkas-AI/Orkas
+THU-MAIC/OpenMAIC［开源项目］清华开源的开放式多智能体互动课堂，一键生成含 AI 教师与同学、白板及讲解的沉浸式学习体验。 — https://github.com/THU-MAIC/OpenMAIC
+cloudflare/security-audit-skill［开源项目］Cloudflare 开源的编码智能体技能，执行多阶段安全审计并输出经独立验证、机器可读的漏洞发现结果。 — https://github.com/cloudflare/security-audit-skill
+nanocodexyz/nanocode［开源项目］面向前沿嵌入式场景的智能体 SDK，提供可长期运行、支持代码模式的智能体开发接口与工具链。 — https://github.com/nanocodexyz/nanocode
+ChesterRa/cccc［开源项目］零基础设施的编码智能体协调器，用群聊式已读与投递回执从手机远程调度多个智能体持续执行任务。 — https://github.com/ChesterRa/cccc
+infiniflow/ragflow［开源项目］面向智能体的原生 RAG 检索引擎，提供确定性解析、可解释引用与企业级知识库问答能力。 — https://github.com/infiniflow/ragflow
 mem0ai/mem0［开源项目］为 AI 智能体提供持久化记忆层的开源基础设施，可跨会话记住用户偏好并注入相关上下文。 — https://github.com/mem0ai/mem0
 hugohe3/ppt-master［开源项目］把文档或主题自动生成原生 PowerPoint 的开源工具，支持形状、图表、动画与模板套用。 — https://github.com/hugohe3/ppt-master
 iflytek/skillhub［开源项目］科大讯飞开源的企业级自托管智能体技能注册中心，支持技能包发布、版本管理与权限治理。 — https://github.com/iflytek/skillhub

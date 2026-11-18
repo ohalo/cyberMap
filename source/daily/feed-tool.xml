@@ -6,8 +6,18 @@
     <description>cyberMap 每日核验收录的 AI 工具官网，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Wed, 18 Nov 2026 10:23:36 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 10:33:36 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 工具官网 · 2026-11-18（3 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-18</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_tool-2026-11-18</guid>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0800</pubDate>
+      <description>RigSpark［工具官网］开源本地 AI 选型工具，检测电脑内存与显卡后自动挑选可运行的大模型、图像、视频或语音模型并下载运行。 — https://rigspark.si
+YouArt［工具官网］对话式 AI 创意平台，用智能体把需求拆成分镜与配音并在画布生成图像视频，支持多模型聚合与桌面版。 — https://youart.ai
+云策 Omni［工具官网］跨平台本地 AI 工作台，用模型加技能加插件组合让智能体完成开发、创作与自动化任务，数据存于本机。 — https://www.yuncehub.com</description>
+      <category>工具官网</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 工具官网 · 2026-11-17（1 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-17</link>

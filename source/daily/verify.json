@@ -101,12 +101,33 @@
       "review": 1
     },
     "2026-11-18": {
-      "added": 8,
-      "checked": 13,
+      "added": 16,
+      "checked": 28,
       "fail": 0,
-      "pass": 13,
-      "rejected": [],
-      "review": 0
+      "pass": 24,
+      "rejected": [
+        {
+          "reason": "GitHub stars < 200，需人工判断价值",
+          "url": "https://github.com/X-T-E-R/kiki",
+          "verdict": "review"
+        },
+        {
+          "reason": "GitHub stars < 200，需人工判断价值",
+          "url": "https://github.com/alphastorm/omp-ninfer",
+          "verdict": "review"
+        },
+        {
+          "reason": "GitHub stars < 200，需人工判断价值",
+          "url": "https://github.com/EllenYiGe/PatternBloom",
+          "verdict": "review"
+        },
+        {
+          "reason": "GitHub stars < 200，需人工判断价值",
+          "url": "https://github.com/LHRLAB/MMGraph-Agent",
+          "verdict": "review"
+        }
+      ],
+      "review": 4
     }
   },
   "evidence": {
@@ -140,6 +161,22 @@
       "pushed_at": null,
       "stars": null,
       "title": "AI Coding Agent for Building Ambitious Software | Cursor",
+      "verdict": "pass"
+    },
+    "github.com/0sec-labs/0": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "llm"
+      ],
+      "checked_at": "2026-11-18T10:32:03+08:00",
+      "date": "2026-11-18",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-18T00:49:53Z",
+      "stars": 1445,
+      "title": "GitHub - 0sec-labs/0security: Software infrastructure to build and deploy sovereign, persistent AI security agents that continuously find, prove and fix security risks. Open source",
       "verdict": "pass"
     },
     "github.com/all-hands-ai/openhands": {
@@ -238,6 +275,39 @@
       "pushed_at": "2026-11-16T23:46:01Z",
       "stars": 85408,
       "title": "GitHub - bytedance/deer-flow: An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and ",
+      "verdict": "pass"
+    },
+    "github.com/chesterra/cccc": {
+      "ai_hits": 6,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "chatgpt",
+        "claude",
+        "gpt",
+        "llm"
+      ],
+      "checked_at": "2026-11-18T10:32:01+08:00",
+      "date": "2026-11-18",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-18T01:53:20Z",
+      "stars": 1337,
+      "title": "GitHub - ChesterRa/cccc: Coordinate your coding agents like a group chat — read receipts, delivery tracking, and remote ops from your phone. One pip install, zero infrastructure. A",
+      "verdict": "pass"
+    },
+    "github.com/cloudflare/security-audit-skill": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "agent"
+      ],
+      "checked_at": "2026-11-18T10:31:59+08:00",
+      "date": "2026-11-18",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-09-14T19:29:02Z",
+      "stars": 74846,
+      "title": "GitHub - cloudflare/security-audit-skill: A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings · GitHub",
       "verdict": "pass"
     },
     "github.com/codewhale-hq/codewhale": {
@@ -377,6 +447,22 @@
       "pushed_at": "2026-11-18T00:56:12Z",
       "stars": 22256,
       "title": "GitHub - google/adk-python: An open-source, code-first Python toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control. · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/google/elephant-goldfish-model": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude"
+      ],
+      "checked_at": "2026-11-18T10:31:57+08:00",
+      "date": "2026-11-18",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-18T01:40:26Z",
+      "stars": 20814,
+      "title": "GitHub - google/elephant-goldfish-model: Open-source plugin for designing and reviewing software with agents · GitHub",
       "verdict": "pass"
     },
     "github.com/harry0703/moneyprinterturbo": {
@@ -562,12 +648,12 @@
       "ai_keywords": [
         "agent"
       ],
-      "checked_at": "2026-11-17T09:16:24+08:00",
-      "date": "2026-11-17",
+      "checked_at": "2026-11-18T10:31:56+08:00",
+      "date": "2026-11-18",
       "http_status": 200,
       "license": "MIT",
-      "pushed_at": "2026-11-17T01:14:32Z",
-      "stars": 29611,
+      "pushed_at": "2026-11-18T02:31:08Z",
+      "stars": 30196,
       "title": "GitHub - meta/astryx: An open source design system that&#39;s fully customizable and agent ready · GitHub",
       "verdict": "pass"
     },
@@ -599,6 +685,25 @@
       "pushed_at": "2026-11-13T08:03:53Z",
       "stars": 210354,
       "title": "GitHub - n8n-io/n8n: Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations. · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/nanocodexyz/nanocode": {
+      "ai_hits": 6,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "anthropic",
+        "chatgpt",
+        "claude",
+        "gpt"
+      ],
+      "checked_at": "2026-11-18T10:32:00+08:00",
+      "date": "2026-11-18",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-18T01:52:19Z",
+      "stars": 728,
+      "title": "GitHub - nanocodexyz/nanocode: SDK for Frontier Embedded Agents. · GitHub",
       "verdict": "pass"
     },
     "github.com/nousresearch/hermes-agent": {
@@ -684,6 +789,22 @@
       "pushed_at": "2026-11-12T14:24:23Z",
       "stars": 158529,
       "title": "GitHub - open-webui/open-webui: User-friendly AI Interface (Supports Ollama, OpenAI API, ...) · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/orkas-ai/orkas": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude"
+      ],
+      "checked_at": "2026-11-18T10:31:54+08:00",
+      "date": "2026-11-18",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-17T03:07:21Z",
+      "stars": 9434,
+      "title": "GitHub - Orkas-AI/Orkas: Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordinates 16 built-in specialist agents ",
       "verdict": "pass"
     },
     "github.com/panniantong/agent-reach": {
@@ -856,6 +977,20 @@
       "title": "GitHub - thedotmack/claude-mem: Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevan",
       "verdict": "pass"
     },
+    "github.com/thu-maic/openmaic": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "agent"
+      ],
+      "checked_at": "2026-11-18T10:31:55+08:00",
+      "date": "2026-11-18",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-17T17:55:25Z",
+      "stars": 43839,
+      "title": "GitHub - THU-MAIC/OpenMAIC: Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click · GitHub",
+      "verdict": "pass"
+    },
     "github.com/topoteretes/cognee": {
       "ai_hits": 2,
       "ai_keywords": [
@@ -949,6 +1084,20 @@
       "title": "Ollama · Run AI models locally and in the cloud",
       "verdict": "pass"
     },
+    "rigspark.si/": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "\\bai\\b"
+      ],
+      "checked_at": "2026-11-18T10:32:11+08:00",
+      "date": "2026-11-18",
+      "http_status": 200,
+      "license": null,
+      "pushed_at": null,
+      "stars": null,
+      "title": "RigSpark: AI on the machines you already own",
+      "verdict": "pass"
+    },
     "usemagpie.ai/": {
       "ai_hits": 3,
       "ai_keywords": [
@@ -978,18 +1127,48 @@
       "stars": null,
       "title": "Collaborative Intelligence | webAI",
       "verdict": "pass"
+    },
+    "youart.ai/": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "\\bai\\b"
+      ],
+      "checked_at": "2026-11-18T10:32:21+08:00",
+      "date": "2026-11-18",
+      "http_status": 200,
+      "license": null,
+      "pushed_at": null,
+      "stars": null,
+      "title": "YouArt | 免费 AI 图像与视频生成器，无限模型畅用",
+      "verdict": "pass"
+    },
+    "yuncehub.com/": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "多模态"
+      ],
+      "checked_at": "2026-11-18T10:32:22+08:00",
+      "date": "2026-11-18",
+      "http_status": 200,
+      "license": null,
+      "pushed_at": null,
+      "stars": null,
+      "title": "云策 - 全能AI工作台，全行业场景自动化助手",
+      "verdict": "pass"
     }
   },
   "schema": 1,
   "source": "cybermap-daily/state/reports/verify-YYYY-MM-DD.json",
   "totals": {
-    "added": 30,
-    "checked": 66,
+    "added": 38,
+    "checked": 81,
     "days": 6,
     "fail": 6,
-    "pass": 55,
-    "review": 5,
-    "verified_sites": 54
+    "pass": 66,
+    "review": 9,
+    "verified_sites": 64
   },
   "warnings": []
 }
