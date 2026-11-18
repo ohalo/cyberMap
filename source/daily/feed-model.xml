@@ -6,8 +6,18 @@
     <description>cyberMap 每日核验收录的 AI 模型框架，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Tue, 17 Nov 2026 10:28:59 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 10:23:36 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 模型框架 · 2026-11-18（3 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-18</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_model-2026-11-18</guid>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0800</pubDate>
+      <description>skyzh/tiny-llm［模型框架］面向系统工程师的 Apple Silicon LLM 推理教学项目，用 Python 从零搭建迷你 vLLM 并运行 Qwen 模型。 — https://github.com/skyzh/tiny-llm
+jingyaogong/minimind［模型框架］仅需 2 小时即可从零训练 6400 万参数小语言模型的开源项目，适合快速上手大模型训练全流程。 — https://github.com/jingyaogong/minimind
+flashml-org/FreeToken［模型框架］把数据中心级模型服务带到桌面的开源引擎，可在个人电脑上本地运行超大规模语言模型。 — https://github.com/flashml-org/FreeToken</description>
+      <category>模型框架</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 模型框架 · 2026-11-17（1 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-17</link>

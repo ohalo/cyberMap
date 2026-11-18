@@ -99,6 +99,14 @@
         }
       ],
       "review": 1
+    },
+    "2026-11-18": {
+      "added": 8,
+      "checked": 13,
+      "fail": 0,
+      "pass": 13,
+      "rejected": [],
+      "review": 0
     }
   },
   "evidence": {
@@ -184,6 +192,22 @@
       "title": "GitHub - anthropics/skills: Public repository for Agent Skills · GitHub",
       "verdict": "pass"
     },
+    "github.com/autonomous-ai/openharness": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude"
+      ],
+      "checked_at": "2026-11-18T10:22:43+08:00",
+      "date": "2026-11-18",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-18T02:19:11Z",
+      "stars": 1509,
+      "title": "GitHub - autonomous-ai/openharness: The ultimate harness for coding agents and beyond. All your agents. All your machines. One command center. Start with code, then follow your cur",
+      "verdict": "pass"
+    },
     "github.com/browser-use/browser-use": {
       "ai_hits": 3,
       "ai_keywords": [
@@ -214,6 +238,39 @@
       "pushed_at": "2026-11-16T23:46:01Z",
       "stars": 85408,
       "title": "GitHub - bytedance/deer-flow: An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and ",
+      "verdict": "pass"
+    },
+    "github.com/codewhale-hq/codewhale": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "llm"
+      ],
+      "checked_at": "2026-11-18T10:22:41+08:00",
+      "date": "2026-11-18",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-18T02:08:45Z",
+      "stars": 41187,
+      "title": "GitHub - codewhale-hq/Codewhale: An open-source coding agent for your terminal, written in Rust. It works with any model, can split one task across several agents, and every line o",
+      "verdict": "pass"
+    },
+    "github.com/copilotkit/copilotkit": {
+      "ai_hits": 4,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "copilot",
+        "generative"
+      ],
+      "checked_at": "2026-11-18T10:22:39+08:00",
+      "date": "2026-11-18",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-18T01:12:12Z",
+      "stars": 38779,
+      "title": "GitHub - CopilotKit/CopilotKit: The Frontend Stack for Agents &amp; Generative UI. React, Angular, Mobile, Slack, and more. Makers of the AG-UI Protocol · GitHub",
       "verdict": "pass"
     },
     "github.com/d4vinci/scrapling": {
@@ -261,6 +318,21 @@
       "title": "GitHub - firecrawl/firecrawl: Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥 · GitHub",
       "verdict": "pass"
     },
+    "github.com/flashml-org/freetoken": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "inference",
+        "transformer"
+      ],
+      "checked_at": "2026-11-18T10:22:37+08:00",
+      "date": "2026-11-18",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-18T00:53:10Z",
+      "stars": 17275,
+      "title": "GitHub - FlashML-org/FreeToken: FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently. · GitHub",
+      "verdict": "pass"
+    },
     "github.com/gentleman-programming/engram": {
       "ai_hits": 2,
       "ai_keywords": [
@@ -289,6 +361,22 @@
       "pushed_at": "2026-11-12T21:54:10Z",
       "stars": 149730,
       "title": "GitHub - github/spec-kit: 💫 Toolkit to help you get started with SDD or any other process! · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/google/adk-python": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "llm"
+      ],
+      "checked_at": "2026-11-18T10:22:44+08:00",
+      "date": "2026-11-18",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-18T00:56:12Z",
+      "stars": 22256,
+      "title": "GitHub - google/adk-python: An open-source, code-first Python toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control. · GitHub",
       "verdict": "pass"
     },
     "github.com/harry0703/moneyprinterturbo": {
@@ -324,6 +412,22 @@
       "title": "GitHub - heygen-com/hyperframes: Write HTML. Render video. Built for agents. · GitHub",
       "verdict": "pass"
     },
+    "github.com/hkuds/nanobot": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "llm"
+      ],
+      "checked_at": "2026-11-18T10:22:40+08:00",
+      "date": "2026-11-18",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-17T11:23:07Z",
+      "stars": 50156,
+      "title": "GitHub - HKUDS/nanobot: Your lightweight open-source personal agent. · GitHub",
+      "verdict": "pass"
+    },
     "github.com/homeassistant-ai/ha-mcp": {
       "ai_hits": 5,
       "ai_keywords": [
@@ -340,6 +444,66 @@
       "pushed_at": "2026-11-17T00:56:00Z",
       "stars": 7909,
       "title": "GitHub - homeassistant-ai/ha-mcp: Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants. · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/hugohe3/ppt-master": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-18T10:22:38+08:00",
+      "date": "2026-11-18",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-17T12:30:58Z",
+      "stars": 77962,
+      "title": "GitHub - hugohe3/ppt-master: AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand",
+      "verdict": "pass"
+    },
+    "github.com/iflytek/skillhub": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-18T10:22:42+08:00",
+      "date": "2026-11-18",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-18T02:04:00Z",
+      "stars": 5440,
+      "title": "GitHub - iflytek/skillhub: Self-hosted, open-source agent skill registry for enterprises. Publish &amp; version skill packages, govern with RBAC and audit logs, deploy on-premise w",
+      "verdict": "pass"
+    },
+    "github.com/infiniflow/ragflow": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "rag\\b"
+      ],
+      "checked_at": "2026-11-18T10:22:33+08:00",
+      "date": "2026-11-18",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-18T02:13:08Z",
+      "stars": 94337,
+      "title": "GitHub - infiniflow/ragflow: RAGFlow is an agent-native database: a Retrieval-Augmented Generation (RAG) engine that grew into context infrastructure. · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/jingyaogong/minimind": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "llm"
+      ],
+      "checked_at": "2026-11-18T10:22:36+08:00",
+      "date": "2026-11-18",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-10-27T06:57:09Z",
+      "stars": 66051,
+      "title": "GitHub - jingyaogong/minimind: 🧠 Train a 64M-parameter LLM from scratch in just 2h! · GitHub",
       "verdict": "pass"
     },
     "github.com/kaushikb11/awesome-llm-agents": {
@@ -373,6 +537,24 @@
       "pushed_at": "2026-11-15T00:27:16Z",
       "stars": 156644,
       "title": "GitHub - langflow-ai/langflow: Langflow is a powerful tool for building and deploying AI-powered agents and workflows. · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/mem0ai/mem0": {
+      "ai_hits": 5,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "chatgpt",
+        "gpt",
+        "llm"
+      ],
+      "checked_at": "2026-11-18T10:22:34+08:00",
+      "date": "2026-11-18",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-17T03:19:32Z",
+      "stars": 69142,
+      "title": "GitHub - mem0ai/mem0: The Memory Layer for AI Agents - Drop-in memory infrastructure for AI agents and apps. Context that persists. Built for production. · GitHub",
       "verdict": "pass"
     },
     "github.com/meta/astryx": {
@@ -537,6 +719,23 @@
       "title": "GitHub - paperclipai/paperclip: The open-source app everyone uses to manage agents at work · GitHub",
       "verdict": "pass"
     },
+    "github.com/pydantic/pydantic-ai": {
+      "ai_hits": 4,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "embedding",
+        "llm"
+      ],
+      "checked_at": "2026-11-18T10:22:45+08:00",
+      "date": "2026-11-18",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-18T02:22:17Z",
+      "stars": 21265,
+      "title": "GitHub - pydantic/pydantic-ai: How Python does AI. Agents, realtime voice, image generation, embeddings. Every model, every interface, typed end to end. · GitHub",
+      "verdict": "pass"
+    },
     "github.com/rasbt/llms-from-scratch": {
       "ai_hits": 6,
       "ai_keywords": [
@@ -573,6 +772,21 @@
       "pushed_at": "2026-11-15T01:08:09Z",
       "stars": 188026,
       "title": "GitHub - Significant-Gravitas/AutoGPT: AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on wh",
+      "verdict": "pass"
+    },
+    "github.com/skyzh/tiny-llm": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "inference",
+        "llm"
+      ],
+      "checked_at": "2026-11-18T10:22:35+08:00",
+      "date": "2026-11-18",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-16T13:30:17Z",
+      "stars": 5752,
+      "title": "GitHub - skyzh/tiny-llm: learn LLM inference system on Apple Silicon for systems engineers: build a tiny vLLM + Qwen · GitHub",
       "verdict": "pass"
     },
     "github.com/stablyai/orca": {
@@ -769,13 +983,13 @@
   "schema": 1,
   "source": "cybermap-daily/state/reports/verify-YYYY-MM-DD.json",
   "totals": {
-    "added": 22,
-    "checked": 53,
-    "days": 5,
+    "added": 30,
+    "checked": 66,
+    "days": 6,
     "fail": 6,
-    "pass": 42,
+    "pass": 55,
     "review": 5,
-    "verified_sites": 41
+    "verified_sites": 54
   },
   "warnings": []
 }

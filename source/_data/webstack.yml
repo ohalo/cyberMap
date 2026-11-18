@@ -896,6 +896,26 @@ likeGPT:
     description: 填写你最喜欢使用的AI地址
 
 dailyAI_oss:
+  - name: infiniflow/ragflow
+    url: https://github.com/infiniflow/ragflow
+    img: https://github.com/favicon.ico
+    description: "面向智能体的原生 RAG 检索引擎，提供确定性解析、可解释引用与企业级知识库问答能力。 · 2026-11-18 收录"
+  - name: mem0ai/mem0
+    url: https://github.com/mem0ai/mem0
+    img: https://github.com/favicon.ico
+    description: "为 AI 智能体提供持久化记忆层的开源基础设施，可跨会话记住用户偏好并注入相关上下文。 · 2026-11-18 收录"
+  - name: hugohe3/ppt-master
+    url: https://github.com/hugohe3/ppt-master
+    img: https://github.com/favicon.ico
+    description: "把文档或主题自动生成原生 PowerPoint 的开源工具，支持形状、图表、动画与模板套用。 · 2026-11-18 收录"
+  - name: iflytek/skillhub
+    url: https://github.com/iflytek/skillhub
+    img: https://github.com/favicon.ico
+    description: "科大讯飞开源的企业级自托管智能体技能注册中心，支持技能包发布、版本管理与权限治理。 · 2026-11-18 收录"
+  - name: CopilotKit/CopilotKit
+    url: https://github.com/CopilotKit/CopilotKit
+    img: https://github.com/favicon.ico
+    description: "面向智能体与生成式 UI 的前端开发框架，支持 React、Angular 与移动端快速集成对话交互。 · 2026-11-18 收录"
   - name: bytedance/deer-flow
     url: https://github.com/bytedance/deer-flow
     img: https://github.com/favicon.ico
@@ -980,6 +1000,18 @@ dailyAI_tool:
     description: "在本地或云端运行开源大模型的工具，支持 macOS、Windows、Linux，一条命令即可启动模型。 · 2026-11-13 收录"
 
 dailyAI_model:
+  - name: skyzh/tiny-llm
+    url: https://github.com/skyzh/tiny-llm
+    img: https://github.com/favicon.ico
+    description: "面向系统工程师的 Apple Silicon LLM 推理教学项目，用 Python 从零搭建迷你 vLLM 并运行 Qwen 模型。 · 2026-11-18 收录"
+  - name: jingyaogong/minimind
+    url: https://github.com/jingyaogong/minimind
+    img: https://github.com/favicon.ico
+    description: "仅需 2 小时即可从零训练 6400 万参数小语言模型的开源项目，适合快速上手大模型训练全流程。 · 2026-11-18 收录"
+  - name: flashml-org/FreeToken
+    url: https://github.com/flashml-org/FreeToken
+    img: https://github.com/favicon.ico
+    description: "把数据中心级模型服务带到桌面的开源引擎，可在个人电脑上本地运行超大规模语言模型。 · 2026-11-18 收录"
   - name: FareedKhan-dev/kimi-k3-in-c
     url: https://github.com/FareedKhan-dev/kimi-k3-in-c
     img: https://github.com/favicon.ico

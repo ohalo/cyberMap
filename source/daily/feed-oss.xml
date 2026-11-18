@@ -6,8 +6,20 @@
     <description>cyberMap 每日核验收录的 AI 开源项目，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Tue, 17 Nov 2026 10:28:59 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 10:23:36 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 开源项目 · 2026-11-18（5 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-18</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-18</guid>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0800</pubDate>
+      <description>infiniflow/ragflow［开源项目］面向智能体的原生 RAG 检索引擎，提供确定性解析、可解释引用与企业级知识库问答能力。 — https://github.com/infiniflow/ragflow
+mem0ai/mem0［开源项目］为 AI 智能体提供持久化记忆层的开源基础设施，可跨会话记住用户偏好并注入相关上下文。 — https://github.com/mem0ai/mem0
+hugohe3/ppt-master［开源项目］把文档或主题自动生成原生 PowerPoint 的开源工具，支持形状、图表、动画与模板套用。 — https://github.com/hugohe3/ppt-master
+iflytek/skillhub［开源项目］科大讯飞开源的企业级自托管智能体技能注册中心，支持技能包发布、版本管理与权限治理。 — https://github.com/iflytek/skillhub
+CopilotKit/CopilotKit［开源项目］面向智能体与生成式 UI 的前端开发框架，支持 React、Angular 与移动端快速集成对话交互。 — https://github.com/CopilotKit/CopilotKit</description>
+      <category>开源项目</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 开源项目 · 2026-11-17（5 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-17</link>
