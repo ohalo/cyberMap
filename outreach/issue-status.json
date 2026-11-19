@@ -454,14 +454,15 @@
       "plugin": "agent-purge",
       "repo_path": "ZiChuanLan/agent-purge",
       "rank": 52,
-      "status": "failed",
+      "status": "pending",
       "first_seen": "2026-11-16T03:53:42+00:00",
-      "last_checked": "2026-11-19T03:30:35+00:00",
+      "last_checked": "2026-11-19T03:31:00+00:00",
       "title": "Your plugin ranked #52 on the AI plugin leaderboard",
       "http": 403,
       "error": "Resource not accessible by personal access token",
       "attempts": 1,
-      "last_attempt_at": "2026-11-19T03:30:35+00:00"
+      "last_attempt_at": "2026-11-19T03:30:35+00:00",
+      "last_failure": "403 fine-grained PAT 无第三方写权限（2026-11-19）"
     },
     "yishentu|claudian": {
       "owner": "yishentu",
