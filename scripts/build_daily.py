@@ -52,6 +52,7 @@ SITE_URL_DEFAULT = "https://cybermap.halo26812.eu.org"
 DATA_REL = Path("source/_data/webstack.yml")
 OUT_REL = Path("source/daily")
 VERIFY_REL = Path("source/daily/verify.json")
+HEALTH_REL = Path("source/daily/health.json")
 
 # 分类 -> (中文标签, 短名)。顺序决定同一天内卡片的展示顺序。
 CATEGORY_LABELS = OrderedDict([
@@ -126,6 +127,12 @@ CSS = r"""
   --dy-ok-bg:rgba(16,185,129,.10);
   --dy-ok-border:rgba(16,185,129,.28);
   --dy-ok-text:#0f8a63;
+  --dy-good:#16a34a;
+  --dy-bad:#dc2626;
+  --dy-warn:#d97706;
+  --dy-good-bg:rgba(22,163,74,.10);
+  --dy-bad-bg:rgba(220,38,38,.10);
+  --dy-warn-bg:rgba(217,119,6,.10);
 }
 body.night{
   --dy-bg:#080d1a;
@@ -147,6 +154,12 @@ body.night{
   --dy-ok-bg:rgba(52,211,153,.12);
   --dy-ok-border:rgba(52,211,153,.30);
   --dy-ok-text:#6ee7b7;
+  --dy-good:#4ade80;
+  --dy-bad:#f87171;
+  --dy-warn:#fbbf24;
+  --dy-good-bg:rgba(74,222,128,.13);
+  --dy-bad-bg:rgba(248,113,113,.13);
+  --dy-warn-bg:rgba(251,191,36,.13);
 }
 html{scroll-behavior:smooth}
 body{
@@ -350,6 +363,42 @@ body.night .dy-tagbtn.active{color:#0b1020}
 .dy-receipt-arrow{color:var(--dy-muted);font-size:12px}
 .dy-receipt-meta{margin-top:10px;font-size:11.5px;color:var(--dy-muted);line-height:1.7}
 .dy-receipt-meta a{color:var(--dy-accent);font-weight:650}
+/* 站点健康度：卡片小圆点 + 页顶汇总条（低频复检，非每日收录） */
+.dy-health{
+  display:inline-flex;align-items:center;gap:5px;
+  margin-top:7px;padding:1px 8px;border-radius:999px;
+  font-size:10px;font-weight:650;line-height:1.6;cursor:help;
+}
+.dy-health i{width:6px;height:6px;border-radius:50%;display:inline-block;flex:0 0 auto}
+.dy-health.ok{color:var(--dy-good);background:var(--dy-good-bg)}
+.dy-health.ok i{background:var(--dy-good)}
+.dy-health.down{color:var(--dy-bad);background:var(--dy-bad-bg)}
+.dy-health.down i{background:var(--dy-bad)}
+.dy-health.unverified{color:var(--dy-warn);background:var(--dy-warn-bg)}
+.dy-health.unverified i{background:var(--dy-warn)}
+.dy-card.dy-down{opacity:.62}
+.dy-card.dy-down:hover{opacity:1}
+.dy-healthbar{
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  margin:22px 0 4px;padding:13px 18px;border-radius:14px;
+  border:1px solid var(--dy-border);background:var(--dy-surface);
+  box-shadow:var(--dy-shadow);font-size:12.5px;color:var(--dy-soft);
+}
+.dy-healthbar-title{font-size:13.5px;font-weight:750;color:var(--dy-text)}
+.dy-healthbar-metrics{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.dy-hmetric{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:3px 10px;border-radius:8px;font-weight:650;
+}
+.dy-hmetric i{width:7px;height:7px;border-radius:50%;display:inline-block}
+.dy-hmetric.ok{color:var(--dy-good);background:var(--dy-good-bg)}
+.dy-hmetric.ok i{background:var(--dy-good)}
+.dy-hmetric.down{color:var(--dy-bad);background:var(--dy-bad-bg)}
+.dy-hmetric.down i{background:var(--dy-bad)}
+.dy-hmetric.unverified{color:var(--dy-warn);background:var(--dy-warn-bg)}
+.dy-hmetric.unverified i{background:var(--dy-warn)}
+.dy-healthbar-time{margin-left:auto;font-size:11px;color:var(--dy-muted)}
+.dy-healthbar-note{flex-basis:100%;font-size:11px;color:var(--dy-muted);line-height:1.6}
 .dy-footer{
   margin-top:46px;padding-top:20px;border-top:1px solid var(--dy-border);
   font-size:12px;color:var(--dy-muted);
@@ -488,6 +537,19 @@ def load_verify(path: Path) -> tuple[dict, list[str]]:
         return {}, [f"verify.json 读取失败，已降级为无徽章模式：{exc}"]
 
 
+def load_health(path: Path) -> tuple[dict, list[str]]:
+    """读取站点健康复检数据。文件缺失/损坏时返回空数据（优雅降级，不显示健康模块）。"""
+    if not path.is_file():
+        return {}, []
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(data, dict) or not isinstance(data.get("sites"), dict):
+            raise ValueError("health.json 结构不完整")
+        return data, []
+    except (OSError, json.JSONDecodeError, ValueError) as exc:
+        return {}, [f"health.json 读取失败，已跳过健康模块：{exc}"]
+
+
 def load_entries(data_file: Path) -> tuple[list[dict], list[str]]:
     """返回 (条目列表, 警告列表)。条目按分类顺序、分类内原始顺序排列。"""
     if not data_file.is_file():
@@ -606,6 +668,52 @@ def badge_html(item: dict, evidence: dict) -> str:
     )
 
 
+HEALTH_STATUS_TEXT = {"ok": "持续在线", "down": "疑似失效", "unverified": "待核对"}
+
+
+def health_badge_html(item: dict, health: dict) -> str:
+    """卡片健康小圆点：三态文案 + title 悬停看复检证据（含检查时间）。"""
+    rec = health.get(norm_url(item["url"]))
+    if not rec:
+        return ""
+    status = rec.get("status")
+    if status not in HEALTH_STATUS_TEXT:
+        return ""
+    note = rec.get("note") or ""
+    title = f"{HEALTH_STATUS_TEXT[status]}；复检记录：{note}（{rec.get('checked_at') or '—'}）"
+    return (
+        f'<span class="dy-health {status}" title="{esc(title)}">'
+        f'<i></i>{esc(HEALTH_STATUS_TEXT[status])}</span>'
+    )
+
+
+def healthbar_html(health: dict) -> str:
+    """页顶「站点健康度」汇总条：在线 / 疑似失效 / 待核对三态计数 + 复检时间。"""
+    if not health:
+        return ""
+    summary = health.get("summary") or {}
+    checked = summary.get("checked")
+    if not checked:
+        return ""
+    metrics = "".join(
+        f'<span class="dy-hmetric {key}"><i></i>{HEALTH_STATUS_TEXT[key]} '
+        f'{summary.get(key, 0)}</span>'
+        for key in ("ok", "down", "unverified")
+    )
+    generated = health.get("generated_at") or ""
+    time_str = generated.replace("T", " ")[:16]
+    return (
+        '<section class="dy-healthbar" aria-label="站点健康度">'
+        '<span class="dy-healthbar-title">站点健康度</span>'
+        f'<span class="dy-healthbar-metrics">{metrics}</span>'
+        f'<span class="dy-healthbar-time">复检 {esc(time_str)}</span>'
+        '<span class="dy-healthbar-note">低频人工复检的结果，反映最近一次探测时的站点状态；'
+        '「待核对」为本机网络策略不可判定（超时/代理/反爬），不代表站点失效。'
+        '完整明细：<a href="/daily/health.json" style="color:var(--dy-accent);font-weight:650">/daily/health.json</a></span>'
+        "</section>"
+    )
+
+
 def knowledgebar_html(entries: list[dict]) -> str:
     """AI 发现知识库工具条：搜索框 + 方向标签云，筛选下方时间轴。
 
@@ -680,7 +788,8 @@ def receipt_html(verify: dict, days) -> str:
     )
 
 
-def card_html(item: dict, evidence: dict) -> str:
+def card_html(item: dict, evidence: dict, health: dict | None = None) -> str:
+    health = health or {}
     initial = esc(next((c for c in item["name"] if not c.isspace()), "A").upper())
     icon = ""
     if item["img"]:
@@ -690,21 +799,26 @@ def card_html(item: dict, evidence: dict) -> str:
     data_tags = esc(" ".join(tags))
     data_search = esc(f"{item['name']} {item['description']} {' '.join(tags)} {item['url']}")
     topics = "".join(f'<span class="dy-topic">{esc(t)}</span>' for t in tags)
+    hrec = health.get(norm_url(item["url"]))
+    down_cls = " dy-down" if hrec and hrec.get("status") == "down" else ""
     return (
-        f'<a class="dy-card" href="{esc(item["url"])}" target="_blank" rel="noopener noreferrer" '
+        f'<a class="dy-card{down_cls}" href="{esc(item["url"])}" target="_blank" rel="noopener noreferrer" '
         f'data-tags="{data_tags}" data-search="{data_search}">'
         f'<span class="dy-icon"><span class="dy-initial">{initial}</span>{icon}</span>'
         f'<span class="dy-card-body">'
         f'<span class="dy-card-name">{esc(item["name"])}</span>'
         f'<span class="dy-tag">{esc(item["label"])}</span>'
-        f'{desc}<span class="dy-topics">{topics}</span>{badge_html(item, evidence)}</span></a>'
+        f'{desc}<span class="dy-topics">{topics}</span>'
+        f'{badge_html(item, evidence)}{health_badge_html(item, health)}</span></a>'
     )
 
 
 def build_html(entries: list[dict], days, undated, site_url: str, generated: datetime,
-               verify: dict | None = None) -> str:
+               verify: dict | None = None, health: dict | None = None) -> str:
     verify = verify or {}
+    health = health or {}
     evidence = verify.get("evidence") or {}
+    health_sites = health.get("sites") or {}
     dated_count = sum(len(v) for _, v in days)
     latest = days[0][0] if days else "—"
     root = site_url.rstrip("/")
@@ -748,6 +862,7 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
         f'<div class="dy-stat"><span>生成时间</span><strong>{generated.strftime("%m-%d %H:%M")}</strong></div>',
         "</div></section>",
         receipt_html(verify, days),
+        healthbar_html(health),
         '<div class="dy-rssbar">',
         '<div>订阅每天的新收录 · 全部类型地址 <code>' + esc(f"{root}/daily/feed.xml") +
         '</code>，也可按类型单独订阅（统一为 RSS 2.0）。</div>',
@@ -774,7 +889,7 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
             f'<h2>{esc(title)}</h2><span class="dy-week">{esc(week)}</span>'
             f'<span class="dy-count">{len(items)} 个站点</span></div>'
         )
-        parts.append('<div class="dy-cards">' + "".join(card_html(i, evidence) for i in items) + "</div>")
+        parts.append('<div class="dy-cards">' + "".join(card_html(i, evidence, health_sites) for i in items) + "</div>")
         parts.append("</section>")
 
     if undated:
@@ -784,7 +899,7 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
             '<span class="dy-week">描述中没有日期尾注</span>'
             f'<span class="dy-count">{len(undated)} 个站点</span></div>'
         )
-        parts.append('<div class="dy-cards">' + "".join(card_html(i, evidence) for i in undated) + "</div>")
+        parts.append('<div class="dy-cards">' + "".join(card_html(i, evidence, health_sites) for i in undated) + "</div>")
         parts.append("</section>")
 
     parts += [
@@ -892,6 +1007,9 @@ def main() -> None:
 
     verify, verify_warnings = load_verify(repo / VERIFY_REL)
     warnings += verify_warnings
+    health, health_warnings = load_health(repo / HEALTH_REL)
+    warnings += health_warnings
+    health_map = health.get("sites") or {}
     days, undated = group_by_day(entries)
     generated = datetime.now(CST)
     summary = {
@@ -905,13 +1023,16 @@ def main() -> None:
             if (verify.get("evidence") or {}).get(norm_url(e["url"]))
         ),
         "quality_receipt": bool(verify.get("days") and days),
+        "health_checked": len(health_map),
+        "health_down": sum(1 for r in health_map.values() if r.get("status") == "down"),
+        "health_bar": bool(health.get("summary", {}).get("checked")),
         "warnings": warnings,
     }
     if args.check:
         print(json.dumps({**summary, "check_only": True}, ensure_ascii=False, indent=2))
         return
 
-    html_text = build_html(entries, days, undated, site_url, generated, verify)
+    html_text = build_html(entries, days, undated, site_url, generated, verify, health)
     # 混合全量流 + 三份分类流，共用同一套过滤/渲染逻辑
     feeds = {"feed.xml": build_feed(days, site_url, generated)}
     for category, (filename, _label) in CATEGORY_FEEDS.items():
@@ -935,6 +1056,12 @@ def main() -> None:
         fail("index.html 缺少 AI 发现知识库工具条，未写入")
     if f'data-tags="{FALLBACK_TAG}"' not in html_text and 'data-tags="' not in html_text:
         fail("index.html 卡片缺少方向标签数据，未写入")
+    # 有健康数据时，汇总条与卡片健康标记必须渲染出来（防止读到了但没用上）
+    if health_map:
+        if 'class="dy-healthbar"' not in html_text:
+            fail("index.html 缺少站点健康度汇总条，未写入")
+        if 'class="dy-health ' not in html_text:
+            fail("index.html 卡片缺少健康标记，未写入")
 
     index_path = out_dir / "index.html"
     try:
