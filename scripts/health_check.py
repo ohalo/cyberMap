@@ -8,8 +8,11 @@
 
 设计要点
 --------
-* 与每日收录解耦：本脚本**不**在 ``cybermap.py add`` 里跑（避免每天都对几十条
-  历史站点发探测、拖慢收录并浪费 GitHub API 配额）。由人工/独立定时任务低频运行。
+* 并入每日收录，但内部 7 天降频：``cybermap.py add`` 每天顺带调用本脚本，脚本
+  先读现有 health.json 的 ``generated_at``——距上次复检 < ``--interval-days``（默认
+  7 天）则**直接跳过**（不探测、不重写产物、退出码 0，输出 ``skipped=true``），
+  绝大多数日子是零成本 no-op。等效每周一次，且无需额外建独立定时任务。
+  产物缺失 / 时间戳损坏时必跑；手动想立即复检用 ``--force`` 绕过降频。
 * 三态判定，绝不误伤（用户重视数据严谨）：
     - ``ok``        在线：HTTP 2xx/3xx，或 GitHub API 200 未归档。
     - ``down``      疑似失效：404/410、域名停放、明确软 404、GitHub 仓库 404/归档。
@@ -26,9 +29,11 @@
 ----
     NO_PROXY='*' no_proxy='*' python scripts/health_check.py --repo <repo>
     NO_PROXY='*' no_proxy='*' python scripts/health_check.py --repo <repo> --check
+    NO_PROXY='*' no_proxy='*' python scripts/health_check.py --repo <repo> --force
+    NO_PROXY='*' no_proxy='*' python scripts/health_check.py --repo <repo> --interval-days 14
     NO_PROXY='*' no_proxy='*' python scripts/health_check.py --repo <repo> --workers 8 --timeout 12
 
-退出码：0 成功；1 参数/写入错误（stdout 输出 JSON 诊断）。
+退出码：0 成功或因降频跳过（stdout JSON 含 ``skipped`` 字段）；1 参数/写入错误（stdout 输出 JSON 诊断）。
 """
 from __future__ import annotations
 
@@ -59,6 +64,7 @@ DATA_REL = Path("source/_data/webstack.yml")
 OUT_REL = Path("source/daily/health.json")
 DAILY_CATEGORIES = ("dailyAI_oss", "dailyAI_tool", "dailyAI_model")
 CST = timezone(timedelta(hours=8))
+CHECK_INTERVAL_DAYS = 7  # 距上次复检不足此天数则跳过（并入每日任务的降频闸门）
 
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
@@ -257,6 +263,35 @@ def atomic_write(path: Path, text: str) -> None:
     os.replace(tmp, path)
 
 
+def check_due(out: Path, interval_days: int, now: datetime | None = None) -> dict:
+    """降频闸门：判断本次是否该真正复检。
+
+    读现有产物的 ``generated_at``，距现在 < ``interval_days`` 天则 ``due=False``。
+    产物缺失 / 时间戳损坏 / 间隔参数非法时一律 ``due=True``（宁可多跑，不可漏检）。
+    返回诊断 dict，供 stdout 的 ``skip_info`` 使用。
+    """
+    now = now or datetime.now(CST)
+    info: dict = {"interval_days": interval_days}
+    if not out.is_file():
+        return {"due": True, "reason": "no_existing_report", **info}
+    try:
+        data = json.loads(out.read_text(encoding="utf-8"))
+        ts = data.get("generated_at")
+        if not ts:
+            return {"due": True, "reason": "missing_generated_at", **info}
+        last = datetime.fromisoformat(ts)
+        if last.tzinfo is None:
+            last = last.replace(tzinfo=CST)
+        age = now - last
+        info["generated_at"] = ts
+        info["age_hours"] = round(age.total_seconds() / 3600, 1)
+        if age < timedelta(days=interval_days):
+            return {"due": False, "reason": "within_interval", **info}
+        return {"due": True, "reason": "interval_elapsed", **info}
+    except (OSError, ValueError, TypeError, json.JSONDecodeError) as exc:
+        return {"due": True, "reason": f"unreadable_report:{type(exc).__name__}", **info}
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="复检 cyberMap 收录站点存活状态")
     ap.add_argument("--repo", type=Path, default=Path(__file__).resolve().parents[1],
@@ -264,11 +299,21 @@ def main() -> int:
     ap.add_argument("--workers", type=int, default=6, help="并发线程数（默认 6）")
     ap.add_argument("--timeout", type=int, default=12, help="单站点超时秒数（默认 12）")
     ap.add_argument("--check", action="store_true", help="只校验现有 health.json，不探测/不写")
+    ap.add_argument("--force", action="store_true",
+                    help="忽略 7 天降频闸门，强制立即复检（人工想立刻看最新状态时用）")
+    ap.add_argument("--interval-days", type=int, default=CHECK_INTERVAL_DAYS,
+                    help=f"复检间隔天数（默认 {CHECK_INTERVAL_DAYS}）")
     args = ap.parse_args()
 
     repo = args.repo.resolve()
     out = repo / OUT_REL
 
+    if args.interval_days < 0:
+        print(json.dumps({"ok": False, "error": "--interval-days 不能为负数"},
+                         ensure_ascii=False, indent=2))
+        return 1
+
+    # --check 是纯校验，放在降频闸门之前，不受 7 天降频影响。
     if args.check:
         if not out.is_file():
             print(json.dumps({"ok": False, "error": f"health.json 不存在：{out}"},
@@ -287,6 +332,17 @@ def main() -> int:
         print(json.dumps({"ok": True, "check_only": True, "sites": len(sites),
                           "summary": data.get("summary")}, ensure_ascii=False, indent=2))
         return 0
+
+    # 降频闸门：并入每日任务后每天都会被调用，但距上次复检不足 N 天直接跳过，
+    # 不探测、不重写产物（blob 不变 → commit 无额外 diff）。--force 可绕过。
+    if not args.force:
+        gate = check_due(out, args.interval_days)
+        if not gate["due"]:
+            print(json.dumps({
+                "ok": True, "skipped": True, "reason": "within_interval",
+                "output": str(OUT_REL), "skip_info": gate,
+            }, ensure_ascii=False, indent=2))
+            return 0
 
     if args.workers < 1 or args.timeout < 1:
         print(json.dumps({"ok": False, "error": "--workers / --timeout 必须为正整数"},
@@ -328,7 +384,7 @@ def main() -> int:
         "schema": 1,
         "generated_at": datetime.now(CST).isoformat(timespec="seconds"),
         "source": "source/_data/webstack.yml :: dailyAI_*",
-        "note": "三态：ok=在线 / down=疑似失效 / unverified=本机网络不可判定（不算失效）。低频人工复检，非每日收录流程。",
+        "note": "三态：ok=在线 / down=疑似失效 / unverified=本机网络不可判定（不算失效）。并入每日收录、脚本内 7 天降频复检。",
         "summary": summary,
         "sites": dict(sorted(results.items())),
         "warnings": warnings,
