@@ -167,8 +167,16 @@ def collect(limit, token, pause):
         if code == 200 and isinstance(data, list):
             comments = [normalize_comment(c) for c in data]
             fetch_code = 200
-            # 认领 Issue 本身的状态（能拿到就带上）
+            # 刷新 Issue 本身状态：作者关闭/回复后状态会变，看板要如实呈现
+            # （只在已有评论时才多花一次请求，无评论的 Issue 状态无信息量）
             state = old.get("issue_state", "")
+            if comments:
+                s_code, s_data, _ = api("/repos/%s/%s/issues/%s" % (
+                    urllib.parse.quote(t["owner"], safe=""),
+                    urllib.parse.quote(t["plugin"], safe=""),
+                    t["issue_number"]), token=token)
+                if s_code == 200 and isinstance(s_data, dict) and s_data.get("state"):
+                    state = s_data["state"]
         else:
             # 失败：沿用旧数据，绝不伪造/清空
             comments = old.get("comments", [])

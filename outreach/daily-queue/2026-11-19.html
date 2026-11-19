@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>cyberMap · 每日外联 2026-11-19</title>
+<style>
+:root{--bg:#fbfbfa;--panel:#fff;--ink:#2c2c2a;--ink2:#5f5e5a;--ink3:#8a8984;
+--line:#e6e4dd;--blue:#185fa5;--bluebg:#e6f1fb;--green:#0f6e56;--greenbg:#e1f5ee;
+--amber:#854f0b;--amberbg:#faeeda;--red:#c0392b;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:14px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 20px 90px}
+h1{font-size:20px;font-weight:500;margin:0 0 6px}
+.sub{color:var(--ink2);font-size:13px;margin:0 0 18px}
+.sub a{color:var(--blue);text-decoration:none}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:10px;margin-bottom:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:12px 14px}
+.card .lbl{color:var(--ink3);font-size:12px;margin:0 0 4px}
+.card .val{font-size:22px;font-weight:500;margin:0;font-variant-numeric:tabular-nums}
+.card.done .val{color:var(--green)}
+.bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+.btn{display:inline-block;padding:8px 14px;border:1px solid var(--line);border-radius:8px;
+background:#fff;color:var(--ink);font-size:13px;cursor:pointer;text-decoration:none;line-height:1.4}
+.btn:hover{border-color:#b4b2a9;background:#f5f4f1}
+.btn.primary{background:var(--blue);border-color:var(--blue);color:#fff}
+.btn.primary:hover{background:#14518c}
+.btn.green{background:var(--greenbg);border-color:#9fe1cb;color:var(--green)}
+.hint{background:var(--amberbg);border:1px solid #fac775;border-radius:10px;
+padding:13px 17px;font-size:13px;color:#5c3a08;margin:0 0 18px}
+.hint b{font-weight:600}
+table{width:100%;border-collapse:collapse;background:var(--panel);
+border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th{text-align:left;font-weight:500;font-size:12px;color:var(--ink3);padding:10px 12px;
+background:#f5f4f1;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:middle;font-size:13px}
+tr:last-child td{border-bottom:none}
+tr:hover{background:#faf9f7}
+tr.done{background:#f7fbf9}
+tr.done .p{color:var(--ink3);text-decoration:line-through}
+.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.p{font-weight:500}
+.o{color:var(--ink3);font-size:12px;overflow-wrap:anywhere}
+.up{color:var(--red);font-weight:500}
+.down{color:var(--green);font-weight:500}
+.acts{white-space:nowrap}
+.acts .btn{margin:2px 3px 2px 0;padding:4px 9px;font-size:12px}
+.chk{width:17px;height:17px;vertical-align:-3px;cursor:pointer;accent-color:var(--green)}
+.pill{display:inline-block;padding:2px 8px;border-radius:5px;font-size:11px;
+background:#f1efe8;color:#8a8984;border:0.5px solid var(--line)}
+.pill.done{background:var(--greenbg);color:var(--green);border-color:#9fe1cb}
+.pill.new{background:var(--bluebg);color:var(--blue);border-color:#b5d4f4}
+#toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%);
+background:#2c2c2a;color:#fff;padding:10px 20px;border-radius:9px;font-size:13px;
+opacity:0;pointer-events:none;transition:opacity .18s}
+#toast.on{opacity:1}
+.empty{padding:40px;text-align:center;color:var(--ink3);font-size:15px}
+</style></head><body><div class="wrap">
+<h1>cyberMap · 每日外联发送页 <span style="font-size:15px;color:var(--ink3);font-weight:400">2026-11-19</span></h1>
+<p class="sub">榜单数据日期 2026-11-19 · 共 <span id="total">0</span> 个待发作者（已自动扣除历史发过的）· <a href="index.html">← 返回归档</a></p>
+
+<div class="cards">
+  <div class="card"><p class="lbl">待发</p><p class="val" id="cTotal">0</p></div>
+  <div class="card done"><p class="lbl">今日已发</p><p class="val" id="cDone">0</p></div>
+  <div class="card"><p class="lbl">剩余</p><p class="val" id="cLeft">0</p></div>
+  <div class="card"><p class="lbl">今日新上榜</p><p class="val" id="cNew">0</p></div>
+</div>
+
+<div class="hint"><b>今天怎么发：</b>点「下一个待发」→ GitHub 页面标题正文已自动填好 → 点 Submit → 回来点「✔ 记已发」。
+进度存在本机浏览器，刷新不丢。发完跑一次 <code>send_issues.py scan</code> 会自动认领，不会重复。</div>
+
+<div class="bar">
+  <button class="btn primary" id="nextBtn">▶ 下一个待发</button>
+  <button class="btn green" id="copyNext">⧉ 复制标题+正文</button>
+  <button class="btn" id="exportBtn">⭳ 导出进度</button>
+  <span style="margin-left:auto;font-size:12px;color:var(--ink3)" id="pct"></span>
+</div>
+
+<table><thead><tr><th style='width:36px'></th><th>排名</th><th>插件</th><th>较昨日</th><th>Stars</th><th>作者</th><th>状态</th><th>操作</th></tr></thead><tbody><tr data-key='nexu-io|open-design' data-new='0' data-url='https://github.com/nexu-io/open-design/issues/new?title=Your%20plugin%20ranked%20%232%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20nexu-io%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60open-design%60%20is%20currently%20%2A%2A%232%2A%2A%20overall%0A-%20It%20moved%20down%201%20place%20since%20yesterday%0A-%20108%2C351%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #2 on the AI plugin leaderboard' data-body='Hi nexu-io -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`open-design` is currently **#2** overall
+- It moved down 1 place since yesterday
+- 108,351 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>2</td><td><div class='p'>open-design</div><div class='o'>nexu-io/open-design</div></td><td class='num'><span class='down'>▼ 1</span></td><td class='num'>108351</td><td class='o'>nexu-io</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/nexu-io/open-design/issues/new?title=Your%20plugin%20ranked%20%232%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20nexu-io%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60open-design%60%20is%20currently%20%2A%2A%232%2A%2A%20overall%0A-%20It%20moved%20down%201%20place%20since%20yesterday%0A-%20108%2C351%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='volcengine|OpenViking' data-new='0' data-url='https://github.com/volcengine/OpenViking/issues/new?title=Your%20plugin%20ranked%20%238%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20volcengine%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60OpenViking%60%20is%20currently%20%2A%2A%238%2A%2A%20overall%0A-%20It%20moved%20down%202%20places%20since%20yesterday%0A-%2042%2C430%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #8 on the AI plugin leaderboard' data-body='Hi volcengine -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`OpenViking` is currently **#8** overall
+- It moved down 2 places since yesterday
+- 42,430 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>8</td><td><div class='p'>OpenViking</div><div class='o'>volcengine/OpenViking</div></td><td class='num'><span class='down'>▼ 2</span></td><td class='num'>42430</td><td class='o'>volcengine</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/volcengine/OpenViking/issues/new?title=Your%20plugin%20ranked%20%238%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20volcengine%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60OpenViking%60%20is%20currently%20%2A%2A%238%2A%2A%20overall%0A-%20It%20moved%20down%202%20places%20since%20yesterday%0A-%2042%2C430%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='dataelement|dsh-desktop' data-new='0' data-url='https://github.com/dataelement/dsh-desktop/issues/new?title=Your%20plugin%20ranked%20%2310%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20dataelement%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60dsh-desktop%60%20is%20currently%20%2A%2A%2310%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A3%2A%2A%20places%20since%20yesterday%0A-%2019%2C860%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #10 on the AI plugin leaderboard' data-body='Hi dataelement -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`dsh-desktop` is currently **#10** overall
+- It moved up **3** places since yesterday
+- 19,860 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>10</td><td><div class='p'>dsh-desktop</div><div class='o'>dataelement/dsh-desktop</div></td><td class='num'><span class='up'>▲ 3</span></td><td class='num'>19860</td><td class='o'>dataelement</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/dataelement/dsh-desktop/issues/new?title=Your%20plugin%20ranked%20%2310%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20dataelement%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60dsh-desktop%60%20is%20currently%20%2A%2A%2310%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A3%2A%2A%20places%20since%20yesterday%0A-%2019%2C860%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='anywhere-labs|dsh-desktop' data-new='0' data-url='https://github.com/anywhere-labs/dsh-desktop/issues/new?title=Your%20plugin%20ranked%20%2313%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20anywhere-labs%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60dsh-desktop%60%20is%20currently%20%2A%2A%2313%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A6%2A%2A%20places%20since%20yesterday%0A-%2036%2C363%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #13 on the AI plugin leaderboard' data-body='Hi anywhere-labs -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`dsh-desktop` is currently **#13** overall
+- It moved up **6** places since yesterday
+- 36,363 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>13</td><td><div class='p'>dsh-desktop</div><div class='o'>anywhere-labs/dsh-desktop</div></td><td class='num'><span class='up'>▲ 6</span></td><td class='num'>36363</td><td class='o'>anywhere-labs</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/anywhere-labs/dsh-desktop/issues/new?title=Your%20plugin%20ranked%20%2313%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20anywhere-labs%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60dsh-desktop%60%20is%20currently%20%2A%2A%2313%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A6%2A%2A%20places%20since%20yesterday%0A-%2036%2C363%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='dsh-market|dsh-market' data-new='0' data-url='https://github.com/dsh-market/dsh-market/issues/new?title=Your%20plugin%20ranked%20%2314%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20dsh-market%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60dsh-market%60%20is%20currently%20%2A%2A%2314%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A9%2A%2A%20places%20since%20yesterday%0A-%2012%2C888%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #14 on the AI plugin leaderboard' data-body='Hi dsh-market -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`dsh-market` is currently **#14** overall
+- It moved up **9** places since yesterday
+- 12,888 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>14</td><td><div class='p'>dsh-market</div><div class='o'>dsh-market/dsh-market</div></td><td class='num'><span class='up'>▲ 9</span></td><td class='num'>12888</td><td class='o'>dsh-market</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/dsh-market/dsh-market/issues/new?title=Your%20plugin%20ranked%20%2314%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20dsh-market%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60dsh-market%60%20is%20currently%20%2A%2A%2314%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A9%2A%2A%20places%20since%20yesterday%0A-%2012%2C888%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='yikart|AiToEarn' data-new='0' data-url='https://github.com/yikart/AiToEarn/issues/new?title=Your%20plugin%20ranked%20%2316%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20yikart%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60AiToEarn%60%20is%20currently%20%2A%2A%2316%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A9%2A%2A%20places%20since%20yesterday%0A-%2028%2C347%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #16 on the AI plugin leaderboard' data-body='Hi yikart -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`AiToEarn` is currently **#16** overall
+- It moved up **9** places since yesterday
+- 28,347 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>16</td><td><div class='p'>AiToEarn</div><div class='o'>yikart/AiToEarn</div></td><td class='num'><span class='up'>▲ 9</span></td><td class='num'>28347</td><td class='o'>yikart</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/yikart/AiToEarn/issues/new?title=Your%20plugin%20ranked%20%2316%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20yikart%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60AiToEarn%60%20is%20currently%20%2A%2A%2316%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A9%2A%2A%20places%20since%20yesterday%0A-%2028%2C347%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='patch-gg|pixelfx' data-new='0' data-url='https://github.com/patch-gg/pixelfx/issues/new?title=Your%20plugin%20ranked%20%2319%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20patch-gg%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60pixelfx%60%20is%20currently%20%2A%2A%2319%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A5%2A%2A%20places%20since%20yesterday%0A-%208%2C158%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #19 on the AI plugin leaderboard' data-body='Hi patch-gg -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`pixelfx` is currently **#19** overall
+- It moved up **5** places since yesterday
+- 8,158 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>19</td><td><div class='p'>pixelfx</div><div class='o'>patch-gg/pixelfx</div></td><td class='num'><span class='up'>▲ 5</span></td><td class='num'>8158</td><td class='o'>patch-gg</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/patch-gg/pixelfx/issues/new?title=Your%20plugin%20ranked%20%2319%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20patch-gg%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60pixelfx%60%20is%20currently%20%2A%2A%2319%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A5%2A%2A%20places%20since%20yesterday%0A-%208%2C158%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='alchaincyf|huashu-design' data-new='0' data-url='https://github.com/alchaincyf/huashu-design/issues/new?title=Your%20plugin%20ranked%20%2325%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20alchaincyf%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60huashu-design%60%20is%20currently%20%2A%2A%2325%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A4%2A%2A%20places%20since%20yesterday%0A-%2029%2C827%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #25 on the AI plugin leaderboard' data-body='Hi alchaincyf -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`huashu-design` is currently **#25** overall
+- It moved up **4** places since yesterday
+- 29,827 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>25</td><td><div class='p'>huashu-design</div><div class='o'>alchaincyf/huashu-design</div></td><td class='num'><span class='up'>▲ 4</span></td><td class='num'>29827</td><td class='o'>alchaincyf</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/alchaincyf/huashu-design/issues/new?title=Your%20plugin%20ranked%20%2325%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20alchaincyf%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60huashu-design%60%20is%20currently%20%2A%2A%2325%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A4%2A%2A%20places%20since%20yesterday%0A-%2029%2C827%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='dataelement|bisheng' data-new='0' data-url='https://github.com/dataelement/bisheng/issues/new?title=Your%20plugin%20ranked%20%2334%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20dataelement%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60bisheng%60%20is%20currently%20%2A%2A%2334%2A%2A%20overall%0A-%20It%20moved%20down%208%20places%20since%20yesterday%0A-%2012%2C362%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #34 on the AI plugin leaderboard' data-body='Hi dataelement -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`bisheng` is currently **#34** overall
+- It moved down 8 places since yesterday
+- 12,362 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>34</td><td><div class='p'>bisheng</div><div class='o'>dataelement/bisheng</div></td><td class='num'><span class='down'>▼ 8</span></td><td class='num'>12362</td><td class='o'>dataelement</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/dataelement/bisheng/issues/new?title=Your%20plugin%20ranked%20%2334%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20dataelement%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60bisheng%60%20is%20currently%20%2A%2A%2334%2A%2A%20overall%0A-%20It%20moved%20down%208%20places%20since%20yesterday%0A-%2012%2C362%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='zseven-w|openpencil' data-new='0' data-url='https://github.com/ZSeven-W/openpencil/issues/new?title=Your%20plugin%20ranked%20%2335%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20zseven-w%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60openpencil%60%20is%20currently%20%2A%2A%2335%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A4%2A%2A%20places%20since%20yesterday%0A-%207%2C283%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #35 on the AI plugin leaderboard' data-body='Hi zseven-w -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`openpencil` is currently **#35** overall
+- It moved up **4** places since yesterday
+- 7,283 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>35</td><td><div class='p'>openpencil</div><div class='o'>ZSeven-W/openpencil</div></td><td class='num'><span class='up'>▲ 4</span></td><td class='num'>7283</td><td class='o'>zseven-w</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/ZSeven-W/openpencil/issues/new?title=Your%20plugin%20ranked%20%2335%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20zseven-w%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60openpencil%60%20is%20currently%20%2A%2A%2335%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A4%2A%2A%20places%20since%20yesterday%0A-%207%2C283%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='evermind-ai|EverOS' data-new='0' data-url='https://github.com/EverMind-AI/EverOS/issues/new?title=Your%20plugin%20ranked%20%2339%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20evermind-ai%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60EverOS%60%20is%20currently%20%2A%2A%2339%2A%2A%20overall%0A-%20It%20moved%20down%2025%20places%20since%20yesterday%0A-%2013%2C940%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #39 on the AI plugin leaderboard' data-body='Hi evermind-ai -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`EverOS` is currently **#39** overall
+- It moved down 25 places since yesterday
+- 13,940 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>39</td><td><div class='p'>EverOS</div><div class='o'>EverMind-AI/EverOS</div></td><td class='num'><span class='down'>▼ 25</span></td><td class='num'>13940</td><td class='o'>evermind-ai</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/EverMind-AI/EverOS/issues/new?title=Your%20plugin%20ranked%20%2339%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20evermind-ai%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60EverOS%60%20is%20currently%20%2A%2A%2339%2A%2A%20overall%0A-%20It%20moved%20down%2025%20places%20since%20yesterday%0A-%2013%2C940%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='spacering-net|codeg' data-new='0' data-url='https://github.com/spacering-net/codeg/issues/new?title=Your%20plugin%20ranked%20%2341%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20spacering-net%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60codeg%60%20is%20currently%20%2A%2A%2341%2A%2A%20overall%0A-%204%2C530%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #41 on the AI plugin leaderboard' data-body='Hi spacering-net -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`codeg` is currently **#41** overall
+- 4,530 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>41</td><td><div class='p'>codeg</div><div class='o'>spacering-net/codeg</div></td><td class='num'><span class='d muted'>—</span></td><td class='num'>4530</td><td class='o'>spacering-net</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/spacering-net/codeg/issues/new?title=Your%20plugin%20ranked%20%2341%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20spacering-net%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60codeg%60%20is%20currently%20%2A%2A%2341%2A%2A%20overall%0A-%204%2C530%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='memtensor|MemOS' data-new='0' data-url='https://github.com/MemTensor/MemOS/issues/new?title=Your%20plugin%20ranked%20%2343%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20memtensor%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60MemOS%60%20is%20currently%20%2A%2A%2343%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A2%2A%2A%20places%20since%20yesterday%0A-%2012%2C444%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #43 on the AI plugin leaderboard' data-body='Hi memtensor -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`MemOS` is currently **#43** overall
+- It moved up **2** places since yesterday
+- 12,444 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>43</td><td><div class='p'>MemOS</div><div class='o'>MemTensor/MemOS</div></td><td class='num'><span class='up'>▲ 2</span></td><td class='num'>12444</td><td class='o'>memtensor</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/MemTensor/MemOS/issues/new?title=Your%20plugin%20ranked%20%2343%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20memtensor%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60MemOS%60%20is%20currently%20%2A%2A%2343%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A2%2A%2A%20places%20since%20yesterday%0A-%2012%2C444%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='nowork-studio|notfair-plugin' data-new='0' data-url='https://github.com/nowork-studio/notfair-plugin/issues/new?title=Your%20plugin%20ranked%20%2344%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20nowork-studio%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60notfair-plugin%60%20is%20currently%20%2A%2A%2344%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A18%2A%2A%20places%20since%20yesterday%0A-%204%2C256%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #44 on the AI plugin leaderboard' data-body='Hi nowork-studio -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`notfair-plugin` is currently **#44** overall
+- It moved up **18** places since yesterday
+- 4,256 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>44</td><td><div class='p'>notfair-plugin</div><div class='o'>nowork-studio/notfair-plugin</div></td><td class='num'><span class='up'>▲ 18</span></td><td class='num'>4256</td><td class='o'>nowork-studio</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/nowork-studio/notfair-plugin/issues/new?title=Your%20plugin%20ranked%20%2344%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20nowork-studio%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60notfair-plugin%60%20is%20currently%20%2A%2A%2344%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A18%2A%2A%20places%20since%20yesterday%0A-%204%2C256%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='1panel-dev|1Panel' data-new='0' data-url='https://github.com/1Panel-dev/1Panel/issues/new?title=Your%20plugin%20ranked%20%2346%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%201panel-dev%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%601Panel%60%20is%20currently%20%2A%2A%2346%2A%2A%20overall%0A-%20It%20moved%20down%2030%20places%20since%20yesterday%0A-%2037%2C469%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #46 on the AI plugin leaderboard' data-body='Hi 1panel-dev -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`1Panel` is currently **#46** overall
+- It moved down 30 places since yesterday
+- 37,469 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>46</td><td><div class='p'>1Panel</div><div class='o'>1Panel-dev/1Panel</div></td><td class='num'><span class='down'>▼ 30</span></td><td class='num'>37469</td><td class='o'>1panel-dev</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/1Panel-dev/1Panel/issues/new?title=Your%20plugin%20ranked%20%2346%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%201panel-dev%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%601Panel%60%20is%20currently%20%2A%2A%2346%2A%2A%20overall%0A-%20It%20moved%20down%2030%20places%20since%20yesterday%0A-%2037%2C469%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='yishentu|claudian' data-new='0' data-url='https://github.com/YishenTu/claudian/issues/new?title=Your%20plugin%20ranked%20%2348%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20yishentu%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60claudian%60%20is%20currently%20%2A%2A%2348%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A6%2A%2A%20places%20since%20yesterday%0A-%2016%2C030%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #48 on the AI plugin leaderboard' data-body='Hi yishentu -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`claudian` is currently **#48** overall
+- It moved up **6** places since yesterday
+- 16,030 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>48</td><td><div class='p'>claudian</div><div class='o'>YishenTu/claudian</div></td><td class='num'><span class='up'>▲ 6</span></td><td class='num'>16030</td><td class='o'>yishentu</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/YishenTu/claudian/issues/new?title=Your%20plugin%20ranked%20%2348%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20yishentu%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60claudian%60%20is%20currently%20%2A%2A%2348%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A6%2A%2A%20places%20since%20yesterday%0A-%2016%2C030%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='dsh-tauri|deepseek-harness-desktop' data-new='0' data-url='https://github.com/dsh-tauri/deepseek-harness-desktop/issues/new?title=Your%20plugin%20ranked%20%2350%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20dsh-tauri%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60deepseek-harness-desktop%60%20is%20currently%20%2A%2A%2350%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A14%2A%2A%20places%20since%20yesterday%0A-%203%2C675%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #50 on the AI plugin leaderboard' data-body='Hi dsh-tauri -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`deepseek-harness-desktop` is currently **#50** overall
+- It moved up **14** places since yesterday
+- 3,675 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>50</td><td><div class='p'>deepseek-harness-desktop</div><div class='o'>dsh-tauri/deepseek-harness-desktop</div></td><td class='num'><span class='up'>▲ 14</span></td><td class='num'>3675</td><td class='o'>dsh-tauri</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/dsh-tauri/deepseek-harness-desktop/issues/new?title=Your%20plugin%20ranked%20%2350%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20dsh-tauri%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60deepseek-harness-desktop%60%20is%20currently%20%2A%2A%2350%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A14%2A%2A%20places%20since%20yesterday%0A-%203%2C675%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='oceanbase|powercontext' data-new='0' data-url='https://github.com/oceanbase/powercontext/issues/new?title=Your%20plugin%20ranked%20%2351%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20oceanbase%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60powercontext%60%20is%20currently%20%2A%2A%2351%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A23%2A%2A%20places%20since%20yesterday%0A-%201%2C737%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #51 on the AI plugin leaderboard' data-body='Hi oceanbase -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`powercontext` is currently **#51** overall
+- It moved up **23** places since yesterday
+- 1,737 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>51</td><td><div class='p'>powercontext</div><div class='o'>oceanbase/powercontext</div></td><td class='num'><span class='up'>▲ 23</span></td><td class='num'>1737</td><td class='o'>oceanbase</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/oceanbase/powercontext/issues/new?title=Your%20plugin%20ranked%20%2351%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20oceanbase%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60powercontext%60%20is%20currently%20%2A%2A%2351%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A23%2A%2A%20places%20since%20yesterday%0A-%201%2C737%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='88lin|workbuddy-auto-signin' data-new='0' data-url='https://github.com/88lin/workbuddy-auto-signin/issues/new?title=Your%20plugin%20ranked%20%2352%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%2088lin%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60workbuddy-auto-signin%60%20is%20currently%20%2A%2A%2352%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A35%2A%2A%20places%20since%20yesterday%0A-%202%2C541%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #52 on the AI plugin leaderboard' data-body='Hi 88lin -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`workbuddy-auto-signin` is currently **#52** overall
+- It moved up **35** places since yesterday
+- 2,541 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>52</td><td><div class='p'>workbuddy-auto-signin</div><div class='o'>88lin/workbuddy-auto-signin</div></td><td class='num'><span class='up'>▲ 35</span></td><td class='num'>2541</td><td class='o'>88lin</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/88lin/workbuddy-auto-signin/issues/new?title=Your%20plugin%20ranked%20%2352%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%2088lin%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60workbuddy-auto-signin%60%20is%20currently%20%2A%2A%2352%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A35%2A%2A%20places%20since%20yesterday%0A-%202%2C541%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='babygoton|WorkDaddy' data-new='0' data-url='https://github.com/babygoton/WorkDaddy/issues/new?title=Your%20plugin%20ranked%20%2354%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20babygoton%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60WorkDaddy%60%20is%20currently%20%2A%2A%2354%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A48%2A%2A%20places%20since%20yesterday%0A-%203%2C249%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #54 on the AI plugin leaderboard' data-body='Hi babygoton -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`WorkDaddy` is currently **#54** overall
+- It moved up **48** places since yesterday
+- 3,249 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>54</td><td><div class='p'>WorkDaddy</div><div class='o'>babygoton/WorkDaddy</div></td><td class='num'><span class='up'>▲ 48</span></td><td class='num'>3249</td><td class='o'>babygoton</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/babygoton/WorkDaddy/issues/new?title=Your%20plugin%20ranked%20%2354%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20babygoton%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60WorkDaddy%60%20is%20currently%20%2A%2A%2354%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A48%2A%2A%20places%20since%20yesterday%0A-%203%2C249%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='dunhkpcc|Claude-Guardian' data-new='0' data-url='https://github.com/DUNHKpcc/Claude-Guardian/issues/new?title=Your%20plugin%20ranked%20%2356%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20dunhkpcc%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60Claude-Guardian%60%20is%20currently%20%2A%2A%2356%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A35%2A%2A%20places%20since%20yesterday%0A-%202%2C162%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #56 on the AI plugin leaderboard' data-body='Hi dunhkpcc -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`Claude-Guardian` is currently **#56** overall
+- It moved up **35** places since yesterday
+- 2,162 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>56</td><td><div class='p'>Claude-Guardian</div><div class='o'>DUNHKpcc/Claude-Guardian</div></td><td class='num'><span class='up'>▲ 35</span></td><td class='num'>2162</td><td class='o'>dunhkpcc</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/DUNHKpcc/Claude-Guardian/issues/new?title=Your%20plugin%20ranked%20%2356%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20dunhkpcc%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60Claude-Guardian%60%20is%20currently%20%2A%2A%2356%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A35%2A%2A%20places%20since%20yesterday%0A-%202%2C162%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='devin-axis|iPolloWork' data-new='0' data-url='https://github.com/Devin-AXIS/iPolloWork/issues/new?title=Your%20plugin%20ranked%20%2357%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20devin-axis%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60iPolloWork%60%20is%20currently%20%2A%2A%2357%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A14%2A%2A%20places%20since%20yesterday%0A-%207%2C511%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #57 on the AI plugin leaderboard' data-body='Hi devin-axis -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`iPolloWork` is currently **#57** overall
+- It moved up **14** places since yesterday
+- 7,511 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>57</td><td><div class='p'>iPolloWork</div><div class='o'>Devin-AXIS/iPolloWork</div></td><td class='num'><span class='up'>▲ 14</span></td><td class='num'>7511</td><td class='o'>devin-axis</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/Devin-AXIS/iPolloWork/issues/new?title=Your%20plugin%20ranked%20%2357%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20devin-axis%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60iPolloWork%60%20is%20currently%20%2A%2A%2357%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A14%2A%2A%20places%20since%20yesterday%0A-%207%2C511%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='lennney|stop-that-shit' data-new='0' data-url='https://github.com/lennney/stop-that-shit/issues/new?title=Your%20plugin%20ranked%20%2358%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20lennney%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60stop-that-shit%60%20is%20currently%20%2A%2A%2358%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A39%2A%2A%20places%20since%20yesterday%0A-%204%2C002%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #58 on the AI plugin leaderboard' data-body='Hi lennney -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`stop-that-shit` is currently **#58** overall
+- It moved up **39** places since yesterday
+- 4,002 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>58</td><td><div class='p'>stop-that-shit</div><div class='o'>lennney/stop-that-shit</div></td><td class='num'><span class='up'>▲ 39</span></td><td class='num'>4002</td><td class='o'>lennney</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/lennney/stop-that-shit/issues/new?title=Your%20plugin%20ranked%20%2358%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20lennney%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60stop-that-shit%60%20is%20currently%20%2A%2A%2358%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A39%2A%2A%20places%20since%20yesterday%0A-%204%2C002%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='woniuniuniu|dsh-media-desk' data-new='0' data-url='https://github.com/woniuniuniu/dsh-media-desk/issues/new?title=Your%20plugin%20ranked%20%2359%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20woniuniuniu%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60dsh-media-desk%60%20is%20currently%20%2A%2A%2359%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A174%2A%2A%20places%20since%20yesterday%0A-%201%2C537%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #59 on the AI plugin leaderboard' data-body='Hi woniuniuniu -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`dsh-media-desk` is currently **#59** overall
+- It moved up **174** places since yesterday
+- 1,537 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>59</td><td><div class='p'>dsh-media-desk</div><div class='o'>woniuniuniu/dsh-media-desk</div></td><td class='num'><span class='up'>▲ 174</span></td><td class='num'>1537</td><td class='o'>woniuniuniu</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/woniuniuniu/dsh-media-desk/issues/new?title=Your%20plugin%20ranked%20%2359%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20woniuniuniu%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60dsh-media-desk%60%20is%20currently%20%2A%2A%2359%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A174%2A%2A%20places%20since%20yesterday%0A-%201%2C537%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='hanliang97|MatrixMedia' data-new='0' data-url='https://github.com/hanliang97/MatrixMedia/issues/new?title=Your%20plugin%20ranked%20%2360%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20hanliang97%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60MatrixMedia%60%20is%20currently%20%2A%2A%2360%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A44%2A%2A%20places%20since%20yesterday%0A-%201%2C566%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #60 on the AI plugin leaderboard' data-body='Hi hanliang97 -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`MatrixMedia` is currently **#60** overall
+- It moved up **44** places since yesterday
+- 1,566 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>60</td><td><div class='p'>MatrixMedia</div><div class='o'>hanliang97/MatrixMedia</div></td><td class='num'><span class='up'>▲ 44</span></td><td class='num'>1566</td><td class='o'>hanliang97</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/hanliang97/MatrixMedia/issues/new?title=Your%20plugin%20ranked%20%2360%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20hanliang97%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60MatrixMedia%60%20is%20currently%20%2A%2A%2360%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A44%2A%2A%20places%20since%20yesterday%0A-%201%2C566%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='nyldn|claude-octopus' data-new='0' data-url='https://github.com/nyldn/claude-octopus/issues/new?title=Your%20plugin%20ranked%20%2361%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20nyldn%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60claude-octopus%60%20is%20currently%20%2A%2A%2361%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A5%2A%2A%20places%20since%20yesterday%0A-%204%2C471%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #61 on the AI plugin leaderboard' data-body='Hi nyldn -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`claude-octopus` is currently **#61** overall
+- It moved up **5** places since yesterday
+- 4,471 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>61</td><td><div class='p'>claude-octopus</div><div class='o'>nyldn/claude-octopus</div></td><td class='num'><span class='up'>▲ 5</span></td><td class='num'>4471</td><td class='o'>nyldn</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/nyldn/claude-octopus/issues/new?title=Your%20plugin%20ranked%20%2361%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20nyldn%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60claude-octopus%60%20is%20currently%20%2A%2A%2361%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A5%2A%2A%20places%20since%20yesterday%0A-%204%2C471%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='minglink|dsh-infinite-gen-5' data-new='0' data-url='https://github.com/Minglink/dsh-infinite-gen-5/issues/new?title=Your%20plugin%20ranked%20%2362%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20minglink%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60dsh-infinite-gen-5%60%20is%20currently%20%2A%2A%2362%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A41%2A%2A%20places%20since%20yesterday%0A-%204%2C542%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #62 on the AI plugin leaderboard' data-body='Hi minglink -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`dsh-infinite-gen-5` is currently **#62** overall
+- It moved up **41** places since yesterday
+- 4,542 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>62</td><td><div class='p'>dsh-infinite-gen-5</div><div class='o'>Minglink/dsh-infinite-gen-5</div></td><td class='num'><span class='up'>▲ 41</span></td><td class='num'>4542</td><td class='o'>minglink</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/Minglink/dsh-infinite-gen-5/issues/new?title=Your%20plugin%20ranked%20%2362%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20minglink%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60dsh-infinite-gen-5%60%20is%20currently%20%2A%2A%2362%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A41%2A%2A%20places%20since%20yesterday%0A-%204%2C542%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='harnessrouter|harnessrouter' data-new='0' data-url='https://github.com/HarnessRouter/harnessrouter/issues/new?title=Your%20plugin%20ranked%20%2363%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20harnessrouter%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60harnessrouter%60%20is%20currently%20%2A%2A%2363%2A%2A%20overall%0A-%204%2C381%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #63 on the AI plugin leaderboard' data-body='Hi harnessrouter -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`harnessrouter` is currently **#63** overall
+- 4,381 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>63</td><td><div class='p'>harnessrouter</div><div class='o'>HarnessRouter/harnessrouter</div></td><td class='num'><span class='d muted'>—</span></td><td class='num'>4381</td><td class='o'>harnessrouter</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/HarnessRouter/harnessrouter/issues/new?title=Your%20plugin%20ranked%20%2363%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20harnessrouter%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60harnessrouter%60%20is%20currently%20%2A%2A%2363%2A%2A%20overall%0A-%204%2C381%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='helloianneo|ian-xiaohei-illustrations' data-new='0' data-url='https://github.com/helloianneo/ian-xiaohei-illustrations/issues/new?title=Your%20plugin%20ranked%20%2364%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20helloianneo%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60ian-xiaohei-illustrations%60%20is%20currently%20%2A%2A%2364%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A15%2A%2A%20places%20since%20yesterday%0A-%2013%2C278%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #64 on the AI plugin leaderboard' data-body='Hi helloianneo -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`ian-xiaohei-illustrations` is currently **#64** overall
+- It moved up **15** places since yesterday
+- 13,278 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>64</td><td><div class='p'>ian-xiaohei-illustrations</div><div class='o'>helloianneo/ian-xiaohei-illustrations</div></td><td class='num'><span class='up'>▲ 15</span></td><td class='num'>13278</td><td class='o'>helloianneo</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/helloianneo/ian-xiaohei-illustrations/issues/new?title=Your%20plugin%20ranked%20%2364%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20helloianneo%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60ian-xiaohei-illustrations%60%20is%20currently%20%2A%2A%2364%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A15%2A%2A%20places%20since%20yesterday%0A-%2013%2C278%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='zichuanlan|agent-purge' data-new='0' data-url='https://github.com/ZiChuanLan/agent-purge/issues/new?title=Your%20plugin%20ranked%20%2365%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20zichuanlan%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60agent-purge%60%20is%20currently%20%2A%2A%2365%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A25%2A%2A%20places%20since%20yesterday%0A-%201%2C947%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #65 on the AI plugin leaderboard' data-body='Hi zichuanlan -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`agent-purge` is currently **#65** overall
+- It moved up **25** places since yesterday
+- 1,947 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>65</td><td><div class='p'>agent-purge</div><div class='o'>ZiChuanLan/agent-purge</div></td><td class='num'><span class='up'>▲ 25</span></td><td class='num'>1947</td><td class='o'>zichuanlan</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/ZiChuanLan/agent-purge/issues/new?title=Your%20plugin%20ranked%20%2365%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20zichuanlan%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60agent-purge%60%20is%20currently%20%2A%2A%2365%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A25%2A%2A%20places%20since%20yesterday%0A-%201%2C947%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='zhukunpenglinyutong|desktop-cc-gui' data-new='0' data-url='https://github.com/zhukunpenglinyutong/desktop-cc-gui/issues/new?title=Your%20plugin%20ranked%20%2366%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20zhukunpenglinyutong%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60desktop-cc-gui%60%20is%20currently%20%2A%2A%2366%2A%2A%20overall%0A-%20It%20moved%20down%2019%20places%20since%20yesterday%0A-%204%2C609%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #66 on the AI plugin leaderboard' data-body='Hi zhukunpenglinyutong -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`desktop-cc-gui` is currently **#66** overall
+- It moved down 19 places since yesterday
+- 4,609 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>66</td><td><div class='p'>desktop-cc-gui</div><div class='o'>zhukunpenglinyutong/desktop-cc-gui</div></td><td class='num'><span class='down'>▼ 19</span></td><td class='num'>4609</td><td class='o'>zhukunpenglinyutong</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/zhukunpenglinyutong/desktop-cc-gui/issues/new?title=Your%20plugin%20ranked%20%2366%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20zhukunpenglinyutong%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60desktop-cc-gui%60%20is%20currently%20%2A%2A%2366%2A%2A%20overall%0A-%20It%20moved%20down%2019%20places%20since%20yesterday%0A-%204%2C609%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='whiteguo233|OpenBiliClaw' data-new='0' data-url='https://github.com/whiteguo233/OpenBiliClaw/issues/new?title=Your%20plugin%20ranked%20%2367%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20whiteguo233%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60OpenBiliClaw%60%20is%20currently%20%2A%2A%2367%2A%2A%20overall%0A-%203%2C781%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #67 on the AI plugin leaderboard' data-body='Hi whiteguo233 -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`OpenBiliClaw` is currently **#67** overall
+- 3,781 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>67</td><td><div class='p'>OpenBiliClaw</div><div class='o'>whiteguo233/OpenBiliClaw</div></td><td class='num'><span class='d muted'>—</span></td><td class='num'>3781</td><td class='o'>whiteguo233</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/whiteguo233/OpenBiliClaw/issues/new?title=Your%20plugin%20ranked%20%2367%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20whiteguo233%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60OpenBiliClaw%60%20is%20currently%20%2A%2A%2367%2A%2A%20overall%0A-%203%2C781%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='shanliuling|dsh-image-gen' data-new='0' data-url='https://github.com/shanliuling/dsh-image-gen/issues/new?title=Your%20plugin%20ranked%20%2368%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20shanliuling%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60dsh-image-gen%60%20is%20currently%20%2A%2A%2368%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A47%2A%2A%20places%20since%20yesterday%0A-%201%2C625%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #68 on the AI plugin leaderboard' data-body='Hi shanliuling -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`dsh-image-gen` is currently **#68** overall
+- It moved up **47** places since yesterday
+- 1,625 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>68</td><td><div class='p'>dsh-image-gen</div><div class='o'>shanliuling/dsh-image-gen</div></td><td class='num'><span class='up'>▲ 47</span></td><td class='num'>1625</td><td class='o'>shanliuling</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/shanliuling/dsh-image-gen/issues/new?title=Your%20plugin%20ranked%20%2368%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20shanliuling%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60dsh-image-gen%60%20is%20currently%20%2A%2A%2368%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A47%2A%2A%20places%20since%20yesterday%0A-%201%2C625%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='vshulcz|deja-vu' data-new='0' data-url='https://github.com/vshulcz/deja-vu/issues/new?title=Your%20plugin%20ranked%20%2369%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20vshulcz%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60deja-vu%60%20is%20currently%20%2A%2A%2369%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A29%2A%2A%20places%20since%20yesterday%0A-%201%2C621%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #69 on the AI plugin leaderboard' data-body='Hi vshulcz -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`deja-vu` is currently **#69** overall
+- It moved up **29** places since yesterday
+- 1,621 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>69</td><td><div class='p'>deja-vu</div><div class='o'>vshulcz/deja-vu</div></td><td class='num'><span class='up'>▲ 29</span></td><td class='num'>1621</td><td class='o'>vshulcz</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/vshulcz/deja-vu/issues/new?title=Your%20plugin%20ranked%20%2369%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20vshulcz%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60deja-vu%60%20is%20currently%20%2A%2A%2369%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A29%2A%2A%20places%20since%20yesterday%0A-%201%2C621%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='xmanrui|dsh-im' data-new='0' data-url='https://github.com/xmanrui/dsh-im/issues/new?title=Your%20plugin%20ranked%20%2370%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20xmanrui%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60dsh-im%60%20is%20currently%20%2A%2A%2370%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A26%2A%2A%20places%20since%20yesterday%0A-%203%2C701%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #70 on the AI plugin leaderboard' data-body='Hi xmanrui -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`dsh-im` is currently **#70** overall
+- It moved up **26** places since yesterday
+- 3,701 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>70</td><td><div class='p'>dsh-im</div><div class='o'>xmanrui/dsh-im</div></td><td class='num'><span class='up'>▲ 26</span></td><td class='num'>3701</td><td class='o'>xmanrui</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/xmanrui/dsh-im/issues/new?title=Your%20plugin%20ranked%20%2370%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20xmanrui%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60dsh-im%60%20is%20currently%20%2A%2A%2370%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A26%2A%2A%20places%20since%20yesterday%0A-%203%2C701%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='dingminhua|dsh-connect-workbuddy' data-new='0' data-url='https://github.com/dingminhua/dsh-connect-workbuddy/issues/new?title=Your%20plugin%20ranked%20%2371%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20dingminhua%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60dsh-connect-workbuddy%60%20is%20currently%20%2A%2A%2371%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A45%2A%2A%20places%20since%20yesterday%0A-%201%2C774%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #71 on the AI plugin leaderboard' data-body='Hi dingminhua -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`dsh-connect-workbuddy` is currently **#71** overall
+- It moved up **45** places since yesterday
+- 1,774 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>71</td><td><div class='p'>dsh-connect-workbuddy</div><div class='o'>dingminhua/dsh-connect-workbuddy</div></td><td class='num'><span class='up'>▲ 45</span></td><td class='num'>1774</td><td class='o'>dingminhua</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/dingminhua/dsh-connect-workbuddy/issues/new?title=Your%20plugin%20ranked%20%2371%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20dingminhua%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60dsh-connect-workbuddy%60%20is%20currently%20%2A%2A%2371%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A45%2A%2A%20places%20since%20yesterday%0A-%201%2C774%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='dsh-app|DSHA' data-new='0' data-url='https://github.com/DSH-APP/DSHA/issues/new?title=Your%20plugin%20ranked%20%2372%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20dsh-app%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60DSHA%60%20is%20currently%20%2A%2A%2372%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A45%2A%2A%20places%20since%20yesterday%0A-%203%2C545%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #72 on the AI plugin leaderboard' data-body='Hi dsh-app -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`DSHA` is currently **#72** overall
+- It moved up **45** places since yesterday
+- 3,545 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>72</td><td><div class='p'>DSHA</div><div class='o'>DSH-APP/DSHA</div></td><td class='num'><span class='up'>▲ 45</span></td><td class='num'>3545</td><td class='o'>dsh-app</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/DSH-APP/DSHA/issues/new?title=Your%20plugin%20ranked%20%2372%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20dsh-app%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60DSHA%60%20is%20currently%20%2A%2A%2372%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A45%2A%2A%20places%20since%20yesterday%0A-%203%2C545%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='zilliztech|memsearch' data-new='0' data-url='https://github.com/zilliztech/memsearch/issues/new?title=Your%20plugin%20ranked%20%2373%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20zilliztech%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60memsearch%60%20is%20currently%20%2A%2A%2373%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A4%2A%2A%20places%20since%20yesterday%0A-%202%2C899%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #73 on the AI plugin leaderboard' data-body='Hi zilliztech -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`memsearch` is currently **#73** overall
+- It moved up **4** places since yesterday
+- 2,899 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>73</td><td><div class='p'>memsearch</div><div class='o'>zilliztech/memsearch</div></td><td class='num'><span class='up'>▲ 4</span></td><td class='num'>2899</td><td class='o'>zilliztech</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/zilliztech/memsearch/issues/new?title=Your%20plugin%20ranked%20%2373%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20zilliztech%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60memsearch%60%20is%20currently%20%2A%2A%2373%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A4%2A%2A%20places%20since%20yesterday%0A-%202%2C899%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='edison7009|EchoBird' data-new='0' data-url='https://github.com/edison7009/EchoBird/issues/new?title=Your%20plugin%20ranked%20%2375%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20edison7009%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60EchoBird%60%20is%20currently%20%2A%2A%2375%2A%2A%20overall%0A-%203%2C572%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #75 on the AI plugin leaderboard' data-body='Hi edison7009 -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`EchoBird` is currently **#75** overall
+- 3,572 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>75</td><td><div class='p'>EchoBird</div><div class='o'>edison7009/EchoBird</div></td><td class='num'><span class='d muted'>—</span></td><td class='num'>3572</td><td class='o'>edison7009</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/edison7009/EchoBird/issues/new?title=Your%20plugin%20ranked%20%2375%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20edison7009%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60EchoBird%60%20is%20currently%20%2A%2A%2375%2A%2A%20overall%0A-%203%2C572%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='agricidaniel|claude-ads' data-new='0' data-url='https://github.com/AgriciDaniel/claude-ads/issues/new?title=Your%20plugin%20ranked%20%2376%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20agricidaniel%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60claude-ads%60%20is%20currently%20%2A%2A%2376%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A23%2A%2A%20places%20since%20yesterday%0A-%2011%2C142%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #76 on the AI plugin leaderboard' data-body='Hi agricidaniel -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`claude-ads` is currently **#76** overall
+- It moved up **23** places since yesterday
+- 11,142 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>76</td><td><div class='p'>claude-ads</div><div class='o'>AgriciDaniel/claude-ads</div></td><td class='num'><span class='up'>▲ 23</span></td><td class='num'>11142</td><td class='o'>agricidaniel</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/AgriciDaniel/claude-ads/issues/new?title=Your%20plugin%20ranked%20%2376%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20agricidaniel%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60claude-ads%60%20is%20currently%20%2A%2A%2376%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A23%2A%2A%20places%20since%20yesterday%0A-%2011%2C142%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='wondelai|skills' data-new='0' data-url='https://github.com/wondelai/skills/issues/new?title=Your%20plugin%20ranked%20%2377%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20wondelai%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60skills%60%20is%20currently%20%2A%2A%2377%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A1%2A%2A%20place%20since%20yesterday%0A-%202%2C735%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #77 on the AI plugin leaderboard' data-body='Hi wondelai -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`skills` is currently **#77** overall
+- It moved up **1** place since yesterday
+- 2,735 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>77</td><td><div class='p'>skills</div><div class='o'>wondelai/skills</div></td><td class='num'><span class='up'>▲ 1</span></td><td class='num'>2735</td><td class='o'>wondelai</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/wondelai/skills/issues/new?title=Your%20plugin%20ranked%20%2377%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20wondelai%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60skills%60%20is%20currently%20%2A%2A%2377%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A1%2A%2A%20place%20since%20yesterday%0A-%202%2C735%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='flizzywine|dsh-tavern' data-new='0' data-url='https://github.com/flizzywine/dsh-tavern/issues/new?title=Your%20plugin%20ranked%20%2379%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20flizzywine%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60dsh-tavern%60%20is%20currently%20%2A%2A%2379%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A28%2A%2A%20places%20since%20yesterday%0A-%201%2C674%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #79 on the AI plugin leaderboard' data-body='Hi flizzywine -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`dsh-tavern` is currently **#79** overall
+- It moved up **28** places since yesterday
+- 1,674 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>79</td><td><div class='p'>dsh-tavern</div><div class='o'>flizzywine/dsh-tavern</div></td><td class='num'><span class='up'>▲ 28</span></td><td class='num'>1674</td><td class='o'>flizzywine</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/flizzywine/dsh-tavern/issues/new?title=Your%20plugin%20ranked%20%2379%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20flizzywine%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60dsh-tavern%60%20is%20currently%20%2A%2A%2379%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A28%2A%2A%20places%20since%20yesterday%0A-%201%2C674%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='mmparko|dsh-purge' data-new='0' data-url='https://github.com/mmparko/dsh-purge/issues/new?title=Your%20plugin%20ranked%20%2380%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20mmparko%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60dsh-purge%60%20is%20currently%20%2A%2A%2380%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A51%2A%2A%20places%20since%20yesterday%0A-%205%2C441%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #80 on the AI plugin leaderboard' data-body='Hi mmparko -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`dsh-purge` is currently **#80** overall
+- It moved up **51** places since yesterday
+- 5,441 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>80</td><td><div class='p'>dsh-purge</div><div class='o'>mmparko/dsh-purge</div></td><td class='num'><span class='up'>▲ 51</span></td><td class='num'>5441</td><td class='o'>mmparko</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/mmparko/dsh-purge/issues/new?title=Your%20plugin%20ranked%20%2380%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20mmparko%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60dsh-purge%60%20is%20currently%20%2A%2A%2380%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A51%2A%2A%20places%20since%20yesterday%0A-%205%2C441%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='dream-num|univer-workspace' data-new='0' data-url='https://github.com/dream-num/univer-workspace/issues/new?title=Your%20plugin%20ranked%20%2381%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20dream-num%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60univer-workspace%60%20is%20currently%20%2A%2A%2381%2A%2A%20overall%0A-%20It%20moved%20down%201%20place%20since%20yesterday%0A-%202%2C301%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #81 on the AI plugin leaderboard' data-body='Hi dream-num -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`univer-workspace` is currently **#81** overall
+- It moved down 1 place since yesterday
+- 2,301 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>81</td><td><div class='p'>univer-workspace</div><div class='o'>dream-num/univer-workspace</div></td><td class='num'><span class='down'>▼ 1</span></td><td class='num'>2301</td><td class='o'>dream-num</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/dream-num/univer-workspace/issues/new?title=Your%20plugin%20ranked%20%2381%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20dream-num%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60univer-workspace%60%20is%20currently%20%2A%2A%2381%2A%2A%20overall%0A-%20It%20moved%20down%201%20place%20since%20yesterday%0A-%202%2C301%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='browser-act|skills' data-new='0' data-url='https://github.com/browser-act/skills/issues/new?title=Your%20plugin%20ranked%20%2382%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20browser-act%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60skills%60%20is%20currently%20%2A%2A%2382%2A%2A%20overall%0A-%20It%20moved%20down%2010%20places%20since%20yesterday%0A-%206%2C374%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #82 on the AI plugin leaderboard' data-body='Hi browser-act -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`skills` is currently **#82** overall
+- It moved down 10 places since yesterday
+- 6,374 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>82</td><td><div class='p'>skills</div><div class='o'>browser-act/skills</div></td><td class='num'><span class='down'>▼ 10</span></td><td class='num'>6374</td><td class='o'>browser-act</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/browser-act/skills/issues/new?title=Your%20plugin%20ranked%20%2382%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20browser-act%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60skills%60%20is%20currently%20%2A%2A%2382%2A%2A%20overall%0A-%20It%20moved%20down%2010%20places%20since%20yesterday%0A-%206%2C374%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='kenryu42|cc-safety-net' data-new='0' data-url='https://github.com/kenryu42/cc-safety-net/issues/new?title=Your%20plugin%20ranked%20%2383%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20kenryu42%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60cc-safety-net%60%20is%20currently%20%2A%2A%2383%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A22%2A%2A%20places%20since%20yesterday%0A-%202%2C076%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #83 on the AI plugin leaderboard' data-body='Hi kenryu42 -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`cc-safety-net` is currently **#83** overall
+- It moved up **22** places since yesterday
+- 2,076 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>83</td><td><div class='p'>cc-safety-net</div><div class='o'>kenryu42/cc-safety-net</div></td><td class='num'><span class='up'>▲ 22</span></td><td class='num'>2076</td><td class='o'>kenryu42</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/kenryu42/cc-safety-net/issues/new?title=Your%20plugin%20ranked%20%2383%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20kenryu42%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60cc-safety-net%60%20is%20currently%20%2A%2A%2383%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A22%2A%2A%20places%20since%20yesterday%0A-%202%2C076%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='zhuyansen|new-term-radar' data-new='0' data-url='https://github.com/zhuyansen/new-term-radar/issues/new?title=Your%20plugin%20ranked%20%2386%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20zhuyansen%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60new-term-radar%60%20is%20currently%20%2A%2A%2386%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A35%2A%2A%20places%20since%20yesterday%0A-%202%2C195%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #86 on the AI plugin leaderboard' data-body='Hi zhuyansen -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`new-term-radar` is currently **#86** overall
+- It moved up **35** places since yesterday
+- 2,195 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>86</td><td><div class='p'>new-term-radar</div><div class='o'>zhuyansen/new-term-radar</div></td><td class='num'><span class='up'>▲ 35</span></td><td class='num'>2195</td><td class='o'>zhuyansen</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/zhuyansen/new-term-radar/issues/new?title=Your%20plugin%20ranked%20%2386%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20zhuyansen%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60new-term-radar%60%20is%20currently%20%2A%2A%2386%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A35%2A%2A%20places%20since%20yesterday%0A-%202%2C195%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='agricidaniel|claude-obsidian' data-new='0' data-url='https://github.com/AgriciDaniel/claude-obsidian/issues/new?title=Your%20plugin%20ranked%20%2387%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20agricidaniel%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60claude-obsidian%60%20is%20currently%20%2A%2A%2387%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A23%2A%2A%20places%20since%20yesterday%0A-%2016%2C600%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #87 on the AI plugin leaderboard' data-body='Hi agricidaniel -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`claude-obsidian` is currently **#87** overall
+- It moved up **23** places since yesterday
+- 16,600 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>87</td><td><div class='p'>claude-obsidian</div><div class='o'>AgriciDaniel/claude-obsidian</div></td><td class='num'><span class='up'>▲ 23</span></td><td class='num'>16600</td><td class='o'>agricidaniel</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/AgriciDaniel/claude-obsidian/issues/new?title=Your%20plugin%20ranked%20%2387%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20agricidaniel%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60claude-obsidian%60%20is%20currently%20%2A%2A%2387%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A23%2A%2A%20places%20since%20yesterday%0A-%2016%2C600%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='strukto-ai|mirage' data-new='0' data-url='https://github.com/strukto-ai/mirage/issues/new?title=Your%20plugin%20ranked%20%2388%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20strukto-ai%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60mirage%60%20is%20currently%20%2A%2A%2388%2A%2A%20overall%0A-%20It%20moved%20down%2012%20places%20since%20yesterday%0A-%203%2C793%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #88 on the AI plugin leaderboard' data-body='Hi strukto-ai -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`mirage` is currently **#88** overall
+- It moved down 12 places since yesterday
+- 3,793 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>88</td><td><div class='p'>mirage</div><div class='o'>strukto-ai/mirage</div></td><td class='num'><span class='down'>▼ 12</span></td><td class='num'>3793</td><td class='o'>strukto-ai</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/strukto-ai/mirage/issues/new?title=Your%20plugin%20ranked%20%2388%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20strukto-ai%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60mirage%60%20is%20currently%20%2A%2A%2388%2A%2A%20overall%0A-%20It%20moved%20down%2012%20places%20since%20yesterday%0A-%203%2C793%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='leo-lilinxiao|codex-autoresearch' data-new='0' data-url='https://github.com/leo-lilinxiao/codex-autoresearch/issues/new?title=Your%20plugin%20ranked%20%2390%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20leo-lilinxiao%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60codex-autoresearch%60%20is%20currently%20%2A%2A%2390%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A161%2A%2A%20places%20since%20yesterday%0A-%203%2C237%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #90 on the AI plugin leaderboard' data-body='Hi leo-lilinxiao -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`codex-autoresearch` is currently **#90** overall
+- It moved up **161** places since yesterday
+- 3,237 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>90</td><td><div class='p'>codex-autoresearch</div><div class='o'>leo-lilinxiao/codex-autoresearch</div></td><td class='num'><span class='up'>▲ 161</span></td><td class='num'>3237</td><td class='o'>leo-lilinxiao</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/leo-lilinxiao/codex-autoresearch/issues/new?title=Your%20plugin%20ranked%20%2390%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20leo-lilinxiao%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60codex-autoresearch%60%20is%20currently%20%2A%2A%2390%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A161%2A%2A%20places%20since%20yesterday%0A-%203%2C237%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='openosint|OpenOSINT' data-new='0' data-url='https://github.com/OpenOSINT/OpenOSINT/issues/new?title=Your%20plugin%20ranked%20%2392%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20openosint%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60OpenOSINT%60%20is%20currently%20%2A%2A%2392%2A%2A%20overall%0A-%20It%20moved%20down%2011%20places%20since%20yesterday%0A-%201%2C949%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #92 on the AI plugin leaderboard' data-body='Hi openosint -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`OpenOSINT` is currently **#92** overall
+- It moved down 11 places since yesterday
+- 1,949 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>92</td><td><div class='p'>OpenOSINT</div><div class='o'>OpenOSINT/OpenOSINT</div></td><td class='num'><span class='down'>▼ 11</span></td><td class='num'>1949</td><td class='o'>openosint</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/OpenOSINT/OpenOSINT/issues/new?title=Your%20plugin%20ranked%20%2392%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20openosint%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60OpenOSINT%60%20is%20currently%20%2A%2A%2392%2A%2A%20overall%0A-%20It%20moved%20down%2011%20places%20since%20yesterday%0A-%201%2C949%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='memtensor|memmy-agent' data-new='0' data-url='https://github.com/MemTensor/memmy-agent/issues/new?title=Your%20plugin%20ranked%20%2393%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20memtensor%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60memmy-agent%60%20is%20currently%20%2A%2A%2393%2A%2A%20overall%0A-%20It%20moved%20down%208%20places%20since%20yesterday%0A-%202%2C225%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #93 on the AI plugin leaderboard' data-body='Hi memtensor -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`memmy-agent` is currently **#93** overall
+- It moved down 8 places since yesterday
+- 2,225 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>93</td><td><div class='p'>memmy-agent</div><div class='o'>MemTensor/memmy-agent</div></td><td class='num'><span class='down'>▼ 8</span></td><td class='num'>2225</td><td class='o'>memtensor</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/MemTensor/memmy-agent/issues/new?title=Your%20plugin%20ranked%20%2393%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20memtensor%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60memmy-agent%60%20is%20currently%20%2A%2A%2393%2A%2A%20overall%0A-%20It%20moved%20down%208%20places%20since%20yesterday%0A-%202%2C225%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='jesseovo|last30days-skill-cn' data-new='0' data-url='https://github.com/Jesseovo/last30days-skill-cn/issues/new?title=Your%20plugin%20ranked%20%2394%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20jesseovo%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60last30days-skill-cn%60%20is%20currently%20%2A%2A%2394%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A24%2A%2A%20places%20since%20yesterday%0A-%202%2C153%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #94 on the AI plugin leaderboard' data-body='Hi jesseovo -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`last30days-skill-cn` is currently **#94** overall
+- It moved up **24** places since yesterday
+- 2,153 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>94</td><td><div class='p'>last30days-skill-cn</div><div class='o'>Jesseovo/last30days-skill-cn</div></td><td class='num'><span class='up'>▲ 24</span></td><td class='num'>2153</td><td class='o'>jesseovo</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/Jesseovo/last30days-skill-cn/issues/new?title=Your%20plugin%20ranked%20%2394%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20jesseovo%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60last30days-skill-cn%60%20is%20currently%20%2A%2A%2394%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A24%2A%2A%20places%20since%20yesterday%0A-%202%2C153%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='sopaco|deepwiki-rs' data-new='0' data-url='https://github.com/sopaco/deepwiki-rs/issues/new?title=Your%20plugin%20ranked%20%2398%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20sopaco%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60deepwiki-rs%60%20is%20currently%20%2A%2A%2398%2A%2A%20overall%0A-%20It%20moved%20down%2012%20places%20since%20yesterday%0A-%203%2C179%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #98 on the AI plugin leaderboard' data-body='Hi sopaco -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`deepwiki-rs` is currently **#98** overall
+- It moved down 12 places since yesterday
+- 3,179 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>98</td><td><div class='p'>deepwiki-rs</div><div class='o'>sopaco/deepwiki-rs</div></td><td class='num'><span class='down'>▼ 12</span></td><td class='num'>3179</td><td class='o'>sopaco</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/sopaco/deepwiki-rs/issues/new?title=Your%20plugin%20ranked%20%2398%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20sopaco%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60deepwiki-rs%60%20is%20currently%20%2A%2A%2398%2A%2A%20overall%0A-%20It%20moved%20down%2012%20places%20since%20yesterday%0A-%203%2C179%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='agricidaniel|claude-blog' data-new='0' data-url='https://github.com/AgriciDaniel/claude-blog/issues/new?title=Your%20plugin%20ranked%20%2399%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20agricidaniel%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60claude-blog%60%20is%20currently%20%2A%2A%2399%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A25%2A%2A%20places%20since%20yesterday%0A-%202%2C814%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #99 on the AI plugin leaderboard' data-body='Hi agricidaniel -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`claude-blog` is currently **#99** overall
+- It moved up **25** places since yesterday
+- 2,814 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>99</td><td><div class='p'>claude-blog</div><div class='o'>AgriciDaniel/claude-blog</div></td><td class='num'><span class='up'>▲ 25</span></td><td class='num'>2814</td><td class='o'>agricidaniel</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/AgriciDaniel/claude-blog/issues/new?title=Your%20plugin%20ranked%20%2399%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20agricidaniel%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60claude-blog%60%20is%20currently%20%2A%2A%2399%2A%2A%20overall%0A-%20It%20moved%20up%20%2A%2A25%2A%2A%20places%20since%20yesterday%0A-%202%2C814%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr>
+<tr data-key='chuspeeism|dashi-taskboard' data-new='0' data-url='https://github.com/chuspeeism/dashi-taskboard/issues/new?title=Your%20plugin%20ranked%20%23100%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20chuspeeism%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60dashi-taskboard%60%20is%20currently%20%2A%2A%23100%2A%2A%20overall%0A-%203%2C506%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' data-title='Your plugin ranked #100 on the AI plugin leaderboard' data-body='Hi chuspeeism -
+
+I keep a daily ranking of AI agent plugins across **Codex, Claude Code, dsh and WorkBuddy**.
+
+`dashi-taskboard` is currently **#100** overall
+- 3,506 stars on GitHub
+
+Here is the board: https://cybermap.halo26812.eu.org/rank/
+
+No pitch and no marketing - you just found out where your plugin stands. If it is useful to you, feel free to share it with your users.
+
+If you would rather not be listed, just say so and I will take it down.
+
+&lt;!-- cybermap-outreach:v1 --&gt;'><td><input type='checkbox' class='chk'></td><td class='num'>100</td><td><div class='p'>dashi-taskboard</div><div class='o'>chuspeeism/dashi-taskboard</div></td><td class='num'><span class='d muted'>—</span></td><td class='num'>3506</td><td class='o'>chuspeeism</td><td><span class='pill'>待发</span></td><td class='acts'><a class='btn' href='https://github.com/chuspeeism/dashi-taskboard/issues/new?title=Your%20plugin%20ranked%20%23100%20on%20the%20AI%20plugin%20leaderboard&amp;body=Hi%20chuspeeism%20-%0A%0AI%20keep%20a%20daily%20ranking%20of%20AI%20agent%20plugins%20across%20%2A%2ACodex%2C%20Claude%20Code%2C%20dsh%20and%20WorkBuddy%2A%2A.%0A%0A%60dashi-taskboard%60%20is%20currently%20%2A%2A%23100%2A%2A%20overall%0A-%203%2C506%20stars%20on%20GitHub%0A%0AHere%20is%20the%20board%3A%20https%3A//cybermap.halo26812.eu.org/rank/%0A%0ANo%20pitch%20and%20no%20marketing%20-%20you%20just%20found%20out%20where%20your%20plugin%20stands.%20If%20it%20is%20useful%20to%20you%2C%20feel%20free%20to%20share%20it%20with%20your%20users.%0A%0AIf%20you%20would%20rather%20not%20be%20listed%2C%20just%20say%20so%20and%20I%20will%20take%20it%20down.%0A%0A%3C%21--%20cybermap-outreach%3Av1%20--%3E' target='_blank' rel='noopener'>打开并预填</a><button class='btn green mark'>✔ 记已发</button></td></tr></tbody></table>
+</div>
+<div id="toast"></div>
+<script>
+const KEY='cybermap-daily-queue-2026-11-19';
+const mem={};
+function lsGet(k){try{return localStorage.getItem(k);}catch(e){return mem[k]||null;}}
+function lsSet(k,v){try{localStorage.setItem(k,v);}catch(e){mem[k]=v;}}
+let done={};try{done=JSON.parse(lsGet(KEY)||'{}')||{};}catch(e){done={};}
+const rows=[...document.querySelectorAll('tbody tr')];
+const total=rows.length;
+function save(){lsSet(KEY,JSON.stringify(done));}
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('on');
+  setTimeout(()=>e.classList.remove('on'),1600);}
+function refresh(){
+  let d=0,n=0;
+  rows.forEach(r=>{
+    const k=r.dataset.key,is=!!done[k];
+    r.classList.toggle('done',is);
+    r.querySelector('.chk').checked=is;
+    const pill=r.querySelector('.pill');
+    if(is){pill.textContent='今日已发';pill.className='pill done';}
+    else if(r.dataset.new==='1'){pill.textContent='新上榜';pill.className='pill new';}
+    else{pill.textContent='待发';pill.className='pill';}
+    if(is)d++;
+    if(r.dataset.new==='1')n++;
+  });
+  document.getElementById('cTotal').textContent=total;
+  document.getElementById('cDone').textContent=d;
+  document.getElementById('cLeft').textContent=total-d;
+  document.getElementById('cNew').textContent=n;
+  document.getElementById('total').textContent=total;
+  document.getElementById('pct').textContent='今日完成 '+d+' / '+total+'（'+(total?Math.round(d/total*100):0)+'%）';
+}
+rows.forEach(r=>{
+  const k=r.dataset.key;
+  r.querySelector('.chk').addEventListener('change',e=>{
+    if(e.target.checked)done[k]=new Date().toISOString();else delete done[k];
+    save();refresh();
+  });
+  r.querySelector('.mark').addEventListener('click',()=>{
+    done[k]=new Date().toISOString();save();refresh();toast('已记账 ✓');
+  });
+});
+function nextPending(){return rows.find(r=>!done[r.dataset.key]);}
+document.getElementById('nextBtn').addEventListener('click',()=>{
+  const r=nextPending();if(!r){toast('今天全发完了 🎉');return;}
+  window.open(r.dataset.url,'_blank');
+  r.querySelector('.p').scrollIntoView({block:'center',behavior:'smooth'});
+});
+document.getElementById('copyNext').addEventListener('click',async()=>{
+  const r=nextPending();if(!r){toast('今天全发完了 🎉');return;}
+  try{await navigator.clipboard.writeText('标题：'+r.dataset.title+'\n\n正文：\n'+r.dataset.body);toast('已复制 ✓');}
+  catch(e){toast('复制失败，请手动选中');}
+});
+document.getElementById('exportBtn').addEventListener('click',()=>{
+  const blob=new Blob([JSON.stringify(done,null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);
+  a.download='cybermap-daily-2026-11-19.json';a.click();toast('已导出 ✓');
+});
+refresh();
+</script></body></html>

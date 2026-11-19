@@ -102,9 +102,22 @@ def build():
 
     total_comments = sum(len(it["comments"]) for it in items)
     declined_n = sum(1 for it in items if is_declined(it.get("repo_path"), blocked))
+    # 「已关闭」= 作者已把 Issue 关闭且回复是致谢/谢绝/例行关闭（无需我们再动手）。
+    # 只要 followup_type 命中“真正需要我们做动作”（数据纠错/需补信息/模板重发），
+    # 即便 Issue 被 bot 自动关闭也仍算需跟进，不降级为 closing。
+    def real_action(it):
+        return followup_type(" ".join(c.get("body", "") for c in it["comments"]))
+    def is_closing(it):
+        return (it.get("issue_state") == "closed"
+                and not real_action(it)
+                and it["repo_path"].lower() not in {k.lower() for k in RESOLVED})
+    closing_n = sum(1 for it in items
+                    if not is_declined(it.get("repo_path"), blocked)
+                    and it["repo_path"].lower() not in {k.lower() for k in RESOLVED}
+                    and is_closing(it))
     actionable = sum(1 for it in items
                      if not is_declined(it.get("repo_path"), blocked)
-                     and followup_type(" ".join(c.get("body", "") for c in it["comments"]))
+                     and real_action(it)
                      and it["repo_path"].lower() not in {k.lower() for k in RESOLVED})
     resolved_n = sum(1 for it in items if it["repo_path"].lower() in {k.lower() for k in RESOLVED})
 
@@ -123,6 +136,8 @@ def build():
             badge = '<span class="tag tag-done">已落实</span>'
         elif ftype:
             badge = '<span class="tag tag-follow">需跟进 · %s</span>' % esc(ftype)
+        if not declined and not is_resolved and it.get("issue_state") == "closed":
+            badge += '<span class="tag tag-closed">🔒 Issue 已关闭</span>'
 
         resolved_note = ""
         for k, v in RESOLVED.items():
@@ -191,6 +206,7 @@ def build():
         "__COMMENTS__": str(total_comments),
         "__ACTIONABLE__": str(actionable),
         "__RESOLVED__": str(resolved_n),
+        "__CLOSING__": str(closing_n),
         "__DECLINED__": str(declined_n),
         "__CARDS__": "\n".join(cards),
     }
@@ -199,8 +215,8 @@ def build():
 
     with io.open(BOARD, "w", encoding="utf-8") as f:
         f.write(tpl)
-    print("WROTE %s (%d issues, %d comments, %d actionable, %d resolved, %d declined)" % (
-        BOARD, len(items), total_comments, actionable, resolved_n, declined_n))
+    print("WROTE %s (%d issues, %d comments, %d actionable, %d resolved, %d closing, %d declined)" % (
+        BOARD, len(items), total_comments, actionable, resolved_n, closing_n, declined_n))
 
 
 TEMPLATE = r"""<!DOCTYPE html>
@@ -244,6 +260,7 @@ border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:10px}
 .tag-follow{background:var(--amberbg);color:var(--amber);border:1px solid #fac775}
 .tag-done{background:var(--greenbg);color:var(--green);border:1px solid #9fe1cb}
 .tag-declined{background:var(--redbg);color:var(--red);border:1px solid #f3b7b0}
+.tag-closed{background:#efeeea;color:var(--ink3);border:1px solid #dddbd3}
 .card-declined{border-color:#f0b6ae;background:#fffafa}
 .declined-note{background:var(--redbg);color:#96281b;border:1px solid #f3b7b0;border-radius:8px;
 padding:10px 13px;font-size:13px;margin:0 0 12px;line-height:1.55}
@@ -270,16 +287,19 @@ padding:8px 12px;font-size:13px;margin:0 0 12px}
   <div class="stat"><p class="lbl">回复总数</p><p class="val">__COMMENTS__</p></div>
   <div class="stat act"><p class="lbl">待跟进</p><p class="val">__ACTIONABLE__</p></div>
   <div class="stat ok"><p class="lbl">已落实</p><p class="val">__RESOLVED__</p></div>
+  <div class="stat"><p class="lbl">已关闭·无需跟进</p><p class="val" style="color:var(--ink3)">__CLOSING__</p></div>
   <div class="stat" style="border-color:#f0b6ae"><p class="lbl" style="color:var(--red)">明确拒绝</p><p class="val" style="color:var(--red)">__DECLINED__</p></div>
 </div>
 <div class="hint">💡 本页随每日排行榜自动更新。带「需跟进」标签的是作者对网站/数据提出的意见，
 点「原文↗」到 GitHub 查看完整讨论；已落实的反馈在卡片里标注了处理结果。
+「🔒 Issue 已关闭」表示作者已关闭该 Issue（多为致谢/谢绝后例行关闭，无需再跟进）。
 带「⛔ 明确拒绝」的是要求停止一切联系的作者，已永久加入外联黑名单，不会再收到任何 issue。</div>
 <div class="bar">
   <button class="btn on" data-f="all">全部</button>
   <button class="btn" data-f="declined">明确拒绝</button>
   <button class="btn" data-f="follow">需跟进</button>
   <button class="btn" data-f="done">已落实</button>
+  <button class="btn" data-f="closed">已关闭</button>
 </div>
 <div id="list">__CARDS__</div>
 <p class="foot">数据来自 GitHub 公开 Issue 评论 · 仅供内部跟进，不构成投资建议</p>
@@ -292,7 +312,8 @@ padding:8px 12px;font-size:13px;margin:0 0 12px}
       var isDone=!!c.querySelector('.tag-done');
       var isFollow=!!c.querySelector('.tag-follow');
       var isDeclined=!!c.querySelector('.tag-declined');
-      var show=(f==='all')||(f==='done'&&isDone)||(f==='follow'&&isFollow)||(f==='declined'&&isDeclined);
+      var isClosed=!!c.querySelector('.tag-closed')&&!isFollow&&!isDone&&!isDeclined;
+      var show=(f==='all')||(f==='done'&&isDone)||(f==='follow'&&isFollow)||(f==='declined'&&isDeclined)||(f==='closed'&&isClosed);
       c.style.display=show?'':'none';
     });
     [].forEach.call(btns,function(b){b.classList.toggle('on',b.getAttribute('data-f')===f);});

@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-11-17T13:03:23+00:00",
+  "fetched_at": "2026-11-19T03:31:18+00:00",
   "total_issues": 42,
-  "issues_with_replies": 8,
+  "issues_with_replies": 13,
   "new_reply_issues": 0,
   "items": [
     {
@@ -11,9 +11,18 @@
       "rank": 1,
       "issue_number": 6201,
       "issue_url": "https://github.com/thedotmack/claude-mem/issues/6201",
-      "issue_state": "open",
-      "comment_count": 0,
-      "comments": [],
+      "issue_state": "closed",
+      "comment_count": 1,
+      "comments": [
+        {
+          "author": "thedotmack",
+          "author_type": "User",
+          "body": "Thanks for letting us know. Closing, since this isn't a bug report or feature request for claude-mem.\n",
+          "created_at": "2026-11-17T17:06:18Z",
+          "html_url": "https://github.com/thedotmack/claude-mem/issues/6201#issuecomment-6955118128",
+          "issue_author": ""
+        }
+      ],
       "fetch_code": 200
     },
     {
@@ -59,9 +68,18 @@
       "rank": 9,
       "issue_number": 239,
       "issue_url": "https://github.com/kingcharleslzy-ai/dsh-purge/issues/239",
-      "issue_state": "open",
-      "comment_count": 0,
-      "comments": [],
+      "issue_state": "closed",
+      "comment_count": 1,
+      "comments": [
+        {
+          "author": "kingcharleslzy-ai",
+          "author_type": "User",
+          "body": "推广/排行榜类内容，不作为 issue 跟踪。",
+          "created_at": "2026-11-17T14:59:20Z",
+          "html_url": "https://github.com/kingcharleslzy-ai/dsh-purge/issues/239#issuecomment-6951734489",
+          "issue_author": ""
+        }
+      ],
       "fetch_code": 200
     },
     {
@@ -131,9 +149,18 @@
       "rank": 21,
       "issue_number": 1661,
       "issue_url": "https://github.com/Fei2411/DS-Bot/issues/1661",
-      "issue_state": "open",
-      "comment_count": 0,
-      "comments": [],
+      "issue_state": "closed",
+      "comment_count": 1,
+      "comments": [
+        {
+          "author": "Fei2411",
+          "author_type": "User",
+          "body": "Thanks for letting us know! This is a notice rather than a bug report, so closing it here.",
+          "created_at": "2026-11-19T02:07:52Z",
+          "html_url": "https://github.com/Fei2411/DS-Bot/issues/1661#issuecomment-6997491015",
+          "issue_author": ""
+        }
+      ],
       "fetch_code": 200
     },
     {
@@ -212,9 +239,18 @@
       "rank": 28,
       "issue_number": 519,
       "issue_url": "https://github.com/rehan-remade/universal-modder/issues/519",
-      "issue_state": "open",
-      "comment_count": 0,
-      "comments": [],
+      "issue_state": "closed",
+      "comment_count": 1,
+      "comments": [
+        {
+          "author": "rehan-remade",
+          "author_type": "User",
+          "body": "Thanks for letting me know. Nothing needed on my side, so I'm closing this.\n",
+          "created_at": "2026-11-19T02:14:41Z",
+          "html_url": "https://github.com/rehan-remade/universal-modder/issues/519#issuecomment-6997602257",
+          "issue_author": ""
+        }
+      ],
       "fetch_code": 200
     },
     {
@@ -266,7 +302,7 @@
       "rank": 32,
       "issue_number": 422,
       "issue_url": "https://github.com/QingYunA/answer-me-with-html/issues/422",
-      "issue_state": "open",
+      "issue_state": "closed",
       "comment_count": 1,
       "comments": [
         {
@@ -521,8 +557,8 @@
       "rank": 92,
       "issue_number": 137,
       "issue_url": "https://github.com/DDDMUC/dsh-free-search/issues/137",
-      "issue_state": "open",
-      "comment_count": 1,
+      "issue_state": "closed",
+      "comment_count": 2,
       "comments": [
         {
           "author": "DDDMUC",
@@ -530,6 +566,14 @@
           "body": "你们这个是中文站吗？我看到里面说npm 周下载 | n/a（无可信包名映射，未臆造），但实际上这个插件是有npm包的呀：https://www.npmjs.com/package/dsh-free-search\n",
           "created_at": "2026-11-17T03:53:12Z",
           "html_url": "https://github.com/DDDMUC/dsh-free-search/issues/137#issuecomment-6937723225",
+          "issue_author": ""
+        },
+        {
+          "author": "ohalo",
+          "author_type": "User",
+          "body": "谢谢你的反馈，已修复",
+          "created_at": "2026-11-17T13:17:04Z",
+          "html_url": "https://github.com/DDDMUC/dsh-free-search/issues/137#issuecomment-6949149812",
           "issue_author": ""
         }
       ],
@@ -542,9 +586,18 @@
       "rank": 97,
       "issue_number": 172,
       "issue_url": "https://github.com/LiPu-jpg/Openwrite/issues/172",
-      "issue_state": "open",
-      "comment_count": 0,
-      "comments": [],
+      "issue_state": "closed",
+      "comment_count": 1,
+      "comments": [
+        {
+          "author": "LiPu-jpg",
+          "author_type": "User",
+          "body": "Thanks for sharing!",
+          "created_at": "2026-11-18T00:30:00Z",
+          "html_url": "https://github.com/LiPu-jpg/Openwrite/issues/172#issuecomment-6965190371",
+          "issue_author": ""
+        }
+      ],
       "fetch_code": 200
     },
     {
