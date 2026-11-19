@@ -6,8 +6,19 @@
     <description>cyberMap 每日核验收录的 AI 开源项目，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Wed, 18 Nov 2026 10:40:16 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 09:19:53 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 开源项目 · 2026-11-19（4 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-19</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 +0800</pubDate>
+      <description>browseros-ai/BrowserOS［开源项目］开源智能体浏览器，基于 Chromium 内置本地大模型与自动化能力，主打隐私优先的浏览器任务代理。 — https://github.com/browseros-ai/BrowserOS
+Tencent/WeKnora［开源项目］腾讯开源大模型知识平台，把文档转成可溯源 RAG 问答、自主推理智能体与自动维护的 Wiki。 — https://github.com/Tencent/WeKnora
+browser-use/video-use［开源项目］browser-use 团队开源的剪辑工具，让编码智能体通过对话完成视频剪辑与处理。 — https://github.com/browser-use/video-use
+duixcom/Duix-Avatar［开源项目］真开源离线数字人工具包，支持用真人视频克隆形象与声音，本地生成数字人口播视频。 — https://github.com/duixcom/Duix-Avatar</description>
+      <category>开源项目</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 开源项目 · 2026-11-18（10 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-18</link>

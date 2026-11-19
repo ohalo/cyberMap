@@ -23,17 +23,6 @@ custom:
       if (og) og.setAttribute('content', canonical);
     })();
     </script>
-    <!-- hreflang: 英文首页与中文首页互指，x-default 指向中文 -->
-    <script>
-    (function () {
-      var base = 'https://cybermap.halo26812.eu.org';
-      [['en', base + '/en/'], ['zh-CN', base + '/'], ['x-default', base + '/']].forEach(function (pair) {
-        var l = document.createElement('link');
-        l.rel = 'alternate'; l.hreflang = pair[0]; l.href = pair[1];
-        document.head.appendChild(l);
-      });
-    })();
-    </script>
     <link rel="alternate" type="application/rss+xml" title="cyberMap Daily AI Digest" href="/daily/feed.xml">
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"WebSite","name":"cyberMap","url":"https://cybermap.halo26812.eu.org/","description":"Daily-updated navigator for AI tools and open-source projects.","inLanguage":"en"}
@@ -810,6 +799,22 @@ likeGPT:
     img: "https://sf3-scmcdn2-cn.feishucdn.com/ccm/pc/web/resource/bear/src/common/assets/favicons/icon_file_bitable_nor-32x32.0e0cacddafbc7fd2d308.png"
     description: "Add links to your favorite AI tools here."
 dailyAI_oss:
+  - name: "browseros-ai/BrowserOS"
+    url: "https://github.com/browseros-ai/BrowserOS"
+    img: "https://github.com/favicon.ico"
+    description: "开源智能体浏览器，基于 Chromium 内置本地大模型与自动化能力，主打隐私优先的浏览器任务代理。 · 2026-11-19 收录 · Added 2026-11-19"
+  - name: "Tencent/WeKnora"
+    url: "https://github.com/Tencent/WeKnora"
+    img: "https://github.com/favicon.ico"
+    description: "腾讯开源大模型知识平台，把文档转成可溯源 RAG 问答、自主推理智能体与自动维护的 Wiki。 · 2026-11-19 收录 · Added 2026-11-19"
+  - name: "browser-use/video-use"
+    url: "https://github.com/browser-use/video-use"
+    img: "https://github.com/favicon.ico"
+    description: "browser-use 团队开源的剪辑工具，让编码智能体通过对话完成视频剪辑与处理。 · 2026-11-19 收录 · Added 2026-11-19"
+  - name: "duixcom/Duix-Avatar"
+    url: "https://github.com/duixcom/Duix-Avatar"
+    img: "https://github.com/favicon.ico"
+    description: "真开源离线数字人工具包，支持用真人视频克隆形象与声音，本地生成数字人口播视频。 · 2026-11-19 收录 · Added 2026-11-19"
   - name: "Orkas-AI/Orkas"
     url: "https://github.com/Orkas-AI/Orkas"
     img: "https://github.com/favicon.ico"
@@ -944,6 +949,14 @@ dailyAI_tool:
     img: "https://cybermap.halo26812.eu.org/favicon.ico"
     description: "Tool for running open-source LLMs locally or in the cloud on macOS, Windows and Linux with a single command. · Added 2026-11-13"
 dailyAI_model:
+  - name: "jundot/omlx"
+    url: "https://github.com/jundot/omlx"
+    img: "https://github.com/favicon.ico"
+    description: "面向苹果芯片的大模型推理服务器，支持连续批处理与 SSD 分层缓存，可从菜单栏管理。 · 2026-11-19 收录 · Added 2026-11-19"
+  - name: "raullenchai/Rapid-MLX"
+    url: "https://github.com/raullenchai/Rapid-MLX"
+    img: "https://github.com/favicon.ico"
+    description: "基于 MLX 的苹果芯片推理服务器，兼容 OpenAI 与 Anthropic 接口，专注编码智能体工具调用。 · 2026-11-19 收录 · Added 2026-11-19"
   - name: "skyzh/tiny-llm"
     url: "https://github.com/skyzh/tiny-llm"
     img: "https://github.com/favicon.ico"

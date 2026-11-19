@@ -6,8 +6,17 @@
     <description>cyberMap 每日核验收录的 AI 模型框架，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Wed, 18 Nov 2026 10:40:16 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 09:19:53 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 模型框架 · 2026-11-19（2 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-19</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_model-2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 +0800</pubDate>
+      <description>jundot/omlx［模型框架］面向苹果芯片的大模型推理服务器，支持连续批处理与 SSD 分层缓存，可从菜单栏管理。 — https://github.com/jundot/omlx
+raullenchai/Rapid-MLX［模型框架］基于 MLX 的苹果芯片推理服务器，兼容 OpenAI 与 Anthropic 接口，专注编码智能体工具调用。 — https://github.com/raullenchai/Rapid-MLX</description>
+      <category>模型框架</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 模型框架 · 2026-11-18（3 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-18</link>

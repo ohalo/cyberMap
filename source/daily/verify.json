@@ -128,6 +128,45 @@
         }
       ],
       "review": 4
+    },
+    "2026-11-19": {
+      "added": 6,
+      "checked": 18,
+      "fail": 1,
+      "pass": 12,
+      "rejected": [
+        {
+          "reason": "GitHub 网页经本机代理不可达；仓库真实性由 GitHub API 元数据核验；GitHub stars < 200，需人工判断价值",
+          "url": "https://github.com/Saika02/ragent",
+          "verdict": "review"
+        },
+        {
+          "reason": "GitHub 网页经本机代理不可达；仓库真实性由 GitHub API 元数据核验；GitHub stars < 200，需人工判断价值",
+          "url": "https://github.com/yanshan12345/LangChain-RAG-FastAPI-Service",
+          "verdict": "review"
+        },
+        {
+          "reason": "页面与仓库元数据中未检出 AI 相关性关键词",
+          "url": "https://github.com/BQ-Wang0511/TalkLikeYou",
+          "verdict": "fail"
+        },
+        {
+          "reason": "GitHub 网页经本机代理不可达；仓库真实性由 GitHub API 元数据核验；GitHub stars < 200，需人工判断价值",
+          "url": "https://github.com/xiweicheng/ai-helper",
+          "verdict": "review"
+        },
+        {
+          "reason": "GitHub 网页经本机代理不可达；仓库真实性由 GitHub API 元数据核验；GitHub stars < 200，需人工判断价值",
+          "url": "https://github.com/sylphiette269/premiere-mcp-editor-cn",
+          "verdict": "review"
+        },
+        {
+          "reason": "GitHub 网页经本机代理不可达；仓库真实性由 GitHub API 元数据核验；GitHub stars < 200，需人工判断价值",
+          "url": "https://github.com/davide-troiani/moeshift",
+          "verdict": "review"
+        }
+      ],
+      "review": 5
     }
   },
   "evidence": {
@@ -261,6 +300,39 @@
       "title": "GitHub - browser-use/browser-use: Open-source Python library for AI browser agents, plus Browser Use Cloud: stealth browsers and a hosted agent API. · GitHub",
       "verdict": "pass"
     },
+    "github.com/browser-use/video-use": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "agent"
+      ],
+      "checked_at": "2026-11-19T09:17:00+08:00",
+      "date": "2026-11-19",
+      "http_status": 0,
+      "license": "MIT",
+      "pushed_at": "2026-10-08T22:17:01Z",
+      "stars": 31263,
+      "title": "",
+      "verdict": "pass"
+    },
+    "github.com/browseros-ai/browseros": {
+      "ai_hits": 6,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "chatgpt",
+        "claude",
+        "gpt",
+        "llm"
+      ],
+      "checked_at": "2026-11-19T09:15:34+08:00",
+      "date": "2026-11-19",
+      "http_status": 0,
+      "license": "AGPL-3.0",
+      "pushed_at": "2026-11-19T00:42:35Z",
+      "stars": 14403,
+      "title": "",
+      "verdict": "pass"
+    },
     "github.com/bytedance/deer-flow": {
       "ai_hits": 3,
       "ai_keywords": [
@@ -355,6 +427,21 @@
       "pushed_at": "2026-11-14T17:28:43Z",
       "stars": 103314,
       "title": "GitHub - D4Vinci/Scrapling: 🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don&#39;t be shy, join here: https://discord.gg/",
+      "verdict": "pass"
+    },
+    "github.com/duixcom/duix-avatar": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "multimodal"
+      ],
+      "checked_at": "2026-11-19T09:15:05+08:00",
+      "date": "2026-11-19",
+      "http_status": 0,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-04-21T07:06:36Z",
+      "stars": 16388,
+      "title": "",
       "verdict": "pass"
     },
     "github.com/fareedkhan-dev/kimi-k3-in-c": {
@@ -465,6 +552,23 @@
       "title": "GitHub - google/elephant-goldfish-model: Open-source plugin for designing and reviewing software with agents · GitHub",
       "verdict": "pass"
     },
+    "github.com/graphify-labs/graphify": {
+      "ai_hits": 4,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude",
+        "rag\\b"
+      ],
+      "checked_at": "2026-11-19T09:18:27+08:00",
+      "date": "2026-11-19",
+      "http_status": 0,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-17T21:21:11Z",
+      "stars": 150179,
+      "title": "",
+      "verdict": "pass"
+    },
     "github.com/harry0703/moneyprinterturbo": {
       "ai_hits": 4,
       "ai_keywords": [
@@ -562,6 +666,22 @@
       "title": "GitHub - iflytek/skillhub: Self-hosted, open-source agent skill registry for enterprises. Publish &amp; version skill packages, govern with RBAC and audit logs, deploy on-premise w",
       "verdict": "pass"
     },
+    "github.com/incoai/splash": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "agent",
+        "inference",
+        "llm"
+      ],
+      "checked_at": "2026-11-19T09:17:58+08:00",
+      "date": "2026-11-19",
+      "http_status": 0,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-17T12:42:30Z",
+      "stars": 2409,
+      "title": "",
+      "verdict": "pass"
+    },
     "github.com/infiniflow/ragflow": {
       "ai_hits": 3,
       "ai_keywords": [
@@ -590,6 +710,22 @@
       "pushed_at": "2026-10-27T06:57:09Z",
       "stars": 66051,
       "title": "GitHub - jingyaogong/minimind: 🧠 Train a 64M-parameter LLM from scratch in just 2h! · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/jundot/omlx": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "inference",
+        "llm",
+        "openai"
+      ],
+      "checked_at": "2026-11-19T09:17:15+08:00",
+      "date": "2026-11-19",
+      "http_status": 0,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-18T06:40:25Z",
+      "stars": 23739,
+      "title": "",
       "verdict": "pass"
     },
     "github.com/kaushikb11/awesome-llm-agents": {
@@ -685,6 +821,25 @@
       "pushed_at": "2026-11-13T08:03:53Z",
       "stars": 210354,
       "title": "GitHub - n8n-io/n8n: Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations. · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/nace-ai/kapitsa": {
+      "ai_hits": 6,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "anthropic",
+        "inference",
+        "llm",
+        "openai"
+      ],
+      "checked_at": "2026-11-19T09:17:44+08:00",
+      "date": "2026-11-19",
+      "http_status": 0,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-19T00:27:05Z",
+      "stars": 824,
+      "title": "",
       "verdict": "pass"
     },
     "github.com/nanocodexyz/nanocode": {
@@ -876,6 +1031,26 @@
       "title": "GitHub - rasbt/LLMs-from-scratch: Implement a ChatGPT-like LLM in PyTorch from scratch, step by step · GitHub",
       "verdict": "pass"
     },
+    "github.com/raullenchai/rapid-mlx": {
+      "ai_hits": 7,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "anthropic",
+        "claude",
+        "inference",
+        "llm",
+        "openai"
+      ],
+      "checked_at": "2026-11-19T09:17:29+08:00",
+      "date": "2026-11-19",
+      "http_status": 0,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-19T00:53:00Z",
+      "stars": 4165,
+      "title": "",
+      "verdict": "pass"
+    },
     "github.com/significant-gravitas/autogpt": {
       "ai_hits": 6,
       "ai_keywords": [
@@ -939,6 +1114,40 @@
       "pushed_at": "2026-11-04T10:13:58Z",
       "stars": 122488,
       "title": "GitHub - TauricResearch/TradingAgents: TradingAgents: Multi-Agents LLM Financial Trading Framework · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/tencent/browserskill": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-19T09:16:32+08:00",
+      "date": "2026-11-19",
+      "http_status": 0,
+      "license": "MIT",
+      "pushed_at": "2026-11-18T13:20:28Z",
+      "stars": 10562,
+      "title": "",
+      "verdict": "pass"
+    },
+    "github.com/tencent/weknora": {
+      "ai_hits": 6,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "embedding",
+        "generative",
+        "llm",
+        "rag\\b"
+      ],
+      "checked_at": "2026-11-19T09:16:17+08:00",
+      "date": "2026-11-19",
+      "http_status": 0,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-11-18T12:55:41Z",
+      "stars": 37753,
+      "title": "",
       "verdict": "pass"
     },
     "github.com/the-pr-agent/pr-agent": {
@@ -1053,6 +1262,21 @@
       "title": "GitHub - vercel-labs/agent-desktop: Computer use CLI for AI agents · GitHub",
       "verdict": "pass"
     },
+    "github.com/webbrain-one/webbrain": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-19T09:16:03+08:00",
+      "date": "2026-11-19",
+      "http_status": 0,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-11-18T07:29:36Z",
+      "stars": 1726,
+      "title": "",
+      "verdict": "pass"
+    },
     "github.com/yetone/magpie": {
       "ai_hits": 3,
       "ai_keywords": [
@@ -1067,6 +1291,20 @@
       "pushed_at": "2026-11-15T01:02:57Z",
       "stars": 36551,
       "title": "GitHub - yetone/magpie: Every agent&#39;s model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar. · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/yils-lin/short-video-factory": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "\\bai\\b"
+      ],
+      "checked_at": "2026-11-19T09:14:51+08:00",
+      "date": "2026-11-19",
+      "http_status": 0,
+      "license": "AGPL-3.0",
+      "pushed_at": "2026-11-18T05:41:05Z",
+      "stars": 6198,
+      "title": "",
       "verdict": "pass"
     },
     "ollama.com/": {
@@ -1162,13 +1400,13 @@
   "schema": 1,
   "source": "cybermap-daily/state/reports/verify-YYYY-MM-DD.json",
   "totals": {
-    "added": 38,
-    "checked": 81,
-    "days": 6,
-    "fail": 6,
-    "pass": 66,
-    "review": 9,
-    "verified_sites": 64
+    "added": 44,
+    "checked": 99,
+    "days": 7,
+    "fail": 7,
+    "pass": 78,
+    "review": 14,
+    "verified_sites": 76
   },
   "warnings": []
 }

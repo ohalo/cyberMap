@@ -6,8 +6,21 @@
     <description>cyberMap 每日核验收录的 AI 开源项目、工具官网与模型框架，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Wed, 18 Nov 2026 10:40:16 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 09:19:53 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 2026-11-19（6 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-19</link>
+      <guid isPermaLink="true">https://cybermap.halo26812.eu.org/daily/#day-2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 +0800</pubDate>
+      <description>browseros-ai/BrowserOS［开源项目］开源智能体浏览器，基于 Chromium 内置本地大模型与自动化能力，主打隐私优先的浏览器任务代理。 — https://github.com/browseros-ai/BrowserOS
+Tencent/WeKnora［开源项目］腾讯开源大模型知识平台，把文档转成可溯源 RAG 问答、自主推理智能体与自动维护的 Wiki。 — https://github.com/Tencent/WeKnora
+browser-use/video-use［开源项目］browser-use 团队开源的剪辑工具，让编码智能体通过对话完成视频剪辑与处理。 — https://github.com/browser-use/video-use
+duixcom/Duix-Avatar［开源项目］真开源离线数字人工具包，支持用真人视频克隆形象与声音，本地生成数字人口播视频。 — https://github.com/duixcom/Duix-Avatar
+jundot/omlx［模型框架］面向苹果芯片的大模型推理服务器，支持连续批处理与 SSD 分层缓存，可从菜单栏管理。 — https://github.com/jundot/omlx
+raullenchai/Rapid-MLX［模型框架］基于 MLX 的苹果芯片推理服务器，兼容 OpenAI 与 Anthropic 接口，专注编码智能体工具调用。 — https://github.com/raullenchai/Rapid-MLX</description>
+      <category>AI</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 2026-11-18（16 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-18</link>
