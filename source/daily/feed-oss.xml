@@ -6,8 +6,21 @@
     <description>cyberMap 每日核验收录的 AI 开源项目，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Thu, 19 Nov 2026 10:21:22 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 11:00:22 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 开源项目 · 2026-11-20（6 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-20</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-20</guid>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 +0800</pubDate>
+      <description>NVIDIA-NeMo/Switchyard［开源项目］英伟达开源的 LLM 流量路由工具，保持原生 OpenAI/Anthropic API 兼容，可跨模型与供应商分发请求，便于选型、基准测试与成本优化。 — https://github.com/NVIDIA-NeMo/Switchyard
+dograh-hq/dograh［开源项目］开源自托管语音 AI 平台，可替代 Vapi 与 Retell，支持语音到语音或 LLM/STT/TTS、可视化流程编排、MCP 与电话接入。 — https://github.com/dograh-hq/dograh
+karakeep-app/karakeep［开源项目］可自托管的全能收藏应用，支持链接、笔记与图片，提供 AI 自动打标和全文搜索。 — https://github.com/karakeep-app/karakeep
+docling-project/docling［开源项目］开源文档解析库，把 PDF、Word、HTML 等转为 Markdown/JSON 结构化数据，为生成式 AI 与 RAG 流程准备输入。 — https://github.com/docling-project/docling
+headroomlabs-ai/headroom［开源项目］在送入大模型前压缩工具输出、日志、文件与 RAG 分块，显著降低 token 消耗，提供库、代理与 MCP 服务三种形态。 — https://github.com/headroomlabs-ai/headroom
+mastra-ai/mastra［开源项目］现代 TypeScript AI 应用框架，内置智能体、RAG、评估与 MCP 支持，用于构建聊天机器人和 AI 驱动的应用。 — https://github.com/mastra-ai/mastra</description>
+      <category>开源项目</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 开源项目 · 2026-11-19（4 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-19</link>

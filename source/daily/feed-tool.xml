@@ -6,8 +6,18 @@
     <description>cyberMap 每日核验收录的 AI 工具官网，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Thu, 19 Nov 2026 10:21:22 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 11:00:22 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 工具官网 · 2026-11-20（3 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-20</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_tool-2026-11-20</guid>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 +0800</pubDate>
+      <description>Planet AI［工具官网］Planet 官方卫星影像 AI 探索器，用自然语言在地图上检索分析十年高分辨率影像，支持时序对比与深度研究智能体。 — https://ai.planet.com
+Vricko［工具官网］面向小企业的 AI 代理平台，一句话即可建站、撰写内容、发邮件与客服支持，每项任务留痕并设月度支出上限。 — https://app.vricko.app
+Turbofy［工具官网］对话式 AI 应用构建平台，用自然语言生成带数据、认证与托管的生产级业务应用，并支持 MCP 连接外部编码智能体。 — https://turbofy.com</description>
+      <category>工具官网</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 工具官网 · 2026-11-18（3 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-18</link>
