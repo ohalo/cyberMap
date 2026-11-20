@@ -54,7 +54,7 @@ def collect(repo: Path) -> tuple[list[dict], list[str], dict]:
     """收集 URL 清单。返回 (url 记录, 警告, 分类计数)。"""
     urls: list[dict] = []
     warnings: list[str] = []
-    counts = {"home": 0, "en": 0, "daily": 0, "feed": 0, "rank": 0, "rank_detail": 0}
+    counts = {"home": 0, "en": 0, "daily": 0, "data": 0, "feed": 0, "rank": 0, "rank_detail": 0}
 
     def add(path: str, src: Path, priority: str, freq: str, kind: str):
         if not src.is_file():
@@ -73,6 +73,8 @@ def collect(repo: Path) -> tuple[list[dict], list[str], dict]:
     _en_page = repo / "source/en/index.md"
     add("/en/", _en_page, "0.9", "weekly", "en")
     add("/daily/", repo / "source/daily/index.html", "0.9", "daily", "daily")
+    # 开放数据层文档页 /data/，由 build_data.py 生成
+    add("/data/", repo / "source/data/index.html", "0.7", "daily", "data")
     # RSS：全量流 + 三个分类流。feed.xml 是主订阅源，分类流按 lastmod 更新。
     for feed in ("feed.xml", "feed-oss.xml", "feed-tool.xml", "feed-model.xml"):
         add("/daily/" + feed, repo / "source/daily" / feed, "0.6", "daily", "feed")

@@ -31,10 +31,12 @@ i18n_dir: :lang
 # 静态产物直接原样复制到 public/，不要交给 Hexo 的页面渲染器，
 # 否则会被套上 webstack 主题的 layout。
 # rank/ 由 ai-plugin-rank 独立流水线维护；daily/ 由 scripts/build_daily.py 生成；
+# data/ 由 scripts/build_data.py 生成（开放数据层：sites.json / sites.opml / 文档页）；
 # robots.txt 与 sitemap.xml 由 scripts/build_seo.py 生成。
 skip_render:
   - 'rank/**'
   - 'daily/**'
+  - 'data/**'
   - 'robots.txt'
   - 'sitemap.xml'
 
