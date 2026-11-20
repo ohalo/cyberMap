@@ -6,14 +6,15 @@
     <description>cyberMap 每日核验收录的 AI 模型框架，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Fri, 20 Nov 2026 11:00:22 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 11:12:52 +0800</lastBuildDate>
     <ttl>1440</ttl>
     <item>
-      <title>每日 AI 速递 · 模型框架 · 2026-11-20（1 个站点）</title>
+      <title>每日 AI 速递 · 模型框架 · 2026-11-20（2 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-20</link>
       <guid isPermaLink="false">cybermap-daily-dailyAI_model-2026-11-20</guid>
       <pubDate>Fri, 20 Nov 2026 00:00:00 +0800</pubDate>
-      <description>Edge0-AI/Edge0［模型框架］端侧基础模型与流式 MoE 推理框架，通过 SSD 流式权重与专家路由，让 145B 模型跑在笔记本、35B 跑在手机上。 — https://github.com/Edge0-AI/Edge0</description>
+      <description>mw00/project-maya［模型框架］开源本地大模型推理引擎，通过 GPU、内存与固态盘三级分层调度权重，让数百 B 模型跑在消费级硬件，兼容 OpenAI/Anthropic API。 — https://github.com/mw00/project-maya
+Edge0-AI/Edge0［模型框架］端侧基础模型与流式 MoE 推理框架，通过 SSD 流式权重与专家路由，让 145B 模型跑在笔记本、35B 跑在手机上。 — https://github.com/Edge0-AI/Edge0</description>
       <category>模型框架</category>
     </item>
     <item>

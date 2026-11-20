@@ -6,14 +6,19 @@
     <description>cyberMap 每日核验收录的 AI 开源项目，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Fri, 20 Nov 2026 11:00:22 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 11:12:52 +0800</lastBuildDate>
     <ttl>1440</ttl>
     <item>
-      <title>每日 AI 速递 · 开源项目 · 2026-11-20（6 个站点）</title>
+      <title>每日 AI 速递 · 开源项目 · 2026-11-20（11 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-20</link>
       <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-20</guid>
       <pubDate>Fri, 20 Nov 2026 00:00:00 +0800</pubDate>
-      <description>NVIDIA-NeMo/Switchyard［开源项目］英伟达开源的 LLM 流量路由工具，保持原生 OpenAI/Anthropic API 兼容，可跨模型与供应商分发请求，便于选型、基准测试与成本优化。 — https://github.com/NVIDIA-NeMo/Switchyard
+      <description>alibaba/open-code-review［开源项目］阿里开源的 AI 代码审查工具，读取 Git 差异给出行级评审意见，把确定性检查与大模型智能体结合，自动发现代码问题。 — https://github.com/alibaba/open-code-review
+Activepieces/activepieces［开源项目］开源自动化平台，用可视化流程连接 AI 智能体与数百款应用，支持自托管，用于搭建客服、运营等自动化工作流。 — https://github.com/Activepieces/activepieces
+onyx-dot-app/onyx［开源项目］开源企业 AI 搜索平台，可连接多种数据源做 RAG 检索问答，内置权限与连接器，用于搭建内部知识助手。 — https://github.com/onyx-dot-app/onyx
+aaif-goose/goose［开源项目］可扩展的开源 AI 智能体，支持命令行、桌面与 API 多种形态，能连接任意大模型和 MCP 工具，自动完成开发与日常任务。 — https://github.com/aaif-goose/goose
+google-gemini/gemini-cli［开源项目］谷歌开源的终端 AI 编码智能体，在命令行读写代码、执行 shell 命令并集成 MCP，支持 Gemini 模型辅助开发与调试。 — https://github.com/google-gemini/gemini-cli
+NVIDIA-NeMo/Switchyard［开源项目］英伟达开源的 LLM 流量路由工具，保持原生 OpenAI/Anthropic API 兼容，可跨模型与供应商分发请求，便于选型、基准测试与成本优化。 — https://github.com/NVIDIA-NeMo/Switchyard
 dograh-hq/dograh［开源项目］开源自托管语音 AI 平台，可替代 Vapi 与 Retell，支持语音到语音或 LLM/STT/TTS、可视化流程编排、MCP 与电话接入。 — https://github.com/dograh-hq/dograh
 karakeep-app/karakeep［开源项目］可自托管的全能收藏应用，支持链接、笔记与图片，提供 AI 自动打标和全文搜索。 — https://github.com/karakeep-app/karakeep
 docling-project/docling［开源项目］开源文档解析库，把 PDF、Word、HTML 等转为 Markdown/JSON 结构化数据，为生成式 AI 与 RAG 流程准备输入。 — https://github.com/docling-project/docling

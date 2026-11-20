@@ -6,22 +6,29 @@
     <description>cyberMap 每日核验收录的 AI 开源项目、工具官网与模型框架，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Fri, 20 Nov 2026 11:00:22 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 11:12:52 +0800</lastBuildDate>
     <ttl>1440</ttl>
     <item>
-      <title>每日 AI 速递 · 2026-11-20（10 个站点）</title>
+      <title>每日 AI 速递 · 2026-11-20（17 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-20</link>
       <guid isPermaLink="true">https://cybermap.halo26812.eu.org/daily/#day-2026-11-20</guid>
       <pubDate>Fri, 20 Nov 2026 00:00:00 +0800</pubDate>
-      <description>NVIDIA-NeMo/Switchyard［开源项目］英伟达开源的 LLM 流量路由工具，保持原生 OpenAI/Anthropic API 兼容，可跨模型与供应商分发请求，便于选型、基准测试与成本优化。 — https://github.com/NVIDIA-NeMo/Switchyard
+      <description>alibaba/open-code-review［开源项目］阿里开源的 AI 代码审查工具，读取 Git 差异给出行级评审意见，把确定性检查与大模型智能体结合，自动发现代码问题。 — https://github.com/alibaba/open-code-review
+Activepieces/activepieces［开源项目］开源自动化平台，用可视化流程连接 AI 智能体与数百款应用，支持自托管，用于搭建客服、运营等自动化工作流。 — https://github.com/Activepieces/activepieces
+onyx-dot-app/onyx［开源项目］开源企业 AI 搜索平台，可连接多种数据源做 RAG 检索问答，内置权限与连接器，用于搭建内部知识助手。 — https://github.com/onyx-dot-app/onyx
+aaif-goose/goose［开源项目］可扩展的开源 AI 智能体，支持命令行、桌面与 API 多种形态，能连接任意大模型和 MCP 工具，自动完成开发与日常任务。 — https://github.com/aaif-goose/goose
+google-gemini/gemini-cli［开源项目］谷歌开源的终端 AI 编码智能体，在命令行读写代码、执行 shell 命令并集成 MCP，支持 Gemini 模型辅助开发与调试。 — https://github.com/google-gemini/gemini-cli
+NVIDIA-NeMo/Switchyard［开源项目］英伟达开源的 LLM 流量路由工具，保持原生 OpenAI/Anthropic API 兼容，可跨模型与供应商分发请求，便于选型、基准测试与成本优化。 — https://github.com/NVIDIA-NeMo/Switchyard
 dograh-hq/dograh［开源项目］开源自托管语音 AI 平台，可替代 Vapi 与 Retell，支持语音到语音或 LLM/STT/TTS、可视化流程编排、MCP 与电话接入。 — https://github.com/dograh-hq/dograh
 karakeep-app/karakeep［开源项目］可自托管的全能收藏应用，支持链接、笔记与图片，提供 AI 自动打标和全文搜索。 — https://github.com/karakeep-app/karakeep
 docling-project/docling［开源项目］开源文档解析库，把 PDF、Word、HTML 等转为 Markdown/JSON 结构化数据，为生成式 AI 与 RAG 流程准备输入。 — https://github.com/docling-project/docling
 headroomlabs-ai/headroom［开源项目］在送入大模型前压缩工具输出、日志、文件与 RAG 分块，显著降低 token 消耗，提供库、代理与 MCP 服务三种形态。 — https://github.com/headroomlabs-ai/headroom
 mastra-ai/mastra［开源项目］现代 TypeScript AI 应用框架，内置智能体、RAG、评估与 MCP 支持，用于构建聊天机器人和 AI 驱动的应用。 — https://github.com/mastra-ai/mastra
+Kimi API 开放平台［工具官网］月之暗面 Kimi 大模型开放平台，提供长上下文、多模态与工具调用的 API，供开发者构建智能对话、代码生成与视觉推理应用。 — https://platform.kimi.com
 Planet AI［工具官网］Planet 官方卫星影像 AI 探索器，用自然语言在地图上检索分析十年高分辨率影像，支持时序对比与深度研究智能体。 — https://ai.planet.com
 Vricko［工具官网］面向小企业的 AI 代理平台，一句话即可建站、撰写内容、发邮件与客服支持，每项任务留痕并设月度支出上限。 — https://app.vricko.app
 Turbofy［工具官网］对话式 AI 应用构建平台，用自然语言生成带数据、认证与托管的生产级业务应用，并支持 MCP 连接外部编码智能体。 — https://turbofy.com
+mw00/project-maya［模型框架］开源本地大模型推理引擎，通过 GPU、内存与固态盘三级分层调度权重，让数百 B 模型跑在消费级硬件，兼容 OpenAI/Anthropic API。 — https://github.com/mw00/project-maya
 Edge0-AI/Edge0［模型框架］端侧基础模型与流式 MoE 推理框架，通过 SSD 流式权重与专家路由，让 145B 模型跑在笔记本、35B 跑在手机上。 — https://github.com/Edge0-AI/Edge0</description>
       <category>AI</category>
     </item>

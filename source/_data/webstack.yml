@@ -913,6 +913,26 @@ likeGPT:
     description: 填写你最喜欢使用的AI地址
 
 dailyAI_oss:
+  - name: alibaba/open-code-review
+    url: https://github.com/alibaba/open-code-review
+    img: https://github.com/favicon.ico
+    description: "阿里开源的 AI 代码审查工具，读取 Git 差异给出行级评审意见，把确定性检查与大模型智能体结合，自动发现代码问题。 · 2026-11-20 收录"
+  - name: Activepieces/activepieces
+    url: https://github.com/Activepieces/activepieces
+    img: https://github.com/favicon.ico
+    description: "开源自动化平台，用可视化流程连接 AI 智能体与数百款应用，支持自托管，用于搭建客服、运营等自动化工作流。 · 2026-11-20 收录"
+  - name: onyx-dot-app/onyx
+    url: https://github.com/onyx-dot-app/onyx
+    img: https://github.com/favicon.ico
+    description: "开源企业 AI 搜索平台，可连接多种数据源做 RAG 检索问答，内置权限与连接器，用于搭建内部知识助手。 · 2026-11-20 收录"
+  - name: aaif-goose/goose
+    url: https://github.com/aaif-goose/goose
+    img: https://github.com/favicon.ico
+    description: "可扩展的开源 AI 智能体，支持命令行、桌面与 API 多种形态，能连接任意大模型和 MCP 工具，自动完成开发与日常任务。 · 2026-11-20 收录"
+  - name: google-gemini/gemini-cli
+    url: https://github.com/google-gemini/gemini-cli
+    img: https://github.com/favicon.ico
+    description: "谷歌开源的终端 AI 编码智能体，在命令行读写代码、执行 shell 命令并集成 MCP，支持 Gemini 模型辅助开发与调试。 · 2026-11-20 收录"
   - name: NVIDIA-NeMo/Switchyard
     url: https://github.com/NVIDIA-NeMo/Switchyard
     img: https://github.com/favicon.ico
@@ -1051,6 +1071,10 @@ dailyAI_oss:
     description: "开源浏览器智能体框架，让大模型在真实浏览器中自动点击、输入并完成任务，兼容任意 LLM。 · 2026-11-13 收录"
 
 dailyAI_tool:
+  - name: "Kimi API 开放平台"
+    url: https://platform.kimi.com
+    img: https://platform.kimi.com/favicon.ico
+    description: "月之暗面 Kimi 大模型开放平台，提供长上下文、多模态与工具调用的 API，供开发者构建智能对话、代码生成与视觉推理应用。 · 2026-11-20 收录"
   - name: "Planet AI"
     url: https://ai.planet.com
     img: https://ai.planet.com/favicon.ico
@@ -1101,6 +1125,10 @@ dailyAI_tool:
     description: "在本地或云端运行开源大模型的工具，支持 macOS、Windows、Linux，一条命令即可启动模型。 · 2026-11-13 收录"
 
 dailyAI_model:
+  - name: mw00/project-maya
+    url: https://github.com/mw00/project-maya
+    img: https://github.com/favicon.ico
+    description: "开源本地大模型推理引擎，通过 GPU、内存与固态盘三级分层调度权重，让数百 B 模型跑在消费级硬件，兼容 OpenAI/Anthropic API。 · 2026-11-20 收录"
   - name: Edge0-AI/Edge0
     url: https://github.com/Edge0-AI/Edge0
     img: https://github.com/favicon.ico
