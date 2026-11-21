@@ -207,6 +207,11 @@
     </outline>
     <outline text="每日 AI 新发现">
       <outline text="开源项目" title="开源项目">
+        <outline type="link" text="deepseek-ai/dsh-superagent-prototype" title="deepseek-ai/dsh-superagent-prototype" url="https://github.com/deepseek-ai/dsh-superagent-prototype" htmlUrl="https://github.com/deepseek-ai/dsh-superagent-prototype" description="DeepSeek 开源的自主智能体原型，采用 Router+Worker 双层架构，让编码 Agent 自行拆解任务、发现缺陷并提交修复 PR。" />
+        <outline type="link" text="alibaba/zvec" title="alibaba/zvec" url="https://github.com/alibaba/zvec" htmlUrl="https://github.com/alibaba/zvec" description="阿里开源的轻量级进程内向量数据库，C++ 实现，直接嵌入应用即可做高速向量检索，面向 RAG 与边缘场景。" />
+        <outline type="link" text="max-sixty/worktrunk" title="max-sixty/worktrunk" url="https://github.com/max-sixty/worktrunk" htmlUrl="https://github.com/max-sixty/worktrunk" description="为并行 AI 编码智能体设计的 Git worktree 管理命令行工具，快速创建、切换与清理隔离工作区。" />
+        <outline type="link" text="beenuar/AiSOC" title="beenuar/AiSOC" url="https://github.com/beenuar/AiSOC" htmlUrl="https://github.com/beenuar/AiSOC" description="开源 AI 安全运营中心，融合告警并用大模型智能体做威胁研判，覆盖 MITRE ATT&amp;CK 并留痕可回放。" />
+        <outline type="link" text="yjid/kensaku" title="yjid/kensaku" url="https://github.com/yjid/kensaku" htmlUrl="https://github.com/yjid/kensaku" description="开源本地文件检索工具，索引文档、代码和截图文字，支持 OCR 与语义搜索，可经只读 MCP 供智能体调用。" />
         <outline type="link" text="alibaba/open-code-review" title="alibaba/open-code-review" url="https://github.com/alibaba/open-code-review" htmlUrl="https://github.com/alibaba/open-code-review" description="阿里开源的 AI 代码审查工具，读取 Git 差异给出行级评审意见，把确定性检查与大模型智能体结合，自动发现代码问题。" />
         <outline type="link" text="Activepieces/activepieces" title="Activepieces/activepieces" url="https://github.com/Activepieces/activepieces" htmlUrl="https://github.com/Activepieces/activepieces" description="开源自动化平台，用可视化流程连接 AI 智能体与数百款应用，支持自托管，用于搭建客服、运营等自动化工作流。" />
         <outline type="link" text="onyx-dot-app/onyx" title="onyx-dot-app/onyx" url="https://github.com/onyx-dot-app/onyx" htmlUrl="https://github.com/onyx-dot-app/onyx" description="开源企业 AI 搜索平台，可连接多种数据源做 RAG 检索问答，内置权限与连接器，用于搭建内部知识助手。" />
@@ -248,6 +253,8 @@
         <outline type="link" text="browser-use/browser-use" title="browser-use/browser-use" url="https://github.com/browser-use/browser-use" htmlUrl="https://github.com/browser-use/browser-use" description="开源浏览器智能体框架，让大模型在真实浏览器中自动点击、输入并完成任务，兼容任意 LLM。" />
       </outline>
       <outline text="工具官网" title="工具官网">
+        <outline type="link" text="MerchantFloor" title="MerchantFloor" url="https://www.merchantfloor.com" htmlUrl="https://www.merchantfloor.com" description="面向小型 Shopify 商家的 AI 商品上架工具，上传产品图即可生成白底图、场景图与 SEO 描述并同步店铺。" />
+        <outline type="link" text="GlobalGPT" title="GlobalGPT" url="https://glbgpt.com" htmlUrl="https://glbgpt.com" description="聚合 ChatGPT、Claude、Gemini 及图像视频模型的一站式订阅平台，用一个账号访问多款主流 AI 服务。" />
         <outline type="link" text="Kimi API 开放平台" title="Kimi API 开放平台" url="https://platform.kimi.com" htmlUrl="https://platform.kimi.com" description="月之暗面 Kimi 大模型开放平台，提供长上下文、多模态与工具调用的 API，供开发者构建智能对话、代码生成与视觉推理应用。" />
         <outline type="link" text="Planet AI" title="Planet AI" url="https://ai.planet.com" htmlUrl="https://ai.planet.com" description="Planet 官方卫星影像 AI 探索器，用自然语言在地图上检索分析十年高分辨率影像，支持时序对比与深度研究智能体。" />
         <outline type="link" text="Vricko" title="Vricko" url="https://app.vricko.app" htmlUrl="https://app.vricko.app" description="面向小企业的 AI 代理平台，一句话即可建站、撰写内容、发邮件与客服支持，每项任务留痕并设月度支出上限。" />
@@ -263,6 +270,9 @@
         <outline type="link" text="Ollama" title="Ollama" url="https://ollama.com" htmlUrl="https://ollama.com" description="在本地或云端运行开源大模型的工具，支持 macOS、Windows、Linux，一条命令即可启动模型。" />
       </outline>
       <outline text="模型框架" title="模型框架">
+        <outline type="link" text="cactus-compute/cactus" title="cactus-compute/cactus" url="https://github.com/cactus-compute/cactus" htmlUrl="https://github.com/cactus-compute/cactus" description="面向消费级设备的轻量端侧推理库，体积不足 50MB，本地运行智能体、语音与视觉任务，无需云端。" />
+        <outline type="link" text="higurashi-ai/Haru" title="higurashi-ai/Haru" url="https://github.com/higurashi-ai/Haru" htmlUrl="https://github.com/higurashi-ai/Haru" description="低延迟多语言全双工语音对话模型，可边听边说，以 133 毫秒分块连续生成口语回应。" />
+        <outline type="link" text="huawei-csl/MACaQ" title="huawei-csl/MACaQ" url="https://github.com/huawei-csl/MACaQ" htmlUrl="https://github.com/huawei-csl/MACaQ" description="华为开源的模型无关量化工具，面向 GGUF 与本地推理，可量化并运行文本、图像、视频与音频模型。" />
         <outline type="link" text="mw00/project-maya" title="mw00/project-maya" url="https://github.com/mw00/project-maya" htmlUrl="https://github.com/mw00/project-maya" description="开源本地大模型推理引擎，通过 GPU、内存与固态盘三级分层调度权重，让数百 B 模型跑在消费级硬件，兼容 OpenAI/Anthropic API。" />
         <outline type="link" text="Edge0-AI/Edge0" title="Edge0-AI/Edge0" url="https://github.com/Edge0-AI/Edge0" htmlUrl="https://github.com/Edge0-AI/Edge0" description="端侧基础模型与流式 MoE 推理框架，通过 SSD 流式权重与专家路由，让 145B 模型跑在笔记本、35B 跑在手机上。" />
         <outline type="link" text="jundot/omlx" title="jundot/omlx" url="https://github.com/jundot/omlx" htmlUrl="https://github.com/jundot/omlx" description="面向苹果芯片的大模型推理服务器，支持连续批处理与 SSD 分层缓存，可从菜单栏管理。" />

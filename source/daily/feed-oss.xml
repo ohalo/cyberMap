@@ -6,8 +6,20 @@
     <description>cyberMap 每日核验收录的 AI 开源项目，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Fri, 20 Nov 2026 11:12:52 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 09:46:43 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 开源项目 · 2026-11-21（5 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-21</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-21</guid>
+      <pubDate>Sat, 21 Nov 2026 00:00:00 +0800</pubDate>
+      <description>deepseek-ai/dsh-superagent-prototype［开源项目］DeepSeek 开源的自主智能体原型，采用 Router+Worker 双层架构，让编码 Agent 自行拆解任务、发现缺陷并提交修复 PR。 — https://github.com/deepseek-ai/dsh-superagent-prototype
+alibaba/zvec［开源项目］阿里开源的轻量级进程内向量数据库，C++ 实现，直接嵌入应用即可做高速向量检索，面向 RAG 与边缘场景。 — https://github.com/alibaba/zvec
+max-sixty/worktrunk［开源项目］为并行 AI 编码智能体设计的 Git worktree 管理命令行工具，快速创建、切换与清理隔离工作区。 — https://github.com/max-sixty/worktrunk
+beenuar/AiSOC［开源项目］开源 AI 安全运营中心，融合告警并用大模型智能体做威胁研判，覆盖 MITRE ATT&amp;CK 并留痕可回放。 — https://github.com/beenuar/AiSOC
+yjid/kensaku［开源项目］开源本地文件检索工具，索引文档、代码和截图文字，支持 OCR 与语义搜索，可经只读 MCP 供智能体调用。 — https://github.com/yjid/kensaku</description>
+      <category>开源项目</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 开源项目 · 2026-11-20（11 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-20</link>

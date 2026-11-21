@@ -201,6 +201,25 @@
         }
       ],
       "review": 2
+    },
+    "2026-11-21": {
+      "added": 10,
+      "checked": 17,
+      "fail": 1,
+      "pass": 15,
+      "rejected": [
+        {
+          "reason": "页面与仓库元数据中未检出 AI 相关性关键词",
+          "url": "https://github.com/anomalyco/hex",
+          "verdict": "fail"
+        },
+        {
+          "reason": "GitHub stars < 200，需人工判断价值",
+          "url": "https://github.com/splashxmoon/friday",
+          "verdict": "review"
+        }
+      ],
+      "review": 1
     }
   },
   "evidence": {
@@ -326,6 +345,24 @@
       "title": "",
       "verdict": "pass"
     },
+    "github.com/agentes-chat/agentes-chat": {
+      "ai_hits": 5,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "chatgpt",
+        "claude",
+        "gpt"
+      ],
+      "checked_at": "2026-11-21T09:44:49+08:00",
+      "date": "2026-11-21",
+      "http_status": 200,
+      "license": "AGPL-3.0",
+      "pushed_at": "2026-11-21T01:41:53Z",
+      "stars": 1853,
+      "title": "GitHub - agentes-chat/agentes-chat: Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex,",
+      "verdict": "pass"
+    },
     "github.com/alibaba/open-code-review": {
       "ai_hits": 4,
       "ai_keywords": [
@@ -341,6 +378,22 @@
       "pushed_at": "2026-11-19T12:28:52Z",
       "stars": 54417,
       "title": "",
+      "verdict": "pass"
+    },
+    "github.com/alibaba/zvec": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "agent",
+        "llm",
+        "rag\\b"
+      ],
+      "checked_at": "2026-11-21T09:44:38+08:00",
+      "date": "2026-11-21",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-20T05:27:02Z",
+      "stars": 16273,
+      "title": "GitHub - alibaba/zvec: A lightweight, lightning-fast, in-process vector database · GitHub",
       "verdict": "pass"
     },
     "github.com/all-hands-ai/openhands": {
@@ -425,6 +478,23 @@
       "title": "GitHub - autonomous-ai/openharness: The ultimate harness for coding agents and beyond. All your agents. All your machines. One command center. Start with code, then follow your cur",
       "verdict": "pass"
     },
+    "github.com/beenuar/aisoc": {
+      "ai_hits": 4,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude",
+        "llm"
+      ],
+      "checked_at": "2026-11-21T09:44:45+08:00",
+      "date": "2026-11-21",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-20T19:32:47Z",
+      "stars": 7133,
+      "title": "GitHub - beenuar/AiSOC: Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&amp;CK investigation, and a replayable decision ledger for every agent ",
+      "verdict": "pass"
+    },
     "github.com/browser-use/browser-use": {
       "ai_hits": 3,
       "ai_keywords": [
@@ -488,6 +558,22 @@
       "pushed_at": "2026-11-16T23:46:01Z",
       "stars": 85408,
       "title": "GitHub - bytedance/deer-flow: An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and ",
+      "verdict": "pass"
+    },
+    "github.com/cactus-compute/cactus": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "llm"
+      ],
+      "checked_at": "2026-11-21T09:44:53+08:00",
+      "date": "2026-11-21",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-18T17:06:57Z",
+      "stars": 14858,
+      "title": "GitHub - cactus-compute/cactus: Sub-50mb agentic, voice and vision intelligence for consumer devices. · GitHub",
       "verdict": "pass"
     },
     "github.com/chesterra/cccc": {
@@ -568,6 +654,21 @@
       "pushed_at": "2026-11-14T17:28:43Z",
       "stars": 103314,
       "title": "GitHub - D4Vinci/Scrapling: 🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don&#39;t be shy, join here: https://discord.gg/",
+      "verdict": "pass"
+    },
+    "github.com/deepseek-ai/dsh-superagent-prototype": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-21T09:44:37+08:00",
+      "date": "2026-11-21",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-03T09:29:14Z",
+      "stars": 24081,
+      "title": "GitHub - deepseek-ai/dsh-superagent-prototype: Towards a More Autonomous Agent System · GitHub",
       "verdict": "pass"
     },
     "github.com/docling-project/docling": {
@@ -821,6 +922,20 @@
       "title": "GitHub - heygen-com/hyperframes: Write HTML. Render video. Built for agents. · GitHub",
       "verdict": "pass"
     },
+    "github.com/higurashi-ai/haru": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "\\bai\\b"
+      ],
+      "checked_at": "2026-11-21T09:44:55+08:00",
+      "date": "2026-11-21",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-13T06:21:17Z",
+      "stars": 704,
+      "title": "GitHub - higurashi-ai/Haru: Haru: a low-latency, multilingual, full-duplex spoken dialogue model · GitHub",
+      "verdict": "pass"
+    },
     "github.com/hkuds/nanobot": {
       "ai_hits": 3,
       "ai_keywords": [
@@ -867,6 +982,22 @@
       "pushed_at": "2026-11-17T00:56:00Z",
       "stars": 7909,
       "title": "GitHub - homeassistant-ai/ha-mcp: Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants. · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/huawei-csl/macaq": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "inference",
+        "llm"
+      ],
+      "checked_at": "2026-11-21T09:44:54+08:00",
+      "date": "2026-11-21",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-17T09:39:46Z",
+      "stars": 383,
+      "title": "GitHub - huawei-csl/MACaQ: SOTA model-agnostic quantization for GGUF, local inference and beyond. Quantize and run text, image, video and audio models with llama.cpp, vLLM, Diffuse",
       "verdict": "pass"
     },
     "github.com/hugohe3/ppt-master": {
@@ -1024,6 +1155,22 @@
       "title": "",
       "verdict": "pass"
     },
+    "github.com/max-sixty/worktrunk": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude"
+      ],
+      "checked_at": "2026-11-21T09:44:39+08:00",
+      "date": "2026-11-21",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-21T01:39:39Z",
+      "stars": 12674,
+      "title": "GitHub - max-sixty/worktrunk: Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows · GitHub",
+      "verdict": "pass"
+    },
     "github.com/mem0ai/mem0": {
       "ai_hits": 5,
       "ai_keywords": [
@@ -1070,6 +1217,21 @@
       "pushed_at": "2026-11-16T22:55:46Z",
       "stars": 24210,
       "title": "GitHub - milind-soni/OpenMausBot: Open-source Grok Bot alternative with a virtual machine that bots can use · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/minimax-ai/minimax-mcp": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "text[- ]to[- ]"
+      ],
+      "checked_at": "2026-11-21T09:44:50+08:00",
+      "date": "2026-11-21",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-10T09:49:32Z",
+      "stars": 1610,
+      "title": "GitHub - MiniMax-AI/MiniMax-MCP: Official MiniMax Model Context Protocol (MCP) server that enables interaction with powerful Text to Speech, image generation and video generation A",
       "verdict": "pass"
     },
     "github.com/mw00/project-maya": {
@@ -1559,6 +1721,22 @@
       "title": "GitHub - topoteretes/cognee: Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory with small models for free · GitHub",
       "verdict": "pass"
     },
+    "github.com/truffle-ai/dexto": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "llm"
+      ],
+      "checked_at": "2026-11-21T09:44:42+08:00",
+      "date": "2026-11-21",
+      "http_status": 200,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-11-19T19:21:17Z",
+      "stars": 661,
+      "title": "GitHub - truffle-ai/dexto: Agent harness and tookit for building AI agents and agentic applications. CLI and SDKs included · GitHub",
+      "verdict": "pass"
+    },
     "github.com/unclecode/crawl4ai": {
       "ai_hits": 4,
       "ai_keywords": [
@@ -1574,6 +1752,21 @@
       "pushed_at": "2026-11-12T11:40:21Z",
       "stars": 87298,
       "title": "GitHub - unclecode/crawl4ai: Official Crawl4AI Cloud: a hosted web scraping, extraction, and search API for AI agents. Free API key, 1,000 credits a month, no card. Fully open sour",
+      "verdict": "pass"
+    },
+    "github.com/universal-tool-calling-protocol/code-mode": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-21T09:44:43+08:00",
+      "date": "2026-11-21",
+      "http_status": 200,
+      "license": "MPL-2.0",
+      "pushed_at": "2026-08-25T16:39:29Z",
+      "stars": 1696,
+      "title": "GitHub - universal-tool-calling-protocol/code-mode: 🔌 Plug-and-play library to enable agents to call MCP and UTCP tools via code execution. · GitHub",
       "verdict": "pass"
     },
     "github.com/unstructured-io/unstructured": {
@@ -1621,6 +1814,20 @@
       "title": "GitHub - vercel-labs/agent-desktop: Computer use CLI for AI agents · GitHub",
       "verdict": "pass"
     },
+    "github.com/vercel/eve": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "agent"
+      ],
+      "checked_at": "2026-11-21T09:44:41+08:00",
+      "date": "2026-11-21",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-21T01:09:00Z",
+      "stars": 6031,
+      "title": "GitHub - vercel/eve: The Open Framework for Building Agents · GitHub",
+      "verdict": "pass"
+    },
     "github.com/webbrain-one/webbrain": {
       "ai_hits": 2,
       "ai_keywords": [
@@ -1664,6 +1871,52 @@
       "pushed_at": "2026-11-18T05:41:05Z",
       "stars": 6198,
       "title": "",
+      "verdict": "pass"
+    },
+    "github.com/yjid/kensaku": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-21T09:44:48+08:00",
+      "date": "2026-11-21",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-19T20:00:41Z",
+      "stars": 1883,
+      "title": "GitHub - yjid/kensaku: Search inside documents, code, and even screenshots - instantly and locally. A free, open-source file launcher with OCR, semantic search, and MCP agent acces",
+      "verdict": "pass"
+    },
+    "glbgpt.com/": {
+      "ai_hits": 4,
+      "ai_keywords": [
+        "\\bai\\b",
+        "chatgpt",
+        "claude",
+        "gpt"
+      ],
+      "checked_at": "2026-11-21T09:45:15+08:00",
+      "date": "2026-11-21",
+      "http_status": 200,
+      "license": null,
+      "pushed_at": null,
+      "stars": null,
+      "title": "GlobalGPT: ChatGPT, Claude, Gemini, AI Images &amp; Video in One Subscription",
+      "verdict": "pass"
+    },
+    "merchantfloor.com/": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "\\bai\\b"
+      ],
+      "checked_at": "2026-11-21T09:44:58+08:00",
+      "date": "2026-11-21",
+      "http_status": 200,
+      "license": null,
+      "pushed_at": null,
+      "stars": null,
+      "title": "AI Product Photos &amp; Descriptions - Try it free | MerchantFloor",
       "verdict": "pass"
     },
     "ollama.com/": {
@@ -1803,13 +2056,13 @@
   "schema": 1,
   "source": "cybermap-daily/state/reports/verify-YYYY-MM-DD.json",
   "totals": {
-    "added": 61,
-    "checked": 128,
-    "days": 8,
-    "fail": 10,
-    "pass": 102,
-    "review": 16,
-    "verified_sites": 100
+    "added": 71,
+    "checked": 145,
+    "days": 9,
+    "fail": 11,
+    "pass": 117,
+    "review": 17,
+    "verified_sites": 115
   },
   "warnings": []
 }

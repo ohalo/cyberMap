@@ -79,19 +79,19 @@
       "name": "社区与问卷"
     },
     {
-      "count": 39,
+      "count": 44,
       "group": "每日 AI 新发现",
       "key": "dailyAI_oss",
       "name": "开源项目"
     },
     {
-      "count": 13,
+      "count": 15,
       "group": "每日 AI 新发现",
       "key": "dailyAI_tool",
       "name": "工具官网"
     },
     {
-      "count": 9,
+      "count": 12,
       "group": "每日 AI 新发现",
       "key": "dailyAI_model",
       "name": "模型框架"
@@ -113,8 +113,8 @@
     "categories": 18,
     "groups": 5,
     "health_checked": 44,
-    "sites": 233,
-    "verified": 62
+    "sites": 243,
+    "verified": 72
   },
   "group_index": [
     {
@@ -154,7 +154,7 @@
         "dailyAI_tool",
         "dailyAI_model"
       ],
-      "count": 61,
+      "count": 71,
       "name": "每日 AI 新发现"
     },
     {
@@ -2765,6 +2765,113 @@
     {
       "category": "dailyAI_oss",
       "category_name": "开源项目",
+      "date": "2026-11-21",
+      "description": "DeepSeek 开源的自主智能体原型，采用 Router+Worker 双层架构，让编码 Agent 自行拆解任务、发现缺陷并提交修复 PR。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "deepseek-ai/dsh-superagent-prototype",
+      "tags": [
+        "代码开发"
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-21T09:44:37+08:00",
+        "date": "2026-11-21",
+        "http_status": 200,
+        "stars": 24081
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
+      "date": "2026-11-21",
+      "description": "阿里开源的轻量级进程内向量数据库，C++ 实现，直接嵌入应用即可做高速向量检索，面向 RAG 与边缘场景。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "alibaba/zvec",
+      "tags": [
+        "RAG 检索"
+      ],
+      "url": "https://github.com/alibaba/zvec",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-21T09:44:38+08:00",
+        "date": "2026-11-21",
+        "http_status": 200,
+        "stars": 16273
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
+      "date": "2026-11-21",
+      "description": "为并行 AI 编码智能体设计的 Git worktree 管理命令行工具，快速创建、切换与清理隔离工作区。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "max-sixty/worktrunk",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://github.com/max-sixty/worktrunk",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-21T09:44:39+08:00",
+        "date": "2026-11-21",
+        "http_status": 200,
+        "stars": 12674
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
+      "date": "2026-11-21",
+      "description": "开源 AI 安全运营中心，融合告警并用大模型智能体做威胁研判，覆盖 MITRE ATT&CK 并留痕可回放。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "beenuar/AiSOC",
+      "tags": [
+        "安全审计"
+      ],
+      "url": "https://github.com/beenuar/AiSOC",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-21T09:44:45+08:00",
+        "date": "2026-11-21",
+        "http_status": 200,
+        "stars": 7133
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
+      "date": "2026-11-21",
+      "description": "开源本地文件检索工具，索引文档、代码和截图文字，支持 OCR 与语义搜索，可经只读 MCP 供智能体调用。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "yjid/kensaku",
+      "tags": [
+        "办公文档",
+        "RAG 检索",
+        "MCP"
+      ],
+      "url": "https://github.com/yjid/kensaku",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-21T09:44:48+08:00",
+        "date": "2026-11-21",
+        "http_status": 200,
+        "stars": 1883
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
       "date": "2026-11-20",
       "description": "阿里开源的 AI 代码审查工具，读取 Git 差异给出行级评审意见，把确定性检查与大模型智能体结合，自动发现代码问题。",
       "group": "每日 AI 新发现",
@@ -3600,6 +3707,48 @@
     {
       "category": "dailyAI_tool",
       "category_name": "工具官网",
+      "date": "2026-11-21",
+      "description": "面向小型 Shopify 商家的 AI 商品上架工具，上传产品图即可生成白底图、场景图与 SEO 描述并同步店铺。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
+      "name": "MerchantFloor",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://www.merchantfloor.com",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-21T09:44:58+08:00",
+        "date": "2026-11-21",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "dailyAI_tool",
+      "category_name": "工具官网",
+      "date": "2026-11-21",
+      "description": "聚合 ChatGPT、Claude、Gemini 及图像视频模型的一站式订阅平台，用一个账号访问多款主流 AI 服务。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://glbgpt.com/favicon.ico",
+      "name": "GlobalGPT",
+      "tags": [
+        "视频图像"
+      ],
+      "url": "https://glbgpt.com",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-21T09:45:15+08:00",
+        "date": "2026-11-21",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "dailyAI_tool",
+      "category_name": "工具官网",
       "date": "2026-11-20",
       "description": "月之暗面 Kimi 大模型开放平台，提供长上下文、多模态与工具调用的 API，供开发者构建智能对话、代码生成与视觉推理应用。",
       "group": "每日 AI 新发现",
@@ -3866,6 +4015,74 @@
         "date": "2026-11-13",
         "http_status": 200,
         "stars": null
+      }
+    },
+    {
+      "category": "dailyAI_model",
+      "category_name": "模型框架",
+      "date": "2026-11-21",
+      "description": "面向消费级设备的轻量端侧推理库，体积不足 50MB，本地运行智能体、语音与视觉任务，无需云端。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "cactus-compute/cactus",
+      "tags": [
+        "推理引擎",
+        "本地运行",
+        "语音"
+      ],
+      "url": "https://github.com/cactus-compute/cactus",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-21T09:44:53+08:00",
+        "date": "2026-11-21",
+        "http_status": 200,
+        "stars": 14858
+      }
+    },
+    {
+      "category": "dailyAI_model",
+      "category_name": "模型框架",
+      "date": "2026-11-21",
+      "description": "低延迟多语言全双工语音对话模型，可边听边说，以 133 毫秒分块连续生成口语回应。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "higurashi-ai/Haru",
+      "tags": [
+        "推理引擎",
+        "语音"
+      ],
+      "url": "https://github.com/higurashi-ai/Haru",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-21T09:44:55+08:00",
+        "date": "2026-11-21",
+        "http_status": 200,
+        "stars": 704
+      }
+    },
+    {
+      "category": "dailyAI_model",
+      "category_name": "模型框架",
+      "date": "2026-11-21",
+      "description": "华为开源的模型无关量化工具，面向 GGUF 与本地推理，可量化并运行文本、图像、视频与音频模型。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "huawei-csl/MACaQ",
+      "tags": [
+        "视频图像",
+        "推理引擎",
+        "本地运行"
+      ],
+      "url": "https://github.com/huawei-csl/MACaQ",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-21T09:44:54+08:00",
+        "date": "2026-11-21",
+        "http_status": 200,
+        "stars": 383
       }
     },
     {

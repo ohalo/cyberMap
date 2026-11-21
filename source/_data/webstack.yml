@@ -913,6 +913,26 @@ likeGPT:
     description: 填写你最喜欢使用的AI地址
 
 dailyAI_oss:
+  - name: deepseek-ai/dsh-superagent-prototype
+    url: https://github.com/deepseek-ai/dsh-superagent-prototype
+    img: https://github.com/favicon.ico
+    description: "DeepSeek 开源的自主智能体原型，采用 Router+Worker 双层架构，让编码 Agent 自行拆解任务、发现缺陷并提交修复 PR。 · 2026-11-21 收录"
+  - name: alibaba/zvec
+    url: https://github.com/alibaba/zvec
+    img: https://github.com/favicon.ico
+    description: "阿里开源的轻量级进程内向量数据库，C++ 实现，直接嵌入应用即可做高速向量检索，面向 RAG 与边缘场景。 · 2026-11-21 收录"
+  - name: max-sixty/worktrunk
+    url: https://github.com/max-sixty/worktrunk
+    img: https://github.com/favicon.ico
+    description: "为并行 AI 编码智能体设计的 Git worktree 管理命令行工具，快速创建、切换与清理隔离工作区。 · 2026-11-21 收录"
+  - name: beenuar/AiSOC
+    url: https://github.com/beenuar/AiSOC
+    img: https://github.com/favicon.ico
+    description: "开源 AI 安全运营中心，融合告警并用大模型智能体做威胁研判，覆盖 MITRE ATT&CK 并留痕可回放。 · 2026-11-21 收录"
+  - name: yjid/kensaku
+    url: https://github.com/yjid/kensaku
+    img: https://github.com/favicon.ico
+    description: "开源本地文件检索工具，索引文档、代码和截图文字，支持 OCR 与语义搜索，可经只读 MCP 供智能体调用。 · 2026-11-21 收录"
   - name: alibaba/open-code-review
     url: https://github.com/alibaba/open-code-review
     img: https://github.com/favicon.ico
@@ -1071,6 +1091,14 @@ dailyAI_oss:
     description: "开源浏览器智能体框架，让大模型在真实浏览器中自动点击、输入并完成任务，兼容任意 LLM。 · 2026-11-13 收录"
 
 dailyAI_tool:
+  - name: MerchantFloor
+    url: https://www.merchantfloor.com
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "面向小型 Shopify 商家的 AI 商品上架工具，上传产品图即可生成白底图、场景图与 SEO 描述并同步店铺。 · 2026-11-21 收录"
+  - name: GlobalGPT
+    url: https://glbgpt.com
+    img: https://glbgpt.com/favicon.ico
+    description: "聚合 ChatGPT、Claude、Gemini 及图像视频模型的一站式订阅平台，用一个账号访问多款主流 AI 服务。 · 2026-11-21 收录"
   - name: "Kimi API 开放平台"
     url: https://platform.kimi.com
     img: https://platform.kimi.com/favicon.ico
@@ -1125,6 +1153,18 @@ dailyAI_tool:
     description: "在本地或云端运行开源大模型的工具，支持 macOS、Windows、Linux，一条命令即可启动模型。 · 2026-11-13 收录"
 
 dailyAI_model:
+  - name: cactus-compute/cactus
+    url: https://github.com/cactus-compute/cactus
+    img: https://github.com/favicon.ico
+    description: "面向消费级设备的轻量端侧推理库，体积不足 50MB，本地运行智能体、语音与视觉任务，无需云端。 · 2026-11-21 收录"
+  - name: higurashi-ai/Haru
+    url: https://github.com/higurashi-ai/Haru
+    img: https://github.com/favicon.ico
+    description: "低延迟多语言全双工语音对话模型，可边听边说，以 133 毫秒分块连续生成口语回应。 · 2026-11-21 收录"
+  - name: huawei-csl/MACaQ
+    url: https://github.com/huawei-csl/MACaQ
+    img: https://github.com/favicon.ico
+    description: "华为开源的模型无关量化工具，面向 GGUF 与本地推理，可量化并运行文本、图像、视频与音频模型。 · 2026-11-21 收录"
   - name: mw00/project-maya
     url: https://github.com/mw00/project-maya
     img: https://github.com/favicon.ico
