@@ -6,8 +6,22 @@
     <description>cyberMap 每日核验收录的 AI 开源项目，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Sat, 21 Nov 2026 09:46:43 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 09:57:51 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 开源项目 · 2026-11-22（7 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-22</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-22</guid>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 +0800</pubDate>
+      <description>ag-ui-protocol/ag-ui［开源项目］Agent-User Interaction 协议，为 AI 智能体与前端应用提供标准化的事件交互与状态同步接口。 — https://github.com/ag-ui-protocol/ag-ui
+ChromeDevTools/chrome-devtools-mcp［开源项目］把 Chrome 开发者工具通过 MCP 暴露给编码智能体，支持页面调试、检查与交互自动化。 — https://github.com/ChromeDevTools/chrome-devtools-mcp
+NVIDIA/SkillEvaluator［开源项目］英伟达开源的多层评估框架，用质量门槛与安全扫描检验 AI 智能体技能与插件。 — https://github.com/NVIDIA/SkillEvaluator
+Tencent/LoopForge［开源项目］腾讯开源的自托管编码智能体交付工作流，编排 CodeBuddy、Codex 等并支持人工审批。 — https://github.com/Tencent/LoopForge
+eliasbiondo/antirion［开源项目］开源 AI/LLM 网关，单文件内置控制台，统一路由、限流与观测多家大模型服务调用。 — https://github.com/eliasbiondo/antirion
+dream-num/univer［开源项目］AI 办公 SDK，为应用嵌入文档编辑、表格计算与多人协作能力，构建自研 AI Office。 — https://github.com/dream-num/univer
+ZhuLinsen/daily_stock_analysis［开源项目］LLM 驱动的多市场股票智能分析系统，聚合行情与新闻、生成决策看板并支持定时推送。 — https://github.com/ZhuLinsen/daily_stock_analysis</description>
+      <category>开源项目</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 开源项目 · 2026-11-21（5 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-21</link>

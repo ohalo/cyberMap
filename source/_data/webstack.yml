@@ -913,6 +913,34 @@ likeGPT:
     description: 填写你最喜欢使用的AI地址
 
 dailyAI_oss:
+  - name: ag-ui-protocol/ag-ui
+    url: https://github.com/ag-ui-protocol/ag-ui
+    img: https://github.com/favicon.ico
+    description: "Agent-User Interaction 协议，为 AI 智能体与前端应用提供标准化的事件交互与状态同步接口。 · 2026-11-22 收录"
+  - name: ChromeDevTools/chrome-devtools-mcp
+    url: https://github.com/ChromeDevTools/chrome-devtools-mcp
+    img: https://github.com/favicon.ico
+    description: "把 Chrome 开发者工具通过 MCP 暴露给编码智能体，支持页面调试、检查与交互自动化。 · 2026-11-22 收录"
+  - name: NVIDIA/SkillEvaluator
+    url: https://github.com/NVIDIA/SkillEvaluator
+    img: https://github.com/favicon.ico
+    description: "英伟达开源的多层评估框架，用质量门槛与安全扫描检验 AI 智能体技能与插件。 · 2026-11-22 收录"
+  - name: Tencent/LoopForge
+    url: https://github.com/Tencent/LoopForge
+    img: https://github.com/favicon.ico
+    description: "腾讯开源的自托管编码智能体交付工作流，编排 CodeBuddy、Codex 等并支持人工审批。 · 2026-11-22 收录"
+  - name: eliasbiondo/antirion
+    url: https://github.com/eliasbiondo/antirion
+    img: https://github.com/favicon.ico
+    description: "开源 AI/LLM 网关，单文件内置控制台，统一路由、限流与观测多家大模型服务调用。 · 2026-11-22 收录"
+  - name: dream-num/univer
+    url: https://github.com/dream-num/univer
+    img: https://github.com/favicon.ico
+    description: "AI 办公 SDK，为应用嵌入文档编辑、表格计算与多人协作能力，构建自研 AI Office。 · 2026-11-22 收录"
+  - name: ZhuLinsen/daily_stock_analysis
+    url: https://github.com/ZhuLinsen/daily_stock_analysis
+    img: https://github.com/favicon.ico
+    description: "LLM 驱动的多市场股票智能分析系统，聚合行情与新闻、生成决策看板并支持定时推送。 · 2026-11-22 收录"
   - name: deepseek-ai/dsh-superagent-prototype
     url: https://github.com/deepseek-ai/dsh-superagent-prototype
     img: https://github.com/favicon.ico
@@ -1153,6 +1181,18 @@ dailyAI_tool:
     description: "在本地或云端运行开源大模型的工具，支持 macOS、Windows、Linux，一条命令即可启动模型。 · 2026-11-13 收录"
 
 dailyAI_model:
+  - name: microsoft/VibeVoice
+    url: https://github.com/microsoft/VibeVoice
+    img: https://github.com/favicon.ico
+    description: "微软开源的前沿语音 AI 模型，面向高质量语音生成与实时语音交互场景。 · 2026-11-22 收录"
+  - name: Interactive-Active-AI/NextTransformer
+    url: https://github.com/Interactive-Active-AI/NextTransformer
+    img: https://github.com/favicon.ico
+    description: "面向下一代 Transformer 与大模型的开源框架，提供算力对齐基准与架构自主研究能力。 · 2026-11-22 收录"
+  - name: algorithmicsuperintelligence/optillm
+    url: https://github.com/algorithmicsuperintelligence/optillm
+    img: https://github.com/favicon.ico
+    description: "LLM 推理优化代理，通过多种提示与缓存策略降低大模型调用成本并提升响应效率。 · 2026-11-22 收录"
   - name: cactus-compute/cactus
     url: https://github.com/cactus-compute/cactus
     img: https://github.com/favicon.ico

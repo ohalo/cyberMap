@@ -79,7 +79,7 @@
       "name": "社区与问卷"
     },
     {
-      "count": 44,
+      "count": 51,
       "group": "每日 AI 新发现",
       "key": "dailyAI_oss",
       "name": "开源项目"
@@ -91,7 +91,7 @@
       "name": "工具官网"
     },
     {
-      "count": 12,
+      "count": 15,
       "group": "每日 AI 新发现",
       "key": "dailyAI_model",
       "name": "模型框架"
@@ -113,8 +113,8 @@
     "categories": 18,
     "groups": 5,
     "health_checked": 44,
-    "sites": 243,
-    "verified": 72
+    "sites": 253,
+    "verified": 82
   },
   "group_index": [
     {
@@ -154,7 +154,7 @@
         "dailyAI_tool",
         "dailyAI_model"
       ],
-      "count": 71,
+      "count": 81,
       "name": "每日 AI 新发现"
     },
     {
@@ -2765,6 +2765,156 @@
     {
       "category": "dailyAI_oss",
       "category_name": "开源项目",
+      "date": "2026-11-22",
+      "description": "Agent-User Interaction 协议，为 AI 智能体与前端应用提供标准化的事件交互与状态同步接口。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "ag-ui-protocol/ag-ui",
+      "tags": [
+        "前端 UI"
+      ],
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-22T09:52:57+08:00",
+        "date": "2026-11-22",
+        "http_status": 0,
+        "stars": 21026
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
+      "date": "2026-11-22",
+      "description": "把 Chrome 开发者工具通过 MCP 暴露给编码智能体，支持页面调试、检查与交互自动化。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "ChromeDevTools/chrome-devtools-mcp",
+      "tags": [
+        "MCP",
+        "代码开发"
+      ],
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-22T09:53:12+08:00",
+        "date": "2026-11-22",
+        "http_status": 0,
+        "stars": 58699
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
+      "date": "2026-11-22",
+      "description": "英伟达开源的多层评估框架，用质量门槛与安全扫描检验 AI 智能体技能与插件。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "NVIDIA/SkillEvaluator",
+      "tags": [
+        "安全审计",
+        "技能生态"
+      ],
+      "url": "https://github.com/NVIDIA/SkillEvaluator",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-22T09:53:26+08:00",
+        "date": "2026-11-22",
+        "http_status": 0,
+        "stars": 4333
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
+      "date": "2026-11-22",
+      "description": "腾讯开源的自托管编码智能体交付工作流，编排 CodeBuddy、Codex 等并支持人工审批。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "Tencent/LoopForge",
+      "tags": [
+        "多智能体"
+      ],
+      "url": "https://github.com/Tencent/LoopForge",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-22T09:53:55+08:00",
+        "date": "2026-11-22",
+        "http_status": 0,
+        "stars": 5523
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
+      "date": "2026-11-22",
+      "description": "开源 AI/LLM 网关，单文件内置控制台，统一路由、限流与观测多家大模型服务调用。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "eliasbiondo/antirion",
+      "tags": [
+        "推理引擎"
+      ],
+      "url": "https://github.com/eliasbiondo/antirion",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-22T09:55:22+08:00",
+        "date": "2026-11-22",
+        "http_status": 0,
+        "stars": 429
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
+      "date": "2026-11-22",
+      "description": "AI 办公 SDK，为应用嵌入文档编辑、表格计算与多人协作能力，构建自研 AI Office。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "dream-num/univer",
+      "tags": [
+        "办公文档",
+        "代码开发"
+      ],
+      "url": "https://github.com/dream-num/univer",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-22T09:56:34+08:00",
+        "date": "2026-11-22",
+        "http_status": 0,
+        "stars": 31105
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
+      "date": "2026-11-22",
+      "description": "LLM 驱动的多市场股票智能分析系统，聚合行情与新闻、生成决策看板并支持定时推送。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "ZhuLinsen/daily_stock_analysis",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-22T09:56:48+08:00",
+        "date": "2026-11-22",
+        "http_status": 0,
+        "stars": 73639
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
       "date": "2026-11-21",
       "description": "DeepSeek 开源的自主智能体原型，采用 Router+Worker 双层架构，让编码 Agent 自行拆解任务、发现缺陷并提交修复 PR。",
       "group": "每日 AI 新发现",
@@ -4015,6 +4165,69 @@
         "date": "2026-11-13",
         "http_status": 200,
         "stars": null
+      }
+    },
+    {
+      "category": "dailyAI_model",
+      "category_name": "模型框架",
+      "date": "2026-11-22",
+      "description": "微软开源的前沿语音 AI 模型，面向高质量语音生成与实时语音交互场景。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "microsoft/VibeVoice",
+      "tags": [
+        "语音"
+      ],
+      "url": "https://github.com/microsoft/VibeVoice",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-22T09:55:36+08:00",
+        "date": "2026-11-22",
+        "http_status": 0,
+        "stars": 57472
+      }
+    },
+    {
+      "category": "dailyAI_model",
+      "category_name": "模型框架",
+      "date": "2026-11-22",
+      "description": "面向下一代 Transformer 与大模型的开源框架，提供算力对齐基准与架构自主研究能力。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "Interactive-Active-AI/NextTransformer",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://github.com/Interactive-Active-AI/NextTransformer",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-22T09:54:24+08:00",
+        "date": "2026-11-22",
+        "http_status": 0,
+        "stars": 489
+      }
+    },
+    {
+      "category": "dailyAI_model",
+      "category_name": "模型框架",
+      "date": "2026-11-22",
+      "description": "LLM 推理优化代理，通过多种提示与缓存策略降低大模型调用成本并提升响应效率。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "algorithmicsuperintelligence/optillm",
+      "tags": [
+        "推理引擎"
+      ],
+      "url": "https://github.com/algorithmicsuperintelligence/optillm",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-22T09:56:20+08:00",
+        "date": "2026-11-22",
+        "http_status": 0,
+        "stars": 4344
       }
     },
     {

@@ -220,6 +220,25 @@
         }
       ],
       "review": 1
+    },
+    "2026-11-22": {
+      "added": 10,
+      "checked": 18,
+      "fail": 1,
+      "pass": 16,
+      "rejected": [
+        {
+          "reason": "GitHub 网页经本机代理不可达；仓库真实性由 GitHub API 元数据核验；GitHub stars < 200，需人工判断价值",
+          "url": "https://github.com/askie/grix",
+          "verdict": "review"
+        },
+        {
+          "reason": "站点不可达：ConnectTimeout: HTTPSConnectionPool(host='scrapegraphai.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='scrapegraphai.com', port=443) at 0x107529950>, 'Connection to scrapegraphai.com timed out. (connect timeout=14)'))；页面与仓库元数据中未检出 AI 相关性关键词",
+          "url": "https://scrapegraphai.com",
+          "verdict": "fail"
+        }
+      ],
+      "review": 1
     }
   },
   "evidence": {
@@ -314,6 +333,23 @@
       "title": "GitHub - 0sec-labs/0security: Software infrastructure to build and deploy sovereign, persistent AI security agents that continuously find, prove and fix security risks. Open source",
       "verdict": "pass"
     },
+    "github.com/0xplaygrounds/rig": {
+      "ai_hits": 4,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "generative",
+        "llm"
+      ],
+      "checked_at": "2026-11-22T09:54:53+08:00",
+      "date": "2026-11-22",
+      "http_status": 0,
+      "license": "MIT",
+      "pushed_at": "2026-11-20T21:28:51Z",
+      "stars": 9214,
+      "title": "",
+      "verdict": "pass"
+    },
     "github.com/aaif-goose/goose": {
       "ai_hits": 3,
       "ai_keywords": [
@@ -345,6 +381,21 @@
       "title": "",
       "verdict": "pass"
     },
+    "github.com/ag-ui-protocol/ag-ui": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-22T09:52:57+08:00",
+      "date": "2026-11-22",
+      "http_status": 0,
+      "license": "MIT",
+      "pushed_at": "2026-11-21T18:51:48Z",
+      "stars": 21026,
+      "title": "",
+      "verdict": "pass"
+    },
     "github.com/agentes-chat/agentes-chat": {
       "ai_hits": 5,
       "ai_keywords": [
@@ -361,6 +412,23 @@
       "pushed_at": "2026-11-21T01:41:53Z",
       "stars": 1853,
       "title": "GitHub - agentes-chat/agentes-chat: Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex,",
+      "verdict": "pass"
+    },
+    "github.com/algorithmicsuperintelligence/optillm": {
+      "ai_hits": 4,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "inference",
+        "llm"
+      ],
+      "checked_at": "2026-11-22T09:56:20+08:00",
+      "date": "2026-11-22",
+      "http_status": 0,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-16T09:30:10Z",
+      "stars": 4344,
+      "title": "",
       "verdict": "pass"
     },
     "github.com/alibaba/open-code-review": {
@@ -414,6 +482,21 @@
       "pushed_at": "2026-11-17T00:48:37Z",
       "stars": 93610,
       "title": "GitHub - OpenHands/OpenHands: 🙌 OpenHands: AI-Driven Development · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/anomalyco/browse": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-22T09:54:39+08:00",
+      "date": "2026-11-22",
+      "http_status": 0,
+      "license": "MIT",
+      "pushed_at": "2026-11-20T12:12:03Z",
+      "stars": 972,
+      "title": "",
       "verdict": "pass"
     },
     "github.com/anthropics/knowledge-work-plugins": {
@@ -476,6 +559,21 @@
       "pushed_at": "2026-11-18T02:19:11Z",
       "stars": 1509,
       "title": "GitHub - autonomous-ai/openharness: The ultimate harness for coding agents and beyond. All your agents. All your machines. One command center. Start with code, then follow your cur",
+      "verdict": "pass"
+    },
+    "github.com/backnotprop/plannotator": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "agent",
+        "claude"
+      ],
+      "checked_at": "2026-11-22T09:53:41+08:00",
+      "date": "2026-11-22",
+      "http_status": 0,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-22T01:53:22Z",
+      "stars": 14178,
+      "title": "",
       "verdict": "pass"
     },
     "github.com/beenuar/aisoc": {
@@ -595,6 +693,20 @@
       "title": "GitHub - ChesterRa/cccc: Coordinate your coding agents like a group chat — read receipts, delivery tracking, and remote ops from your phone. One pip install, zero infrastructure. A",
       "verdict": "pass"
     },
+    "github.com/chromedevtools/chrome-devtools-mcp": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "agent"
+      ],
+      "checked_at": "2026-11-22T09:53:12+08:00",
+      "date": "2026-11-22",
+      "http_status": 0,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-22T01:06:14Z",
+      "stars": 58699,
+      "title": "",
+      "verdict": "pass"
+    },
     "github.com/cloudflare/security-audit-skill": {
       "ai_hits": 1,
       "ai_keywords": [
@@ -701,6 +813,21 @@
       "title": "",
       "verdict": "pass"
     },
+    "github.com/dream-num/univer": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-22T09:56:34+08:00",
+      "date": "2026-11-22",
+      "http_status": 0,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-21T18:29:51Z",
+      "stars": 31105,
+      "title": "",
+      "verdict": "pass"
+    },
     "github.com/duixcom/duix-avatar": {
       "ai_hits": 2,
       "ai_keywords": [
@@ -727,6 +854,23 @@
       "license": "Apache-2.0",
       "pushed_at": "2026-11-19T16:56:09Z",
       "stars": 12099,
+      "title": "",
+      "verdict": "pass"
+    },
+    "github.com/eliasbiondo/antirion": {
+      "ai_hits": 4,
+      "ai_keywords": [
+        "\\bai\\b",
+        "anthropic",
+        "llm",
+        "openai"
+      ],
+      "checked_at": "2026-11-22T09:55:22+08:00",
+      "date": "2026-11-22",
+      "http_status": 0,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-21T11:33:43Z",
+      "stars": 429,
       "title": "",
       "verdict": "pass"
     },
@@ -818,6 +962,21 @@
       "license": "Apache-2.0",
       "pushed_at": "2026-11-20T01:12:42Z",
       "stars": 108945,
+      "title": "",
+      "verdict": "pass"
+    },
+    "github.com/google-labs-code/stitch-skills": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "agent",
+        "claude"
+      ],
+      "checked_at": "2026-11-22T09:54:10+08:00",
+      "date": "2026-11-22",
+      "http_status": 0,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-20T18:08:01Z",
+      "stars": 11462,
       "title": "",
       "verdict": "pass"
     },
@@ -1062,6 +1221,22 @@
       "title": "GitHub - infiniflow/ragflow: RAGFlow is an agent-native database: a Retrieval-Augmented Generation (RAG) engine that grew into context infrastructure. · GitHub",
       "verdict": "pass"
     },
+    "github.com/interactive-active-ai/nexttransformer": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "llm",
+        "transformer"
+      ],
+      "checked_at": "2026-11-22T09:54:24+08:00",
+      "date": "2026-11-22",
+      "http_status": 0,
+      "license": "MIT",
+      "pushed_at": "2026-11-20T06:15:53Z",
+      "stars": 489,
+      "title": "",
+      "verdict": "pass"
+    },
     "github.com/jingyaogong/minimind": {
       "ai_hits": 1,
       "ai_keywords": [
@@ -1119,6 +1294,22 @@
       "pushed_at": "2026-11-15T06:01:36Z",
       "stars": 1626,
       "title": "GitHub - kaushikb11/awesome-llm-agents: A curated list of awesome LLM agents frameworks. · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/kiwifs/kiwifs": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "llm"
+      ],
+      "checked_at": "2026-11-22T09:56:05+08:00",
+      "date": "2026-11-22",
+      "http_status": 0,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-11-20T01:06:48Z",
+      "stars": 852,
+      "title": "",
       "verdict": "pass"
     },
     "github.com/langflow-ai/langflow": {
@@ -1201,6 +1392,20 @@
       "pushed_at": "2026-11-18T02:31:08Z",
       "stars": 30196,
       "title": "GitHub - meta/astryx: An open source design system that&#39;s fully customizable and agent ready · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/microsoft/vibevoice": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "\\bai\\b"
+      ],
+      "checked_at": "2026-11-22T09:55:36+08:00",
+      "date": "2026-11-22",
+      "http_status": 0,
+      "license": "MIT",
+      "pushed_at": "2026-10-08T05:29:29Z",
+      "stars": 57472,
+      "title": "",
       "verdict": "pass"
     },
     "github.com/milind-soni/openmausbot": {
@@ -1355,6 +1560,22 @@
       "title": "GitHub - NVIDIA/auto-ontology: Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better ",
       "verdict": "pass"
     },
+    "github.com/nvidia/skillevaluator": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude"
+      ],
+      "checked_at": "2026-11-22T09:53:26+08:00",
+      "date": "2026-11-22",
+      "http_status": 0,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-21T20:38:04Z",
+      "stars": 4333,
+      "title": "",
+      "verdict": "pass"
+    },
     "github.com/obra/superpowers": {
       "ai_hits": 2,
       "ai_keywords": [
@@ -1401,6 +1622,22 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-11-20T03:05:33Z",
       "stars": 33469,
+      "title": "",
+      "verdict": "pass"
+    },
+    "github.com/open-compass/opencompass": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "anthropic",
+        "llm",
+        "openai"
+      ],
+      "checked_at": "2026-11-22T09:55:07+08:00",
+      "date": "2026-11-22",
+      "http_status": 0,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-18T08:16:49Z",
+      "stars": 7610,
       "title": "",
       "verdict": "pass"
     },
@@ -1634,6 +1871,22 @@
       "license": "MIT",
       "pushed_at": "2026-11-18T13:20:28Z",
       "stars": 10562,
+      "title": "",
+      "verdict": "pass"
+    },
+    "github.com/tencent/loopforge": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude"
+      ],
+      "checked_at": "2026-11-22T09:53:55+08:00",
+      "date": "2026-11-22",
+      "http_status": 0,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-11-21T17:18:16Z",
+      "stars": 5523,
       "title": "",
       "verdict": "pass"
     },
@@ -1888,6 +2141,23 @@
       "title": "GitHub - yjid/kensaku: Search inside documents, code, and even screenshots - instantly and locally. A free, open-source file launcher with OCR, semantic search, and MCP agent acces",
       "verdict": "pass"
     },
+    "github.com/zhulinsen/daily_stock_analysis": {
+      "ai_hits": 4,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "aigc",
+        "llm"
+      ],
+      "checked_at": "2026-11-22T09:56:48+08:00",
+      "date": "2026-11-22",
+      "http_status": 0,
+      "license": "MIT",
+      "pushed_at": "2026-11-21T17:45:27Z",
+      "stars": 73639,
+      "title": "",
+      "verdict": "pass"
+    },
     "glbgpt.com/": {
       "ai_hits": 4,
       "ai_keywords": [
@@ -2056,13 +2326,13 @@
   "schema": 1,
   "source": "cybermap-daily/state/reports/verify-YYYY-MM-DD.json",
   "totals": {
-    "added": 71,
-    "checked": 145,
-    "days": 9,
-    "fail": 11,
-    "pass": 117,
-    "review": 17,
-    "verified_sites": 115
+    "added": 81,
+    "checked": 163,
+    "days": 10,
+    "fail": 12,
+    "pass": 133,
+    "review": 18,
+    "verified_sites": 131
   },
   "warnings": []
 }

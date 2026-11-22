@@ -6,8 +6,18 @@
     <description>cyberMap 每日核验收录的 AI 模型框架，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Sat, 21 Nov 2026 09:46:43 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 09:57:51 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 模型框架 · 2026-11-22（3 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-22</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_model-2026-11-22</guid>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 +0800</pubDate>
+      <description>microsoft/VibeVoice［模型框架］微软开源的前沿语音 AI 模型，面向高质量语音生成与实时语音交互场景。 — https://github.com/microsoft/VibeVoice
+Interactive-Active-AI/NextTransformer［模型框架］面向下一代 Transformer 与大模型的开源框架，提供算力对齐基准与架构自主研究能力。 — https://github.com/Interactive-Active-AI/NextTransformer
+algorithmicsuperintelligence/optillm［模型框架］LLM 推理优化代理，通过多种提示与缓存策略降低大模型调用成本并提升响应效率。 — https://github.com/algorithmicsuperintelligence/optillm</description>
+      <category>模型框架</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 模型框架 · 2026-11-21（3 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-21</link>

@@ -207,6 +207,13 @@
     </outline>
     <outline text="每日 AI 新发现">
       <outline text="开源项目" title="开源项目">
+        <outline type="link" text="ag-ui-protocol/ag-ui" title="ag-ui-protocol/ag-ui" url="https://github.com/ag-ui-protocol/ag-ui" htmlUrl="https://github.com/ag-ui-protocol/ag-ui" description="Agent-User Interaction 协议，为 AI 智能体与前端应用提供标准化的事件交互与状态同步接口。" />
+        <outline type="link" text="ChromeDevTools/chrome-devtools-mcp" title="ChromeDevTools/chrome-devtools-mcp" url="https://github.com/ChromeDevTools/chrome-devtools-mcp" htmlUrl="https://github.com/ChromeDevTools/chrome-devtools-mcp" description="把 Chrome 开发者工具通过 MCP 暴露给编码智能体，支持页面调试、检查与交互自动化。" />
+        <outline type="link" text="NVIDIA/SkillEvaluator" title="NVIDIA/SkillEvaluator" url="https://github.com/NVIDIA/SkillEvaluator" htmlUrl="https://github.com/NVIDIA/SkillEvaluator" description="英伟达开源的多层评估框架，用质量门槛与安全扫描检验 AI 智能体技能与插件。" />
+        <outline type="link" text="Tencent/LoopForge" title="Tencent/LoopForge" url="https://github.com/Tencent/LoopForge" htmlUrl="https://github.com/Tencent/LoopForge" description="腾讯开源的自托管编码智能体交付工作流，编排 CodeBuddy、Codex 等并支持人工审批。" />
+        <outline type="link" text="eliasbiondo/antirion" title="eliasbiondo/antirion" url="https://github.com/eliasbiondo/antirion" htmlUrl="https://github.com/eliasbiondo/antirion" description="开源 AI/LLM 网关，单文件内置控制台，统一路由、限流与观测多家大模型服务调用。" />
+        <outline type="link" text="dream-num/univer" title="dream-num/univer" url="https://github.com/dream-num/univer" htmlUrl="https://github.com/dream-num/univer" description="AI 办公 SDK，为应用嵌入文档编辑、表格计算与多人协作能力，构建自研 AI Office。" />
+        <outline type="link" text="ZhuLinsen/daily_stock_analysis" title="ZhuLinsen/daily_stock_analysis" url="https://github.com/ZhuLinsen/daily_stock_analysis" htmlUrl="https://github.com/ZhuLinsen/daily_stock_analysis" description="LLM 驱动的多市场股票智能分析系统，聚合行情与新闻、生成决策看板并支持定时推送。" />
         <outline type="link" text="deepseek-ai/dsh-superagent-prototype" title="deepseek-ai/dsh-superagent-prototype" url="https://github.com/deepseek-ai/dsh-superagent-prototype" htmlUrl="https://github.com/deepseek-ai/dsh-superagent-prototype" description="DeepSeek 开源的自主智能体原型，采用 Router+Worker 双层架构，让编码 Agent 自行拆解任务、发现缺陷并提交修复 PR。" />
         <outline type="link" text="alibaba/zvec" title="alibaba/zvec" url="https://github.com/alibaba/zvec" htmlUrl="https://github.com/alibaba/zvec" description="阿里开源的轻量级进程内向量数据库，C++ 实现，直接嵌入应用即可做高速向量检索，面向 RAG 与边缘场景。" />
         <outline type="link" text="max-sixty/worktrunk" title="max-sixty/worktrunk" url="https://github.com/max-sixty/worktrunk" htmlUrl="https://github.com/max-sixty/worktrunk" description="为并行 AI 编码智能体设计的 Git worktree 管理命令行工具，快速创建、切换与清理隔离工作区。" />
@@ -270,6 +277,9 @@
         <outline type="link" text="Ollama" title="Ollama" url="https://ollama.com" htmlUrl="https://ollama.com" description="在本地或云端运行开源大模型的工具，支持 macOS、Windows、Linux，一条命令即可启动模型。" />
       </outline>
       <outline text="模型框架" title="模型框架">
+        <outline type="link" text="microsoft/VibeVoice" title="microsoft/VibeVoice" url="https://github.com/microsoft/VibeVoice" htmlUrl="https://github.com/microsoft/VibeVoice" description="微软开源的前沿语音 AI 模型，面向高质量语音生成与实时语音交互场景。" />
+        <outline type="link" text="Interactive-Active-AI/NextTransformer" title="Interactive-Active-AI/NextTransformer" url="https://github.com/Interactive-Active-AI/NextTransformer" htmlUrl="https://github.com/Interactive-Active-AI/NextTransformer" description="面向下一代 Transformer 与大模型的开源框架，提供算力对齐基准与架构自主研究能力。" />
+        <outline type="link" text="algorithmicsuperintelligence/optillm" title="algorithmicsuperintelligence/optillm" url="https://github.com/algorithmicsuperintelligence/optillm" htmlUrl="https://github.com/algorithmicsuperintelligence/optillm" description="LLM 推理优化代理，通过多种提示与缓存策略降低大模型调用成本并提升响应效率。" />
         <outline type="link" text="cactus-compute/cactus" title="cactus-compute/cactus" url="https://github.com/cactus-compute/cactus" htmlUrl="https://github.com/cactus-compute/cactus" description="面向消费级设备的轻量端侧推理库，体积不足 50MB，本地运行智能体、语音与视觉任务，无需云端。" />
         <outline type="link" text="higurashi-ai/Haru" title="higurashi-ai/Haru" url="https://github.com/higurashi-ai/Haru" htmlUrl="https://github.com/higurashi-ai/Haru" description="低延迟多语言全双工语音对话模型，可边听边说，以 133 毫秒分块连续生成口语回应。" />
         <outline type="link" text="huawei-csl/MACaQ" title="huawei-csl/MACaQ" url="https://github.com/huawei-csl/MACaQ" htmlUrl="https://github.com/huawei-csl/MACaQ" description="华为开源的模型无关量化工具，面向 GGUF 与本地推理，可量化并运行文本、图像、视频与音频模型。" />
