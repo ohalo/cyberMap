@@ -305,6 +305,53 @@ body.night .dy-tagbtn.active{color:#0b1020}
 .dy-hmetric.unverified i{background:var(--dy-warn)}
 .dy-healthbar-time{margin-left:auto;font-size:11px;color:var(--dy-muted)}
 .dy-healthbar-note{flex-basis:100%;font-size:11px;color:var(--dy-muted);line-height:1.6}
+.dy-watch{
+  margin:14px 0 4px;padding:14px 18px;border-radius:14px;
+  border:1px solid var(--dy-border);background:var(--dy-surface);
+  box-shadow:var(--dy-shadow);font-size:12.5px;color:var(--dy-soft);
+}
+.dy-watch-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.dy-watch-title{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:13.5px;font-weight:750;color:var(--dy-text)
+}
+.dy-watch-dot{
+  width:8px;height:8px;border-radius:50%;display:inline-block;
+  background:var(--dy-accent-2);box-shadow:0 0 0 3px rgba(6,182,212,.16)
+}
+.dy-watch-metrics{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.dy-wmetric{
+  padding:3px 9px;border-radius:8px;font-size:11.5px;
+  background:var(--dy-chip);color:var(--dy-soft)
+}
+.dy-wmetric b{color:var(--dy-accent);font-weight:750}
+.dy-watch-time{margin-left:auto;font-size:11px;color:var(--dy-muted)}
+.dy-watch-list{
+  margin-top:11px;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:7px
+}
+.dy-witem{
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+  padding:8px 11px;border-radius:9px;text-decoration:none;
+  border:1px solid var(--dy-border);background:var(--dy-icon-bg);
+  transition:border-color .18s,transform .18s
+}
+.dy-witem:hover{border-color:var(--dy-accent-2);transform:translateY(-1px)}
+.dy-witem-name{
+  font-weight:650;color:var(--dy-text);font-size:12px;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:150px
+}
+.dy-witem-badges{display:inline-flex;gap:5px;flex-wrap:wrap}
+.dy-wtag{
+  padding:2px 7px;border-radius:6px;font-size:10.5px;font-weight:700;white-space:nowrap
+}
+.dy-wtag.push{color:var(--dy-accent);background:var(--dy-chip)}
+.dy-wtag.star{color:var(--dy-good);background:var(--dy-good-bg)}
+.dy-witem-date{margin-left:auto;font-size:10.5px;color:var(--dy-muted)}
+.dy-watch-empty{
+  margin-top:11px;padding:10px 12px;border-radius:9px;
+  background:var(--dy-icon-bg);font-size:11.5px;color:var(--dy-muted);line-height:1.6
+}
+.dy-watch-note{margin-top:10px;font-size:11px;color:var(--dy-muted);line-height:1.6}
 .dy-footer{
   margin-top:46px;padding-top:20px;border-top:1px solid var(--dy-border);
   font-size:12px;color:var(--dy-muted);
@@ -340,10 +387,11 @@ body.night .dy-tagbtn.active{color:#0b1020}
 <div class="dy-stat"><span>累计收录</span><strong>81</strong></div>
 <div class="dy-stat"><span>每日期数</span><strong>10</strong></div>
 <div class="dy-stat"><span>最近更新</span><strong>2026-11-22</strong></div>
-<div class="dy-stat"><span>生成时间</span><strong>11-22 09:57</strong></div>
+<div class="dy-stat"><span>生成时间</span><strong>11-22 10:09</strong></div>
 </div></section>
 <section class="dy-receipt" aria-label="收录质量回执"><div class="dy-receipt-head"><span class="dy-receipt-title">收录质量回执</span><span class="dy-receipt-date">最近核验日 2026-11-22 · 每条均经 HTTP 实探、AI 相关性与去重校验</span></div><div class="dy-receipt-flow"><span class="dy-receipt-node ">候选 18</span><span class="dy-receipt-arrow">→</span><span class="dy-receipt-node ">通过 16</span><span class="dy-receipt-arrow">→</span><span class="dy-receipt-node ">复核 1</span><span class="dy-receipt-arrow">→</span><span class="dy-receipt-node ">淘汰 1</span><span class="dy-receipt-arrow">→</span><span class="dy-receipt-node ok">收录 10</span></div><div class="dy-receipt-meta">累计核验 <b>163</b> 个候选、通过 <b>133</b> 条、实际收录 <b>81</b> 个站点（收录率 50%）。「复核 / 淘汰」为经人工判断未收录的候选，不代表站点失效。完整证据数据：<a href="/daily/verify.json">/daily/verify.json</a>，每张卡片的徽章可悬停查看单条明细。</div></section>
 <section class="dy-healthbar" aria-label="站点健康度"><span class="dy-healthbar-title">站点健康度</span><span class="dy-healthbar-metrics"><span class="dy-hmetric ok"><i></i>持续在线 44</span><span class="dy-hmetric down"><i></i>疑似失效 0</span><span class="dy-hmetric unverified"><i></i>待核对 0</span></span><span class="dy-healthbar-time">复检 2026-11-19 10:19</span><span class="dy-healthbar-note">低频人工复检的结果，反映最近一次探测时的站点状态；「待核对」为本机网络策略不可判定（超时/代理/反爬），不代表站点失效。完整明细：<a href="/daily/health.json" style="color:var(--dy-accent);font-weight:650">/daily/health.json</a></span></section>
+<section class="dy-watch" aria-label="上游变更雷达"><div class="dy-watch-head"><span class="dy-watch-title"><i class="dy-watch-dot"></i>上游变更雷达</span><span class="dy-watch-metrics"><span class="dy-wmetric"><b>16</b>/66 项目</span><span class="dy-wmetric"><b>0</b> 项近期动态</span><span class="dy-wmetric">覆盖 24%</span></span><span class="dy-watch-time">更新 2026-11-22 10:04</span></div><div class="dy-watch-empty">正在建立基线：首次采集只记录各项目当前状态，从下一次起即可对比出「有新提交 / 涨星」等真实动态（不伪造变更）。</div><div class="dy-watch-note">每天对比已收录 GitHub 项目的 pushed_at 与 stars，只报确有变化的项；未变更的走 ETag 条件请求（不耗 API 配额）。另有 50 个项目因 GitHub 匿名 API 配额分批建立基线，将在后续每日收录中自动补齐。完整数据：<a href="/daily/updates.json" style="color:var(--dy-accent);font-weight:650">/daily/updates.json</a></div></section>
 <div class="dy-rssbar">
 <div>订阅每天的新收录 · 全部类型地址 <code>https://cybermap.halo26812.eu.org/daily/feed.xml</code>，也可按类型单独订阅（统一为 RSS 2.0）。</div>
 <div class="dy-feed-links"><span class="dy-flabel">订阅源</span><a class="dy-feed-chip" href="/daily/feed.xml" title="全部类型"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm0-6a15 15 0 0 1 15 15h-3A12 12 0 0 0 4 8V5zm1.8 12.2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg><span>全部</span></a><a class="dy-feed-chip" href="/daily/feed-oss.xml" title="只订阅开源项目"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm0-6a15 15 0 0 1 15 15h-3A12 12 0 0 0 4 8V5zm1.8 12.2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg><span>开源项目</span></a><a class="dy-feed-chip" href="/daily/feed-tool.xml" title="只订阅工具官网"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm0-6a15 15 0 0 1 15 15h-3A12 12 0 0 0 4 8V5zm1.8 12.2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg><span>工具官网</span></a><a class="dy-feed-chip" href="/daily/feed-model.xml" title="只订阅模型框架"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm0-6a15 15 0 0 1 15 15h-3A12 12 0 0 0 4 8V5zm1.8 12.2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg><span>模型框架</span></a>
@@ -393,7 +441,7 @@ body.night .dy-tagbtn.active{color:#0b1020}
 </div>
 <footer class="dy-footer">
 数据来源：<a href="https://cybermap.halo26812.eu.org/">cyberMap</a> 的 <code>dailyAI_*</code> 分类，每条收录前均经过 HTTP 实探、GitHub 元数据与 AI 相关性核验；徽章明细见 <a href="/daily/verify.json">收录质量回执数据</a>。日期取自描述尾注「· YYYY-MM-DD 收录」。
-<br>共 81 个站点、10 期（其中 81 条有明确日期）；最后生成于 2026-11-22 09:57 (UTC+8)。
+<br>共 81 个站点、10 期（其中 81 条有明确日期）；最后生成于 2026-11-22 10:09 (UTC+8)。
 </footer>
 </main>
 <script>

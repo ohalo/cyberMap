@@ -53,6 +53,7 @@ DATA_REL = Path("source/_data/webstack.yml")
 OUT_REL = Path("source/daily")
 VERIFY_REL = Path("source/daily/verify.json")
 HEALTH_REL = Path("source/daily/health.json")
+UPDATES_REL = Path("source/daily/updates.json")
 
 # 分类 -> (中文标签, 短名)。顺序决定同一天内卡片的展示顺序。
 CATEGORY_LABELS = OrderedDict([
@@ -399,6 +400,53 @@ body.night .dy-tagbtn.active{color:#0b1020}
 .dy-hmetric.unverified i{background:var(--dy-warn)}
 .dy-healthbar-time{margin-left:auto;font-size:11px;color:var(--dy-muted)}
 .dy-healthbar-note{flex-basis:100%;font-size:11px;color:var(--dy-muted);line-height:1.6}
+.dy-watch{
+  margin:14px 0 4px;padding:14px 18px;border-radius:14px;
+  border:1px solid var(--dy-border);background:var(--dy-surface);
+  box-shadow:var(--dy-shadow);font-size:12.5px;color:var(--dy-soft);
+}
+.dy-watch-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.dy-watch-title{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:13.5px;font-weight:750;color:var(--dy-text)
+}
+.dy-watch-dot{
+  width:8px;height:8px;border-radius:50%;display:inline-block;
+  background:var(--dy-accent-2);box-shadow:0 0 0 3px rgba(6,182,212,.16)
+}
+.dy-watch-metrics{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.dy-wmetric{
+  padding:3px 9px;border-radius:8px;font-size:11.5px;
+  background:var(--dy-chip);color:var(--dy-soft)
+}
+.dy-wmetric b{color:var(--dy-accent);font-weight:750}
+.dy-watch-time{margin-left:auto;font-size:11px;color:var(--dy-muted)}
+.dy-watch-list{
+  margin-top:11px;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:7px
+}
+.dy-witem{
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+  padding:8px 11px;border-radius:9px;text-decoration:none;
+  border:1px solid var(--dy-border);background:var(--dy-icon-bg);
+  transition:border-color .18s,transform .18s
+}
+.dy-witem:hover{border-color:var(--dy-accent-2);transform:translateY(-1px)}
+.dy-witem-name{
+  font-weight:650;color:var(--dy-text);font-size:12px;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:150px
+}
+.dy-witem-badges{display:inline-flex;gap:5px;flex-wrap:wrap}
+.dy-wtag{
+  padding:2px 7px;border-radius:6px;font-size:10.5px;font-weight:700;white-space:nowrap
+}
+.dy-wtag.push{color:var(--dy-accent);background:var(--dy-chip)}
+.dy-wtag.star{color:var(--dy-good);background:var(--dy-good-bg)}
+.dy-witem-date{margin-left:auto;font-size:10.5px;color:var(--dy-muted)}
+.dy-watch-empty{
+  margin-top:11px;padding:10px 12px;border-radius:9px;
+  background:var(--dy-icon-bg);font-size:11.5px;color:var(--dy-muted);line-height:1.6
+}
+.dy-watch-note{margin-top:10px;font-size:11px;color:var(--dy-muted);line-height:1.6}
 .dy-footer{
   margin-top:46px;padding-top:20px;border-top:1px solid var(--dy-border);
   font-size:12px;color:var(--dy-muted);
@@ -548,6 +596,19 @@ def load_health(path: Path) -> tuple[dict, list[str]]:
         return data, []
     except (OSError, json.JSONDecodeError, ValueError) as exc:
         return {}, [f"health.json 读取失败，已跳过健康模块：{exc}"]
+
+
+def load_updates(path: Path) -> tuple[dict, list[str]]:
+    """读取上游变更雷达数据。文件缺失/损坏时返回空数据（优雅降级，不显示雷达模块）。"""
+    if not path.is_file():
+        return {}, []
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(data, dict) or not isinstance(data.get("repos"), dict):
+            raise ValueError("updates.json 结构不完整")
+        return data, []
+    except (OSError, json.JSONDecodeError, ValueError) as exc:
+        return {}, [f"updates.json 读取失败，已跳过上游变更雷达：{exc}"]
 
 
 def load_entries(data_file: Path) -> tuple[list[dict], list[str]]:
@@ -714,6 +775,71 @@ def healthbar_html(health: dict) -> str:
     )
 
 
+def watchbar_html(updates: dict) -> str:
+    """页顶「上游变更雷达」：展示最近 7 天已收录 GitHub 项目的提交/star 动态。
+
+    与「站点健康度」正交：health 回答站是否还活着，本区块回答项目最近有没有更新。
+    冷启动（只建基线、recent 为空）时显示覆盖率与建立进度提示，不伪造变更。
+    """
+    if not updates:
+        return ""
+    summary = updates.get("summary") or {}
+    total = summary.get("total_repos") or 0
+    tracked = summary.get("tracked") or 0
+    if not total:
+        return ""
+    recent = updates.get("recent") or []
+    generated = (updates.get("generated_at") or "").replace("T", " ")[:16]
+    coverage = round(tracked / total * 100) if total else 0
+
+    metrics = (
+        f'<span class="dy-wmetric"><b>{tracked}</b>/{total} 项目</span>'
+        f'<span class="dy-wmetric"><b>{len(recent)}</b> 项近期动态</span>'
+        f'<span class="dy-wmetric">覆盖 {coverage}%</span>'
+    )
+
+    if recent:
+        rows = []
+        for r in recent:
+            badges = []
+            if r.get("has_push"):
+                badges.append('<span class="dy-wtag push">新提交</span>')
+            if r.get("star_delta"):
+                badges.append(f'<span class="dy-wtag star">+{r["star_delta"]} 星</span>')
+            if not badges:
+                continue
+            rows.append(
+                f'<a class="dy-witem" href="{esc(r.get("url") or "")}" '
+                'target="_blank" rel="noopener noreferrer">'
+                f'<span class="dy-witem-name">{esc(r.get("name") or "")}</span>'
+                f'<span class="dy-witem-badges">{"".join(badges)}</span>'
+                f'<span class="dy-witem-date">{esc(r.get("date") or "")}</span></a>'
+            )
+        listing = f'<div class="dy-watch-list">{"".join(rows)}</div>' if rows else ""
+    else:
+        listing = (
+            '<div class="dy-watch-empty">正在建立基线：首次采集只记录各项目当前状态，'
+            '从下一次起即可对比出「有新提交 / 涨星」等真实动态（不伪造变更）。</div>'
+        )
+
+    pending = summary.get("pending") or 0
+    note = (f'另有 {pending} 个项目因 GitHub 匿名 API 配额分批建立基线，将在后续每日收录中自动补齐。'
+            if pending else '')
+    return (
+        '<section class="dy-watch" aria-label="上游变更雷达">'
+        '<div class="dy-watch-head">'
+        '<span class="dy-watch-title"><i class="dy-watch-dot"></i>上游变更雷达</span>'
+        f'<span class="dy-watch-metrics">{metrics}</span>'
+        f'<span class="dy-watch-time">更新 {esc(generated)}</span>'
+        "</div>"
+        f"{listing}"
+        f'<div class="dy-watch-note">每天对比已收录 GitHub 项目的 pushed_at 与 stars，'
+        f'只报确有变化的项；未变更的走 ETag 条件请求（不耗 API 配额）。{note}'
+        '完整数据：<a href="/daily/updates.json" style="color:var(--dy-accent);font-weight:650">/daily/updates.json</a></div>'
+        "</section>"
+    )
+
+
 def knowledgebar_html(entries: list[dict]) -> str:
     """AI 发现知识库工具条：搜索框 + 方向标签云，筛选下方时间轴。
 
@@ -814,9 +940,11 @@ def card_html(item: dict, evidence: dict, health: dict | None = None) -> str:
 
 
 def build_html(entries: list[dict], days, undated, site_url: str, generated: datetime,
-               verify: dict | None = None, health: dict | None = None) -> str:
+               verify: dict | None = None, health: dict | None = None,
+               updates: dict | None = None) -> str:
     verify = verify or {}
     health = health or {}
+    updates = updates or {}
     evidence = verify.get("evidence") or {}
     health_sites = health.get("sites") or {}
     dated_count = sum(len(v) for _, v in days)
@@ -863,6 +991,7 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
         "</div></section>",
         receipt_html(verify, days),
         healthbar_html(health),
+        watchbar_html(updates),
         '<div class="dy-rssbar">',
         '<div>订阅每天的新收录 · 全部类型地址 <code>' + esc(f"{root}/daily/feed.xml") +
         '</code>，也可按类型单独订阅（统一为 RSS 2.0）。</div>',
@@ -1010,6 +1139,8 @@ def main() -> None:
     health, health_warnings = load_health(repo / HEALTH_REL)
     warnings += health_warnings
     health_map = health.get("sites") or {}
+    updates, update_warnings = load_updates(repo / UPDATES_REL)
+    warnings += update_warnings
     days, undated = group_by_day(entries)
     generated = datetime.now(CST)
     summary = {
@@ -1026,13 +1157,16 @@ def main() -> None:
         "health_checked": len(health_map),
         "health_down": sum(1 for r in health_map.values() if r.get("status") == "down"),
         "health_bar": bool(health.get("summary", {}).get("checked")),
+        "watch_tracked": (updates.get("summary") or {}).get("tracked", 0),
+        "watch_recent": len(updates.get("recent") or []),
+        "watch_bar": bool((updates.get("summary") or {}).get("total_repos")),
         "warnings": warnings,
     }
     if args.check:
         print(json.dumps({**summary, "check_only": True}, ensure_ascii=False, indent=2))
         return
 
-    html_text = build_html(entries, days, undated, site_url, generated, verify, health)
+    html_text = build_html(entries, days, undated, site_url, generated, verify, health, updates)
     # 混合全量流 + 三份分类流，共用同一套过滤/渲染逻辑
     feeds = {"feed.xml": build_feed(days, site_url, generated)}
     for category, (filename, _label) in CATEGORY_FEEDS.items():
@@ -1062,6 +1196,10 @@ def main() -> None:
             fail("index.html 缺少站点健康度汇总条，未写入")
         if 'class="dy-health ' not in html_text:
             fail("index.html 卡片缺少健康标记，未写入")
+    # 有上游变更数据时，雷达区块必须渲染出来（防止读到了但没用上）
+    if (updates.get("summary") or {}).get("total_repos"):
+        if 'class="dy-watch"' not in html_text:
+            fail("index.html 缺少上游变更雷达区块，未写入")
 
     index_path = out_dir / "index.html"
     try:
