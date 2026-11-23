@@ -207,6 +207,9 @@
     </outline>
     <outline text="每日 AI 新发现">
       <outline text="开源项目" title="开源项目">
+        <outline type="link" text="trpc-group/trpc-agent-go" title="trpc-group/trpc-agent-go" url="https://github.com/trpc-group/trpc-agent-go" htmlUrl="https://github.com/trpc-group/trpc-agent-go" description="腾讯开源的 Go 语言生产级智能体框架，支持图工作流、记忆、A2A 与 MCP 协议，内置评测与可观测能力。" />
+        <outline type="link" text="modelflare-ai/AnyModelBot" title="modelflare-ai/AnyModelBot" url="https://github.com/modelflare-ai/AnyModelBot" htmlUrl="https://github.com/modelflare-ai/AnyModelBot" description="本地优先的开源 AI 机器人，可接入 GPT、Claude、Gemini 等多种模型搭建专属对话助手。" />
+        <outline type="link" text="JosssphZhou/poki" title="JosssphZhou/poki" url="https://github.com/JosssphZhou/poki" htmlUrl="https://github.com/JosssphZhou/poki" description="开源 iPhone 智能体应用，能读取屏幕并自动点击滑动，通过本地 MCP 自动化操作 iOS 设备。" />
         <outline type="link" text="ag-ui-protocol/ag-ui" title="ag-ui-protocol/ag-ui" url="https://github.com/ag-ui-protocol/ag-ui" htmlUrl="https://github.com/ag-ui-protocol/ag-ui" description="Agent-User Interaction 协议，为 AI 智能体与前端应用提供标准化的事件交互与状态同步接口。" />
         <outline type="link" text="ChromeDevTools/chrome-devtools-mcp" title="ChromeDevTools/chrome-devtools-mcp" url="https://github.com/ChromeDevTools/chrome-devtools-mcp" htmlUrl="https://github.com/ChromeDevTools/chrome-devtools-mcp" description="把 Chrome 开发者工具通过 MCP 暴露给编码智能体，支持页面调试、检查与交互自动化。" />
         <outline type="link" text="NVIDIA/SkillEvaluator" title="NVIDIA/SkillEvaluator" url="https://github.com/NVIDIA/SkillEvaluator" htmlUrl="https://github.com/NVIDIA/SkillEvaluator" description="英伟达开源的多层评估框架，用质量门槛与安全扫描检验 AI 智能体技能与插件。" />
@@ -260,6 +263,8 @@
         <outline type="link" text="browser-use/browser-use" title="browser-use/browser-use" url="https://github.com/browser-use/browser-use" htmlUrl="https://github.com/browser-use/browser-use" description="开源浏览器智能体框架，让大模型在真实浏览器中自动点击、输入并完成任务，兼容任意 LLM。" />
       </outline>
       <outline text="工具官网" title="工具官网">
+        <outline type="link" text="SoftSync AI" title="SoftSync AI" url="https://softsync.ai" htmlUrl="https://softsync.ai" description="面向初创团队的 AI CRM，整合线索、会议纪要、邮件跟进与报表，支持 MCP 与 API 接入。" />
+        <outline type="link" text="Denizen Blu One" title="Denizen Blu One" url="https://denizenblu.com" htmlUrl="https://denizenblu.com" description="提供多模型统一订阅与 OpenAI 兼容 API 的在线 AI 服务，按年计费、不按 token 收费。" />
         <outline type="link" text="MerchantFloor" title="MerchantFloor" url="https://www.merchantfloor.com" htmlUrl="https://www.merchantfloor.com" description="面向小型 Shopify 商家的 AI 商品上架工具，上传产品图即可生成白底图、场景图与 SEO 描述并同步店铺。" />
         <outline type="link" text="GlobalGPT" title="GlobalGPT" url="https://glbgpt.com" htmlUrl="https://glbgpt.com" description="聚合 ChatGPT、Claude、Gemini 及图像视频模型的一站式订阅平台，用一个账号访问多款主流 AI 服务。" />
         <outline type="link" text="Kimi API 开放平台" title="Kimi API 开放平台" url="https://platform.kimi.com" htmlUrl="https://platform.kimi.com" description="月之暗面 Kimi 大模型开放平台，提供长上下文、多模态与工具调用的 API，供开发者构建智能对话、代码生成与视觉推理应用。" />

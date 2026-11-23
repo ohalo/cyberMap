@@ -913,6 +913,18 @@ likeGPT:
     description: 填写你最喜欢使用的AI地址
 
 dailyAI_oss:
+  - name: trpc-group/trpc-agent-go
+    url: https://github.com/trpc-group/trpc-agent-go
+    img: https://github.com/favicon.ico
+    description: "腾讯开源的 Go 语言生产级智能体框架，支持图工作流、记忆、A2A 与 MCP 协议，内置评测与可观测能力。 · 2026-11-23 收录"
+  - name: modelflare-ai/AnyModelBot
+    url: https://github.com/modelflare-ai/AnyModelBot
+    img: https://github.com/favicon.ico
+    description: "本地优先的开源 AI 机器人，可接入 GPT、Claude、Gemini 等多种模型搭建专属对话助手。 · 2026-11-23 收录"
+  - name: JosssphZhou/poki
+    url: https://github.com/JosssphZhou/poki
+    img: https://github.com/favicon.ico
+    description: "开源 iPhone 智能体应用，能读取屏幕并自动点击滑动，通过本地 MCP 自动化操作 iOS 设备。 · 2026-11-23 收录"
   - name: ag-ui-protocol/ag-ui
     url: https://github.com/ag-ui-protocol/ag-ui
     img: https://github.com/favicon.ico
@@ -1119,6 +1131,14 @@ dailyAI_oss:
     description: "开源浏览器智能体框架，让大模型在真实浏览器中自动点击、输入并完成任务，兼容任意 LLM。 · 2026-11-13 收录"
 
 dailyAI_tool:
+  - name: "SoftSync AI"
+    url: https://softsync.ai
+    img: https://softsync.ai/favicon.ico
+    description: "面向初创团队的 AI CRM，整合线索、会议纪要、邮件跟进与报表，支持 MCP 与 API 接入。 · 2026-11-23 收录"
+  - name: "Denizen Blu One"
+    url: https://denizenblu.com
+    img: https://denizenblu.com/favicon.ico
+    description: "提供多模型统一订阅与 OpenAI 兼容 API 的在线 AI 服务，按年计费、不按 token 收费。 · 2026-11-23 收录"
   - name: MerchantFloor
     url: https://www.merchantfloor.com
     img: https://cybermap.halo26812.eu.org/favicon.ico

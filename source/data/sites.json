@@ -79,13 +79,13 @@
       "name": "社区与问卷"
     },
     {
-      "count": 51,
+      "count": 54,
       "group": "每日 AI 新发现",
       "key": "dailyAI_oss",
       "name": "开源项目"
     },
     {
-      "count": 15,
+      "count": 17,
       "group": "每日 AI 新发现",
       "key": "dailyAI_tool",
       "name": "工具官网"
@@ -113,8 +113,8 @@
     "categories": 18,
     "groups": 5,
     "health_checked": 44,
-    "sites": 253,
-    "verified": 82
+    "sites": 258,
+    "verified": 87
   },
   "group_index": [
     {
@@ -154,7 +154,7 @@
         "dailyAI_tool",
         "dailyAI_model"
       ],
-      "count": 81,
+      "count": 86,
       "name": "每日 AI 新发现"
     },
     {
@@ -2765,6 +2765,71 @@
     {
       "category": "dailyAI_oss",
       "category_name": "开源项目",
+      "date": "2026-11-23",
+      "description": "腾讯开源的 Go 语言生产级智能体框架，支持图工作流、记忆、A2A 与 MCP 协议，内置评测与可观测能力。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "trpc-group/trpc-agent-go",
+      "tags": [
+        "记忆",
+        "MCP"
+      ],
+      "url": "https://github.com/trpc-group/trpc-agent-go",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-23T10:14:58+08:00",
+        "date": "2026-11-23",
+        "http_status": 200,
+        "stars": 1940
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
+      "date": "2026-11-23",
+      "description": "本地优先的开源 AI 机器人，可接入 GPT、Claude、Gemini 等多种模型搭建专属对话助手。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "modelflare-ai/AnyModelBot",
+      "tags": [
+        "本地运行"
+      ],
+      "url": "https://github.com/modelflare-ai/AnyModelBot",
+      "verified": {
+        "ai_hits": 5,
+        "checked_at": "2026-11-23T10:15:01+08:00",
+        "date": "2026-11-23",
+        "http_status": 200,
+        "stars": 4975
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
+      "date": "2026-11-23",
+      "description": "开源 iPhone 智能体应用，能读取屏幕并自动点击滑动，通过本地 MCP 自动化操作 iOS 设备。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "JosssphZhou/poki",
+      "tags": [
+        "MCP",
+        "本地运行"
+      ],
+      "url": "https://github.com/JosssphZhou/poki",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-23T10:15:05+08:00",
+        "date": "2026-11-23",
+        "http_status": 200,
+        "stars": 1840
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
       "date": "2026-11-22",
       "description": "Agent-User Interaction 协议，为 AI 智能体与前端应用提供标准化的事件交互与状态同步接口。",
       "group": "每日 AI 新发现",
@@ -3852,6 +3917,49 @@
         "date": "2026-11-13",
         "http_status": 200,
         "stars": 120878
+      }
+    },
+    {
+      "category": "dailyAI_tool",
+      "category_name": "工具官网",
+      "date": "2026-11-23",
+      "description": "面向初创团队的 AI CRM，整合线索、会议纪要、邮件跟进与报表，支持 MCP 与 API 接入。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://softsync.ai/favicon.ico",
+      "name": "SoftSync AI",
+      "tags": [
+        "多智能体",
+        "MCP"
+      ],
+      "url": "https://softsync.ai",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-23T10:15:09+08:00",
+        "date": "2026-11-23",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "dailyAI_tool",
+      "category_name": "工具官网",
+      "date": "2026-11-23",
+      "description": "提供多模型统一订阅与 OpenAI 兼容 API 的在线 AI 服务，按年计费、不按 token 收费。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://denizenblu.com/favicon.ico",
+      "name": "Denizen Blu One",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://denizenblu.com",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-23T10:15:14+08:00",
+        "date": "2026-11-23",
+        "http_status": 200,
+        "stars": null
       }
     },
     {

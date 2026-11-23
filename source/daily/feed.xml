@@ -6,8 +6,20 @@
     <description>cyberMap 每日核验收录的 AI 开源项目、工具官网与模型框架，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Sun, 22 Nov 2026 10:09:02 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 10:16:10 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 2026-11-23（5 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-23</link>
+      <guid isPermaLink="true">https://cybermap.halo26812.eu.org/daily/#day-2026-11-23</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 +0800</pubDate>
+      <description>trpc-group/trpc-agent-go［开源项目］腾讯开源的 Go 语言生产级智能体框架，支持图工作流、记忆、A2A 与 MCP 协议，内置评测与可观测能力。 — https://github.com/trpc-group/trpc-agent-go
+modelflare-ai/AnyModelBot［开源项目］本地优先的开源 AI 机器人，可接入 GPT、Claude、Gemini 等多种模型搭建专属对话助手。 — https://github.com/modelflare-ai/AnyModelBot
+JosssphZhou/poki［开源项目］开源 iPhone 智能体应用，能读取屏幕并自动点击滑动，通过本地 MCP 自动化操作 iOS 设备。 — https://github.com/JosssphZhou/poki
+SoftSync AI［工具官网］面向初创团队的 AI CRM，整合线索、会议纪要、邮件跟进与报表，支持 MCP 与 API 接入。 — https://softsync.ai
+Denizen Blu One［工具官网］提供多模型统一订阅与 OpenAI 兼容 API 的在线 AI 服务，按年计费、不按 token 收费。 — https://denizenblu.com</description>
+      <category>AI</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 2026-11-22（10 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-22</link>
