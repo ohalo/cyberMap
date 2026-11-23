@@ -75,8 +75,9 @@ def collect(repo: Path) -> tuple[list[dict], list[str], dict]:
     add("/daily/", repo / "source/daily/index.html", "0.9", "daily", "daily")
     # 开放数据层文档页 /data/，由 build_data.py 生成
     add("/data/", repo / "source/data/index.html", "0.7", "daily", "data")
-    # RSS：全量流 + 三个分类流。feed.xml 是主订阅源，分类流按 lastmod 更新。
-    for feed in ("feed.xml", "feed-oss.xml", "feed-tool.xml", "feed-model.xml"):
+    # RSS：全量流 + 三个分类流 + 项目动态流。feed.xml 是主订阅源，
+    # 分类流按 lastmod 更新，feed-updates.xml 汇总已收录项目的最近动态。
+    for feed in ("feed.xml", "feed-oss.xml", "feed-tool.xml", "feed-model.xml", "feed-updates.xml"):
         add("/daily/" + feed, repo / "source/daily" / feed, "0.6", "daily", "feed")
     add("/rank/", repo / "source/rank/index.html", "0.8", "daily", "rank")
 

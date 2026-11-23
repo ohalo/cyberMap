@@ -6,7 +6,9 @@
 ``dailyAI_model`` 三个分类，按描述尾注「· YYYY-MM-DD 收录」聚合成时间轴页面
 ``source/daily/index.html``，并输出 RSS 2.0 订阅源：一份混合流
 ``source/daily/feed.xml`` + 三份按分类过滤的独立流 ``feed-oss.xml`` /
-``feed-tool.xml`` / ``feed-model.xml``（供读者只订阅自己关心的类型）。
+``feed-tool.xml`` / ``feed-model.xml``（供读者只订阅自己关心的类型）；
+另有 ``feed-updates.xml`` 项目动态流，来源 updates.json.recent，逐条罗列
+已收录项目最近的新提交与涨星，与按收录日期的全量/分类流正交。
 
 设计约束
 --------
@@ -68,6 +70,9 @@ CATEGORY_FEEDS = OrderedDict([
     ("dailyAI_tool", ("feed-tool.xml", "工具官网")),
     ("dailyAI_model", ("feed-model.xml", "模型框架")),
 ])
+
+# 项目动态速递独立流：来源 updates.json.recent，与按收录日期的全量/分类流正交。
+UPDATES_FEED = "feed-updates.xml"
 
 # 形如「 · 2026-11-15 收录」，允许尾部空白；只匹配结尾，避免误伤正文里的日期。
 DATE_TAG_RE = re.compile(r"[·•]\s*(\d{4}-\d{2}-\d{2})\s*收录\s*$")
@@ -447,6 +452,56 @@ body.night .dy-tagbtn.active{color:#0b1020}
   background:var(--dy-icon-bg);font-size:11.5px;color:var(--dy-muted);line-height:1.6
 }
 .dy-watch-note{margin-top:10px;font-size:11px;color:var(--dy-muted);line-height:1.6}
+/* 项目动态速递：可排序的变更流（复用雷达 recent 数据） */
+.dy-changes{margin:14px 0 4px;padding:14px 18px;border-radius:14px;
+  border:1px solid var(--dy-border);background:var(--dy-surface);
+  box-shadow:var(--dy-shadow);font-size:12.5px;color:var(--dy-soft)}
+.dy-changes-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.dy-changes-title{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:13.5px;font-weight:750;color:var(--dy-text)
+}
+.dy-changes-sorts{display:inline-flex;gap:5px;flex-wrap:wrap;align-items:center}
+.dy-changes-sorts-label{font-size:11px;color:var(--dy-muted)}
+.dy-sort-btn{
+  padding:3px 10px;border-radius:8px;font-size:11px;font-weight:650;cursor:pointer;
+  border:1px solid var(--dy-border);background:var(--dy-icon-bg);color:var(--dy-soft);
+  transition:border-color .18s,color .18s,background .18s
+}
+.dy-sort-btn:hover{border-color:var(--dy-accent-2)}
+.dy-sort-btn.active{
+  color:var(--dy-accent);border-color:var(--dy-accent);background:var(--dy-chip)
+}
+.dy-changes-time{margin-left:auto;font-size:11px;color:var(--dy-muted)}
+.dy-changes-list{margin-top:11px;display:flex;flex-direction:column;gap:6px}
+.dy-change{
+  display:flex;align-items:center;gap:9px;flex-wrap:wrap;
+  padding:9px 12px;border-radius:9px;text-decoration:none;
+  border:1px solid var(--dy-border);background:var(--dy-icon-bg);
+  transition:border-color .18s,background .18s
+}
+.dy-change:hover{border-color:var(--dy-accent-2);background:var(--dy-chip)}
+.dy-change-rank{
+  min-width:22px;font-size:11px;font-weight:750;color:var(--dy-muted);text-align:center
+}
+.dy-change-name{
+  font-weight:650;color:var(--dy-text);font-size:12px;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:260px
+}
+.dy-change-cat{
+  padding:2px 7px;border-radius:6px;font-size:10px;font-weight:650;white-space:nowrap;
+  color:var(--dy-muted);background:var(--dy-chip)
+}
+.dy-change-metrics{display:inline-flex;gap:8px;align-items:center;flex-wrap:wrap}
+.dy-change-metric{font-size:11px;font-weight:700;white-space:nowrap}
+.dy-change-metric.push{color:var(--dy-accent)}
+.dy-change-metric.star{color:var(--dy-good)}
+.dy-change-date{margin-left:auto;font-size:10.5px;color:var(--dy-muted);white-space:nowrap}
+.dy-changes-note{margin-top:10px;font-size:11px;color:var(--dy-muted);line-height:1.6}
+.dy-changes-empty{
+  margin-top:11px;padding:10px 12px;border-radius:9px;
+  background:var(--dy-icon-bg);font-size:11.5px;color:var(--dy-muted);line-height:1.6
+}
 .dy-footer{
   margin-top:46px;padding-top:20px;border-top:1px solid var(--dy-border);
   font-size:12px;color:var(--dy-muted);
@@ -523,6 +578,38 @@ JS = r"""
       });
     });
     if(search){search.addEventListener('input',applyFilter);}
+  }
+  // ---- 项目动态速递：按涨星 / 新提交 / 日期排序（纯前端，不改数据） ----
+  var chg=document.querySelector('.dy-changes');
+  if(chg){
+    var list=chg.querySelector('.dy-changes-list');
+    var rows=list?Array.prototype.slice.call(list.querySelectorAll('.dy-change')):[];
+    var btns=Array.prototype.slice.call(chg.querySelectorAll('.dy-sort-btn'));
+    var current=chg.getAttribute('data-default-sort')||'star';
+    function resort(){
+      rows.sort(function(a,b){
+        var av=parseInt(a.getAttribute('data-'+current)||'0',10);
+        var bv=parseInt(b.getAttribute('data-'+current)||'0',10);
+        if(av!==bv)return bv-av;
+        // 同值时按日期新到旧，再按项目名稳定排序
+        var ad=a.getAttribute('data-date')||'',bd=b.getAttribute('data-date')||'';
+        if(ad!==bd)return bd>ad?1:-1;
+        return (a.getAttribute('data-name')||'').localeCompare(b.getAttribute('data-name')||'');
+      });
+      rows.forEach(function(r,i){
+        var rank=r.querySelector('.dy-change-rank');
+        if(rank)rank.textContent=i+1;
+        list.appendChild(r);
+      });
+    }
+    btns.forEach(function(btn){
+      btn.addEventListener('click',function(){
+        current=btn.getAttribute('data-sort')||'star';
+        btns.forEach(function(b){b.classList.toggle('active',b===btn);});
+        resort();
+      });
+    });
+    if(rows.length)resort();
   }
 })();
 """
@@ -840,6 +927,79 @@ def watchbar_html(updates: dict) -> str:
     )
 
 
+def changes_html(updates: dict) -> str:
+    """项目动态速递：把雷达 recent 的提交/star 变更渲染为可排序动态流。
+
+    与 watchbar（汇总雷达状态）正交：这里给出逐条明细 + 前端排序，
+    数据完全来自 updates.json，不额外采集、不伪造任何变更。
+    recent 为空（冷启动基线期）或数据损坏时优雅降级、不渲染本区块。
+    """
+    if not updates:
+        return ""
+    recent = [r for r in (updates.get("recent") or []) if isinstance(r, dict)]
+    if not recent:
+        return ""
+
+    generated = (updates.get("generated_at") or "").replace("T", " ")[:16]
+    CAT_LABEL = {"dailyAI_oss": "开源", "dailyAI_tool": "工具", "dailyAI_model": "模型"}
+
+    rows = []
+    for r in recent:
+        name = r.get("name") or ""
+        url = r.get("url") or ""
+        has_push = bool(r.get("has_push"))
+        delta = int(r.get("star_delta") or 0)
+        stars = r.get("stars")
+        star_total = short_stars(stars) if stars is not None else ""
+        date = r.get("date") or ""
+
+        metrics = []
+        if has_push:
+            metrics.append('<span class="dy-change-metric push">新提交</span>')
+        if delta:
+            metrics.append(f'<span class="dy-change-metric star">+{delta} 星</span>')
+        if not metrics:
+            continue  # 无实质变更的不渲染，保持动态流干净
+        cat_label = CAT_LABEL.get(r.get("category") or "", "")
+        cat_html = f'<span class="dy-change-cat">{esc(cat_label)}</span>' if cat_label else ""
+        star_html = f'<span class="dy-change-metric">{esc(star_total)}★</span>' if star_total else ""
+        rows.append(
+            f'<a class="dy-change" href="{esc(url)}" target="_blank" rel="noopener noreferrer" '
+            f'data-star="{delta}" data-push="{1 if has_push else 0}" data-date="{esc(date)}" '
+            f'data-name="{esc(name)}">'
+            '<span class="dy-change-rank"></span>'
+            f'<span class="dy-change-name">{esc(name)}</span>'
+            f'{cat_html}'
+            f'<span class="dy-change-metrics">{"".join(metrics)}{star_html}</span>'
+            f'<span class="dy-change-date">{esc(date)}</span></a>'
+        )
+
+    if not rows:
+        return ""
+
+    sorts = (
+        '<span class="dy-changes-sorts"><span class="dy-changes-sorts-label">排序</span>'
+        '<button type="button" class="dy-sort-btn active" data-sort="star">涨星最多</button>'
+        '<button type="button" class="dy-sort-btn" data-sort="push">最近提交</button>'
+        '<button type="button" class="dy-sort-btn" data-sort="date">发现日期</button>'
+        '</span>'
+    )
+    return (
+        '<section class="dy-changes" aria-label="项目动态速递" data-default-sort="star">'
+        '<div class="dy-changes-head">'
+        '<span class="dy-changes-title"><i class="dy-watch-dot"></i>项目动态速递</span>'
+        f'{sorts}'
+        f'<span class="dy-changes-time">更新 {esc(generated)}</span>'
+        '</div>'
+        f'<div class="dy-changes-list">{"".join(rows)}</div>'
+        '<div class="dy-changes-note">已收录项目最近被检测到的新提交与涨星，每条都可点开直达项目；'
+        '排序只改变展示顺序，不改变任何数据。'
+        f'订阅这份动态流：<a href="/daily/{UPDATES_FEED}" style="color:var(--dy-accent);font-weight:650">RSS</a>'
+        '　完整明细：<a href="/daily/updates.json" style="color:var(--dy-accent);font-weight:650">updates.json</a></div>'
+        '</section>'
+    )
+
+
 def knowledgebar_html(entries: list[dict]) -> str:
     """AI 发现知识库工具条：搜索框 + 方向标签云，筛选下方时间轴。
 
@@ -955,6 +1115,10 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
         f'title="cyberMap · 每日 AI 速递 · {label}" href="/daily/{filename}">'
         for filename, label in CATEGORY_FEEDS.values()
     )
+    alternates += (
+        '<link rel="alternate" type="application/rss+xml" '
+        'title="cyberMap · 项目动态速递" href="/daily/' + UPDATES_FEED + '">'
+    )
     parts = [
         "<!doctype html>",
         '<html lang="zh-CN">',
@@ -982,7 +1146,8 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
         '<span class="dy-kicker">每日更新 · 逐条核验</span>',
         "<h1>每日 AI 速递</h1>",
         "<p>每天从公开来源核验后至少收录 3 个 AI 站点（合格候选多则多收），按类型归入开源项目 / 工具官网 / 模型框架。"
-        "这里按收录日期倒序回看，每条都附可核验的证据；下方知识库可按方向标签筛选或站内搜索，让沉淀下来的站点随时可查。</p>",
+        "这里按收录日期倒序回看，每条都附可核验的证据；下方知识库可按方向标签筛选或站内搜索，"
+        "「项目动态速递」则汇总已收录项目的最近提交与涨星，让沉淀下来的站点随时可查、更新可见。</p>",
         '<div class="dy-stats">',
         f'<div class="dy-stat"><span>累计收录</span><strong>{len(entries)}</strong></div>',
         f'<div class="dy-stat"><span>每日期数</span><strong>{len(days)}</strong></div>',
@@ -992,6 +1157,7 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
         receipt_html(verify, days),
         healthbar_html(health),
         watchbar_html(updates),
+        changes_html(updates),
         '<div class="dy-rssbar">',
         '<div>订阅每天的新收录 · 全部类型地址 <code>' + esc(f"{root}/daily/feed.xml") +
         '</code>，也可按类型单独订阅（统一为 RSS 2.0）。</div>',
@@ -1001,7 +1167,9 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
             f'<a class="dy-feed-chip" href="/daily/{filename}" title="只订阅{label}">'
             f'{ICON_RSS}<span>{label}</span></a>'
             for filename, label in CATEGORY_FEEDS.values()
-        ),
+        )
+        + f'<a class="dy-feed-chip" href="/daily/{UPDATES_FEED}" title="订阅已收录项目的更新动态">'
+        f'{ICON_RSS}<span>项目动态</span></a>',
         '</div></div>',
         knowledgebar_html(entries),
         '<div class="dy-timeline">',
@@ -1101,6 +1269,68 @@ def build_feed(days, site_url: str, generated: datetime, category: str | None = 
     return ET.tostring(rss, encoding="utf-8", xml_declaration=True)
 
 
+def build_updates_feed(updates: dict, site_url: str, generated: datetime) -> bytes:
+    """项目动态速递 RSS：每条 recent 变更一个 item（不是按天聚合）。
+
+    日期语义与收录流不同：这里的 pubDate 取条目自带的 date（雷达发现变更的
+    日期）、描述里写明 pushed_at（项目真实提交时间），不伪造任何时间。
+    guid 用「项目 URL + 发现日期」保证跨期唯一，避免阅读器把不同批动态判重。
+    recent 为空（冷启动基线期）时仍生成合法空 channel，不伪造条目。
+    """
+    root = site_url.rstrip("/")
+    recent = [r for r in ((updates or {}).get("recent") or []) if isinstance(r, dict)]
+    rss = ET.Element("rss", {"version": "2.0"})
+    channel = ET.SubElement(rss, "channel")
+    ET.SubElement(channel, "title").text = "cyberMap · 项目动态速递"
+    ET.SubElement(channel, "link").text = f"{root}/daily/"
+    ET.SubElement(channel, "description").text = (
+        "已收录 AI 项目最近被检测到的新提交与涨星动态，来源上游变更雷达。"
+    )
+    ET.SubElement(channel, "language").text = "zh-CN"
+    ET.SubElement(channel, "generator").text = "cybermap-daily/build_daily.py"
+    ET.SubElement(channel, "lastBuildDate").text = format_datetime(generated)
+    ET.SubElement(channel, "ttl").text = "1440"
+
+    for r in recent:
+        name = r.get("name") or ""
+        url = r.get("url") or ""
+        has_push = bool(r.get("has_push"))
+        delta = int(r.get("star_delta") or 0)
+        if not has_push and not delta:
+            continue
+        day = r.get("date") or ""
+        item = ET.SubElement(channel, "item")
+        changes = []
+        if has_push:
+            changes.append("新提交")
+        if delta:
+            changes.append(f"+{delta} 星")
+        ET.SubElement(item, "title").text = f"{name} · {' · '.join(changes)}"
+        ET.SubElement(item, "link").text = url or f"{root}/daily/"
+        ET.SubElement(item, "guid", {"isPermaLink": "false"}).text = (
+            f"cybermap-change-{norm_url(url or name)}-{day}"
+        )
+        try:
+            d = datetime.strptime(day, "%Y-%m-%d").date()
+            pub = datetime.combine(d, time(0, 0), tzinfo=CST)
+        except (ValueError, TypeError):
+            pub = generated
+        ET.SubElement(item, "pubDate").text = format_datetime(pub)
+        desc_lines = [f"{name}：{'，'.join(changes)}。"]
+        pushed = r.get("pushed_at")
+        if pushed:
+            desc_lines.append(f"项目最近推送：{str(pushed).replace('T', ' ')[:16]} UTC。")
+        if r.get("stars") is not None:
+            desc_lines.append(f"当前 stars：{short_stars(r['stars'])}。")
+        desc_lines.append(f"发现日期：{day}。项目地址：{url}")
+        ET.SubElement(item, "description").text = "".join(desc_lines)
+        ET.SubElement(item, "category").text = "项目动态"
+
+    if hasattr(ET, "indent"):
+        ET.indent(rss, space="  ")
+    return ET.tostring(rss, encoding="utf-8", xml_declaration=True)
+
+
 # ---------------------------------------------------------------- 写入与入口
 def atomic_write(path: Path, content: bytes) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -1160,6 +1390,7 @@ def main() -> None:
         "watch_tracked": (updates.get("summary") or {}).get("tracked", 0),
         "watch_recent": len(updates.get("recent") or []),
         "watch_bar": bool((updates.get("summary") or {}).get("total_repos")),
+        "changes_feed": bool(updates.get("recent")),
         "warnings": warnings,
     }
     if args.check:
@@ -1171,6 +1402,8 @@ def main() -> None:
     feeds = {"feed.xml": build_feed(days, site_url, generated)}
     for category, (filename, _label) in CATEGORY_FEEDS.items():
         feeds[filename] = build_feed(days, site_url, generated, category=category)
+    # 项目动态流：来源 updates.json.recent，与收录日期流正交（空 recent 时为空 channel）
+    feeds[UPDATES_FEED] = build_updates_feed(updates, site_url, generated)
 
     # 写完再自检一遍，避免把语法错误的产物发布出去
     for name, blob in feeds.items():
@@ -1200,6 +1433,12 @@ def main() -> None:
     if (updates.get("summary") or {}).get("total_repos"):
         if 'class="dy-watch"' not in html_text:
             fail("index.html 缺少上游变更雷达区块，未写入")
+    # 有具体变更明细时，项目动态速递区块必须渲染（含排序按钮与动态 RSS 入口）
+    if updates.get("recent"):
+        if 'class="dy-changes"' not in html_text or 'class="dy-sort-btn' not in html_text:
+            fail("index.html 缺少项目动态速递区块，未写入")
+        if f'href="/daily/{UPDATES_FEED}"' not in html_text:
+            fail(f"index.html 缺少动态流订阅入口 {UPDATES_FEED}，未写入")
 
     index_path = out_dir / "index.html"
     try:
