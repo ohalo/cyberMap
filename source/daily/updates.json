@@ -1,169 +1,420 @@
 {
-  "generated_at": "2026-11-23T10:16:03+08:00",
+  "generated_at": "2026-11-24T10:32:30+08:00",
   "note": "每天采集 pushed_at/stars 并与上次快照对比；304 条件请求不计配额；首次采集仅建立基线不报变更；配额不足的仓库留待次日。",
   "recent": [
     {
       "category": "dailyAI_oss",
-      "date": "2026-11-23",
-      "has_push": true,
-      "name": "alibaba/open-code-review",
-      "pushed_at": "2026-11-22T15:34:31Z",
-      "star_delta": 310,
-      "stars": 55433,
-      "url": "https://github.com/alibaba/open-code-review"
-    },
-    {
-      "category": "dailyAI_oss",
-      "date": "2026-11-23",
-      "has_push": true,
-      "name": "ag-ui-protocol/ag-ui",
-      "pushed_at": "2026-11-22T21:50:14Z",
-      "star_delta": 185,
-      "stars": 21211,
-      "url": "https://github.com/ag-ui-protocol/ag-ui"
-    },
-    {
-      "category": "dailyAI_oss",
-      "date": "2026-11-23",
-      "has_push": true,
-      "name": "dream-num/univer",
-      "pushed_at": "2026-11-23T01:36:45Z",
-      "star_delta": 181,
-      "stars": 31288,
-      "url": "https://github.com/dream-num/univer"
-    },
-    {
-      "category": "dailyAI_oss",
-      "date": "2026-11-23",
-      "has_push": true,
-      "name": "Tencent/LoopForge",
-      "pushed_at": "2026-11-22T18:12:05Z",
-      "star_delta": 161,
-      "stars": 5688,
-      "url": "https://github.com/Tencent/LoopForge"
-    },
-    {
-      "category": "dailyAI_oss",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "has_push": false,
-      "name": "ChromeDevTools/chrome-devtools-mcp",
-      "pushed_at": "2026-11-22T01:06:14Z",
-      "star_delta": 159,
-      "stars": 58858,
-      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+      "name": "cloudflare/security-audit-skill",
+      "pushed_at": "2026-09-14T19:29:02Z",
+      "star_delta": 454,
+      "stars": 77578,
+      "url": "https://github.com/cloudflare/security-audit-skill"
     },
     {
       "category": "dailyAI_oss",
-      "date": "2026-11-23",
-      "has_push": true,
-      "name": "beenuar/AiSOC",
-      "pushed_at": "2026-11-23T02:15:31Z",
-      "star_delta": 131,
-      "stars": 7404,
-      "url": "https://github.com/beenuar/AiSOC"
-    },
-    {
-      "category": "dailyAI_oss",
-      "date": "2026-11-23",
-      "has_push": false,
-      "name": "deepseek-ai/dsh-superagent-prototype",
-      "pushed_at": "2026-11-03T09:29:14Z",
-      "star_delta": 84,
-      "stars": 24244,
-      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype"
-    },
-    {
-      "category": "dailyAI_oss",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "has_push": true,
       "name": "ZhuLinsen/daily_stock_analysis",
-      "pushed_at": "2026-11-22T03:22:02Z",
-      "star_delta": 76,
-      "stars": 73715,
+      "pushed_at": "2026-11-23T15:05:29Z",
+      "star_delta": 308,
+      "stars": 74023,
       "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
     },
     {
       "category": "dailyAI_oss",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
+      "has_push": false,
+      "name": "hugohe3/ppt-master",
+      "pushed_at": "2026-11-20T08:41:50Z",
+      "star_delta": 298,
+      "stars": 79600,
+      "url": "https://github.com/hugohe3/ppt-master"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "NVIDIA/auto-ontology",
+      "pushed_at": "2026-11-23T23:18:08Z",
+      "star_delta": 291,
+      "stars": 14676,
+      "url": "https://github.com/NVIDIA/auto-ontology"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "alibaba/open-code-review",
+      "pushed_at": "2026-11-23T03:49:55Z",
+      "star_delta": 284,
+      "stars": 55717,
+      "url": "https://github.com/alibaba/open-code-review"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "Tencent/LoopForge",
+      "pushed_at": "2026-11-24T02:31:02Z",
+      "star_delta": 198,
+      "stars": 5886,
+      "url": "https://github.com/Tencent/LoopForge"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "dream-num/univer",
+      "pushed_at": "2026-11-24T02:26:57Z",
+      "star_delta": 187,
+      "stars": 31475,
+      "url": "https://github.com/dream-num/univer"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "ChromeDevTools/chrome-devtools-mcp",
+      "pushed_at": "2026-11-23T20:41:31Z",
+      "star_delta": 183,
+      "stars": 59041,
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": false,
+      "name": "ag-ui-protocol/ag-ui",
+      "pushed_at": "2026-11-22T21:50:14Z",
+      "star_delta": 182,
+      "stars": 21393,
+      "url": "https://github.com/ag-ui-protocol/ag-ui"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "beenuar/AiSOC",
+      "pushed_at": "2026-11-24T02:02:35Z",
+      "star_delta": 179,
+      "stars": 7583,
+      "url": "https://github.com/beenuar/AiSOC"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "headroomlabs-ai/headroom",
+      "pushed_at": "2026-11-24T00:27:51Z",
+      "star_delta": 154,
+      "stars": 80674,
+      "url": "https://github.com/headroomlabs-ai/headroom"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "THU-MAIC/OpenMAIC",
+      "pushed_at": "2026-11-24T01:22:07Z",
+      "star_delta": 140,
+      "stars": 44310,
+      "url": "https://github.com/THU-MAIC/OpenMAIC"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": false,
+      "name": "deepseek-ai/dsh-superagent-prototype",
+      "pushed_at": "2026-11-03T09:29:14Z",
+      "star_delta": 132,
+      "stars": 24376,
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "bytedance/deer-flow",
+      "pushed_at": "2026-11-24T02:28:04Z",
+      "star_delta": 85,
+      "stars": 85708,
+      "url": "https://github.com/bytedance/deer-flow"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "Tencent/WeKnora",
+      "pushed_at": "2026-11-23T08:56:21Z",
+      "star_delta": 82,
+      "stars": 38090,
+      "url": "https://github.com/Tencent/WeKnora"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
       "has_push": true,
       "name": "NVIDIA/SkillEvaluator",
-      "pushed_at": "2026-11-22T22:07:42Z",
-      "star_delta": 63,
-      "stars": 4395,
+      "pushed_at": "2026-11-23T23:22:47Z",
+      "star_delta": 61,
+      "stars": 4456,
       "url": "https://github.com/NVIDIA/SkillEvaluator"
     },
     {
       "category": "dailyAI_oss",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "infiniflow/ragflow",
+      "pushed_at": "2026-11-24T01:58:05Z",
+      "star_delta": 58,
+      "stars": 94607,
+      "url": "https://github.com/infiniflow/ragflow"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "docling-project/docling",
+      "pushed_at": "2026-11-23T13:50:57Z",
+      "star_delta": 52,
+      "stars": 70940,
+      "url": "https://github.com/docling-project/docling"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "JosssphZhou/poki",
+      "pushed_at": "2026-11-24T02:28:05Z",
+      "star_delta": 51,
+      "stars": 1891,
+      "url": "https://github.com/JosssphZhou/poki"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": false,
+      "name": "browser-use/video-use",
+      "pushed_at": "2026-10-08T22:17:01Z",
+      "star_delta": 40,
+      "stars": 31494,
+      "url": "https://github.com/browser-use/video-use"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "mem0ai/mem0",
+      "pushed_at": "2026-11-23T10:36:02Z",
+      "star_delta": 39,
+      "stars": 69391,
+      "url": "https://github.com/mem0ai/mem0"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
       "has_push": true,
       "name": "aaif-goose/goose",
-      "pushed_at": "2026-11-23T01:46:33Z",
-      "star_delta": 23,
-      "stars": 56881,
+      "pushed_at": "2026-11-24T02:31:27Z",
+      "star_delta": 29,
+      "stars": 56910,
       "url": "https://github.com/aaif-goose/goose"
     },
     {
       "category": "dailyAI_oss",
-      "date": "2026-11-23",
-      "has_push": false,
-      "name": "yjid/kensaku",
-      "pushed_at": "2026-11-19T20:00:41Z",
-      "star_delta": 12,
-      "stars": 1904,
-      "url": "https://github.com/yjid/kensaku"
-    },
-    {
-      "category": "dailyAI_oss",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "has_push": true,
-      "name": "Activepieces/activepieces",
-      "pushed_at": "2026-11-22T22:32:21Z",
-      "star_delta": 12,
-      "stars": 25682,
-      "url": "https://github.com/Activepieces/activepieces"
+      "name": "CopilotKit/CopilotKit",
+      "pushed_at": "2026-11-24T01:02:45Z",
+      "star_delta": 28,
+      "stars": 38919,
+      "url": "https://github.com/CopilotKit/CopilotKit"
     },
     {
       "category": "dailyAI_oss",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
+      "has_push": false,
+      "name": "karakeep-app/karakeep",
+      "pushed_at": "2026-11-22T23:25:27Z",
+      "star_delta": 23,
+      "stars": 30801,
+      "url": "https://github.com/karakeep-app/karakeep"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "mastra-ai/mastra",
+      "pushed_at": "2026-11-24T02:17:57Z",
+      "star_delta": 23,
+      "stars": 29771,
+      "url": "https://github.com/mastra-ai/mastra"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "google-gemini/gemini-cli",
+      "pushed_at": "2026-11-24T02:21:32Z",
+      "star_delta": 20,
+      "stars": 109028,
+      "url": "https://github.com/google-gemini/gemini-cli"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": false,
+      "name": "modelflare-ai/AnyModelBot",
+      "pushed_at": "2026-11-22T18:58:42Z",
+      "star_delta": 19,
+      "stars": 4994,
+      "url": "https://github.com/modelflare-ai/AnyModelBot"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
       "has_push": true,
       "name": "max-sixty/worktrunk",
-      "pushed_at": "2026-11-22T10:54:43Z",
-      "star_delta": 11,
-      "stars": 12698,
+      "pushed_at": "2026-11-24T02:15:08Z",
+      "star_delta": 19,
+      "stars": 12717,
       "url": "https://github.com/max-sixty/worktrunk"
     },
     {
       "category": "dailyAI_oss",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "has_push": true,
-      "name": "alibaba/zvec",
-      "pushed_at": "2026-11-22T18:03:25Z",
-      "star_delta": 4,
-      "stars": 16278,
-      "url": "https://github.com/alibaba/zvec"
+      "name": "Orkas-AI/Orkas",
+      "pushed_at": "2026-11-23T14:21:48Z",
+      "star_delta": 17,
+      "stars": 9561,
+      "url": "https://github.com/Orkas-AI/Orkas"
     },
     {
       "category": "dailyAI_oss",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "iflytek/skillhub",
+      "pushed_at": "2026-11-24T02:29:04Z",
+      "star_delta": 15,
+      "stars": 5483,
+      "url": "https://github.com/iflytek/skillhub"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "Activepieces/activepieces",
+      "pushed_at": "2026-11-23T20:19:15Z",
+      "star_delta": 13,
+      "stars": 25695,
+      "url": "https://github.com/Activepieces/activepieces"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
       "has_push": true,
       "name": "onyx-dot-app/onyx",
-      "pushed_at": "2026-11-22T17:01:18Z",
-      "star_delta": 3,
-      "stars": 33504,
+      "pushed_at": "2026-11-24T01:51:07Z",
+      "star_delta": 13,
+      "stars": 33517,
       "url": "https://github.com/onyx-dot-app/onyx"
     },
     {
       "category": "dailyAI_oss",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "browseros-ai/BrowserOS",
+      "pushed_at": "2026-11-24T01:58:12Z",
+      "star_delta": 13,
+      "stars": 14465,
+      "url": "https://github.com/browseros-ai/BrowserOS"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
       "has_push": false,
-      "name": "eliasbiondo/antirion",
-      "pushed_at": "2026-11-21T11:33:43Z",
-      "star_delta": 1,
-      "stars": 430,
-      "url": "https://github.com/eliasbiondo/antirion"
+      "name": "duixcom/Duix-Avatar",
+      "pushed_at": "2026-04-21T07:06:36Z",
+      "star_delta": 9,
+      "stars": 16430,
+      "url": "https://github.com/duixcom/Duix-Avatar"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "nanocodexyz/nanocode",
+      "pushed_at": "2026-11-24T02:30:50Z",
+      "star_delta": 9,
+      "stars": 821,
+      "url": "https://github.com/nanocodexyz/nanocode"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": false,
+      "name": "dograh-hq/dograh",
+      "pushed_at": "2026-11-16T01:24:19Z",
+      "star_delta": 7,
+      "stars": 6251,
+      "url": "https://github.com/dograh-hq/dograh"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "yjid/kensaku",
+      "pushed_at": "2026-11-24T02:16:03Z",
+      "star_delta": 5,
+      "stars": 1909,
+      "url": "https://github.com/yjid/kensaku"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "trpc-group/trpc-agent-go",
+      "pushed_at": "2026-11-24T01:42:52Z",
+      "star_delta": 3,
+      "stars": 1943,
+      "url": "https://github.com/trpc-group/trpc-agent-go"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "alibaba/zvec",
+      "pushed_at": "2026-11-23T13:12:08Z",
+      "star_delta": 3,
+      "stars": 16281,
+      "url": "https://github.com/alibaba/zvec"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-24",
+      "has_push": true,
+      "name": "NVIDIA-NeMo/Switchyard",
+      "pushed_at": "2026-11-24T02:08:21Z",
+      "star_delta": 3,
+      "stars": 3674,
+      "url": "https://github.com/NVIDIA-NeMo/Switchyard"
     }
   ],
   "repos": {
+    "github.com/0xplaygrounds/rig": {
+      "category": "dailyAI_oss",
+      "changes": [],
+      "etag": "W/\"b861109c7d2025a20ea0cf32bda424fccda8461b5bfb953d6b45c6467ec6328c\"",
+      "first_seen": "2026-11-24",
+      "last_checked": "2026-11-24T10:32:31+08:00",
+      "name": "0xPlaygrounds/rig",
+      "pushed_at": "2026-11-24T02:00:45Z",
+      "stars": 9241,
+      "url": "https://github.com/0xPlaygrounds/rig"
+    },
     "github.com/aaif-goose/goose": {
       "category": "dailyAI_oss",
       "changes": [
@@ -179,14 +430,27 @@
           "from": 56858,
           "kind": "star",
           "to": 56881
+        },
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-23T01:46:33Z",
+          "kind": "push",
+          "to": "2026-11-24T02:31:27Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 29,
+          "from": 56881,
+          "kind": "star",
+          "to": 56910
         }
       ],
-      "etag": "W/\"f613f1280c66fb0bdb820da9cf35e48a7385485eee3df14acd0c4c3a2c5ffa18\"",
+      "etag": "W/\"7ae704248e88a8c4e1a5a711a8d6873ec0b4fd0e6e9809a5881133640569ec14\"",
       "first_seen": "2026-11-22",
-      "last_checked": "2026-11-23T10:16:06+08:00",
+      "last_checked": "2026-11-24T10:32:33+08:00",
       "name": "aaif-goose/goose",
-      "pushed_at": "2026-11-23T01:46:33Z",
-      "stars": 56881,
+      "pushed_at": "2026-11-24T02:31:27Z",
+      "stars": 56910,
       "url": "https://github.com/aaif-goose/goose"
     },
     "github.com/activepieces/activepieces": {
@@ -204,14 +468,27 @@
           "from": 25670,
           "kind": "star",
           "to": 25682
+        },
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-22T22:32:21Z",
+          "kind": "push",
+          "to": "2026-11-23T20:19:15Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 13,
+          "from": 25682,
+          "kind": "star",
+          "to": 25695
         }
       ],
-      "etag": "W/\"b8b55a4a6ac49e50732e336543513463c9a50222c24c6a8f2ba57faf520ac8f6\"",
+      "etag": "W/\"29a524bfe885e695f2f6ec5122e60a66973767a844e088a5a61f5fe70fe7a46a\"",
       "first_seen": "2026-11-22",
-      "last_checked": "2026-11-23T10:16:06+08:00",
+      "last_checked": "2026-11-24T10:32:33+08:00",
       "name": "Activepieces/activepieces",
-      "pushed_at": "2026-11-22T22:32:21Z",
-      "stars": 25682,
+      "pushed_at": "2026-11-23T20:19:15Z",
+      "stars": 25695,
       "url": "https://github.com/Activepieces/activepieces"
     },
     "github.com/ag-ui-protocol/ag-ui": {
@@ -229,14 +506,21 @@
           "from": 21026,
           "kind": "star",
           "to": 21211
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 182,
+          "from": 21211,
+          "kind": "star",
+          "to": 21393
         }
       ],
-      "etag": "W/\"1514023e3860eec9afada030b712506a37d2ef40b36d4bd5eb64eb6ea601454a\"",
+      "etag": "W/\"4719f346b9587ec13d6af9d73d91ab1ec7e3ec4bf593327ce02edbebf8c06b6a\"",
       "first_seen": "2026-11-22",
-      "last_checked": "2026-11-23T10:16:04+08:00",
+      "last_checked": "2026-11-24T10:32:32+08:00",
       "name": "ag-ui-protocol/ag-ui",
       "pushed_at": "2026-11-22T21:50:14Z",
-      "stars": 21211,
+      "stars": 21393,
       "url": "https://github.com/ag-ui-protocol/ag-ui"
     },
     "github.com/alibaba/open-code-review": {
@@ -254,14 +538,27 @@
           "from": 55123,
           "kind": "star",
           "to": 55433
+        },
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-22T15:34:31Z",
+          "kind": "push",
+          "to": "2026-11-23T03:49:55Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 284,
+          "from": 55433,
+          "kind": "star",
+          "to": 55717
         }
       ],
-      "etag": "W/\"0aa78dd7ca1396d22ac2a9443902013cbf3b0b9c74dda91092cb984beae64739\"",
+      "etag": "W/\"fd4c6688f849fb4d28daecac95c8b72c2e583ea2ac9837aaa3245dc8c68d46a2\"",
       "first_seen": "2026-11-22",
-      "last_checked": "2026-11-23T10:16:06+08:00",
+      "last_checked": "2026-11-24T10:32:33+08:00",
       "name": "alibaba/open-code-review",
-      "pushed_at": "2026-11-22T15:34:31Z",
-      "stars": 55433,
+      "pushed_at": "2026-11-23T03:49:55Z",
+      "stars": 55717,
       "url": "https://github.com/alibaba/open-code-review"
     },
     "github.com/alibaba/zvec": {
@@ -279,14 +576,27 @@
           "from": 16274,
           "kind": "star",
           "to": 16278
+        },
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-22T18:03:25Z",
+          "kind": "push",
+          "to": "2026-11-23T13:12:08Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 3,
+          "from": 16278,
+          "kind": "star",
+          "to": 16281
         }
       ],
-      "etag": "W/\"089dd4fd67b97c5881e60b53987aec9c4fdb43de44ef3d7ede79d065b9784a13\"",
+      "etag": "W/\"9af510075e79ebc2cafc49de61c4b672940da9146fad58323356a2ca3299b153\"",
       "first_seen": "2026-11-22",
-      "last_checked": "2026-11-23T10:16:06+08:00",
+      "last_checked": "2026-11-24T10:32:33+08:00",
       "name": "alibaba/zvec",
-      "pushed_at": "2026-11-22T18:03:25Z",
-      "stars": 16278,
+      "pushed_at": "2026-11-23T13:12:08Z",
+      "stars": 16281,
       "url": "https://github.com/alibaba/zvec"
     },
     "github.com/beenuar/aisoc": {
@@ -304,58 +614,114 @@
           "from": 7273,
           "kind": "star",
           "to": 7404
+        },
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-23T02:15:31Z",
+          "kind": "push",
+          "to": "2026-11-24T02:02:35Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 179,
+          "from": 7404,
+          "kind": "star",
+          "to": 7583
         }
       ],
-      "etag": "W/\"f2635828eae57534c4a18498d52d55bd33ab064fa36d345eb961c32fc453c2bd\"",
+      "etag": "W/\"2b8f429b910fb05caa47435a0ab63187c314531ed55f08e1e5bbdad9b102fca4\"",
       "first_seen": "2026-11-22",
-      "last_checked": "2026-11-23T10:16:05+08:00",
+      "last_checked": "2026-11-24T10:32:33+08:00",
       "name": "beenuar/AiSOC",
-      "pushed_at": "2026-11-23T02:15:31Z",
-      "stars": 7404,
+      "pushed_at": "2026-11-24T02:02:35Z",
+      "stars": 7583,
       "url": "https://github.com/beenuar/AiSOC"
     },
     "github.com/browser-use/video-use": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"1d33d39800e30d02afdb9b726550ae9585f77881acc73adc1719a595d8c84225\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "delta": 40,
+          "from": 31454,
+          "kind": "star",
+          "to": 31494
+        }
+      ],
+      "etag": "W/\"378168a2b7ff77b7c9a91d80cb811aac7d2c571d2cf5f201bef13ac1b81ba289\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:07+08:00",
+      "last_checked": "2026-11-24T10:32:35+08:00",
       "name": "browser-use/video-use",
       "pushed_at": "2026-10-08T22:17:01Z",
-      "stars": 31454,
+      "stars": 31494,
       "url": "https://github.com/browser-use/video-use"
     },
     "github.com/browseros-ai/browseros": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"e83f579ffd255ac8c4e1eb219da4ead84a2bd4b370bea774fe9b18f81f6f4c67\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-22T08:53:18Z",
+          "kind": "push",
+          "to": "2026-11-24T01:58:12Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 13,
+          "from": 14452,
+          "kind": "star",
+          "to": 14465
+        }
+      ],
+      "etag": "W/\"a94f9ef6a622d205b411c46c9dff0a5ee0ff9319c4f0f7fe2ba6bde15276307f\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:07+08:00",
+      "last_checked": "2026-11-24T10:32:35+08:00",
       "name": "browseros-ai/BrowserOS",
-      "pushed_at": "2026-11-22T08:53:18Z",
-      "stars": 14452,
+      "pushed_at": "2026-11-24T01:58:12Z",
+      "stars": 14465,
       "url": "https://github.com/browseros-ai/BrowserOS"
     },
     "github.com/bytedance/deer-flow": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"d15c0ce9e666b41888f78b453fad2189fc327b7d4b269725c0f84450414100ff\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-23T01:50:14Z",
+          "kind": "push",
+          "to": "2026-11-24T02:28:04Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 85,
+          "from": 85623,
+          "kind": "star",
+          "to": 85708
+        }
+      ],
+      "etag": "W/\"461ea6990f66f10e0771a5c66621dca1d3edf6f2184bccee86aff3cbeb0a4d9b\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:09+08:00",
+      "last_checked": "2026-11-24T10:32:36+08:00",
       "name": "bytedance/deer-flow",
-      "pushed_at": "2026-11-23T01:50:14Z",
-      "stars": 85623,
+      "pushed_at": "2026-11-24T02:28:04Z",
+      "stars": 85708,
       "url": "https://github.com/bytedance/deer-flow"
     },
     "github.com/chesterra/cccc": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"b2fd8f8ab1e310ad38af32edd37ff01d0b6e24c688fc87834b2658882050e9f7\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-22T17:56:39Z",
+          "kind": "push",
+          "to": "2026-11-23T15:49:45Z"
+        }
+      ],
+      "etag": "W/\"ea7b492047df72029bb3346ce7079988a6922340a6ce9b5d7ed9db3aff2380a5\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:08+08:00",
+      "last_checked": "2026-11-24T10:32:35+08:00",
       "name": "ChesterRa/cccc",
-      "pushed_at": "2026-11-22T17:56:39Z",
-      "stars": 1346,
+      "pushed_at": "2026-11-23T15:49:45Z",
+      "stars": 1343,
       "url": "https://github.com/ChesterRa/cccc"
     },
     "github.com/chromedevtools/chrome-devtools-mcp": {
@@ -367,36 +733,71 @@
           "from": 58699,
           "kind": "star",
           "to": 58858
+        },
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-22T01:06:14Z",
+          "kind": "push",
+          "to": "2026-11-23T20:41:31Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 183,
+          "from": 58858,
+          "kind": "star",
+          "to": 59041
         }
       ],
-      "etag": "W/\"9e3f8e08e0f3c66e627da4654a6759d776627cf2f2144404d9aa637f75aa30d3\"",
+      "etag": "W/\"ac831b71c0ff2ddb2ec16f1a3cdf036a23399121ab5faf7b7e9794c4b91e08d2\"",
       "first_seen": "2026-11-22",
-      "last_checked": "2026-11-23T10:16:04+08:00",
+      "last_checked": "2026-11-24T10:32:32+08:00",
       "name": "ChromeDevTools/chrome-devtools-mcp",
-      "pushed_at": "2026-11-22T01:06:14Z",
-      "stars": 58858,
+      "pushed_at": "2026-11-23T20:41:31Z",
+      "stars": 59041,
       "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
     },
     "github.com/cloudflare/security-audit-skill": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"da715dcee85c0e1d572f0535ec74c386dafb783191821894c8e0fd2d5eefc440\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "delta": 454,
+          "from": 77124,
+          "kind": "star",
+          "to": 77578
+        }
+      ],
+      "etag": "W/\"8be57c8562e96aea53677ce5f070ada3073cc47b8f65202eec4afdae8e2a27e0\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:08+08:00",
+      "last_checked": "2026-11-24T10:32:35+08:00",
       "name": "cloudflare/security-audit-skill",
       "pushed_at": "2026-09-14T19:29:02Z",
-      "stars": 77124,
+      "stars": 77578,
       "url": "https://github.com/cloudflare/security-audit-skill"
     },
     "github.com/copilotkit/copilotkit": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"32617a1d1495fc6c8bcbe1ce0c48bee6f1881019e278d29b0c9c3c49e989f59f\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-22T18:41:10Z",
+          "kind": "push",
+          "to": "2026-11-24T01:02:45Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 28,
+          "from": 38891,
+          "kind": "star",
+          "to": 38919
+        }
+      ],
+      "etag": "W/\"2a45ccd41f8c8ea1521cbd4cd457cae988ff86c6bd41c5bce3d0abb16f1c9ab9\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:09+08:00",
+      "last_checked": "2026-11-24T10:32:36+08:00",
       "name": "CopilotKit/CopilotKit",
-      "pushed_at": "2026-11-22T18:41:10Z",
-      "stars": 38891,
+      "pushed_at": "2026-11-24T01:02:45Z",
+      "stars": 38919,
       "url": "https://github.com/CopilotKit/CopilotKit"
     },
     "github.com/deepseek-ai/dsh-superagent-prototype": {
@@ -408,36 +809,65 @@
           "from": 24160,
           "kind": "star",
           "to": 24244
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 132,
+          "from": 24244,
+          "kind": "star",
+          "to": 24376
         }
       ],
-      "etag": "W/\"f537fae79273649f5eb3bcc6006d3229058d7b1a7764ef95567e0966d91574b6\"",
+      "etag": "W/\"9aac52043d5af2c42b9f7d7db5e244d9b02f40728828b687ebc7dc67748d4958\"",
       "first_seen": "2026-11-22",
-      "last_checked": "2026-11-23T10:16:05+08:00",
+      "last_checked": "2026-11-24T10:32:32+08:00",
       "name": "deepseek-ai/dsh-superagent-prototype",
       "pushed_at": "2026-11-03T09:29:14Z",
-      "stars": 24244,
+      "stars": 24376,
       "url": "https://github.com/deepseek-ai/dsh-superagent-prototype"
     },
     "github.com/docling-project/docling": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"4f72b355608a965d4ee8dd690b24b20513e3a9c6f13d8cc93f4f79c3c814a612\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-22T01:23:19Z",
+          "kind": "push",
+          "to": "2026-11-23T13:50:57Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 52,
+          "from": 70888,
+          "kind": "star",
+          "to": 70940
+        }
+      ],
+      "etag": "W/\"a60e37b6e0acb3256072f3e774fe2610fd2719d42d0ef7dd3588566c74b643e3\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:07+08:00",
+      "last_checked": "2026-11-24T10:32:34+08:00",
       "name": "docling-project/docling",
-      "pushed_at": "2026-11-22T01:23:19Z",
-      "stars": 70888,
+      "pushed_at": "2026-11-23T13:50:57Z",
+      "stars": 70940,
       "url": "https://github.com/docling-project/docling"
     },
     "github.com/dograh-hq/dograh": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"cb944d4904ea3ef0da9905dd37fb52a1ab6dbc42336880a1c406eb444b5520c2\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "delta": 7,
+          "from": 6244,
+          "kind": "star",
+          "to": 6251
+        }
+      ],
+      "etag": "W/\"16c6217c137b2c34eefce02944794fefa13ef01f1d5812e730bd1a79c10027b3\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:06+08:00",
+      "last_checked": "2026-11-24T10:32:34+08:00",
       "name": "dograh-hq/dograh",
       "pushed_at": "2026-11-16T01:24:19Z",
-      "stars": 6244,
+      "stars": 6251,
       "url": "https://github.com/dograh-hq/dograh"
     },
     "github.com/dream-num/univer": {
@@ -455,25 +885,46 @@
           "from": 31107,
           "kind": "star",
           "to": 31288
+        },
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-23T01:36:45Z",
+          "kind": "push",
+          "to": "2026-11-24T02:26:57Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 187,
+          "from": 31288,
+          "kind": "star",
+          "to": 31475
         }
       ],
-      "etag": "W/\"f44ba86fd36e4142ca55db74d0428ff7f52f4635a94b5403e4143fc8d89c07cf\"",
+      "etag": "W/\"f4bb6e3ad651a377798da848ee22cbb00c133b3f23088be5f8542dc69c4a7efb\"",
       "first_seen": "2026-11-22",
-      "last_checked": "2026-11-23T10:16:05+08:00",
+      "last_checked": "2026-11-24T10:32:32+08:00",
       "name": "dream-num/univer",
-      "pushed_at": "2026-11-23T01:36:45Z",
-      "stars": 31288,
+      "pushed_at": "2026-11-24T02:26:57Z",
+      "stars": 31475,
       "url": "https://github.com/dream-num/univer"
     },
     "github.com/duixcom/duix-avatar": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"6cf39444dd40c4cc5966d86d6b11c65256efd23a741dfa72a4f6adddd27bde01\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "delta": 9,
+          "from": 16421,
+          "kind": "star",
+          "to": 16430
+        }
+      ],
+      "etag": "W/\"e15ce8976b3b281072ec050b8db86687d7c27d801d16550eba64c9588497911b\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:07+08:00",
+      "last_checked": "2026-11-24T10:32:35+08:00",
       "name": "duixcom/Duix-Avatar",
       "pushed_at": "2026-04-21T07:06:36Z",
-      "stars": 16421,
+      "stars": 16430,
       "url": "https://github.com/duixcom/Duix-Avatar"
     },
     "github.com/eliasbiondo/antirion": {
@@ -485,25 +936,46 @@
           "from": 429,
           "kind": "star",
           "to": 430
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 2,
+          "from": 430,
+          "kind": "star",
+          "to": 432
         }
       ],
-      "etag": "W/\"20d7cc2e0d59e557713fc41d5e8d5053736cf41748f4d07960e44b4a11e1b7e7\"",
+      "etag": "W/\"631be93e41af317cde9be0d0cc9bbbed2c8c6ca8134ade479bd70d3ce7f2e161\"",
       "first_seen": "2026-11-22",
-      "last_checked": "2026-11-23T10:16:05+08:00",
+      "last_checked": "2026-11-24T10:32:32+08:00",
       "name": "eliasbiondo/antirion",
       "pushed_at": "2026-11-21T11:33:43Z",
-      "stars": 430,
+      "stars": 432,
       "url": "https://github.com/eliasbiondo/antirion"
     },
     "github.com/google-gemini/gemini-cli": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"02c04442755ae0cacf150fff581864b31565da081b57cc582f5a5d63177770f7\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-23T01:21:53Z",
+          "kind": "push",
+          "to": "2026-11-24T02:21:32Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 20,
+          "from": 109008,
+          "kind": "star",
+          "to": 109028
+        }
+      ],
+      "etag": "W/\"48c8044a38a3790d55d18946582e02e1e7d88a55803a6f1f882d67a3281b2f0a\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:06+08:00",
+      "last_checked": "2026-11-24T10:32:33+08:00",
       "name": "google-gemini/gemini-cli",
-      "pushed_at": "2026-11-23T01:21:53Z",
-      "stars": 109008,
+      "pushed_at": "2026-11-24T02:21:32Z",
+      "stars": 109028,
       "url": "https://github.com/google-gemini/gemini-cli"
     },
     "github.com/harry0703/moneyprinterturbo": {
@@ -519,13 +991,27 @@
     },
     "github.com/headroomlabs-ai/headroom": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"20001c979b1e3de1a2215c31a36ce9026fe19e34c5ac835b6fdaa974fbac2c94\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-22T01:30:50Z",
+          "kind": "push",
+          "to": "2026-11-24T00:27:51Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 154,
+          "from": 80520,
+          "kind": "star",
+          "to": 80674
+        }
+      ],
+      "etag": "W/\"5f397a013c4192989d4b47d4599cae34d9dc0b0c8a4f8e54ffc90330fa17484a\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:07+08:00",
+      "last_checked": "2026-11-24T10:32:34+08:00",
       "name": "headroomlabs-ai/headroom",
-      "pushed_at": "2026-11-22T01:30:50Z",
-      "stars": 80520,
+      "pushed_at": "2026-11-24T00:27:51Z",
+      "stars": 80674,
       "url": "https://github.com/headroomlabs-ai/headroom"
     },
     "github.com/heygen-com/hyperframes": {
@@ -552,57 +1038,115 @@
     },
     "github.com/hugohe3/ppt-master": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"8c5127578610c08ef94fff1abd27ae48663fe95416d3c3086b3b86462a8a2d9b\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "delta": 298,
+          "from": 79302,
+          "kind": "star",
+          "to": 79600
+        }
+      ],
+      "etag": "W/\"1636f9ab96b4aeb5f153241e887728327fdc0787dc06bb34f87f8b9c20069863\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:08+08:00",
+      "last_checked": "2026-11-24T10:32:36+08:00",
       "name": "hugohe3/ppt-master",
       "pushed_at": "2026-11-20T08:41:50Z",
-      "stars": 79302,
+      "stars": 79600,
       "url": "https://github.com/hugohe3/ppt-master"
     },
     "github.com/iflytek/skillhub": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"32bc91b2bbf6ab0176ebf5cd43a064d4b738c10f3de531b570a9ac5c599bdd07\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-23T02:03:35Z",
+          "kind": "push",
+          "to": "2026-11-24T02:29:04Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 15,
+          "from": 5468,
+          "kind": "star",
+          "to": 5483
+        }
+      ],
+      "etag": "W/\"30afd4de12908cc1e72b9f21e91a2dd84231432e6fc4a855f34f18aa740bb108\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:09+08:00",
+      "last_checked": "2026-11-24T10:32:36+08:00",
       "name": "iflytek/skillhub",
-      "pushed_at": "2026-11-23T02:03:35Z",
-      "stars": 5468,
+      "pushed_at": "2026-11-24T02:29:04Z",
+      "stars": 5483,
       "url": "https://github.com/iflytek/skillhub"
     },
     "github.com/infiniflow/ragflow": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"c3a39c6d70362afcf2085e62e682ab477ce09473dc25288c5470f131d2d0e473\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-23T01:45:34Z",
+          "kind": "push",
+          "to": "2026-11-24T01:58:05Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 58,
+          "from": 94549,
+          "kind": "star",
+          "to": 94607
+        }
+      ],
+      "etag": "\"b775eb65d4270f35c99a4b1915bba4f34985279fc2c49043a965d1d73b7ac241\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:08+08:00",
+      "last_checked": "2026-11-24T10:32:36+08:00",
       "name": "infiniflow/ragflow",
-      "pushed_at": "2026-11-23T01:45:34Z",
-      "stars": 94549,
+      "pushed_at": "2026-11-24T01:58:05Z",
+      "stars": 94607,
       "url": "https://github.com/infiniflow/ragflow"
     },
     "github.com/josssphzhou/poki": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"38489c0f611f619cbcdea784c6874aab07cd7bd4d7a3ac87435693eb8cb9c237\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-23T00:33:50Z",
+          "kind": "push",
+          "to": "2026-11-24T02:28:05Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 51,
+          "from": 1840,
+          "kind": "star",
+          "to": 1891
+        }
+      ],
+      "etag": "W/\"571aea182f113faa826e727dc3ba7538246713ac8d7f62c2f2c56e9c54a4efd4\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:04+08:00",
+      "last_checked": "2026-11-24T10:32:32+08:00",
       "name": "JosssphZhou/poki",
-      "pushed_at": "2026-11-23T00:33:50Z",
-      "stars": 1840,
+      "pushed_at": "2026-11-24T02:28:05Z",
+      "stars": 1891,
       "url": "https://github.com/JosssphZhou/poki"
     },
     "github.com/karakeep-app/karakeep": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"f9a2d91abfd69dc2eb06e72b80f600c20ce5c95603e1ceeaad3def89ad5613ad\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "delta": 23,
+          "from": 30778,
+          "kind": "star",
+          "to": 30801
+        }
+      ],
+      "etag": "W/\"8c84e6eab1db39eca73aac845e20e716baf5b2cc5cf371fd6da184edebf7f6ce\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:06+08:00",
+      "last_checked": "2026-11-24T10:32:34+08:00",
       "name": "karakeep-app/karakeep",
       "pushed_at": "2026-11-22T23:25:27Z",
-      "stars": 30778,
+      "stars": 30801,
       "url": "https://github.com/karakeep-app/karakeep"
     },
     "github.com/langflow-ai/langflow": {
@@ -618,13 +1162,27 @@
     },
     "github.com/mastra-ai/mastra": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"454a88bd9db5159719822a6e76205e8718421a02134dfdf27a82f19750447397\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-23T02:03:16Z",
+          "kind": "push",
+          "to": "2026-11-24T02:17:57Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 23,
+          "from": 29748,
+          "kind": "star",
+          "to": 29771
+        }
+      ],
+      "etag": "W/\"d8ca8401ef44b7f01c34179b823e25e8deac2c658b1f49ce3ddd6329f2493654\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:07+08:00",
+      "last_checked": "2026-11-24T10:32:34+08:00",
       "name": "mastra-ai/mastra",
-      "pushed_at": "2026-11-23T02:03:16Z",
-      "stars": 29748,
+      "pushed_at": "2026-11-24T02:17:57Z",
+      "stars": 29771,
       "url": "https://github.com/mastra-ai/mastra"
     },
     "github.com/max-sixty/worktrunk": {
@@ -642,69 +1200,146 @@
           "from": 12687,
           "kind": "star",
           "to": 12698
+        },
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-22T10:54:43Z",
+          "kind": "push",
+          "to": "2026-11-24T02:15:08Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 19,
+          "from": 12698,
+          "kind": "star",
+          "to": 12717
         }
       ],
-      "etag": "W/\"da8ab8676197a10348d6337fb4a86ce7c2eb197422924b93825c7dbec7232a86\"",
+      "etag": "W/\"6b8580f06e64d179d0babdfb0cd01c813d42c16b40902f0d880566eaa4380e30\"",
       "first_seen": "2026-11-22",
-      "last_checked": "2026-11-23T10:16:05+08:00",
+      "last_checked": "2026-11-24T10:32:33+08:00",
       "name": "max-sixty/worktrunk",
-      "pushed_at": "2026-11-22T10:54:43Z",
-      "stars": 12698,
+      "pushed_at": "2026-11-24T02:15:08Z",
+      "stars": 12717,
       "url": "https://github.com/max-sixty/worktrunk"
     },
     "github.com/mem0ai/mem0": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"b4c1c308c54b7b286aa806f7055dee8e3142960fa700aa60743fce405095bcab\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-18T07:24:33Z",
+          "kind": "push",
+          "to": "2026-11-23T10:36:02Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 39,
+          "from": 69352,
+          "kind": "star",
+          "to": 69391
+        }
+      ],
+      "etag": "W/\"ea8273be5c1940c14a8bbd92afff25ca61c2da3e0c35233729b9690ff5c44649\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:08+08:00",
+      "last_checked": "2026-11-24T10:32:36+08:00",
       "name": "mem0ai/mem0",
-      "pushed_at": "2026-11-18T07:24:33Z",
-      "stars": 69352,
+      "pushed_at": "2026-11-23T10:36:02Z",
+      "stars": 69391,
       "url": "https://github.com/mem0ai/mem0"
     },
     "github.com/modelflare-ai/anymodelbot": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"96d72b32ea744ed87e0d7a79aeff6d74ac3f1dcc3a3b9e532401dd9aebf15526\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "delta": 19,
+          "from": 4975,
+          "kind": "star",
+          "to": 4994
+        }
+      ],
+      "etag": "W/\"a3eb61f459b3b51736d7aea4c628718b31880fbe28c493b4db2f98b2fadf5447\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:04+08:00",
+      "last_checked": "2026-11-24T10:32:32+08:00",
       "name": "modelflare-ai/AnyModelBot",
       "pushed_at": "2026-11-22T18:58:42Z",
-      "stars": 4975,
+      "stars": 4994,
       "url": "https://github.com/modelflare-ai/AnyModelBot"
     },
     "github.com/nanocodexyz/nanocode": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"81cedecb0801811a34118f0418e7b1abdf97045c791ca86a3fb89c697e89feb0\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-23T02:03:56Z",
+          "kind": "push",
+          "to": "2026-11-24T02:30:50Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 9,
+          "from": 812,
+          "kind": "star",
+          "to": 821
+        }
+      ],
+      "etag": "W/\"4812922b9c3664cdec4b4fe7181bf6fdb52f1a041e843bbfffbf013411146424\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:08+08:00",
+      "last_checked": "2026-11-24T10:32:35+08:00",
       "name": "nanocodexyz/nanocode",
-      "pushed_at": "2026-11-23T02:03:56Z",
-      "stars": 812,
+      "pushed_at": "2026-11-24T02:30:50Z",
+      "stars": 821,
       "url": "https://github.com/nanocodexyz/nanocode"
     },
     "github.com/nvidia-nemo/switchyard": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"b6c436afe4c4e00924d88397a44b1ed449813102480e5e48a065c77cce4d2950\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-23T01:52:44Z",
+          "kind": "push",
+          "to": "2026-11-24T02:08:21Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 3,
+          "from": 3671,
+          "kind": "star",
+          "to": 3674
+        }
+      ],
+      "etag": "W/\"f01aba37af794d71564eb6e217bf58d82f8a147973ea5f56df74ded660e65525\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:06+08:00",
+      "last_checked": "2026-11-24T10:32:34+08:00",
       "name": "NVIDIA-NeMo/Switchyard",
-      "pushed_at": "2026-11-23T01:52:44Z",
-      "stars": 3671,
+      "pushed_at": "2026-11-24T02:08:21Z",
+      "stars": 3674,
       "url": "https://github.com/NVIDIA-NeMo/Switchyard"
     },
     "github.com/nvidia/auto-ontology": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"aa952b7bef1b49f15c6ee823562dbb78df841274c5e15943978d0e86c79f12e9\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-22T23:25:07Z",
+          "kind": "push",
+          "to": "2026-11-23T23:18:08Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 291,
+          "from": 14385,
+          "kind": "star",
+          "to": 14676
+        }
+      ],
+      "etag": "W/\"032e6e3967305ca9a545e9a0bcf87e080fd5b9123187a8eeade7a20f0b0c81ab\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:09+08:00",
+      "last_checked": "2026-11-24T10:32:36+08:00",
       "name": "NVIDIA/auto-ontology",
-      "pushed_at": "2026-11-22T23:25:07Z",
-      "stars": 14385,
+      "pushed_at": "2026-11-23T23:18:08Z",
+      "stars": 14676,
       "url": "https://github.com/NVIDIA/auto-ontology"
     },
     "github.com/nvidia/skillevaluator": {
@@ -722,14 +1357,27 @@
           "from": 4332,
           "kind": "star",
           "to": 4395
+        },
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-22T22:07:42Z",
+          "kind": "push",
+          "to": "2026-11-23T23:22:47Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 61,
+          "from": 4395,
+          "kind": "star",
+          "to": 4456
         }
       ],
-      "etag": "W/\"0155a91c7b85e6d7ce5e18fe6eef96c337f4218fca95774bdfbd9d8a7dec8136\"",
+      "etag": "W/\"a22219aa6bcf2349517eaf8d1572da8457e87636098fef61d00161e02bdfb7d1\"",
       "first_seen": "2026-11-22",
-      "last_checked": "2026-11-23T10:16:04+08:00",
+      "last_checked": "2026-11-24T10:32:32+08:00",
       "name": "NVIDIA/SkillEvaluator",
-      "pushed_at": "2026-11-22T22:07:42Z",
-      "stars": 4395,
+      "pushed_at": "2026-11-23T23:22:47Z",
+      "stars": 4456,
       "url": "https://github.com/NVIDIA/SkillEvaluator"
     },
     "github.com/onyx-dot-app/onyx": {
@@ -747,26 +1395,86 @@
           "from": 33501,
           "kind": "star",
           "to": 33504
+        },
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-22T17:01:18Z",
+          "kind": "push",
+          "to": "2026-11-24T01:51:07Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 13,
+          "from": 33504,
+          "kind": "star",
+          "to": 33517
         }
       ],
-      "etag": "W/\"7085d4d35949f9a97367c5052d99f0db9478b6316516acd6a1476f86b4974739\"",
+      "etag": "\"47ca75cf6f8ed01796b6b789c76f1ffce9e87884226660607a5edefe5d3c40dc\"",
       "first_seen": "2026-11-22",
-      "last_checked": "2026-11-23T10:16:06+08:00",
+      "last_checked": "2026-11-24T10:32:33+08:00",
       "name": "onyx-dot-app/onyx",
-      "pushed_at": "2026-11-22T17:01:18Z",
-      "stars": 33504,
+      "pushed_at": "2026-11-24T01:51:07Z",
+      "stars": 33517,
       "url": "https://github.com/onyx-dot-app/onyx"
     },
     "github.com/orkas-ai/orkas": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"b3db911df840df2f3d8ef82ae74e4700e3faa9a6f9565c3c624848a1bb99a90f\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-21T22:38:03Z",
+          "kind": "push",
+          "to": "2026-11-23T14:21:48Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 17,
+          "from": 9544,
+          "kind": "star",
+          "to": 9561
+        }
+      ],
+      "etag": "W/\"af97094e35eaf2d4a86ebf5728bac935f7aa169b12ef4c2d52e2e4543454e62e\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:07+08:00",
+      "last_checked": "2026-11-24T10:32:35+08:00",
       "name": "Orkas-AI/Orkas",
-      "pushed_at": "2026-11-21T22:38:03Z",
-      "stars": 9544,
+      "pushed_at": "2026-11-23T14:21:48Z",
+      "stars": 9561,
       "url": "https://github.com/Orkas-AI/Orkas"
+    },
+    "github.com/pydantic/pydantic-ai": {
+      "category": "dailyAI_oss",
+      "changes": [],
+      "etag": "W/\"932a6ca6783c6a3a62f21de9b2c835a1a05cd40727c0c6cf92cc9bc0217cf307\"",
+      "first_seen": "2026-11-24",
+      "last_checked": "2026-11-24T10:32:31+08:00",
+      "name": "pydantic/pydantic-ai",
+      "pushed_at": "2026-11-24T01:58:28Z",
+      "stars": 21357,
+      "url": "https://github.com/pydantic/pydantic-ai"
+    },
+    "github.com/simplexai-labs/linger": {
+      "category": "dailyAI_oss",
+      "changes": [],
+      "etag": "W/\"b51f5cbb46c48e89b918fc96ac1d5b9cb29040bd14113e20f277f0f27f965269\"",
+      "first_seen": "2026-11-24",
+      "last_checked": "2026-11-24T10:32:31+08:00",
+      "name": "simplexai-labs/linger",
+      "pushed_at": "2026-11-24T02:32:17Z",
+      "stars": 4202,
+      "url": "https://github.com/simplexai-labs/linger"
+    },
+    "github.com/sybil-solutions/inference-optimisation-skill": {
+      "category": "dailyAI_oss",
+      "changes": [],
+      "etag": "W/\"79747f71b5cb12aa98e29ec378f52974fc7e4b69142ac3117da51f61c56fb46f\"",
+      "first_seen": "2026-11-24",
+      "last_checked": "2026-11-24T10:32:31+08:00",
+      "name": "sybil-solutions/inference-optimisation-skill",
+      "pushed_at": "2026-11-16T18:40:08Z",
+      "stars": 2199,
+      "url": "https://github.com/sybil-solutions/inference-optimisation-skill"
     },
     "github.com/tencent/loopforge": {
       "category": "dailyAI_oss",
@@ -783,25 +1491,52 @@
           "from": 5527,
           "kind": "star",
           "to": 5688
+        },
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-22T18:12:05Z",
+          "kind": "push",
+          "to": "2026-11-24T02:31:02Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 198,
+          "from": 5688,
+          "kind": "star",
+          "to": 5886
         }
       ],
-      "etag": "W/\"26c4b94f28ff9a25c3e69d4cf9747a9133750d636125d0f24360aedf3950da90\"",
+      "etag": "W/\"fce3aa110529c6c23e66493f8dcc796cc8f76eeb5592c830e10399caf86ec98e\"",
       "first_seen": "2026-11-22",
-      "last_checked": "2026-11-23T10:16:04+08:00",
+      "last_checked": "2026-11-24T10:32:32+08:00",
       "name": "Tencent/LoopForge",
-      "pushed_at": "2026-11-22T18:12:05Z",
-      "stars": 5688,
+      "pushed_at": "2026-11-24T02:31:02Z",
+      "stars": 5886,
       "url": "https://github.com/Tencent/LoopForge"
     },
     "github.com/tencent/weknora": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"ca4abd33ad5c01612bb4dd5c0a29b2245db20133cef173f603addb5b7be6b13c\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-21T18:51:50Z",
+          "kind": "push",
+          "to": "2026-11-23T08:56:21Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 82,
+          "from": 38008,
+          "kind": "star",
+          "to": 38090
+        }
+      ],
+      "etag": "\"ee2a2447af38374c6a233abb19ddf61505f9b0752c9dc3ab5561b604997a20f8\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:07+08:00",
+      "last_checked": "2026-11-24T10:32:35+08:00",
       "name": "Tencent/WeKnora",
-      "pushed_at": "2026-11-21T18:51:50Z",
-      "stars": 38008,
+      "pushed_at": "2026-11-23T08:56:21Z",
+      "stars": 38090,
       "url": "https://github.com/Tencent/WeKnora"
     },
     "github.com/the-pr-agent/pr-agent": {
@@ -817,24 +1552,52 @@
     },
     "github.com/thu-maic/openmaic": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"3e941f82bc024cd33cb6e8476871b13d377d4aa3017d66225b0fb76959ea6585\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-22T21:37:18Z",
+          "kind": "push",
+          "to": "2026-11-24T01:22:07Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 140,
+          "from": 44170,
+          "kind": "star",
+          "to": 44310
+        }
+      ],
+      "etag": "W/\"cfc554810d97408bb0c050b88fc445f3504293f9998e6d6a0ac3a3dadf57e0be\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:07+08:00",
+      "last_checked": "2026-11-24T10:32:35+08:00",
       "name": "THU-MAIC/OpenMAIC",
-      "pushed_at": "2026-11-22T21:37:18Z",
-      "stars": 44170,
+      "pushed_at": "2026-11-24T01:22:07Z",
+      "stars": 44310,
       "url": "https://github.com/THU-MAIC/OpenMAIC"
     },
     "github.com/trpc-group/trpc-agent-go": {
       "category": "dailyAI_oss",
-      "changes": [],
-      "etag": "W/\"32e74484c6ed251bb604526bcb4aafe4d9aa5bd1b1661deab81c8b6e26042600\"",
+      "changes": [
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-22T07:59:59Z",
+          "kind": "push",
+          "to": "2026-11-24T01:42:52Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 3,
+          "from": 1940,
+          "kind": "star",
+          "to": 1943
+        }
+      ],
+      "etag": "W/\"d4e201755a48bb12fa71a46244a57c8ec7fddc2cbe904d2a7cbf057569dab92e\"",
       "first_seen": "2026-11-23",
-      "last_checked": "2026-11-23T10:16:04+08:00",
+      "last_checked": "2026-11-24T10:32:31+08:00",
       "name": "trpc-group/trpc-agent-go",
-      "pushed_at": "2026-11-22T07:59:59Z",
-      "stars": 1940,
+      "pushed_at": "2026-11-24T01:42:52Z",
+      "stars": 1943,
       "url": "https://github.com/trpc-group/trpc-agent-go"
     },
     "github.com/vercel-labs/agent-browser": {
@@ -868,14 +1631,27 @@
           "from": 1892,
           "kind": "star",
           "to": 1904
+        },
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-19T20:00:41Z",
+          "kind": "push",
+          "to": "2026-11-24T02:16:03Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 5,
+          "from": 1904,
+          "kind": "star",
+          "to": 1909
         }
       ],
-      "etag": "W/\"be6d6a89798afe2a44b79c94941d0c534708601714743eae0fcdfb6e9b052d6b\"",
+      "etag": "W/\"1db8e23c8062511849515f30314f18fc45e41aa54dccee31df3a81654a411ce6\"",
       "first_seen": "2026-11-22",
-      "last_checked": "2026-11-23T10:16:05+08:00",
+      "last_checked": "2026-11-24T10:32:33+08:00",
       "name": "yjid/kensaku",
-      "pushed_at": "2026-11-19T20:00:41Z",
-      "stars": 1904,
+      "pushed_at": "2026-11-24T02:16:03Z",
+      "stars": 1909,
       "url": "https://github.com/yjid/kensaku"
     },
     "github.com/zhulinsen/daily_stock_analysis": {
@@ -893,37 +1669,59 @@
           "from": 73639,
           "kind": "star",
           "to": 73715
+        },
+        {
+          "date": "2026-11-24",
+          "from": "2026-11-22T03:22:02Z",
+          "kind": "push",
+          "to": "2026-11-23T15:05:29Z"
+        },
+        {
+          "date": "2026-11-24",
+          "delta": 308,
+          "from": 73715,
+          "kind": "star",
+          "to": 74023
         }
       ],
-      "etag": "W/\"bde04b15aa49b1725e753ce7005b0d7521cd155c1e509dbb4b0138650d2f7882\"",
+      "etag": "W/\"2795eeaad896422eb80d4225e416e4b8d337c02b6b40838e088c5aff8b7ed5d2\"",
       "first_seen": "2026-11-22",
-      "last_checked": "2026-11-23T10:16:05+08:00",
+      "last_checked": "2026-11-24T10:32:32+08:00",
       "name": "ZhuLinsen/daily_stock_analysis",
-      "pushed_at": "2026-11-22T03:22:02Z",
-      "stars": 73715,
+      "pushed_at": "2026-11-23T15:05:29Z",
+      "stars": 74023,
       "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
     }
   },
   "schema": 1,
   "source": "source/_data/webstack.yml :: dailyAI_* GitHub repos",
   "summary": {
-    "baseline_added": 33,
-    "changed": 16,
-    "checked_today": 49,
-    "new_pushes": 12,
+    "baseline_added": 4,
+    "changed": 42,
+    "checked_today": 46,
+    "new_pushes": 32,
     "not_modified": 0,
-    "pending": 20,
+    "pending": 29,
     "rate_remaining": 2,
-    "star_gains": 16,
-    "total_repos": 69,
-    "tracked": 49
+    "star_gains": 41,
+    "total_repos": 75,
+    "tracked": 53
   },
   "warnings": [
+    "vercel-labs/agent-browser 因 API 配额未采集，留待明日",
+    "homeassistant-ai/ha-mcp 因 API 配额未采集，留待明日",
+    "The-PR-Agent/pr-agent 因 API 配额未采集，留待明日",
+    "vercel-labs/agent-desktop 因 API 配额未采集，留待明日",
+    "heygen-com/hyperframes 因 API 配额未采集，留待明日",
+    "langflow-ai/langflow 因 API 配额未采集，留待明日",
+    "harry0703/MoneyPrinterTurbo 因 API 配额未采集，留待明日",
     "TauricResearch/TradingAgents 因 API 配额未采集，留待明日",
     "github/spec-kit 因 API 配额未采集，留待明日",
     "openclaw/openclaw 因 API 配额未采集，留待明日",
     "unclecode/crawl4ai 因 API 配额未采集，留待明日",
     "browser-use/browser-use 因 API 配额未采集，留待明日",
+    "JustVugg/colibri 因 API 配额未采集，留待明日",
+    "unslothai/unsloth 因 API 配额未采集，留待明日",
     "microsoft/VibeVoice 因 API 配额未采集，留待明日",
     "Interactive-Active-AI/NextTransformer 因 API 配额未采集，留待明日",
     "algorithmicsuperintelligence/optillm 因 API 配额未采集，留待明日",

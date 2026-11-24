@@ -913,6 +913,22 @@ likeGPT:
     description: 填写你最喜欢使用的AI地址
 
 dailyAI_oss:
+  - name: pydantic/pydantic-ai
+    url: https://github.com/pydantic/pydantic-ai
+    img: https://github.com/favicon.ico
+    description: "Pydantic 官方 AI Agent 开发框架，端到端类型安全，支持实时语音、图像生成、嵌入与多模型接入。 · 2026-11-24 收录"
+  - name: 0xPlaygrounds/rig
+    url: https://github.com/0xPlaygrounds/rig
+    img: https://github.com/favicon.ico
+    description: "用 Rust 构建模块化、可扩展 LLM 应用的框架，主打高性能与低延迟的 AI 应用开发。 · 2026-11-24 收录"
+  - name: sybil-solutions/inference-optimisation-skill
+    url: https://github.com/sybil-solutions/inference-optimisation-skill
+    img: https://github.com/favicon.ico
+    description: "自动调优本地 LLM 推理速度的 Agent 技能，用爬山法搜索解码、预填充与 KV 缓存的最优配置。 · 2026-11-24 收录"
+  - name: simplexai-labs/linger
+    url: https://github.com/simplexai-labs/linger
+    img: https://github.com/favicon.ico
+    description: "可完全跑在本机的开源个人智能体，自研 PolyStrata 引擎让大模型在消费级硬件上运行，数据留存本地。 · 2026-11-24 收录"
   - name: trpc-group/trpc-agent-go
     url: https://github.com/trpc-group/trpc-agent-go
     img: https://github.com/favicon.ico
@@ -1131,6 +1147,14 @@ dailyAI_oss:
     description: "开源浏览器智能体框架，让大模型在真实浏览器中自动点击、输入并完成任务，兼容任意 LLM。 · 2026-11-13 收录"
 
 dailyAI_tool:
+  - name: OLVA
+    url: https://olva.ai
+    img: https://olva.ai/favicon.ico
+    description: "无需以机器人身份入会的实时 AI 会议助手，提供多语转写、实时问答、对话辅导与可搜索的会议记忆。 · 2026-11-24 收录"
+  - name: Fairwai
+    url: https://fairw.ai
+    img: https://fairw.ai/favicon.ico
+    description: "AI 对话服务商，提供可自动接听的语音 Agent、网站聊天机器人与会议纪要生成，可电话直接试听。 · 2026-11-24 收录"
   - name: "SoftSync AI"
     url: https://softsync.ai
     img: https://softsync.ai/favicon.ico
@@ -1201,6 +1225,14 @@ dailyAI_tool:
     description: "在本地或云端运行开源大模型的工具，支持 macOS、Windows、Linux，一条命令即可启动模型。 · 2026-11-13 收录"
 
 dailyAI_model:
+  - name: JustVugg/colibri
+    url: https://github.com/JustVugg/colibri
+    img: https://github.com/favicon.ico
+    description: "纯 C 编写的分层 MoE 推理引擎，热专家驻留 GPU、冷专家从 NVMe 流式加载，让超大模型跑在普通硬件上。 · 2026-11-24 收录"
+  - name: unslothai/unsloth
+    url: https://github.com/unslothai/unsloth
+    img: https://github.com/favicon.ico
+    description: "本地运行与训练大语言模型及扩散模型的框架，支持 GGUF、MLX 与 Qwen、DeepSeek、FLUX 等模型微调。 · 2026-11-24 收录"
   - name: microsoft/VibeVoice
     url: https://github.com/microsoft/VibeVoice
     img: https://github.com/favicon.ico

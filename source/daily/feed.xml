@@ -6,8 +6,23 @@
     <description>cyberMap 每日核验收录的 AI 开源项目、工具官网与模型框架，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Mon, 23 Nov 2026 10:40:56 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 10:32:37 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 2026-11-24（8 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-24</link>
+      <guid isPermaLink="true">https://cybermap.halo26812.eu.org/daily/#day-2026-11-24</guid>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 +0800</pubDate>
+      <description>pydantic/pydantic-ai［开源项目］Pydantic 官方 AI Agent 开发框架，端到端类型安全，支持实时语音、图像生成、嵌入与多模型接入。 — https://github.com/pydantic/pydantic-ai
+0xPlaygrounds/rig［开源项目］用 Rust 构建模块化、可扩展 LLM 应用的框架，主打高性能与低延迟的 AI 应用开发。 — https://github.com/0xPlaygrounds/rig
+sybil-solutions/inference-optimisation-skill［开源项目］自动调优本地 LLM 推理速度的 Agent 技能，用爬山法搜索解码、预填充与 KV 缓存的最优配置。 — https://github.com/sybil-solutions/inference-optimisation-skill
+simplexai-labs/linger［开源项目］可完全跑在本机的开源个人智能体，自研 PolyStrata 引擎让大模型在消费级硬件上运行，数据留存本地。 — https://github.com/simplexai-labs/linger
+OLVA［工具官网］无需以机器人身份入会的实时 AI 会议助手，提供多语转写、实时问答、对话辅导与可搜索的会议记忆。 — https://olva.ai
+Fairwai［工具官网］AI 对话服务商，提供可自动接听的语音 Agent、网站聊天机器人与会议纪要生成，可电话直接试听。 — https://fairw.ai
+JustVugg/colibri［模型框架］纯 C 编写的分层 MoE 推理引擎，热专家驻留 GPU、冷专家从 NVMe 流式加载，让超大模型跑在普通硬件上。 — https://github.com/JustVugg/colibri
+unslothai/unsloth［模型框架］本地运行与训练大语言模型及扩散模型的框架，支持 GGUF、MLX 与 Qwen、DeepSeek、FLUX 等模型微调。 — https://github.com/unslothai/unsloth</description>
+      <category>AI</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 2026-11-23（5 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-23</link>

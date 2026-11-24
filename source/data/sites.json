@@ -79,19 +79,19 @@
       "name": "社区与问卷"
     },
     {
-      "count": 54,
+      "count": 58,
       "group": "每日 AI 新发现",
       "key": "dailyAI_oss",
       "name": "开源项目"
     },
     {
-      "count": 17,
+      "count": 19,
       "group": "每日 AI 新发现",
       "key": "dailyAI_tool",
       "name": "工具官网"
     },
     {
-      "count": 15,
+      "count": 17,
       "group": "每日 AI 新发现",
       "key": "dailyAI_model",
       "name": "模型框架"
@@ -113,8 +113,8 @@
     "categories": 18,
     "groups": 5,
     "health_checked": 44,
-    "sites": 258,
-    "verified": 87
+    "sites": 266,
+    "verified": 95
   },
   "group_index": [
     {
@@ -154,7 +154,7 @@
         "dailyAI_tool",
         "dailyAI_model"
       ],
-      "count": 86,
+      "count": 94,
       "name": "每日 AI 新发现"
     },
     {
@@ -2765,6 +2765,95 @@
     {
       "category": "dailyAI_oss",
       "category_name": "开源项目",
+      "date": "2026-11-24",
+      "description": "Pydantic 官方 AI Agent 开发框架，端到端类型安全，支持实时语音、图像生成、嵌入与多模型接入。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "pydantic/pydantic-ai",
+      "tags": [
+        "安全审计",
+        "视频图像",
+        "代码开发"
+      ],
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-24T10:29:17+08:00",
+        "date": "2026-11-24",
+        "http_status": 0,
+        "stars": 21357
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
+      "date": "2026-11-24",
+      "description": "用 Rust 构建模块化、可扩展 LLM 应用的框架，主打高性能与低延迟的 AI 应用开发。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "0xPlaygrounds/rig",
+      "tags": [
+        "推理引擎",
+        "代码开发"
+      ],
+      "url": "https://github.com/0xPlaygrounds/rig",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-24T10:29:32+08:00",
+        "date": "2026-11-24",
+        "http_status": 0,
+        "stars": 9241
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
+      "date": "2026-11-24",
+      "description": "自动调优本地 LLM 推理速度的 Agent 技能，用爬山法搜索解码、预填充与 KV 缓存的最优配置。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "sybil-solutions/inference-optimisation-skill",
+      "tags": [
+        "推理引擎",
+        "技能生态",
+        "本地运行"
+      ],
+      "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-24T10:30:01+08:00",
+        "date": "2026-11-24",
+        "http_status": 0,
+        "stars": 2198
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
+      "date": "2026-11-24",
+      "description": "可完全跑在本机的开源个人智能体，自研 PolyStrata 引擎让大模型在消费级硬件上运行，数据留存本地。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "simplexai-labs/linger",
+      "tags": [
+        "本地运行"
+      ],
+      "url": "https://github.com/simplexai-labs/linger",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-24T10:30:15+08:00",
+        "date": "2026-11-24",
+        "http_status": 0,
+        "stars": 4202
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
       "date": "2026-11-23",
       "description": "腾讯开源的 Go 语言生产级智能体框架，支持图工作流、记忆、A2A 与 MCP 协议，内置评测与可观测能力。",
       "group": "每日 AI 新发现",
@@ -3922,6 +4011,48 @@
     {
       "category": "dailyAI_tool",
       "category_name": "工具官网",
+      "date": "2026-11-24",
+      "description": "无需以机器人身份入会的实时 AI 会议助手，提供多语转写、实时问答、对话辅导与可搜索的会议记忆。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://olva.ai/favicon.ico",
+      "name": "OLVA",
+      "tags": [
+        "记忆"
+      ],
+      "url": "https://olva.ai",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-24T10:31:44+08:00",
+        "date": "2026-11-24",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "dailyAI_tool",
+      "category_name": "工具官网",
+      "date": "2026-11-24",
+      "description": "AI 对话服务商，提供可自动接听的语音 Agent、网站聊天机器人与会议纪要生成，可电话直接试听。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://fairw.ai/favicon.ico",
+      "name": "Fairwai",
+      "tags": [
+        "语音"
+      ],
+      "url": "https://fairw.ai",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-24T10:31:47+08:00",
+        "date": "2026-11-24",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "dailyAI_tool",
+      "category_name": "工具官网",
       "date": "2026-11-23",
       "description": "面向初创团队的 AI CRM，整合线索、会议纪要、邮件跟进与报表，支持 MCP 与 API 接入。",
       "group": "每日 AI 新发现",
@@ -4273,6 +4404,49 @@
         "date": "2026-11-13",
         "http_status": 200,
         "stars": null
+      }
+    },
+    {
+      "category": "dailyAI_model",
+      "category_name": "模型框架",
+      "date": "2026-11-24",
+      "description": "纯 C 编写的分层 MoE 推理引擎，热专家驻留 GPU、冷专家从 NVMe 流式加载，让超大模型跑在普通硬件上。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "JustVugg/colibri",
+      "tags": [
+        "推理引擎"
+      ],
+      "url": "https://github.com/JustVugg/colibri",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-24T10:31:13+08:00",
+        "date": "2026-11-24",
+        "http_status": 0,
+        "stars": 53168
+      }
+    },
+    {
+      "category": "dailyAI_model",
+      "category_name": "模型框架",
+      "date": "2026-11-24",
+      "description": "本地运行与训练大语言模型及扩散模型的框架，支持 GGUF、MLX 与 Qwen、DeepSeek、FLUX 等模型微调。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "unslothai/unsloth",
+      "tags": [
+        "训练微调",
+        "本地运行"
+      ],
+      "url": "https://github.com/unslothai/unsloth",
+      "verified": {
+        "ai_hits": 8,
+        "checked_at": "2026-11-24T10:31:42+08:00",
+        "date": "2026-11-24",
+        "http_status": 0,
+        "stars": 80102
       }
     },
     {

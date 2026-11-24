@@ -6,8 +6,19 @@
     <description>cyberMap 每日核验收录的 AI 开源项目，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Mon, 23 Nov 2026 10:40:56 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 10:32:37 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 开源项目 · 2026-11-24（4 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-24</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-24</guid>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 +0800</pubDate>
+      <description>pydantic/pydantic-ai［开源项目］Pydantic 官方 AI Agent 开发框架，端到端类型安全，支持实时语音、图像生成、嵌入与多模型接入。 — https://github.com/pydantic/pydantic-ai
+0xPlaygrounds/rig［开源项目］用 Rust 构建模块化、可扩展 LLM 应用的框架，主打高性能与低延迟的 AI 应用开发。 — https://github.com/0xPlaygrounds/rig
+sybil-solutions/inference-optimisation-skill［开源项目］自动调优本地 LLM 推理速度的 Agent 技能，用爬山法搜索解码、预填充与 KV 缓存的最优配置。 — https://github.com/sybil-solutions/inference-optimisation-skill
+simplexai-labs/linger［开源项目］可完全跑在本机的开源个人智能体，自研 PolyStrata 引擎让大模型在消费级硬件上运行，数据留存本地。 — https://github.com/simplexai-labs/linger</description>
+      <category>开源项目</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 开源项目 · 2026-11-23（3 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-23</link>

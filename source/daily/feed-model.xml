@@ -6,8 +6,17 @@
     <description>cyberMap 每日核验收录的 AI 模型框架，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Mon, 23 Nov 2026 10:40:56 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 10:32:37 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 模型框架 · 2026-11-24（2 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-24</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_model-2026-11-24</guid>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 +0800</pubDate>
+      <description>JustVugg/colibri［模型框架］纯 C 编写的分层 MoE 推理引擎，热专家驻留 GPU、冷专家从 NVMe 流式加载，让超大模型跑在普通硬件上。 — https://github.com/JustVugg/colibri
+unslothai/unsloth［模型框架］本地运行与训练大语言模型及扩散模型的框架，支持 GGUF、MLX 与 Qwen、DeepSeek、FLUX 等模型微调。 — https://github.com/unslothai/unsloth</description>
+      <category>模型框架</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 模型框架 · 2026-11-22（3 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-22</link>

@@ -207,6 +207,10 @@
     </outline>
     <outline text="每日 AI 新发现">
       <outline text="开源项目" title="开源项目">
+        <outline type="link" text="pydantic/pydantic-ai" title="pydantic/pydantic-ai" url="https://github.com/pydantic/pydantic-ai" htmlUrl="https://github.com/pydantic/pydantic-ai" description="Pydantic 官方 AI Agent 开发框架，端到端类型安全，支持实时语音、图像生成、嵌入与多模型接入。" />
+        <outline type="link" text="0xPlaygrounds/rig" title="0xPlaygrounds/rig" url="https://github.com/0xPlaygrounds/rig" htmlUrl="https://github.com/0xPlaygrounds/rig" description="用 Rust 构建模块化、可扩展 LLM 应用的框架，主打高性能与低延迟的 AI 应用开发。" />
+        <outline type="link" text="sybil-solutions/inference-optimisation-skill" title="sybil-solutions/inference-optimisation-skill" url="https://github.com/sybil-solutions/inference-optimisation-skill" htmlUrl="https://github.com/sybil-solutions/inference-optimisation-skill" description="自动调优本地 LLM 推理速度的 Agent 技能，用爬山法搜索解码、预填充与 KV 缓存的最优配置。" />
+        <outline type="link" text="simplexai-labs/linger" title="simplexai-labs/linger" url="https://github.com/simplexai-labs/linger" htmlUrl="https://github.com/simplexai-labs/linger" description="可完全跑在本机的开源个人智能体，自研 PolyStrata 引擎让大模型在消费级硬件上运行，数据留存本地。" />
         <outline type="link" text="trpc-group/trpc-agent-go" title="trpc-group/trpc-agent-go" url="https://github.com/trpc-group/trpc-agent-go" htmlUrl="https://github.com/trpc-group/trpc-agent-go" description="腾讯开源的 Go 语言生产级智能体框架，支持图工作流、记忆、A2A 与 MCP 协议，内置评测与可观测能力。" />
         <outline type="link" text="modelflare-ai/AnyModelBot" title="modelflare-ai/AnyModelBot" url="https://github.com/modelflare-ai/AnyModelBot" htmlUrl="https://github.com/modelflare-ai/AnyModelBot" description="本地优先的开源 AI 机器人，可接入 GPT、Claude、Gemini 等多种模型搭建专属对话助手。" />
         <outline type="link" text="JosssphZhou/poki" title="JosssphZhou/poki" url="https://github.com/JosssphZhou/poki" htmlUrl="https://github.com/JosssphZhou/poki" description="开源 iPhone 智能体应用，能读取屏幕并自动点击滑动，通过本地 MCP 自动化操作 iOS 设备。" />
@@ -263,6 +267,8 @@
         <outline type="link" text="browser-use/browser-use" title="browser-use/browser-use" url="https://github.com/browser-use/browser-use" htmlUrl="https://github.com/browser-use/browser-use" description="开源浏览器智能体框架，让大模型在真实浏览器中自动点击、输入并完成任务，兼容任意 LLM。" />
       </outline>
       <outline text="工具官网" title="工具官网">
+        <outline type="link" text="OLVA" title="OLVA" url="https://olva.ai" htmlUrl="https://olva.ai" description="无需以机器人身份入会的实时 AI 会议助手，提供多语转写、实时问答、对话辅导与可搜索的会议记忆。" />
+        <outline type="link" text="Fairwai" title="Fairwai" url="https://fairw.ai" htmlUrl="https://fairw.ai" description="AI 对话服务商，提供可自动接听的语音 Agent、网站聊天机器人与会议纪要生成，可电话直接试听。" />
         <outline type="link" text="SoftSync AI" title="SoftSync AI" url="https://softsync.ai" htmlUrl="https://softsync.ai" description="面向初创团队的 AI CRM，整合线索、会议纪要、邮件跟进与报表，支持 MCP 与 API 接入。" />
         <outline type="link" text="Denizen Blu One" title="Denizen Blu One" url="https://denizenblu.com" htmlUrl="https://denizenblu.com" description="提供多模型统一订阅与 OpenAI 兼容 API 的在线 AI 服务，按年计费、不按 token 收费。" />
         <outline type="link" text="MerchantFloor" title="MerchantFloor" url="https://www.merchantfloor.com" htmlUrl="https://www.merchantfloor.com" description="面向小型 Shopify 商家的 AI 商品上架工具，上传产品图即可生成白底图、场景图与 SEO 描述并同步店铺。" />
@@ -282,6 +288,8 @@
         <outline type="link" text="Ollama" title="Ollama" url="https://ollama.com" htmlUrl="https://ollama.com" description="在本地或云端运行开源大模型的工具，支持 macOS、Windows、Linux，一条命令即可启动模型。" />
       </outline>
       <outline text="模型框架" title="模型框架">
+        <outline type="link" text="JustVugg/colibri" title="JustVugg/colibri" url="https://github.com/JustVugg/colibri" htmlUrl="https://github.com/JustVugg/colibri" description="纯 C 编写的分层 MoE 推理引擎，热专家驻留 GPU、冷专家从 NVMe 流式加载，让超大模型跑在普通硬件上。" />
+        <outline type="link" text="unslothai/unsloth" title="unslothai/unsloth" url="https://github.com/unslothai/unsloth" htmlUrl="https://github.com/unslothai/unsloth" description="本地运行与训练大语言模型及扩散模型的框架，支持 GGUF、MLX 与 Qwen、DeepSeek、FLUX 等模型微调。" />
         <outline type="link" text="microsoft/VibeVoice" title="microsoft/VibeVoice" url="https://github.com/microsoft/VibeVoice" htmlUrl="https://github.com/microsoft/VibeVoice" description="微软开源的前沿语音 AI 模型，面向高质量语音生成与实时语音交互场景。" />
         <outline type="link" text="Interactive-Active-AI/NextTransformer" title="Interactive-Active-AI/NextTransformer" url="https://github.com/Interactive-Active-AI/NextTransformer" htmlUrl="https://github.com/Interactive-Active-AI/NextTransformer" description="面向下一代 Transformer 与大模型的开源框架，提供算力对齐基准与架构自主研究能力。" />
         <outline type="link" text="algorithmicsuperintelligence/optillm" title="algorithmicsuperintelligence/optillm" url="https://github.com/algorithmicsuperintelligence/optillm" htmlUrl="https://github.com/algorithmicsuperintelligence/optillm" description="LLM 推理优化代理，通过多种提示与缓存策略降低大模型调用成本并提升响应效率。" />

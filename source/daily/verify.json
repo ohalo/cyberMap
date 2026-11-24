@@ -283,6 +283,20 @@
         }
       ],
       "review": 4
+    },
+    "2026-11-24": {
+      "added": 8,
+      "checked": 14,
+      "fail": 0,
+      "pass": 13,
+      "rejected": [
+        {
+          "reason": "GitHub 网页经本机代理不可达；仓库真实性由 GitHub API 元数据核验；GitHub stars < 200，需人工判断价值",
+          "url": "https://github.com/mit-han-lab/EvolvingInfra",
+          "verdict": "review"
+        }
+      ],
+      "review": 1
     }
   },
   "evidence": {
@@ -376,6 +390,21 @@
       "title": "Enter",
       "verdict": "pass"
     },
+    "fairw.ai/": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-24T10:31:47+08:00",
+      "date": "2026-11-24",
+      "http_status": 200,
+      "license": null,
+      "pushed_at": null,
+      "stars": null,
+      "title": "Fairwai : agent vocal, chatbot et comptes rendus IA",
+      "verdict": "pass"
+    },
     "github.com/0sec-labs/0": {
       "ai_hits": 3,
       "ai_keywords": [
@@ -400,12 +429,12 @@
         "generative",
         "llm"
       ],
-      "checked_at": "2026-11-22T09:54:53+08:00",
-      "date": "2026-11-22",
+      "checked_at": "2026-11-24T10:29:32+08:00",
+      "date": "2026-11-24",
       "http_status": 0,
       "license": "MIT",
-      "pushed_at": "2026-11-20T21:28:51Z",
-      "stars": 9214,
+      "pushed_at": "2026-11-24T02:00:45Z",
+      "stars": 9241,
       "title": "",
       "verdict": "pass"
     },
@@ -1343,6 +1372,20 @@
       "title": "",
       "verdict": "pass"
     },
+    "github.com/justvugg/colibri": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "inference"
+      ],
+      "checked_at": "2026-11-24T10:31:13+08:00",
+      "date": "2026-11-24",
+      "http_status": 0,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-23T20:58:36Z",
+      "stars": 53168,
+      "title": "",
+      "verdict": "pass"
+    },
     "github.com/karakeep-app/karakeep": {
       "ai_hits": 1,
       "ai_keywords": [
@@ -1468,6 +1511,20 @@
       "pushed_at": "2026-11-18T02:31:08Z",
       "stars": 30196,
       "title": "GitHub - meta/astryx: An open source design system that&#39;s fully customizable and agent ready · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/microsoft/markitdown": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "openai"
+      ],
+      "checked_at": "2026-11-24T10:30:44+08:00",
+      "date": "2026-11-24",
+      "http_status": 0,
+      "license": "MIT",
+      "pushed_at": "2026-11-07T00:14:01Z",
+      "stars": 198099,
+      "title": "",
       "verdict": "pass"
     },
     "github.com/microsoft/vibevoice": {
@@ -1753,6 +1810,20 @@
       "title": "GitHub - open-webui/open-webui: User-friendly AI Interface (Supports Ollama, OpenAI API, ...) · GitHub",
       "verdict": "pass"
     },
+    "github.com/openobserve/openobserve": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "llm"
+      ],
+      "checked_at": "2026-11-24T10:30:30+08:00",
+      "date": "2026-11-24",
+      "http_status": 0,
+      "license": "AGPL-3.0",
+      "pushed_at": "2026-11-24T02:21:34Z",
+      "stars": 23166,
+      "title": "",
+      "verdict": "pass"
+    },
     "github.com/orkas-ai/orkas": {
       "ai_hits": 3,
       "ai_keywords": [
@@ -1840,13 +1911,13 @@
         "embedding",
         "llm"
       ],
-      "checked_at": "2026-11-18T10:22:45+08:00",
-      "date": "2026-11-18",
-      "http_status": 200,
+      "checked_at": "2026-11-24T10:29:17+08:00",
+      "date": "2026-11-24",
+      "http_status": 0,
       "license": "MIT",
-      "pushed_at": "2026-11-18T02:22:17Z",
-      "stars": 21265,
-      "title": "GitHub - pydantic/pydantic-ai: How Python does AI. Agents, realtime voice, image generation, embeddings. Every model, every interface, typed end to end. · GitHub",
+      "pushed_at": "2026-11-24T01:58:28Z",
+      "stars": 21357,
+      "title": "",
       "verdict": "pass"
     },
     "github.com/rasbt/llms-from-scratch": {
@@ -1907,6 +1978,40 @@
       "title": "GitHub - Significant-Gravitas/AutoGPT: AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on wh",
       "verdict": "pass"
     },
+    "github.com/simplexai-labs/linger": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "llm"
+      ],
+      "checked_at": "2026-11-24T10:30:15+08:00",
+      "date": "2026-11-24",
+      "http_status": 0,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-11-24T02:30:04Z",
+      "stars": 4202,
+      "title": "",
+      "verdict": "pass"
+    },
+    "github.com/simplexai-labs/polystrata": {
+      "ai_hits": 5,
+      "ai_keywords": [
+        "\\bai\\b",
+        "anthropic",
+        "inference",
+        "llm",
+        "openai"
+      ],
+      "checked_at": "2026-11-24T10:31:27+08:00",
+      "date": "2026-11-24",
+      "http_status": 0,
+      "license": "MIT",
+      "pushed_at": "2026-11-24T00:32:18Z",
+      "stars": 1449,
+      "title": "",
+      "verdict": "pass"
+    },
     "github.com/skyzh/tiny-llm": {
       "ai_hits": 2,
       "ai_keywords": [
@@ -1936,6 +2041,23 @@
       "pushed_at": "2026-11-16T01:13:08Z",
       "stars": 125794,
       "title": "GitHub - stablyai/orca: Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime. · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/sybil-solutions/inference-optimisation-skill": {
+      "ai_hits": 4,
+      "ai_keywords": [
+        "agent",
+        "claude",
+        "inference",
+        "llm"
+      ],
+      "checked_at": "2026-11-24T10:30:01+08:00",
+      "date": "2026-11-24",
+      "http_status": 0,
+      "license": "MIT",
+      "pushed_at": "2026-11-16T18:40:08Z",
+      "stars": 2198,
+      "title": "",
       "verdict": "pass"
     },
     "github.com/tauricresearch/tradingagents": {
@@ -2132,6 +2254,27 @@
       "title": "GitHub - universal-tool-calling-protocol/code-mode: 🔌 Plug-and-play library to enable agents to call MCP and UTCP tools via code execution. · GitHub",
       "verdict": "pass"
     },
+    "github.com/unslothai/unsloth": {
+      "ai_hits": 8,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "chatgpt",
+        "diffusion",
+        "fine[- ]?tun",
+        "gpt",
+        "llm",
+        "openai"
+      ],
+      "checked_at": "2026-11-24T10:31:42+08:00",
+      "date": "2026-11-24",
+      "http_status": 0,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-24T02:31:34Z",
+      "stars": 80102,
+      "title": "",
+      "verdict": "pass"
+    },
     "github.com/unstructured-io/unstructured": {
       "ai_hits": 2,
       "ai_keywords": [
@@ -2206,6 +2349,21 @@
       "pushed_at": "2026-11-15T13:39:49Z",
       "stars": 1248,
       "title": "GitHub - wanxingai/LightAgent: LightAgent: Lightweight Python framework for OpenAI-compatible agents with tools, memory, guardrails, tracing, lifecycle hooks, multi-agent collabora",
+      "verdict": "pass"
+    },
+    "github.com/weaviate/weaviate": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "generative",
+        "neural"
+      ],
+      "checked_at": "2026-11-24T10:29:46+08:00",
+      "date": "2026-11-24",
+      "http_status": 0,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-11-24T02:10:01Z",
+      "stars": 16958,
+      "title": "",
       "verdict": "pass"
     },
     "github.com/webbrain-one/webbrain": {
@@ -2302,6 +2460,21 @@
       "title": "GlobalGPT: ChatGPT, Claude, Gemini, AI Images &amp; Video in One Subscription",
       "verdict": "pass"
     },
+    "heylinger.com/": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-24T10:31:48+08:00",
+      "date": "2026-11-24",
+      "http_status": 200,
+      "license": null,
+      "pushed_at": null,
+      "stars": null,
+      "title": "Linger — Your personal agent, on your own computer.",
+      "verdict": "pass"
+    },
     "merchantfloor.com/": {
       "ai_hits": 1,
       "ai_keywords": [
@@ -2329,6 +2502,20 @@
       "pushed_at": null,
       "stars": null,
       "title": "Ollama · Run AI models locally and in the cloud",
+      "verdict": "pass"
+    },
+    "olva.ai/": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "\\bai\\b"
+      ],
+      "checked_at": "2026-11-24T10:31:44+08:00",
+      "date": "2026-11-24",
+      "http_status": 200,
+      "license": null,
+      "pushed_at": null,
+      "stars": null,
+      "title": "OLVA - Live Context AI Meeting Assistant",
       "verdict": "pass"
     },
     "platform.kimi.com/": {
@@ -2467,13 +2654,13 @@
   "schema": 1,
   "source": "cybermap-daily/state/reports/verify-YYYY-MM-DD.json",
   "totals": {
-    "added": 86,
-    "checked": 177,
-    "days": 11,
+    "added": 94,
+    "checked": 191,
+    "days": 12,
     "fail": 15,
-    "pass": 140,
-    "review": 22,
-    "verified_sites": 137
+    "pass": 153,
+    "review": 23,
+    "verified_sites": 148
   },
   "warnings": []
 }
