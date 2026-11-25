@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-zh="Agent Harness 排行榜 · 每日更新" data-en="Agent Harness Leaderboard · Daily">Agent Harness 排行榜 · 每日更新</title>
+<meta name="description" data-zh="Claude Code、Codex、DeepSeek Harness、OpenCode、Cline、Hermes 等 Agent harness 本体多维排行榜，只用公开可核验数据，每日更新。" data-en="Daily multi-dimensional ranking of agent harnesses including Claude Code, Codex, DeepSeek Harness, OpenCode, Cline and Hermes — public verifiable data only." content="Claude Code、Codex、DeepSeek Harness、OpenCode、Cline、Hermes 等 Agent harness 本体多维排行榜，只用公开可核验数据，每日更新。">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/harness.css">
+<script src="../assets/i18n.js"></script>
+<link rel="stylesheet" href="../assets/rank-frame.css">
+</head>
+<body class="rank-embedded"><header class="cm-rank-bar">
+  <a class="cm-rank-home" href="/" title="cyberMap home"><span class="i18n-zh"><span class='cm-rank-back'>←</span> cyberMap 导航</span><span class="i18n-en"><span class='cm-rank-back'>←</span> cyberMap Home</span></a>
+  <nav class="cm-rank-nav" aria-label="Harness leaderboard navigation">
+    <a href="/rank/" data-key="all"><span class="i18n-zh">插件总榜</span><span class="i18n-en">Plugin rank</span></a>
+    <a href="/rank/harness/" data-key="harness"><span class="i18n-zh">Harness 总榜</span><span class="i18n-en">Harness overall</span></a>
+    <a href="/rank/harness/?category=cli" data-key="category" data-cat="cli">CLI</a>
+    <a href="/rank/harness/?category=ide" data-key="category" data-cat="ide">IDE</a>
+    <a href="/rank/harness/?category=assistant" data-key="category" data-cat="assistant"><span class="i18n-zh">助理</span><span class="i18n-en">Assistant</span></a>
+    <a href="/rank/harness/?category=multi" data-key="category" data-cat="multi"><span class="i18n-zh">多代理</span><span class="i18n-en">Multi-agent</span></a>
+    <a href="/rank/harness/?category=framework" data-key="category" data-cat="framework"><span class="i18n-zh">框架</span><span class="i18n-en">Framework</span></a>
+    <a href="/rank/harness/?category=watchlist" data-key="category" data-cat="watchlist"><span class="i18n-zh">闭源观察</span><span class="i18n-en">Watchlist</span></a>
+    <a href="/rank/harness/methodology.html"><span class="i18n-zh">评分口径</span><span class="i18n-en">Methodology</span></a>
+  </nav>
+  <div class="cm-rank-side">
+    <span class="cm-rank-stamp"><span class="i18n-zh">每日 09:50 更新</span><span class="i18n-en">Daily 09:50 UTC+8</span></span>
+    <button class="cm-rank-lang" id="cm-rank-lang" type="button" title="切换语言 / Switch language" aria-label="Switch language"><span data-l="zh">中</span><span data-l="en">EN</span></button>
+    <button class="cm-rank-theme" id="cm-rank-theme" type="button" title="切换深浅色" aria-label="切换深浅色"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.3 3a9 9 0 1 0 8.7 11.4A7.2 7.2 0 0 1 12.3 3z"/></svg></button>
+  </div>
+</header>
+
+<main class="wrap">
+<header class="site-head">
+  <div>
+    <h1><span class="i18n-zh">Agent Harness 排行榜</span><span class="i18n-en">Agent Harness Leaderboard</span></h1>
+    <p class="sub"><span class="i18n-zh">收录 CLI、IDE、个人助理、多代理编排与框架五类 harness 本体；每日 09:50 更新。插件/技能/skill 不在此榜，闭源产品进观察名单。</span><span class="i18n-en">CLI, IDE, personal assistant, multi-agent orchestration and framework harnesses — updated daily at 09:50. Plugins and skills are out of scope; closed-source products appear in the watchlist.</span></p>
+  </div>
+  <div class="head-links">
+    <a class="method-link" href="methodology.html"><span class="i18n-zh">评分口径 ↗</span><span class="i18n-en">Methodology ↗</span></a>
+    <a class="method-link" href="../index.html"><span class="i18n-zh">插件榜 ↗</span><span class="i18n-en">Plugin rank ↗</span></a>
+  </div>
+</header>
+
+<section class="stats" id="stats">
+  <div class="stat"><span class="i18n-zh">收录 harness</span><span class="i18n-en">Harnesses tracked</span><strong id="h-stat-total">—</strong></div>
+  <div class="stat"><span class="i18n-zh">总榜条目</span><span class="i18n-en">Overall entries</span><strong id="h-stat-top">—</strong></div>
+  <div class="stat"><span class="i18n-zh">人工校验</span><span class="i18n-en">Curated</span><strong id="h-stat-curated">—</strong></div>
+  <div class="stat"><span class="i18n-zh">自动发现</span><span class="i18n-en">Discovered</span><strong id="h-stat-discovered">—</strong></div>
+  <div class="stat"><span class="i18n-zh">数据更新</span><span class="i18n-en">Data updated</span><strong id="h-stat-date">—</strong></div>
+</section>
+
+<div class="notice" id="h-baseline-note" hidden>
+  <span class="i18n-zh">当前为首日基线：缺少历史快照，「增长势能」维度暂不参与评分，权重已在其余维度间重新归一。明日起显示排名变化。</span><span class="i18n-en">First-day baseline: with no history snapshot yet, Momentum is excluded from scoring and weights are renormalized. Rank changes appear tomorrow.</span>
+</div>
+
+<section class="toolbar">
+  <div class="tabs" id="h-tabs"></div>
+  <div class="filters">
+    <input id="h-search" type="search" placeholder="搜索 harness 名、仓库或描述…" data-ph-zh="搜索 harness 名、仓库或描述…" data-ph-en="Search harness, repo or description…" autocomplete="off">
+    <select id="h-sort">
+      <option value="score" data-zh="按综合分" data-en="By score">按综合分</option>
+      <option value="stars" data-zh="按 Stars" data-en="By stars">按 Stars</option>
+      <option value="delta" data-zh="按 Stars 增量" data-en="By star delta">按 Stars 增量</option>
+      <option value="pushed" data-zh="按最近更新" data-en="By last update">按最近更新</option>
+    </select>
+    <label class="check"><input type="checkbox" id="h-curated-only"> <span class="i18n-zh">只看人工校验</span><span class="i18n-en">Curated only</span></label>
+  </div>
+</section>
+
+<div class="list-head h-list-head">
+  <span><span class="i18n-zh">排名</span><span class="i18n-en">Rank</span></span>
+  <span><span class="i18n-zh">Harness</span><span class="i18n-en">Harness</span></span>
+  <span><span class="i18n-zh">类别</span><span class="i18n-en">Category</span></span>
+  <span><span class="i18n-zh">综合分</span><span class="i18n-en">Score</span></span>
+  <span><span class="i18n-zh">变化</span><span class="i18n-en">Change</span></span>
+  <span>Stars</span>
+</div>
+<div id="h-list" class="list"><div class="loading i18n-zh">正在加载 harness 榜单…</div><div class="loading i18n-en">Loading harness leaderboard…</div></div>
+<div id="h-list-foot" class="list-foot"></div>
+
+<footer class="site-foot">
+  <span class="i18n-zh">全部指标来自 GitHub Search / REST API 与 npm downloads API 当日快照；第三方榜单只作发现线索，不采信其数字。每条记录保留采集 query 与时间戳，可在详情页逐点回溯。分数是当日相对分位，跨日请比较名次而非分数绝对值。</span>
+  <span class="i18n-en">All metrics come from same-day GitHub Search / REST API and npm downloads API snapshots. Third-party charts are discovery leads only. Every record keeps its source query and timestamp on the detail page. Scores are same-day percentiles — compare ranks across days, not absolute scores.</span>
+  <span id="h-foot-time"></span>
+</footer>
+</main>
+<script src="../assets/harness.js"></script>
+<script src="../assets/rank-frame.js"></script>
+</body>
+</html>

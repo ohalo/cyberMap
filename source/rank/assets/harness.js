@@ -10,6 +10,13 @@
   var fmt = function (n) { return Number(n || 0).toLocaleString('en-US'); };
   function lang() { return (window.RANK_I18N && window.RANK_I18N.lang === 'en') ? 'en' : 'zh'; }
   function bi(zh, en) { return lang() === 'en' ? en : zh; }
+  function detailHref(x) {
+    // /rank/harness.html 与 /rank/harness/ 两种入口共用同一份数据
+    if (/\/harness\/$/.test(location.pathname)) {
+      return String(x.detail_url || '').replace(/^harness\//, '');
+    }
+    return x.detail_url;
+  }
   function catName(x) {
     var labels = state.data.meta.categories || {};
     var c = labels[x.category] || {};
@@ -54,7 +61,7 @@
           '<span>' + esc(x.category) + '</span><span class="score">—</span>' +
           '<span class="delta flat">' + bi('观察', 'Watch') + '</span><span class="stars">—</span></div>';
       }
-      return '<a class="row" href="' + esc(x.detail_url) + '">' +
+      return '<a class="row" href="' + esc(detailHref(x)) + '">' +
         '<span class="rank">' + x.rank + '</span>' +
         '<span><span class="pname">' + esc(x.name) +
         (x.origin === 'discovered' ? ' <span class="badge">' + bi('发现', 'Discovered') + '</span>' : '') +

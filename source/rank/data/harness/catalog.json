@@ -40,17 +40,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 89.42,
+    "score": 89.55,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.9788,
-        "contribution": 32.63
+        "normalized": 0.9811,
+        "contribution": 32.7
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9702,
-        "contribution": 26.95
+        "normalized": 0.9721,
+        "contribution": 27.0
       },
       "maturity": {
         "weight": 0.2,
@@ -76,7 +76,7 @@
       "topics": 4,
       "org_backed": true
     },
-    "rank": 4
+    "rank": 5
   },
   {
     "id": "claude-code",
@@ -114,16 +114,16 @@
       "query_fetched_at": null,
       "npm_fetched_at": "2026-11-25T02:37:26+00:00"
     },
-    "score": 74.22,
+    "score": 74.33,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.8827,
-        "contribution": 29.42
+        "normalized": 0.8859,
+        "contribution": 29.53
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.722,
+        "normalized": 0.7221,
         "contribution": 20.06
       },
       "maturity": {
@@ -150,7 +150,7 @@
       "topics": 0,
       "org_backed": true
     },
-    "rank": 33
+    "rank": 38
   },
   {
     "id": "codex",
@@ -188,17 +188,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": "2026-11-25T02:37:26+00:00"
     },
-    "score": 77.14,
+    "score": 77.25,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.9642,
-        "contribution": 32.14
+        "normalized": 0.968,
+        "contribution": 32.27
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7055,
-        "contribution": 19.6
+        "normalized": 0.7049,
+        "contribution": 19.58
       },
       "maturity": {
         "weight": 0.2,
@@ -224,7 +224,7 @@
       "topics": 0,
       "org_backed": true
     },
-    "rank": 29
+    "rank": 31
   },
   {
     "id": "gemini-cli",
@@ -274,13 +274,13 @@
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.6916,
-        "contribution": 23.05
+        "normalized": 0.6965,
+        "contribution": 23.22
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8927,
-        "contribution": 24.8
+        "normalized": 0.8869,
+        "contribution": 24.64
       },
       "maturity": {
         "weight": 0.2,
@@ -306,7 +306,7 @@
       "topics": 7,
       "org_backed": true
     },
-    "rank": 18
+    "rank": 19
   },
   {
     "id": "opencode",
@@ -344,17 +344,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": "2026-11-25T02:37:27+00:00"
     },
-    "score": 71.14,
+    "score": 71.28,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.6261,
-        "contribution": 20.87
+        "normalized": 0.6287,
+        "contribution": 20.96
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8211,
-        "contribution": 22.81
+        "normalized": 0.823,
+        "contribution": 22.86
       },
       "maturity": {
         "weight": 0.2,
@@ -380,7 +380,7 @@
       "topics": 0,
       "org_backed": true
     },
-    "rank": 40
+    "rank": 46
   },
   {
     "id": "aider",
@@ -432,17 +432,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 70.18,
+    "score": 70.52,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.8243,
-        "contribution": 27.48
+        "normalized": 0.8348,
+        "contribution": 27.83
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.1372,
-        "contribution": 3.81
+        "normalized": 0.1368,
+        "contribution": 3.8
       },
       "maturity": {
         "weight": 0.2,
@@ -468,7 +468,7 @@
       "topics": 13,
       "org_backed": true
     },
-    "rank": 42
+    "rank": 49
   },
   {
     "id": "qwen-code",
@@ -519,17 +519,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 78.05,
+    "score": 78.54,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.7269,
-        "contribution": 24.23
+        "normalized": 0.7421,
+        "contribution": 24.74
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7275,
-        "contribution": 20.21
+        "normalized": 0.727,
+        "contribution": 20.2
       },
       "maturity": {
         "weight": 0.2,
@@ -555,7 +555,7 @@
       "topics": 12,
       "org_backed": true
     },
-    "rank": 26
+    "rank": 28
   },
   {
     "id": "kimi-code",
@@ -593,17 +593,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 63.04,
+    "score": 63.67,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.4876,
-        "contribution": 16.25
+        "normalized": 0.5069,
+        "contribution": 16.9
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7028,
-        "contribution": 19.52
+        "normalized": 0.7025,
+        "contribution": 19.51
       },
       "maturity": {
         "weight": 0.2,
@@ -629,7 +629,7 @@
       "topics": 0,
       "org_backed": true
     },
-    "rank": 67
+    "rank": 73
   },
   {
     "id": "grok-build",
@@ -667,17 +667,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 64.08,
+    "score": 64.63,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.7318,
-        "contribution": 24.39
+        "normalized": 0.7465,
+        "contribution": 24.88
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.6647,
-        "contribution": 18.46
+        "normalized": 0.6667,
+        "contribution": 18.52
       },
       "maturity": {
         "weight": 0.2,
@@ -703,7 +703,7 @@
       "topics": 0,
       "org_backed": true
     },
-    "rank": 63
+    "rank": 70
   },
   {
     "id": "copilot-cli",
@@ -741,17 +741,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 67.25,
+    "score": 68.05,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.5561,
-        "contribution": 18.54
+        "normalized": 0.5813,
+        "contribution": 19.38
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7138,
-        "contribution": 19.83
+        "normalized": 0.7123,
+        "contribution": 19.79
       },
       "maturity": {
         "weight": 0.2,
@@ -777,7 +777,7 @@
       "topics": 0,
       "org_backed": true
     },
-    "rank": 53
+    "rank": 55
   },
   {
     "id": "hermes-agent",
@@ -829,17 +829,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 82.32,
+    "score": 82.37,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.9781,
-        "contribution": 32.6
+        "normalized": 0.9805,
+        "contribution": 32.68
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7083,
-        "contribution": 19.67
+        "normalized": 0.7074,
+        "contribution": 19.65
       },
       "maturity": {
         "weight": 0.2,
@@ -865,7 +865,7 @@
       "topics": 13,
       "org_backed": true
     },
-    "rank": 15
+    "rank": 18
   },
   {
     "id": "openclaw",
@@ -911,7 +911,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": "2026-11-25T02:37:27+00:00"
     },
-    "score": 82.0,
+    "score": 81.98,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -920,8 +920,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8018,
-        "contribution": 22.27
+        "normalized": 0.8008,
+        "contribution": 22.24
       },
       "maturity": {
         "weight": 0.2,
@@ -947,7 +947,7 @@
       "topics": 7,
       "org_backed": true
     },
-    "rank": 19
+    "rank": 20
   },
   {
     "id": "openharness",
@@ -985,17 +985,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 73.44,
+    "score": 73.96,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.6196,
-        "contribution": 20.65
+        "normalized": 0.6381,
+        "contribution": 21.27
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.902,
-        "contribution": 25.06
+        "normalized": 0.8986,
+        "contribution": 24.96
       },
       "maturity": {
         "weight": 0.2,
@@ -1021,7 +1021,7 @@
       "topics": 0,
       "org_backed": true
     },
-    "rank": 38
+    "rank": 39
   },
   {
     "id": "deepcode",
@@ -1063,17 +1063,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 80.22,
+    "score": 80.82,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.6119,
-        "contribution": 20.4
+        "normalized": 0.6311,
+        "contribution": 21.04
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9296,
-        "contribution": 25.82
+        "normalized": 0.9281,
+        "contribution": 25.78
       },
       "maturity": {
         "weight": 0.2,
@@ -1099,7 +1099,7 @@
       "topics": 3,
       "org_backed": true
     },
-    "rank": 20
+    "rank": 21
   },
   {
     "id": "codewhale",
@@ -1156,17 +1156,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 84.12,
+    "score": 84.5,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.7777,
-        "contribution": 25.92
+        "normalized": 0.7932,
+        "contribution": 26.44
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9532,
-        "contribution": 26.48
+        "normalized": 0.9484,
+        "contribution": 26.34
       },
       "maturity": {
         "weight": 0.2,
@@ -1192,7 +1192,7 @@
       "topics": 18,
       "org_backed": true
     },
-    "rank": 12
+    "rank": 13
   },
   {
     "id": "jcode",
@@ -1243,17 +1243,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 70.84,
+    "score": 71.55,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.6521,
-        "contribution": 21.74
+        "normalized": 0.6728,
+        "contribution": 22.43
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7413,
-        "contribution": 20.59
+        "normalized": 0.7418,
+        "contribution": 20.61
       },
       "maturity": {
         "weight": 0.2,
@@ -1279,7 +1279,7 @@
       "topics": 12,
       "org_backed": false
     },
-    "rank": 41
+    "rank": 44
   },
   {
     "id": "ruflo",
@@ -1338,17 +1338,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 85.13,
+    "score": 85.34,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.8906,
-        "contribution": 29.69
+        "normalized": 0.9023,
+        "contribution": 30.08
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8982,
-        "contribution": 24.95
+        "normalized": 0.8918,
+        "contribution": 24.77
       },
       "maturity": {
         "weight": 0.2,
@@ -1374,7 +1374,7 @@
       "topics": 20,
       "org_backed": false
     },
-    "rank": 11
+    "rank": 12
   },
   {
     "id": "ecc",
@@ -1421,17 +1421,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 88.22,
+    "score": 88.11,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.988,
-        "contribution": 32.93
+        "normalized": 0.9893,
+        "contribution": 32.98
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9681,
-        "contribution": 26.89
+        "normalized": 0.9625,
+        "contribution": 26.74
       },
       "maturity": {
         "weight": 0.2,
@@ -1457,7 +1457,7 @@
       "topics": 8,
       "org_backed": false
     },
-    "rank": 7
+    "rank": 8
   },
   {
     "id": "openhuman",
@@ -1508,17 +1508,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 82.32,
+    "score": 82.64,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.7911,
-        "contribution": 26.37
+        "normalized": 0.8052,
+        "contribution": 26.84
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8822,
-        "contribution": 24.5
+        "normalized": 0.8767,
+        "contribution": 24.35
       },
       "maturity": {
         "weight": 0.2,
@@ -1544,7 +1544,7 @@
       "topics": 12,
       "org_backed": true
     },
-    "rank": 16
+    "rank": 17
   },
   {
     "id": "reasonix",
@@ -1601,17 +1601,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 54.23,
+    "score": 54.76,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.7311,
-        "contribution": 24.37
+        "normalized": 0.7491,
+        "contribution": 24.97
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7214,
-        "contribution": 20.04
+        "normalized": 0.7239,
+        "contribution": 20.11
       },
       "maturity": {
         "weight": 0.2,
@@ -1639,7 +1639,7 @@
       "topics": 18,
       "org_backed": false
     },
-    "rank": 92
+    "rank": 98
   },
   {
     "id": "tau",
@@ -1683,17 +1683,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 56.24,
+    "score": 55.88,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.0935,
-        "contribution": 3.12
+        "normalized": 0.081,
+        "contribution": 2.7
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9195,
-        "contribution": 25.54
+        "normalized": 0.9215,
+        "contribution": 25.6
       },
       "maturity": {
         "weight": 0.2,
@@ -1719,7 +1719,7 @@
       "topics": 5,
       "org_backed": false
     },
-    "rank": 87
+    "rank": 97
   },
   {
     "id": "aster",
@@ -1766,17 +1766,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 47.02,
+    "score": 46.54,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.12,
-        "contribution": 4.0
+        "normalized": 0.1047,
+        "contribution": 3.49
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.588,
-        "contribution": 16.33
+        "normalized": 0.5892,
+        "contribution": 16.37
       },
       "maturity": {
         "weight": 0.2,
@@ -1842,17 +1842,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 51.35,
+    "score": 50.96,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.043,
-        "contribution": 1.43
+        "normalized": 0.0372,
+        "contribution": 1.24
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9647,
-        "contribution": 26.8
+        "normalized": 0.9578,
+        "contribution": 26.61
       },
       "maturity": {
         "weight": 0.2,
@@ -1878,7 +1878,7 @@
       "topics": 1,
       "org_backed": true
     },
-    "rank": 99
+    "rank": null
   },
   {
     "id": "zaru-cli",
@@ -1933,17 +1933,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 50.44,
+    "score": 50.25,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.0109,
-        "contribution": 0.36
+        "normalized": 0.0098,
+        "contribution": 0.33
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7359,
-        "contribution": 20.44
+        "normalized": 0.7302,
+        "contribution": 20.28
       },
       "maturity": {
         "weight": 0.2,
@@ -2018,17 +2018,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 50.72,
+    "score": 50.77,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.0014,
-        "contribution": 0.05
+        "normalized": 0.0013,
+        "contribution": 0.04
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8791,
-        "contribution": 24.42
+        "normalized": 0.8811,
+        "contribution": 24.47
       },
       "maturity": {
         "weight": 0.2,
@@ -2109,17 +2109,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 53.63,
+    "score": 53.12,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.1119,
-        "contribution": 3.73
+        "normalized": 0.0974,
+        "contribution": 3.25
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8686,
-        "contribution": 24.13
+        "normalized": 0.8674,
+        "contribution": 24.09
       },
       "maturity": {
         "weight": 0.2,
@@ -2145,7 +2145,7 @@
       "topics": 16,
       "org_backed": false
     },
-    "rank": 95
+    "rank": null
   },
   {
     "id": "synapscli",
@@ -2201,17 +2201,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 51.32,
+    "score": 50.9,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.0713,
-        "contribution": 2.38
+        "normalized": 0.0612,
+        "contribution": 2.04
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7666,
-        "contribution": 21.29
+        "normalized": 0.7636,
+        "contribution": 21.21
       },
       "maturity": {
         "weight": 0.2,
@@ -2237,7 +2237,7 @@
       "topics": 17,
       "org_backed": false
     },
-    "rank": 100
+    "rank": null
   },
   {
     "id": "mu",
@@ -2292,17 +2292,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 57.12,
+    "score": 56.03,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.1644,
-        "contribution": 5.48
+        "normalized": 0.1311,
+        "contribution": 4.37
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.918,
-        "contribution": 25.5
+        "normalized": 0.9185,
+        "contribution": 25.51
       },
       "maturity": {
         "weight": 0.2,
@@ -2328,7 +2328,7 @@
       "topics": 16,
       "org_backed": false
     },
-    "rank": 85
+    "rank": 96
   },
   {
     "id": "learn-claude-code",
@@ -2377,17 +2377,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 88.73,
+    "score": 88.94,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.8984,
-        "contribution": 29.95
+        "normalized": 0.9092,
+        "contribution": 30.31
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9071,
-        "contribution": 25.2
+        "normalized": 0.9018,
+        "contribution": 25.05
       },
       "maturity": {
         "weight": 0.2,
@@ -2413,7 +2413,7 @@
       "topics": 10,
       "org_backed": true
     },
-    "rank": 5
+    "rank": 6
   },
   {
     "id": "swe-agent",
@@ -2459,17 +2459,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 82.31,
+    "score": 82.94,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.6274,
-        "contribution": 20.91
+        "normalized": 0.6507,
+        "contribution": 21.69
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8525,
-        "contribution": 23.68
+        "normalized": 0.8469,
+        "contribution": 23.53
       },
       "maturity": {
         "weight": 0.2,
@@ -2495,7 +2495,7 @@
       "topics": 7,
       "org_backed": true
     },
-    "rank": 17
+    "rank": 16
   },
   {
     "id": "openhands",
@@ -2543,17 +2543,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 88.46,
+    "score": 88.61,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.9118,
-        "contribution": 30.39
+        "normalized": 0.9212,
+        "contribution": 30.71
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8459,
-        "contribution": 23.5
+        "normalized": 0.8402,
+        "contribution": 23.34
       },
       "maturity": {
         "weight": 0.2,
@@ -2579,7 +2579,7 @@
       "topics": 9,
       "org_backed": true
     },
-    "rank": 6
+    "rank": 7
   },
   {
     "id": "orca",
@@ -2628,17 +2628,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 54.36,
+    "score": 53.93,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.0466,
-        "contribution": 1.55
+        "normalized": 0.0391,
+        "contribution": 1.3
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.962,
-        "contribution": 26.72
+        "normalized": 0.9554,
+        "contribution": 26.54
       },
       "maturity": {
         "weight": 0.2,
@@ -2664,7 +2664,7 @@
       "topics": 10,
       "org_backed": false
     },
-    "rank": 91
+    "rank": null
   },
   {
     "id": "citadel",
@@ -2711,17 +2711,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 61.43,
+    "score": 57.98,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.2463,
-        "contribution": 8.21
+        "normalized": 0.1475,
+        "contribution": 4.92
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9136,
-        "contribution": 25.38
+        "normalized": 0.9081,
+        "contribution": 25.23
       },
       "maturity": {
         "weight": 0.2,
@@ -2747,7 +2747,7 @@
       "topics": 8,
       "org_backed": false
     },
-    "rank": 74
+    "rank": 88
   },
   {
     "id": "agent-afk",
@@ -2806,17 +2806,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 50.36,
+    "score": 49.87,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.0995,
-        "contribution": 3.32
+        "normalized": 0.0864,
+        "contribution": 2.88
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7165,
-        "contribution": 19.9
+        "normalized": 0.7148,
+        "contribution": 19.85
       },
       "maturity": {
         "weight": 0.2,
@@ -2880,17 +2880,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 61.25,
+    "score": 58.39,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.3705,
-        "contribution": 12.35
+        "normalized": 0.2825,
+        "contribution": 9.42
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8128,
-        "contribution": 22.58
+        "normalized": 0.8156,
+        "contribution": 22.65
       },
       "maturity": {
         "weight": 0.2,
@@ -2916,7 +2916,7 @@
       "topics": 0,
       "org_backed": true
     },
-    "rank": 75
+    "rank": 87
   },
   {
     "id": "cline",
@@ -2954,17 +2954,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 83.93,
+    "score": 84.41,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.8638,
-        "contribution": 28.79
+        "normalized": 0.8783,
+        "contribution": 29.28
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7782,
-        "contribution": 21.62
+        "normalized": 0.7781,
+        "contribution": 21.61
       },
       "maturity": {
         "weight": 0.2,
@@ -2990,7 +2990,7 @@
       "topics": 0,
       "org_backed": true
     },
-    "rank": 13
+    "rank": 14
   },
   {
     "id": "roo-code",
@@ -3028,16 +3028,16 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 43.66,
+    "score": 44.28,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.6845,
-        "contribution": 22.82
+        "normalized": 0.7074,
+        "contribution": 23.58
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.1251,
+        "normalized": 0.1253,
         "contribution": 3.48
       },
       "maturity": {
@@ -3117,17 +3117,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 78.93,
+    "score": 79.46,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.7071,
-        "contribution": 23.57
+        "normalized": 0.7219,
+        "contribution": 24.06
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7473,
-        "contribution": 20.76
+        "normalized": 0.7488,
+        "contribution": 20.8
       },
       "maturity": {
         "weight": 0.2,
@@ -3153,7 +3153,7 @@
       "topics": 12,
       "org_backed": true
     },
-    "rank": 24
+    "rank": 25
   },
   {
     "id": "continue",
@@ -3197,17 +3197,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 83.87,
+    "score": 84.32,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.7855,
-        "contribution": 26.18
+        "normalized": 0.8001,
+        "contribution": 26.67
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7969,
-        "contribution": 22.13
+        "normalized": 0.7955,
+        "contribution": 22.1
       },
       "maturity": {
         "weight": 0.2,
@@ -3233,7 +3233,7 @@
       "topics": 5,
       "org_backed": true
     },
-    "rank": 14
+    "rank": 15
   },
   {
     "id": "copilot-chat",
@@ -3271,17 +3271,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 37.03,
+    "score": 37.71,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.5399,
-        "contribution": 18.0
+        "normalized": 0.5668,
+        "contribution": 18.89
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.1931,
-        "contribution": 5.36
+        "normalized": 0.1915,
+        "contribution": 5.32
       },
       "maturity": {
         "weight": 0.2,
@@ -3356,17 +3356,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 77.48,
+    "score": 77.79,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.7128,
-        "contribution": 23.76
+        "normalized": 0.7301,
+        "contribution": 24.34
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8596,
-        "contribution": 23.88
+        "normalized": 0.85,
+        "contribution": 23.61
       },
       "maturity": {
         "weight": 0.2,
@@ -3392,7 +3392,7 @@
       "topics": 8,
       "org_backed": true
     },
-    "rank": 28
+    "rank": 30
   },
   {
     "id": "dsh-desktop-alt",
@@ -3442,17 +3442,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 73.54,
+    "score": 73.92,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.5829,
-        "contribution": 19.43
+        "normalized": 0.5958,
+        "contribution": 19.86
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8739,
-        "contribution": 24.28
+        "normalized": 0.8718,
+        "contribution": 24.22
       },
       "maturity": {
         "weight": 0.2,
@@ -3478,7 +3478,7 @@
       "topics": 11,
       "org_backed": true
     },
-    "rank": 37
+    "rank": 40
   },
   {
     "id": "happy",
@@ -3526,17 +3526,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 76.04,
+    "score": 76.71,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.6634,
-        "contribution": 22.11
+        "normalized": 0.6828,
+        "contribution": 22.76
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7385,
-        "contribution": 20.51
+        "normalized": 0.7393,
+        "contribution": 20.54
       },
       "maturity": {
         "weight": 0.2,
@@ -3562,7 +3562,7 @@
       "topics": 9,
       "org_backed": true
     },
-    "rank": 31
+    "rank": 33
   },
   {
     "id": "aionui",
@@ -3621,17 +3621,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 76.17,
+    "score": 76.81,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.7502,
-        "contribution": 25.01
+        "normalized": 0.7686,
+        "contribution": 25.62
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.6458,
-        "contribution": 17.94
+        "normalized": 0.6466,
+        "contribution": 17.96
       },
       "maturity": {
         "weight": 0.2,
@@ -3657,7 +3657,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 30
+    "rank": 32
   },
   {
     "id": "pi-desktop",
@@ -3711,17 +3711,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 72.81,
+    "score": 73.41,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.47,
-        "contribution": 15.67
+        "normalized": 0.4887,
+        "contribution": 16.29
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7771,
-        "contribution": 21.59
+        "normalized": 0.7762,
+        "contribution": 21.56
       },
       "maturity": {
         "weight": 0.2,
@@ -3747,7 +3747,7 @@
       "topics": 15,
       "org_backed": false
     },
-    "rank": 39
+    "rank": 43
   },
   {
     "id": "looptroop",
@@ -3800,17 +3800,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 57.77,
+    "score": 57.18,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.1306,
-        "contribution": 4.35
+        "normalized": 0.1141,
+        "contribution": 3.8
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9152,
-        "contribution": 25.42
+        "normalized": 0.9136,
+        "contribution": 25.38
       },
       "maturity": {
         "weight": 0.2,
@@ -3836,7 +3836,7 @@
       "topics": 14,
       "org_backed": false
     },
-    "rank": 83
+    "rank": 93
   },
   {
     "id": "dsh-studio",
@@ -3886,17 +3886,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 48.98,
+    "score": 48.6,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.0995,
-        "contribution": 3.32
+        "normalized": 0.0864,
+        "contribution": 2.88
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.6903,
-        "contribution": 19.18
+        "normalized": 0.6923,
+        "contribution": 19.23
       },
       "maturity": {
         "weight": 0.2,
@@ -3981,17 +3981,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 54.18,
+    "score": 53.78,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.072,
-        "contribution": 2.4
+        "normalized": 0.0618,
+        "contribution": 2.06
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8044,
-        "contribution": 22.35
+        "normalized": 0.8024,
+        "contribution": 22.29
       },
       "maturity": {
         "weight": 0.2,
@@ -4017,7 +4017,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 93
+    "rank": null
   },
   {
     "id": "cc-haha",
@@ -4070,17 +4070,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 66.69,
+    "score": 67.07,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.6634,
-        "contribution": 22.11
+        "normalized": 0.6822,
+        "contribution": 22.74
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8464,
-        "contribution": 23.51
+        "normalized": 0.8373,
+        "contribution": 23.26
       },
       "maturity": {
         "weight": 0.2,
@@ -4106,7 +4106,7 @@
       "topics": 14,
       "org_backed": false
     },
-    "rank": 54
+    "rank": 63
   },
   {
     "id": "cowagent",
@@ -4162,17 +4162,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 90.94,
+    "score": 91.16,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.849,
-        "contribution": 28.3
+        "normalized": 0.8594,
+        "contribution": 28.65
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9752,
-        "contribution": 27.09
+        "normalized": 0.9705,
+        "contribution": 26.96
       },
       "maturity": {
         "weight": 0.2,
@@ -4198,7 +4198,7 @@
       "topics": 17,
       "org_backed": false
     },
-    "rank": 2
+    "rank": 3
   },
   {
     "id": "nanoclaw",
@@ -4247,17 +4247,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 79.2,
+    "score": 79.58,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.7939,
-        "contribution": 26.46
+        "normalized": 0.8045,
+        "contribution": 26.82
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7606,
-        "contribution": 21.13
+        "normalized": 0.7615,
+        "contribution": 21.15
       },
       "maturity": {
         "weight": 0.2,
@@ -4283,7 +4283,7 @@
       "topics": 10,
       "org_backed": true
     },
-    "rank": 23
+    "rank": 24
   },
   {
     "id": "qwenpaw",
@@ -4338,17 +4338,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 78.21,
+    "score": 78.62,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.7615,
-        "contribution": 25.38
+        "normalized": 0.7762,
+        "contribution": 25.87
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7716,
-        "contribution": 21.43
+        "normalized": 0.7689,
+        "contribution": 21.36
       },
       "maturity": {
         "weight": 0.2,
@@ -4374,7 +4374,7 @@
       "topics": 16,
       "org_backed": true
     },
-    "rank": 25
+    "rank": 27
   },
   {
     "id": "munder-difflin",
@@ -4433,17 +4433,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 69.26,
+    "score": 69.95,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.5166,
-        "contribution": 17.22
+        "normalized": 0.5385,
+        "contribution": 17.95
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7748,
-        "contribution": 21.52
+        "normalized": 0.7734,
+        "contribution": 21.48
       },
       "maturity": {
         "weight": 0.2,
@@ -4469,7 +4469,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 44
+    "rank": 50
   },
   {
     "id": "rocketride",
@@ -4528,17 +4528,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 76.01,
+    "score": 76.7,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.6916,
-        "contribution": 23.05
+        "normalized": 0.7131,
+        "contribution": 23.77
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7721,
-        "contribution": 21.45
+        "normalized": 0.771,
+        "contribution": 21.42
       },
       "maturity": {
         "weight": 0.2,
@@ -4564,7 +4564,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 32
+    "rank": 34
   },
   {
     "id": "deer-flow",
@@ -4621,17 +4621,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 87.73,
+    "score": 87.91,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.9026,
-        "contribution": 30.09
+        "normalized": 0.913,
+        "contribution": 30.43
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8486,
-        "contribution": 23.57
+        "normalized": 0.8426,
+        "contribution": 23.41
       },
       "maturity": {
         "weight": 0.2,
@@ -4657,7 +4657,7 @@
       "topics": 18,
       "org_backed": true
     },
-    "rank": 8
+    "rank": 9
   },
   {
     "id": "yao",
@@ -4713,17 +4713,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 74.0,
+    "score": 74.4,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.4742,
-        "contribution": 15.81
+        "normalized": 0.4899,
+        "contribution": 16.33
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9351,
-        "contribution": 25.97
+        "normalized": 0.9305,
+        "contribution": 25.85
       },
       "maturity": {
         "weight": 0.2,
@@ -4749,7 +4749,7 @@
       "topics": 17,
       "org_backed": true
     },
-    "rank": 35
+    "rank": 37
   },
   {
     "id": "soduwork",
@@ -4808,17 +4808,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 65.92,
+    "score": 66.38,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.4467,
-        "contribution": 14.89
+        "normalized": 0.4603,
+        "contribution": 15.34
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7881,
-        "contribution": 21.89
+        "normalized": 0.7885,
+        "contribution": 21.9
       },
       "maturity": {
         "weight": 0.2,
@@ -4844,7 +4844,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 60
+    "rank": 65
   },
   {
     "id": "holaos",
@@ -4903,17 +4903,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 67.7,
+    "score": 68.09,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.5159,
-        "contribution": 17.2
+        "normalized": 0.5328,
+        "contribution": 17.76
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9365,
-        "contribution": 26.02
+        "normalized": 0.9302,
+        "contribution": 25.84
       },
       "maturity": {
         "weight": 0.2,
@@ -4939,7 +4939,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 50
+    "rank": 54
   },
   {
     "id": "roubao",
@@ -4998,17 +4998,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 60.92,
+    "score": 56.11,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.3458,
-        "contribution": 11.53
+        "normalized": 0.2093,
+        "contribution": 6.98
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7429,
-        "contribution": 20.64
+        "normalized": 0.7335,
+        "contribution": 20.38
       },
       "maturity": {
         "weight": 0.2,
@@ -5034,7 +5034,7 @@
       "topics": 20,
       "org_backed": false
     },
-    "rank": 77
+    "rank": 95
   },
   {
     "id": "psycheros",
@@ -5079,16 +5079,16 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 42.01,
+    "score": 41.64,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.0776,
-        "contribution": 2.59
+        "normalized": 0.0668,
+        "contribution": 2.23
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.554,
+        "normalized": 0.5539,
         "contribution": 15.39
       },
       "maturity": {
@@ -5170,17 +5170,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 68.72,
+    "score": 69.53,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.5568,
-        "contribution": 18.56
+        "normalized": 0.582,
+        "contribution": 19.4
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.711,
-        "contribution": 19.75
+        "normalized": 0.7098,
+        "contribution": 19.72
       },
       "maturity": {
         "weight": 0.2,
@@ -5206,7 +5206,7 @@
       "topics": 16,
       "org_backed": true
     },
-    "rank": 46
+    "rank": 52
   },
   {
     "id": "qm",
@@ -5249,17 +5249,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 66.43,
+    "score": 67.21,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.585,
-        "contribution": 19.5
+        "normalized": 0.6072,
+        "contribution": 20.24
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7303,
-        "contribution": 20.29
+        "normalized": 0.732,
+        "contribution": 20.33
       },
       "maturity": {
         "weight": 0.2,
@@ -5285,7 +5285,7 @@
       "topics": 4,
       "org_backed": true
     },
-    "rank": 56
+    "rank": 62
   },
   {
     "id": "trellis",
@@ -5329,17 +5329,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 62.89,
+    "score": 63.13,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.5554,
-        "contribution": 18.51
+        "normalized": 0.5706,
+        "contribution": 19.02
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.578,
-        "contribution": 16.06
+        "normalized": 0.5683,
+        "contribution": 15.79
       },
       "maturity": {
         "weight": 0.2,
@@ -5365,7 +5365,7 @@
       "topics": 5,
       "org_backed": true
     },
-    "rank": 69
+    "rank": 76
   },
   {
     "id": "hive",
@@ -5418,17 +5418,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 67.49,
+    "score": 68.19,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.6168,
-        "contribution": 20.56
+        "normalized": 0.6381,
+        "contribution": 21.27
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.6652,
-        "contribution": 18.48
+        "normalized": 0.6651,
+        "contribution": 18.47
       },
       "maturity": {
         "weight": 0.2,
@@ -5454,7 +5454,7 @@
       "topics": 14,
       "org_backed": true
     },
-    "rank": 51
+    "rank": 53
   },
   {
     "id": "raven",
@@ -5513,17 +5513,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 67.75,
+    "score": 67.28,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.3931,
-        "contribution": 13.1
+        "normalized": 0.3821,
+        "contribution": 12.74
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8657,
-        "contribution": 24.05
+        "normalized": 0.8619,
+        "contribution": 23.94
       },
       "maturity": {
         "weight": 0.2,
@@ -5549,7 +5549,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 49
+    "rank": 61
   },
   {
     "id": "agentlas-os",
@@ -5608,17 +5608,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 66.63,
+    "score": 62.23,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.295,
-        "contribution": 9.83
+        "normalized": 0.1671,
+        "contribution": 5.57
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9476,
-        "contribution": 26.32
+        "normalized": 0.9425,
+        "contribution": 26.18
       },
       "maturity": {
         "weight": 0.2,
@@ -5644,7 +5644,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 55
+    "rank": 78
   },
   {
     "id": "openrig",
@@ -5694,17 +5694,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 65.2,
+    "score": 65.68,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.4898,
-        "contribution": 16.33
+        "normalized": 0.5063,
+        "contribution": 16.88
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7611,
-        "contribution": 21.14
+        "normalized": 0.7587,
+        "contribution": 21.07
       },
       "maturity": {
         "weight": 0.2,
@@ -5730,7 +5730,7 @@
       "topics": 11,
       "org_backed": false
     },
-    "rank": 61
+    "rank": 66
   },
   {
     "id": "squadron",
@@ -5784,17 +5784,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 51.46,
+    "score": 51.24,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.0303,
-        "contribution": 1.01
+        "normalized": 0.0259,
+        "contribution": 0.86
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7952,
-        "contribution": 22.09
+        "normalized": 0.7926,
+        "contribution": 22.02
       },
       "maturity": {
         "weight": 0.2,
@@ -5820,7 +5820,7 @@
       "topics": 15,
       "org_backed": false
     },
-    "rank": 98
+    "rank": null
   },
   {
     "id": "harnessrouter",
@@ -5879,17 +5879,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 68.28,
+    "score": 67.53,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.3945,
-        "contribution": 13.15
+        "normalized": 0.3802,
+        "contribution": 12.67
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9092,
-        "contribution": 25.25
+        "normalized": 0.8992,
+        "contribution": 24.98
       },
       "maturity": {
         "weight": 0.2,
@@ -5915,7 +5915,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 47
+    "rank": 59
   },
   {
     "id": "orkas",
@@ -5974,17 +5974,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 69.06,
+    "score": 69.59,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.4735,
-        "contribution": 15.78
+        "normalized": 0.4899,
+        "contribution": 16.33
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.929,
-        "contribution": 25.8
+        "normalized": 0.9283,
+        "contribution": 25.79
       },
       "maturity": {
         "weight": 0.2,
@@ -6010,7 +6010,7 @@
       "topics": 20,
       "org_backed": false
     },
-    "rank": 45
+    "rank": 51
   },
   {
     "id": "5dive",
@@ -6069,17 +6069,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 59.94,
+    "score": 59.42,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.1115,
-        "contribution": 3.72
+        "normalized": 0.0971,
+        "contribution": 3.24
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9202,
-        "contribution": 25.56
+        "normalized": 0.9189,
+        "contribution": 25.52
       },
       "maturity": {
         "weight": 0.2,
@@ -6105,7 +6105,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 78
+    "rank": 83
   },
   {
     "id": "deepagents",
@@ -6152,17 +6152,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 79.73,
+    "score": 80.26,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.7551,
-        "contribution": 25.17
+        "normalized": 0.773,
+        "contribution": 25.77
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8844,
-        "contribution": 24.57
+        "normalized": 0.882,
+        "contribution": 24.5
       },
       "maturity": {
         "weight": 0.2,
@@ -6188,7 +6188,7 @@
       "topics": 8,
       "org_backed": true
     },
-    "rank": 21
+    "rank": 22
   },
   {
     "id": "langgraph",
@@ -6245,17 +6245,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 86.72,
+    "score": 87.03,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.8229,
-        "contribution": 27.43
+        "normalized": 0.8361,
+        "contribution": 27.87
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8547,
-        "contribution": 23.74
+        "normalized": 0.8496,
+        "contribution": 23.6
       },
       "maturity": {
         "weight": 0.2,
@@ -6281,7 +6281,7 @@
       "topics": 18,
       "org_backed": true
     },
-    "rank": 9
+    "rank": 10
   },
   {
     "id": "crewai",
@@ -6325,17 +6325,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 89.83,
+    "score": 90.22,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.8596,
-        "contribution": 28.65
+        "normalized": 0.8689,
+        "contribution": 28.96
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8024,
-        "contribution": 22.29
+        "normalized": 0.8054,
+        "contribution": 22.37
       },
       "maturity": {
         "weight": 0.2,
@@ -6361,7 +6361,7 @@
       "topics": 5,
       "org_backed": true
     },
-    "rank": 3
+    "rank": 4
   },
   {
     "id": "autogen",
@@ -6410,17 +6410,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 64.37,
+    "score": 64.64,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.8687,
-        "contribution": 28.96
+        "normalized": 0.877,
+        "contribution": 29.23
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7242,
-        "contribution": 20.12
+        "normalized": 0.7263,
+        "contribution": 20.18
       },
       "maturity": {
         "weight": 0.2,
@@ -6448,7 +6448,7 @@
       "topics": 10,
       "org_backed": true
     },
-    "rank": 62
+    "rank": 69
   },
   {
     "id": "openai-agents",
@@ -6494,17 +6494,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 85.16,
+    "score": 85.48,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.7389,
-        "contribution": 24.63
+        "normalized": 0.7528,
+        "contribution": 25.09
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9339,
-        "contribution": 25.94
+        "normalized": 0.9287,
+        "contribution": 25.8
       },
       "maturity": {
         "weight": 0.2,
@@ -6530,7 +6530,7 @@
       "topics": 7,
       "org_backed": true
     },
-    "rank": 10
+    "rank": 11
   },
   {
     "id": "adk-python",
@@ -6585,16 +6585,16 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 79.53,
+    "score": 80.16,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.6951,
-        "contribution": 23.17
+        "normalized": 0.7137,
+        "contribution": 23.79
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7908,
+        "normalized": 0.791,
         "contribution": 21.97
       },
       "maturity": {
@@ -6621,7 +6621,7 @@
       "topics": 16,
       "org_backed": true
     },
-    "rank": 22
+    "rank": 23
   },
   {
     "id": "agent-kit",
@@ -6665,17 +6665,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 48.8,
+    "score": 44.64,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.2837,
-        "contribution": 9.46
+        "normalized": 0.1608,
+        "contribution": 5.36
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.1339,
-        "contribution": 3.72
+        "normalized": 0.1318,
+        "contribution": 3.66
       },
       "maturity": {
         "weight": 0.2,
@@ -6760,17 +6760,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 59.7,
+    "score": 58.51,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.1736,
-        "contribution": 5.79
+        "normalized": 0.1393,
+        "contribution": 4.64
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.856,
-        "contribution": 23.78
+        "normalized": 0.8541,
+        "contribution": 23.73
       },
       "maturity": {
         "weight": 0.2,
@@ -6796,7 +6796,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 79
+    "rank": 84
   },
   {
     "id": "browser-use",
@@ -6852,17 +6852,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 92.08,
+    "score": 92.22,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.933,
-        "contribution": 31.1
+        "normalized": 0.9401,
+        "contribution": 31.34
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9069,
-        "contribution": 25.19
+        "normalized": 0.9037,
+        "contribution": 25.1
       },
       "maturity": {
         "weight": 0.2,
@@ -6888,7 +6888,7 @@
       "topics": 17,
       "org_backed": true
     },
-    "rank": 1
+    "rank": 2
   },
   {
     "id": "theloop",
@@ -6943,17 +6943,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 50.95,
+    "score": 50.81,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.0152,
-        "contribution": 0.51
+        "normalized": 0.0136,
+        "contribution": 0.45
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8815,
-        "contribution": 24.49
+        "normalized": 0.8786,
+        "contribution": 24.41
       },
       "maturity": {
         "weight": 0.2,
@@ -7038,17 +7038,17 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 62.74,
+    "score": 58.48,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.302,
-        "contribution": 10.07
+        "normalized": 0.174,
+        "contribution": 5.8
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7115,
-        "contribution": 19.76
+        "normalized": 0.7119,
+        "contribution": 19.78
       },
       "maturity": {
         "weight": 0.2,
@@ -7074,7 +7074,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 70
+    "rank": 85
   },
   {
     "id": "openhands-sdk",
@@ -7115,12 +7115,12 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 61.59,
+    "score": 58.4,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.3719,
-        "contribution": 12.4
+        "normalized": 0.2762,
+        "contribution": 9.21
       },
       "activity": {
         "weight": 0.25,
@@ -7151,7 +7151,2901 @@
       "topics": 2,
       "org_backed": true
     },
-    "rank": 73
+    "rank": 86
+  },
+  {
+    "id": "peteromallet--desloppify",
+    "name": "desloppify",
+    "slug": "peteromallet/desloppify",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 4160,
+      "forks": 317,
+      "open_issues": 330,
+      "pushed_at": "2026-10-27T12:47:12Z",
+      "created_at": "2026-02-11T17:27:42Z",
+      "license": "NOASSERTION",
+      "topics": [
+        "agent-harness"
+      ],
+      "language": "Python",
+      "homepage": "https://desloppify.it/",
+      "description": "Agent harness to make your slop code well-engineered and beautiful.",
+      "owner": "peteromallet",
+      "owner_type": "User",
+      "archived": false,
+      "fork": false,
+      "has_wiki": true,
+      "has_pages": false,
+      "url": "https://github.com/peteromallet/desloppify",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:46:22+00:00",
+      "repo_note": null,
+      "discovered_by": "topic:agent-harness",
+      "query_fetched_at": "2026-11-25T02:46:07+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 44.21,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.3298,
+        "contribution": 10.99
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.5416,
+        "contribution": 15.04
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 0.4,
+        "contribution": 8.89
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.5573,
+        "contribution": 9.29
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": false,
+      "docs": true,
+      "topics": 1,
+      "org_backed": false
+    },
+    "rank": null
+  },
+  {
+    "id": "the-open-engine--zeroshot",
+    "name": "zeroshot",
+    "slug": "the-open-engine/zeroshot",
+    "category": "multi",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 2227,
+      "forks": 215,
+      "open_issues": 18,
+      "pushed_at": "2026-11-25T02:19:48Z",
+      "created_at": "2025-12-25T17:12:45Z",
+      "license": "MIT",
+      "topics": [
+        "agent-harness",
+        "agent-loops",
+        "agent-orchestration",
+        "agentic-workflow",
+        "ai-agents",
+        "ai-code-review",
+        "claude",
+        "claude-code",
+        "code-quality",
+        "code-review",
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "github-copilot",
+        "harness-engineering",
+        "loop-engineering",
+        "meta-harness",
+        "multi-agent",
+        "qa",
+        "software-factory"
+      ],
+      "language": "Rust",
+      "homepage": "https://zeroshot.sh",
+      "description": "Multi-agent graph harness for Claude Code, Codex and other coding agents. Separate agents review and test the work. Runs locally on your subscription.",
+      "owner": "the-open-engine",
+      "owner_type": "Organization",
+      "archived": false,
+      "fork": false,
+      "has_wiki": true,
+      "has_pages": true,
+      "url": "https://github.com/the-open-engine/zeroshot",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:46:22+00:00",
+      "repo_note": null,
+      "discovered_by": "topic:agent-harness",
+      "query_fetched_at": "2026-11-25T02:46:07+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 63.28,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.1885,
+        "contribution": 6.28
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.9016,
+        "contribution": 25.05
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 1.0,
+        "contribution": 22.22
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.5836,
+        "contribution": 9.73
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 20,
+      "org_backed": true
+    },
+    "rank": 75
+  },
+  {
+    "id": "openinterpreter--openinterpreter",
+    "name": "openinterpreter",
+    "slug": "openinterpreter/openinterpreter",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 68961,
+      "forks": 5946,
+      "open_issues": 36,
+      "pushed_at": "2026-11-24T19:56:32Z",
+      "created_at": "2023-07-14T07:10:44Z",
+      "license": "Apache-2.0",
+      "topics": [
+        "acp",
+        "coding-agent",
+        "deepseek",
+        "kimi",
+        "python",
+        "qwen",
+        "rust"
+      ],
+      "language": "Rust",
+      "homepage": "http://openinterpreter.com/",
+      "description": "A coding agent for open models like Kimi K3.1 and GLM 5.3",
+      "owner": "openinterpreter",
+      "owner_type": "Organization",
+      "archived": false,
+      "fork": false,
+      "has_wiki": false,
+      "has_pages": false,
+      "url": "https://github.com/openinterpreter/openinterpreter",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:36:33+00:00",
+      "repo_note": null,
+      "discovered_by": "topic:coding-agent",
+      "query_fetched_at": "2026-11-25T02:46:13+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 94.89,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.8676,
+        "contribution": 28.92
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.9751,
+        "contribution": 27.08
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 1.0,
+        "contribution": 22.22
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 1.0,
+        "contribution": 16.67
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 7,
+      "org_backed": true
+    },
+    "rank": 1
+  },
+  {
+    "id": "ccch1mneyyy--dsh-go",
+    "name": "dsh-Go",
+    "slug": "ccch1mneyyy/dsh-go",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 31413,
+      "forks": 1518,
+      "open_issues": 936,
+      "pushed_at": "2026-11-24T23:17:31Z",
+      "created_at": "2026-10-25T08:09:52Z",
+      "license": "AGPL-3.0",
+      "topics": [
+        "ai-agent",
+        "android",
+        "android-app",
+        "coding-agent",
+        "deepseek",
+        "deepseek-harness",
+        "dsh",
+        "dsh-plugin",
+        "dsh-tui",
+        "flutter",
+        "llm"
+      ],
+      "language": "Dart",
+      "homepage": "",
+      "description": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+      "owner": "ccch1mneyyy",
+      "owner_type": "User",
+      "archived": false,
+      "fork": false,
+      "has_wiki": false,
+      "has_pages": false,
+      "url": "https://github.com/ccch1mneyyy/dsh-Go",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:36:33+00:00",
+      "repo_note": null,
+      "discovered_by": "topic:coding-agent",
+      "query_fetched_at": "2026-11-25T02:46:13+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 64.79,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.6967,
+        "contribution": 23.22
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.766,
+        "contribution": 21.28
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 0.6,
+        "contribution": 13.33
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.417,
+        "contribution": 6.95
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": false,
+      "topics": 11,
+      "org_backed": false
+    },
+    "rank": 68
+  },
+  {
+    "id": "anus-dev--anus",
+    "name": "ANUS",
+    "slug": "anus-dev/anus",
+    "category": "cli",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 6558,
+      "forks": 917,
+      "open_issues": 74,
+      "pushed_at": "2026-10-01T16:32:18Z",
+      "created_at": "2025-03-09T18:45:54Z",
+      "license": "MIT",
+      "topics": [
+        "ai-agent",
+        "claude-code-alternative",
+        "cli",
+        "coding-agent",
+        "free-models",
+        "llm",
+        "openrouter",
+        "spec-driven-company",
+        "terminal"
+      ],
+      "language": "JavaScript",
+      "homepage": "https://anus.dev",
+      "description": "A free coding agent in your terminal. It runs on the smartest free model that is up today.",
+      "owner": "anus-dev",
+      "owner_type": "Organization",
+      "archived": false,
+      "fork": false,
+      "has_wiki": true,
+      "has_pages": false,
+      "url": "https://github.com/anus-dev/ANUS",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:36:33+00:00",
+      "repo_note": null,
+      "discovered_by": "topic:coding-agent",
+      "query_fetched_at": "2026-11-25T02:46:13+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 65.44,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.471,
+        "contribution": 15.7
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.5447,
+        "contribution": 15.13
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 1.0,
+        "contribution": 22.22
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.743,
+        "contribution": 12.38
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 9,
+      "org_backed": true
+    },
+    "rank": 67
+  },
+  {
+    "id": "purpledoubled--locally-uncensored",
+    "name": "locally-uncensored",
+    "slug": "purpledoubled/locally-uncensored",
+    "category": "ide",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 4676,
+      "forks": 744,
+      "open_issues": 19,
+      "pushed_at": "2026-11-24T23:18:10Z",
+      "created_at": "2026-03-24T21:52:47Z",
+      "license": "AGPL-3.0",
+      "topics": [
+        "agent",
+        "ai-chat",
+        "ai-studio",
+        "all-in-one",
+        "coding-agent",
+        "desktop-app",
+        "flux",
+        "image-generation",
+        "linux",
+        "llm",
+        "local-ai",
+        "local-llm",
+        "open-source",
+        "privacy",
+        "self-hosted",
+        "stable-diffusion",
+        "uncensored",
+        "uncensored-ai",
+        "video-generation",
+        "windows"
+      ],
+      "language": "TypeScript",
+      "homepage": "https://locallyuncensored.com",
+      "description": "The all-in-one local AI studio for your desktop: chat, image and video generation and a coding agent in one free, open source app. Windows and Linux. No Docker, no terminal, no cloud required.",
+      "owner": "PurpleDoubleD",
+      "owner_type": "User",
+      "archived": false,
+      "fork": false,
+      "has_wiki": true,
+      "has_pages": true,
+      "url": "https://github.com/PurpleDoubleD/locally-uncensored",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:46:22+00:00",
+      "repo_note": null,
+      "discovered_by": "topic:coding-agent",
+      "query_fetched_at": "2026-11-25T02:46:13+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 67.39,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.4243,
+        "contribution": 14.14
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.916,
+        "contribution": 25.45
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 0.85,
+        "contribution": 18.89
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.5348,
+        "contribution": 8.91
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 20,
+      "org_backed": false
+    },
+    "rank": 60
+  },
+  {
+    "id": "commandcodeai--command-code",
+    "name": "command-code",
+    "slug": "commandcodeai/command-code",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 4262,
+      "forks": 381,
+      "open_issues": 399,
+      "pushed_at": "2026-11-18T16:30:13Z",
+      "created_at": "2017-12-20T09:45:01Z",
+      "license": null,
+      "topics": [
+        "ai",
+        "ai-agent",
+        "anthropic",
+        "cli",
+        "coding-agent",
+        "command-code",
+        "command-line",
+        "command-line-tool",
+        "deepseek",
+        "glm",
+        "harness",
+        "kimi",
+        "openai"
+      ],
+      "language": null,
+      "homepage": "https://commandcode.ai",
+      "description": "Command Code AI — the best coding agent for open models.",
+      "owner": "CommandCodeAI",
+      "owner_type": "Organization",
+      "archived": false,
+      "fork": false,
+      "has_wiki": false,
+      "has_pages": false,
+      "url": "https://github.com/CommandCodeAI/command-code",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:46:22+00:00",
+      "repo_note": null,
+      "discovered_by": "topic:coding-agent",
+      "query_fetched_at": "2026-11-25T02:46:13+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 62.63,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.348,
+        "contribution": 11.6
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.6771,
+        "contribution": 18.81
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 0.7,
+        "contribution": 15.56
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 1.0,
+        "contribution": 16.67
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": false,
+      "docs": true,
+      "topics": 13,
+      "org_backed": true
+    },
+    "rank": 77
+  },
+  {
+    "id": "windy3f3f3f3f--how-claude-code-works",
+    "name": "how-claude-code-works",
+    "slug": "windy3f3f3f3f/how-claude-code-works",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 3849,
+      "forks": 722,
+      "open_issues": 2,
+      "pushed_at": "2026-08-17T08:27:42Z",
+      "created_at": "2026-03-31T12:25:40Z",
+      "license": "MIT",
+      "topics": [
+        "ai",
+        "ai-agent",
+        "anthropic",
+        "architecture",
+        "claude",
+        "claude-code",
+        "coding-agent",
+        "deep-dive",
+        "llm",
+        "source-code-analysis"
+      ],
+      "language": null,
+      "homepage": "https://windy3f3f3f3f.github.io/how-claude-code-works/#/",
+      "description": "Deep dive into Claude Code internals — architecture, agent loop, context engineering, and more. / 深入解析 Claude Code 源码：架构、Agent 循环、上下文工程、工具系统等",
+      "owner": "Windy3f3f3f3f",
+      "owner_type": "User",
+      "archived": false,
+      "fork": false,
+      "has_wiki": true,
+      "has_pages": true,
+      "url": "https://github.com/Windy3f3f3f3f/how-claude-code-works",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:46:22+00:00",
+      "repo_note": null,
+      "discovered_by": "topic:coding-agent",
+      "query_fetched_at": "2026-11-25T02:46:13+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 54.25,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.3657,
+        "contribution": 12.19
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.5157,
+        "contribution": 14.32
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 0.85,
+        "contribution": 18.89
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.531,
+        "contribution": 8.85
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 10,
+      "org_backed": false
+    },
+    "rank": null
+  },
+  {
+    "id": "dsh-app--dsha",
+    "name": "DSHA",
+    "slug": "dsh-app/dsha",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 3702,
+      "forks": 221,
+      "open_issues": 79,
+      "pushed_at": "2026-11-14T13:57:50Z",
+      "created_at": "2026-08-14T16:52:02Z",
+      "license": "MIT",
+      "topics": [
+        "android",
+        "coding-agent",
+        "deepseek",
+        "deepseek-harness",
+        "launcher",
+        "llm",
+        "proot",
+        "proroot",
+        "shizuku",
+        "webui"
+      ],
+      "language": "Java",
+      "homepage": "",
+      "description": "免 ROOT 免 Termux，在手机上跑 DeepSeek Harness。完整 Ubuntu 环境 + proroot 零 ptrace 开销 · AI 输出实时上屏 · ADB 直连 · 数据不丢",
+      "owner": "DSH-APP",
+      "owner_type": "Organization",
+      "archived": false,
+      "fork": false,
+      "has_wiki": false,
+      "has_pages": false,
+      "url": "https://github.com/DSH-APP/DSHA",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:46:22+00:00",
+      "repo_note": null,
+      "discovered_by": "topic:coding-agent",
+      "query_fetched_at": "2026-11-25T02:46:13+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 54.15,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.2755,
+        "contribution": 9.18
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.7449,
+        "contribution": 20.69
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 0.75,
+        "contribution": 16.67
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.4564,
+        "contribution": 7.61
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": false,
+      "topics": 10,
+      "org_backed": true
+    },
+    "rank": null
+  },
+  {
+    "id": "seemseam--claude_codex_bridge",
+    "name": "claude_codex_bridge",
+    "slug": "seemseam/claude_codex_bridge",
+    "category": "multi",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 3634,
+      "forks": 350,
+      "open_issues": 104,
+      "pushed_at": "2026-11-25T01:49:18Z",
+      "created_at": "2025-10-25T13:23:08Z",
+      "license": "NOASSERTION",
+      "topics": [
+        "ai-coding",
+        "ai-collaboration",
+        "antigravity",
+        "claude-code",
+        "cli",
+        "codex",
+        "coding-agent",
+        "crush",
+        "cursor-agent",
+        "gemini",
+        "github-copilot",
+        "kimi",
+        "kiro",
+        "multi-agent-cli",
+        "multi-agent-systems",
+        "opencode",
+        "pi-coding-agent",
+        "qwen-code",
+        "terminal",
+        "tmux"
+      ],
+      "language": "Python",
+      "homepage": "",
+      "description": "Visible multi-agent CLI workspace for mixing Codex, Claude, Gemini, Kimi, Qwen, Cursor, Copilot, Pi, OpenCode, and other AI coding agents",
+      "owner": "SeemSeam",
+      "owner_type": "User",
+      "archived": false,
+      "fork": false,
+      "has_wiki": true,
+      "has_pages": false,
+      "url": "https://github.com/SeemSeam/claude_codex_bridge",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:46:22+00:00",
+      "repo_note": null,
+      "discovered_by": "topic:coding-agent",
+      "query_fetched_at": "2026-11-25T02:46:13+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 54.59,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.2869,
+        "contribution": 9.56
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.8107,
+        "contribution": 22.52
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 0.55,
+        "contribution": 12.22
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.617,
+        "contribution": 10.28
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": false,
+      "docs": true,
+      "topics": 20,
+      "org_backed": false
+    },
+    "rank": 99
+  },
+  {
+    "id": "superagent-ai--grok-cli",
+    "name": "grok-cli",
+    "slug": "superagent-ai/grok-cli",
+    "category": "cli",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 3518,
+      "forks": 429,
+      "open_issues": 36,
+      "pushed_at": "2026-07-06T14:05:33Z",
+      "created_at": "2025-07-14T07:57:39Z",
+      "license": "MIT",
+      "topics": [
+        "agents",
+        "ai",
+        "cli",
+        "code",
+        "coding-agent",
+        "grok",
+        "xai"
+      ],
+      "language": "TypeScript",
+      "homepage": "",
+      "description": "An open-source coding agent for the Grok API",
+      "owner": "superagent-ai",
+      "owner_type": "Organization",
+      "archived": false,
+      "fork": false,
+      "has_wiki": true,
+      "has_pages": false,
+      "url": "https://github.com/superagent-ai/grok-cli",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:41:11+00:00",
+      "repo_note": null,
+      "discovered_by": "topic:coding-agent",
+      "query_fetched_at": "2026-11-25T02:46:13+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 52.01,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.2932,
+        "contribution": 9.77
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.3166,
+        "contribution": 8.8
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 1.0,
+        "contribution": 22.22
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.6734,
+        "contribution": 11.22
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 7,
+      "org_backed": true
+    },
+    "rank": null
+  },
+  {
+    "id": "cocoindex-io--cocoindex-code",
+    "name": "cocoindex-code",
+    "slug": "cocoindex-io/cocoindex-code",
+    "category": "cli",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 2991,
+      "forks": 256,
+      "open_issues": 64,
+      "pushed_at": "2026-11-24T07:33:24Z",
+      "created_at": "2026-02-01T02:16:56Z",
+      "license": "Apache-2.0",
+      "topics": [
+        "agents",
+        "ast",
+        "claude-code",
+        "cocoindex",
+        "code-search",
+        "codex",
+        "coding-agent",
+        "context-engineering",
+        "context-window",
+        "context-window-optimization",
+        "indexing",
+        "mcp",
+        "open-code",
+        "python",
+        "rust",
+        "tree-sitter"
+      ],
+      "language": "Python",
+      "homepage": "https://cocoindex.io/",
+      "description": "A super light-weight embedded code search engine CLI (AST based) that just works -  improves speed and efficiency for coding agent  🌟 Star if you like it!",
+      "owner": "cocoindex-io",
+      "owner_type": "Organization",
+      "archived": false,
+      "fork": false,
+      "has_wiki": true,
+      "has_pages": false,
+      "url": "https://github.com/cocoindex-io/cocoindex-code",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:46:22+00:00",
+      "repo_note": null,
+      "discovered_by": "topic:coding-agent",
+      "query_fetched_at": "2026-11-25T02:46:13+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 62.03,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.2295,
+        "contribution": 7.65
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.8201,
+        "contribution": 22.78
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 1.0,
+        "contribution": 22.22
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.5627,
+        "contribution": 9.38
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 16,
+      "org_backed": true
+    },
+    "rank": 79
+  },
+  {
+    "id": "windy3f3f3f3f--claude-code-from-scratch",
+    "name": "claude-code-from-scratch",
+    "slug": "windy3f3f3f3f/claude-code-from-scratch",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 2845,
+      "forks": 560,
+      "open_issues": 1,
+      "pushed_at": "2026-11-09T05:43:12Z",
+      "created_at": "2026-03-31T12:26:06Z",
+      "license": "MIT",
+      "topics": [
+        "ai",
+        "ai-agent",
+        "anthropic",
+        "build-from-scratch",
+        "claude",
+        "claude-code",
+        "coding-agent",
+        "llm",
+        "tutorial",
+        "typescript"
+      ],
+      "language": "Python",
+      "homepage": "https://windy3f3f3f3f.github.io/claude-code-from-scratch/#/",
+      "description": "Build your own Claude Code from scratch.  🔍 Claude Code 开源了 50 万行代码，读不动？用 ~5000 行 TypeScript / Python 从零复现核心架构，11 章分步教程带你理解 coding agent 精髓",
+      "owner": "Windy3f3f3f3f",
+      "owner_type": "User",
+      "archived": false,
+      "fork": false,
+      "has_wiki": true,
+      "has_pages": true,
+      "url": "https://github.com/Windy3f3f3f3f/claude-code-from-scratch",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:46:22+00:00",
+      "repo_note": null,
+      "discovered_by": "topic:coding-agent",
+      "query_fetched_at": "2026-11-25T02:46:13+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 61.07,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.2718,
+        "contribution": 9.06
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.8737,
+        "contribution": 24.27
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 0.85,
+        "contribution": 18.89
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.531,
+        "contribution": 8.85
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 10,
+      "org_backed": false
+    },
+    "rank": 81
+  },
+  {
+    "id": "teaql--teaql-agent-kit",
+    "name": "teaql-agent-kit",
+    "slug": "teaql/teaql-agent-kit",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 2822,
+      "forks": 953,
+      "open_issues": 2,
+      "pushed_at": "2026-11-10T10:21:25Z",
+      "created_at": "2018-12-17T18:07:12Z",
+      "license": "MIT",
+      "topics": [
+        "agentic-coding",
+        "ai-agents",
+        "ai-coding",
+        "ai-native",
+        "code-generation",
+        "coding-agent",
+        "context-management",
+        "ddd",
+        "developer-tools",
+        "domain-driven-design",
+        "harness-engineering",
+        "java",
+        "model-driven-development",
+        "progressive-disclosure",
+        "rust",
+        "semantic-guardrails",
+        "semantic-modeling",
+        "teaql"
+      ],
+      "language": "TypeScript",
+      "homepage": "https://teaql.io",
+      "description": "A model-driven harness for AI coding agents: semantic modeling, app generation, progressive API Assist and evidence-based verification.",
+      "owner": "teaql",
+      "owner_type": "Organization",
+      "archived": false,
+      "fork": false,
+      "has_wiki": true,
+      "has_pages": false,
+      "url": "https://github.com/teaql/teaql-agent-kit",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:46:22+00:00",
+      "repo_note": null,
+      "discovered_by": "topic:coding-agent",
+      "query_fetched_at": "2026-11-25T02:46:13+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 73.43,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.309,
+        "contribution": 10.3
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.8729,
+        "contribution": 24.25
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 1.0,
+        "contribution": 22.22
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 1.0,
+        "contribution": 16.67
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 18,
+      "org_backed": true
+    },
+    "rank": 42
+  },
+  {
+    "id": "itayinbarr--little-coder",
+    "name": "little-coder",
+    "slug": "itayinbarr/little-coder",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 2741,
+      "forks": 186,
+      "open_issues": 14,
+      "pushed_at": "2026-09-18T22:17:59Z",
+      "created_at": "2026-04-11T10:37:11Z",
+      "license": "Apache-2.0",
+      "topics": [
+        "ai-coding-assistant",
+        "aider-polygot",
+        "benchmark",
+        "code-generation",
+        "coding-agent",
+        "coding-agents",
+        "local-llm",
+        "ollama",
+        "qwen",
+        "small-language-models",
+        "terminal-bench",
+        "tool-use"
+      ],
+      "language": "TypeScript",
+      "homepage": "https://itayinbarr.github.io/little-coder/",
+      "description": "A harness optimized to smaller LLMs",
+      "owner": "itayinbarr",
+      "owner_type": "User",
+      "archived": false,
+      "fork": false,
+      "has_wiki": false,
+      "has_pages": true,
+      "url": "https://github.com/itayinbarr/little-coder",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:46:22+00:00",
+      "repo_note": null,
+      "discovered_by": "topic:coding-agent",
+      "query_fetched_at": "2026-11-25T02:46:13+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 46.03,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.1974,
+        "contribution": 6.58
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.5452,
+        "contribution": 15.14
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 0.7,
+        "contribution": 15.56
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.5249,
+        "contribution": 8.75
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 12,
+      "org_backed": false
+    },
+    "rank": null
+  },
+  {
+    "id": "coleam00--archon",
+    "name": "Archon",
+    "slug": "coleam00/archon",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 23991,
+      "forks": 3543,
+      "open_issues": 266,
+      "pushed_at": "2026-11-25T02:31:29Z",
+      "created_at": "2025-02-07T21:04:12Z",
+      "license": "MIT",
+      "topics": [
+        "ai",
+        "automation",
+        "bun",
+        "claude",
+        "cli",
+        "coding-assistant",
+        "developer-tools",
+        "typescript",
+        "workflow-engine",
+        "yaml"
+      ],
+      "language": "TypeScript",
+      "homepage": "https://archon.diy",
+      "description": "The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable.",
+      "owner": "coleam00",
+      "owner_type": "User",
+      "archived": false,
+      "fork": false,
+      "has_wiki": true,
+      "has_pages": true,
+      "url": "https://github.com/coleam00/Archon",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:36:33+00:00",
+      "repo_note": null,
+      "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:15+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 78.7,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.7043,
+        "contribution": 23.48
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.8525,
+        "contribution": 23.68
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 0.85,
+        "contribution": 18.89
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.7595,
+        "contribution": 12.66
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 10,
+      "org_backed": false
+    },
+    "rank": 26
+  },
+  {
+    "id": "browser-use--browser-harness",
+    "name": "browser-harness",
+    "slug": "browser-use/browser-harness",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 19229,
+      "forks": 1901,
+      "open_issues": 475,
+      "pushed_at": "2026-11-25T02:15:59Z",
+      "created_at": "2026-04-17T01:56:15Z",
+      "license": "MIT",
+      "topics": [
+        "ai-agent",
+        "browser-agent",
+        "browser-automation",
+        "browser-use",
+        "browser-use-box",
+        "browser-use-cloud",
+        "cdp",
+        "chrome",
+        "chrome-devtools-protocol",
+        "claude-code",
+        "cloud-browser",
+        "codex",
+        "cursor",
+        "llm",
+        "mcp",
+        "persistent-browser",
+        "real-browser",
+        "telegram-agent",
+        "vps-agent",
+        "web-automation"
+      ],
+      "language": "Python",
+      "homepage": "https://browser-harness.com",
+      "description": "Let Claude Code, Codex or Cursor use your real Chrome, logged in as you. One prompt to set up. Open source, MIT.",
+      "owner": "browser-use",
+      "owner_type": "Organization",
+      "archived": false,
+      "fork": false,
+      "has_wiki": true,
+      "has_pages": false,
+      "url": "https://github.com/browser-use/browser-harness",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:36:33+00:00",
+      "repo_note": null,
+      "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:15+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 73.73,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.6192,
+        "contribution": 20.64
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.7984,
+        "contribution": 22.18
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 1.0,
+        "contribution": 22.22
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.5216,
+        "contribution": 8.69
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 20,
+      "org_backed": true
+    },
+    "rank": 41
+  },
+  {
+    "id": "strands-agents--harness-sdk",
+    "name": "harness-sdk",
+    "slug": "strands-agents/harness-sdk",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 9286,
+      "forks": 1566,
+      "open_issues": 1379,
+      "pushed_at": "2026-11-24T23:55:55Z",
+      "created_at": "2025-05-14T19:59:51Z",
+      "license": "Apache-2.0",
+      "topics": [
+        "agent-framework",
+        "agentic",
+        "agentic-ai",
+        "agents",
+        "ai",
+        "ai-agents",
+        "anthropic",
+        "autonomous-agents",
+        "bedrock",
+        "generative-ai",
+        "harness",
+        "llm",
+        "llm-agent",
+        "mcp",
+        "multi-agent-systems",
+        "openai",
+        "python",
+        "sdk",
+        "strands-agents",
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "homepage": "http://strandsagents.com/",
+      "description": "Build an agent harness and control it end-to-end. Open-source SDK for production AI agents in Python & TypeScript - any model, any cloud.",
+      "owner": "strands-agents",
+      "owner_type": "Organization",
+      "archived": false,
+      "fork": false,
+      "has_wiki": false,
+      "has_pages": true,
+      "url": "https://github.com/strands-agents/harness-sdk",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:36:33+00:00",
+      "repo_note": null,
+      "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:15+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 71.53,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.5347,
+        "contribution": 17.82
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.7095,
+        "contribution": 19.71
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 1.0,
+        "contribution": 22.22
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.7068,
+        "contribution": 11.78
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 20,
+      "org_backed": true
+    },
+    "rank": 45
+  },
+  {
+    "id": "zai-org--zcode",
+    "name": "ZCode",
+    "slug": "zai-org/zcode",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 8899,
+      "forks": 2783,
+      "open_issues": 11,
+      "pushed_at": "2026-11-23T08:14:37Z",
+      "created_at": "2026-09-20T12:01:16Z",
+      "license": "Apache-2.0",
+      "topics": [],
+      "language": "TypeScript",
+      "homepage": "https://zcode.z.ai/",
+      "description": "Z.ai's coding agent harness. Powerful, intelligent, extensible.",
+      "owner": "zai-org",
+      "owner_type": "Organization",
+      "archived": false,
+      "fork": false,
+      "has_wiki": false,
+      "has_pages": false,
+      "url": "https://github.com/zai-org/ZCode",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:36:33+00:00",
+      "repo_note": null,
+      "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:15+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 70.85,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.5612,
+        "contribution": 18.71
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.9354,
+        "contribution": 25.98
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 0.85,
+        "contribution": 18.89
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.4362,
+        "contribution": 7.27
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 0,
+      "org_backed": true
+    },
+    "rank": 48
+  },
+  {
+    "id": "truefoundry--trueforge",
+    "name": "trueforge",
+    "slug": "truefoundry/trueforge",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 6636,
+      "forks": 577,
+      "open_issues": 110,
+      "pushed_at": "2026-11-24T19:27:23Z",
+      "created_at": "2026-07-23T09:16:13Z",
+      "license": "MIT",
+      "topics": [
+        "agent",
+        "agentic-ai",
+        "agents",
+        "engineering-team",
+        "harness",
+        "harness-engineering"
+      ],
+      "language": "TypeScript",
+      "homepage": "https://trueforge.dev",
+      "description": "The open-source agent harness - the runtime layer that turns an LLM into a working agent.",
+      "owner": "truefoundry",
+      "owner_type": "Organization",
+      "archived": false,
+      "fork": false,
+      "has_wiki": false,
+      "has_pages": false,
+      "url": "https://github.com/truefoundry/trueforge",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:36:33+00:00",
+      "repo_note": null,
+      "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:15+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 67.73,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.4414,
+        "contribution": 14.71
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.8275,
+        "contribution": 22.99
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 1.0,
+        "contribution": 22.22
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.4685,
+        "contribution": 7.81
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 6,
+      "org_backed": true
+    },
+    "rank": 57
+  },
+  {
+    "id": "phone-harness--phone-harness",
+    "name": "phone-harness",
+    "slug": "phone-harness/phone-harness",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 5726,
+      "forks": 602,
+      "open_issues": 107,
+      "pushed_at": "2026-11-24T03:20:48Z",
+      "created_at": "2026-08-07T22:28:53Z",
+      "license": "MIT",
+      "topics": [
+        "agent",
+        "ai",
+        "automation",
+        "developer-tools",
+        "mobile-ai",
+        "mobile-development"
+      ],
+      "language": "Python",
+      "homepage": "phone-harness.com",
+      "description": "let your agent control your phone",
+      "owner": "phone-harness",
+      "owner_type": "Organization",
+      "archived": false,
+      "fork": false,
+      "has_wiki": true,
+      "has_pages": false,
+      "url": "https://github.com/phone-harness/phone-harness",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:36:33+00:00",
+      "repo_note": null,
+      "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:15+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 63.64,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.4269,
+        "contribution": 14.23
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.8226,
+        "contribution": 22.85
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 0.85,
+        "contribution": 18.89
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.4603,
+        "contribution": 7.67
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 6,
+      "org_backed": true
+    },
+    "rank": 74
+  },
+  {
+    "id": "waishnav--devspace",
+    "name": "devspace",
+    "slug": "waishnav/devspace",
+    "category": "assistant",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 5542,
+      "forks": 630,
+      "open_issues": 34,
+      "pushed_at": "2026-11-01T17:42:22Z",
+      "created_at": "2026-06-14T16:57:27Z",
+      "license": "MIT",
+      "topics": [
+        "agent-orchestration",
+        "chatgpt",
+        "claude",
+        "claude-code",
+        "codex",
+        "dyanmic-workflow",
+        "pi-coding-agent"
+      ],
+      "language": "TypeScript",
+      "homepage": "https://devspace.run",
+      "description": "Minimal Coding Agent Harness on MCP for ChatGPT, Claude, Hermes, Grok Bot, OpenClaw",
+      "owner": "Waishnav",
+      "owner_type": "User",
+      "archived": false,
+      "fork": false,
+      "has_wiki": true,
+      "has_pages": false,
+      "url": "https://github.com/Waishnav/devspace",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:36:33+00:00",
+      "repo_note": null,
+      "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:15+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 61.74,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.4237,
+        "contribution": 14.12
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.7402,
+        "contribution": 20.56
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 0.85,
+        "contribution": 18.89
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.4899,
+        "contribution": 8.16
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 7,
+      "org_backed": false
+    },
+    "rank": 80
+  },
+  {
+    "id": "evoscientist--evoscientist",
+    "name": "EvoScientist",
+    "slug": "evoscientist/evoscientist",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 5093,
+      "forks": 371,
+      "open_issues": 64,
+      "pushed_at": "2026-11-24T14:59:59Z",
+      "created_at": "2026-01-26T11:19:26Z",
+      "license": "Apache-2.0",
+      "topics": [
+        "ai-agent",
+        "ai4science",
+        "multi-agent-system",
+        "vibe-research"
+      ],
+      "language": "Python",
+      "homepage": "https://EvoScientist.ai/",
+      "description": "🔬 Harness Vibe Research with Self-evolving AI Scientists",
+      "owner": "EvoScientist",
+      "owner_type": "Organization",
+      "archived": false,
+      "fork": false,
+      "has_wiki": false,
+      "has_pages": false,
+      "url": "https://github.com/EvoScientist/EvoScientist",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:36:33+00:00",
+      "repo_note": null,
+      "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:15+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 68.03,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.3852,
+        "contribution": 12.84
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.8472,
+        "contribution": 23.53
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 1.0,
+        "contribution": 22.22
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.566,
+        "contribution": 9.43
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 4,
+      "org_backed": true
+    },
+    "rank": 56
+  },
+  {
+    "id": "minglink--dsh-infinite-gen-5",
+    "name": "dsh-infinite-gen-5",
+    "slug": "minglink/dsh-infinite-gen-5",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 4725,
+      "forks": 663,
+      "open_issues": 33,
+      "pushed_at": "2026-11-21T04:22:52Z",
+      "created_at": "2026-08-15T15:47:15Z",
+      "license": "NOASSERTION",
+      "topics": [
+        "deepseek",
+        "deepseek-harness"
+      ],
+      "language": "JavaScript",
+      "homepage": "https://deepseek.stream/plugins/dsh-infinite-gen-5",
+      "description": "DeepSeek Harness 最强逆向工具（无限五代）     求 Star 收藏 ⭐欢迎大家提交项目的改进",
+      "owner": "Minglink",
+      "owner_type": "User",
+      "archived": false,
+      "fork": false,
+      "has_wiki": true,
+      "has_pages": false,
+      "url": "https://github.com/Minglink/dsh-infinite-gen-5",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:46:22+00:00",
+      "repo_note": null,
+      "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:15+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 54.4,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.4174,
+        "contribution": 13.91
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.8638,
+        "contribution": 24.0
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 0.4,
+        "contribution": 8.89
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.4559,
+        "contribution": 7.6
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": false,
+      "docs": true,
+      "topics": 2,
+      "org_backed": false
+    },
+    "rank": 100
+  },
+  {
+    "id": "zhukunpenglinyutong--desktop-cc-gui",
+    "name": "desktop-cc-gui",
+    "slug": "zhukunpenglinyutong/desktop-cc-gui",
+    "category": "ide",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 4614,
+      "forks": 433,
+      "open_issues": 358,
+      "pushed_at": "2026-11-23T15:21:35Z",
+      "created_at": "2026-02-03T15:08:25Z",
+      "license": "MIT",
+      "topics": [
+        "ai-coding",
+        "claude-code",
+        "codex",
+        "deepseek-harness",
+        "desktop-app",
+        "dsh",
+        "tauri",
+        "vibe-coding"
+      ],
+      "language": "TypeScript",
+      "homepage": "https://www.mossx.ai/download",
+      "description": "Multi-engine AI coding desktop client (Tauri). Claude Code, Codex, Gemini, OpenCode, DeepSeek Harness and more in one GUI.",
+      "owner": "zhukunpenglinyutong",
+      "owner_type": "User",
+      "archived": false,
+      "fork": false,
+      "has_wiki": true,
+      "has_pages": false,
+      "url": "https://github.com/zhukunpenglinyutong/desktop-cc-gui",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:46:22+00:00",
+      "repo_note": null,
+      "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:15+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 60.99,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.3808,
+        "contribution": 12.69
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.7215,
+        "contribution": 20.04
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 0.85,
+        "contribution": 18.89
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.5616,
+        "contribution": 9.36
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 8,
+      "org_backed": false
+    },
+    "rank": 82
+  },
+  {
+    "id": "simplexai-labs--linger",
+    "name": "linger",
+    "slug": "simplexai-labs/linger",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 4396,
+      "forks": 416,
+      "open_issues": 122,
+      "pushed_at": "2026-11-25T02:45:19Z",
+      "created_at": "2026-11-10T03:50:38Z",
+      "license": "NOASSERTION",
+      "topics": [
+        "agent-teams",
+        "local-llm",
+        "memory",
+        "personal-agent",
+        "proactive-agent",
+        "proactive-ai"
+      ],
+      "language": "TypeScript",
+      "homepage": "heylinger.com",
+      "description": "Linger is An Open-Source Personal Agent That Runs Fully on Your PC.  We aim to break Big Tech’s grip on AI by bringing powerful local AI to everyday computers through efficient model–harness co-design, so everyone can run their own.",
+      "owner": "simplexai-labs",
+      "owner_type": "Organization",
+      "archived": false,
+      "fork": false,
+      "has_wiki": false,
+      "has_pages": false,
+      "url": "https://github.com/simplexai-labs/linger",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:46:22+00:00",
+      "repo_note": null,
+      "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:15+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 56.96,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.3644,
+        "contribution": 12.15
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.8082,
+        "contribution": 22.45
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 0.7,
+        "contribution": 15.56
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.4082,
+        "contribution": 6.8
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": false,
+      "docs": true,
+      "topics": 6,
+      "org_backed": true
+    },
+    "rank": 94
+  },
+  {
+    "id": "crafter-station--petdex",
+    "name": "petdex",
+    "slug": "crafter-station/petdex",
+    "category": "cli",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 4378,
+      "forks": 218,
+      "open_issues": 5,
+      "pushed_at": "2026-11-22T04:19:23Z",
+      "created_at": "2026-05-02T07:51:35Z",
+      "license": "MIT",
+      "topics": [
+        "claude-code",
+        "clerk",
+        "cli",
+        "codex",
+        "developer-tools",
+        "drizzle-orm",
+        "dsh-plugin",
+        "mascot",
+        "neon",
+        "nextjs",
+        "pixel-art",
+        "postgres",
+        "react",
+        "sprites",
+        "tailwindcss",
+        "vercel"
+      ],
+      "language": "TypeScript",
+      "homepage": "https://petdex.dev",
+      "description": "A public gallery of animated pets for Codex, Claude Code, DeepSeek Harness, Hermes, OpenCode, Gemini CLI, and more.",
+      "owner": "crafter-station",
+      "owner_type": "Organization",
+      "archived": false,
+      "fork": false,
+      "has_wiki": true,
+      "has_pages": false,
+      "url": "https://github.com/crafter-station/petdex",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:46:22+00:00",
+      "repo_note": null,
+      "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:15+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 67.65,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.3184,
+        "contribution": 10.61
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.9451,
+        "contribution": 26.25
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 1.0,
+        "contribution": 22.22
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.5134,
+        "contribution": 8.56
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 16,
+      "org_backed": true
+    },
+    "rank": 58
+  },
+  {
+    "id": "langroid--langroid",
+    "name": "langroid",
+    "slug": "langroid/langroid",
+    "category": "multi",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 4154,
+      "forks": 441,
+      "open_issues": 50,
+      "pushed_at": "2026-11-24T12:57:00Z",
+      "created_at": "2023-04-16T20:47:28Z",
+      "license": "MIT",
+      "topics": [
+        "agents",
+        "ai",
+        "chatgpt",
+        "function-calling",
+        "gpt",
+        "gpt-4",
+        "gpt4",
+        "information-retrieval",
+        "language-model",
+        "llama",
+        "llm",
+        "llm-agent",
+        "llm-framework",
+        "local-llm",
+        "multi-agent-systems",
+        "openai-api",
+        "rag",
+        "retrieval-augmented-generation"
+      ],
+      "language": "Python",
+      "homepage": "https://langroid.github.io/langroid/",
+      "description": "Harness LLMs with Multi-Agent Programming",
+      "owner": "langroid",
+      "owner_type": "Organization",
+      "archived": false,
+      "fork": false,
+      "has_wiki": true,
+      "has_pages": true,
+      "url": "https://github.com/langroid/langroid",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:46:22+00:00",
+      "repo_note": null,
+      "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:15+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 74.41,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.3493,
+        "contribution": 11.64
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.8595,
+        "contribution": 23.87
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 1.0,
+        "contribution": 22.22
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 1.0,
+        "contribution": 16.67
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 18,
+      "org_backed": true
+    },
+    "rank": 36
+  },
+  {
+    "id": "xmanrui--dsh-im",
+    "name": "dsh-im",
+    "slug": "xmanrui/dsh-im",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 3800,
+      "forks": 406,
+      "open_issues": 186,
+      "pushed_at": "2026-11-24T12:11:36Z",
+      "created_at": "2026-08-14T20:40:06Z",
+      "license": "MIT",
+      "topics": [
+        "ai-agents",
+        "chatbot",
+        "cordis",
+        "deepseek",
+        "deepseek-harness",
+        "dingtalk-bot",
+        "discord-bot",
+        "dsh",
+        "dsh-plugin",
+        "feishu-bot",
+        "im-bot",
+        "slack-bot",
+        "telegram-bot",
+        "wechat-bot",
+        "whatsapp-bot"
+      ],
+      "language": "JavaScript",
+      "homepage": null,
+      "description": "通过扫码或机器人凭据把IM机器人接入DeepSeek Harness（支持飞书、微信、钉钉、企业微信、QQ、Slack、Telegram、Discord和WhatsApp）。 Connect IM bots to DeepSeek Harness via QR code or credentials (9 channels).",
+      "owner": "xmanrui",
+      "owner_type": "User",
+      "archived": false,
+      "fork": false,
+      "has_wiki": true,
+      "has_pages": false,
+      "url": "https://github.com/xmanrui/dsh-im",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:46:22+00:00",
+      "repo_note": null,
+      "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:15+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 57.9,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.3222,
+        "contribution": 10.74
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.7439,
+        "contribution": 20.66
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 0.85,
+        "contribution": 18.89
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.4564,
+        "contribution": 7.61
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 15,
+      "org_backed": false
+    },
+    "rank": 89
+  },
+  {
+    "id": "xiaobright--dsh-anchored-standard",
+    "name": "dsh-anchored-standard",
+    "slug": "xiaobright/dsh-anchored-standard",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 3708,
+      "forks": 121,
+      "open_issues": 24,
+      "pushed_at": "2026-10-21T16:32:08Z",
+      "created_at": "2026-08-14T14:06:39Z",
+      "license": "NOASSERTION",
+      "topics": [
+        "deepseek",
+        "deepseek-harness",
+        "dsh-plugin",
+        "llm-agent"
+      ],
+      "language": "JavaScript",
+      "homepage": "https://github.com/xiaobright/modeltest",
+      "description": "Two-phase DeepSeek Harness preset: Minimal-aligned bootstrap, then full Standard tools (Project2 98/99)",
+      "owner": "xiaobright",
+      "owner_type": "User",
+      "archived": false,
+      "fork": false,
+      "has_wiki": true,
+      "has_pages": false,
+      "url": "https://github.com/xiaobright/dsh-anchored-standard",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:46:22+00:00",
+      "repo_note": null,
+      "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:15+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 47.62,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.2661,
+        "contribution": 8.87
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.681,
+        "contribution": 18.92
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 0.55,
+        "contribution": 12.22
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.4564,
+        "contribution": 7.61
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": false,
+      "docs": true,
+      "topics": 4,
+      "org_backed": false
+    },
+    "rank": null
+  },
+  {
+    "id": "chuspeeism--dashi-taskboard",
+    "name": "dashi-taskboard",
+    "slug": "chuspeeism/dashi-taskboard",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 3533,
+      "forks": 505,
+      "open_issues": 36,
+      "pushed_at": "2026-11-24T06:44:20Z",
+      "created_at": "2026-07-24T14:14:07Z",
+      "license": "Apache-2.0",
+      "topics": [
+        "claude-code",
+        "cli",
+        "codex",
+        "codex-app",
+        "codex-desktop",
+        "codex-plugin",
+        "dsh",
+        "dsh-plugin",
+        "skills"
+      ],
+      "language": "JavaScript",
+      "homepage": "",
+      "description": "现代化可灵活嵌入的任务面板，支持 Codex、DeepSeek Harness",
+      "owner": "chuspeeism",
+      "owner_type": "User",
+      "archived": false,
+      "fork": false,
+      "has_wiki": true,
+      "has_pages": false,
+      "url": "https://github.com/chuspeeism/dashi-taskboard",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:46:22+00:00",
+      "repo_note": null,
+      "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:15+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 57.73,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.309,
+        "contribution": 10.3
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.8669,
+        "contribution": 24.08
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 0.7,
+        "contribution": 15.56
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.4679,
+        "contribution": 7.8
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 9,
+      "org_backed": false
+    },
+    "rank": 90
+  },
+  {
+    "id": "prism-shadow--penguin-harness",
+    "name": "penguin-harness",
+    "slug": "prism-shadow/penguin-harness",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 3321,
+      "forks": 362,
+      "open_issues": 113,
+      "pushed_at": "2026-11-25T02:13:15Z",
+      "created_at": "2026-07-19T03:15:21Z",
+      "license": "Apache-2.0",
+      "topics": [
+        "agent",
+        "agentic-ai",
+        "ai",
+        "build-tool",
+        "claude-code",
+        "deepseek",
+        "deepseek-harness",
+        "desktop",
+        "harness",
+        "llm",
+        "rsi",
+        "self-evolving"
+      ],
+      "language": "TypeScript",
+      "homepage": "https://penguin.ooo/",
+      "description": "🐧 Unified and Stable RSI Platform",
+      "owner": "Prism-Shadow",
+      "owner_type": "Organization",
+      "archived": false,
+      "fork": false,
+      "has_wiki": false,
+      "has_pages": true,
+      "url": "https://github.com/Prism-Shadow/penguin-harness",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:46:22+00:00",
+      "repo_note": null,
+      "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:15+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 57.66,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.2749,
+        "contribution": 9.16
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.7836,
+        "contribution": 21.77
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 0.85,
+        "contribution": 18.89
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.4707,
+        "contribution": 7.84
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 12,
+      "org_backed": true
+    },
+    "rank": 91
+  },
+  {
+    "id": "n4darae--shrt",
+    "name": "shrt",
+    "slug": "n4darae/shrt",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 3244,
+      "forks": 224,
+      "open_issues": 9,
+      "pushed_at": "2026-10-26T12:28:57Z",
+      "created_at": "2026-09-03T10:49:14Z",
+      "license": "MIT",
+      "topics": [],
+      "language": "Go",
+      "homepage": "",
+      "description": "A contract-driven gRPC regression harness for AI coding agents, with human-approved baselines. Snapshot the valid call chains of an API so an agent can look one up instead of tracing for it. gRPC today, OpenAPI next",
+      "owner": "N4darae",
+      "owner_type": "User",
+      "archived": false,
+      "fork": false,
+      "has_wiki": true,
+      "has_pages": false,
+      "url": "https://github.com/N4darae/shrt",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:46:22+00:00",
+      "repo_note": null,
+      "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:15+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 51.35,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.2383,
+        "contribution": 7.94
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.7352,
+        "contribution": 20.42
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 0.7,
+        "contribution": 15.56
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.4455,
+        "contribution": 7.42
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 0,
+      "org_backed": false
+    },
+    "rank": null
+  },
+  {
+    "id": "chachamaru127--claude-code-harness",
+    "name": "claude-code-harness",
+    "slug": "chachamaru127/claude-code-harness",
+    "category": "framework",
+    "origin": "discovered",
+    "confidence": "medium",
+    "npm": null,
+    "metrics": {
+      "stars": 3223,
+      "forks": 308,
+      "open_issues": 9,
+      "pushed_at": "2026-11-16T01:25:00Z",
+      "created_at": "2025-12-12T03:57:21Z",
+      "license": "MIT",
+      "topics": [],
+      "language": "Shell",
+      "homepage": null,
+      "description": "Claude Code Dedicated Development Harness - Achieving High-Quality Development Through an Autonomous Plan→Work→Review Cycle",
+      "owner": "Chachamaru127",
+      "owner_type": "User",
+      "archived": false,
+      "fork": false,
+      "has_wiki": true,
+      "has_pages": false,
+      "url": "https://github.com/Chachamaru127/claude-code-harness",
+      "downloads": null
+    },
+    "evidence": {
+      "repo_source": "discovery-search",
+      "repo_fetched_at": "2026-11-25T02:46:22+00:00",
+      "repo_note": null,
+      "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:15+00:00",
+      "npm_fetched_at": null
+    },
+    "score": 57.59,
+    "score_breakdown": {
+      "reach": {
+        "weight": 0.3,
+        "normalized": 0.2453,
+        "contribution": 8.18
+      },
+      "activity": {
+        "weight": 0.25,
+        "normalized": 0.8645,
+        "contribution": 24.01
+      },
+      "maturity": {
+        "weight": 0.2,
+        "normalized": 0.7,
+        "contribution": 15.56
+      },
+      "longevity": {
+        "weight": 0.15,
+        "normalized": 0.5907,
+        "contribution": 9.84
+      },
+      "momentum": {
+        "weight": 0.1,
+        "normalized": null,
+        "contribution": null
+      }
+    },
+    "penalties": [],
+    "star_delta": null,
+    "maturity_detail": {
+      "license": true,
+      "docs": true,
+      "topics": 0,
+      "org_backed": false
+    },
+    "rank": 92
   },
   {
     "id": "herdrdev--herdr",
@@ -7204,21 +10098,21 @@
       "repo_source": "discovery-search",
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
+      "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:18+00:00",
       "npm_fetched_at": null
     },
-    "score": 77.86,
+    "score": 78.08,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.8193,
-        "contribution": 27.31
+        "normalized": 0.8304,
+        "contribution": 27.68
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.82,
-        "contribution": 22.78
+        "normalized": 0.8147,
+        "contribution": 22.63
       },
       "maturity": {
         "weight": 0.2,
@@ -7244,7 +10138,7 @@
       "topics": 18,
       "org_backed": true
     },
-    "rank": 27
+    "rank": 29
   },
   {
     "id": "ai-openshell--openshell",
@@ -7278,21 +10172,21 @@
       "repo_source": "discovery-search",
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
+      "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:18+00:00",
       "npm_fetched_at": null
     },
-    "score": 70.1,
+    "score": 70.9,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.6344,
-        "contribution": 21.15
+        "normalized": 0.657,
+        "contribution": 21.9
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7523,
-        "contribution": 20.9
+        "normalized": 0.7541,
+        "contribution": 20.95
       },
       "maturity": {
         "weight": 0.2,
@@ -7318,7 +10212,7 @@
       "topics": 0,
       "org_backed": true
     },
-    "rank": 43
+    "rank": 47
   },
   {
     "id": "nasiko-labs--nasiko",
@@ -7364,21 +10258,21 @@
       "repo_source": "discovery-search",
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
+      "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:18+00:00",
       "npm_fetched_at": null
     },
-    "score": 66.15,
+    "score": 66.67,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.5999,
-        "contribution": 20.0
+        "normalized": 0.6204,
+        "contribution": 20.68
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8877,
-        "contribution": 24.66
+        "normalized": 0.8816,
+        "contribution": 24.49
       },
       "maturity": {
         "weight": 0.2,
@@ -7404,7 +10298,7 @@
       "topics": 11,
       "org_backed": true
     },
-    "rank": 59
+    "rank": 64
   },
   {
     "id": "open-multi-agent--open-multi-agent",
@@ -7458,21 +10352,21 @@
       "repo_source": "discovery-search",
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
+      "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:18+00:00",
       "npm_fetched_at": null
     },
-    "score": 74.2,
+    "score": 74.9,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.4968,
-        "contribution": 16.56
+        "normalized": 0.5227,
+        "contribution": 17.42
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9565,
-        "contribution": 26.57
+        "normalized": 0.9505,
+        "contribution": 26.4
       },
       "maturity": {
         "weight": 0.2,
@@ -7498,259 +10392,7 @@
       "topics": 19,
       "org_backed": true
     },
-    "rank": 34
-  },
-  {
-    "id": "truefoundry--trueforge",
-    "name": "trueforge",
-    "slug": "truefoundry/trueforge",
-    "category": "framework",
-    "origin": "discovered",
-    "confidence": "medium",
-    "npm": null,
-    "metrics": {
-      "stars": 6636,
-      "forks": 577,
-      "open_issues": 110,
-      "pushed_at": "2026-11-24T19:27:23Z",
-      "created_at": "2026-07-23T09:16:13Z",
-      "license": "MIT",
-      "topics": [
-        "agent",
-        "agentic-ai",
-        "agents",
-        "engineering-team",
-        "harness",
-        "harness-engineering"
-      ],
-      "language": "TypeScript",
-      "homepage": "https://trueforge.dev",
-      "description": "The open-source agent harness - the runtime layer that turns an LLM into a working agent.",
-      "owner": "truefoundry",
-      "owner_type": "Organization",
-      "archived": false,
-      "fork": false,
-      "has_wiki": false,
-      "has_pages": false,
-      "url": "https://github.com/truefoundry/trueforge",
-      "downloads": null
-    },
-    "evidence": {
-      "repo_source": "discovery-search",
-      "repo_fetched_at": "2026-11-25T02:36:33+00:00",
-      "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
-      "npm_fetched_at": null
-    },
-    "score": 67.31,
-    "score_breakdown": {
-      "reach": {
-        "weight": 0.3,
-        "normalized": 0.427,
-        "contribution": 14.23
-      },
-      "activity": {
-        "weight": 0.25,
-        "normalized": 0.8299,
-        "contribution": 23.05
-      },
-      "maturity": {
-        "weight": 0.2,
-        "normalized": 1.0,
-        "contribution": 22.22
-      },
-      "longevity": {
-        "weight": 0.15,
-        "normalized": 0.4685,
-        "contribution": 7.81
-      },
-      "momentum": {
-        "weight": 0.1,
-        "normalized": null,
-        "contribution": null
-      }
-    },
-    "penalties": [],
-    "star_delta": null,
-    "maturity_detail": {
-      "license": true,
-      "docs": true,
-      "topics": 6,
-      "org_backed": true
-    },
-    "rank": 52
-  },
-  {
-    "id": "kunagent--kun",
-    "name": "Kun",
-    "slug": "kunagent/kun",
-    "category": "ide",
-    "origin": "discovered",
-    "confidence": "medium",
-    "npm": null,
-    "metrics": {
-      "stars": 6382,
-      "forks": 600,
-      "open_issues": 17,
-      "pushed_at": "2026-11-24T12:18:29Z",
-      "created_at": "2026-05-21T13:22:06Z",
-      "license": "NOASSERTION",
-      "topics": [
-        "agentic-workflow",
-        "ai-agent",
-        "ai-assistant",
-        "ai-design",
-        "automation",
-        "coding-agent",
-        "deepseek",
-        "desktop-app",
-        "electron",
-        "llm",
-        "local-first",
-        "mcp",
-        "multi-agent",
-        "openai-compatible",
-        "productivity",
-        "react",
-        "tui",
-        "typescript",
-        "writing-assistant"
-      ],
-      "language": "TypeScript",
-      "homepage": "https://www.kun-agent.com",
-      "description": "Local-first AI agent workspace for coding, writing, design, research, and automation — one runtime for desktop GUI and TUI.",
-      "owner": "KunAgent",
-      "owner_type": "Organization",
-      "archived": false,
-      "fork": false,
-      "has_wiki": true,
-      "has_pages": false,
-      "url": "https://github.com/KunAgent/Kun",
-      "downloads": null
-    },
-    "evidence": {
-      "repo_source": "discovery-search",
-      "repo_fetched_at": "2026-11-25T02:36:33+00:00",
-      "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
-      "npm_fetched_at": null
-    },
-    "score": 63.75,
-    "score_breakdown": {
-      "reach": {
-        "weight": 0.3,
-        "normalized": 0.4248,
-        "contribution": 14.16
-      },
-      "activity": {
-        "weight": 0.25,
-        "normalized": 0.9235,
-        "contribution": 25.65
-      },
-      "maturity": {
-        "weight": 0.2,
-        "normalized": 0.7,
-        "contribution": 15.56
-      },
-      "longevity": {
-        "weight": 0.15,
-        "normalized": 0.503,
-        "contribution": 8.38
-      },
-      "momentum": {
-        "weight": 0.1,
-        "normalized": null,
-        "contribution": null
-      }
-    },
-    "penalties": [],
-    "star_delta": null,
-    "maturity_detail": {
-      "license": false,
-      "docs": true,
-      "topics": 19,
-      "org_backed": true
-    },
-    "rank": 65
-  },
-  {
-    "id": "docker--docker-agent",
-    "name": "docker-agent",
-    "slug": "docker/docker-agent",
-    "category": "framework",
-    "origin": "discovered",
-    "confidence": "medium",
-    "npm": null,
-    "metrics": {
-      "stars": 4709,
-      "forks": 577,
-      "open_issues": 86,
-      "pushed_at": "2026-11-24T22:59:19Z",
-      "created_at": "2025-09-01T12:14:45Z",
-      "license": "Apache-2.0",
-      "topics": [
-        "agents",
-        "ai"
-      ],
-      "language": "Go",
-      "homepage": "https://docker.github.io/docker-agent/",
-      "description": "AI Agent Builder and Runtime by Docker Engineering",
-      "owner": "docker",
-      "owner_type": "Organization",
-      "archived": false,
-      "fork": false,
-      "has_wiki": false,
-      "has_pages": true,
-      "url": "https://github.com/docker/docker-agent",
-      "downloads": null
-    },
-    "evidence": {
-      "repo_source": "discovery-search",
-      "repo_fetched_at": "2026-11-25T02:41:11+00:00",
-      "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
-      "npm_fetched_at": null
-    },
-    "score": 66.16,
-    "score_breakdown": {
-      "reach": {
-        "weight": 0.3,
-        "normalized": 0.4079,
-        "contribution": 13.6
-      },
-      "activity": {
-        "weight": 0.25,
-        "normalized": 0.8244,
-        "contribution": 22.9
-      },
-      "maturity": {
-        "weight": 0.2,
-        "normalized": 0.85,
-        "contribution": 18.89
-      },
-      "longevity": {
-        "weight": 0.15,
-        "normalized": 0.6466,
-        "contribution": 10.78
-      },
-      "momentum": {
-        "weight": 0.1,
-        "normalized": null,
-        "contribution": null
-      }
-    },
-    "penalties": [],
-    "star_delta": null,
-    "maturity_detail": {
-      "license": true,
-      "docs": true,
-      "topics": 2,
-      "org_backed": true
-    },
-    "rank": 58
+    "rank": 35
   },
   {
     "id": "openbitfun--openbitfun",
@@ -7798,21 +10440,21 @@
       "repo_source": "discovery-search",
       "repo_fetched_at": "2026-11-25T02:41:11+00:00",
       "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
+      "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:18+00:00",
       "npm_fetched_at": null
     },
-    "score": 66.37,
+    "score": 64.23,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.3797,
-        "contribution": 12.66
+        "normalized": 0.3159,
+        "contribution": 10.53
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7963,
-        "contribution": 22.12
+        "normalized": 0.7959,
+        "contribution": 22.11
       },
       "maturity": {
         "weight": 0.2,
@@ -7838,7 +10480,7 @@
       "topics": 13,
       "org_backed": true
     },
-    "rank": 57
+    "rank": 72
   },
   {
     "id": "qwenaudio--qwen-audio-agent",
@@ -7886,21 +10528,21 @@
       "repo_source": "discovery-search",
       "repo_fetched_at": "2026-11-25T02:41:11+00:00",
       "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
+      "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
+      "query_fetched_at": "2026-11-25T02:46:18+00:00",
       "npm_fetched_at": null
     },
-    "score": 67.78,
+    "score": 64.53,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.3634,
-        "contribution": 12.11
+        "normalized": 0.2667,
+        "contribution": 8.89
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9241,
-        "contribution": 25.67
+        "normalized": 0.9231,
+        "contribution": 25.64
       },
       "maturity": {
         "weight": 0.2,
@@ -7926,1464 +10568,6 @@
       "topics": 13,
       "org_backed": true
     },
-    "rank": 48
-  },
-  {
-    "id": "exoharness--exo",
-    "name": "exo",
-    "slug": "exoharness/exo",
-    "category": "framework",
-    "origin": "discovered",
-    "confidence": "medium",
-    "npm": null,
-    "metrics": {
-      "stars": 1723,
-      "forks": 138,
-      "open_issues": 125,
-      "pushed_at": "2026-11-24T22:55:48Z",
-      "created_at": "2026-05-20T06:21:50Z",
-      "license": "MIT",
-      "topics": [
-        "agent",
-        "harness",
-        "self-evolution"
-      ],
-      "language": "Rust",
-      "homepage": "https://exoharness.ai/",
-      "description": "Exo is an agent + harness architecture that is fully recursive, able to safely edit all aspects of itself at runtime to get better at your tasks.",
-      "owner": "exoharness",
-      "owner_type": "Organization",
-      "archived": false,
-      "fork": false,
-      "has_wiki": true,
-      "has_pages": false,
-      "url": "https://github.com/exoharness/exo",
-      "downloads": null
-    },
-    "evidence": {
-      "repo_source": "discovery-search",
-      "repo_fetched_at": "2026-11-25T02:41:11+00:00",
-      "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
-      "npm_fetched_at": null
-    },
-    "score": 61.61,
-    "score_breakdown": {
-      "reach": {
-        "weight": 0.3,
-        "normalized": 0.3253,
-        "contribution": 10.84
-      },
-      "activity": {
-        "weight": 0.25,
-        "normalized": 0.7253,
-        "contribution": 20.15
-      },
-      "maturity": {
-        "weight": 0.2,
-        "normalized": 1.0,
-        "contribution": 22.22
-      },
-      "longevity": {
-        "weight": 0.15,
-        "normalized": 0.5036,
-        "contribution": 8.39
-      },
-      "momentum": {
-        "weight": 0.1,
-        "normalized": null,
-        "contribution": null
-      }
-    },
-    "penalties": [],
-    "star_delta": null,
-    "maturity_detail": {
-      "license": true,
-      "docs": true,
-      "topics": 3,
-      "org_backed": true
-    },
-    "rank": 72
-  },
-  {
-    "id": "minghinmatthewlam--pi-gui",
-    "name": "pi-gui",
-    "slug": "minghinmatthewlam/pi-gui",
-    "category": "ide",
-    "origin": "discovered",
-    "confidence": "medium",
-    "npm": null,
-    "metrics": {
-      "stars": 1490,
-      "forks": 226,
-      "open_issues": 44,
-      "pushed_at": "2026-11-02T16:26:34Z",
-      "created_at": "2026-03-20T18:46:02Z",
-      "license": "MIT",
-      "topics": [],
-      "language": "TypeScript",
-      "homepage": "https://www.pi-gui.com/",
-      "description": "Electron GUI app for the pi coding agent runtime",
-      "owner": "minghinmatthewlam",
-      "owner_type": "User",
-      "archived": false,
-      "fork": false,
-      "has_wiki": true,
-      "has_pages": false,
-      "url": "https://github.com/minghinmatthewlam/pi-gui",
-      "downloads": null
-    },
-    "evidence": {
-      "repo_source": "discovery-search",
-      "repo_fetched_at": "2026-11-25T02:41:11+00:00",
-      "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
-      "npm_fetched_at": null
-    },
-    "score": 54.01,
-    "score_breakdown": {
-      "reach": {
-        "weight": 0.3,
-        "normalized": 0.3303,
-        "contribution": 11.01
-      },
-      "activity": {
-        "weight": 0.25,
-        "normalized": 0.666,
-        "contribution": 18.5
-      },
-      "maturity": {
-        "weight": 0.2,
-        "normalized": 0.7,
-        "contribution": 15.56
-      },
-      "longevity": {
-        "weight": 0.15,
-        "normalized": 0.537,
-        "contribution": 8.95
-      },
-      "momentum": {
-        "weight": 0.1,
-        "normalized": null,
-        "contribution": null
-      }
-    },
-    "penalties": [],
-    "star_delta": null,
-    "maturity_detail": {
-      "license": true,
-      "docs": true,
-      "topics": 0,
-      "org_backed": false
-    },
-    "rank": 94
-  },
-  {
-    "id": "uvwt--agentdock",
-    "name": "agentdock",
-    "slug": "uvwt/agentdock",
-    "category": "multi",
-    "origin": "discovered",
-    "confidence": "medium",
-    "npm": null,
-    "metrics": {
-      "stars": 1303,
-      "forks": 173,
-      "open_issues": 4,
-      "pushed_at": "2026-11-18T14:30:04Z",
-      "created_at": "2026-05-25T13:05:50Z",
-      "license": "Apache-2.0",
-      "topics": [
-        "agent-skills",
-        "ai-agents",
-        "automation",
-        "devops",
-        "docker",
-        "mcp",
-        "model-context-protocol",
-        "remote-control",
-        "self-hosted",
-        "tool-calling"
-      ],
-      "language": "Go",
-      "homepage": "https://nexusdock.co",
-      "description": "Secure MCP runtime for AI agents to operate local machines, servers, and containers with multi-device orchestration.",
-      "owner": "uvwt",
-      "owner_type": "User",
-      "archived": false,
-      "fork": false,
-      "has_wiki": false,
-      "has_pages": false,
-      "url": "https://github.com/uvwt/agentdock",
-      "downloads": null
-    },
-    "evidence": {
-      "repo_source": "discovery-search",
-      "repo_fetched_at": "2026-11-25T02:41:11+00:00",
-      "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
-      "npm_fetched_at": null
-    },
-    "score": 62.29,
-    "score_breakdown": {
-      "reach": {
-        "weight": 0.3,
-        "normalized": 0.3056,
-        "contribution": 10.19
-      },
-      "activity": {
-        "weight": 0.25,
-        "normalized": 0.8953,
-        "contribution": 24.87
-      },
-      "maturity": {
-        "weight": 0.2,
-        "normalized": 0.85,
-        "contribution": 18.89
-      },
-      "longevity": {
-        "weight": 0.15,
-        "normalized": 0.5008,
-        "contribution": 8.35
-      },
-      "momentum": {
-        "weight": 0.1,
-        "normalized": null,
-        "contribution": null
-      }
-    },
-    "penalties": [],
-    "star_delta": null,
-    "maturity_detail": {
-      "license": true,
-      "docs": true,
-      "topics": 10,
-      "org_backed": false
-    },
     "rank": 71
-  },
-  {
-    "id": "fuyuxiang--echo-agent",
-    "name": "echo-agent",
-    "slug": "fuyuxiang/echo-agent",
-    "category": "framework",
-    "origin": "discovered",
-    "confidence": "medium",
-    "npm": null,
-    "metrics": {
-      "stars": 1035,
-      "forks": 35,
-      "open_issues": 5,
-      "pushed_at": "2026-11-24T13:33:16Z",
-      "created_at": "2026-03-15T03:17:38Z",
-      "license": "NOASSERTION",
-      "topics": [
-        "agent",
-        "agent-memory",
-        "desktop-app",
-        "memory",
-        "self-improving-agent"
-      ],
-      "language": "Python",
-      "homepage": "http://www.ojlab.com/",
-      "description": "面向长期运行与桌面协作的开源 AI Agent，提供常驻 Runtime、桌面 Agent、长期记忆与持续学习能力，可用于个人助理、自动化任务与本地工作流。",
-      "owner": "fuyuxiang",
-      "owner_type": "User",
-      "archived": false,
-      "fork": false,
-      "has_wiki": true,
-      "has_pages": true,
-      "url": "https://github.com/fuyuxiang/echo-agent",
-      "downloads": null
-    },
-    "evidence": {
-      "repo_source": "discovery-search",
-      "repo_fetched_at": "2026-11-25T02:41:11+00:00",
-      "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
-      "npm_fetched_at": null
-    },
-    "score": 54.96,
-    "score_breakdown": {
-      "reach": {
-        "weight": 0.3,
-        "normalized": 0.2449,
-        "contribution": 8.16
-      },
-      "activity": {
-        "weight": 0.25,
-        "normalized": 0.9207,
-        "contribution": 25.58
-      },
-      "maturity": {
-        "weight": 0.2,
-        "normalized": 0.55,
-        "contribution": 12.22
-      },
-      "longevity": {
-        "weight": 0.15,
-        "normalized": 0.5397,
-        "contribution": 9.0
-      },
-      "momentum": {
-        "weight": 0.1,
-        "normalized": null,
-        "contribution": null
-      }
-    },
-    "penalties": [],
-    "star_delta": null,
-    "maturity_detail": {
-      "license": false,
-      "docs": true,
-      "topics": 5,
-      "org_backed": false
-    },
-    "rank": 89
-  },
-  {
-    "id": "hernanjiang--craftstation",
-    "name": "CraftStation",
-    "slug": "hernanjiang/craftstation",
-    "category": "framework",
-    "origin": "discovered",
-    "confidence": "medium",
-    "npm": null,
-    "metrics": {
-      "stars": 933,
-      "forks": 2,
-      "open_issues": 12,
-      "pushed_at": "2026-11-18T00:48:55Z",
-      "created_at": "2026-08-26T06:15:48Z",
-      "license": "Apache-2.0",
-      "topics": [],
-      "language": "TypeScript",
-      "homepage": null,
-      "description": "CraftStation Agent Runtime Composition System",
-      "owner": "HernanJiang",
-      "owner_type": "User",
-      "archived": false,
-      "fork": false,
-      "has_wiki": true,
-      "has_pages": false,
-      "url": "https://github.com/HernanJiang/CraftStation",
-      "downloads": null
-    },
-    "evidence": {
-      "repo_source": "discovery-search",
-      "repo_fetched_at": "2026-11-25T02:41:11+00:00",
-      "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
-      "npm_fetched_at": null
-    },
-    "score": 52.93,
-    "score_breakdown": {
-      "reach": {
-        "weight": 0.3,
-        "normalized": 0.1891,
-        "contribution": 6.3
-      },
-      "activity": {
-        "weight": 0.25,
-        "normalized": 0.8485,
-        "contribution": 23.57
-      },
-      "maturity": {
-        "weight": 0.2,
-        "normalized": 0.7,
-        "contribution": 15.56
-      },
-      "longevity": {
-        "weight": 0.15,
-        "normalized": 0.4499,
-        "contribution": 7.5
-      },
-      "momentum": {
-        "weight": 0.1,
-        "normalized": null,
-        "contribution": null
-      }
-    },
-    "penalties": [],
-    "star_delta": null,
-    "maturity_detail": {
-      "license": true,
-      "docs": true,
-      "topics": 0,
-      "org_backed": false
-    },
-    "rank": 96
-  },
-  {
-    "id": "context-labs--whip",
-    "name": "whip",
-    "slug": "context-labs/whip",
-    "category": "framework",
-    "origin": "discovered",
-    "confidence": "medium",
-    "npm": null,
-    "metrics": {
-      "stars": 895,
-      "forks": 102,
-      "open_issues": 33,
-      "pushed_at": "2026-11-23T06:47:33Z",
-      "created_at": "2026-08-20T22:57:11Z",
-      "license": "Apache-2.0",
-      "topics": [],
-      "language": "Go",
-      "homepage": "",
-      "description": "A fast coding-agent harness in Go. Tool-use loop, bubbletea TUI, provider-routable models with live catalog discovery, MCP support, background subagents. One binary, no runtime, built for open-source models.",
-      "owner": "context-labs",
-      "owner_type": "Organization",
-      "archived": false,
-      "fork": false,
-      "has_wiki": true,
-      "has_pages": false,
-      "url": "https://github.com/context-labs/whip",
-      "downloads": null
-    },
-    "evidence": {
-      "repo_source": "discovery-search",
-      "repo_fetched_at": "2026-11-25T02:41:11+00:00",
-      "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
-      "npm_fetched_at": null
-    },
-    "score": 57.23,
-    "score_breakdown": {
-      "reach": {
-        "weight": 0.3,
-        "normalized": 0.2477,
-        "contribution": 8.26
-      },
-      "activity": {
-        "weight": 0.25,
-        "normalized": 0.8112,
-        "contribution": 22.53
-      },
-      "maturity": {
-        "weight": 0.2,
-        "normalized": 0.85,
-        "contribution": 18.89
-      },
-      "longevity": {
-        "weight": 0.15,
-        "normalized": 0.4532,
-        "contribution": 7.55
-      },
-      "momentum": {
-        "weight": 0.1,
-        "normalized": null,
-        "contribution": null
-      }
-    },
-    "penalties": [],
-    "star_delta": null,
-    "maturity_detail": {
-      "license": true,
-      "docs": true,
-      "topics": 0,
-      "org_backed": true
-    },
-    "rank": 84
-  },
-  {
-    "id": "bastani-inc--atomic",
-    "name": "atomic",
-    "slug": "bastani-inc/atomic",
-    "category": "framework",
-    "origin": "discovered",
-    "confidence": "medium",
-    "npm": null,
-    "metrics": {
-      "stars": 883,
-      "forks": 120,
-      "open_issues": 11,
-      "pushed_at": "2026-11-25T02:29:09Z",
-      "created_at": "2025-10-23T04:24:21Z",
-      "license": "NOASSERTION",
-      "topics": [],
-      "language": "TypeScript",
-      "homepage": "https://bastani.ai/",
-      "description": "The verifiable coding agent runtime. Define your coding agent's process in natural language with stages, checks, and approval gates instead of hoping it follows your instructions. Primitives for verifiable software factories.",
-      "owner": "bastani-inc",
-      "owner_type": "Organization",
-      "archived": false,
-      "fork": false,
-      "has_wiki": true,
-      "has_pages": false,
-      "url": "https://github.com/bastani-inc/atomic",
-      "downloads": null
-    },
-    "evidence": {
-      "repo_source": "discovery-search",
-      "repo_fetched_at": "2026-11-25T02:41:11+00:00",
-      "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
-      "npm_fetched_at": null
-    },
-    "score": 56.05,
-    "score_breakdown": {
-      "reach": {
-        "weight": 0.3,
-        "normalized": 0.2526,
-        "contribution": 8.42
-      },
-      "activity": {
-        "weight": 0.25,
-        "normalized": 0.9037,
-        "contribution": 25.1
-      },
-      "maturity": {
-        "weight": 0.2,
-        "normalized": 0.55,
-        "contribution": 12.22
-      },
-      "longevity": {
-        "weight": 0.15,
-        "normalized": 0.6181,
-        "contribution": 10.3
-      },
-      "momentum": {
-        "weight": 0.1,
-        "normalized": null,
-        "contribution": null
-      }
-    },
-    "penalties": [],
-    "star_delta": null,
-    "maturity_detail": {
-      "license": false,
-      "docs": true,
-      "topics": 0,
-      "org_backed": true
-    },
-    "rank": 88
-  },
-  {
-    "id": "hydro-project--infinity",
-    "name": "infinity",
-    "slug": "hydro-project/infinity",
-    "category": "framework",
-    "origin": "discovered",
-    "confidence": "medium",
-    "npm": null,
-    "metrics": {
-      "stars": 855,
-      "forks": 98,
-      "open_issues": 59,
-      "pushed_at": "2026-11-23T22:35:55Z",
-      "created_at": "2026-04-13T19:00:10Z",
-      "license": "Apache-2.0",
-      "topics": [
-        "agents",
-        "concurrency",
-        "distributed-systems",
-        "rust"
-      ],
-      "language": "Rust",
-      "homepage": "https://infinity.hydro.run",
-      "description": "An agent runtime and tool protocol for principled agent concurrency",
-      "owner": "hydro-project",
-      "owner_type": "Organization",
-      "archived": false,
-      "fork": false,
-      "has_wiki": false,
-      "has_pages": false,
-      "url": "https://github.com/hydro-project/infinity",
-      "downloads": null
-    },
-    "evidence": {
-      "repo_source": "discovery-search",
-      "repo_fetched_at": "2026-11-25T02:41:11+00:00",
-      "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
-      "npm_fetched_at": null
-    },
-    "score": 59.47,
-    "score_breakdown": {
-      "reach": {
-        "weight": 0.3,
-        "normalized": 0.2322,
-        "contribution": 7.74
-      },
-      "activity": {
-        "weight": 0.25,
-        "normalized": 0.7479,
-        "contribution": 20.78
-      },
-      "maturity": {
-        "weight": 0.2,
-        "normalized": 1.0,
-        "contribution": 22.22
-      },
-      "longevity": {
-        "weight": 0.15,
-        "normalized": 0.5238,
-        "contribution": 8.73
-      },
-      "momentum": {
-        "weight": 0.1,
-        "normalized": null,
-        "contribution": null
-      }
-    },
-    "penalties": [],
-    "star_delta": null,
-    "maturity_detail": {
-      "license": true,
-      "docs": true,
-      "topics": 4,
-      "org_backed": true
-    },
-    "rank": 80
-  },
-  {
-    "id": "octos-org--octos",
-    "name": "octos",
-    "slug": "octos-org/octos",
-    "category": "framework",
-    "origin": "discovered",
-    "confidence": "medium",
-    "npm": null,
-    "metrics": {
-      "stars": 769,
-      "forks": 92,
-      "open_issues": 81,
-      "pushed_at": "2026-11-25T01:31:36Z",
-      "created_at": "2026-03-15T23:56:24Z",
-      "license": "Apache-2.0",
-      "topics": [],
-      "language": "Rust",
-      "homepage": "https://octos-org.github.io/octos/",
-      "description": "Octos - Embeddable Agent Runtime",
-      "owner": "octos-org",
-      "owner_type": "Organization",
-      "archived": false,
-      "fork": false,
-      "has_wiki": false,
-      "has_pages": true,
-      "url": "https://github.com/octos-org/octos",
-      "downloads": null
-    },
-    "evidence": {
-      "repo_source": "discovery-search",
-      "repo_fetched_at": "2026-11-25T02:41:11+00:00",
-      "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
-      "npm_fetched_at": null
-    },
-    "score": 52.33,
-    "score_breakdown": {
-      "reach": {
-        "weight": 0.3,
-        "normalized": 0.2202,
-        "contribution": 7.34
-      },
-      "activity": {
-        "weight": 0.25,
-        "normalized": 0.7358,
-        "contribution": 20.44
-      },
-      "maturity": {
-        "weight": 0.2,
-        "normalized": 0.7,
-        "contribution": 15.56
-      },
-      "longevity": {
-        "weight": 0.15,
-        "normalized": 0.5397,
-        "contribution": 9.0
-      },
-      "momentum": {
-        "weight": 0.1,
-        "normalized": null,
-        "contribution": null
-      }
-    },
-    "penalties": [],
-    "star_delta": null,
-    "maturity_detail": {
-      "license": true,
-      "docs": true,
-      "topics": 0,
-      "org_backed": true
-    },
-    "rank": 97
-  },
-  {
-    "id": "botiverse--oar",
-    "name": "oar",
-    "slug": "botiverse/oar",
-    "category": "framework",
-    "origin": "discovered",
-    "confidence": "medium",
-    "npm": null,
-    "metrics": {
-      "stars": 764,
-      "forks": 36,
-      "open_issues": 24,
-      "pushed_at": "2026-11-25T02:32:11Z",
-      "created_at": "2026-08-05T06:55:45Z",
-      "license": "Apache-2.0",
-      "topics": [],
-      "language": "TypeScript",
-      "homepage": "",
-      "description": "oar (Open Agent Runtime): programming interface for all agent harnesses",
-      "owner": "botiverse",
-      "owner_type": "Organization",
-      "archived": false,
-      "fork": false,
-      "has_wiki": true,
-      "has_pages": false,
-      "url": "https://github.com/botiverse/oar",
-      "downloads": null
-    },
-    "evidence": {
-      "repo_source": "discovery-search",
-      "repo_fetched_at": "2026-11-25T02:41:11+00:00",
-      "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
-      "npm_fetched_at": null
-    },
-    "score": 56.56,
-    "score_breakdown": {
-      "reach": {
-        "weight": 0.3,
-        "normalized": 0.1969,
-        "contribution": 6.56
-      },
-      "activity": {
-        "weight": 0.25,
-        "normalized": 0.8431,
-        "contribution": 23.42
-      },
-      "maturity": {
-        "weight": 0.2,
-        "normalized": 0.85,
-        "contribution": 18.89
-      },
-      "longevity": {
-        "weight": 0.15,
-        "normalized": 0.4614,
-        "contribution": 7.69
-      },
-      "momentum": {
-        "weight": 0.1,
-        "normalized": null,
-        "contribution": null
-      }
-    },
-    "penalties": [],
-    "star_delta": null,
-    "maturity_detail": {
-      "license": true,
-      "docs": true,
-      "topics": 0,
-      "org_backed": true
-    },
-    "rank": 86
-  },
-  {
-    "id": "chekusu--wanman",
-    "name": "wanman",
-    "slug": "chekusu/wanman",
-    "category": "multi",
-    "origin": "discovered",
-    "confidence": "medium",
-    "npm": null,
-    "metrics": {
-      "stars": 725,
-      "forks": 117,
-      "open_issues": 26,
-      "pushed_at": "2026-11-24T13:54:46Z",
-      "created_at": "2026-04-22T14:17:57Z",
-      "license": "Apache-2.0",
-      "topics": [
-        "agent",
-        "claude-code",
-        "codex",
-        "llm"
-      ],
-      "language": "TypeScript",
-      "homepage": "http://wanman.ai",
-      "description": "wanman is an open-source agent matrix runtime inspired by Japanese one-man trains. It lets human users step back into an observer role while local agent runtimes coordinate autonomous multi-agent workflows, task execution, and artifacts.",
-      "owner": "chekusu",
-      "owner_type": "Organization",
-      "archived": false,
-      "fork": false,
-      "has_wiki": true,
-      "has_pages": false,
-      "url": "https://github.com/chekusu/wanman",
-      "downloads": null
-    },
-    "evidence": {
-      "repo_source": "discovery-search",
-      "repo_fetched_at": "2026-11-25T02:41:11+00:00",
-      "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
-      "npm_fetched_at": null
-    },
-    "score": 61.17,
-    "score_breakdown": {
-      "reach": {
-        "weight": 0.3,
-        "normalized": 0.2244,
-        "contribution": 7.48
-      },
-      "activity": {
-        "weight": 0.25,
-        "normalized": 0.8216,
-        "contribution": 22.82
-      },
-      "maturity": {
-        "weight": 0.2,
-        "normalized": 1.0,
-        "contribution": 22.22
-      },
-      "longevity": {
-        "weight": 0.15,
-        "normalized": 0.5189,
-        "contribution": 8.65
-      },
-      "momentum": {
-        "weight": 0.1,
-        "normalized": null,
-        "contribution": null
-      }
-    },
-    "penalties": [],
-    "star_delta": null,
-    "maturity_detail": {
-      "license": true,
-      "docs": true,
-      "topics": 4,
-      "org_backed": true
-    },
-    "rank": 76
-  },
-  {
-    "id": "provos--ironcurtain",
-    "name": "ironcurtain",
-    "slug": "provos/ironcurtain",
-    "category": "framework",
-    "origin": "discovered",
-    "confidence": "medium",
-    "npm": null,
-    "metrics": {
-      "stars": 684,
-      "forks": 93,
-      "open_issues": 16,
-      "pushed_at": "2026-11-20T00:55:51Z",
-      "created_at": "2026-02-21T23:34:31Z",
-      "license": "Apache-2.0",
-      "topics": [
-        "agent",
-        "mcp",
-        "model-context-protocol",
-        "policy",
-        "sandbox",
-        "security",
-        "trusted-process"
-      ],
-      "language": "TypeScript",
-      "homepage": "https://ironcurtain.dev",
-      "description": "A secure* runtime for autonomous AI agents. Policy from plain-English constitutions. (*https://ironcurtain.dev)",
-      "owner": "provos",
-      "owner_type": "User",
-      "archived": false,
-      "fork": false,
-      "has_wiki": false,
-      "has_pages": false,
-      "url": "https://github.com/provos/ironcurtain",
-      "downloads": null
-    },
-    "evidence": {
-      "repo_source": "discovery-search",
-      "repo_fetched_at": "2026-11-25T02:41:11+00:00",
-      "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
-      "npm_fetched_at": null
-    },
-    "score": 58.02,
-    "score_breakdown": {
-      "reach": {
-        "weight": 0.3,
-        "normalized": 0.204,
-        "contribution": 6.8
-      },
-      "activity": {
-        "weight": 0.25,
-        "normalized": 0.8328,
-        "contribution": 23.13
-      },
-      "maturity": {
-        "weight": 0.2,
-        "normalized": 0.85,
-        "contribution": 18.89
-      },
-      "longevity": {
-        "weight": 0.15,
-        "normalized": 0.5518,
-        "contribution": 9.2
-      },
-      "momentum": {
-        "weight": 0.1,
-        "normalized": null,
-        "contribution": null
-      }
-    },
-    "penalties": [],
-    "star_delta": null,
-    "maturity_detail": {
-      "license": true,
-      "docs": true,
-      "topics": 7,
-      "org_backed": false
-    },
-    "rank": 82
-  },
-  {
-    "id": "termio-sh--termio",
-    "name": "termio",
-    "slug": "termio-sh/termio",
-    "category": "cli",
-    "origin": "discovered",
-    "confidence": "medium",
-    "npm": null,
-    "metrics": {
-      "stars": 667,
-      "forks": 56,
-      "open_issues": 39,
-      "pushed_at": "2026-11-23T09:26:24Z",
-      "created_at": "2026-05-23T22:55:38Z",
-      "license": "MIT",
-      "topics": [
-        "ade",
-        "agentic",
-        "ai-agents",
-        "claude-code",
-        "cli",
-        "codex",
-        "coding-agents",
-        "devtools",
-        "libghostty",
-        "macos",
-        "mobile-app",
-        "multiplexer",
-        "opencode",
-        "parallel-agents",
-        "swift",
-        "terminal",
-        "terminal-emulator"
-      ],
-      "language": "Swift",
-      "homepage": "https://termio.sh",
-      "description": "A terminal-first agentic development environment for agentic coding. Build for CLI/TUI agent. Runtime for Coding Agent,  Tmux alternative",
-      "owner": "termio-sh",
-      "owner_type": "Organization",
-      "archived": false,
-      "fork": false,
-      "has_wiki": true,
-      "has_pages": false,
-      "url": "https://github.com/termio-sh/termio",
-      "downloads": null
-    },
-    "evidence": {
-      "repo_source": "discovery-search",
-      "repo_fetched_at": "2026-11-25T02:41:11+00:00",
-      "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
-      "npm_fetched_at": null
-    },
-    "score": 58.38,
-    "score_breakdown": {
-      "reach": {
-        "weight": 0.3,
-        "normalized": 0.1807,
-        "contribution": 6.02
-      },
-      "activity": {
-        "weight": 0.25,
-        "normalized": 0.7837,
-        "contribution": 21.77
-      },
-      "maturity": {
-        "weight": 0.2,
-        "normalized": 1.0,
-        "contribution": 22.22
-      },
-      "longevity": {
-        "weight": 0.15,
-        "normalized": 0.5019,
-        "contribution": 8.37
-      },
-      "momentum": {
-        "weight": 0.1,
-        "normalized": null,
-        "contribution": null
-      }
-    },
-    "penalties": [],
-    "star_delta": null,
-    "maturity_detail": {
-      "license": true,
-      "docs": true,
-      "topics": 17,
-      "org_backed": true
-    },
-    "rank": 81
-  },
-  {
-    "id": "muvon--octomind",
-    "name": "octomind",
-    "slug": "muvon/octomind",
-    "category": "cli",
-    "origin": "discovered",
-    "confidence": "medium",
-    "npm": null,
-    "metrics": {
-      "stars": 656,
-      "forks": 90,
-      "open_issues": 21,
-      "pushed_at": "2026-11-24T12:44:29Z",
-      "created_at": "2025-06-01T11:09:23Z",
-      "license": "Apache-2.0",
-      "topics": [
-        "agent-client-protocol",
-        "agentic-ai",
-        "ai",
-        "ai-agents",
-        "ai-assistant",
-        "ai-coding-agent",
-        "autonomous-agents",
-        "claude-code",
-        "claude-code-alternative",
-        "cli",
-        "code-assistant",
-        "coding-agent",
-        "deepseek",
-        "developer-tools",
-        "llm",
-        "mcp",
-        "ollama",
-        "openrouter",
-        "rust",
-        "vibe-coding"
-      ],
-      "language": "Rust",
-      "homepage": "https://octomind.run",
-      "description": "Open-source AI coding agent and agent runtime: one binary, any model, MCP-native. Runs in terminal, CI, or as a daemon.",
-      "owner": "Muvon",
-      "owner_type": "Organization",
-      "archived": false,
-      "fork": false,
-      "has_wiki": true,
-      "has_pages": false,
-      "url": "https://github.com/Muvon/octomind",
-      "downloads": null
-    },
-    "evidence": {
-      "repo_source": "discovery-search",
-      "repo_fetched_at": "2026-11-25T02:41:11+00:00",
-      "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
-      "npm_fetched_at": null
-    },
-    "score": 63.46,
-    "score_breakdown": {
-      "reach": {
-        "weight": 0.3,
-        "normalized": 0.1856,
-        "contribution": 6.19
-      },
-      "activity": {
-        "weight": 0.25,
-        "normalized": 0.8436,
-        "contribution": 23.43
-      },
-      "maturity": {
-        "weight": 0.2,
-        "normalized": 1.0,
-        "contribution": 22.22
-      },
-      "longevity": {
-        "weight": 0.15,
-        "normalized": 0.697,
-        "contribution": 11.62
-      },
-      "momentum": {
-        "weight": 0.1,
-        "normalized": null,
-        "contribution": null
-      }
-    },
-    "penalties": [],
-    "star_delta": null,
-    "maturity_detail": {
-      "license": true,
-      "docs": true,
-      "topics": 20,
-      "org_backed": true
-    },
-    "rank": 66
-  },
-  {
-    "id": "clawdotnet--openclaw.net",
-    "name": "openclaw.net",
-    "slug": "clawdotnet/openclaw.net",
-    "category": "framework",
-    "origin": "discovered",
-    "confidence": "medium",
-    "npm": null,
-    "metrics": {
-      "stars": 539,
-      "forks": 109,
-      "open_issues": 2,
-      "pushed_at": "2026-11-24T17:06:24Z",
-      "created_at": "2026-02-22T03:21:36Z",
-      "license": "MIT",
-      "topics": [
-        "agent-harness",
-        "agent-runtime",
-        "agentqi",
-        "ai-agent",
-        "automation",
-        "csharp",
-        "jev-model",
-        "llm",
-        "loop-engineering",
-        "memory",
-        "microsoft-agent-framework",
-        "nativeaot",
-        "openai-compatible-api",
-        "personal-ai",
-        "self-evolving",
-        "self-evolving-agents",
-        "self-hosted",
-        "tool-calling",
-        "tool-execution"
-      ],
-      "language": "C#",
-      "homepage": "https://www.agentqi.dev",
-      "description": "Self-hosted Enterprise and Personal  AI + agent runtime in .NET (NativeAOT-friendly)",
-      "owner": "clawdotnet",
-      "owner_type": "Organization",
-      "archived": false,
-      "fork": false,
-      "has_wiki": true,
-      "has_pages": false,
-      "url": "https://github.com/clawdotnet/openclaw.net",
-      "downloads": null
-    },
-    "evidence": {
-      "repo_source": "discovery-search",
-      "repo_fetched_at": "2026-11-25T02:41:11+00:00",
-      "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
-      "npm_fetched_at": null
-    },
-    "score": 63.87,
-    "score_breakdown": {
-      "reach": {
-        "weight": 0.3,
-        "normalized": 0.1835,
-        "contribution": 6.12
-      },
-      "activity": {
-        "weight": 0.25,
-        "normalized": 0.9482,
-        "contribution": 26.34
-      },
-      "maturity": {
-        "weight": 0.2,
-        "normalized": 1.0,
-        "contribution": 22.22
-      },
-      "longevity": {
-        "weight": 0.15,
-        "normalized": 0.5512,
-        "contribution": 9.19
-      },
-      "momentum": {
-        "weight": 0.1,
-        "normalized": null,
-        "contribution": null
-      }
-    },
-    "penalties": [],
-    "star_delta": null,
-    "maturity_detail": {
-      "license": true,
-      "docs": true,
-      "topics": 19,
-      "org_backed": true
-    },
-    "rank": 64
-  },
-  {
-    "id": "deepseek-ai--dsh-superagent-prototype",
-    "name": "dsh-superagent-prototype",
-    "slug": "deepseek-ai/dsh-superagent-prototype",
-    "category": "framework",
-    "origin": "discovered",
-    "confidence": "medium",
-    "npm": null,
-    "metrics": {
-      "stars": 24491,
-      "forks": 3065,
-      "open_issues": 0,
-      "pushed_at": "2026-11-03T09:29:14Z",
-      "created_at": "2026-10-31T09:32:46Z",
-      "license": "MIT",
-      "topics": [],
-      "language": "TypeScript",
-      "homepage": null,
-      "description": "Towards a More Autonomous Agent System",
-      "owner": "deepseek-ai",
-      "owner_type": "Organization",
-      "archived": false,
-      "fork": false,
-      "has_wiki": false,
-      "has_pages": false,
-      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
-      "downloads": null
-    },
-    "evidence": {
-      "repo_source": "discovery-search",
-      "repo_fetched_at": "2026-11-25T02:36:33+00:00",
-      "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
-      "npm_fetched_at": null
-    },
-    "score": 62.92,
-    "score_breakdown": {
-      "reach": {
-        "weight": 0.3,
-        "normalized": 0.6796,
-        "contribution": 22.65
-      },
-      "activity": {
-        "weight": 0.25,
-        "normalized": 0.8413,
-        "contribution": 23.37
-      },
-      "maturity": {
-        "weight": 0.2,
-        "normalized": 0.45,
-        "contribution": 10.0
-      },
-      "longevity": {
-        "weight": 0.15,
-        "normalized": 0.4137,
-        "contribution": 6.89
-      },
-      "momentum": {
-        "weight": 0.1,
-        "normalized": null,
-        "contribution": null
-      }
-    },
-    "penalties": [],
-    "star_delta": null,
-    "maturity_detail": {
-      "license": true,
-      "docs": false,
-      "topics": 0,
-      "org_backed": true
-    },
-    "rank": 68
-  },
-  {
-    "id": "iflytek--astron-agent",
-    "name": "astron-agent",
-    "slug": "iflytek/astron-agent",
-    "category": "framework",
-    "origin": "discovered",
-    "confidence": "medium",
-    "npm": null,
-    "metrics": {
-      "stars": 8924,
-      "forks": 913,
-      "open_issues": 71,
-      "pushed_at": "2026-11-24T12:45:42Z",
-      "created_at": "2025-09-19T08:46:01Z",
-      "license": "Apache-2.0",
-      "topics": [
-        "agent",
-        "agentic-ai",
-        "agentic-workflow",
-        "ai",
-        "enterprise",
-        "enterprise-automation",
-        "iflytek-astron",
-        "llm",
-        "llm-ops",
-        "low-code",
-        "mcp",
-        "multi-agent",
-        "next-gen",
-        "orchestration",
-        "python",
-        "rpa",
-        "superagent",
-        "workflow",
-        "workflow-engine"
-      ],
-      "language": "Python",
-      "homepage": "http://astron.ai/",
-      "description": "Enterprise-grade, commercial-friendly agentic workflow platform for building next-generation SuperAgents.",
-      "owner": "iflytek",
-      "owner_type": "Organization",
-      "archived": false,
-      "fork": false,
-      "has_wiki": true,
-      "has_pages": true,
-      "url": "https://github.com/iflytek/astron-agent",
-      "downloads": null
-    },
-    "evidence": {
-      "repo_source": "discovery-search",
-      "repo_fetched_at": "2026-11-25T02:36:33+00:00",
-      "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
-      "npm_fetched_at": null
-    },
-    "score": 73.75,
-    "score_breakdown": {
-      "reach": {
-        "weight": 0.3,
-        "normalized": 0.4947,
-        "contribution": 16.49
-      },
-      "activity": {
-        "weight": 0.25,
-        "normalized": 0.8794,
-        "contribution": 24.43
-      },
-      "maturity": {
-        "weight": 0.2,
-        "normalized": 1.0,
-        "contribution": 22.22
-      },
-      "longevity": {
-        "weight": 0.15,
-        "normalized": 0.6367,
-        "contribution": 10.61
-      },
-      "momentum": {
-        "weight": 0.1,
-        "normalized": null,
-        "contribution": null
-      }
-    },
-    "penalties": [],
-    "star_delta": null,
-    "maturity_detail": {
-      "license": true,
-      "docs": true,
-      "topics": 19,
-      "org_backed": true
-    },
-    "rank": 36
-  },
-  {
-    "id": "superagent-ai--grok-cli",
-    "name": "grok-cli",
-    "slug": "superagent-ai/grok-cli",
-    "category": "cli",
-    "origin": "discovered",
-    "confidence": "medium",
-    "npm": null,
-    "metrics": {
-      "stars": 3518,
-      "forks": 429,
-      "open_issues": 36,
-      "pushed_at": "2026-07-06T14:05:33Z",
-      "created_at": "2025-07-14T07:57:39Z",
-      "license": "MIT",
-      "topics": [
-        "agents",
-        "ai",
-        "cli",
-        "code",
-        "coding-agent",
-        "grok",
-        "xai"
-      ],
-      "language": "TypeScript",
-      "homepage": "",
-      "description": "An open-source coding agent for the Grok API",
-      "owner": "superagent-ai",
-      "owner_type": "Organization",
-      "archived": false,
-      "fork": false,
-      "has_wiki": true,
-      "has_pages": false,
-      "url": "https://github.com/superagent-ai/grok-cli",
-      "downloads": null
-    },
-    "evidence": {
-      "repo_source": "discovery-search",
-      "repo_fetched_at": "2026-11-25T02:41:11+00:00",
-      "repo_note": null,
-      "discovered_by": "recovered-from-previous-run",
-      "query_fetched_at": null,
-      "npm_fetched_at": null
-    },
-    "score": 54.77,
-    "score_breakdown": {
-      "reach": {
-        "weight": 0.3,
-        "normalized": 0.3726,
-        "contribution": 12.42
-      },
-      "activity": {
-        "weight": 0.25,
-        "normalized": 0.3207,
-        "contribution": 8.91
-      },
-      "maturity": {
-        "weight": 0.2,
-        "normalized": 1.0,
-        "contribution": 22.22
-      },
-      "longevity": {
-        "weight": 0.15,
-        "normalized": 0.6734,
-        "contribution": 11.22
-      },
-      "momentum": {
-        "weight": 0.1,
-        "normalized": null,
-        "contribution": null
-      }
-    },
-    "penalties": [],
-    "star_delta": null,
-    "maturity_detail": {
-      "license": true,
-      "docs": true,
-      "topics": 7,
-      "org_backed": true
-    },
-    "rank": 90
   }
 ]
