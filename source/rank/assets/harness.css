@@ -1,0 +1,25 @@
+/* Agent Harness 榜单的少量补充样式，其余复用 style.css */
+.h-list-head {
+  grid-template-columns: 64px minmax(260px, 1fr) 150px 90px 84px 96px;
+}
+#h-list .row {
+  grid-template-columns: 64px minmax(260px, 1fr) 150px 90px 84px 96px;
+}
+.h-watch { cursor: default; }
+.h-watch:hover { background: transparent; }
+.h-watch .pname { color: var(--muted, #6b7280); }
+.h-table {
+  width: 100%; border-collapse: collapse; margin: 14px 0 6px; font-size: 14px;
+}
+.h-table th, .h-table td {
+  border-bottom: 1px solid var(--line, #e5e7eb); padding: 9px 10px; text-align: left;
+}
+.h-table thead th { font-weight: 600; opacity: .8; }
+.h-facts th { width: 190px; white-space: nowrap; opacity: .75; font-weight: 500; }
+.h-note { font-size: 13px; opacity: .72; margin: 6px 0 22px; }
+.h-penalties { font-size: 14px; line-height: 1.8; }
+@media (max-width: 760px) {
+  .h-list-head, #h-list .row { grid-template-columns: 44px minmax(0, 1fr) 80px 70px 80px; }
+  .h-list-head > span:nth-child(3), #h-list .row > span:nth-child(3) { display: none; }
+  .h-facts th { width: 130px; }
+}

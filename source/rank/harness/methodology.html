@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-zh="Agent Harness 榜单 · 评分口径" data-en="Agent Harness Leaderboard · Methodology">Agent Harness 榜单 · 评分口径</title>
+<meta name="description" data-zh="公开可复算的 Agent harness 评分口径：五维权重、分位归一、缺失维度重归一、反作弊与数据源。" data-en="Open, reproducible methodology for the agent harness ranking: five dimensions, percentile normalization, missing-dimension reweighting and anti-gaming rules." content="公开可复算的 Agent harness 评分口径：五维权重、分位归一、缺失维度重归一、反作弊与数据源。">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/harness.css">
+<script src="../assets/i18n.js"></script>
+<link rel="stylesheet" href="../assets/rank-frame.css">
+</head>
+<body class="rank-embedded"><header class="cm-rank-bar">
+  <a class="cm-rank-home" href="/" title="cyberMap home"><span class="i18n-zh"><span class='cm-rank-back'>←</span> cyberMap 导航</span><span class="i18n-en"><span class='cm-rank-back'>←</span> cyberMap Home</span></a>
+  <nav class="cm-rank-nav" aria-label="Harness leaderboard navigation">
+    <a href="/rank/" data-key="all"><span class="i18n-zh">插件总榜</span><span class="i18n-en">Plugin rank</span></a>
+    <a href="/rank/harness/" data-key="harness"><span class="i18n-zh">Harness 总榜</span><span class="i18n-en">Harness overall</span></a>
+    <a href="/rank/harness/?category=cli" data-key="category" data-cat="cli">CLI</a>
+    <a href="/rank/harness/?category=ide" data-key="category" data-cat="ide">IDE</a>
+    <a href="/rank/harness/?category=assistant" data-key="category" data-cat="assistant"><span class="i18n-zh">助理</span><span class="i18n-en">Assistant</span></a>
+    <a href="/rank/harness/?category=multi" data-key="category" data-cat="multi"><span class="i18n-zh">多代理</span><span class="i18n-en">Multi-agent</span></a>
+    <a href="/rank/harness/?category=framework" data-key="category" data-cat="framework"><span class="i18n-zh">框架</span><span class="i18n-en">Framework</span></a>
+    <a href="/rank/harness/?category=watchlist" data-key="category" data-cat="watchlist"><span class="i18n-zh">闭源观察</span><span class="i18n-en">Watchlist</span></a>
+    <a href="/rank/harness/methodology.html"><span class="i18n-zh">评分口径</span><span class="i18n-en">Methodology</span></a>
+  </nav>
+  <div class="cm-rank-side">
+    <span class="cm-rank-stamp"><span class="i18n-zh">每日 09:50 更新</span><span class="i18n-en">Daily 09:50 UTC+8</span></span>
+    <button class="cm-rank-lang" id="cm-rank-lang" type="button" title="切换语言 / Switch language" aria-label="Switch language"><span data-l="zh">中</span><span data-l="en">EN</span></button>
+    <button class="cm-rank-theme" id="cm-rank-theme" type="button" title="切换深浅色" aria-label="切换深浅色"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.3 3a9 9 0 1 0 8.7 11.4A7.2 7.2 0 0 1 12.3 3z"/></svg></button>
+  </div>
+</header>
+
+<main class="wrap">
+<header class="site-head">
+  <div>
+    <h1><span class="i18n-zh">评分口径与数据边界</span><span class="i18n-en">Methodology & data boundaries</span></h1>
+    <p class="sub"><span class="i18n-zh">所有权重、数据源与降级规则公开，任何人都能据此复算。</span><span class="i18n-en">All weights, sources and fallback rules are public so the ranking can be reproduced.</span></p>
+  </div>
+  <div class="head-links"><a class="method-link" href="../harness.html"><span class="i18n-zh">返回榜单 ↗</span><span class="i18n-en">Back to ranking ↗</span></a></div>
+</header>
+
+<h2><span class="i18n-zh">收录范围</span><span class="i18n-en">Scope</span></h2>
+<p><span class="i18n-zh">收录对象 Agent harness 本体：模型之外负责循环、执行器、上下文/记忆、审批门与沙箱的那一层，包含 CLI 编码代理、IDE/桌面代理、个人助理/通用代理、多代理编排平台、框架/SDK/运行时五类。插件、技能包、MCP 服务、教程、榜单、评测基准、模型中转/网关不进榜。</span><span class="i18n-en">The unit of ranking is the harness itself — the loop, executors, context/memory, approval gates and sandbox around a model. Five categories: CLI coding agents, IDE/desktop agents, personal/general agents, multi-agent orchestration, and frameworks/SDKs/runtimes. Plugins, skills, MCP servers, tutorials, benchmarks and proxy gateways are excluded.</span></p>
+<p><span class="i18n-zh">人工校验清单是权威发现源；GitHub topic 查询只提供候选，必须同时命中 harness / coding agent / agent runtime 等本体词并通过排除词过滤，才进入榜单，标记为「自动发现」。闭源产品没有公开仓库指标，进观察名单，不参与数值排名。</span><span class="i18n-en">The curated catalog is the authoritative discovery source. GitHub topic queries supply candidates only; they must contain harness-specific signals and pass an exclusion filter before entering with a "Discovered" badge. Closed-source products without verifiable metrics go to the watchlist, not the numeric ranking.</span></p>
+
+<h2><span class="i18n-zh">五维评分</span><span class="i18n-en">Five scoring dimensions</span></h2>
+<table class="h-table">
+<thead><tr><th><span class="i18n-zh">维度</span><span class="i18n-en">Dimension</span></th><th><span class="i18n-zh">权重</span><span class="i18n-en">Weight</span></th><th><span class="i18n-zh">构成</span><span class="i18n-en">Components</span></th></tr></thead>
+<tbody>
+<tr><td><span class="i18n-zh">使用规模</span><span class="i18n-en">Reach</span></td><td>30%</td><td><span class="i18n-zh">log(stars) 分位 45% + log(forks) 分位 20% + log(npm 周下载) 分位 35%</span><span class="i18n-en">percentile log(stars) 45% + log(forks) 20% + weekly npm downloads 35%</span></td></tr>
+<tr><td><span class="i18n-zh">工程活跃</span><span class="i18n-en">Activity</span></td><td>25%</td><td><span class="i18n-zh">pushed_at 指数衰减（半衰期 90 天）70% + issue 负载反向分位 30%</span><span class="i18n-en">pushed_at exponential decay (90-day half-life) 70% + inverse issue-load percentile 30%</span></td></tr>
+<tr><td><span class="i18n-zh">生态成熟</span><span class="i18n-en">Maturity</span></td><td>20%</td><td><span class="i18n-zh">许可证 30% + 文档信号 25% + topics≥3 15% + 描述≥40 字符 15% + 组织账号 15%</span><span class="i18n-en">license 30% + docs signal 25% + topics≥3 15% + description≥40 chars 15% + organization owner 15%</span></td></tr>
+<tr><td><span class="i18n-zh">长期沉淀</span><span class="i18n-en">Longevity</span></td><td>15%</td><td><span class="i18n-zh">项目年龄（3 年封顶）60% + 非归档 25% + 非 fork 15%</span><span class="i18n-en">project age (capped at 3 years) 60% + not archived 25% + not a fork 15%</span></td></tr>
+<tr><td><span class="i18n-zh">增长势能</span><span class="i18n-en">Momentum</span></td><td>10%</td><td><span class="i18n-zh">相对最近 7 天内历史快照的 stars 增量，3σ 截断后取当日分位</span><span class="i18n-en">stars delta against the latest history snapshot within 7 days, 3σ-clipped then percentile-ranked</span></td></tr>
+</tbody>
+</table>
+<p><span class="i18n-zh">Score = 100 × Σ(wᵢ × normᵢ) / Σ(wᵢ 可用)。分位归一化避免头部项目碾压长尾；npm 下载量缺失时只在 reach 内部重归一；首日无历史快照时 momentum 整体剔除并在其余维度间重归一，绝不填 0 假装没有数据。</span><span class="i18n-en">Score = 100 × Σ(wᵢ × normᵢ) / Σ(available wᵢ). Percentiles prevent head projects from dominating the long tail; missing npm downloads are renormalized inside reach; without a history snapshot, momentum is removed and remaining weights renormalized — never filled with a fake zero.</span></p>
+
+<h2><span class="i18n-zh">降权与反作弊</span><span class="i18n-en">Penalties & anti-gaming</span></h2>
+<ul class="h-penalties">
+  <li><span class="i18n-zh">归档仓库 ×0.80；fork 仓库 ×0.90；创建不足 14 天 ×0.85；同组织批量仓库 ×0.97。</span><span class="i18n-en">Archived ×0.80; fork ×0.90; newer than 14 days ×0.85; bulk repos from one owner ×0.97.</span></li>
+  <li><span class="i18n-zh">单日 stars 增量 &gt; 2000 且 &gt; 现有 stars 的 10% 时 ×0.90，标记「待观察」。</span><span class="i18n-en">Daily star delta &gt; 2000 and &gt; 10% of current stars → ×0.90, flagged for observation.</span></li>
+  <li><span class="i18n-zh">仓库元数据 7 天缓存；确认查不到的 slug 也缓存，不每天重试。GitHub REST 有额度保护，单日最多 12 次兜底补查。</span><span class="i18n-en">Repo metadata is cached for 7 days, including confirmed misses. REST probes are capped at 12 per run to respect rate limits.</span></li>
+</ul>
+
+<h2><span class="i18n-zh">数据源与留痕</span><span class="i18n-en">Sources & evidence</span></h2>
+<p><span class="i18n-zh">GitHub Search API（批量 repo: 查询与 topic 发现）、GitHub REST API（搜索索引缺失时兜底）、npm downloads API（周下载量）。第三方文章里的排名、评测分数只作发现线索，任何数字都不进入评分。每条记录保存采集 query、via、fetched_at，详情页可逐点核对。</span><span class="i18n-en">GitHub Search API (batched repo: queries and topic discovery), GitHub REST API (fallback for unindexed repos), and the npm downloads API. Third-party rankings are discovery leads; no third-party number enters the score. Each record stores its query, via and fetched_at for point-by-point verification on the detail page.</span></p>
+<p><span class="i18n-zh">分数是当日相对分位，跨日请比较名次与排名变化，不要比较分数绝对值。历史快照保留 90 天。</span><span class="i18n-en">Scores are same-day percentiles. Compare ranks and rank changes across days, not absolute scores. History snapshots are kept for 90 days.</span></p>
+
+<footer class="site-foot"><span class="i18n-zh">每日 09:50 (UTC+8) 自动重算并发布到 cyberMap。</span><span class="i18n-en">Recomputed and published to cyberMap daily at 09:50 (UTC+8).</span></footer>
+</main>
+<script src="../assets/rank-frame.js"></script>
+</body>
+</html>

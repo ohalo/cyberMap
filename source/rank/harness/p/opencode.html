@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-zh="OpenCode · Agent Harness 榜单详情" data-en="OpenCode · Harness Leaderboard Detail">OpenCode · Agent Harness 榜单详情</title>
+<meta name="description" data-zh="The open source coding agent." data-en="The open source coding agent." content="The open source coding agent.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/harness.css">
+<script src="../../assets/i18n.js"></script>
+<link rel="stylesheet" href="../../assets/rank-frame.css">
+</head>
+<body class="rank-embedded"><header class="cm-rank-bar">
+  <a class="cm-rank-home" href="/" title="cyberMap home"><span class="i18n-zh"><span class='cm-rank-back'>←</span> cyberMap 导航</span><span class="i18n-en"><span class='cm-rank-back'>←</span> cyberMap Home</span></a>
+  <nav class="cm-rank-nav" aria-label="Harness leaderboard navigation">
+    <a href="/rank/" data-key="all"><span class="i18n-zh">插件总榜</span><span class="i18n-en">Plugin rank</span></a>
+    <a href="/rank/harness/" data-key="harness"><span class="i18n-zh">Harness 总榜</span><span class="i18n-en">Harness overall</span></a>
+    <a href="/rank/harness/?category=cli" data-key="category" data-cat="cli">CLI</a>
+    <a href="/rank/harness/?category=ide" data-key="category" data-cat="ide">IDE</a>
+    <a href="/rank/harness/?category=assistant" data-key="category" data-cat="assistant"><span class="i18n-zh">助理</span><span class="i18n-en">Assistant</span></a>
+    <a href="/rank/harness/?category=multi" data-key="category" data-cat="multi"><span class="i18n-zh">多代理</span><span class="i18n-en">Multi-agent</span></a>
+    <a href="/rank/harness/?category=framework" data-key="category" data-cat="framework"><span class="i18n-zh">框架</span><span class="i18n-en">Framework</span></a>
+    <a href="/rank/harness/?category=watchlist" data-key="category" data-cat="watchlist"><span class="i18n-zh">闭源观察</span><span class="i18n-en">Watchlist</span></a>
+    <a href="/rank/harness/methodology.html"><span class="i18n-zh">评分口径</span><span class="i18n-en">Methodology</span></a>
+  </nav>
+  <div class="cm-rank-side">
+    <span class="cm-rank-stamp"><span class="i18n-zh">每日 09:50 更新</span><span class="i18n-en">Daily 09:50 UTC+8</span></span>
+    <button class="cm-rank-lang" id="cm-rank-lang" type="button" title="切换语言 / Switch language" aria-label="Switch language"><span data-l="zh">中</span><span data-l="en">EN</span></button>
+    <button class="cm-rank-theme" id="cm-rank-theme" type="button" title="切换深浅色" aria-label="切换深浅色"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.3 3a9 9 0 1 0 8.7 11.4A7.2 7.2 0 0 1 12.3 3z"/></svg></button>
+  </div>
+</header>
+
+<main class="wrap">
+<header class="site-head">
+  <div>
+    <h1>OpenCode</h1>
+    <p class="sub">The open source coding agent.</p>
+  </div>
+  <div class="head-links"><a class="method-link" href="../methodology.html"><span class="i18n-zh">评分口径 ↗</span><span class="i18n-en">Methodology ↗</span></a></div>
+</header>
+<section class="stats">
+  <div class="stat"><span class="i18n-zh">综合分</span><span class="i18n-en">Score</span><strong>71.14</strong></div>
+  <div class="stat"><span class="i18n-zh">总榜名次</span><span class="i18n-en">Overall rank</span><strong>40</strong></div>
+  <div class="stat"><span class="i18n-zh">Stars</span><span class="i18n-en">Stars</span><strong>228,994</strong></div>
+  <div class="stat"><span class="i18n-zh">较基线增量</span><span class="i18n-en">Star delta</span><strong>—</strong></div>
+</section>
+<h2><span class="i18n-zh">评分拆解</span><span class="i18n-en">Score breakdown</span></h2>
+<table class="h-table"><thead><tr>
+<th><span class="i18n-zh">维度</span><span class="i18n-en">Dimension</span></th>
+<th><span class="i18n-zh">说明</span><span class="i18n-en">Description</span></th>
+<th><span class="i18n-zh">权重</span><span class="i18n-en">Weight</span></th>
+<th><span class="i18n-zh">归一化</span><span class="i18n-en">Normalized</span></th>
+<th><span class="i18n-zh">贡献分</span><span class="i18n-en">Contribution</span></th>
+</tr></thead><tbody><tr><td>使用规模</td><td>Reach (stars / forks / npm)</td><td>0.3</td><td>62.6</td><td>20.9</td></tr><tr><td>工程活跃</td><td>Activity</td><td>0.25</td><td>82.1</td><td>22.8</td></tr><tr><td>生态成熟</td><td>Maturity</td><td>0.2</td><td>70.0</td><td>15.6</td></tr><tr><td>长期沉淀</td><td>Longevity</td><td>0.15</td><td>71.5</td><td>11.9</td></tr><tr><td>增长势能</td><td>Momentum</td><td>0.1</td><td>—</td><td>—</td></tr></tbody></table>
+<p class="h-note"><span class="i18n-zh">归一化值为当日分位/子项加权，跨日只比较名次，不比较绝对分数；缺失维度已从分母剔除。</span><span class="i18n-en">Normalized values are same-day percentiles. Compare ranks across days, not absolute scores. Missing dimensions are removed from the denominator.</span></p>
+<h2><span class="i18n-zh">指标与证据链</span><span class="i18n-en">Metrics & evidence</span></h2>
+<table class="h-table h-facts"><tbody><tr><th>GitHub</th><td>https://github.com/anomalyco/opencode</td></tr><tr><th>Stars</th><td>228,994</td></tr><tr><th>Forks</th><td>31,160</td></tr><tr><th>Open issues</th><td>4,122</td></tr><tr><th>npm 周下载</th><td>9,879</td></tr><tr><th>最近推送</th><td>2026-11-25T02:36:30Z</td></tr><tr><th>创建时间</th><td>2025-04-30T20:08:00Z</td></tr><tr><th>许可证</th><td>MIT</td></tr><tr><th>语言</th><td>TypeScript</td></tr><tr><th>来源</th><td>curated / high</td></tr><tr><th>仓库采集</th><td>search · 2026-11-25T02:36:34+00:00</td></tr><tr><th>发现 query</th><td>人工校验清单</td></tr><tr><th>下载量采集</th><td>2026-11-25T02:37:27+00:00</td></tr></tbody></table>
+<h2><span class="i18n-zh">降权项</span><span class="i18n-en">Penalties</span></h2>
+<ul class="h-penalties"><li>无</li></ul>
+<footer class="site-foot">
+  <span class="i18n-zh">构建时间：2026-11-25T02:44:27+00:00 · 数据源：GitHub Search / REST API、npm downloads API</span>
+  <span class="i18n-en">Built: 2026-11-25T02:44:27+00:00 · Sources: GitHub Search / REST API, npm downloads API</span>
+</footer>
+</main>
+<script src="../../assets/rank-frame.js"></script>
+</body>
+</html>

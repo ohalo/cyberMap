@@ -40,6 +40,12 @@
       var on = false;
       if (key === 'platform') {
         on = !!platform && href.indexOf('platform=' + platform) !== -1;
+      } else if (key === 'harness') {
+        on = path.indexOf('/rank/harness') === 0;
+      } else if (key === 'category') {
+        var category = new URLSearchParams(location.search).get('category');
+        on = path.indexOf('/rank/harness') === 0 &&
+          (a.getAttribute('data-cat') || '') === (category || '');
       } else if (key === 'all') {
         on = !platform && href.indexOf('?') === -1 &&
           (path === '/rank/' || path === '/rank' || path.indexOf('/rank/p/') === 0);
