@@ -568,7 +568,16 @@ JS = r"""
 (function(){
   var body=document.body;
   function isNight(){return /(?:^|;\s*)night=1(?:;|$)/.test(document.cookie);}
-  function apply(){body.classList.toggle('night',isNight());}
+  function apply(){
+    var cyber=isNight();
+    body.classList.toggle('night',cyber);
+    var b=document.getElementById('dy-theme');
+    if(b){
+      b.setAttribute('data-skin',cyber?'cyber':'classic');
+      b.title=cyber?'当前：赛博模式 CYBER · 点击切换为经典模式':'当前：经典模式 CLASSIC · 点击切换为赛博模式';
+      b.setAttribute('aria-label',b.title);
+    }
+  }
   apply();
   var btn=document.getElementById('dy-theme');
   if(btn){btn.addEventListener('click',function(){
@@ -1262,7 +1271,7 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
         '<span class="dy-brand">每日 AI 速递</span>',
         '<span class="dy-top-spacer"></span>',
         f'<a class="dy-top-link" href="/daily/feed.xml" title="RSS 2.0 订阅源">{ICON_RSS}<span>RSS 订阅</span></a>',
-        f'<button class="dy-theme" id="dy-theme" type="button" title="切换深浅色" aria-label="切换深浅色">{ICON_MOON}</button>',
+        f'<button class="dy-theme" id="dy-theme" type="button" title="切换外观：经典模式 / 赛博模式" aria-label="切换外观：经典模式或赛博模式">{ICON_MOON}</button>',
         "</header>",
         '<main class="dy-wrap">',
         '<section class="dy-hero">',

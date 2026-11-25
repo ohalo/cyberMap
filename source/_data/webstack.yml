@@ -66,8 +66,10 @@ custom:
     |- # 以下内容插入到<head></head>标签内，可设置多行，注意每行开头至少四个空格
     <!-- cyberMap 重设计样式：主题目录是 submodule，所有自定义样式从这里注入 -->
     <link rel="stylesheet" href="/css/cybermap.css">
-    <!-- 赛博默认夜行：首次访问（无 night cookie）直接进入深色赛博外观；
-         主题 footer.js 读到 night=1 会恢复 body.night，用户仍可手动切浅色并被记住 -->
+    <!-- 默认外观：首次访问（无 night cookie）直接进入赛博模式 CYBER；
+         night=1 赛博 / night=0 经典，主题 footer.js 读 cookie 恢复 body.night，
+         顶栏「经典 / 赛博」切换由 cybermap.js 写入 max-age 长期记住，
+         /daily/ 与 /rank/ 共享同一 cookie，切换后全站自动同步 -->
     <script>
     (function () {
       if (!/(?:^|;\s*)night\s*=/.test(document.cookie)) {

@@ -4,8 +4,11 @@
    通过 source/_data/webstack.yml 的 custom.head 注入，加载顺序在所有主题
    CSS 之后。主题目录 themes/webstack 是 git submodule，切勿直接修改。
 
-   双主题：默认浅色；主题自带 switchNightMode() 给 body 加 .night，
-   此处用 body.night 覆盖变量即可得到完整的深色赛博外观。
+   双外观（同一注入点，顶栏可一键切换，选择写入 night cookie 长期记住）：
+     经典模式 CLASSIC = 默认 :root 浅色靛蓝，原样式完整保留、零改动
+     赛博模式 CYBER   = body.night 覆盖变量 + 氛围层（霓虹青 × 品红）
+   主题自带 switchNightMode() 给 body 加/去 .night，cybermap.js 把它正名为
+   「经典 / 赛博」二选一切换器；/daily/ 与 /rank/ 共享同一 cookie 自动同步。
    ========================================================================== */
 
 :root {
@@ -1449,11 +1452,12 @@ button#search-btn.search-btn {
 }
 
 /* ==========================================================================
-   赛博朋克氛围层（2026-11-25）
+   赛博模式 CYBER 专属氛围层（2026-11-25）
    --------------------------------------------------------------------------
-   夜间模式为默认脸面（custom.head 无 cookie 时强制 night=1）：深空底、
+   赛博模式为默认脸面（custom.head 无 cookie 时强制 night=1）：深空底、
    霓虹青 × 品红双色、CRT 扫描线、网格漂移、霓虹标题与卡片辉光。
-   全部可被 prefers-reduced-motion 关停；浅色模式保持浅色但共享强调色。
+   全部规则限定在 body.night 作用域内，切到经典模式（移除 .night）即整层消失，
+   原浅色样式一字不改地保留；动效全部可被 prefers-reduced-motion 关停。
    ========================================================================== */
 
 /* ---- 动态背景：极光辉光缓慢呼吸 + 网格缓慢漂移 ---- */
@@ -1659,4 +1663,96 @@ body.night .cm-fresh-badge.recent i { box-shadow: 0 0 6px var(--cm-fresh-recent)
   body.night .cyber-hero h1 .cyber-gradient { animation: none !important; }
   body.night::after { content: none !important; }
   .cm-hud .cm-hud-dot { animation: none !important; }
+}
+
+/* ==========================================================================
+   外观切换器 · 经典模式 CLASSIC / 赛博模式 CYBER（2026-11-25）
+   --------------------------------------------------------------------------
+   DOM 由 cybermap.js 注入到主题原有的 li.switch-mode > a 里；
+   li 上的 onclick='switchNightMode()' 保持不变，切换仍由主题函数完成。
+   选中态只用 --cm-chip / --cm-accent 变量：浅色自动是靛蓝经典，
+   body.night 下自动变成霓虹青赛博，两套外观无需各写一份规则。
+   ========================================================================== */
+
+.user-info-navbar .user-info-menu > li.switch-mode > a.cm-skin,
+.navbar.user-info-navbar .user-info-menu > li.switch-mode > a.cm-skin {
+  display: inline-flex !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+  width: auto !important;
+  height: 30px !important;
+  min-height: 0 !important;
+  margin: 0 2px !important;
+  padding: 0 !important;
+  background: var(--cm-surface-solid) !important;
+  border: 1px solid var(--cm-border-strong) !important;
+  border-radius: 4px !important;
+  box-shadow: var(--cm-shadow-sm) !important;
+  color: var(--cm-text-muted) !important;
+  line-height: 1 !important;
+  gap: 0 !important;
+  max-height: 30px !important;
+  justify-content: flex-start !important;
+  text-decoration: none !important;
+  overflow: hidden;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.user-info-navbar .user-info-menu > li.switch-mode > a.cm-skin:hover,
+.navbar.user-info-navbar .user-info-menu > li.switch-mode > a.cm-skin:hover {
+  border-color: var(--cm-accent-soft) !important;
+  background: var(--cm-surface-solid) !important;
+}
+.cm-skin-seg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  box-sizing: border-box;
+  min-width: 66px;
+  height: 100%;
+  padding: 0 10px;
+  font-family: var(--cm-font);
+  font-size: 11.5px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  color: var(--cm-text-muted);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: color .18s ease, background .18s ease, box-shadow .18s ease;
+}
+.cm-skin-seg + .cm-skin-seg { border-left: 1px solid var(--cm-border); }
+/* 主题对「顶栏 a 内的 i」写死 font-size:14px !important，这里用更高特异性压回，
+   并让图标颜色继承所在分段，hover / 激活态才会跟着一起变色。 */
+.navbar.user-info-navbar .user-info-menu > li.switch-mode > a.cm-skin .cm-skin-seg > i,
+.user-info-navbar .user-info-menu > li.switch-mode > a.cm-skin .cm-skin-seg > i {
+  font-size: 11px !important;
+  line-height: 1 !important;
+  color: inherit !important;
+}
+.cm-skin-seg:hover { color: var(--cm-text); }
+.cm-skin-seg.is-active { color: var(--cm-accent); background: var(--cm-chip); }
+.cm-skin-seg:focus-visible { outline: 2px solid var(--cm-accent); outline-offset: -2px; }
+
+/* 赛博态：控件外沿一点冷光，激活段内发光，与 HUD 状态条呼应 */
+body.night .user-info-navbar .user-info-menu > li.switch-mode > a.cm-skin {
+  box-shadow: 0 0 12px rgba(0, 229, 255, .14) !important;
+}
+body.night .cm-skin-seg[data-skin="cyber"].is-active {
+  box-shadow: inset 0 0 12px rgba(0, 229, 255, .2);
+  text-shadow: 0 0 8px rgba(0, 229, 255, .4);
+}
+
+/* 窄屏：顶栏被本项目 CSS 恢复显示，收紧尺寸但保留「经典/赛博」文字 */
+@media (max-width: 600px) {
+  .user-info-navbar .user-info-menu > li.switch-mode > a.cm-skin,
+  .navbar.user-info-navbar .user-info-menu > li.switch-mode > a.cm-skin {
+    height: 28px !important; padding: 0 !important;
+  }
+  .cm-skin-seg { min-width: 52px; padding: 0 7px; font-size: 11px; gap: 4px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cm-skin-seg,
+  .user-info-navbar .user-info-menu > li.switch-mode > a.cm-skin { transition: none !important; }
 }

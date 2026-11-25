@@ -248,7 +248,7 @@
     var heads = Array.prototype.slice.call(main.querySelectorAll('h4.text-gray'));
     var cols = Array.prototype.slice.call(main.querySelectorAll('.row > .col-sm-3'));
 
-    /* ---- 1. 顶栏工具：侧栏收起/展开 + GitHub 按钮 + 主题切换文案 ---- */
+    /* ---- 1. 顶栏工具：侧栏收起/展开 + GitHub 按钮 + 外观切换器 ---- */
     var ul = document.querySelector('.user-info-navbar .user-info-menu');
     var switchItem = ul && ul.querySelector('li.switch-mode');
     if (ul) {
@@ -314,25 +314,70 @@
         ghLi.firstChild.setAttribute('title', '在 GitHub 查看 cyberMap 仓库');
         ul.insertBefore(ghLi, switchItem || null);
       }
+      /* ---- 1.5 外观切换器：经典模式 CLASSIC / 赛博模式 CYBER ----
+         保留主题 li.switch-mode 的 onclick='switchNightMode()'（切 body.night +
+         写 night cookie），这里只把原来的太阳/月亮图标正名为显性的二选一控件：
+           经典 = night=0 → 浅色靛蓝（原样式完整保留）
+           赛博 = night=1 → 深色霓虹（CRT 扫描线 / HUD / LIVE 氛围层）
+         两个分段都阻止冒泡，避免原点击被 li 的 onclick 无条件切换；
+         真正需要切换时改为程序化 li.click()，只走一次主题函数。
+         主题写的 cookie 不带 max-age（关浏览器即丢），这里补写一年有效期，
+         保证「切到经典」的选择被长期记住。 */
       if (switchItem) {
         var modeLink = switchItem.querySelector('a');
         if (modeLink) {
+          modeLink.classList.add('cm-skin');
+          modeLink.setAttribute('href', '#');
+          modeLink.innerHTML =
+            '<span class="cm-skin-seg" data-skin="classic" role="button" tabindex="0" aria-pressed="false">' +
+              '<i class="fas fa-sun" aria-hidden="true"></i>经典</span>' +
+            '<span class="cm-skin-seg" data-skin="cyber" role="button" tabindex="0" aria-pressed="false">' +
+              '<i class="fas fa-bolt" aria-hidden="true"></i>赛博</span>';
           modeLink.addEventListener('click', function (ev) { ev.preventDefault(); });
-          var lastDark = null;
-          var syncMode = function () {
-            var dark = document.body.classList.contains('night');
-            if (dark === lastDark) return;
-            lastDark = dark;
-            modeLink.innerHTML = '<i class="' + (dark ? 'fas fa-sun' : 'fas fa-moon') +
-              '" aria-hidden="true"></i><span class="cyber-mode-label">' +
-              (dark ? '浅色' : '深色') + '</span>';
-            modeLink.setAttribute('title', dark ? '切换到浅色模式' : '切换到深色模式');
+
+          var segs = modeLink.querySelectorAll('.cm-skin-seg');
+          Array.prototype.forEach.call(segs, function (seg) {
+            var wantCyber = seg.getAttribute('data-skin') === 'cyber';
+            var pick = function (ev) {
+              ev.preventDefault();
+              ev.stopPropagation();
+              var isCyber = document.body.classList.contains('night');
+              if (wantCyber === isCyber) return;
+              switchItem.click();  /* → 主题 switchNightMode()，body/cookie 同步 */
+              document.cookie = (wantCyber ? 'night=1' : 'night=0') +
+                ';path=/;max-age=31536000';  /* 补持久化，覆盖主题的无过期 cookie */
+            };
+            seg.addEventListener('click', pick);
+            seg.addEventListener('keydown', function (ev) {
+              if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); pick(ev); }
+            });
+          });
+
+          var syncSkin = function () {
+            var isCyber = document.body.classList.contains('night');
+            Array.prototype.forEach.call(segs, function (seg) {
+              var on = (seg.getAttribute('data-skin') === 'cyber') === isCyber;
+              seg.classList.toggle('is-active', on);
+              seg.setAttribute('aria-pressed', on ? 'true' : 'false');
+            });
+            modeLink.setAttribute('title', isCyber
+              ? '当前：赛博模式 CYBER · 点击「经典」切换'
+              : '当前：经典模式 CLASSIC · 点击「赛博」切换');
+            modeLink.setAttribute('aria-label', '外观切换：经典模式 / 赛博模式');
           };
-          syncMode();
+          syncSkin();
           if (window.MutationObserver) {
-            new MutationObserver(syncMode).observe(document.body,
+            new MutationObserver(syncSkin).observe(document.body,
               { attributes: true, attributeFilter: ['class'] });
           }
+          /* 从 /daily/ 或 /rank/ 切完返回时，cookie 可能已变而本页未重新加载 */
+          window.addEventListener('focus', function () {
+            var shouldCyber = /(?:^|;\s*)night=1(?:;|$)/.test(document.cookie);
+            if (shouldCyber !== document.body.classList.contains('night')) {
+              document.body.classList.toggle('night', shouldCyber);
+            }
+            syncSkin();
+          });
         }
       }
     }

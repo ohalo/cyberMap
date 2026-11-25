@@ -444,7 +444,7 @@ body.night .dy-tagbtn.active{color:#0b1020}
 <span class="dy-brand">每日 AI 速递</span>
 <span class="dy-top-spacer"></span>
 <a class="dy-top-link" href="/daily/feed.xml" title="RSS 2.0 订阅源"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm0-6a15 15 0 0 1 15 15h-3A12 12 0 0 0 4 8V5zm1.8 12.2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg><span>RSS 订阅</span></a>
-<button class="dy-theme" id="dy-theme" type="button" title="切换深浅色" aria-label="切换深浅色"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.3 3a9 9 0 1 0 8.7 11.4A7.2 7.2 0 0 1 12.3 3z"/></svg></button>
+<button class="dy-theme" id="dy-theme" type="button" title="切换外观：经典模式 / 赛博模式" aria-label="切换外观：经典模式或赛博模式"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.3 3a9 9 0 1 0 8.7 11.4A7.2 7.2 0 0 1 12.3 3z"/></svg></button>
 </header>
 <main class="dy-wrap">
 <section class="dy-hero">
@@ -533,7 +533,7 @@ body.night .dy-tagbtn.active{color:#0b1020}
 (function(){
   var body=document.body;
   function isNight(){return /(?:^|;\s*)night=1(?:;|$)/.test(document.cookie);}
-  function apply(){body.classList.toggle('night',isNight());}
+  function apply(){var c=isNight();body.classList.toggle('night',c);var b=document.getElementById('dy-theme');if(b){b.setAttribute('data-skin',c?'cyber':'classic');b.title=c?'当前：赛博模式 CYBER · 点击切换为经典模式':'当前：经典模式 CLASSIC · 点击切换为赛博模式';b.setAttribute('aria-label',b.title);}}
   apply();
   var btn=document.getElementById('dy-theme');
   if(btn){btn.addEventListener('click',function(){
