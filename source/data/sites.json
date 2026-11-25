@@ -91,24 +91,6 @@
       "name": "社区与问卷"
     },
     {
-      "count": 0,
-      "group": "每日 AI 新发现",
-      "key": "dailyAI_oss",
-      "name": "开源项目"
-    },
-    {
-      "count": 0,
-      "group": "每日 AI 新发现",
-      "key": "dailyAI_tool",
-      "name": "工具官网"
-    },
-    {
-      "count": 0,
-      "group": "每日 AI 新发现",
-      "key": "dailyAI_model",
-      "name": "模型框架"
-    },
-    {
       "count": 2,
       "group": "站点与常用",
       "key": "hotTools",
@@ -122,8 +104,8 @@
     }
   ],
   "counts": {
-    "categories": 20,
-    "groups": 5,
+    "categories": 17,
+    "groups": 4,
     "health_checked": 276,
     "sites": 263,
     "verified": 105
@@ -161,15 +143,6 @@
       ],
       "count": 36,
       "name": "学习与资源"
-    },
-    {
-      "categories": [
-        "dailyAI_oss",
-        "dailyAI_tool",
-        "dailyAI_model"
-      ],
-      "count": 0,
-      "name": "每日 AI 新发现"
     },
     {
       "categories": [

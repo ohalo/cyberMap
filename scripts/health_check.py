@@ -66,7 +66,6 @@ OUT_REL = Path("source/daily/health.json")
 # 扫描方式是「读所有顶层列表分类」，不再依赖固定分类名单；6 并发 + 单站 12s
 # 超时 + 7 天降频闸门控制成本。
 ALL_SITE_CATEGORIES = (
-    "dailyAI_oss", "dailyAI_tool", "dailyAI_model",
     "aiChat", "aiImage", "aiVideo", "aiCode", "aiOffice", "aiAgent",
     "GPTModels", "githubGPT", "aiFrameworks", "ragKnowledge", "agentFrameworks",
     "studyGPT", "techBlog", "aiNav", "likeGPT", "hotTools", "myBlog",

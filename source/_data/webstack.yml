@@ -199,18 +199,6 @@ menu:
       - name: "社区与问卷"
         icon: fas fa-users
         config: likeGPT
-  - name: "每日 AI 新发现"
-    icon: fas fa-rocket
-    submenu:
-      - name: "开源项目"
-        icon: fab fa-github
-        config: dailyAI_oss
-      - name: "工具官网"
-        icon: fas fa-globe
-        config: dailyAI_tool
-      - name: "模型框架"
-        icon: fas fa-cubes
-        config: dailyAI_model
   - name: "站点与常用"
     icon: fas fa-star
     submenu:
@@ -1089,9 +1077,6 @@ likeGPT:
     img: https://sf3-scmcdn2-cn.feishucdn.com/ccm/pc/web/resource/bear/src/common/assets/favicons/icon_file_bitable_nor-32x32.0e0cacddafbc7fd2d308.png
     description: 填写你最喜欢使用的AI地址
 
-dailyAI_oss: []
-dailyAI_tool: []
-dailyAI_model: []
 hotTools:
   - name: Spring-cloud-gateway 中文文档
     url: https://spring-cloud-gateway.lowff.net/

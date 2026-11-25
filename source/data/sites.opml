@@ -301,11 +301,6 @@
         <outline type="link" text="填写你最喜欢使用的AI地址" title="填写你最喜欢使用的AI地址" url="https://fmhitm4i2c.feishu.cn/share/base/form/shrcnVmzXGaoLJWDf84a8fstb7c" htmlUrl="https://fmhitm4i2c.feishu.cn/share/base/form/shrcnVmzXGaoLJWDf84a8fstb7c" description="填写你最喜欢使用的AI地址" />
       </outline>
     </outline>
-    <outline text="每日 AI 新发现">
-      <outline text="开源项目" title="开源项目" />
-      <outline text="工具官网" title="工具官网" />
-      <outline text="模型框架" title="模型框架" />
-    </outline>
     <outline text="站点与常用">
       <outline text="常用工具" title="常用工具">
         <outline type="link" text="Spring-cloud-gateway 中文文档" title="Spring-cloud-gateway 中文文档" url="https://spring-cloud-gateway.lowff.net/" htmlUrl="https://spring-cloud-gateway.lowff.net/" description="该项目是基于Spring生态系统构建的API网关，包括Spring 6、Spring Boot 3和Project Reactor" />

@@ -38,216 +38,781 @@
     "footer_stats_visitors": "Total visitors"
   },
   "nav": {
-    "aiChat|腾讯元宝": {"n": "Tencent Yuanbao", "d": "Tencent's Hunyuan LLM assistant with multimodal Q&A and WeChat-ecosystem file parsing."},
-    "aiChat|智谱清言": {"n": "Zhipu Qingyan", "d": "Zhipu AI's GLM-based assistant for writing, coding and tool use."},
-    "aiChat|讯飞星火": {"n": "iFlytek Spark", "d": "iFlytek's Spark LLM chat service, strong in speech and Chinese comprehension."},
-    "aiChat|秘塔 AI 搜索": {"n": "Metaso AI Search", "d": "Ad-free AI search engine that aggregates sources and gives structured, cited answers."},
-    "aiChat|Kimi": {"n": "Kimi", "d": "Moonshot AI's long-context assistant, skilled at reading very long documents and organizing material."},
-    "aiChat|天工 AI": {"n": "Tiangong AI", "d": "Kunlun Wanwei's AI assistant for search, chat and document interpretation."},
-    "aiChat|文心一言": {"n": "ERNIE Bot", "d": "Baidu's Wenxin LLM assistant for Chinese writing, Q&A and multimodal generation."},
-    "aiChat|通义千问": {"n": "Tongyi Qianwen", "d": "Alibaba Cloud's Tongyi LLM service for Q&A, creation and document analysis."},
-    "aiChat|豆包": {"n": "Doubao", "d": "ByteDance's AI assistant for chat, writing, drawing and file parsing."},
-    "aiChat|DeepSeek 对话": {"n": "DeepSeek Chat", "d": "DeepSeek's official chat service with reasoning and general-purpose models."},
-    "aiChat|Claude": {"n": "Claude", "d": "Anthropic's official Claude assistant, strong at long-form writing, analysis and code."},
-    "aiChat|Phind": {"n": "Phind", "d": "Developer-focused AI search and Q&A with answers citing technical docs."},
-    "aiChat|Flash GPT - 聊天": {"n": "Flash GPT - Chat", "d": "Flash GPT chat assistant."},
-    "aiChat|Vicuna": {"n": "Vicuna", "d": "Vicuna - An Open-Source Chatbot."},
-    "aiChat|Sage - Poe": {"n": "Sage - Poe", "d": "Sage bot on Poe."},
-    "aiChat|perplexity": {"n": "Perplexity", "d": "Accuracy-focused AI search with a low hallucination rate and unlimited free use (requires proxy)."},
-    "aiChat|必应": {"n": "Bing", "d": "GPT-4-powered chat with streamlined features; free, up to 20 questions per turn and 200 per day (requires proxy)."},
-    "aiChat|ora": {"n": "Ora", "d": "10 free GPT-4 queries per day (requires proxy)."},
-    "aiChat|forefront.ai": {"n": "Forefront.ai", "d": "A richer ChatGPT experience: free GPT-4, image generation, custom personas and shareable chats."},
-
-    "aiImage|即梦 AI": {"n": "Dreamina", "d": "ByteDance's AI creation platform for image and video generation."},
-    "aiImage|Recraft": {"n": "Recraft", "d": "AI design tool that generates vector graphics and brand design assets."},
-    "aiImage|Canva": {"n": "Canva", "d": "Online design platform with built-in AI image generation, layout and copywriting."},
-    "aiImage|Remove.bg": {"n": "Remove.bg", "d": "One-click online AI background remover with batch processing."},
-    "aiImage|Stability AI": {"n": "Stability AI", "d": "Official site and open platform for the Stable Diffusion family of image models."},
-    "aiImage|Upscayl": {"n": "Upscayl", "d": "Open-source AI image super-resolution tool that upscales images offline locally."},
-    "aiImage|Adobe Firefly": {"n": "Adobe Firefly", "d": "Adobe's generative AI creative tools integrated into Photoshop and other design software."},
-    "aiImage|词图PromptTool - AI绘画资料管理网站": {"n": "PromptTool", "d": "AI art prompt and resource management site."},
-    "aiImage|AppIcons.ai": {"n": "AppIcons.ai", "d": "AI tool that auto-generates polished app icons for developers in minutes, lowering design cost."},
-    "aiImage|StockImg.ai": {"n": "StockImg.ai", "d": "AI image design tool offering many royalty-free AI-generated image assets."},
-    "aiImage|Midjourney": {"n": "Midjourney", "d": "AI image generation tool that creates artwork in a wide range of styles."},
-    "aiImage|Segment Anything | Meta AI": {"n": "Segment Anything | Meta AI", "d": "Powerful instance-segmentation model that generates high-quality object masks from point or box prompts, trained on 11M masks across 11M images with strong zero-shot performance."},
-
-    "aiVideo|可灵 AI": {"n": "Kling AI", "d": "Kuaishou's AI video generation platform supporting text-to-video and image-to-video."},
-    "aiVideo|Runway": {"n": "Runway", "d": "AI video generation and editing platform with the Gen series of video models."},
-    "aiVideo|Synthesia": {"n": "Synthesia", "d": "Enterprise AI virtual-presenter video tool for training and promotional content."},
-    "aiVideo|ElevenLabs": {"n": "ElevenLabs", "d": "AI speech synthesis and voice cloning platform with multilingual dubbing."},
-    "aiVideo|海螺 AI": {"n": "Hailuo AI", "d": "MiniMax's AI creation platform for video generation and speech synthesis."},
-    "aiVideo|Descript": {"n": "Descript", "d": "Edit audio and video like a text document, with transcription and AI noise reduction."},
-    "aiVideo|Udio": {"n": "Udio", "d": "AI music generation tool that creates song clips from style and lyrics."},
-    "aiVideo|CapCut": {"n": "CapCut", "d": "International version of the CapCut/Jianying editor with built-in subtitles, cutout and other AI features."},
-    "aiVideo|kaiber.ai": {"n": "Kaiber.ai", "d": "Turn your imagination into reality with an advanced AI engine that transforms ideas into visual stories."},
-    "aiVideo|Elai": {"n": "Elai", "d": "AI video tool that automatically generates and edits video clips."},
-
-    "aiCode|Cursor": {"n": "Cursor", "d": "AI-native code editor with whole-repo context understanding and agentic editing."},
-    "aiCode|Windsurf": {"n": "Windsurf", "d": "Codeium's AI IDE with cross-file context and autonomous execution."},
-    "aiCode|v0": {"n": "v0", "d": "Vercel's AI front-end generator that produces React UI code from prompts."},
-    "aiCode|TRAE": {"n": "TRAE", "d": "ByteDance's AI IDE with Builder mode and Chinese-language interaction."},
-    "aiCode|Bolt.new": {"n": "Bolt.new", "d": "In-browser AI full-stack app generator: build and run projects through conversation."},
-    "aiCode|Tabnine": {"n": "Tabnine", "d": "Code completion and AI programming assistant with private on-premise deployment."},
-    "aiCode|Codeium": {"n": "Codeium", "d": "Developer plugin offering free AI code completion and chat."},
-    "aiCode|Sourcegraph Cody": {"n": "Sourcegraph Cody", "d": "AI coding assistant grounded in whole-codebase search, ideal for large repositories."},
-    "aiCode|StackBlitz": {"n": "StackBlitz", "d": "In-browser online IDE with instant Web project preview."},
-    "aiCode|Supermaven": {"n": "Supermaven", "d": "AI code completion focused on low latency and long context."},
-    "aiCode|Continue": {"n": "Continue", "d": "Open-source AI coding assistant extension that works with local or cloud models."},
-    "aiCode|Replit": {"n": "Replit", "d": "Online development environment with a built-in AI assistant and one-click app deployment."},
-    "aiCode|Lovable": {"n": "Lovable", "d": "AI development platform that generates complete Web apps from natural language."},
-    "aiCode|llama-index(gpt-index):后chatgpt时代的对话式文档问答解决方案": {"n": "LlamaIndex (GPT Index)", "d": "Conversational document Q&A solution for the post-ChatGPT era."},
-    "aiCode|AWS - codewhisperer": {"n": "Amazon CodeWhisperer", "d": "ML-based service that generates code suggestions from natural-language comments and IDE code to boost developer productivity."},
-    "aiCode|TelePortHQ": {"n": "TeleportHQ", "d": "AI coding tool that automatically generates code snippets and scripts."},
-    "aiCode|Hocoos": {"n": "Hocoos", "d": "AI website builder that automatically designs and generates websites."},
-
-    "aiOffice|Grammarly": {"n": "Grammarly", "d": "AI English writing assistant that checks grammar, tone and clarity."},
-    "aiOffice|Jasper": {"n": "Jasper", "d": "AI copywriting and brand-voice management platform for marketing teams."},
-    "aiOffice|Zapier": {"n": "Zapier", "d": "App-to-app automation platform with built-in AI steps and agent capabilities."},
-    "aiOffice|Notion AI": {"n": "Notion AI", "d": "Notion's built-in AI assistant for writing, summarizing and knowledge-base Q&A."},
-    "aiOffice|Make": {"n": "Make", "d": "Visual automation platform that connects SaaS apps and AI services."},
-    "aiOffice|Napkin AI": {"n": "Napkin AI", "d": "AI tool that turns text into charts, flowcharts and infographics."},
-    "aiOffice|Whimsical": {"n": "Whimsical", "d": "Online flowchart and mind-mapping tool with AI-assisted structure generation."},
-    "aiOffice|Fireflies.ai": {"n": "Fireflies.ai", "d": "AI meeting assistant that auto-records, transcribes and extracts action items and summaries."},
-    "aiOffice|ChatPDF - 与PDF聊天": {"n": "ChatPDF", "d": "ChatPDF uses AI to provide natural-language Q&A over PDF files."},
-    "aiOffice|制作PPT的工具": {"n": "Presentation Tool", "d": "Beautiful.ai - AI-powered slide creation."},
-    "aiOffice|文案生成AI": {"n": "Copywriting AI", "d": "Copy.ai - AI copywriting assistant."},
-    "aiOffice|猎研SciRadar": {"n": "SciRadar", "d": "Academic research assistant; no proxy needed, 10,000 free characters per day."},
-    "aiOffice|Textblaze": {"n": "Text Blaze", "d": "Chrome extension for quickly inserting reusable text snippets to boost productivity."},
-    "aiOffice|Sendsteps": {"n": "Sendsteps", "d": "AI slide tool that automatically designs and generates presentations."},
-    "aiOffice|Remail": {"n": "Remail", "d": "AI email assistant that automatically replies to and organizes emails."},
-    "aiOffice|Otter.ai": {"n": "Otter.ai", "d": "AI meeting tool that automatically records, transcribes and summarizes meetings."},
-
-    "aiAgent|Coze": {"n": "Coze", "d": "AI bot-building platform with configurable plugins and knowledge bases, publishable to multiple channels."},
-    "aiAgent|Flowise": {"n": "Flowise", "d": "Open-source low-code LLM orchestrator; drag and drop to build Q&A chains."},
-    "aiAgent|n8n": {"n": "n8n", "d": "Open-source workflow automation platform with AI nodes and self-hosted agents."},
-    "aiAgent|Langflow": {"n": "Langflow", "d": "Open-source tool for visually building LangChain flows and agents."},
-    "aiAgent|AutoGPT": {"n": "AutoGPT", "d": "Autonomous agent platform that lets AI break down goals and execute tasks continuously."},
-    "aiAgent|CrewAI": {"n": "CrewAI", "d": "Multi-agent collaboration framework that completes complex tasks via role assignment."},
-    "aiAgent|LangChain": {"n": "LangChain", "d": "LLM application development framework and ecosystem with chains, agents and observability tools."},
-    "aiAgent|Dify": {"n": "Dify", "d": "Open-source LLM app development platform with visual agent and knowledge-base orchestration."},
-    "aiAgent|ChatMind - 智能后台系统": {"n": "ChatMind", "d": "Open-source AI backend system helping enterprises and developers quickly build powerful AI products and services."},
-    "aiAgent|Godmode.space": {"n": "Godmode.space", "d": "Godmode.space AI agent platform."},
-    "aiAgent|Cognosys - Your personal AI Agent": {"n": "Cognosys - Your personal AI Agent", "d": "Cognosys - Your personal AI Agent."},
-
-    "GPTModels|Qwen": {"n": "Qwen", "d": "Project homepage and docs for the Tongyi Qianwen (Qwen) open-source models."},
-    "GPTModels|DeepSeek": {"n": "DeepSeek", "d": "DeepSeek official site publishing the DeepSeek model series and open API."},
-    "GPTModels|魔搭 ModelScope": {"n": "ModelScope", "d": "Alibaba's ModelScope community with model downloads, demos and datasets."},
-    "GPTModels|Groq": {"n": "Groq", "d": "LPU-based low-latency LLM inference service and developer platform."},
-    "GPTModels|智谱 AI": {"n": "Zhipu AI", "d": "Zhipu AI official site publishing the GLM model series and open platform."},
-    "GPTModels|OpenRouter": {"n": "OpenRouter", "d": "Multi-vendor LLM API aggregation and routing platform with unified billing and model switching."},
-    "GPTModels|Replicate": {"n": "Replicate", "d": "Cloud platform for running open models with APIs and one-click deployment."},
-    "GPTModels|Together AI": {"n": "Together AI", "d": "Cloud service for open-model inference and fine-tuning with OpenAI-compatible APIs."},
-    "GPTModels|lm-sys/FastChat": {"n": "FastChat", "d": "Open platform for training, serving and evaluating LLMs; release repo for Vicuna and FastChat-T5."},
-    "GPTModels|OpenLMLab/MOSS": {"n": "MOSS", "d": "Open-source tool-augmented conversational language model from Fudan University."},
-    "GPTModels|facebookresearch/llama": {"n": "LLaMA", "d": "Inference code for the LLaMA model."},
-    "GPTModels|MiniGPT-4": {"n": "MiniGPT-4", "d": "Pretrained MiniGPT-4 aligned with Vicuna-7B; demo GPU memory usage can be as low as 12GB."},
-    "GPTModels|中文LLaMA&Alpaca大语言模型": {"n": "Chinese LLaMA & Alpaca LLMs", "d": "Chinese LLaMA & Alpaca LLMs with local CPU/GPU deployment."},
-    "GPTModels|THUDM/ChatGLM-6B": {"n": "ChatGLM-6B", "d": "ChatGLM-6B - an open bilingual dialogue language model."},
-    "GPTModels|lamini-ai/lamini": {"n": "Lamini", "d": "LLM engine for fast model customization, unlocking each company's generative AI with its data."},
-    "GPTModels|Chinese-LLaMA基础模型;ChatFlow中文对话模型;NLP预训练/指令微调数据集": {"n": "Linly", "d": "Chinese NLP toolkit with pretrained models, dictionaries, datasets and tools that lower the barrier to Chinese NLP research and development."},
-
-    "githubGPT|open-webui/open-webui": {"n": "Open WebUI", "d": "Self-hosted AI chat web interface that connects to Ollama and multiple APIs."},
-    "githubGPT|firecrawl/firecrawl": {"n": "Firecrawl", "d": "Open-source service and API that crawls websites into LLM-ready data."},
-    "githubGPT|run-llama/llama_index": {"n": "LlamaIndex", "d": "Open-source RAG indexing and query framework for private data."},
-    "githubGPT|langchain-ai/langchain": {"n": "LangChain", "d": "Open-source framework for building LLM applications with chains, tools and agent abstractions."},
-    "githubGPT|chroma-core/chroma": {"n": "Chroma", "d": "Open-source vector database commonly used for embedding retrieval in RAG apps."},
-    "githubGPT|milvus-io/milvus": {"n": "Milvus", "d": "Distributed open-source vector database for large-scale similarity search."},
-    "githubGPT|qdrant/qdrant": {"n": "Qdrant", "d": "Open-source vector search engine with filtering and hybrid retrieval."},
-    "githubGPT|CherryHQ/cherry-studio": {"n": "Cherry Studio", "d": "Desktop multi-model AI assistant with local knowledge bases and multiple providers."},
-    "githubGPT|Mintplex-Labs/anything-llm": {"n": "AnythingLLM", "d": "Open-source desktop and server app that turns documents into a Q&A knowledge base."},
-    "githubGPT|gradio-app/gradio": {"n": "Gradio", "d": "Generate Web demos for machine-learning models in a few lines of Python."},
-    "githubGPT|n8n-io/n8n": {"n": "n8n", "d": "Self-hostable workflow automation tool with AI and hundreds of integrations."},
-    "githubGPT|streamlit/streamlit": {"n": "Streamlit", "d": "Open-source framework for turning Python scripts into data apps quickly."},
-    "githubGPT|langgenius/dify": {"n": "Dify", "d": "Open-source LLM app development platform with orchestration, knowledge base and operations."},
-    "githubGPT|facebookresearch/faiss": {"n": "FAISS", "d": "Meta's open-source library for efficient vector similarity search and clustering."},
-    "githubGPT|Segment Anything Model(SAM)": {"n": "Segment Anything Model (SAM)", "d": "Code for SAM inference and links to download trained model checkpoints."},
-    "githubGPT|xinsblog/try-llama-index": {"n": "try-llama-index", "d": "A hands-on project trying out LlamaIndex."},
-    "githubGPT|AutoGPT - 中文版": {"n": "AutoGPT - Chinese Edition", "d": "Chinese edition of AutoGPT."},
-    "githubGPT|yetone/openai-translator": {"n": "OpenAI Translator", "d": "ChatGPT API-based selection-translation browser extension and cross-platform desktop app."},
-    "githubGPT|Github + ChatGPT 实现代码对话": {"n": "Chat with GitHub Code via ChatGPT", "d": "Two Python scripts showing how to use Streamlit, GPT-3.5-turbo and Deep Lake to build a chatbot that searches your datasets and lets you talk to a GitHub repo."},
-    "githubGPT|集成GPT,开始跟PDF文档聊天": {"n": "Chat with PDF via GPT", "d": "One-on-one chat with PDFs: auto-chunk content, generate embeddings with a deep averaging encoder, run semantic search and pass relevant embeddings to OpenAI for accurate, fast answers."},
-    "githubGPT|加快ChatGPT访问速度": {"n": "Speed Up ChatGPT Access", "d": "Access the service via access token with backend optimization that bypasses Cloudflare. Also handles peak-time limits, near-PLUS response speed, web/CLI/API modes and private deployment."},
-
-    "aiFrameworks|ollama/ollama": {"n": "Ollama", "d": "One-click local tool for running and managing open-source LLMs across platforms."},
-    "aiFrameworks|ggml-org/llama.cpp": {"n": "llama.cpp", "d": "C/C++ LLM inference engine supporting CPU and quantized models."},
-    "aiFrameworks|vllm-project/vllm": {"n": "vLLM", "d": "High-throughput LLM inference and serving framework using PagedAttention."},
-    "aiFrameworks|huggingface/transformers": {"n": "Transformers", "d": "Leading pretrained model library with unified loading and training for Transformer models."},
-    "aiFrameworks|sgl-project/sglang": {"n": "SGLang", "d": "Efficient LLM inference and serving framework for complex generation workflows."},
-    "aiFrameworks|InternLM/lmdeploy": {"n": "LMDeploy", "d": "LLM compression, deployment and inference toolkit supporting multiple backends."},
-    "aiFrameworks|NVIDIA/TensorRT-LLM": {"n": "TensorRT-LLM", "d": "LLM inference optimization library for NVIDIA GPUs with high-throughput serving."},
-    "aiFrameworks|AUTOMATIC1111/stable-diffusion-webui": {"n": "Stable Diffusion WebUI", "d": "Local Web UI for Stable Diffusion with extensions and multiple generation modes."},
-    "aiFrameworks|comfyanonymous/ComfyUI": {"n": "ComfyUI", "d": "Node-based diffusion-model workflow UI for freely composing image-generation pipelines."},
-    "aiFrameworks|microsoft/DeepSpeed": {"n": "DeepSpeed", "d": "Distributed LLM training and inference optimization library that greatly reduces VRAM usage."},
-    "aiFrameworks|ggml-org/whisper.cpp": {"n": "whisper.cpp", "d": "C/C++ local inference implementation of the Whisper speech-recognition model."},
-    "aiFrameworks|pytorch/pytorch": {"n": "PyTorch", "d": "Leading deep-learning framework with tensor computation and automatic differentiation."},
-
-    "studyGPT|Prompt Engineering Guide": {"n": "Prompt Engineering Guide", "d": "Systematic prompt-engineering tutorial covering techniques, models and use cases."},
-    "studyGPT|DeepLearning.AI": {"n": "DeepLearning.AI", "d": "Andrew Ng's team AI course platform with short courses and hands-on projects."},
-    "studyGPT|arXiv": {"n": "arXiv", "d": "Open preprint platform and the main venue for the latest AI papers."},
-    "studyGPT|LangChain 文档": {"n": "LangChain Docs", "d": "Official LangChain Python documentation and developer tutorials."},
-    "studyGPT|Kaggle Learn": {"n": "Kaggle Learn", "d": "Free hands-on Kaggle micro-courses covering Python, machine learning and LLMs."},
-    "studyGPT|Learn Prompting": {"n": "Learn Prompting", "d": "Open-source prompt-engineering course from beginner to advanced with multi-language versions."},
-    "studyGPT|Anthropic 文档": {"n": "Anthropic Docs", "d": "Official Claude API documentation and prompt-engineering guide."},
-    "studyGPT|OpenAI 文档": {"n": "OpenAI Docs", "d": "Official OpenAI API documentation covering models, endpoints and best practices."},
-    "studyGPT|PlexPt/awesome-chatgpt-prompts-zh": {"n": "Awesome ChatGPT Prompts (zh)", "d": "Chinese guide to ChatGPT prompting across scenarios."},
-    "studyGPT|ChatGPT 中文调教指南": {"n": "ChatGPT Prompt Guide (zh)", "d": "Chinese guide to ChatGPT prompting."},
-    "studyGPT|元素法典——Novel AI 元素魔法全收录": {"n": "Element Codex - Novel AI", "d": "Complete collection of Novel AI element magic."},
-    "studyGPT|指南针- Midjourney 学习导航": {"n": "Compass - Midjourney Learning Guide", "d": "A learning navigator for Midjourney."},
-    "studyGPT|AutoGPT 4.11": {"n": "AutoGPT 4.11", "d": "AutoGPT 4.11 tutorial and resources."},
-    "studyGPT|Hello from Learning Prompt": {"n": "Hello from Learning Prompt", "d": "Introductory tutorial from Learning Prompt."},
-    "studyGPT|ChatGPT Prompt Engineering for Developers 中文版": {"n": "ChatGPT Prompt Engineering for Developers (zh)", "d": "Teaches developers how to build prompts and LLM applications on the OpenAI API."},
-
-    "techBlog|Lil'Log": {"n": "Lil'Log", "d": "Lilian Weng's deep technical blog systematically covering LLMs and agents."},
-    "techBlog|Anthropic Research": {"n": "Anthropic Research", "d": "Anthropic research blog on alignment, interpretability and model evaluation."},
-    "techBlog|The Illustrated Transformer": {"n": "The Illustrated Transformer", "d": "Illustrated explanation of Transformer, BERT and related model principles."},
-    "techBlog|The Batch": {"n": "The Batch", "d": "DeepLearning.AI's weekly AI newsletter tracking research and product developments."},
-    "techBlog|OpenAI News": {"n": "OpenAI News", "d": "OpenAI official news and research releases."},
-    "techBlog|ShinChven's Blog": {"n": "ShinChven's Blog", "d": "ShinChven's personal tech blog."},
-    "techBlog|Stable Diffusion Prompt Note": {"n": "Stable Diffusion Prompt Note", "d": "Notes on Stable Diffusion prompting."},
-    "techBlog|跟吴恩达和IsaFulford学提示词工程（初级开发者入门课程）": {"n": "Prompt Engineering with Ng & Fulford", "d": "Study notes: prompt engineering with Andrew Ng and Isa Fulford (beginner developer course)."},
-
-    "aiNav|AIbase": {"n": "AIbase", "d": "Chinese AI news and tool library with product listings and rankings."},
-    "aiNav|AIHub": {"n": "AIHub", "d": "Chinese AI tool and resource directory covering office, design and development."},
-    "aiNav|Future Tools": {"n": "Future Tools", "d": "Curated AI tool directory marking free vs paid with brief descriptions."},
-    "aiNav|TopAI.tools": {"n": "TopAI.tools", "d": "AI tool directory filterable by category and task."},
-    "aiNav|Futurepedia": {"n": "Futurepedia", "d": "AI tool directory and tutorial site by use case with reviews."},
-    "aiNav|There's An AI For That": {"n": "There's An AI For That", "d": "Task-based AI tool search directory with a large, constantly updated collection."},
-    "aiNav|Toolify": {"n": "Toolify", "d": "AI tool leaderboard and category directory with traffic and popularity data."},
-    "aiNav|AI工具集导航": {"n": "AI Tool Collection", "d": "500+ AI tools directory covering domestic and international tools."},
-    "aiNav|发现最酷的互联网产品工具和智能神器!": {"n": "Cool Internet Tools & Gems", "d": "A collection of the coolest internet product tools and smart utilities."},
-    "aiNav|无聊Ai工具导航 | —发现全球优质AIGC工具": {"n": "Wuliao AI Directory", "d": "AIGC tool directory exploring 1,240+ global AI tools, including free ChatGPT tools."},
-
-    "likeGPT|填写你最喜欢使用的AI地址": {"n": "Your Favorite AI", "d": "Add links to your favorite AI tools here."},
-
-    "dailyAI_oss|bytedance/deer-flow": {"n": "deer-flow", "d": "ByteDance's open-source long-horizon super-agent framework with sandbox, memory, skills and sub-agents for autonomous research, coding and creation."},
-    "dailyAI_oss|NVIDIA/auto-ontology": {"n": "auto-ontology", "d": "NVIDIA's open-source Python framework that builds a semantic-graph reasoning layer over data for deterministic query generation and explainable LLM agent analysis."},
-    "dailyAI_oss|vercel-labs/agent-browser": {"n": "agent-browser", "d": "Vercel's open-source Rust browser-automation CLI that reads pages via the accessibility tree and lets AI agents operate elements step by step, failing loudly."},
-    "dailyAI_oss|homeassistant-ai/ha-mcp": {"n": "ha-mcp", "d": "Lets Claude, ChatGPT and other AI assistants configure and automate Home Assistant smart devices in natural language via MCP."},
-    "dailyAI_oss|The-PR-Agent/pr-agent": {"n": "pr-agent", "d": "Open-source AI code-review assistant that generates review comments for pull requests, supporting multiple LLMs and major code-hosting platforms."},
-    "dailyAI_oss|vercel-labs/agent-desktop": {"n": "agent-desktop", "d": "Vercel Labs' open-source CLI that lets AI agents identify and operate desktop apps via the system accessibility tree, with headless and cross-platform support."},
-    "dailyAI_oss|heygen-com/hyperframes": {"n": "hyperframes", "d": "HeyGen's open-source TypeScript video-rendering framework that deterministically outputs HTML, CSS and animations to MP4 for AI agents to batch-produce video."},
-    "dailyAI_oss|langflow-ai/langflow": {"n": "langflow", "d": "Open-source visual drag-and-drop tool for building AI agents and workflows, with major LLM support and API deployment."},
-    "dailyAI_oss|harry0703/MoneyPrinterTurbo": {"n": "MoneyPrinterTurbo", "d": "Open-source workflow that uses LLMs to auto-generate scripts, voiceovers and subtitles and compose HD short videos in one click."},
-    "dailyAI_oss|TauricResearch/TradingAgents": {"n": "TradingAgents", "d": "Multi-agent LLM financial-trading framework simulating analysts, researchers and traders collaborating on stock selection and investment decisions."},
-    "dailyAI_oss|github/spec-kit": {"n": "spec-kit", "d": "GitHub's spec-driven development (SDD) toolkit guiding AI from requirements to code in phases via natural-language specs."},
-    "dailyAI_oss|openclaw/openclaw": {"n": "openclaw", "d": "Open-source personal AI assistant that performs real tasks on any OS and platform with data self-ownership, MIT licensed."},
-    "dailyAI_oss|unclecode/crawl4ai": {"n": "crawl4ai", "d": "Open-source web crawler for LLMs and AI agents that turns pages into LLM-ready Markdown with self-hosting support."},
-    "dailyAI_oss|browser-use/browser-use": {"n": "browser-use", "d": "Open-source browser-agent framework letting LLMs auto-click, type and complete tasks in real browsers, compatible with any LLM."},
-
-    "dailyAI_tool|Clipwright": {"n": "Clipwright", "d": "AI-agent video-production backend that uses MCP or API to break down viral shorts and generate narrated ad MP4s, quoting a price before rendering."},
-    "dailyAI_tool|Cognee": {"n": "Cognee", "d": "Open-source AI agent memory platform building cross-session persistent memory via knowledge graphs and vector retrieval, with self-hosting and cloud."},
-    "dailyAI_tool|magpie": {"n": "magpie", "d": "Local AI model gateway unifying DeepSeek, Claude, Kimi and other subscriptions for coding agents to switch on demand."},
-    "dailyAI_tool|webAI": {"n": "webAI", "d": "AI app that runs small models locally on Mac, building multiple AI personas to collaborate on private documents with no cloud upload and no token fees."},
-    "dailyAI_tool|DomoAI": {"n": "DomoAI", "d": "Online AI video and animation platform for text-, image- or video-based generation, stylization and quality enhancement."},
-    "dailyAI_tool|Ollama": {"n": "Ollama", "d": "Tool for running open-source LLMs locally or in the cloud on macOS, Windows and Linux with a single command."},
-
-    "dailyAI_model|FareedKhan-dev/kimi-k3-in-c": {"n": "kimi-k3-in-c", "d": "Pure C99 inference engine running the 2.78-trillion-parameter Kimi K3 model on a single-core CPU with 8GB RAM, zero dependencies."},
-    "dailyAI_model|nv-tlabs/lyra": {"n": "lyra", "d": "NVIDIA's open-source generative 3D world model that creates explorable 3D scenes from input images, with open code and pretrained weights."},
-
-    "hotTools|ChatGPT - 用GPT实现聊天机器人": {"n": "ChatGPT", "d": "A chatbot framework built on OpenAI's GPT-3 API."},
-    "hotTools|Spring-cloud-gateway 中文文档": {"n": "Spring Cloud Gateway Docs", "d": "An API gateway built on the Spring ecosystem: Spring 6, Spring Boot 3 and Project Reactor."},
-    "hotTools|xmind转化xls工具": {"n": "XMind to XLS Converter", "d": "Tool for converting XMind files to XLS."},
-
-    "myBlog|彷徨的蜗牛的博客": {"n": "Wandering Snail's Blog", "d": "In search of direction."}
+    "aiChat|腾讯元宝": {
+      "n": "Tencent Yuanbao",
+      "d": "Tencent's Hunyuan LLM assistant with multimodal Q&A and WeChat-ecosystem file parsing."
+    },
+    "aiChat|智谱清言": {
+      "n": "Zhipu Qingyan",
+      "d": "Zhipu AI's GLM-based assistant for writing, coding and tool use."
+    },
+    "aiChat|讯飞星火": {
+      "n": "iFlytek Spark",
+      "d": "iFlytek's Spark LLM chat service, strong in speech and Chinese comprehension."
+    },
+    "aiChat|秘塔 AI 搜索": {
+      "n": "Metaso AI Search",
+      "d": "Ad-free AI search engine that aggregates sources and gives structured, cited answers."
+    },
+    "aiChat|Kimi": {
+      "n": "Kimi",
+      "d": "Moonshot AI's long-context assistant, skilled at reading very long documents and organizing material."
+    },
+    "aiChat|天工 AI": {
+      "n": "Tiangong AI",
+      "d": "Kunlun Wanwei's AI assistant for search, chat and document interpretation."
+    },
+    "aiChat|文心一言": {
+      "n": "ERNIE Bot",
+      "d": "Baidu's Wenxin LLM assistant for Chinese writing, Q&A and multimodal generation."
+    },
+    "aiChat|通义千问": {
+      "n": "Tongyi Qianwen",
+      "d": "Alibaba Cloud's Tongyi LLM service for Q&A, creation and document analysis."
+    },
+    "aiChat|豆包": {
+      "n": "Doubao",
+      "d": "ByteDance's AI assistant for chat, writing, drawing and file parsing."
+    },
+    "aiChat|DeepSeek 对话": {
+      "n": "DeepSeek Chat",
+      "d": "DeepSeek's official chat service with reasoning and general-purpose models."
+    },
+    "aiChat|Claude": {
+      "n": "Claude",
+      "d": "Anthropic's official Claude assistant, strong at long-form writing, analysis and code."
+    },
+    "aiChat|Phind": {
+      "n": "Phind",
+      "d": "Developer-focused AI search and Q&A with answers citing technical docs."
+    },
+    "aiChat|Flash GPT - 聊天": {
+      "n": "Flash GPT - Chat",
+      "d": "Flash GPT chat assistant."
+    },
+    "aiChat|Vicuna": {
+      "n": "Vicuna",
+      "d": "Vicuna - An Open-Source Chatbot."
+    },
+    "aiChat|Sage - Poe": {
+      "n": "Sage - Poe",
+      "d": "Sage bot on Poe."
+    },
+    "aiChat|perplexity": {
+      "n": "Perplexity",
+      "d": "Accuracy-focused AI search with a low hallucination rate and unlimited free use (requires proxy)."
+    },
+    "aiChat|必应": {
+      "n": "Bing",
+      "d": "GPT-4-powered chat with streamlined features; free, up to 20 questions per turn and 200 per day (requires proxy)."
+    },
+    "aiChat|ora": {
+      "n": "Ora",
+      "d": "10 free GPT-4 queries per day (requires proxy)."
+    },
+    "aiChat|forefront.ai": {
+      "n": "Forefront.ai",
+      "d": "A richer ChatGPT experience: free GPT-4, image generation, custom personas and shareable chats."
+    },
+    "aiImage|即梦 AI": {
+      "n": "Dreamina",
+      "d": "ByteDance's AI creation platform for image and video generation."
+    },
+    "aiImage|Recraft": {
+      "n": "Recraft",
+      "d": "AI design tool that generates vector graphics and brand design assets."
+    },
+    "aiImage|Canva": {
+      "n": "Canva",
+      "d": "Online design platform with built-in AI image generation, layout and copywriting."
+    },
+    "aiImage|Remove.bg": {
+      "n": "Remove.bg",
+      "d": "One-click online AI background remover with batch processing."
+    },
+    "aiImage|Stability AI": {
+      "n": "Stability AI",
+      "d": "Official site and open platform for the Stable Diffusion family of image models."
+    },
+    "aiImage|Upscayl": {
+      "n": "Upscayl",
+      "d": "Open-source AI image super-resolution tool that upscales images offline locally."
+    },
+    "aiImage|Adobe Firefly": {
+      "n": "Adobe Firefly",
+      "d": "Adobe's generative AI creative tools integrated into Photoshop and other design software."
+    },
+    "aiImage|词图PromptTool - AI绘画资料管理网站": {
+      "n": "PromptTool",
+      "d": "AI art prompt and resource management site."
+    },
+    "aiImage|AppIcons.ai": {
+      "n": "AppIcons.ai",
+      "d": "AI tool that auto-generates polished app icons for developers in minutes, lowering design cost."
+    },
+    "aiImage|StockImg.ai": {
+      "n": "StockImg.ai",
+      "d": "AI image design tool offering many royalty-free AI-generated image assets."
+    },
+    "aiImage|Midjourney": {
+      "n": "Midjourney",
+      "d": "AI image generation tool that creates artwork in a wide range of styles."
+    },
+    "aiImage|Segment Anything | Meta AI": {
+      "n": "Segment Anything | Meta AI",
+      "d": "Powerful instance-segmentation model that generates high-quality object masks from point or box prompts, trained on 11M masks across 11M images with strong zero-shot performance."
+    },
+    "aiVideo|可灵 AI": {
+      "n": "Kling AI",
+      "d": "Kuaishou's AI video generation platform supporting text-to-video and image-to-video."
+    },
+    "aiVideo|Runway": {
+      "n": "Runway",
+      "d": "AI video generation and editing platform with the Gen series of video models."
+    },
+    "aiVideo|Synthesia": {
+      "n": "Synthesia",
+      "d": "Enterprise AI virtual-presenter video tool for training and promotional content."
+    },
+    "aiVideo|ElevenLabs": {
+      "n": "ElevenLabs",
+      "d": "AI speech synthesis and voice cloning platform with multilingual dubbing."
+    },
+    "aiVideo|海螺 AI": {
+      "n": "Hailuo AI",
+      "d": "MiniMax's AI creation platform for video generation and speech synthesis."
+    },
+    "aiVideo|Descript": {
+      "n": "Descript",
+      "d": "Edit audio and video like a text document, with transcription and AI noise reduction."
+    },
+    "aiVideo|Udio": {
+      "n": "Udio",
+      "d": "AI music generation tool that creates song clips from style and lyrics."
+    },
+    "aiVideo|CapCut": {
+      "n": "CapCut",
+      "d": "International version of the CapCut/Jianying editor with built-in subtitles, cutout and other AI features."
+    },
+    "aiVideo|kaiber.ai": {
+      "n": "Kaiber.ai",
+      "d": "Turn your imagination into reality with an advanced AI engine that transforms ideas into visual stories."
+    },
+    "aiVideo|Elai": {
+      "n": "Elai",
+      "d": "AI video tool that automatically generates and edits video clips."
+    },
+    "aiCode|Cursor": {
+      "n": "Cursor",
+      "d": "AI-native code editor with whole-repo context understanding and agentic editing."
+    },
+    "aiCode|Windsurf": {
+      "n": "Windsurf",
+      "d": "Codeium's AI IDE with cross-file context and autonomous execution."
+    },
+    "aiCode|v0": {
+      "n": "v0",
+      "d": "Vercel's AI front-end generator that produces React UI code from prompts."
+    },
+    "aiCode|TRAE": {
+      "n": "TRAE",
+      "d": "ByteDance's AI IDE with Builder mode and Chinese-language interaction."
+    },
+    "aiCode|Bolt.new": {
+      "n": "Bolt.new",
+      "d": "In-browser AI full-stack app generator: build and run projects through conversation."
+    },
+    "aiCode|Tabnine": {
+      "n": "Tabnine",
+      "d": "Code completion and AI programming assistant with private on-premise deployment."
+    },
+    "aiCode|Codeium": {
+      "n": "Codeium",
+      "d": "Developer plugin offering free AI code completion and chat."
+    },
+    "aiCode|Sourcegraph Cody": {
+      "n": "Sourcegraph Cody",
+      "d": "AI coding assistant grounded in whole-codebase search, ideal for large repositories."
+    },
+    "aiCode|StackBlitz": {
+      "n": "StackBlitz",
+      "d": "In-browser online IDE with instant Web project preview."
+    },
+    "aiCode|Supermaven": {
+      "n": "Supermaven",
+      "d": "AI code completion focused on low latency and long context."
+    },
+    "aiCode|Continue": {
+      "n": "Continue",
+      "d": "Open-source AI coding assistant extension that works with local or cloud models."
+    },
+    "aiCode|Replit": {
+      "n": "Replit",
+      "d": "Online development environment with a built-in AI assistant and one-click app deployment."
+    },
+    "aiCode|Lovable": {
+      "n": "Lovable",
+      "d": "AI development platform that generates complete Web apps from natural language."
+    },
+    "aiCode|llama-index(gpt-index):后chatgpt时代的对话式文档问答解决方案": {
+      "n": "LlamaIndex (GPT Index)",
+      "d": "Conversational document Q&A solution for the post-ChatGPT era."
+    },
+    "aiCode|AWS - codewhisperer": {
+      "n": "Amazon CodeWhisperer",
+      "d": "ML-based service that generates code suggestions from natural-language comments and IDE code to boost developer productivity."
+    },
+    "aiCode|TelePortHQ": {
+      "n": "TeleportHQ",
+      "d": "AI coding tool that automatically generates code snippets and scripts."
+    },
+    "aiCode|Hocoos": {
+      "n": "Hocoos",
+      "d": "AI website builder that automatically designs and generates websites."
+    },
+    "aiOffice|Grammarly": {
+      "n": "Grammarly",
+      "d": "AI English writing assistant that checks grammar, tone and clarity."
+    },
+    "aiOffice|Jasper": {
+      "n": "Jasper",
+      "d": "AI copywriting and brand-voice management platform for marketing teams."
+    },
+    "aiOffice|Zapier": {
+      "n": "Zapier",
+      "d": "App-to-app automation platform with built-in AI steps and agent capabilities."
+    },
+    "aiOffice|Notion AI": {
+      "n": "Notion AI",
+      "d": "Notion's built-in AI assistant for writing, summarizing and knowledge-base Q&A."
+    },
+    "aiOffice|Make": {
+      "n": "Make",
+      "d": "Visual automation platform that connects SaaS apps and AI services."
+    },
+    "aiOffice|Napkin AI": {
+      "n": "Napkin AI",
+      "d": "AI tool that turns text into charts, flowcharts and infographics."
+    },
+    "aiOffice|Whimsical": {
+      "n": "Whimsical",
+      "d": "Online flowchart and mind-mapping tool with AI-assisted structure generation."
+    },
+    "aiOffice|Fireflies.ai": {
+      "n": "Fireflies.ai",
+      "d": "AI meeting assistant that auto-records, transcribes and extracts action items and summaries."
+    },
+    "aiOffice|ChatPDF - 与PDF聊天": {
+      "n": "ChatPDF",
+      "d": "ChatPDF uses AI to provide natural-language Q&A over PDF files."
+    },
+    "aiOffice|制作PPT的工具": {
+      "n": "Presentation Tool",
+      "d": "Beautiful.ai - AI-powered slide creation."
+    },
+    "aiOffice|文案生成AI": {
+      "n": "Copywriting AI",
+      "d": "Copy.ai - AI copywriting assistant."
+    },
+    "aiOffice|猎研SciRadar": {
+      "n": "SciRadar",
+      "d": "Academic research assistant; no proxy needed, 10,000 free characters per day."
+    },
+    "aiOffice|Textblaze": {
+      "n": "Text Blaze",
+      "d": "Chrome extension for quickly inserting reusable text snippets to boost productivity."
+    },
+    "aiOffice|Sendsteps": {
+      "n": "Sendsteps",
+      "d": "AI slide tool that automatically designs and generates presentations."
+    },
+    "aiOffice|Remail": {
+      "n": "Remail",
+      "d": "AI email assistant that automatically replies to and organizes emails."
+    },
+    "aiOffice|Otter.ai": {
+      "n": "Otter.ai",
+      "d": "AI meeting tool that automatically records, transcribes and summarizes meetings."
+    },
+    "aiAgent|Coze": {
+      "n": "Coze",
+      "d": "AI bot-building platform with configurable plugins and knowledge bases, publishable to multiple channels."
+    },
+    "aiAgent|Flowise": {
+      "n": "Flowise",
+      "d": "Open-source low-code LLM orchestrator; drag and drop to build Q&A chains."
+    },
+    "aiAgent|n8n": {
+      "n": "n8n",
+      "d": "Open-source workflow automation platform with AI nodes and self-hosted agents."
+    },
+    "aiAgent|Langflow": {
+      "n": "Langflow",
+      "d": "Open-source tool for visually building LangChain flows and agents."
+    },
+    "aiAgent|AutoGPT": {
+      "n": "AutoGPT",
+      "d": "Autonomous agent platform that lets AI break down goals and execute tasks continuously."
+    },
+    "aiAgent|CrewAI": {
+      "n": "CrewAI",
+      "d": "Multi-agent collaboration framework that completes complex tasks via role assignment."
+    },
+    "aiAgent|LangChain": {
+      "n": "LangChain",
+      "d": "LLM application development framework and ecosystem with chains, agents and observability tools."
+    },
+    "aiAgent|Dify": {
+      "n": "Dify",
+      "d": "Open-source LLM app development platform with visual agent and knowledge-base orchestration."
+    },
+    "aiAgent|ChatMind - 智能后台系统": {
+      "n": "ChatMind",
+      "d": "Open-source AI backend system helping enterprises and developers quickly build powerful AI products and services."
+    },
+    "aiAgent|Godmode.space": {
+      "n": "Godmode.space",
+      "d": "Godmode.space AI agent platform."
+    },
+    "aiAgent|Cognosys - Your personal AI Agent": {
+      "n": "Cognosys - Your personal AI Agent",
+      "d": "Cognosys - Your personal AI Agent."
+    },
+    "GPTModels|Qwen": {
+      "n": "Qwen",
+      "d": "Project homepage and docs for the Tongyi Qianwen (Qwen) open-source models."
+    },
+    "GPTModels|DeepSeek": {
+      "n": "DeepSeek",
+      "d": "DeepSeek official site publishing the DeepSeek model series and open API."
+    },
+    "GPTModels|魔搭 ModelScope": {
+      "n": "ModelScope",
+      "d": "Alibaba's ModelScope community with model downloads, demos and datasets."
+    },
+    "GPTModels|Groq": {
+      "n": "Groq",
+      "d": "LPU-based low-latency LLM inference service and developer platform."
+    },
+    "GPTModels|智谱 AI": {
+      "n": "Zhipu AI",
+      "d": "Zhipu AI official site publishing the GLM model series and open platform."
+    },
+    "GPTModels|OpenRouter": {
+      "n": "OpenRouter",
+      "d": "Multi-vendor LLM API aggregation and routing platform with unified billing and model switching."
+    },
+    "GPTModels|Replicate": {
+      "n": "Replicate",
+      "d": "Cloud platform for running open models with APIs and one-click deployment."
+    },
+    "GPTModels|Together AI": {
+      "n": "Together AI",
+      "d": "Cloud service for open-model inference and fine-tuning with OpenAI-compatible APIs."
+    },
+    "GPTModels|lm-sys/FastChat": {
+      "n": "FastChat",
+      "d": "Open platform for training, serving and evaluating LLMs; release repo for Vicuna and FastChat-T5."
+    },
+    "GPTModels|OpenLMLab/MOSS": {
+      "n": "MOSS",
+      "d": "Open-source tool-augmented conversational language model from Fudan University."
+    },
+    "GPTModels|facebookresearch/llama": {
+      "n": "LLaMA",
+      "d": "Inference code for the LLaMA model."
+    },
+    "GPTModels|MiniGPT-4": {
+      "n": "MiniGPT-4",
+      "d": "Pretrained MiniGPT-4 aligned with Vicuna-7B; demo GPU memory usage can be as low as 12GB."
+    },
+    "GPTModels|中文LLaMA&Alpaca大语言模型": {
+      "n": "Chinese LLaMA & Alpaca LLMs",
+      "d": "Chinese LLaMA & Alpaca LLMs with local CPU/GPU deployment."
+    },
+    "GPTModels|THUDM/ChatGLM-6B": {
+      "n": "ChatGLM-6B",
+      "d": "ChatGLM-6B - an open bilingual dialogue language model."
+    },
+    "GPTModels|lamini-ai/lamini": {
+      "n": "Lamini",
+      "d": "LLM engine for fast model customization, unlocking each company's generative AI with its data."
+    },
+    "GPTModels|Chinese-LLaMA基础模型;ChatFlow中文对话模型;NLP预训练/指令微调数据集": {
+      "n": "Linly",
+      "d": "Chinese NLP toolkit with pretrained models, dictionaries, datasets and tools that lower the barrier to Chinese NLP research and development."
+    },
+    "githubGPT|open-webui/open-webui": {
+      "n": "Open WebUI",
+      "d": "Self-hosted AI chat web interface that connects to Ollama and multiple APIs."
+    },
+    "githubGPT|firecrawl/firecrawl": {
+      "n": "Firecrawl",
+      "d": "Open-source service and API that crawls websites into LLM-ready data."
+    },
+    "githubGPT|run-llama/llama_index": {
+      "n": "LlamaIndex",
+      "d": "Open-source RAG indexing and query framework for private data."
+    },
+    "githubGPT|langchain-ai/langchain": {
+      "n": "LangChain",
+      "d": "Open-source framework for building LLM applications with chains, tools and agent abstractions."
+    },
+    "githubGPT|chroma-core/chroma": {
+      "n": "Chroma",
+      "d": "Open-source vector database commonly used for embedding retrieval in RAG apps."
+    },
+    "githubGPT|milvus-io/milvus": {
+      "n": "Milvus",
+      "d": "Distributed open-source vector database for large-scale similarity search."
+    },
+    "githubGPT|qdrant/qdrant": {
+      "n": "Qdrant",
+      "d": "Open-source vector search engine with filtering and hybrid retrieval."
+    },
+    "githubGPT|CherryHQ/cherry-studio": {
+      "n": "Cherry Studio",
+      "d": "Desktop multi-model AI assistant with local knowledge bases and multiple providers."
+    },
+    "githubGPT|Mintplex-Labs/anything-llm": {
+      "n": "AnythingLLM",
+      "d": "Open-source desktop and server app that turns documents into a Q&A knowledge base."
+    },
+    "githubGPT|gradio-app/gradio": {
+      "n": "Gradio",
+      "d": "Generate Web demos for machine-learning models in a few lines of Python."
+    },
+    "githubGPT|n8n-io/n8n": {
+      "n": "n8n",
+      "d": "Self-hostable workflow automation tool with AI and hundreds of integrations."
+    },
+    "githubGPT|streamlit/streamlit": {
+      "n": "Streamlit",
+      "d": "Open-source framework for turning Python scripts into data apps quickly."
+    },
+    "githubGPT|langgenius/dify": {
+      "n": "Dify",
+      "d": "Open-source LLM app development platform with orchestration, knowledge base and operations."
+    },
+    "githubGPT|facebookresearch/faiss": {
+      "n": "FAISS",
+      "d": "Meta's open-source library for efficient vector similarity search and clustering."
+    },
+    "githubGPT|Segment Anything Model(SAM)": {
+      "n": "Segment Anything Model (SAM)",
+      "d": "Code for SAM inference and links to download trained model checkpoints."
+    },
+    "githubGPT|xinsblog/try-llama-index": {
+      "n": "try-llama-index",
+      "d": "A hands-on project trying out LlamaIndex."
+    },
+    "githubGPT|AutoGPT - 中文版": {
+      "n": "AutoGPT - Chinese Edition",
+      "d": "Chinese edition of AutoGPT."
+    },
+    "githubGPT|yetone/openai-translator": {
+      "n": "OpenAI Translator",
+      "d": "ChatGPT API-based selection-translation browser extension and cross-platform desktop app."
+    },
+    "githubGPT|Github + ChatGPT 实现代码对话": {
+      "n": "Chat with GitHub Code via ChatGPT",
+      "d": "Two Python scripts showing how to use Streamlit, GPT-3.5-turbo and Deep Lake to build a chatbot that searches your datasets and lets you talk to a GitHub repo."
+    },
+    "githubGPT|集成GPT,开始跟PDF文档聊天": {
+      "n": "Chat with PDF via GPT",
+      "d": "One-on-one chat with PDFs: auto-chunk content, generate embeddings with a deep averaging encoder, run semantic search and pass relevant embeddings to OpenAI for accurate, fast answers."
+    },
+    "githubGPT|加快ChatGPT访问速度": {
+      "n": "Speed Up ChatGPT Access",
+      "d": "Access the service via access token with backend optimization that bypasses Cloudflare. Also handles peak-time limits, near-PLUS response speed, web/CLI/API modes and private deployment."
+    },
+    "aiFrameworks|ollama/ollama": {
+      "n": "Ollama",
+      "d": "One-click local tool for running and managing open-source LLMs across platforms."
+    },
+    "aiFrameworks|ggml-org/llama.cpp": {
+      "n": "llama.cpp",
+      "d": "C/C++ LLM inference engine supporting CPU and quantized models."
+    },
+    "aiFrameworks|vllm-project/vllm": {
+      "n": "vLLM",
+      "d": "High-throughput LLM inference and serving framework using PagedAttention."
+    },
+    "aiFrameworks|huggingface/transformers": {
+      "n": "Transformers",
+      "d": "Leading pretrained model library with unified loading and training for Transformer models."
+    },
+    "aiFrameworks|sgl-project/sglang": {
+      "n": "SGLang",
+      "d": "Efficient LLM inference and serving framework for complex generation workflows."
+    },
+    "aiFrameworks|InternLM/lmdeploy": {
+      "n": "LMDeploy",
+      "d": "LLM compression, deployment and inference toolkit supporting multiple backends."
+    },
+    "aiFrameworks|NVIDIA/TensorRT-LLM": {
+      "n": "TensorRT-LLM",
+      "d": "LLM inference optimization library for NVIDIA GPUs with high-throughput serving."
+    },
+    "aiFrameworks|AUTOMATIC1111/stable-diffusion-webui": {
+      "n": "Stable Diffusion WebUI",
+      "d": "Local Web UI for Stable Diffusion with extensions and multiple generation modes."
+    },
+    "aiFrameworks|comfyanonymous/ComfyUI": {
+      "n": "ComfyUI",
+      "d": "Node-based diffusion-model workflow UI for freely composing image-generation pipelines."
+    },
+    "aiFrameworks|microsoft/DeepSpeed": {
+      "n": "DeepSpeed",
+      "d": "Distributed LLM training and inference optimization library that greatly reduces VRAM usage."
+    },
+    "aiFrameworks|ggml-org/whisper.cpp": {
+      "n": "whisper.cpp",
+      "d": "C/C++ local inference implementation of the Whisper speech-recognition model."
+    },
+    "aiFrameworks|pytorch/pytorch": {
+      "n": "PyTorch",
+      "d": "Leading deep-learning framework with tensor computation and automatic differentiation."
+    },
+    "studyGPT|Prompt Engineering Guide": {
+      "n": "Prompt Engineering Guide",
+      "d": "Systematic prompt-engineering tutorial covering techniques, models and use cases."
+    },
+    "studyGPT|DeepLearning.AI": {
+      "n": "DeepLearning.AI",
+      "d": "Andrew Ng's team AI course platform with short courses and hands-on projects."
+    },
+    "studyGPT|arXiv": {
+      "n": "arXiv",
+      "d": "Open preprint platform and the main venue for the latest AI papers."
+    },
+    "studyGPT|LangChain 文档": {
+      "n": "LangChain Docs",
+      "d": "Official LangChain Python documentation and developer tutorials."
+    },
+    "studyGPT|Kaggle Learn": {
+      "n": "Kaggle Learn",
+      "d": "Free hands-on Kaggle micro-courses covering Python, machine learning and LLMs."
+    },
+    "studyGPT|Learn Prompting": {
+      "n": "Learn Prompting",
+      "d": "Open-source prompt-engineering course from beginner to advanced with multi-language versions."
+    },
+    "studyGPT|Anthropic 文档": {
+      "n": "Anthropic Docs",
+      "d": "Official Claude API documentation and prompt-engineering guide."
+    },
+    "studyGPT|OpenAI 文档": {
+      "n": "OpenAI Docs",
+      "d": "Official OpenAI API documentation covering models, endpoints and best practices."
+    },
+    "studyGPT|PlexPt/awesome-chatgpt-prompts-zh": {
+      "n": "Awesome ChatGPT Prompts (zh)",
+      "d": "Chinese guide to ChatGPT prompting across scenarios."
+    },
+    "studyGPT|ChatGPT 中文调教指南": {
+      "n": "ChatGPT Prompt Guide (zh)",
+      "d": "Chinese guide to ChatGPT prompting."
+    },
+    "studyGPT|元素法典——Novel AI 元素魔法全收录": {
+      "n": "Element Codex - Novel AI",
+      "d": "Complete collection of Novel AI element magic."
+    },
+    "studyGPT|指南针- Midjourney 学习导航": {
+      "n": "Compass - Midjourney Learning Guide",
+      "d": "A learning navigator for Midjourney."
+    },
+    "studyGPT|AutoGPT 4.11": {
+      "n": "AutoGPT 4.11",
+      "d": "AutoGPT 4.11 tutorial and resources."
+    },
+    "studyGPT|Hello from Learning Prompt": {
+      "n": "Hello from Learning Prompt",
+      "d": "Introductory tutorial from Learning Prompt."
+    },
+    "studyGPT|ChatGPT Prompt Engineering for Developers 中文版": {
+      "n": "ChatGPT Prompt Engineering for Developers (zh)",
+      "d": "Teaches developers how to build prompts and LLM applications on the OpenAI API."
+    },
+    "techBlog|Lil'Log": {
+      "n": "Lil'Log",
+      "d": "Lilian Weng's deep technical blog systematically covering LLMs and agents."
+    },
+    "techBlog|Anthropic Research": {
+      "n": "Anthropic Research",
+      "d": "Anthropic research blog on alignment, interpretability and model evaluation."
+    },
+    "techBlog|The Illustrated Transformer": {
+      "n": "The Illustrated Transformer",
+      "d": "Illustrated explanation of Transformer, BERT and related model principles."
+    },
+    "techBlog|The Batch": {
+      "n": "The Batch",
+      "d": "DeepLearning.AI's weekly AI newsletter tracking research and product developments."
+    },
+    "techBlog|OpenAI News": {
+      "n": "OpenAI News",
+      "d": "OpenAI official news and research releases."
+    },
+    "techBlog|ShinChven's Blog": {
+      "n": "ShinChven's Blog",
+      "d": "ShinChven's personal tech blog."
+    },
+    "techBlog|Stable Diffusion Prompt Note": {
+      "n": "Stable Diffusion Prompt Note",
+      "d": "Notes on Stable Diffusion prompting."
+    },
+    "techBlog|跟吴恩达和IsaFulford学提示词工程（初级开发者入门课程）": {
+      "n": "Prompt Engineering with Ng & Fulford",
+      "d": "Study notes: prompt engineering with Andrew Ng and Isa Fulford (beginner developer course)."
+    },
+    "aiNav|AIbase": {
+      "n": "AIbase",
+      "d": "Chinese AI news and tool library with product listings and rankings."
+    },
+    "aiNav|AIHub": {
+      "n": "AIHub",
+      "d": "Chinese AI tool and resource directory covering office, design and development."
+    },
+    "aiNav|Future Tools": {
+      "n": "Future Tools",
+      "d": "Curated AI tool directory marking free vs paid with brief descriptions."
+    },
+    "aiNav|TopAI.tools": {
+      "n": "TopAI.tools",
+      "d": "AI tool directory filterable by category and task."
+    },
+    "aiNav|Futurepedia": {
+      "n": "Futurepedia",
+      "d": "AI tool directory and tutorial site by use case with reviews."
+    },
+    "aiNav|There's An AI For That": {
+      "n": "There's An AI For That",
+      "d": "Task-based AI tool search directory with a large, constantly updated collection."
+    },
+    "aiNav|Toolify": {
+      "n": "Toolify",
+      "d": "AI tool leaderboard and category directory with traffic and popularity data."
+    },
+    "aiNav|AI工具集导航": {
+      "n": "AI Tool Collection",
+      "d": "500+ AI tools directory covering domestic and international tools."
+    },
+    "aiNav|发现最酷的互联网产品工具和智能神器!": {
+      "n": "Cool Internet Tools & Gems",
+      "d": "A collection of the coolest internet product tools and smart utilities."
+    },
+    "aiNav|无聊Ai工具导航 | —发现全球优质AIGC工具": {
+      "n": "Wuliao AI Directory",
+      "d": "AIGC tool directory exploring 1,240+ global AI tools, including free ChatGPT tools."
+    },
+    "likeGPT|填写你最喜欢使用的AI地址": {
+      "n": "Your Favorite AI",
+      "d": "Add links to your favorite AI tools here."
+    },
+    "hotTools|ChatGPT - 用GPT实现聊天机器人": {
+      "n": "ChatGPT",
+      "d": "A chatbot framework built on OpenAI's GPT-3 API."
+    },
+    "hotTools|Spring-cloud-gateway 中文文档": {
+      "n": "Spring Cloud Gateway Docs",
+      "d": "An API gateway built on the Spring ecosystem: Spring 6, Spring Boot 3 and Project Reactor."
+    },
+    "hotTools|xmind转化xls工具": {
+      "n": "XMind to XLS Converter",
+      "d": "Tool for converting XMind files to XLS."
+    },
+    "myBlog|彷徨的蜗牛的博客": {
+      "n": "Wandering Snail's Blog",
+      "d": "In search of direction."
+    },
+    "agentFrameworks|bytedance/deer-flow": {
+      "n": "deer-flow",
+      "d": "ByteDance's open-source long-horizon super-agent framework with sandbox, memory, skills and sub-agents for autonomous research, coding and creation."
+    },
+    "githubGPT|NVIDIA/auto-ontology": {
+      "n": "auto-ontology",
+      "d": "NVIDIA's open-source Python framework that builds a semantic-graph reasoning layer over data for deterministic query generation and explainable LLM agent analysis."
+    },
+    "agentFrameworks|vercel-labs/agent-browser": {
+      "n": "agent-browser",
+      "d": "Vercel's open-source Rust browser-automation CLI that reads pages via the accessibility tree and lets AI agents operate elements step by step, failing loudly."
+    },
+    "githubGPT|homeassistant-ai/ha-mcp": {
+      "n": "ha-mcp",
+      "d": "Lets Claude, ChatGPT and other AI assistants configure and automate Home Assistant smart devices in natural language via MCP."
+    },
+    "aiCode|The-PR-Agent/pr-agent": {
+      "n": "pr-agent",
+      "d": "Open-source AI code-review assistant that generates review comments for pull requests, supporting multiple LLMs and major code-hosting platforms."
+    },
+    "agentFrameworks|vercel-labs/agent-desktop": {
+      "n": "agent-desktop",
+      "d": "Vercel Labs' open-source CLI that lets AI agents identify and operate desktop apps via the system accessibility tree, with headless and cross-platform support."
+    },
+    "aiVideo|heygen-com/hyperframes": {
+      "n": "hyperframes",
+      "d": "HeyGen's open-source TypeScript video-rendering framework that deterministically outputs HTML, CSS and animations to MP4 for AI agents to batch-produce video."
+    },
+    "agentFrameworks|langflow-ai/langflow": {
+      "n": "langflow",
+      "d": "Open-source visual drag-and-drop tool for building AI agents and workflows, with major LLM support and API deployment."
+    },
+    "aiVideo|harry0703/MoneyPrinterTurbo": {
+      "n": "MoneyPrinterTurbo",
+      "d": "Open-source workflow that uses LLMs to auto-generate scripts, voiceovers and subtitles and compose HD short videos in one click."
+    },
+    "githubGPT|TauricResearch/TradingAgents": {
+      "n": "TradingAgents",
+      "d": "Multi-agent LLM financial-trading framework simulating analysts, researchers and traders collaborating on stock selection and investment decisions."
+    },
+    "githubGPT|github/spec-kit": {
+      "n": "spec-kit",
+      "d": "GitHub's spec-driven development (SDD) toolkit guiding AI from requirements to code in phases via natural-language specs."
+    },
+    "agentFrameworks|openclaw/openclaw": {
+      "n": "openclaw",
+      "d": "Open-source personal AI assistant that performs real tasks on any OS and platform with data self-ownership, MIT licensed."
+    },
+    "ragKnowledge|unclecode/crawl4ai": {
+      "n": "crawl4ai",
+      "d": "Open-source web crawler for LLMs and AI agents that turns pages into LLM-ready Markdown with self-hosting support."
+    },
+    "agentFrameworks|browser-use/browser-use": {
+      "n": "browser-use",
+      "d": "Open-source browser-agent framework letting LLMs auto-click, type and complete tasks in real browsers, compatible with any LLM."
+    },
+    "aiVideo|Clipwright": {
+      "n": "Clipwright",
+      "d": "AI-agent video-production backend that uses MCP or API to break down viral shorts and generate narrated ad MP4s, quoting a price before rendering."
+    },
+    "aiAgent|Cognee": {
+      "n": "Cognee",
+      "d": "Open-source AI agent memory platform building cross-session persistent memory via knowledge graphs and vector retrieval, with self-hosting and cloud."
+    },
+    "aiChat|magpie": {
+      "n": "magpie",
+      "d": "Local AI model gateway unifying DeepSeek, Claude, Kimi and other subscriptions for coding agents to switch on demand."
+    },
+    "aiChat|webAI": {
+      "n": "webAI",
+      "d": "AI app that runs small models locally on Mac, building multiple AI personas to collaborate on private documents with no cloud upload and no token fees."
+    },
+    "aiVideo|DomoAI": {
+      "n": "DomoAI",
+      "d": "Online AI video and animation platform for text-, image- or video-based generation, stylization and quality enhancement."
+    },
+    "aiFrameworks|Ollama": {
+      "n": "Ollama",
+      "d": "Tool for running open-source LLMs locally or in the cloud on macOS, Windows and Linux with a single command."
+    },
+    "aiFrameworks|FareedKhan-dev/kimi-k3-in-c": {
+      "n": "kimi-k3-in-c",
+      "d": "Pure C99 inference engine running the 2.78-trillion-parameter Kimi K3 model on a single-core CPU with 8GB RAM, zero dependencies."
+    },
+    "githubGPT|nv-tlabs/lyra": {
+      "n": "lyra",
+      "d": "NVIDIA's open-source generative 3D world model that creates explorable 3D scenes from input images, with open code and pretrained weights."
+    }
   }
 }

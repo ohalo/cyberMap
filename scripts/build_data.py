@@ -356,7 +356,7 @@ def render_html(payload: dict) -> str:
     field_rows = [
         ("name", "string", "站点名称"),
         ("url", "string", "官网或仓库地址"),
-        ("category", "string", "分类 key，如 <code>aiChat</code> / <code>dailyAI_oss</code>"),
+        ("category", "string", "分类 key，如 <code>aiChat</code> / <code>githubGPT</code>"),
         ("category_name", "string", "分类中文名"),
         ("group", "string", "所属父分组"),
         ("date", "string|null", "收录日期 YYYY-MM-DD，无尾注则为 null"),

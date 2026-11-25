@@ -18,7 +18,7 @@
 * 配额闸门 + 分批覆盖：无 ETag 的「新仓库」是冷请求，每天限量（默认 35 个），
   并持续监控响应头 ``X-RateLimit-Remaining``，低于保留值（默认 6）即停手，
   未覆盖的标 ``pending`` 留到次日。全站约 66 个 GitHub 项目，2 天内全量收敛。
-  优先新收录（dailyAI_* 分类排最前）的项目建立基线，用户最关心的先上线。
+  优先新收录（githubGPT 等开源类分类排最前）的项目建立基线，用户最关心的先上线。
 * 同日闸门：若快照 generated_at 就是今天且非 --force，直接跳过（零请求、零写入），
   防止同日二次触发重复烧配额。产物缺失 / 时间戳损坏 / --force 时必跑。
 * 三态网络处理：403/429 判限流（停手 + warning，不误判仓库异常）；404 跳过；
@@ -60,11 +60,10 @@ except ImportError as exc:  # pragma: no cover
 
 DATA_REL = Path("source/_data/webstack.yml")
 OUT_REL = Path("source/daily/updates.json")
-# 追踪范围：全部分类里的 GitHub 仓库（每日收录按性质路由进常设分类后，
-# 开源项目可能落在 githubGPT / aiFrameworks 等常设分类）。dailyAI_* 排最前，
+# 追踪范围：全部分类里的 GitHub 仓库（每日收录按性质路由进常设分类，
+# 开源项目落在 githubGPT / aiFrameworks 等常设分类）。githubGPT 排最前，
 # 保持「新收录优先建基线」的顺序语义。
 TRACK_CATEGORIES = (
-    "dailyAI_oss", "dailyAI_tool", "dailyAI_model",
     "githubGPT", "aiFrameworks", "ragKnowledge", "agentFrameworks", "GPTModels",
     "aiChat", "aiImage", "aiVideo", "aiCode", "aiOffice", "aiAgent",
     "studyGPT", "techBlog", "aiNav", "likeGPT", "hotTools", "myBlog",

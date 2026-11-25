@@ -59,12 +59,9 @@ HEALTH_REL = Path("source/daily/health.json")
 UPDATES_REL = Path("source/daily/updates.json")
 
 # 分类 -> (中文标签, 短名)。顺序决定同一天内卡片的展示顺序。
-# 覆盖全部 18 个分类：每日收录按性质路由进常设分类后，
-# 带日期尾注的常设分类条目同样进入时间轴/标签云/搜索，不再只看 dailyAI_*。
+# 覆盖全部 20 个分类：每日收录按性质路由进常设分类，
+# 带日期尾注的常设分类条目同样进入时间轴/标签云/搜索。
 CATEGORY_LABELS = OrderedDict([
-    ("dailyAI_oss", ("开源项目", "oss")),
-    ("dailyAI_tool", ("工具官网", "tool")),
-    ("dailyAI_model", ("模型框架", "model")),
     ("aiChat", ("对话与搜索", "chat")),
     ("aiImage", ("图像与设计", "image")),
     ("aiVideo", ("视频与音频", "video")),
@@ -92,11 +89,11 @@ CATEGORY_LABELS = OrderedDict([
 #   学习资源流 = 提示词与教程 + 技术博客 + AI 导航站 + 社区与问卷 + 我的博客
 # feed.xml 仍是混合全量流，覆盖所有分类。
 CATEGORY_FEEDS = OrderedDict([
-    ("feed-oss.xml", ("开源项目", ("dailyAI_oss", "githubGPT", "aiFrameworks",
+    ("feed-oss.xml", ("开源项目", ("githubGPT", "aiFrameworks",
                                   "ragKnowledge", "agentFrameworks"))),
-    ("feed-tool.xml", ("工具官网", ("dailyAI_tool", "aiChat", "aiImage", "aiVideo",
+    ("feed-tool.xml", ("工具官网", ("aiChat", "aiImage", "aiVideo",
                                    "aiCode", "aiOffice", "aiAgent", "hotTools"))),
-    ("feed-model.xml", ("模型框架", ("dailyAI_model", "GPTModels"))),
+    ("feed-model.xml", ("模型框架", ("GPTModels",))),
     ("feed-learn.xml", ("学习与资源", ("studyGPT", "techBlog", "aiNav", "likeGPT", "myBlog"))),
 ])
 
@@ -1059,8 +1056,7 @@ def changes_html(updates: dict) -> str:
         return ""
 
     generated = (updates.get("generated_at") or "").replace("T", " ")[:16]
-    CAT_LABEL = {"dailyAI_oss": "开源", "dailyAI_tool": "工具", "dailyAI_model": "模型",
-                 "githubGPT": "GitHub", "aiFrameworks": "框架", "GPTModels": "模型",
+    CAT_LABEL = {"githubGPT": "GitHub", "aiFrameworks": "框架", "GPTModels": "模型",
                  "ragKnowledge": "RAG", "agentFrameworks": "智能体框架",
                  "aiChat": "对话", "aiImage": "图像", "aiVideo": "视频", "aiCode": "代码",
                  "aiOffice": "办公", "aiAgent": "智能体", "studyGPT": "教程",
@@ -1329,7 +1325,7 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
     parts += [
         "</div>",  # /dy-timeline
         '<footer class="dy-footer">',
-        f'数据来源：<a href="{esc(root)}/">cyberMap</a> 的 <code>dailyAI_*</code> 分类，'
+        f'数据来源：<a href="{esc(root)}/">cyberMap</a> 全站导航分类，'
         "每条收录前均经过 HTTP 实探、GitHub 元数据与 AI 相关性核验；"
         '徽章明细见 <a href="/daily/verify.json">收录质量回执数据</a>。'
         "日期取自描述尾注「· YYYY-MM-DD 收录」。",
