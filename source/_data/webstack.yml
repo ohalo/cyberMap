@@ -66,6 +66,15 @@ custom:
     |- # 以下内容插入到<head></head>标签内，可设置多行，注意每行开头至少四个空格
     <!-- cyberMap 重设计样式：主题目录是 submodule，所有自定义样式从这里注入 -->
     <link rel="stylesheet" href="/css/cybermap.css">
+    <!-- 赛博默认夜行：首次访问（无 night cookie）直接进入深色赛博外观；
+         主题 footer.js 读到 night=1 会恢复 body.night，用户仍可手动切浅色并被记住 -->
+    <script>
+    (function () {
+      if (!/(?:^|;\s*)night\s*=/.test(document.cookie)) {
+        document.cookie = 'night=1;path=/;max-age=31536000';
+      }
+    })();
+    </script>
     <!-- canonical 按当前路径动态生成：custom.head 全站共享，写死会把归档页/文章页都指向首页 -->
     <script>
     (function () {

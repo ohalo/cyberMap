@@ -99,9 +99,9 @@
           '<nav class="cm-footer-nav" aria-label="页脚导航">' +
             '<div class="cm-footer-col"><h5>浏览</h5>' +
               '<a href="/">全部站点</a>' +
-              '<a href="/#dailyAI_oss">开源项目</a>' +
-              '<a href="/#dailyAI_tool">工具官网</a>' +
-              '<a href="/#dailyAI_model">模型框架</a></div>' +
+              '<a href="/#aiChat">对话与搜索</a>' +
+              '<a href="/#githubGPT">GitHub 项目</a>' +
+              '<a href="/#studyGPT">提示词与教程</a></div>' +
             '<div class="cm-footer-col"><h5>站点功能</h5>' +
               '<a href="/rank/">AI 插件榜</a>' +
               '<a href="/daily/">每日速递</a>' +
@@ -201,6 +201,44 @@
         });
       })
       .catch(function () { /* 离线 / JSON 不可达：不显示徽章，不影响导航 */ });
+  }
+
+  /* ---- LIVE 动态流：读 /daily/updates.json.recent 前 3 条项目动态 ----
+     借鉴竞品（AIbase「AI今日要闻」/ ai-bot「最新收录」）把时效内容提到首屏。
+     recent[i] 形如 { name, url, date, ... }（日期为发现日期）；网络失败静默隐藏，
+     不影响导航。 */
+  function injectLiveTicker() {
+    var ticker = document.querySelector('.cyber-hero .cm-ticker');
+    if (!ticker || ticker.dataset.cmLoaded || !window.fetch) return;
+    ticker.dataset.cmLoaded = '1';
+    var ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
+    var timer = ctrl ? setTimeout(function () { ctrl.abort(); }, 8000) : null;
+    var opts = ctrl ? { signal: ctrl.signal, cache: 'no-store' } : { cache: 'no-store' };
+    fetch('/daily/updates.json', opts)
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (data) {
+        if (timer) clearTimeout(timer);
+        var recent = (data && data.recent) || [];
+        if (!recent.length) { ticker.style.display = 'none'; return; }
+        var esc = function (s) {
+          return String(s || '').replace(/[&<>"']/g, function (c) {
+            return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+          });
+        };
+        var items = recent.slice(0, 3).map(function (rec) {
+          var what = rec.has_push ? '有新提交'
+            : (rec.star_delta ? '+' + rec.star_delta + ' 星' : '纳入雷达追踪');
+          return '<a href="' + esc(rec.url) + '" target="_blank" rel="noopener" ' +
+            'title="项目动态 · 发现于 ' + esc(rec.date || '—') + '">' +
+            '<b>' + esc(rec.name) + '</b> · ' + esc(what) + '</a>';
+        }).join('');
+        ticker.innerHTML =
+          '<span class="cm-ticker-label"><i class="fas fa-satellite-dish" aria-hidden="true"></i>LIVE</span>' +
+          '<div class="cm-ticker-items">' + items + '</div>';
+      })
+      .catch(function () {
+        if (ticker) ticker.style.display = 'none';
+      });
   }
 
   function boot() {
@@ -344,13 +382,18 @@
       });
     })();
 
-    /* ---- 4. Hero 品牌区 + 实时统计 ---- */
+    /* ---- 4. Hero 品牌区 + 实时统计 + HUD 时钟 ---- */
     var sousuo = main.querySelector('section.sousuo');
     if (sousuo && !main.querySelector('.cyber-hero')) {
       var hero = el('div', 'cyber-hero',
         '<div class="cyber-kicker"><span>&#10022;</span> CYBERMAP · AI NAVIGATION</div>' +
         '<h1>发现好用的 <span class="cyber-gradient">AI 工具</span></h1>' +
-        '<p>精选 AI 网站、开源项目与模型资源，每个链接都经过真实访问验证 · 每日自动收录</p>');
+        '<p>接入 AI 网络节点 · 每日扫描收录 · 每条链接真实访问验证</p>' +
+        '<div class="cm-hud">' +
+        '<span class="cm-hud-dot" aria-hidden="true"></span>' +
+        '<span>SYSTEM ONLINE</span>' +
+        '<span class="cm-hud-clock" id="cm-hud-clock">--:--:--</span>' +
+        '</div>');
       var stats = el('div', 'cyber-stats');
       [
         [String(cols.length), '收录站点'],
@@ -361,7 +404,21 @@
           '<strong>' + pair[0] + '</strong><span>' + pair[1] + '</span>'));
       });
       hero.appendChild(stats);
+      /* LIVE 动态流容器：由 injectLiveTicker 异步填充（竞品借鉴：时效内容前置） */
+      hero.appendChild(el('div', 'cm-ticker', ''));
       sousuo.insertBefore(hero, sousuo.firstChild);
+      /* HUD 时钟：HH:MM:SS，每秒走字 */
+      var clockEl = hero.querySelector('#cm-hud-clock');
+      if (clockEl) {
+        var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+        var tick = function () {
+          var d = new Date();
+          clockEl.textContent = pad(d.getHours()) + ':' +
+            pad(d.getMinutes()) + ':' + pad(d.getSeconds());
+        };
+        tick();
+        setInterval(tick, 1000);
+      }
     }
 
     /* ---- 5. 分组标题加站点计数徽章 ---- */
@@ -508,6 +565,9 @@
 
     /* ---- 9. 站点新鲜度徽章：异步注入，失败不影响导航渲染 ---- */
     injectFreshnessBadges();
+
+    /* ---- 10. LIVE 项目动态流：异步填充，失败静默隐藏 ---- */
+    injectLiveTicker();
   }
 
   function start() {

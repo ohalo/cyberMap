@@ -50,45 +50,50 @@
   --cm-shadow-card: 0 4px 18px rgba(19, 32, 62, .055), 0 1px 2px rgba(19, 32, 62, .04);
   --cm-shadow-hover: 0 16px 34px rgba(38, 52, 92, .15), 0 3px 8px rgba(38, 52, 92, .06);
   --cm-shadow-topbar: 0 8px 28px rgba(19, 32, 62, .06);
+  --cm-neon-text: none;
 }
 
 body.night {
-  --cm-bg: #080d1a;
-  --cm-glow-a: rgba(34, 211, 238, .16);
-  --cm-glow-b: rgba(139, 92, 246, .18);
-  --cm-grid: rgba(148, 163, 184, .045);
+  /* 赛博朋克霓虹：深空底 + 青/品红双主色 + 品红点缀 */
+  --cm-bg: #04060e;
+  --cm-glow-a: rgba(0, 229, 255, .13);
+  --cm-glow-b: rgba(255, 46, 166, .11);
+  --cm-grid: rgba(0, 229, 255, .055);
 
-  --cm-surface: rgba(17, 25, 44, .72);
-  --cm-surface-solid: #121a2e;
-  --cm-sidebar: rgba(12, 19, 36, .82);
-  --cm-topbar: rgba(12, 19, 36, .76);
-  --cm-card: rgba(20, 29, 50, .72);
-  --cm-icon-bg: rgba(35, 47, 74, .65);
+  --cm-surface: rgba(10, 16, 32, .72);
+  --cm-surface-solid: #0b1122;
+  --cm-sidebar: rgba(7, 11, 24, .84);
+  --cm-topbar: rgba(7, 11, 24, .78);
+  --cm-card: rgba(12, 19, 38, .74);
+  --cm-icon-bg: rgba(0, 229, 255, .07);
 
-  --cm-border: rgba(148, 163, 184, .14);
-  --cm-border-strong: rgba(148, 163, 184, .26);
-  --cm-text: #eef3ff;
-  --cm-text-soft: #c3cee4;
-  --cm-text-muted: #98a6c2;
-  --cm-text-faint: #6d7c99;
+  --cm-border: rgba(0, 229, 255, .14);
+  --cm-border-strong: rgba(0, 229, 255, .30);
+  --cm-text: #e8f6ff;
+  --cm-text-soft: #b7c9df;
+  --cm-text-muted: #8ba0bd;
+  --cm-text-faint: #5e7396;
 
-  --cm-accent: #7c8cff;
-  --cm-accent-2: #22d3ee;
-  --cm-accent-soft: rgba(124, 140, 255, .55);
-  --cm-accent-wash: rgba(124, 140, 255, .12);
-  --cm-chip: rgba(124, 140, 255, .15);
+  --cm-accent: #00e5ff;
+  --cm-accent-2: #ff2ea6;
+  --cm-accent-soft: rgba(0, 229, 255, .45);
+  --cm-accent-wash: rgba(0, 229, 255, .10);
+  --cm-chip: rgba(0, 229, 255, .12);
 
-  --cm-fresh-active: #6ee7b7;
-  --cm-fresh-active-bg: rgba(52, 211, 153, .13);
-  --cm-fresh-recent: #fbbf24;
-  --cm-fresh-recent-bg: rgba(251, 191, 36, .13);
-  --cm-fresh-idle: #94a3b8;
-  --cm-fresh-idle-bg: rgba(148, 163, 184, .14);
+  --cm-fresh-active: #34f5c5;
+  --cm-fresh-active-bg: rgba(52, 245, 197, .12);
+  --cm-fresh-recent: #ffd166;
+  --cm-fresh-recent-bg: rgba(255, 209, 102, .12);
+  --cm-fresh-idle: #7c8db0;
+  --cm-fresh-idle-bg: rgba(124, 141, 176, .14);
 
-  --cm-shadow-sm: 0 2px 14px rgba(0, 0, 0, .28);
-  --cm-shadow-card: 0 6px 24px rgba(0, 0, 0, .28);
-  --cm-shadow-hover: 0 18px 40px rgba(0, 0, 0, .45), 0 0 0 1px rgba(124, 140, 255, .18);
-  --cm-shadow-topbar: 0 10px 30px rgba(0, 0, 0, .3);
+  --cm-shadow-sm: 0 2px 14px rgba(0, 0, 0, .4);
+  --cm-shadow-card: 0 6px 24px rgba(0, 0, 0, .38);
+  --cm-shadow-hover: 0 18px 40px rgba(0, 0, 0, .5),
+                     0 0 22px rgba(0, 229, 255, .14),
+                     0 0 44px rgba(255, 46, 166, .07);
+  --cm-shadow-topbar: 0 10px 30px rgba(0, 0, 0, .45);
+  --cm-neon-text: 0 0 8px rgba(0, 229, 255, .55), 0 0 26px rgba(0, 229, 255, .22);
 }
 
 /* ---------------------------------------------------------------- 基础 */
@@ -1441,4 +1446,217 @@ button#search-btn.search-btn {
 .main-content .xe-widget { position: relative; }
 @media (max-width: 600px) {
   .cm-fresh-badge { font-size: 9px; padding: 1px 5px; }
+}
+
+/* ==========================================================================
+   赛博朋克氛围层（2026-11-25）
+   --------------------------------------------------------------------------
+   夜间模式为默认脸面（custom.head 无 cookie 时强制 night=1）：深空底、
+   霓虹青 × 品红双色、CRT 扫描线、网格漂移、霓虹标题与卡片辉光。
+   全部可被 prefers-reduced-motion 关停；浅色模式保持浅色但共享强调色。
+   ========================================================================== */
+
+/* ---- 动态背景：极光辉光缓慢呼吸 + 网格缓慢漂移 ---- */
+@keyframes cm-aurora {
+  0%, 100% { opacity: .75; }
+  50%      { opacity: 1; }
+}
+@keyframes cm-grid-pan {
+  from { background-position: 10% -10%, 96% 2%, 0 0, 0 0; }
+  to   { background-position: 10% -10%, 96% 2%, 32px 32px, 32px 32px; }
+}
+body.night.page-body {
+  animation: cm-grid-pan 14s linear infinite alternate;
+}
+body.night .cyber-hero { animation: cm-aurora 7s ease-in-out infinite; }
+
+/* ---- CRT 扫描线 + 暗角：盖在最上层，不拦截任何交互 ---- */
+body.night::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, .16) 0px, rgba(0, 0, 0, .16) 1px,
+      transparent 1px, transparent 3px
+    ),
+    radial-gradient(120% 90% at 50% 40%, transparent 60%, rgba(0, 0, 0, .42) 100%);
+  mix-blend-mode: multiply;
+  opacity: .55;
+}
+
+/* ---- 顶栏：底部霓虹描边 ---- */
+body.night .navbar.user-info-navbar {
+  border-bottom-color: rgba(0, 229, 255, .22) !important;
+  box-shadow: 0 1px 0 rgba(255, 46, 166, .12), 0 10px 30px rgba(0, 0, 0, .45) !important;
+}
+
+/* ---- 分组标题：霓虹光晕 + 端点标记 ---- */
+body.night .main-content > h4.text-gray {
+  text-shadow: var(--cm-neon-text);
+  letter-spacing: .03em;
+}
+body.night .main-content > h4.text-gray::after {
+  content: "";
+  flex: 1 1 auto;
+  height: 1px;
+  margin-left: 16px;
+  background: linear-gradient(90deg,
+    rgba(0, 229, 255, .35), rgba(255, 46, 166, .22) 55%, transparent 92%);
+}
+body.night .main-content > h4.text-gray > i.linecons-tag { text-shadow: var(--cm-neon-text); }
+
+/* ---- Hero：双色霓虹大标题（渐变流动） + HUD 状态条 ---- */
+@keyframes cm-grad-flow {
+  from { background-position: 0% 50%; }
+  to   { background-position: 200% 50%; }
+}
+body.night .cyber-hero h1 .cyber-gradient {
+  background: linear-gradient(100deg,
+    #00e5ff, #7df9ff 25%, #ff2ea6 55%, #00e5ff 90%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: cm-grad-flow 6s linear infinite alternate;
+  filter: drop-shadow(0 0 12px rgba(0, 229, 255, .30));
+}
+.cyber-hero .cm-hud {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 20px;
+  padding: 7px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--cm-border);
+  background: var(--cm-surface);
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: .08em;
+  color: var(--cm-text-muted);
+  font-variant-numeric: tabular-nums;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+.cm-hud .cm-hud-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--cm-accent);
+  box-shadow: 0 0 8px var(--cm-accent);
+  animation: cm-aurora 2.2s ease-in-out infinite;
+}
+.cm-hud .cm-hud-clock { color: var(--cm-accent); font-weight: 750; }
+@media (max-width: 600px) { .cyber-hero .cm-hud { gap: 9px; padding: 6px 11px; font-size: 10px; } }
+
+/* ---- LIVE 动态流：竞品调研借鉴（时效内容前置） ----
+   数据来自 /daily/updates.json.recent，最新 3 条项目动态；无数据静默隐藏。 */
+.cm-ticker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 820px;
+  margin: 14px auto 0;
+  padding: 9px 16px;
+  border-radius: 12px;
+  border: 1px dashed var(--cm-border-strong);
+  background: var(--cm-surface);
+  font-size: 12px;
+  color: var(--cm-text-muted);
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+.cm-ticker-label {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--cm-chip);
+  color: var(--cm-accent) !important;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .14em;
+}
+.cm-ticker-items {
+  display: flex;
+  gap: 22px;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.cm-ticker-items a {
+  color: var(--cm-text-soft) !important;
+  text-decoration: none !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.cm-ticker-items a:hover { color: var(--cm-accent) !important; }
+.cm-ticker-items a b { color: var(--cm-text); font-weight: 700; }
+.cm-ticker-items a b:hover { color: var(--cm-accent); }
+@media (max-width: 600px) {
+  .cm-ticker { margin-top: 10px; padding: 8px 11px; gap: 8px; }
+  .cm-ticker-items { gap: 14px; font-size: 11px; }
+}
+
+/* ---- 卡片：夜间霓虹辉光（叠加在既有 hover 之上） ---- */
+body.night .main-content .xe-widget.xe-conversations.box2::before {
+  background: linear-gradient(90deg, var(--cm-accent), var(--cm-accent-2), var(--cm-accent));
+  height: 2px;
+  box-shadow: 0 0 12px rgba(0, 229, 255, .5);
+}
+body.night .main-content .xe-widget.xe-conversations.box2:hover {
+  border-color: rgba(0, 229, 255, .38) !important;
+}
+body.night .main-content .xe-widget .xe-user-img img.lozad {
+  border-color: rgba(0, 229, 255, .2);
+}
+body.night .main-content .xe-widget a.xe-user-name {
+  transition: color .18s ease, text-shadow .18s ease;
+}
+body.night .main-content .xe-widget.xe-conversations.box2:hover a.xe-user-name {
+  color: var(--cm-accent) !important;
+  text-shadow: 0 0 10px rgba(0, 229, 255, .35);
+}
+
+/* ---- 搜索框：霓虹聚焦环 ---- */
+body.night .search-box:focus-within {
+  border-color: rgba(0, 229, 255, .5) !important;
+  box-shadow: 0 12px 34px rgba(0, 0, 0, .5),
+              0 0 22px rgba(0, 229, 255, .18),
+              0 0 0 3px rgba(0, 229, 255, .10) !important;
+}
+body.night .search-btn {
+  box-shadow: 0 6px 18px rgba(0, 229, 255, .25), 0 0 16px rgba(255, 46, 166, .18) !important;
+}
+body.night .search-btn:hover { filter: brightness(1.15) saturate(1.1); }
+
+/* ---- 侧栏：父分组图标霓虹、收起浮层描边 ---- */
+body.night .sidebar-menu .main-menu > li > a > i { text-shadow: var(--cm-neon-text); }
+body.night .sidebar-menu .main-menu > li > ul > li > a.smooth.cyber-active {
+  text-shadow: 0 0 9px rgba(0, 229, 255, .4);
+}
+body.night .cm-features { border-color: rgba(0, 229, 255, .18); }
+
+/* ---- Footer：logo 徽标霓虹 ---- */
+body.night .cm-footer-logo-mark { box-shadow: 0 0 18px rgba(0, 229, 255, .35); }
+body.night .cm-footer-logo-word b { text-shadow: 0 0 10px rgba(255, 46, 166, .45); }
+
+/* ---- 新鲜度徽章夜间微辉光 ---- */
+body.night .cm-fresh-badge.active i { box-shadow: 0 0 6px var(--cm-fresh-active); }
+body.night .cm-fresh-badge.recent i { box-shadow: 0 0 6px var(--cm-fresh-recent); }
+
+/* ---- 尊重动效偏好：关停全部氛围动画 ---- */
+@media (prefers-reduced-motion: reduce) {
+  body.night.page-body { animation: none !important; }
+  body.night .cyber-hero { animation: none !important; }
+  body.night .cyber-hero h1 .cyber-gradient { animation: none !important; }
+  body.night::after { content: none !important; }
+  .cm-hud .cm-hud-dot { animation: none !important; }
 }
