@@ -617,7 +617,9 @@ body.night .dy-witem-name{max-width:180px;font-family:"CM Mono",monospace;font-s
 body.night .dy-watch-note{font-family:"CM Mono",monospace;font-size:10px}
 body.night .dy-day-head h2{font-family:"CM Chakra",sans-serif;font-size:20px;font-weight:900}
 body.night .dy-card{border-radius:2px;padding:12px}
-body.night .dy-card-name{font-family:"CM Chakra",sans-serif}
+body.night .dy-card-name{display:inline-block;font-family:"CM Chakra",sans-serif}
+body.night .dy-card .dy-tag{margin-left:8px}
+body.night .dy-flabel{display:none}
 body.night .dy-verify{border-radius:2px}
 body.night .dy-morehint{
   display:block!important;grid-column:1;grid-row:6;margin-top:2px;
@@ -653,7 +655,7 @@ body.night .dy-morehint{
 <div class="dy-stat"><span>累计收录</span><strong>263</strong></div>
 <div class="dy-stat"><span>每日期数</span><strong>13</strong></div>
 <div class="dy-stat"><span>最近更新</span><strong>2026-11-25</strong></div>
-<div class="dy-stat"><span>生成时间</span><strong>11-25 18:39</strong></div>
+<div class="dy-stat"><span>生成时间</span><strong>11-25 18:42</strong></div>
 </div></section>
 <div class="dy-console">
 <section class="dy-receipt" aria-label="收录质量回执"><div class="dy-funnel dy-design-only"><div class="dy-funnel-title">当日收录漏斗 / TODAY FUNNEL</div><div class="dy-funnel-grid"><div class="dy-funnel-node"><b>15</b><span>候选</span></div><div class="dy-funnel-node"><b>11</b><span>核验通过</span></div><div class="dy-funnel-node"><b>10</b><span>收录</span></div></div></div><div class="dy-receipt-head"><span class="dy-receipt-title">收录质量回执</span><span class="dy-receipt-date">最近核验日 2026-11-25 · 每条均经 HTTP 实探、AI 相关性与去重校验</span></div><div class="dy-receipt-flow"><span class="dy-receipt-node ">候选 15</span><span class="dy-receipt-arrow">→</span><span class="dy-receipt-node ">通过 11</span><span class="dy-receipt-arrow">→</span><span class="dy-receipt-node ">复核 0</span><span class="dy-receipt-arrow">→</span><span class="dy-receipt-node ">淘汰 4</span><span class="dy-receipt-arrow">→</span><span class="dy-receipt-node ok">收录 10</span></div><div class="dy-receipt-meta">累计核验 <b>206</b> 个候选、通过 <b>164</b> 条、实际收录 <b>104</b> 个站点（收录率 50%）。「复核 / 淘汰」为经人工判断未收录的候选，不代表站点失效。完整证据数据：<a href="/daily/verify.json">/daily/verify.json</a>，每张卡片的徽章可悬停查看单条明细。</div></section>
@@ -727,16 +729,28 @@ body.night .dy-morehint{
 </div>
 <footer class="dy-footer">
 数据来源：<a href="https://cybermap.halo26812.eu.org/">cyberMap</a> 全站导航分类，每条收录前均经过 HTTP 实探、GitHub 元数据与 AI 相关性核验；徽章明细见 <a href="/daily/verify.json">收录质量回执数据</a>。日期取自描述尾注「· YYYY-MM-DD 收录」。
-<br>共 263 个站点、13 期（其中 104 条有明确日期）；最后生成于 2026-11-25 18:39 (UTC+8)。
+<br>共 263 个站点、13 期（其中 104 条有明确日期）；最后生成于 2026-11-25 18:42 (UTC+8)。
 </footer>
 </main>
 <script>
 (function(){
   var body=document.body;
   function isNight(){return /(?:^|;\s*)night=1(?:;|$)/.test(document.cookie);}
+  // 03 号板日期组用 ISO 日期；经典态保留原来的中文日期文案
+  function syncDayDates(){
+    var cyber=body.classList.contains('night');
+    Array.prototype.forEach.call(document.querySelectorAll('.dy-day[id^="day-"]'),function(day){
+      var h=day.querySelector('.dy-day-head h2');
+      if(!h)return;
+      if(h.dataset.cmOriginal==null)h.dataset.cmOriginal=h.textContent;
+      var key=day.id.slice(4);
+      h.textContent=(cyber&&/^\d{4}-\d{2}-\d{2}$/.test(key))?key:h.dataset.cmOriginal;
+    });
+  }
   function apply(){
     var cyber=isNight();
     body.classList.toggle('night',cyber);
+    syncDayDates();
     var b=document.getElementById('dy-theme');
     if(b){
       b.setAttribute('data-skin',cyber?'cyber':'classic');

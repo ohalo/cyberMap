@@ -743,7 +743,9 @@ body.night .dy-witem-name{max-width:180px;font-family:"CM Mono",monospace;font-s
 body.night .dy-watch-note{font-family:"CM Mono",monospace;font-size:10px}
 body.night .dy-day-head h2{font-family:"CM Chakra",sans-serif;font-size:20px;font-weight:900}
 body.night .dy-card{border-radius:2px;padding:12px}
-body.night .dy-card-name{font-family:"CM Chakra",sans-serif}
+body.night .dy-card-name{display:inline-block;font-family:"CM Chakra",sans-serif}
+body.night .dy-card .dy-tag{margin-left:8px}
+body.night .dy-flabel{display:none}
 body.night .dy-verify{border-radius:2px}
 body.night .dy-morehint{
   display:block!important;grid-column:1;grid-row:6;margin-top:2px;
@@ -765,9 +767,21 @@ JS = r"""
 (function(){
   var body=document.body;
   function isNight(){return /(?:^|;\s*)night=1(?:;|$)/.test(document.cookie);}
+  // 03 号板日期组用 ISO 日期；经典态保留原来的中文日期文案
+  function syncDayDates(){
+    var cyber=body.classList.contains('night');
+    Array.prototype.forEach.call(document.querySelectorAll('.dy-day[id^="day-"]'),function(day){
+      var h=day.querySelector('.dy-day-head h2');
+      if(!h)return;
+      if(h.dataset.cmOriginal==null)h.dataset.cmOriginal=h.textContent;
+      var key=day.id.slice(4);
+      h.textContent=(cyber&&/^\d{4}-\d{2}-\d{2}$/.test(key))?key:h.dataset.cmOriginal;
+    });
+  }
   function apply(){
     var cyber=isNight();
     body.classList.toggle('night',cyber);
+    syncDayDates();
     var b=document.getElementById('dy-theme');
     if(b){
       b.setAttribute('data-skin',cyber?'cyber':'classic');
