@@ -562,6 +562,74 @@ body.night .dy-tagbtn.active{color:#0b1020}
 @media (prefers-reduced-motion:reduce){
   *{scroll-behavior:auto!important;transition:none!important}
 }
+/* 设计稿 03 号板：赛博态统一设计 token（与首页同一套本地字体）。
+   经典态不覆盖任何规则，仍是原来的浅色控制台。 */
+@font-face{font-family:"CM Orbitron";src:url("/fonts/cm-orbitron-latin.woff2") format("woff2");font-style:normal;font-weight:400 900;font-display:swap}
+@font-face{font-family:"CM Chakra";src:url("/fonts/cm-chakra-600-latin.woff2") format("woff2");font-style:normal;font-weight:600;font-display:swap}
+@font-face{font-family:"CM Mono";src:url("/fonts/cm-jetbrains-latin.woff2") format("woff2");font-style:normal;font-weight:400 700;font-display:swap}
+body.night{
+  --dy-bg:#05070b;
+  --dy-surface:rgba(11,20,32,.82);
+  --dy-solid:#0b1520;
+  --dy-border:rgba(0,229,255,.16);
+  --dy-border-strong:rgba(0,229,255,.30);
+  --dy-text:#e6f5ff;
+  --dy-soft:#b7c9df;
+  --dy-muted:#8ba0bd;
+  --dy-accent:#00e5ff;
+  --dy-accent-2:#ff2ea6;
+  --dy-chip:rgba(0,229,255,.12);
+  --dy-icon-bg:rgba(12,26,38,.78);
+  --dy-glow-a:rgba(0,229,255,.12);
+  --dy-glow-b:rgba(255,46,166,.09);
+  --dy-good:#39ff88;
+  --dy-good-bg:rgba(57,255,136,.10);
+  --dy-bad:#ff4d6d;
+  --dy-bad-bg:rgba(255,77,109,.10);
+  --dy-warn:#ffb020;
+  --dy-warn-bg:rgba(255,176,32,.10);
+}
+body.night::after{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:9999;
+  background:repeating-linear-gradient(180deg,rgba(127,239,255,.02) 0 1px,transparent 1px 4px)
+}
+body.night .dy-top{
+  border-bottom:1px solid rgba(0,229,255,.22);
+  background:rgba(7,14,23,.88);
+}
+body.night .dy-hero::before{
+  content:"SECTION 03 // DAILY INTEL FEED   ·   VERIFIED DAILY DISCOVERIES";
+  display:block;margin-bottom:14px;padding-bottom:7px;
+  border-bottom:1px solid var(--dy-border);
+  font-family:"CM Mono",monospace;font-size:10.5px;letter-spacing:.12em;
+  color:var(--dy-accent);
+}
+body.night .dy-kicker{
+  border-radius:3px;font-family:"CM Mono",monospace;letter-spacing:.14em
+}
+body.night .dy-hero h1{
+  font-family:"CM Chakra",sans-serif;font-size:clamp(32px,4.2vw,48px);letter-spacing:-.02em
+}
+body.night .dy-hero p{font-family:"CM Chakra",sans-serif;font-size:13.5px}
+body.night .dy-stats{gap:8px}
+body.night .dy-stat{border-radius:3px}
+body.night .dy-stat span{font-family:"CM Mono",monospace;font-size:9.5px;letter-spacing:.06em}
+body.night .dy-stat strong{
+  font-family:"CM Orbitron",sans-serif;font-size:23px;color:var(--dy-accent)
+}
+body.night .dy-receipt,body.night .dy-healthbar,body.night .dy-watch,
+body.night .dy-changes,body.night .dy-tagcloud,body.night .dy-search,
+body.night .dy-rssbar{border-radius:3px}
+body.night .dy-day-head{
+  font-family:"CM Mono",monospace;color:var(--dy-accent);letter-spacing:.04em
+}
+body.night .dy-card{border-radius:3px}
+body.night .dy-tagbtn,body.night .dy-feed-chip,body.night .dy-sort-btn{border-radius:3px}
+body.night .dy-wtag.star{color:#39ff88;background:rgba(57,255,136,.10)}
+body.night .dy-wmetric b{font-family:"CM Orbitron",sans-serif;color:var(--dy-accent)}
+@media (prefers-reduced-motion:reduce){
+  body.night::after{background:none}
+}
 """
 
 JS = r"""

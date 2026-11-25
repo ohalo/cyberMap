@@ -203,12 +203,64 @@
       .catch(function () { /* 离线 / JSON 不可达：不显示徽章，不影响导航 */ });
   }
 
+  /* ---- 设计稿 02 号板：AI 插件榜前置条 ----
+     读 /rank/data/top100.json 的真实前 4 名；榜单是独立流水线产物，
+     这里只读不写。网络失败静默隐藏，绝不编造数字。 */
+  function injectRankPreview() {
+    var anchor = document.querySelector('.cm-feature-cta');
+    if (!anchor || document.querySelector('.cm-rank-preview') || !window.fetch) return;
+    var panel = el('section', 'cm-rank-preview cm-design-only',
+      '<div class="cm-rank-head">' +
+      '<h3>AI 插件榜 · 实时 TOP</h3>' +
+      '<span class="cm-rank-tag">RANKED BY COMMUNITY</span>' +
+      '<span class="cm-rank-meta">加载中…</span>' +
+      '<a href="/rank/" title="查看完整榜单">完整榜单 TOP 100 →</a>' +
+      '</div><div class="cm-rank-rows"></div>');
+    panel.style.display = 'none';
+    anchor.parentNode.insertBefore(panel, anchor.nextSibling);
+
+    var esc = function (s) {
+      return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+      });
+    };
+    var ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
+    var timer = ctrl ? setTimeout(function () { ctrl.abort(); }, 8000) : null;
+    var opts = ctrl ? { signal: ctrl.signal, cache: 'no-store' } : { cache: 'no-store' };
+    fetch('/rank/data/top100.json', opts)
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (data) {
+        if (timer) clearTimeout(timer);
+        var rows = (data && data.overall || []).slice(0, 4);
+        if (!rows.length) return;
+        var html = rows.map(function (r) {
+          var stars = Number(r.stars || 0);
+          return '<div class="cm-rank-row">' +
+            '<span class="rk">' + ('0' + r.rank).slice(-2) + '</span>' +
+            '<span class="nm" title="' + esc(r.name) + '">' + esc(r.name) + '</span>' +
+            '<span class="ds" title="' + esc(r.description_zh || r.description) + '">' +
+              esc(r.description_zh || r.description) + '</span>' +
+            '<span class="sc">' + Number(r.score || 0).toFixed(1) + '</span>' +
+            '<span class="st">' + stars.toLocaleString('en-US') + ' stars</span>' +
+            '</div>';
+        }).join('');
+        panel.querySelector('.cm-rank-rows').innerHTML = html;
+        var meta = panel.querySelector('.cm-rank-meta');
+        if (meta) {
+          meta.textContent = 'UPDATED ' + esc(data.date) + ' · TOTAL ' +
+            ((data.meta && data.meta.total_plugins) || rows.length);
+        }
+        panel.style.display = '';
+      })
+      .catch(function () { /* 榜单数据不可达：不展示占位面板 */ });
+  }
+
   /* ---- LIVE 动态流：读 /daily/updates.json.recent 前 3 条项目动态 ----
      借鉴竞品（AIbase「AI今日要闻」/ ai-bot「最新收录」）把时效内容提到首屏。
      recent[i] 形如 { name, url, date, ... }（日期为发现日期）；网络失败静默隐藏，
      不影响导航。 */
   function injectLiveTicker() {
-    var ticker = document.querySelector('.cyber-hero .cm-ticker');
+    var ticker = document.querySelector('.cm-console > .cm-ticker, .cyber-hero .cm-ticker');
     if (!ticker || ticker.dataset.cmLoaded || !window.fetch) return;
     ticker.dataset.cmLoaded = '1';
     var ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
@@ -427,16 +479,21 @@
       });
     })();
 
-    /* ---- 4. Hero 品牌区 + 实时统计 + HUD 时钟 ---- */
+    /* ---- 4. Hero 品牌区 + 实时统计 + HUD 时钟 ----
+       设计稿落地（仅赛博态）：控制台双栏（左 搜索/快捷词/LIVE，右 节点雷达）、
+       四格统计条、Orbitron 数字。经典态由 CSS 把 .cm-console 还原为
+       display:contents、隐藏 .cm-design-only，原浅色布局与文案零改动。 */
     var sousuo = main.querySelector('section.sousuo');
     if (sousuo && !main.querySelector('.cyber-hero')) {
       var hero = el('div', 'cyber-hero',
         '<div class="cyber-kicker"><span>&#10022;</span> CYBERMAP · AI NAVIGATION</div>' +
-        '<h1>发现好用的 <span class="cyber-gradient">AI 工具</span></h1>' +
+        '<h1>发现好用的 <span class="cyber-gradient"><span class="cm-ai-word">AI</span> 工具</span></h1>' +
         '<p>接入 AI 网络节点 · 每日扫描收录 · 每条链接真实访问验证</p>' +
         '<div class="cm-hud">' +
         '<span class="cm-hud-dot" aria-hidden="true"></span>' +
         '<span>SYSTEM ONLINE</span>' +
+        '<span class="cm-hud-meta cm-design-only">NODES ' + cols.length + '/' + cols.length +
+          ' · HTTP VERIFIED · SYNC DAILY</span>' +
         '<span class="cm-hud-clock" id="cm-hud-clock">--:--:--</span>' +
         '</div>');
       var stats = el('div', 'cyber-stats');
@@ -449,9 +506,140 @@
           '<strong>' + pair[0] + '</strong><span>' + pair[1] + '</span>'));
       });
       hero.appendChild(stats);
-      /* LIVE 动态流容器：由 injectLiveTicker 异步填充（竞品借鉴：时效内容前置） */
-      hero.appendChild(el('div', 'cm-ticker', ''));
-      sousuo.insertBefore(hero, sousuo.firstChild);
+
+      /* 设计稿四格统计：今日新增从页面真实「· YYYY-MM-DD 收录」尾注统计 */
+      var now = new Date();
+      var dateKey = now.getFullYear() + '-' + ('0' + (now.getMonth() + 1)).slice(-2) +
+        '-' + ('0' + now.getDate()).slice(-2);
+      var todayCount = 0;
+      cols.forEach(function (c) {
+        if (c.textContent.indexOf('· ' + dateKey + ' 收录') >= 0) todayCount++;
+      });
+      var designStats = el('div', 'cm-design-stats cm-design-only');
+      [
+        [String(cols.length), '收录站点 / NODES'],
+        [String(heads.length), '导航分类 / SECTORS'],
+        ['+' + todayCount, '今日新增 / TODAY'],
+        ['6', '订阅流 / RSS']
+      ].forEach(function (pair) {
+        designStats.appendChild(el('div', 'cm-design-stat',
+          '<strong>' + pair[0] + '</strong><span>' + pair[1] + '</span>'));
+      });
+      hero.appendChild(designStats);
+
+      /* 控制台容器：hero + 原搜索框 + 快捷词 + LIVE + 雷达 */
+      var consoleBox = el('div', 'cm-console');
+      consoleBox.appendChild(hero);
+      /* LIVE 容器在 DOM 里紧跟 hero（经典态顺序与改造前一致），
+         赛博态再由 grid-row 排到搜索框之后 */
+      var liveTickerBox = el('div', 'cm-ticker', '');
+      consoleBox.appendChild(liveTickerBox);
+      var searchSection = sousuo.querySelector('.search');
+      if (searchSection) consoleBox.appendChild(searchSection);
+
+      var QUICK = [
+        ['图像生成', ['图像', '设计', '生图', '绘画']],
+        ['智能体框架', ['智能体', 'agent', '框架']],
+        ['本地推理', ['本地', '推理', 'gguf', 'ollama', 'lm studio']],
+        ['RAG 检索', ['rag', '知识库', '检索']],
+        ['视频生成', ['视频', '剪辑', '动画']]
+      ];
+      var quick = el('div', 'cm-quick cm-design-only');
+      quick.innerHTML =
+        '<div class="cm-quick-label">QUICK ACCESS // 按任务筛选节点</div>' +
+        '<div class="cm-quick-row">' + QUICK.map(function (q, i) {
+          return '<button type="button" class="cm-quick-chip" data-qi="' + i +
+            '"># ' + q[0] + '</button>';
+        }).join('') + '</div>' +
+        '<div class="cm-filter-status" aria-live="polite"></div>';
+      consoleBox.appendChild(quick);
+
+      /* 节点拓扑雷达：静态 SVG，中心数字取真实站点数 */
+      consoleBox.appendChild(el('div', 'cm-radar cm-design-only',
+        '<div class="cm-radar-head"><span>NETWORK MAP / 节点拓扑</span>' +
+        '<span class="cm-radar-live">SCANNING · LIVE</span></div>' +
+        '<svg viewBox="0 0 480 440" role="img" aria-label="节点拓扑雷达">' +
+        '<g stroke="#00e5ff" stroke-opacity="0.22" fill="none">' +
+        '<circle cx="240" cy="220" r="205"/><circle cx="240" cy="220" r="154"/>' +
+        '<circle cx="240" cy="220" r="103"/><circle cx="240" cy="220" r="52"/>' +
+        '<path d="M15 220 H465 M240 15 V425"/></g>' +
+        '<g class="cm-radar-sweep"><path d="M240 220 L240 15 A205 205 0 0 1 385 75 Z" ' +
+        'fill="#00e5ff" fill-opacity="0.10"/></g>' +
+        '<g stroke="#00e5ff" stroke-opacity="0.45" fill="none">' +
+        '<path d="M240 220 L390 108 M240 220 L348 356 M240 220 L92 322 M240 220 L118 96"/></g>' +
+        '<g fill="#00e5ff"><circle cx="390" cy="108" r="5"/><circle cx="348" cy="356" r="4"/>' +
+        '<circle cx="92" cy="322" r="4"/><circle cx="118" cy="96" r="3"/>' +
+        '<circle cx="240" cy="220" r="6"/></g>' +
+        '<g fill="#ff2ea6"><circle cx="405" cy="280" r="4"/><circle cx="148" cy="380" r="3"/></g>' +
+        '<text class="cm-radar-num" x="240" y="216" text-anchor="middle">' + cols.length + '</text>' +
+        '<text class="cm-radar-num-label" x="240" y="240" text-anchor="middle">NODES ONLINE</text>' +
+        '</svg>' +
+        '<div class="cm-radar-foot">' + heads.length +
+          ' 分类 · 逐条 HTTP 核验 · 每日自动重扫</div>'));
+      sousuo.insertBefore(consoleBox, sousuo.firstChild);
+
+      /* 快捷词：本地筛选已渲染的站点卡，不劫持主题的外部搜索按钮 */
+      (function bindQuickFilter() {
+        var status = quick.querySelector('.cm-filter-status');
+        var chips = quick.querySelectorAll('.cm-quick-chip');
+        function rowOf(head) {
+          var n = head.nextElementSibling;
+          while (n && n.tagName === 'BR') n = n.nextElementSibling;
+          return n && n.classList.contains('row') ? n : null;
+        }
+        Array.prototype.forEach.call(chips, function (chip) {
+          chip.addEventListener('click', function () {
+            var idx = Number(chip.getAttribute('data-qi'));
+            var active = chip.classList.contains('is-active');
+            Array.prototype.forEach.call(chips, function (c) { c.classList.remove('is-active'); });
+            if (active) {
+              cols.forEach(function (c) { c.style.display = ''; });
+              heads.forEach(function (h) {
+                h.style.display = '';
+                var r = rowOf(h); if (r) r.style.display = '';
+              });
+              if (status) status.textContent = '';
+              return;
+            }
+            chip.classList.add('is-active');
+            var words = QUICK[idx][1];
+            var hit = 0;
+            cols.forEach(function (c) {
+              var text = c.textContent.toLowerCase();
+              var match = words.some(function (w) { return text.indexOf(w) >= 0; });
+              c.style.display = match ? '' : 'none';
+              if (match) hit++;
+            });
+            heads.forEach(function (h) {
+              var r = rowOf(h);
+              var shown = r ? Array.prototype.some.call(
+                r.querySelectorAll('.col-sm-3'), function (c) { return c.style.display !== 'none'; }
+              ) : false;
+              h.style.display = shown ? '' : 'none';
+              if (r) r.style.display = shown ? '' : 'none';
+            });
+            if (status) {
+              status.textContent = '筛选：' + QUICK[idx][0] +
+                ' · 命中 ' + hit + ' 个节点 · 再次点击取消';
+            }
+          });
+        });
+      })();
+
+      /* 占位文案：赛博态强调站内节点，切回经典态恢复原文案 */
+      var input = sousuo.querySelector('#txt');
+      var originalPh = input ? input.getAttribute('placeholder') : '';
+      var cyberPh = '搜索 ' + cols.length + ' 个节点，或描述你想完成的任务…';
+      function syncPlaceholder() {
+        if (!input) return;
+        input.setAttribute('placeholder',
+          document.body.classList.contains('night') ? cyberPh : originalPh);
+      }
+      syncPlaceholder();
+      if (window.MutationObserver) {
+        new MutationObserver(syncPlaceholder).observe(document.body,
+          { attributes: true, attributeFilter: ['class'] });
+      }
       /* HUD 时钟：HH:MM:SS，每秒走字 */
       var clockEl = hero.querySelector('#cm-hud-clock');
       if (clockEl) {
@@ -613,6 +801,9 @@
 
     /* ---- 10. LIVE 项目动态流：异步填充，失败静默隐藏 ---- */
     injectLiveTicker();
+
+    /* ---- 11. 设计稿榜单前置条：异步读真实 Top 4，失败静默隐藏 ---- */
+    injectRankPreview();
   }
 
   function start() {
