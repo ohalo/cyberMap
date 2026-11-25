@@ -139,6 +139,8 @@ CSS = r"""
   --dy-good-bg:rgba(22,163,74,.10);
   --dy-bad-bg:rgba(220,38,38,.10);
   --dy-warn-bg:rgba(217,119,6,.10);
+  --dy-idle:#64748b;
+  --dy-idle-bg:rgba(100,116,139,.10);
 }
 body.night{
   --dy-bg:#080d1a;
@@ -166,6 +168,8 @@ body.night{
   --dy-good-bg:rgba(74,222,128,.13);
   --dy-bad-bg:rgba(248,113,113,.13);
   --dy-warn-bg:rgba(251,191,36,.13);
+  --dy-idle:#94a3b8;
+  --dy-idle-bg:rgba(148,163,184,.14);
 }
 html{scroll-behavior:smooth}
 body{
@@ -382,6 +386,20 @@ body.night .dy-tagbtn.active{color:#0b1020}
 .dy-health.down i{background:var(--dy-bad)}
 .dy-health.unverified{color:var(--dy-warn);background:var(--dy-warn-bg)}
 .dy-health.unverified i{background:var(--dy-warn)}
+/* 站点新鲜度徽章：基于 pushed_at 的活跃度信号，与「站点健康度」正交
+   （健康度问站是否可访问，新鲜度问项目最近有没有提交）。 */
+.dy-fresh{
+  display:inline-flex;align-items:center;gap:5px;
+  margin-top:7px;padding:1px 8px;border-radius:999px;
+  font-size:10px;font-weight:650;line-height:1.6;cursor:help;
+}
+.dy-fresh i{width:6px;height:6px;border-radius:50%;display:inline-block;flex:0 0 auto}
+.dy-fresh.active{color:var(--dy-good);background:var(--dy-good-bg)}
+.dy-fresh.active i{background:var(--dy-good);box-shadow:0 0 0 3px var(--dy-good-bg)}
+.dy-fresh.recent{color:var(--dy-warn);background:var(--dy-warn-bg)}
+.dy-fresh.recent i{background:var(--dy-warn)}
+.dy-fresh.idle{color:var(--dy-idle);background:var(--dy-idle-bg)}
+.dy-fresh.idle i{background:var(--dy-idle)}
 .dy-card.dy-down{opacity:.62}
 .dy-card.dy-down:hover{opacity:1}
 .dy-healthbar{
@@ -816,6 +834,77 @@ def badge_html(item: dict, evidence: dict) -> str:
     )
 
 
+# ---------------------------------------------------------------- 站点新鲜度
+# 回答「项目最近动了吗」，与 health（站是否可访问）正交。数据来自
+# updates.json.repos[norm_url].pushed_at（真实最近提交）与 verify.json 的
+# checked_at（核验时间）。三档阈值：7 天内活跃 / 90 天内近期 / 更久沉寂。
+FRESH_ACTIVE_DAYS = 7
+FRESH_IDLE_DAYS = 90
+
+
+def parse_iso_dt(value: str):
+    """解析 ISO 8601 时间为带时区的 datetime；兼容 Z 后缀与无时区的朴素串。"""
+    if not value:
+        return None
+    try:
+        text = str(value).strip()
+        if text.endswith("Z"):
+            text = text[:-1] + "+00:00"
+        dt = datetime.fromisoformat(text)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.astimezone(timezone.utc)
+    except (ValueError, TypeError):
+        return None
+
+
+def freshness_label(pushed_at, now: datetime) -> tuple[str, str, int | None] | None:
+    """根据 pushed_at 与参考时间算出 (档位, 文案, 天数)。
+
+    返回 None 表示无有效 pushed_at，调用方不渲染徽章（不猜测、不伪造）。
+    """
+    pushed = parse_iso_dt(pushed_at)
+    if pushed is None:
+        return None
+    days = max(0, (now - pushed).days)
+    if days < FRESH_ACTIVE_DAYS:
+        return "active", "本周活跃", days
+    if days < FRESH_IDLE_DAYS:
+        months = days // 30
+        return "recent", f"{months} 月前更新" if months else f"{days} 天前更新", days
+    months = days // 30
+    return "idle", f"沉寂 {months} 月", days
+
+
+def freshness_badge_html(item: dict, updates: dict, evidence: dict,
+                         now: datetime) -> str:
+    """卡片新鲜度微徽章：三档文案 + title 悬停看提交与核验时间。
+
+    只对有真实 pushed_at 的已跟踪 GitHub 项目渲染；工具官网 / 未纳入雷达
+    的仓库不显示，避免把「没数据」误读成「沉寂」。
+    """
+    rec = (updates.get("repos") or {}).get(norm_url(item["url"]))
+    if not rec:
+        return ""
+    result = freshness_label(rec.get("pushed_at"), now)
+    if not result:
+        return ""
+    level, label, days = result
+    pushed_at = rec.get("pushed_at") or "—"
+    checked_at = rec.get("last_checked") or "—"
+    ev = evidence.get(norm_url(item["url"])) or {}
+    if ev.get("checked_at"):
+        checked_at = f"{checked_at}（收录核验 {ev['checked_at']}）"
+    title = (
+        f"最近提交：{pushed_at}（距今约 {days} 天）；"
+        f"雷达采集：{checked_at}。数据来自 /daily/updates.json，非实时。"
+    )
+    return (
+        f'<span class="dy-fresh {level}" title="{esc(title)}">'
+        f'<i></i>{esc(label)}</span>'
+    )
+
+
 HEALTH_STATUS_TEXT = {"ok": "持续在线", "down": "疑似失效", "unverified": "待核对"}
 
 
@@ -1074,8 +1163,11 @@ def receipt_html(verify: dict, days) -> str:
     )
 
 
-def card_html(item: dict, evidence: dict, health: dict | None = None) -> str:
+def card_html(item: dict, evidence: dict, health: dict | None = None,
+              updates: dict | None = None, now: datetime | None = None) -> str:
     health = health or {}
+    updates = updates or {}
+    now = now or datetime.now(CST)
     initial = esc(next((c for c in item["name"] if not c.isspace()), "A").upper())
     icon = ""
     if item["img"]:
@@ -1095,7 +1187,8 @@ def card_html(item: dict, evidence: dict, health: dict | None = None) -> str:
         f'<span class="dy-card-name">{esc(item["name"])}</span>'
         f'<span class="dy-tag">{esc(item["label"])}</span>'
         f'{desc}<span class="dy-topics">{topics}</span>'
-        f'{badge_html(item, evidence)}{health_badge_html(item, health)}</span></a>'
+        f'{badge_html(item, evidence)}{health_badge_html(item, health)}'
+        f'{freshness_badge_html(item, updates, evidence, now)}</span></a>'
     )
 
 
@@ -1186,7 +1279,7 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
             f'<h2>{esc(title)}</h2><span class="dy-week">{esc(week)}</span>'
             f'<span class="dy-count">{len(items)} 个站点</span></div>'
         )
-        parts.append('<div class="dy-cards">' + "".join(card_html(i, evidence, health_sites) for i in items) + "</div>")
+        parts.append('<div class="dy-cards">' + "".join(card_html(i, evidence, health_sites, updates, generated) for i in items) + "</div>")
         parts.append("</section>")
 
     if undated:
@@ -1196,7 +1289,7 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
             '<span class="dy-week">描述中没有日期尾注</span>'
             f'<span class="dy-count">{len(undated)} 个站点</span></div>'
         )
-        parts.append('<div class="dy-cards">' + "".join(card_html(i, evidence, health_sites) for i in undated) + "</div>")
+        parts.append('<div class="dy-cards">' + "".join(card_html(i, evidence, health_sites, updates, generated) for i in undated) + "</div>")
         parts.append("</section>")
 
     parts += [
@@ -1391,6 +1484,13 @@ def main() -> None:
         "watch_recent": len(updates.get("recent") or []),
         "watch_bar": bool((updates.get("summary") or {}).get("total_repos")),
         "changes_feed": bool(updates.get("recent")),
+        "fresh_badges": sum(
+            1 for e in entries
+            if freshness_label(
+                ((updates.get("repos") or {}).get(norm_url(e["url"])) or {}).get("pushed_at"),
+                generated,
+            )
+        ),
         "warnings": warnings,
     }
     if args.check:
@@ -1439,6 +1539,9 @@ def main() -> None:
             fail("index.html 缺少项目动态速递区块，未写入")
         if f'href="/daily/{UPDATES_FEED}"' not in html_text:
             fail(f"index.html 缺少动态流订阅入口 {UPDATES_FEED}，未写入")
+    # 有已跟踪仓库时，卡片新鲜度徽章必须渲染出来（防止读到数据但没用上）
+    if (updates.get("repos") or {}) and 'class="dy-fresh ' not in html_text:
+        fail("index.html 卡片缺少站点新鲜度徽章，未写入")
 
     index_path = out_dir / "index.html"
     try:

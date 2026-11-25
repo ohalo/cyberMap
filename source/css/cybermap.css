@@ -38,6 +38,14 @@
   --cm-accent-wash: rgba(79, 70, 229, .08);
   --cm-chip: rgba(79, 70, 229, .09);
 
+  /* 站点新鲜度徽章（本周活跃 / 近期更新 / 沉寂） */
+  --cm-fresh-active: #0f8a63;
+  --cm-fresh-active-bg: rgba(16, 185, 129, .10);
+  --cm-fresh-recent: #b45309;
+  --cm-fresh-recent-bg: rgba(217, 119, 6, .11);
+  --cm-fresh-idle: #64748b;
+  --cm-fresh-idle-bg: rgba(100, 116, 139, .10);
+
   --cm-shadow-sm: 0 2px 10px rgba(19, 32, 62, .05);
   --cm-shadow-card: 0 4px 18px rgba(19, 32, 62, .055), 0 1px 2px rgba(19, 32, 62, .04);
   --cm-shadow-hover: 0 16px 34px rgba(38, 52, 92, .15), 0 3px 8px rgba(38, 52, 92, .06);
@@ -69,6 +77,13 @@ body.night {
   --cm-accent-soft: rgba(124, 140, 255, .55);
   --cm-accent-wash: rgba(124, 140, 255, .12);
   --cm-chip: rgba(124, 140, 255, .15);
+
+  --cm-fresh-active: #6ee7b7;
+  --cm-fresh-active-bg: rgba(52, 211, 153, .13);
+  --cm-fresh-recent: #fbbf24;
+  --cm-fresh-recent-bg: rgba(251, 191, 36, .13);
+  --cm-fresh-idle: #94a3b8;
+  --cm-fresh-idle-bg: rgba(148, 163, 184, .14);
 
   --cm-shadow-sm: 0 2px 14px rgba(0, 0, 0, .28);
   --cm-shadow-card: 0 6px 24px rgba(0, 0, 0, .28);
@@ -1387,4 +1402,43 @@ button#search-btn.search-btn {
 .cm-daily-btn i { font-size: 12.5px !important; color: var(--cm-accent); }
 @media (max-width: 600px) {
   .navbar.user-info-navbar .user-info-menu > li.cm-daily-li > a.cm-daily-btn { padding: 0 9px !important; }
+}
+
+/* ---- 站点新鲜度徽章（首页导航卡片，运行时由 cybermap.js 注入） ----
+   与 /daily/ 卡片同源：读 updates.json 的 pushed_at，本周活跃 / 近期更新 / 沉寂三档。
+   挂在 xe-widget 右下角，极小尺寸，不挤压卡片正文；深浅主题各用一组变量。 */
+.cm-fresh-badge {
+  position: absolute;
+  right: 6px;
+  bottom: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-size: 9.5px;
+  font-weight: 650;
+  line-height: 1.5;
+  letter-spacing: .01em;
+  cursor: help;
+  pointer-events: auto;
+  z-index: 2;
+}
+.cm-fresh-badge i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  flex: 0 0 auto;
+}
+.cm-fresh-badge.active { color: var(--cm-fresh-active); background: var(--cm-fresh-active-bg); }
+.cm-fresh-badge.active i { background: var(--cm-fresh-active); }
+.cm-fresh-badge.recent { color: var(--cm-fresh-recent); background: var(--cm-fresh-recent-bg); }
+.cm-fresh-badge.recent i { background: var(--cm-fresh-recent); }
+.cm-fresh-badge.idle { color: var(--cm-fresh-idle); background: var(--cm-fresh-idle-bg); }
+.cm-fresh-badge.idle i { background: var(--cm-fresh-idle); }
+/* xe-widget 需要定位上下文才能承载右下角徽章 */
+.main-content .xe-widget { position: relative; }
+@media (max-width: 600px) {
+  .cm-fresh-badge { font-size: 9px; padding: 1px 5px; }
 }

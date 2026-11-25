@@ -129,6 +129,80 @@
     inner.removeChild(oldP);
   }
 
+  /* ---- 站点新鲜度徽章（首页导航卡片）----
+     读 /daily/updates.json 的 pushed_at，按与 /daily/ 页相同的阈值
+     （7 天内活跃 / 90 天内近期 / 更久沉寂）给已跟踪 GitHub 项目在卡片
+     右下角注入微徽章。无 pushed_at（未纳入雷达 / 非 GitHub）静默跳过，
+     绝不把「没数据」误读成「沉寂」。网络失败同样静默降级。 */
+  function normFreshUrl(raw) {
+    try {
+      var s = (raw || '').trim().replace(/[,;'\"]+$/, '');
+      if (s.indexOf('://') < 0) s = 'https://' + s;
+      var u = new URL(s);
+      var host = (u.hostname || '').toLowerCase().replace(/^www\./, '');
+      var path = (u.pathname || '/').replace(/\/+$/, '').toLowerCase() || '/';
+      if (/\.git$/.test(path)) path = path.slice(0, -4);
+      return host + path;
+    } catch (e) { return ''; }
+  }
+
+  function freshCardUrl(widget) {
+    var oc = widget.getAttribute('onclick') || '';
+    var m = oc.match(/window\.open\(\s*['"]([^'"]+)['"]/);
+    if (m) return m[1];
+    return widget.getAttribute('data-original-title') || '';
+  }
+
+  function injectFreshnessBadges() {
+    var widgets = Array.prototype.slice.call(
+      document.querySelectorAll('.main-content .xe-widget'));
+    if (!widgets.length || !window.fetch) return;
+    var ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
+    var timer = ctrl ? setTimeout(function () { ctrl.abort(); }, 8000) : null;
+    var opts = ctrl ? { signal: ctrl.signal, cache: 'no-store' } : { cache: 'no-store' };
+    fetch('/daily/updates.json', opts)
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (data) {
+        if (timer) clearTimeout(timer);
+        if (!data || !data.repos) return;
+        var now = new Date();
+        var gen = data.generated_at ? new Date(data.generated_at) : null;
+        /* 用雷达采集时间做基准，保证与 /daily/ 构建期判定一致、不随跨天漂移 */
+        if (gen && !isNaN(gen.getTime())) now = gen;
+        var repos = data.repos;
+        widgets.forEach(function (w) {
+          if (w.querySelector('.cm-fresh-badge')) return; /* 幂等 */
+          var key = normFreshUrl(freshCardUrl(w));
+          if (!key || !repos[key]) return;
+          var rec = repos[key];
+          if (!rec.pushed_at) return;
+          var pushed = new Date(rec.pushed_at);
+          if (isNaN(pushed.getTime())) return;
+          var days = Math.max(0, Math.floor((now - pushed) / 86400000));
+          var level, label;
+          if (days < 7) {
+            level = 'active'; label = '本周活跃';
+          } else if (days < 90) {
+            var mo = Math.floor(days / 30);
+            level = 'recent';
+            label = mo ? mo + ' 月前更新' : days + ' 天前更新';
+          } else {
+            level = 'idle';
+            label = '沉寂 ' + Math.floor(days / 30) + ' 月';
+          }
+          var title = '最近提交：' + rec.pushed_at + '（距今约 ' + days + ' 天）；' +
+            '雷达采集：' + (rec.last_checked || '—') + '。数据来自 /daily/updates.json，非实时。';
+          var badge = document.createElement('span');
+          badge.className = 'cm-fresh-badge ' + level;
+          badge.appendChild(document.createElement('i'));
+          badge.appendChild(document.createTextNode(label));
+          badge.setAttribute('title', title);
+          w.appendChild(badge);
+        });
+      })
+      .catch(function () { /* 离线 / JSON 不可达：不显示徽章，不影响导航 */ });
+  }
+
   function boot() {
     var main = document.querySelector('.main-content');
     if (!main) return;
@@ -431,6 +505,9 @@
         sousuo2.parentNode.insertBefore(cta, sousuo2.nextSibling);
       }
     })();
+
+    /* ---- 9. 站点新鲜度徽章：异步注入，失败不影响导航渲染 ---- */
+    injectFreshnessBadges();
   }
 
   function start() {
