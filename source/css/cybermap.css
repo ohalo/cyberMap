@@ -2054,42 +2054,48 @@ body.night .cm-rank-preview {
   background: var(--cm-panel);
   box-shadow: 0 0 28px var(--cm-accent-2-wash);
 }
+/* 02 号板：标题 + 副标签左对齐，CTA 右对齐；不再把四段文案挤在一行 */
 body.night .cm-rank-head {
   display: flex;
   align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
   padding-bottom: 10px;
   border-bottom: 1px solid var(--cm-border);
 }
+body.night .cm-rank-title { display: flex; flex-direction: column; gap: 4px; }
 body.night .cm-rank-head h3 {
   margin: 0;
-  font-size: 15px;
-  font-weight: 700;
+  font-family: var(--cm-font-ui);
+  font-size: 16px;
+  font-weight: 600;
   color: var(--cm-text);
 }
-body.night .cm-rank-tag {
+body.night .cm-rank-meta {
   font-family: var(--cm-font-mono);
   font-size: 10px;
-  letter-spacing: .1em;
+  letter-spacing: .08em;
   color: var(--cm-accent-2);
 }
-body.night .cm-rank-meta {
-  margin-left: auto;
-  font-family: var(--cm-font-mono);
-  font-size: 10px;
-  color: var(--cm-text-faint);
-}
-body.night .cm-rank-head a {
+body.night .cm-rank-head .cm-rank-cta {
+  flex: 0 0 auto;
+  padding: 7px 13px;
+  border: 1px solid var(--cm-accent-2-border);
+  border-radius: 2px;
+  font-family: var(--cm-font-ui);
   font-size: 11px;
   color: var(--cm-accent-2);
   text-decoration: none;
+  transition: background .2s cubic-bezier(.16,1,.3,1), color .2s cubic-bezier(.16,1,.3,1);
 }
-body.night .cm-rank-head a:hover { text-decoration: underline; }
+body.night .cm-rank-head .cm-rank-cta:hover {
+  background: var(--cm-accent-2);
+  color: var(--cm-void) !important;
+}
 body.night .cm-rank-rows { margin-top: 8px; }
 body.night .cm-rank-row {
   display: grid;
-  grid-template-columns: 34px minmax(90px, .7fr) minmax(0, 2.2fr) 62px 92px;
+  grid-template-columns: 34px minmax(90px, .7fr) minmax(0, 2.2fr) 62px;
   gap: 10px;
   align-items: center;
   padding: 6px 0;
@@ -2109,12 +2115,6 @@ body.night .cm-rank-row .sc {
   font-family: var(--cm-font-display);
   font-size: 15px;
   color: var(--cm-accent-2);
-  text-align: right;
-}
-body.night .cm-rank-row .st {
-  font-family: var(--cm-font-mono);
-  font-size: 10px;
-  color: var(--cm-online);
   text-align: right;
 }
 
@@ -2539,4 +2539,61 @@ body.night .cm-scroll-hint:hover { text-decoration: underline; }
 }
 @media (prefers-reduced-motion: reduce) {
   body.night .cm-rail-link { transition: none !important; }
+}
+
+/* ---- 01/02 号板：赛博态只保留一条导航 ----
+   设计稿没有原 webstack 左侧栏：01 是顶栏 cyber MAP + 页面入口，
+   02 的分类清单由 .cm-matrix-rail 承担。经典态以下规则全部不生效。 */
+body.night .page-container .sidebar-menu.fixed,
+body.night .sidebar-menu { display: none !important; }
+body.night .page-container .main-content { margin-left: 0 !important; }
+body.night .navbar.user-info-navbar { left: 0 !important; width: 100% !important; }
+body.night .user-info-navbar .user-info-menu {
+  display: flex !important;
+  align-items: center;
+  gap: 32px;
+  height: 52px;
+  margin: 0;
+  padding: 0 34px;
+  list-style: none;
+}
+body.night .user-info-navbar .user-info-menu > li:not(.cm-site-brand):not(.cm-site-links):not(.switch-mode) {
+  display: none !important;
+}
+/* 顶栏 li 有 display:flex !important 的通用规则，隐藏需更高特异性 */
+.user-info-navbar .user-info-menu > li.cm-design-only { display: none !important; }
+body.night .user-info-navbar .user-info-menu > li.cm-site-brand { display: flex !important; align-items: center; }
+body.night .cm-site-brand > a {
+  display: flex; align-items: center; gap: 8px;
+  color: var(--cm-neon-c); text-decoration: none;
+}
+body.night .cm-site-brand svg { width: 24px; height: 24px; flex: 0 0 auto; }
+body.night .cm-site-brand b {
+  font-family: var(--cm-font-display);
+  font-size: 17px; font-weight: 900; letter-spacing: .04em;
+  white-space: nowrap;
+}
+body.night .cm-site-brand b i { font-style: normal; }
+body.night .cm-site-brand b em { font-style: normal; color: var(--cm-text); }
+body.night .user-info-navbar .user-info-menu > li.cm-site-links { display: flex !important; align-items: center; gap: 28px; }
+body.night .cm-site-links a {
+  position: relative;
+  font-family: var(--cm-font-ui);
+  font-size: 12px; font-weight: 600;
+  color: var(--cm-text-muted); text-decoration: none;
+  transition: color .2s cubic-bezier(.16,1,.3,1);
+}
+body.night .cm-site-links a:hover,
+body.night .cm-site-links a.is-active { color: var(--cm-neon-c); }
+body.night .cm-site-links a.is-active::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -17px;
+  height: 2px; background: var(--cm-neon-c);
+  box-shadow: 0 0 10px var(--cm-neon-c);
+}
+body.night .user-info-navbar .user-info-menu > li.switch-mode { margin-left: auto; }
+@media (max-width: 991px) {
+  body.night .user-info-navbar .user-info-menu { gap: 16px; padding: 0 14px; overflow-x: auto; }
+  body.night .cm-site-links { gap: 14px; }
+  body.night .cm-site-links a { font-size: 11px; white-space: nowrap; }
+  body.night .user-info-navbar .user-info-menu > li.switch-mode { margin-left: 0; }
 }

@@ -203,6 +203,34 @@
       .catch(function () { /* 离线 / JSON 不可达：不显示徽章，不影响导航 */ });
   }
 
+  /* ---- 设计稿 01 号板：顶栏导航 ----
+     原主题顶栏在赛博态只露出右侧几个胶囊，左侧被原侧栏占住；02 号板里
+     分类导航由 .cm-matrix-rail 承担，所以这里把顶栏补成设计稿的
+     cyber MAP + 五个页面入口。原 switch-mode 节点不移动，经典态零改动。 */
+  function injectDesignNav() {
+    var ul = document.querySelector('.user-info-navbar .user-info-menu');
+    if (!ul || ul.querySelector('.cm-site-brand')) return;
+    var here = (location.pathname || '/').replace(/\/+$/, '') || '/';
+    var LINKS = [
+      ['/', '首页'], ['/daily/', '每日速递'], ['/rank/', '插件榜'],
+      ['/data/', '开放数据'], ['/about/', '关于']
+    ];
+    var brand = el('li', 'cm-site-brand cm-design-only',
+      '<a href="/" aria-label="cyberMap 首页">' +
+      '<svg viewBox="0 0 32 32" aria-hidden="true">' +
+      '<path d="M16 2 28 9v14l-12 7L4 23V9z" fill="none" stroke="currentColor" stroke-width="2"/>' +
+      '<path d="M16 8 23 12v8l-7 4-7-4v-8z" fill="currentColor" opacity=".25"/></svg>' +
+      '<b><i>cyber</i><em> MAP</em></b></a>');
+    var links = el('li', 'cm-site-links cm-design-only', LINKS.map(function (pair) {
+      var href = pair[0], path = href.replace(/\/+$/, '') || '/';
+      var active = path === '/' ? here === '/' : here.indexOf(path) === 0;
+      return '<a href="' + href + '"' + (active ? ' class="is-active"' : '') + '>' +
+        pair[1] + '</a>';
+    }).join(''));
+    ul.insertBefore(brand, ul.firstChild);
+    ul.insertBefore(links, brand.nextSibling);
+  }
+
   /* ---- 设计稿 02 号板：AI 插件榜前置条 ----
      读 /rank/data/top100.json 的真实前 4 名；榜单是独立流水线产物，
      这里只读不写。网络失败静默隐藏，绝不编造数字。 */
@@ -216,10 +244,10 @@
     if (!anchor || document.querySelector('.cm-rank-preview') || !window.fetch) return;
     var panel = el('section', 'cm-rank-preview cm-design-only',
       '<div class="cm-rank-head">' +
+      '<div class="cm-rank-title">' +
       '<h3>AI 插件榜 · 实时 TOP</h3>' +
-      '<span class="cm-rank-tag">RANKED BY COMMUNITY</span>' +
-      '<span class="cm-rank-meta">加载中…</span>' +
-      '<a href="/rank/" title="查看完整榜单">完整榜单 TOP 100 →</a>' +
+      '<span class="cm-rank-meta">UPDATED DAILY · TOP 100</span></div>' +
+      '<a class="cm-rank-cta" href="/rank/" title="查看完整榜单">完整榜单 TOP 100</a>' +
       '</div><div class="cm-rank-rows"></div>');
     panel.style.display = 'none';
     anchor.parentNode.insertBefore(panel, anchor.nextSibling);
@@ -239,21 +267,18 @@
         var rows = (data && data.overall || []).slice(0, 4);
         if (!rows.length) return;
         var html = rows.map(function (r) {
-          var stars = Number(r.stars || 0);
           return '<div class="cm-rank-row">' +
             '<span class="rk">' + ('0' + r.rank).slice(-2) + '</span>' +
             '<span class="nm" title="' + esc(r.name) + '">' + esc(r.name) + '</span>' +
             '<span class="ds" title="' + esc(r.description_zh || r.description) + '">' +
               esc(r.description_zh || r.description) + '</span>' +
             '<span class="sc">' + Number(r.score || 0).toFixed(1) + '</span>' +
-            '<span class="st">' + stars.toLocaleString('en-US') + ' stars</span>' +
             '</div>';
         }).join('');
         panel.querySelector('.cm-rank-rows').innerHTML = html;
         var meta = panel.querySelector('.cm-rank-meta');
         if (meta) {
-          meta.textContent = 'UPDATED ' + esc(data.date) + ' · TOTAL ' +
-            ((data.meta && data.meta.total_plugins) || rows.length);
+          meta.textContent = 'UPDATED ' + esc(data.date) + ' · TOP 100';
         }
         panel.style.display = '';
       })
@@ -460,6 +485,8 @@
   function boot() {
     var main = document.querySelector('.main-content');
     if (!main) return;
+
+    injectDesignNav();
 
     var heads = Array.prototype.slice.call(main.querySelectorAll('h4.text-gray'));
     var cols = Array.prototype.slice.call(main.querySelectorAll('.row > .col-sm-3'));
