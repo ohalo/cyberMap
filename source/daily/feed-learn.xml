@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>cyberMap · 每日 AI 速递 · 学习与资源</title>
+    <link>https://cybermap.halo26812.eu.org/daily/</link>
+    <description>cyberMap 每日核验收录的 AI 学习与资源，每天一期。</description>
+    <language>zh-CN</language>
+    <generator>cybermap-daily/build_daily.py</generator>
+    <lastBuildDate>Wed, 25 Nov 2026 15:48:20 +0800</lastBuildDate>
+    <ttl>1440</ttl>
+  </channel>
+</rss>

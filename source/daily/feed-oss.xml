@@ -6,12 +6,12 @@
     <description>cyberMap 每日核验收录的 AI 开源项目，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Wed, 25 Nov 2026 10:26:49 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 15:48:20 +0800</lastBuildDate>
     <ttl>1440</ttl>
     <item>
       <title>每日 AI 速递 · 开源项目 · 2026-11-25（7 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-25</link>
-      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-25</guid>
+      <guid isPermaLink="false">cybermap-daily-开源项目-2026-11-25</guid>
       <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
       <description>withcoral/coral［开源项目］为 AI 智能体访问企业敏感系统提供执行护栏，按精细权限与自定义工具安全调用，减少 token 消耗。 — https://github.com/withcoral/coral
 get-bb/bb［开源项目］面向智能体的集成开发环境，围绕 Claude Code、Codex 等编码智能体构建，可自主迭代扩展能力。 — https://github.com/get-bb/bb
@@ -25,7 +25,7 @@ Juneo-Lab/decision-forge［开源项目］将组织规章策略编译为可验�
     <item>
       <title>每日 AI 速递 · 开源项目 · 2026-11-24（4 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-24</link>
-      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-24</guid>
+      <guid isPermaLink="false">cybermap-daily-开源项目-2026-11-24</guid>
       <pubDate>Tue, 24 Nov 2026 00:00:00 +0800</pubDate>
       <description>pydantic/pydantic-ai［开源项目］Pydantic 官方 AI Agent 开发框架，端到端类型安全，支持实时语音、图像生成、嵌入与多模型接入。 — https://github.com/pydantic/pydantic-ai
 0xPlaygrounds/rig［开源项目］用 Rust 构建模块化、可扩展 LLM 应用的框架，主打高性能与低延迟的 AI 应用开发。 — https://github.com/0xPlaygrounds/rig
@@ -36,7 +36,7 @@ simplexai-labs/linger［开源项目］可完全跑在本机的开源个人智�
     <item>
       <title>每日 AI 速递 · 开源项目 · 2026-11-23（3 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-23</link>
-      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-23</guid>
+      <guid isPermaLink="false">cybermap-daily-开源项目-2026-11-23</guid>
       <pubDate>Mon, 23 Nov 2026 00:00:00 +0800</pubDate>
       <description>trpc-group/trpc-agent-go［开源项目］腾讯开源的 Go 语言生产级智能体框架，支持图工作流、记忆、A2A 与 MCP 协议，内置评测与可观测能力。 — https://github.com/trpc-group/trpc-agent-go
 modelflare-ai/AnyModelBot［开源项目］本地优先的开源 AI 机器人，可接入 GPT、Claude、Gemini 等多种模型搭建专属对话助手。 — https://github.com/modelflare-ai/AnyModelBot
@@ -46,7 +46,7 @@ JosssphZhou/poki［开源项目］开源 iPhone 智能体应用，能读取屏�
     <item>
       <title>每日 AI 速递 · 开源项目 · 2026-11-22（7 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-22</link>
-      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-22</guid>
+      <guid isPermaLink="false">cybermap-daily-开源项目-2026-11-22</guid>
       <pubDate>Sun, 22 Nov 2026 00:00:00 +0800</pubDate>
       <description>ag-ui-protocol/ag-ui［开源项目］Agent-User Interaction 协议，为 AI 智能体与前端应用提供标准化的事件交互与状态同步接口。 — https://github.com/ag-ui-protocol/ag-ui
 ChromeDevTools/chrome-devtools-mcp［开源项目］把 Chrome 开发者工具通过 MCP 暴露给编码智能体，支持页面调试、检查与交互自动化。 — https://github.com/ChromeDevTools/chrome-devtools-mcp
@@ -60,7 +60,7 @@ ZhuLinsen/daily_stock_analysis［开源项目］LLM 驱动的多市场股票智�
     <item>
       <title>每日 AI 速递 · 开源项目 · 2026-11-21（5 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-21</link>
-      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-21</guid>
+      <guid isPermaLink="false">cybermap-daily-开源项目-2026-11-21</guid>
       <pubDate>Sat, 21 Nov 2026 00:00:00 +0800</pubDate>
       <description>deepseek-ai/dsh-superagent-prototype［开源项目］DeepSeek 开源的自主智能体原型，采用 Router+Worker 双层架构，让编码 Agent 自行拆解任务、发现缺陷并提交修复 PR。 — https://github.com/deepseek-ai/dsh-superagent-prototype
 alibaba/zvec［开源项目］阿里开源的轻量级进程内向量数据库，C++ 实现，直接嵌入应用即可做高速向量检索，面向 RAG 与边缘场景。 — https://github.com/alibaba/zvec
@@ -72,7 +72,7 @@ yjid/kensaku［开源项目］开源本地文件检索工具，索引文档、�
     <item>
       <title>每日 AI 速递 · 开源项目 · 2026-11-20（11 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-20</link>
-      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-20</guid>
+      <guid isPermaLink="false">cybermap-daily-开源项目-2026-11-20</guid>
       <pubDate>Fri, 20 Nov 2026 00:00:00 +0800</pubDate>
       <description>alibaba/open-code-review［开源项目］阿里开源的 AI 代码审查工具，读取 Git 差异给出行级评审意见，把确定性检查与大模型智能体结合，自动发现代码问题。 — https://github.com/alibaba/open-code-review
 Activepieces/activepieces［开源项目］开源自动化平台，用可视化流程连接 AI 智能体与数百款应用，支持自托管，用于搭建客服、运营等自动化工作流。 — https://github.com/Activepieces/activepieces
@@ -90,7 +90,7 @@ mastra-ai/mastra［开源项目］现代 TypeScript AI 应用框架，内置智�
     <item>
       <title>每日 AI 速递 · 开源项目 · 2026-11-19（4 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-19</link>
-      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-19</guid>
+      <guid isPermaLink="false">cybermap-daily-开源项目-2026-11-19</guid>
       <pubDate>Thu, 19 Nov 2026 00:00:00 +0800</pubDate>
       <description>browseros-ai/BrowserOS［开源项目］开源智能体浏览器，基于 Chromium 内置本地大模型与自动化能力，主打隐私优先的浏览器任务代理。 — https://github.com/browseros-ai/BrowserOS
 Tencent/WeKnora［开源项目］腾讯开源大模型知识平台，把文档转成可溯源 RAG 问答、自主推理智能体与自动维护的 Wiki。 — https://github.com/Tencent/WeKnora
@@ -101,7 +101,7 @@ duixcom/Duix-Avatar［开源项目］真开源离线数字人工具包，支持�
     <item>
       <title>每日 AI 速递 · 开源项目 · 2026-11-18（10 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-18</link>
-      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-18</guid>
+      <guid isPermaLink="false">cybermap-daily-开源项目-2026-11-18</guid>
       <pubDate>Wed, 18 Nov 2026 00:00:00 +0800</pubDate>
       <description>Orkas-AI/Orkas［开源项目］本地优先的开源多智能体桌面团队，指挥官把目标拆成待办并协调内置专家与主流编码智能体协同完成。 — https://github.com/Orkas-AI/Orkas
 THU-MAIC/OpenMAIC［开源项目］清华开源的开放式多智能体互动课堂，一键生成含 AI 教师与同学、白板及讲解的沉浸式学习体验。 — https://github.com/THU-MAIC/OpenMAIC
@@ -118,7 +118,7 @@ CopilotKit/CopilotKit［开源项目］面向智能体与生成式 UI 的前端�
     <item>
       <title>每日 AI 速递 · 开源项目 · 2026-11-17（5 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-17</link>
-      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-17</guid>
+      <guid isPermaLink="false">cybermap-daily-开源项目-2026-11-17</guid>
       <pubDate>Tue, 17 Nov 2026 00:00:00 +0800</pubDate>
       <description>bytedance/deer-flow［开源项目］字节跳动开源的长程超级智能体框架，集成沙箱、记忆、技能与子智能体，自主完成研究、编码与创作等多步任务。 — https://github.com/bytedance/deer-flow
 NVIDIA/auto-ontology［开源项目］英伟达开源的Python框架，为数据构建语义图谱推理层，实现确定性查询生成与可解释的LLM智能体分析。 — https://github.com/NVIDIA/auto-ontology
@@ -130,7 +130,7 @@ The-PR-Agent/pr-agent［开源项目］开源AI代码审查助手，自动为拉
     <item>
       <title>每日 AI 速递 · 开源项目 · 2026-11-16（2 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-16</link>
-      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-16</guid>
+      <guid isPermaLink="false">cybermap-daily-开源项目-2026-11-16</guid>
       <pubDate>Mon, 16 Nov 2026 00:00:00 +0800</pubDate>
       <description>vercel-labs/agent-desktop［开源项目］Vercel Labs 开源的命令行工具，通过系统无障碍树让 AI 智能体识别并操作桌面应用，支持无头运行与多平台。 — https://github.com/vercel-labs/agent-desktop
 heygen-com/hyperframes［开源项目］HeyGen 开源的 TypeScript 视频渲染框架，把 HTML、CSS 与动画确定性输出为 MP4，供 AI 智能体批量生成视频。 — https://github.com/heygen-com/hyperframes</description>
@@ -139,7 +139,7 @@ heygen-com/hyperframes［开源项目］HeyGen 开源的 TypeScript 视频渲染
     <item>
       <title>每日 AI 速递 · 开源项目 · 2026-11-15（2 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-15</link>
-      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-15</guid>
+      <guid isPermaLink="false">cybermap-daily-开源项目-2026-11-15</guid>
       <pubDate>Sun, 15 Nov 2026 00:00:00 +0800</pubDate>
       <description>langflow-ai/langflow［开源项目］可视化拖拽构建 AI 智能体与工作流的开源工具，支持接入主流大模型并部署为 API。 — https://github.com/langflow-ai/langflow
 harry0703/MoneyPrinterTurbo［开源项目］基于 AI 大模型自动生成文案、配音与字幕，一键合成高清短视频的开源工作流工具。 — https://github.com/harry0703/MoneyPrinterTurbo</description>
@@ -148,7 +148,7 @@ harry0703/MoneyPrinterTurbo［开源项目］基于 AI 大模型自动生成文�
     <item>
       <title>每日 AI 速递 · 开源项目 · 2026-11-14（3 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-14</link>
-      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-14</guid>
+      <guid isPermaLink="false">cybermap-daily-开源项目-2026-11-14</guid>
       <pubDate>Sat, 14 Nov 2026 00:00:00 +0800</pubDate>
       <description>TauricResearch/TradingAgents［开源项目］基于多智能体大语言模型的金融交易框架，模拟分析师、研究员与交易员协作完成选股与投资决策。 — https://github.com/TauricResearch/TradingAgents
 github/spec-kit［开源项目］GitHub 出品的规范驱动开发（SDD）工具包，用自然语言规范引导 AI 从需求到代码的分阶段实现。 — https://github.com/github/spec-kit
@@ -158,7 +158,7 @@ openclaw/openclaw［开源项目］开源个人 AI 助手，可在任意操作�
     <item>
       <title>每日 AI 速递 · 开源项目 · 2026-11-13（2 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-13</link>
-      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-13</guid>
+      <guid isPermaLink="false">cybermap-daily-开源项目-2026-11-13</guid>
       <pubDate>Fri, 13 Nov 2026 00:00:00 +0800</pubDate>
       <description>unclecode/crawl4ai［开源项目］面向大模型与 AI 智能体的开源网页抓取工具，把网页转成 LLM 就绪的 Markdown，支持自托管。 — https://github.com/unclecode/crawl4ai
 browser-use/browser-use［开源项目］开源浏览器智能体框架，让大模型在真实浏览器中自动点击、输入并完成任务，兼容任意 LLM。 — https://github.com/browser-use/browser-use</description>

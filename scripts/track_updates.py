@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """cyberMap · 上游变更雷达（source/daily/updates.json）
 
-每天对 webstack.yml 里 dailyAI_* 的 GitHub 项目做一次「上游动态」采集：
+每天对 webstack.yml 里全部分类的 GitHub 项目做一次「上游动态」采集：
 记录每个仓库的 pushed_at / stars，与上一次快照对比，算出「有新提交 / 涨星」，
 在 /daily/ 时间轴顶部渲染「上游变更雷达」区块。与 health.json（站点是否存活）
 正交：health 回答「站还在吗」，updates 回答「项目最近动了吗」。
@@ -18,7 +18,7 @@
 * 配额闸门 + 分批覆盖：无 ETag 的「新仓库」是冷请求，每天限量（默认 35 个），
   并持续监控响应头 ``X-RateLimit-Remaining``，低于保留值（默认 6）即停手，
   未覆盖的标 ``pending`` 留到次日。全站约 66 个 GitHub 项目，2 天内全量收敛。
-  优先新收录（dailyAI_* 里靠前）的项目建立基线，用户最关心的先上线。
+  优先新收录（dailyAI_* 分类排最前）的项目建立基线，用户最关心的先上线。
 * 同日闸门：若快照 generated_at 就是今天且非 --force，直接跳过（零请求、零写入），
   防止同日二次触发重复烧配额。产物缺失 / 时间戳损坏 / --force 时必跑。
 * 三态网络处理：403/429 判限流（停手 + warning，不误判仓库异常）；404 跳过；
@@ -60,7 +60,15 @@ except ImportError as exc:  # pragma: no cover
 
 DATA_REL = Path("source/_data/webstack.yml")
 OUT_REL = Path("source/daily/updates.json")
-DAILY_CATEGORIES = ("dailyAI_oss", "dailyAI_tool", "dailyAI_model")
+# 追踪范围：全部分类里的 GitHub 仓库（每日收录按性质路由进常设分类后，
+# 开源项目可能落在 githubGPT / aiFrameworks 等常设分类）。dailyAI_* 排最前，
+# 保持「新收录优先建基线」的顺序语义。
+TRACK_CATEGORIES = (
+    "dailyAI_oss", "dailyAI_tool", "dailyAI_model",
+    "githubGPT", "aiFrameworks", "GPTModels",
+    "aiChat", "aiImage", "aiVideo", "aiCode", "aiOffice", "aiAgent",
+    "studyGPT", "techBlog", "aiNav", "likeGPT", "hotTools", "myBlog",
+)
 CST = timezone(timedelta(hours=8))
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
@@ -96,14 +104,14 @@ def norm(url: str) -> str:
 
 
 def load_repos(data_file: Path) -> tuple[list[dict], list[str]]:
-    """读取 dailyAI_* 中的 GitHub 仓库，按在 YAML 里的顺序（新收录在前）。"""
+    """读取全部分类中的 GitHub 仓库，按 TRACK_CATEGORIES 顺序（新收录分类在前）。"""
     if not data_file.is_file():
         raise FileNotFoundError(f"数据文件不存在：{data_file}")
     data = yaml.safe_load(data_file.read_text(encoding="utf-8"))
     if not isinstance(data, dict):
         raise ValueError("webstack.yml 顶层不是映射")
     repos, warnings, seen = [], [], set()
-    for cat in DAILY_CATEGORIES:
+    for cat in TRACK_CATEGORIES:
         block = data.get(cat)
         if not isinstance(block, list):
             warnings.append(f"分类 {cat} 不是列表或不存在，已跳过")
@@ -311,7 +319,7 @@ def main() -> int:
         print(json.dumps({"ok": False, "error": str(exc)}, ensure_ascii=False, indent=2))
         return 1
     if not repos:
-        print(json.dumps({"ok": False, "error": "dailyAI_* 中没有 GitHub 仓库可追踪"},
+        print(json.dumps({"ok": False, "error": "webstack.yml 中没有 GitHub 仓库可追踪"},
                          ensure_ascii=False, indent=2))
         return 1
 
@@ -377,7 +385,7 @@ def main() -> int:
     payload = {
         "schema": 1,
         "generated_at": now.isoformat(timespec="seconds"),
-        "source": "source/_data/webstack.yml :: dailyAI_* GitHub repos",
+        "source": "source/_data/webstack.yml :: 全部分类 GitHub repos",
         "note": "每天采集 pushed_at/stars 并与上次快照对比；304 条件请求不计配额；"
                 "首次采集仅建立基线不报变更；配额不足的仓库留待次日。",
         "summary": summary,

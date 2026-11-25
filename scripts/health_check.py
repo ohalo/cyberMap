@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """cyberMap · 收录站点存活复检器（source/daily/health.json）
 
-对 ``webstack.yml`` 里 ``dailyAI_*`` 三个分类的全部站点做一次周期性存活复检，
+对 ``webstack.yml`` 里全部分类的站点做一次周期性存活复检，
 产出仓库内静态数据 ``source/daily/health.json``，供 ``build_daily.py`` 在时间轴
 卡片上渲染「持续在线 / 疑似失效 / 待核对」小标记，把一次性收录核验升级为长期可信导航。
 
@@ -62,7 +62,15 @@ except ImportError as exc:  # pragma: no cover
 
 DATA_REL = Path("source/_data/webstack.yml")
 OUT_REL = Path("source/daily/health.json")
-DAILY_CATEGORIES = ("dailyAI_oss", "dailyAI_tool", "dailyAI_model")
+# 复检范围：全部分类（每日收录按性质路由进常设分类后，新站点可能落在任何分类）。
+# 扫描方式是「读所有顶层列表分类」，不再依赖固定分类名单；6 并发 + 单站 12s
+# 超时 + 7 天降频闸门控制成本。
+ALL_SITE_CATEGORIES = (
+    "dailyAI_oss", "dailyAI_tool", "dailyAI_model",
+    "aiChat", "aiImage", "aiVideo", "aiCode", "aiOffice", "aiAgent",
+    "GPTModels", "githubGPT", "aiFrameworks",
+    "studyGPT", "techBlog", "aiNav", "likeGPT", "hotTools", "myBlog",
+)
 CST = timezone(timedelta(hours=8))
 CHECK_INTERVAL_DAYS = 7  # 距上次复检不足此天数则跳过（并入每日任务的降频闸门）
 
@@ -100,7 +108,7 @@ def norm(url: str) -> str:
 
 
 def load_sites(data_file: Path) -> tuple[list[dict], list[str]]:
-    """读取 dailyAI_* 的 (name, url) 列表，按 URL 去重。"""
+    """读取全部分类的 (name, url) 列表，按 URL 去重。"""
     if not data_file.is_file():
         raise FileNotFoundError(f"数据文件不存在：{data_file}")
     try:
@@ -111,7 +119,7 @@ def load_sites(data_file: Path) -> tuple[list[dict], list[str]]:
         raise ValueError("webstack.yml 顶层不是映射")
 
     sites, warnings, seen = [], [], set()
-    for cat in DAILY_CATEGORIES:
+    for cat in ALL_SITE_CATEGORIES:
         block = data.get(cat)
         if not isinstance(block, list):
             warnings.append(f"分类 {cat} 不是列表或不存在，已跳过")
@@ -355,7 +363,7 @@ def main() -> int:
         print(json.dumps({"ok": False, "error": str(exc)}, ensure_ascii=False, indent=2))
         return 1
     if not sites:
-        print(json.dumps({"ok": False, "error": "dailyAI_* 中没有可复检的站点"},
+        print(json.dumps({"ok": False, "error": "webstack.yml 中没有可复检的站点"},
                          ensure_ascii=False, indent=2))
         return 1
 
@@ -383,7 +391,7 @@ def main() -> int:
     payload = {
         "schema": 1,
         "generated_at": datetime.now(CST).isoformat(timespec="seconds"),
-        "source": "source/_data/webstack.yml :: dailyAI_*",
+        "source": "source/_data/webstack.yml :: 全部分类",
         "note": "三态：ok=在线 / down=疑似失效 / unverified=本机网络不可判定（不算失效）。并入每日收录、脚本内 7 天降频复检。",
         "summary": summary,
         "sites": dict(sorted(results.items())),

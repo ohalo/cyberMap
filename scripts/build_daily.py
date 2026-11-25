@@ -2,11 +2,12 @@
 # -*- coding: utf-8 -*-
 """cyberMap · 每日 AI 速递生成器
 
-读取 ``source/_data/webstack.yml`` 里 ``dailyAI_oss`` / ``dailyAI_tool`` /
-``dailyAI_model`` 三个分类，按描述尾注「· YYYY-MM-DD 收录」聚合成时间轴页面
-``source/daily/index.html``，并输出 RSS 2.0 订阅源：一份混合流
-``source/daily/feed.xml`` + 三份按分类过滤的独立流 ``feed-oss.xml`` /
-``feed-tool.xml`` / ``feed-model.xml``（供读者只订阅自己关心的类型）；
+读取 ``source/_data/webstack.yml`` 里全部 18 个分类的条目（每日收录按性质
+路由进常设分类后，带「· YYYY-MM-DD 收录」尾注的条目可能出现在任何分类），
+按描述尾注聚合成时间轴页面 ``source/daily/index.html``，并输出 RSS 2.0
+订阅源：一份混合流 ``source/daily/feed.xml`` + 四份按性质大类聚合的独立流
+``feed-oss.xml``（开源项目）/ ``feed-tool.xml``（工具官网）/ ``feed-model.xml``
+（模型框架）/ ``feed-learn.xml``（学习与资源）（供读者只订阅自己关心的类型）；
 另有 ``feed-updates.xml`` 项目动态流，来源 updates.json.recent，逐条罗列
 已收录项目最近的新提交与涨星，与按收录日期的全量/分类流正交。
 
@@ -58,17 +59,42 @@ HEALTH_REL = Path("source/daily/health.json")
 UPDATES_REL = Path("source/daily/updates.json")
 
 # 分类 -> (中文标签, 短名)。顺序决定同一天内卡片的展示顺序。
+# 覆盖全部 18 个分类：每日收录按性质路由进常设分类后，
+# 带日期尾注的常设分类条目同样进入时间轴/标签云/搜索，不再只看 dailyAI_*。
 CATEGORY_LABELS = OrderedDict([
     ("dailyAI_oss", ("开源项目", "oss")),
     ("dailyAI_tool", ("工具官网", "tool")),
     ("dailyAI_model", ("模型框架", "model")),
+    ("aiChat", ("对话与搜索", "chat")),
+    ("aiImage", ("图像与设计", "image")),
+    ("aiVideo", ("视频与音频", "video")),
+    ("aiCode", ("编程与开发", "code")),
+    ("aiOffice", ("办公与效率", "office")),
+    ("aiAgent", ("智能体与自动化", "agent")),
+    ("GPTModels", ("大语言模型", "llm")),
+    ("githubGPT", ("GitHub 项目", "gh")),
+    ("aiFrameworks", ("推理与训练框架", "framework")),
+    ("studyGPT", ("提示词与教程", "learn")),
+    ("techBlog", ("技术博客", "blog")),
+    ("aiNav", ("AI 导航站", "nav")),
+    ("likeGPT", ("社区与问卷", "community")),
+    ("hotTools", ("常用工具", "tools")),
+    ("myBlog", ("我的博客", "myblog")),
 ])
 
-# 分类订阅源：category -> (文件名, 分类中文名)。feed.xml 仍是混合全量流。
+# 分类订阅源：文件名 -> (分类中文名, 覆盖的分类 key 元组)。
+# 分类流按「性质大类」聚合多个分类，而非一一对应：
+#   开源项目流 = 每日开源 + GitHub 项目 + 推理与训练框架
+#   工具官网流 = 每日工具 + AI 工具箱六个子类 + 常用工具
+#   模型框架流 = 每日模型 + 大语言模型
+#   学习资源流 = 提示词与教程 + 技术博客 + AI 导航站 + 社区与问卷 + 我的博客
+# feed.xml 仍是混合全量流，覆盖所有分类。
 CATEGORY_FEEDS = OrderedDict([
-    ("dailyAI_oss", ("feed-oss.xml", "开源项目")),
-    ("dailyAI_tool", ("feed-tool.xml", "工具官网")),
-    ("dailyAI_model", ("feed-model.xml", "模型框架")),
+    ("feed-oss.xml", ("开源项目", ("dailyAI_oss", "githubGPT", "aiFrameworks"))),
+    ("feed-tool.xml", ("工具官网", ("dailyAI_tool", "aiChat", "aiImage", "aiVideo",
+                                   "aiCode", "aiOffice", "aiAgent", "hotTools"))),
+    ("feed-model.xml", ("模型框架", ("dailyAI_model", "GPTModels"))),
+    ("feed-learn.xml", ("学习与资源", ("studyGPT", "techBlog", "aiNav", "likeGPT", "myBlog"))),
 ])
 
 # 项目动态速递独立流：来源 updates.json.recent，与按收录日期的全量/分类流正交。
@@ -1030,7 +1056,11 @@ def changes_html(updates: dict) -> str:
         return ""
 
     generated = (updates.get("generated_at") or "").replace("T", " ")[:16]
-    CAT_LABEL = {"dailyAI_oss": "开源", "dailyAI_tool": "工具", "dailyAI_model": "模型"}
+    CAT_LABEL = {"dailyAI_oss": "开源", "dailyAI_tool": "工具", "dailyAI_model": "模型",
+                 "githubGPT": "GitHub", "aiFrameworks": "框架", "GPTModels": "模型",
+                 "aiChat": "对话", "aiImage": "图像", "aiVideo": "视频", "aiCode": "代码",
+                 "aiOffice": "办公", "aiAgent": "智能体", "studyGPT": "教程",
+                 "techBlog": "博客", "aiNav": "导航", "likeGPT": "社区", "hotTools": "常用"}
 
     rows = []
     for r in recent:
@@ -1206,7 +1236,7 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
     alternates = ''.join(
         f'<link rel="alternate" type="application/rss+xml" '
         f'title="cyberMap · 每日 AI 速递 · {label}" href="/daily/{filename}">'
-        for filename, label in CATEGORY_FEEDS.values()
+        for filename, (label, _cats) in CATEGORY_FEEDS.items()
     )
     alternates += (
         '<link rel="alternate" type="application/rss+xml" '
@@ -1238,7 +1268,7 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
         '<section class="dy-hero">',
         '<span class="dy-kicker">每日更新 · 逐条核验</span>',
         "<h1>每日 AI 速递</h1>",
-        "<p>每天从公开来源核验后至少收录 3 个 AI 站点（合格候选多则多收），按类型归入开源项目 / 工具官网 / 模型框架。"
+        "<p>每天从公开来源核验后至少收录 3 个 AI 站点（合格候选多则多收），按性质归入首页最合适的分类（开源项目 / 工具官网 / 模型框架 / 提示词与教程 / 技术博客等）。"
         "这里按收录日期倒序回看，每条都附可核验的证据；下方知识库可按方向标签筛选或站内搜索，"
         "「项目动态速递」则汇总已收录项目的最近提交与涨星，让沉淀下来的站点随时可查、更新可见。</p>",
         '<div class="dy-stats">',
@@ -1259,7 +1289,7 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
         + ''.join(
             f'<a class="dy-feed-chip" href="/daily/{filename}" title="只订阅{label}">'
             f'{ICON_RSS}<span>{label}</span></a>'
-            for filename, label in CATEGORY_FEEDS.values()
+            for filename, (label, _cats) in CATEGORY_FEEDS.items()
         )
         + f'<a class="dy-feed-chip" href="/daily/{UPDATES_FEED}" title="订阅已收录项目的更新动态">'
         f'{ICON_RSS}<span>项目动态</span></a>',
@@ -1310,20 +1340,20 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
 
 
 # ---------------------------------------------------------------- RSS 生成
-def build_feed(days, site_url: str, generated: datetime, category: str | None = None) -> bytes:
+def build_feed(days, site_url: str, generated: datetime,
+               label: str | None = None, categories: tuple | None = None) -> bytes:
     """每天一个 item；无日期的「早期收录」不进 RSS，避免伪造发布时间。
 
-    ``category`` 为 None 时输出混合全量流（feed.xml）；给定分类 key 时只保留
-    该分类的条目，且某天该分类无条目则跳过这一天，不产生空 item。
+    ``categories`` 为 None 时输出混合全量流（feed.xml）；给定分类 key 元组时
+    只保留这些分类的条目，且某天该组分类无条目则跳过这一天，不产生空 item。
     """
     root = site_url.rstrip("/")
-    label = CATEGORY_LABELS[category][0] if category else None
     suffix = f" · {label}" if label else ""
     title = f"cyberMap · 每日 AI 速递{suffix}"
     desc = (
         f"cyberMap 每日核验收录的 AI {label}，每天一期。"
         if label else
-        "cyberMap 每日核验收录的 AI 开源项目、工具官网与模型框架，每天一期。"
+        "cyberMap 每日核验收录的 AI 站点（开源项目、工具官网、模型框架、教程博客等），每天一期。"
     )
     rss = ET.Element("rss", {"version": "2.0"})
     channel = ET.SubElement(rss, "channel")
@@ -1336,9 +1366,10 @@ def build_feed(days, site_url: str, generated: datetime, category: str | None = 
     ET.SubElement(channel, "ttl").text = "1440"
 
     for day, all_items in days:
-        items = [i for i in all_items if i["category"] == category] if category else all_items
+        items = ([i for i in all_items if i["category"] in categories]
+                 if categories else all_items)
         if not items:
-            continue  # 该分类当天无收录，跳过，避免空 item
+            continue  # 该组分类当天无收录，跳过，避免空 item
         item = ET.SubElement(channel, "item")
         ET.SubElement(item, "title").text = (
             f"每日 AI 速递{suffix} · {day}（{len(items)} 个站点）"
@@ -1347,8 +1378,11 @@ def build_feed(days, site_url: str, generated: datetime, category: str | None = 
         ET.SubElement(item, "link").text = link
         # guid 必须跨 feed 唯一：否则同时订阅「全部」与「某分类」时，
         # 阅读器会因同日期 guid 相同而把两类内容误判为同一篇。
-        guid = f"{root}/daily/#day-{day}" if not category else f"cybermap-daily-{category}-{day}"
-        ET.SubElement(item, "guid", {"isPermaLink": "false" if category else "true"}).text = guid
+        # 分类流 guid 用流名（如 feed-learn）+ 日期，不再绑定单一分类 key。
+        feed_key = (categories[0] if len(categories) == 1
+                    else re.sub(r"\W+", "-", label or "cat").lower()) if categories else None
+        guid = f"{root}/daily/#day-{day}" if not categories else f"cybermap-daily-{feed_key}-{day}"
+        ET.SubElement(item, "guid", {"isPermaLink": "false" if categories else "true"}).text = guid
         d = datetime.strptime(day, "%Y-%m-%d").date()
         ET.SubElement(item, "pubDate").text = format_datetime(
             datetime.combine(d, time(0, 0), tzinfo=CST)
@@ -1498,10 +1532,10 @@ def main() -> None:
         return
 
     html_text = build_html(entries, days, undated, site_url, generated, verify, health, updates)
-    # 混合全量流 + 三份分类流，共用同一套过滤/渲染逻辑
+    # 混合全量流 + 四份分类流（按性质大类聚合多个分类），共用同一套过滤/渲染逻辑
     feeds = {"feed.xml": build_feed(days, site_url, generated)}
-    for category, (filename, _label) in CATEGORY_FEEDS.items():
-        feeds[filename] = build_feed(days, site_url, generated, category=category)
+    for filename, (label, cats) in CATEGORY_FEEDS.items():
+        feeds[filename] = build_feed(days, site_url, generated, label=label, categories=cats)
     # 项目动态流：来源 updates.json.recent，与收录日期流正交（空 recent 时为空 channel）
     feeds[UPDATES_FEED] = build_updates_feed(updates, site_url, generated)
 
@@ -1514,7 +1548,7 @@ def main() -> None:
         len(days) + (1 if undated else 0)
     ):
         fail("生成的 HTML 结构自检未通过，未写入")
-    # 分类订阅条必须出现全部 4 个入口
+    # 分类订阅条必须出现全部入口（feed.xml + 4 份分类流 + 动态流）
     for filename in feeds:
         if f'href="/daily/{filename}"' not in html_text:
             fail(f"index.html 缺少订阅入口 {filename}，未写入")

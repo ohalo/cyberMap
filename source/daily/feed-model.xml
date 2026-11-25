@@ -6,12 +6,12 @@
     <description>cyberMap 每日核验收录的 AI 模型框架，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Wed, 25 Nov 2026 10:26:49 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 15:48:20 +0800</lastBuildDate>
     <ttl>1440</ttl>
     <item>
       <title>每日 AI 速递 · 模型框架 · 2026-11-25（1 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-25</link>
-      <guid isPermaLink="false">cybermap-daily-dailyAI_model-2026-11-25</guid>
+      <guid isPermaLink="false">cybermap-daily-模型框架-2026-11-25</guid>
       <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
       <description>karpathy/nanochat［模型框架］Karpathy 开源的从零实现 ChatGPT 全流程教学框架，约百美元成本即可完成预训练与推理。 — https://github.com/karpathy/nanochat</description>
       <category>模型框架</category>
@@ -19,7 +19,7 @@
     <item>
       <title>每日 AI 速递 · 模型框架 · 2026-11-24（2 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-24</link>
-      <guid isPermaLink="false">cybermap-daily-dailyAI_model-2026-11-24</guid>
+      <guid isPermaLink="false">cybermap-daily-模型框架-2026-11-24</guid>
       <pubDate>Tue, 24 Nov 2026 00:00:00 +0800</pubDate>
       <description>JustVugg/colibri［模型框架］纯 C 编写的分层 MoE 推理引擎，热专家驻留 GPU、冷专家从 NVMe 流式加载，让超大模型跑在普通硬件上。 — https://github.com/JustVugg/colibri
 unslothai/unsloth［模型框架］本地运行与训练大语言模型及扩散模型的框架，支持 GGUF、MLX 与 Qwen、DeepSeek、FLUX 等模型微调。 — https://github.com/unslothai/unsloth</description>
@@ -28,7 +28,7 @@ unslothai/unsloth［模型框架］本地运行与训练大语言模型及扩散
     <item>
       <title>每日 AI 速递 · 模型框架 · 2026-11-22（3 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-22</link>
-      <guid isPermaLink="false">cybermap-daily-dailyAI_model-2026-11-22</guid>
+      <guid isPermaLink="false">cybermap-daily-模型框架-2026-11-22</guid>
       <pubDate>Sun, 22 Nov 2026 00:00:00 +0800</pubDate>
       <description>microsoft/VibeVoice［模型框架］微软开源的前沿语音 AI 模型，面向高质量语音生成与实时语音交互场景。 — https://github.com/microsoft/VibeVoice
 Interactive-Active-AI/NextTransformer［模型框架］面向下一代 Transformer 与大模型的开源框架，提供算力对齐基准与架构自主研究能力。 — https://github.com/Interactive-Active-AI/NextTransformer
@@ -38,7 +38,7 @@ algorithmicsuperintelligence/optillm［模型框架］LLM 推理优化代理，�
     <item>
       <title>每日 AI 速递 · 模型框架 · 2026-11-21（3 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-21</link>
-      <guid isPermaLink="false">cybermap-daily-dailyAI_model-2026-11-21</guid>
+      <guid isPermaLink="false">cybermap-daily-模型框架-2026-11-21</guid>
       <pubDate>Sat, 21 Nov 2026 00:00:00 +0800</pubDate>
       <description>cactus-compute/cactus［模型框架］面向消费级设备的轻量端侧推理库，体积不足 50MB，本地运行智能体、语音与视觉任务，无需云端。 — https://github.com/cactus-compute/cactus
 higurashi-ai/Haru［模型框架］低延迟多语言全双工语音对话模型，可边听边说，以 133 毫秒分块连续生成口语回应。 — https://github.com/higurashi-ai/Haru
@@ -48,7 +48,7 @@ huawei-csl/MACaQ［模型框架］华为开源的模型无关量化工具，面�
     <item>
       <title>每日 AI 速递 · 模型框架 · 2026-11-20（2 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-20</link>
-      <guid isPermaLink="false">cybermap-daily-dailyAI_model-2026-11-20</guid>
+      <guid isPermaLink="false">cybermap-daily-模型框架-2026-11-20</guid>
       <pubDate>Fri, 20 Nov 2026 00:00:00 +0800</pubDate>
       <description>mw00/project-maya［模型框架］开源本地大模型推理引擎，通过 GPU、内存与固态盘三级分层调度权重，让数百 B 模型跑在消费级硬件，兼容 OpenAI/Anthropic API。 — https://github.com/mw00/project-maya
 Edge0-AI/Edge0［模型框架］端侧基础模型与流式 MoE 推理框架，通过 SSD 流式权重与专家路由，让 145B 模型跑在笔记本、35B 跑在手机上。 — https://github.com/Edge0-AI/Edge0</description>
@@ -57,7 +57,7 @@ Edge0-AI/Edge0［模型框架］端侧基础模型与流式 MoE 推理框架，�
     <item>
       <title>每日 AI 速递 · 模型框架 · 2026-11-19（2 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-19</link>
-      <guid isPermaLink="false">cybermap-daily-dailyAI_model-2026-11-19</guid>
+      <guid isPermaLink="false">cybermap-daily-模型框架-2026-11-19</guid>
       <pubDate>Thu, 19 Nov 2026 00:00:00 +0800</pubDate>
       <description>jundot/omlx［模型框架］面向苹果芯片的大模型推理服务器，支持连续批处理与 SSD 分层缓存，可从菜单栏管理。 — https://github.com/jundot/omlx
 raullenchai/Rapid-MLX［模型框架］基于 MLX 的苹果芯片推理服务器，兼容 OpenAI 与 Anthropic 接口，专注编码智能体工具调用。 — https://github.com/raullenchai/Rapid-MLX</description>
@@ -66,7 +66,7 @@ raullenchai/Rapid-MLX［模型框架］基于 MLX 的苹果芯片推理服务器
     <item>
       <title>每日 AI 速递 · 模型框架 · 2026-11-18（3 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-18</link>
-      <guid isPermaLink="false">cybermap-daily-dailyAI_model-2026-11-18</guid>
+      <guid isPermaLink="false">cybermap-daily-模型框架-2026-11-18</guid>
       <pubDate>Wed, 18 Nov 2026 00:00:00 +0800</pubDate>
       <description>skyzh/tiny-llm［模型框架］面向系统工程师的 Apple Silicon LLM 推理教学项目，用 Python 从零搭建迷你 vLLM 并运行 Qwen 模型。 — https://github.com/skyzh/tiny-llm
 jingyaogong/minimind［模型框架］仅需 2 小时即可从零训练 6400 万参数小语言模型的开源项目，适合快速上手大模型训练全流程。 — https://github.com/jingyaogong/minimind
@@ -76,7 +76,7 @@ flashml-org/FreeToken［模型框架］把数据中心级模型服务带到桌�
     <item>
       <title>每日 AI 速递 · 模型框架 · 2026-11-17（1 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-17</link>
-      <guid isPermaLink="false">cybermap-daily-dailyAI_model-2026-11-17</guid>
+      <guid isPermaLink="false">cybermap-daily-模型框架-2026-11-17</guid>
       <pubDate>Tue, 17 Nov 2026 00:00:00 +0800</pubDate>
       <description>FareedKhan-dev/kimi-k3-in-c［模型框架］用纯C99实现的推理引擎，可在单核CPU、8GB内存中运行2.78万亿参数的Kimi K3大模型，零依赖。 — https://github.com/FareedKhan-dev/kimi-k3-in-c</description>
       <category>模型框架</category>
@@ -84,7 +84,7 @@ flashml-org/FreeToken［模型框架］把数据中心级模型服务带到桌�
     <item>
       <title>每日 AI 速递 · 模型框架 · 2026-11-14（1 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-14</link>
-      <guid isPermaLink="false">cybermap-daily-dailyAI_model-2026-11-14</guid>
+      <guid isPermaLink="false">cybermap-daily-模型框架-2026-11-14</guid>
       <pubDate>Sat, 14 Nov 2026 00:00:00 +0800</pubDate>
       <description>nv-tlabs/lyra［模型框架］英伟达开源的生成式 3D 世界模型项目，可从输入图像生成可探索的三维场景，开放代码与预训练权重。 — https://github.com/nv-tlabs/Lyra</description>
       <category>模型框架</category>
