@@ -178,6 +178,12 @@ menu:
       - name: "推理与训练框架"
         icon: fas fa-microchip
         config: aiFrameworks
+      - name: "RAG 与知识库"
+        icon: fas fa-database
+        config: ragKnowledge
+      - name: "智能体框架"
+        icon: fas fa-project-diagram
+        config: agentFrameworks
   - name: "学习与资源"
     icon: fas fa-graduation-cap
     submenu:
@@ -215,6 +221,26 @@ menu:
         icon: fas fa-blog
         config: myBlog
 aiChat:
+  - name: "Denizen Blu One"
+    url: https://denizenblu.com
+    img: https://denizenblu.com/favicon.ico
+    description: "提供多模型统一订阅与 OpenAI 兼容 API 的在线 AI 服务，按年计费、不按 token 收费。 · 2026-11-23 收录"
+  - name: GlobalGPT
+    url: https://glbgpt.com
+    img: https://glbgpt.com/favicon.ico
+    description: "聚合 ChatGPT、Claude、Gemini 及图像视频模型的一站式订阅平台，用一个账号访问多款主流 AI 服务。 · 2026-11-21 收录"
+  - name: magpie
+    url: https://usemagpie.ai
+    img: https://usemagpie.ai/favicon.ico
+    description: "本地 AI 模型网关，统一接入 DeepSeek、Claude、Kimi 等模型订阅，供各类编码智能体按需切换。 · 2026-11-15 收录"
+  - name: webAI
+    url: https://www.webai.com
+    img: https://www.webai.com/favicon.ico
+    description: "在 Mac 本地运行小模型的 AI 应用，可搭建多个 AI 专家（Persona）协作处理私有文档，数据不上云、不计 token 费。 · 2026-11-14 收录"
+  - name: ChatGPT - 用GPT实现聊天机器人
+    url: https://www.lowff.net
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: ChatGPT是一个基于OpenAI的GPT-3 API构建的聊天机器人框架。
   - name: "腾讯元宝"
     url: https://yuanbao.tencent.com
     img: https://yuanbao.tencent.com/favicon.ico
@@ -263,36 +289,27 @@ aiChat:
     url: https://www.phind.com
     img: https://cybermap.halo26812.eu.org/favicon.ico
     description: "面向开发者的 AI 搜索与问答，答案附技术文档来源。"
-  - name: Flash GPT - 聊天
-    url: https://www.deflash.ai/
-    img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: Flash GPT - 聊天
-  - name: Vicuna
-    url: https://vicuna.lmsys.org/
-    img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: Vicuna - An Open-Source Chatbot
-  - name: Sage - Poe
-    url: https://poe.com/
-    img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: Sage - Poe
   - name: perplexity
     url: https://www.perplexity.ai
     img: https://cybermap.halo26812.eu.org/favicon.ico
     description: 需要魔法,主打准确度,胡说八道概率低体验优于ChatGPT,免费不限量
-  - name: 必应
-    url: https://www.bing.com/
-    img: https://www.bing.com/sa/simg/bing_p_rr_teal_min.ico
-    description: 需要魔法,基于GPT-4但是功能做了收束,免费,每轮对话不超过20个问题,每天不超过200个问题
-  - name: ora
-    url: https://ora.sh/openai/gpt4
-    img: https://ora.sh/favicon.ico
-    description: 需要魔法,GPT-4每天免费10次
-  - name: forefront.ai
-    url: https://chat.forefront.ai/
-    img: https://uploads-ssl.webflow.com/628193922a4d18e69ba81f14/628193922a4d180bf1a81f46_Favicon.png
-    description: 更好的ChatGPT体验。注册可以免费获取GPT-4,图像生成,自定义人物,可共享聊天等更多功能
-
 aiImage:
+  - name: Hydrilla
+    url: https://hydrilla.ai
+    img: https://hydrilla.ai/favicon.ico
+    description: "面向游戏影视的 AI 3D 资产生成工具，用文本或图片生成带 PBR 贴图的生产级网格模型。 · 2026-11-25 收录"
+  - name: MerchantFloor
+    url: https://www.merchantfloor.com
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "面向小型 Shopify 商家的 AI 商品上架工具，上传产品图即可生成白底图、场景图与 SEO 描述并同步店铺。 · 2026-11-21 收录"
+  - name: YouArt
+    url: https://youart.ai
+    img: https://youart.ai/favicon.ico
+    description: "对话式 AI 创意平台，用智能体把需求拆成分镜与配音并在画布生成图像视频，支持多模型聚合与桌面版。 · 2026-11-18 收录"
+  - name: "Planet AI"
+    url: https://ai.planet.com
+    img: https://ai.planet.com/favicon.ico
+    description: "Planet 官方卫星影像 AI 探索器，用自然语言在地图上检索分析十年高分辨率影像，支持时序对比与深度研究智能体。 · 2026-11-20 收录"
   - name: "即梦 AI"
     url: https://jimeng.jianying.com
     img: https://jimeng.jianying.com/favicon.ico
@@ -321,10 +338,6 @@ aiImage:
     url: https://www.adobe.com/products/firefly.html
     img: https://cybermap.halo26812.eu.org/favicon.ico
     description: "Adobe 生成式 AI 创意工具，集成于 Photoshop 等设计软件。"
-  - name: 词图PromptTool - AI绘画资料管理网站
-    url: https://www.prompttool.com/NovelAI
-    img: https://www.prompttool.com/prompttool.ico
-    description: 词图PromptTool - AI绘画资料管理网站
   - name: AppIcons.ai
     url: http://AppIcons.ai
     img: https://appicons.ai/favicon.ico
@@ -343,6 +356,34 @@ aiImage:
     description: Segment Anything是一个强大的实例分割模型,它可以根据输入提示(如点或框)生成高质量的对象遮罩,并可以用于生成图像中的所有对象的遮罩。它在1100万个遮罩和1100万张图像的大型数据集上进行了训练,在各种分割任务上的零样本性能非常强。
 
 aiVideo:
+  - name: dograh-hq/dograh
+    url: https://github.com/dograh-hq/dograh
+    img: https://github.com/favicon.ico
+    description: "开源自托管语音 AI 平台，可替代 Vapi 与 Retell，支持语音到语音或 LLM/STT/TTS、可视化流程编排、MCP 与电话接入。 · 2026-11-20 收录"
+  - name: browser-use/video-use
+    url: https://github.com/browser-use/video-use
+    img: https://github.com/favicon.ico
+    description: "browser-use 团队开源的剪辑工具，让编码智能体通过对话完成视频剪辑与处理。 · 2026-11-19 收录"
+  - name: duixcom/Duix-Avatar
+    url: https://github.com/duixcom/Duix-Avatar
+    img: https://github.com/favicon.ico
+    description: "真开源离线数字人工具包，支持用真人视频克隆形象与声音，本地生成数字人口播视频。 · 2026-11-19 收录"
+  - name: heygen-com/hyperframes
+    url: https://github.com/heygen-com/hyperframes
+    img: https://github.com/favicon.ico
+    description: "HeyGen 开源的 TypeScript 视频渲染框架，把 HTML、CSS 与动画确定性输出为 MP4，供 AI 智能体批量生成视频。 · 2026-11-16 收录"
+  - name: harry0703/MoneyPrinterTurbo
+    url: https://github.com/harry0703/MoneyPrinterTurbo
+    img: https://github.com/favicon.ico
+    description: "基于 AI 大模型自动生成文案、配音与字幕，一键合成高清短视频的开源工作流工具。 · 2026-11-15 收录"
+  - name: DomoAI
+    url: https://domoai.app
+    img: https://domoai.app/favicon.ico
+    description: "在线 AI 视频与动画创作平台，支持用文字、图片或视频素材完成生成、风格化与画质提升。 · 2026-11-14 收录"
+  - name: Clipwright
+    url: https://clipwright.io
+    img: https://clipwright.io/favicon.ico
+    description: "面向AI智能体的视频制作后端，通过MCP或API拆解热门短视频并生成带口播的广告MP4，渲染前先报价。 · 2026-11-17 收录"
   - name: "可灵 AI"
     url: https://klingai.com
     img: https://klingai.com/favicon.ico
@@ -385,6 +426,18 @@ aiVideo:
     description: 这是一个AI视频工具,可以自动生成和编辑视频片段。
 
 aiCode:
+  - name: Testsy
+    url: https://testsy.dev
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "AI 质量测试智能体，接入编码智能体后在真实浏览器与移动模拟器验证功能并给出可分享证据。 · 2026-11-25 收录"
+  - name: alibaba/open-code-review
+    url: https://github.com/alibaba/open-code-review
+    img: https://github.com/favicon.ico
+    description: "阿里开源的 AI 代码审查工具，读取 Git 差异给出行级评审意见，把确定性检查与大模型智能体结合，自动发现代码问题。 · 2026-11-20 收录"
+  - name: The-PR-Agent/pr-agent
+    url: https://github.com/The-PR-Agent/pr-agent
+    img: https://github.com/favicon.ico
+    description: "开源AI代码审查助手，自动为拉取请求生成评审意见，支持多家大模型与主流代码托管平台。 · 2026-11-17 收录"
   - name: Cursor
     url: https://www.cursor.com
     img: https://www.cursor.com/favicon.ico
@@ -437,10 +490,6 @@ aiCode:
     url: https://lovable.dev
     img: https://cybermap.halo26812.eu.org/favicon.ico
     description: "用自然语言生成完整 Web 应用的 AI 开发平台。"
-  - name: llama-index(gpt-index):后chatgpt时代的对话式文档问答解决方案
-    url: https://zhuanlan.zhihu.com/p/613155165
-    img: https://zhuanlan.zhihu.com/favicon.ico
-    description: 人工智能(GPT)
   - name: AWS - codewhisperer
     url: https://aws.amazon.com/cn/codewhisperer/resources/#Getting_started
     img: https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico
@@ -455,6 +504,26 @@ aiCode:
     description: 这是一个AI网站生成工具,可以自动设计和生成网站。
 
 aiOffice:
+  - name: OLVA
+    url: https://olva.ai
+    img: https://olva.ai/favicon.ico
+    description: "无需以机器人身份入会的实时 AI 会议助手，提供多语转写、实时问答、对话辅导与可搜索的会议记忆。 · 2026-11-24 收录"
+  - name: "SoftSync AI"
+    url: https://softsync.ai
+    img: https://softsync.ai/favicon.ico
+    description: "面向初创团队的 AI CRM，整合线索、会议纪要、邮件跟进与报表，支持 MCP 与 API 接入。 · 2026-11-23 收录"
+  - name: dream-num/univer
+    url: https://github.com/dream-num/univer
+    img: https://github.com/favicon.ico
+    description: "AI 办公 SDK，为应用嵌入文档编辑、表格计算与多人协作能力，构建自研 AI Office。 · 2026-11-22 收录"
+  - name: hugohe3/ppt-master
+    url: https://github.com/hugohe3/ppt-master
+    img: https://github.com/favicon.ico
+    description: "把文档或主题自动生成原生 PowerPoint 的开源工具，支持形状、图表、动画与模板套用。 · 2026-11-18 收录"
+  - name: ChatMind - 智能后台系统
+    url: https://www.chatmind.tech/
+    img: https://www.chatmind.tech/favicon.ico
+    description: ChatMind是一个开源的人工智能后台系统,可以帮助企业和开发者快速构建强大的AI产品与服务。
   - name: Grammarly
     url: https://www.grammarly.com
     img: https://cybermap.halo26812.eu.org/favicon.ico
@@ -499,10 +568,6 @@ aiOffice:
     url: https://www.copy.ai/
     img: https://assets-global.website-files.com/628288c5cd3e8411b90a36a4/629a333177bcc87edf861bbb_favico-2.png
     description: copy AI
-  - name: 猎研SciRadar
-    url: https://www.sciradar.com/
-    img: https://www.sciradar.com/favicon.ico
-    description: 不需要魔法;每天免费1万字符
   - name: Textblaze
     url: http://Textblaze.me/ai
     img: https://textblaze.me/favicon.ico
@@ -521,6 +586,34 @@ aiOffice:
     description: 这是一个AI会议工具,可以自动记录、转录和总结会议
 
 aiAgent:
+  - name: Activepieces/activepieces
+    url: https://github.com/Activepieces/activepieces
+    img: https://github.com/favicon.ico
+    description: "开源自动化平台，用可视化流程连接 AI 智能体与数百款应用，支持自托管，用于搭建客服、运营等自动化工作流。 · 2026-11-20 收录"
+  - name: browseros-ai/BrowserOS
+    url: https://github.com/browseros-ai/BrowserOS
+    img: https://github.com/favicon.ico
+    description: "开源智能体浏览器，基于 Chromium 内置本地大模型与自动化能力，主打隐私优先的浏览器任务代理。 · 2026-11-19 收录"
+  - name: Vricko
+    url: https://app.vricko.app
+    img: https://app.vricko.app/favicon.ico
+    description: "面向小企业的 AI 代理平台，一句话即可建站、撰写内容、发邮件与客服支持，每项任务留痕并设月度支出上限。 · 2026-11-20 收录"
+  - name: Turbofy
+    url: https://turbofy.com
+    img: https://turbofy.com/favicon.ico
+    description: "对话式 AI 应用构建平台，用自然语言生成带数据、认证与托管的生产级业务应用，并支持 MCP 连接外部编码智能体。 · 2026-11-20 收录"
+  - name: "云策 Omni"
+    url: https://www.yuncehub.com
+    img: https://www.yuncehub.com/favicon.ico
+    description: "跨平台本地 AI 工作台，用模型加技能加插件组合让智能体完成开发、创作与自动化任务，数据存于本机。 · 2026-11-18 收录"
+  - name: Cognee
+    url: https://www.cognee.ai
+    img: https://www.cognee.ai/favicon.ico
+    description: "开源 AI 智能体记忆平台，用知识图谱与向量检索为大模型应用构建跨会话持久记忆，支持自托管与云服务。 · 2026-11-16 收录"
+  - name: Fairwai
+    url: https://fairw.ai
+    img: https://fairw.ai/favicon.ico
+    description: "AI 对话服务商，提供可自动接听的语音 Agent、网站聊天机器人与会议纪要生成，可电话直接试听。 · 2026-11-24 收录"
   - name: Coze
     url: https://www.coze.com
     img: https://www.coze.com/favicon.ico
@@ -553,20 +646,19 @@ aiAgent:
     url: https://dify.ai
     img: https://cybermap.halo26812.eu.org/favicon.ico
     description: "开源 LLM 应用开发平台，可视化编排智能体与知识库。"
-  - name: ChatMind - 智能后台系统
-    url: https://www.chatmind.tech/
-    img: https://www.chatmind.tech/favicon.ico
-    description: ChatMind是一个开源的人工智能后台系统,可以帮助企业和开发者快速构建强大的AI产品与服务。
-  - name: Godmode.space
-    url: https://godmode.space/
-    img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: Godmode.space
-  - name: Cognosys - Your personal AI Agent
-    url: https://www.cognosys.ai/create
-    img: https://framerusercontent.com/modules/kGe5PQ65Dg7J7GN8OGx2/gwPd9Wln9Sg5rYiZ1QJB/assets/eWXiM6SACMmNKcytzyDksBgMok.png
-    description: Cognosys - Your personal AI Agent
-
 GPTModels:
+  - name: "Kimi API 开放平台"
+    url: https://platform.kimi.com
+    img: https://platform.kimi.com/favicon.ico
+    description: "月之暗面 Kimi 大模型开放平台，提供长上下文、多模态与工具调用的 API，供开发者构建智能对话、代码生成与视觉推理应用。 · 2026-11-20 收录"
+  - name: microsoft/VibeVoice
+    url: https://github.com/microsoft/VibeVoice
+    img: https://github.com/favicon.ico
+    description: "微软开源的前沿语音 AI 模型，面向高质量语音生成与实时语音交互场景。 · 2026-11-22 收录"
+  - name: higurashi-ai/Haru
+    url: https://github.com/higurashi-ai/Haru
+    img: https://github.com/favicon.ico
+    description: "低延迟多语言全双工语音对话模型，可边听边说，以 133 毫秒分块连续生成口语回应。 · 2026-11-21 收录"
   - name: Qwen
     url: https://qwenlm.github.io
     img: https://qwenlm.github.io/favicon.png
@@ -633,6 +725,67 @@ GPTModels:
     description: Linly是一个中文NLP工具包,提供预训练语言模型、词典、数据集和工具。其主要目的是研究中文NLP,推动开源人工智能技术的发展。Linly通过集成多个中文NLP资源,能显著降低中文NLP建模的门槛,加速研究与开发过程。
 
 githubGPT:
+  - name: nv-tlabs/lyra
+    url: https://github.com/nv-tlabs/Lyra
+    img: https://github.com/favicon.ico
+    description: "英伟达开源的生成式 3D 世界模型项目，可从输入图像生成可探索的三维场景，开放代码与预训练权重。 · 2026-11-14 收录"
+
+  - name: Juneo-Lab/decision-forge
+    url: https://github.com/Juneo-Lab/decision-forge
+    img: https://github.com/favicon.ico
+    description: "将组织规章策略编译为可验证的决策训练数据，支持数据溯源，用于微调合规决策模型。 · 2026-11-25 收录"
+  - name: modelflare-ai/AnyModelBot
+    url: https://github.com/modelflare-ai/AnyModelBot
+    img: https://github.com/favicon.ico
+    description: "本地优先的开源 AI 机器人，可接入 GPT、Claude、Gemini 等多种模型搭建专属对话助手。 · 2026-11-23 收录"
+  - name: JosssphZhou/poki
+    url: https://github.com/JosssphZhou/poki
+    img: https://github.com/favicon.ico
+    description: "开源 iPhone 智能体应用，能读取屏幕并自动点击滑动，通过本地 MCP 自动化操作 iOS 设备。 · 2026-11-23 收录"
+  - name: ZhuLinsen/daily_stock_analysis
+    url: https://github.com/ZhuLinsen/daily_stock_analysis
+    img: https://github.com/favicon.ico
+    description: "LLM 驱动的多市场股票智能分析系统，聚合行情与新闻、生成决策看板并支持定时推送。 · 2026-11-22 收录"
+  - name: max-sixty/worktrunk
+    url: https://github.com/max-sixty/worktrunk
+    img: https://github.com/favicon.ico
+    description: "为并行 AI 编码智能体设计的 Git worktree 管理命令行工具，快速创建、切换与清理隔离工作区。 · 2026-11-21 收录"
+  - name: beenuar/AiSOC
+    url: https://github.com/beenuar/AiSOC
+    img: https://github.com/favicon.ico
+    description: "开源 AI 安全运营中心，融合告警并用大模型智能体做威胁研判，覆盖 MITRE ATT&CK 并留痕可回放。 · 2026-11-21 收录"
+  - name: karakeep-app/karakeep
+    url: https://github.com/karakeep-app/karakeep
+    img: https://github.com/favicon.ico
+    description: "可自托管的全能收藏应用，支持链接、笔记与图片，提供 AI 自动打标和全文搜索。 · 2026-11-20 收录"
+  - name: THU-MAIC/OpenMAIC
+    url: https://github.com/THU-MAIC/OpenMAIC
+    img: https://github.com/favicon.ico
+    description: "清华开源的开放式多智能体互动课堂，一键生成含 AI 教师与同学、白板及讲解的沉浸式学习体验。 · 2026-11-18 收录"
+  - name: NVIDIA/auto-ontology
+    url: https://github.com/NVIDIA/auto-ontology
+    img: https://github.com/favicon.ico
+    description: "英伟达开源的Python框架，为数据构建语义图谱推理层，实现确定性查询生成与可解释的LLM智能体分析。 · 2026-11-17 收录"
+  - name: homeassistant-ai/ha-mcp
+    url: https://github.com/homeassistant-ai/ha-mcp
+    img: https://github.com/favicon.ico
+    description: "通过MCP协议让Claude、ChatGPT等AI助手以自然语言配置和自动化Home Assistant智能家居设备。 · 2026-11-17 收录"
+  - name: TauricResearch/TradingAgents
+    url: https://github.com/TauricResearch/TradingAgents
+    img: https://github.com/favicon.ico
+    description: "基于多智能体大语言模型的金融交易框架，模拟分析师、研究员与交易员协作完成选股与投资决策。 · 2026-11-14 收录"
+  - name: github/spec-kit
+    url: https://github.com/github/spec-kit
+    img: https://github.com/favicon.ico
+    description: "GitHub 出品的规范驱动开发（SDD）工具包，用自然语言规范引导 AI 从需求到代码的分阶段实现。 · 2026-11-14 收录"
+  - name: karpathy/nanochat
+    url: https://github.com/karpathy/nanochat
+    img: https://github.com/favicon.ico
+    description: "Karpathy 开源的从零实现 ChatGPT 全流程教学框架，约百美元成本即可完成预训练与推理。 · 2026-11-25 收录"
+  - name: skyzh/tiny-llm
+    url: https://github.com/skyzh/tiny-llm
+    img: https://github.com/favicon.ico
+    description: "面向系统工程师的 Apple Silicon LLM 推理教学项目，用 Python 从零搭建迷你 vLLM 并运行 Qwen 模型。 · 2026-11-18 收录"
   - name: open-webui/open-webui
     url: https://github.com/open-webui/open-webui
     img: https://github.com/favicon.ico
@@ -641,84 +794,100 @@ githubGPT:
     url: https://github.com/firecrawl/firecrawl
     img: https://github.com/favicon.ico
     description: "把网站抓取并转成 LLM 就绪数据的开源服务与 API。"
-  - name: run-llama/llama_index
-    url: https://github.com/run-llama/llama_index
-    img: https://github.com/favicon.ico
-    description: "面向私有数据的 RAG 索引与查询开源框架。"
-  - name: langchain-ai/langchain
-    url: https://github.com/langchain-ai/langchain
-    img: https://github.com/favicon.ico
-    description: "构建大模型应用的开源框架，提供链、工具与智能体抽象。"
-  - name: chroma-core/chroma
-    url: https://github.com/chroma-core/chroma
-    img: https://github.com/favicon.ico
-    description: "开源向量数据库，常用于 RAG 应用的嵌入检索。"
-  - name: milvus-io/milvus
-    url: https://github.com/milvus-io/milvus
-    img: https://github.com/favicon.ico
-    description: "分布式开源向量数据库，面向大规模相似性检索。"
-  - name: qdrant/qdrant
-    url: https://github.com/qdrant/qdrant
-    img: https://github.com/favicon.ico
-    description: "开源向量搜索引擎，提供过滤与混合检索能力。"
   - name: CherryHQ/cherry-studio
     url: https://github.com/CherryHQ/cherry-studio
     img: https://github.com/favicon.ico
     description: "桌面端多模型 AI 助手，支持本地知识库与多服务商。"
-  - name: Mintplex-Labs/anything-llm
-    url: https://github.com/Mintplex-Labs/anything-llm
-    img: https://github.com/favicon.ico
-    description: "把文档转成可问答知识库的开源桌面与服务端应用。"
   - name: gradio-app/gradio
     url: https://github.com/gradio-app/gradio
     img: https://github.com/favicon.ico
     description: "用几行 Python 为机器学习模型生成 Web 演示界面。"
-  - name: n8n-io/n8n
-    url: https://github.com/n8n-io/n8n
-    img: https://github.com/favicon.ico
-    description: "可自托管的工作流自动化工具，支持 AI 与数百种集成。"
   - name: streamlit/streamlit
     url: https://github.com/streamlit/streamlit
     img: https://github.com/favicon.ico
     description: "把 Python 脚本快速变成数据应用的开源框架。"
-  - name: langgenius/dify
-    url: https://github.com/langgenius/dify
-    img: https://github.com/favicon.ico
-    description: "开源 LLM 应用开发平台，含编排、知识库与运营能力。"
-  - name: facebookresearch/faiss
-    url: https://github.com/facebookresearch/faiss
-    img: https://github.com/favicon.ico
-    description: "Meta 开源的高效向量相似性搜索与聚类库。"
   - name: Segment Anything Model(SAM)
     url: https://github.com/facebookresearch/segment-anything/
     img: https://github.com/favicon.ico
     description: 该仓库提供了使用Segment Anything Model(SAM)进行推理的代码、训练的模型检查点的下载链接
-  - name: xinsblog/try-llama-index
-    url: https://github.com/xinsblog/try-llama-index
-    img: https://github.com/favicon.ico
-    description: xinsblog/try-llama-index
-  - name: AutoGPT - 中文版
-    url: https://github.com/RealHossie/Auto-GPT-Chinese.git
-    img: https://github.com/favicon.ico
-    description: AutoGPT中文版
   - name: yetone/openai-translator
     url: https://github.com/yetone/openai-translator
     img: https://github.com/favicon.ico
     description: 基于 ChatGPT API 的划词翻译浏览器插件和跨平台桌面端应用
-  - name: Github + ChatGPT 实现代码对话
-    url: https://github.com/peterw/Chat-with-Github-Repo
-    img: https://github.com/favicon.ico
-    description: 该项目包含两个 Python 脚本,演示了如何使用 Streamlit、OpenAI GPT-3.5-turbo 和 Deep Lake 来创建 AI 聊天机器人。聊天机器人会自动搜索存储在 Deep Lake 中的数据集以查找相关信息,并根据用户的输入生成答案,让你直接跟 GitHub 仓库进行对话。
-  - name: 集成GPT,开始跟PDF文档聊天
-    url: https://github.com/bhaskatripathi/pdfGPT
-    img: https://github.com/favicon.ico
-    description: 跟 PDF 文档进行一对一对话;自动切割内容,并使用强大的深度平均网络编码器来生成嵌入;对 PDF 内容执行语义搜索,并将最相关的嵌入传递给 Open AI;自定义逻辑,生成更精确的响应信息,速度要比 OpenAI 的快。
-  - name: 加快ChatGPT访问速度
-    url: https://github.com/pengzhile/pandora
-    img: https://github.com/favicon.ico
-    description: 该工具能直接通过 access token 来访问网站功能。后端优化,绕过 Cloudflare,提升访问速度。除此之外,该工具还提供了以下功能:高峰期能绕过官方限制,继续使用;应答速度直逼 PLUS;官方故障的时候,它可能还是能跑;多模式:网页 / 命令行 / API,私有化部署;不会像官方那样无故断线、报错。
-
 aiFrameworks:
+  - name: JustVugg/colibri
+    url: https://github.com/JustVugg/colibri
+    img: https://github.com/favicon.ico
+    description: "纯 C 编写的分层 MoE 推理引擎，热专家驻留 GPU、冷专家从 NVMe 流式加载，让超大模型跑在普通硬件上。 · 2026-11-24 收录"
+  - name: unslothai/unsloth
+    url: https://github.com/unslothai/unsloth
+    img: https://github.com/favicon.ico
+    description: "本地运行与训练大语言模型及扩散模型的框架，支持 GGUF、MLX 与 Qwen、DeepSeek、FLUX 等模型微调。 · 2026-11-24 收录"
+  - name: Interactive-Active-AI/NextTransformer
+    url: https://github.com/Interactive-Active-AI/NextTransformer
+    img: https://github.com/favicon.ico
+    description: "面向下一代 Transformer 与大模型的开源框架，提供算力对齐基准与架构自主研究能力。 · 2026-11-22 收录"
+  - name: algorithmicsuperintelligence/optillm
+    url: https://github.com/algorithmicsuperintelligence/optillm
+    img: https://github.com/favicon.ico
+    description: "LLM 推理优化代理，通过多种提示与缓存策略降低大模型调用成本并提升响应效率。 · 2026-11-22 收录"
+  - name: cactus-compute/cactus
+    url: https://github.com/cactus-compute/cactus
+    img: https://github.com/favicon.ico
+    description: "面向消费级设备的轻量端侧推理库，体积不足 50MB，本地运行智能体、语音与视觉任务，无需云端。 · 2026-11-21 收录"
+  - name: huawei-csl/MACaQ
+    url: https://github.com/huawei-csl/MACaQ
+    img: https://github.com/favicon.ico
+    description: "华为开源的模型无关量化工具，面向 GGUF 与本地推理，可量化并运行文本、图像、视频与音频模型。 · 2026-11-21 收录"
+  - name: mw00/project-maya
+    url: https://github.com/mw00/project-maya
+    img: https://github.com/favicon.ico
+    description: "开源本地大模型推理引擎，通过 GPU、内存与固态盘三级分层调度权重，让数百 B 模型跑在消费级硬件，兼容 OpenAI/Anthropic API。 · 2026-11-20 收录"
+  - name: Edge0-AI/Edge0
+    url: https://github.com/Edge0-AI/Edge0
+    img: https://github.com/favicon.ico
+    description: "端侧基础模型与流式 MoE 推理框架，通过 SSD 流式权重与专家路由，让 145B 模型跑在笔记本、35B 跑在手机上。 · 2026-11-20 收录"
+  - name: jundot/omlx
+    url: https://github.com/jundot/omlx
+    img: https://github.com/favicon.ico
+    description: "面向苹果芯片的大模型推理服务器，支持连续批处理与 SSD 分层缓存，可从菜单栏管理。 · 2026-11-19 收录"
+  - name: raullenchai/Rapid-MLX
+    url: https://github.com/raullenchai/Rapid-MLX
+    img: https://github.com/favicon.ico
+    description: "基于 MLX 的苹果芯片推理服务器，兼容 OpenAI 与 Anthropic 接口，专注编码智能体工具调用。 · 2026-11-19 收录"
+  - name: jingyaogong/minimind
+    url: https://github.com/jingyaogong/minimind
+    img: https://github.com/favicon.ico
+    description: "仅需 2 小时即可从零训练 6400 万参数小语言模型的开源项目，适合快速上手大模型训练全流程。 · 2026-11-18 收录"
+  - name: flashml-org/FreeToken
+    url: https://github.com/flashml-org/FreeToken
+    img: https://github.com/favicon.ico
+    description: "把数据中心级模型服务带到桌面的开源引擎，可在个人电脑上本地运行超大规模语言模型。 · 2026-11-18 收录"
+  - name: FareedKhan-dev/kimi-k3-in-c
+    url: https://github.com/FareedKhan-dev/kimi-k3-in-c
+    img: https://github.com/favicon.ico
+    description: "用纯C99实现的推理引擎，可在单核CPU、8GB内存中运行2.78万亿参数的Kimi K3大模型，零依赖。 · 2026-11-17 收录"
+  - name: sybil-solutions/inference-optimisation-skill
+    url: https://github.com/sybil-solutions/inference-optimisation-skill
+    img: https://github.com/favicon.ico
+    description: "自动调优本地 LLM 推理速度的 Agent 技能，用爬山法搜索解码、预填充与 KV 缓存的最优配置。 · 2026-11-24 收录"
+  - name: NVIDIA-NeMo/Switchyard
+    url: https://github.com/NVIDIA-NeMo/Switchyard
+    img: https://github.com/favicon.ico
+    description: "英伟达开源的 LLM 流量路由工具，保持原生 OpenAI/Anthropic API 兼容，可跨模型与供应商分发请求，便于选型、基准测试与成本优化。 · 2026-11-20 收录"
+  - name: eliasbiondo/antirion
+    url: https://github.com/eliasbiondo/antirion
+    img: https://github.com/favicon.ico
+    description: "开源 AI/LLM 网关，单文件内置控制台，统一路由、限流与观测多家大模型服务调用。 · 2026-11-22 收录"
+  - name: Ollama
+    url: https://ollama.com
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "在本地或云端运行开源大模型的工具，支持 macOS、Windows、Linux，一条命令即可启动模型。 · 2026-11-13 收录"
+
+  - name: RigSpark
+    url: https://rigspark.si
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: "开源本地 AI 选型工具，检测电脑内存与显卡后自动挑选可运行的大模型、图像、视频或语音模型并下载运行。 · 2026-11-18 收录"
   - name: ollama/ollama
     url: https://github.com/ollama/ollama
     img: https://github.com/favicon.ico
@@ -769,6 +938,10 @@ aiFrameworks:
     description: "主流深度学习框架，提供张量计算与自动微分能力。"
 
 studyGPT:
+  - name: 词图PromptTool - AI绘画资料管理网站
+    url: https://www.prompttool.com/NovelAI
+    img: https://www.prompttool.com/prompttool.ico
+    description: 词图PromptTool - AI绘画资料管理网站
   - name: "Prompt Engineering Guide"
     url: https://www.promptingguide.ai
     img: https://cybermap.halo26812.eu.org/favicon.ico
@@ -831,6 +1004,10 @@ studyGPT:
     description: 主要内容为指导开发者如何构建 Prompt 并基于 OpenAI API 构建新的、基于 LLM 的应用
 
 techBlog:
+  - name: llama-index(gpt-index):后chatgpt时代的对话式文档问答解决方案
+    url: https://zhuanlan.zhihu.com/p/613155165
+    img: https://zhuanlan.zhihu.com/favicon.ico
+    description: 人工智能(GPT)
   - name: "Lil'Log"
     url: https://lilianweng.github.io
     img: https://cybermap.halo26812.eu.org/favicon.ico
@@ -912,7 +1089,88 @@ likeGPT:
     img: https://sf3-scmcdn2-cn.feishucdn.com/ccm/pc/web/resource/bear/src/common/assets/favicons/icon_file_bitable_nor-32x32.0e0cacddafbc7fd2d308.png
     description: 填写你最喜欢使用的AI地址
 
-dailyAI_oss:
+dailyAI_oss: []
+dailyAI_tool: []
+dailyAI_model: []
+hotTools:
+  - name: Spring-cloud-gateway 中文文档
+    url: https://spring-cloud-gateway.lowff.net/
+    img: https://app.gitbook.com/public/images/icon-512.png
+    description: 该项目是基于Spring生态系统构建的API网关，包括Spring 6、Spring Boot 3和Project Reactor
+  - name: xmind转化xls工具
+    url: http://39.104.72.229/
+    img: https://cybermap.halo26812.eu.org/favicon.ico
+    description: xmind转化xls工具
+
+myBlog:
+  - name: 彷徨的蜗牛的博客
+    url: https://blog.csdn.net/ohalo
+    img: /images/cyberblog.png
+    description: 寻找方向
+
+ragKnowledge:
+  - name: alibaba/zvec
+    url: https://github.com/alibaba/zvec
+    img: https://github.com/favicon.ico
+    description: "阿里开源的轻量级进程内向量数据库，C++ 实现，直接嵌入应用即可做高速向量检索，面向 RAG 与边缘场景。 · 2026-11-21 收录"
+  - name: yjid/kensaku
+    url: https://github.com/yjid/kensaku
+    img: https://github.com/favicon.ico
+    description: "开源本地文件检索工具，索引文档、代码和截图文字，支持 OCR 与语义搜索，可经只读 MCP 供智能体调用。 · 2026-11-21 收录"
+  - name: onyx-dot-app/onyx
+    url: https://github.com/onyx-dot-app/onyx
+    img: https://github.com/favicon.ico
+    description: "开源企业 AI 搜索平台，可连接多种数据源做 RAG 检索问答，内置权限与连接器，用于搭建内部知识助手。 · 2026-11-20 收录"
+  - name: docling-project/docling
+    url: https://github.com/docling-project/docling
+    img: https://github.com/favicon.ico
+    description: "开源文档解析库，把 PDF、Word、HTML 等转为 Markdown/JSON 结构化数据，为生成式 AI 与 RAG 流程准备输入。 · 2026-11-20 收录"
+  - name: Tencent/WeKnora
+    url: https://github.com/Tencent/WeKnora
+    img: https://github.com/favicon.ico
+    description: "腾讯开源大模型知识平台，把文档转成可溯源 RAG 问答、自主推理智能体与自动维护的 Wiki。 · 2026-11-19 收录"
+  - name: infiniflow/ragflow
+    url: https://github.com/infiniflow/ragflow
+    img: https://github.com/favicon.ico
+    description: "面向智能体的原生 RAG 检索引擎，提供确定性解析、可解释引用与企业级知识库问答能力。 · 2026-11-18 收录"
+  - name: unclecode/crawl4ai
+    url: https://github.com/unclecode/crawl4ai
+    img: https://github.com/favicon.ico
+    description: "面向大模型与 AI 智能体的开源网页抓取工具，把网页转成 LLM 就绪的 Markdown，支持自托管。 · 2026-11-13 收录"
+  - name: headroomlabs-ai/headroom
+    url: https://github.com/headroomlabs-ai/headroom
+    img: https://github.com/favicon.ico
+    description: "在送入大模型前压缩工具输出、日志、文件与 RAG 分块，显著降低 token 消耗，提供库、代理与 MCP 服务三种形态。 · 2026-11-20 收录"
+  - name: run-llama/llama_index
+    url: https://github.com/run-llama/llama_index
+    img: https://github.com/favicon.ico
+    description: "面向私有数据的 RAG 索引与查询开源框架。"
+  - name: chroma-core/chroma
+    url: https://github.com/chroma-core/chroma
+    img: https://github.com/favicon.ico
+    description: "开源向量数据库，常用于 RAG 应用的嵌入检索。"
+  - name: milvus-io/milvus
+    url: https://github.com/milvus-io/milvus
+    img: https://github.com/favicon.ico
+    description: "分布式开源向量数据库，面向大规模相似性检索。"
+  - name: qdrant/qdrant
+    url: https://github.com/qdrant/qdrant
+    img: https://github.com/favicon.ico
+    description: "开源向量搜索引擎，提供过滤与混合检索能力。"
+  - name: facebookresearch/faiss
+    url: https://github.com/facebookresearch/faiss
+    img: https://github.com/favicon.ico
+    description: "Meta 开源的高效向量相似性搜索与聚类库。"
+  - name: Mintplex-Labs/anything-llm
+    url: https://github.com/Mintplex-Labs/anything-llm
+    img: https://github.com/favicon.ico
+    description: "把文档转成可问答知识库的开源桌面与服务端应用。"
+  - name: 集成GPT,开始跟PDF文档聊天
+    url: https://github.com/bhaskatripathi/pdfGPT
+    img: https://github.com/favicon.ico
+    description: 跟 PDF 文档进行一对一对话;自动切割内容,并使用强大的深度平均网络编码器来生成嵌入;对 PDF 内容执行语义搜索,并将最相关的嵌入传递给 Open AI;自定义逻辑,生成更精确的响应信息,速度要比 OpenAI 的快。
+
+agentFrameworks:
   - name: withcoral/coral
     url: https://github.com/withcoral/coral
     img: https://github.com/favicon.ico
@@ -937,22 +1195,6 @@ dailyAI_oss:
     url: https://github.com/conorbronsdon/avoid-ai-writing
     img: https://github.com/favicon.ico
     description: "智能体技能插件，审查并改写文本去除 AI 写作痕迹，兼容 Claude Code、Codex、Hermes 等。 · 2026-11-25 收录"
-  - name: Juneo-Lab/decision-forge
-    url: https://github.com/Juneo-Lab/decision-forge
-    img: https://github.com/favicon.ico
-    description: "将组织规章策略编译为可验证的决策训练数据，支持数据溯源，用于微调合规决策模型。 · 2026-11-25 收录"
-  - name: pydantic/pydantic-ai
-    url: https://github.com/pydantic/pydantic-ai
-    img: https://github.com/favicon.ico
-    description: "Pydantic 官方 AI Agent 开发框架，端到端类型安全，支持实时语音、图像生成、嵌入与多模型接入。 · 2026-11-24 收录"
-  - name: 0xPlaygrounds/rig
-    url: https://github.com/0xPlaygrounds/rig
-    img: https://github.com/favicon.ico
-    description: "用 Rust 构建模块化、可扩展 LLM 应用的框架，主打高性能与低延迟的 AI 应用开发。 · 2026-11-24 收录"
-  - name: sybil-solutions/inference-optimisation-skill
-    url: https://github.com/sybil-solutions/inference-optimisation-skill
-    img: https://github.com/favicon.ico
-    description: "自动调优本地 LLM 推理速度的 Agent 技能，用爬山法搜索解码、预填充与 KV 缓存的最优配置。 · 2026-11-24 收录"
   - name: simplexai-labs/linger
     url: https://github.com/simplexai-labs/linger
     img: https://github.com/favicon.ico
@@ -961,14 +1203,6 @@ dailyAI_oss:
     url: https://github.com/trpc-group/trpc-agent-go
     img: https://github.com/favicon.ico
     description: "腾讯开源的 Go 语言生产级智能体框架，支持图工作流、记忆、A2A 与 MCP 协议，内置评测与可观测能力。 · 2026-11-23 收录"
-  - name: modelflare-ai/AnyModelBot
-    url: https://github.com/modelflare-ai/AnyModelBot
-    img: https://github.com/favicon.ico
-    description: "本地优先的开源 AI 机器人，可接入 GPT、Claude、Gemini 等多种模型搭建专属对话助手。 · 2026-11-23 收录"
-  - name: JosssphZhou/poki
-    url: https://github.com/JosssphZhou/poki
-    img: https://github.com/favicon.ico
-    description: "开源 iPhone 智能体应用，能读取屏幕并自动点击滑动，通过本地 MCP 自动化操作 iOS 设备。 · 2026-11-23 收录"
   - name: ag-ui-protocol/ag-ui
     url: https://github.com/ag-ui-protocol/ag-ui
     img: https://github.com/favicon.ico
@@ -985,50 +1219,10 @@ dailyAI_oss:
     url: https://github.com/Tencent/LoopForge
     img: https://github.com/favicon.ico
     description: "腾讯开源的自托管编码智能体交付工作流，编排 CodeBuddy、Codex 等并支持人工审批。 · 2026-11-22 收录"
-  - name: eliasbiondo/antirion
-    url: https://github.com/eliasbiondo/antirion
-    img: https://github.com/favicon.ico
-    description: "开源 AI/LLM 网关，单文件内置控制台，统一路由、限流与观测多家大模型服务调用。 · 2026-11-22 收录"
-  - name: dream-num/univer
-    url: https://github.com/dream-num/univer
-    img: https://github.com/favicon.ico
-    description: "AI 办公 SDK，为应用嵌入文档编辑、表格计算与多人协作能力，构建自研 AI Office。 · 2026-11-22 收录"
-  - name: ZhuLinsen/daily_stock_analysis
-    url: https://github.com/ZhuLinsen/daily_stock_analysis
-    img: https://github.com/favicon.ico
-    description: "LLM 驱动的多市场股票智能分析系统，聚合行情与新闻、生成决策看板并支持定时推送。 · 2026-11-22 收录"
   - name: deepseek-ai/dsh-superagent-prototype
     url: https://github.com/deepseek-ai/dsh-superagent-prototype
     img: https://github.com/favicon.ico
     description: "DeepSeek 开源的自主智能体原型，采用 Router+Worker 双层架构，让编码 Agent 自行拆解任务、发现缺陷并提交修复 PR。 · 2026-11-21 收录"
-  - name: alibaba/zvec
-    url: https://github.com/alibaba/zvec
-    img: https://github.com/favicon.ico
-    description: "阿里开源的轻量级进程内向量数据库，C++ 实现，直接嵌入应用即可做高速向量检索，面向 RAG 与边缘场景。 · 2026-11-21 收录"
-  - name: max-sixty/worktrunk
-    url: https://github.com/max-sixty/worktrunk
-    img: https://github.com/favicon.ico
-    description: "为并行 AI 编码智能体设计的 Git worktree 管理命令行工具，快速创建、切换与清理隔离工作区。 · 2026-11-21 收录"
-  - name: beenuar/AiSOC
-    url: https://github.com/beenuar/AiSOC
-    img: https://github.com/favicon.ico
-    description: "开源 AI 安全运营中心，融合告警并用大模型智能体做威胁研判，覆盖 MITRE ATT&CK 并留痕可回放。 · 2026-11-21 收录"
-  - name: yjid/kensaku
-    url: https://github.com/yjid/kensaku
-    img: https://github.com/favicon.ico
-    description: "开源本地文件检索工具，索引文档、代码和截图文字，支持 OCR 与语义搜索，可经只读 MCP 供智能体调用。 · 2026-11-21 收录"
-  - name: alibaba/open-code-review
-    url: https://github.com/alibaba/open-code-review
-    img: https://github.com/favicon.ico
-    description: "阿里开源的 AI 代码审查工具，读取 Git 差异给出行级评审意见，把确定性检查与大模型智能体结合，自动发现代码问题。 · 2026-11-20 收录"
-  - name: Activepieces/activepieces
-    url: https://github.com/Activepieces/activepieces
-    img: https://github.com/favicon.ico
-    description: "开源自动化平台，用可视化流程连接 AI 智能体与数百款应用，支持自托管，用于搭建客服、运营等自动化工作流。 · 2026-11-20 收录"
-  - name: onyx-dot-app/onyx
-    url: https://github.com/onyx-dot-app/onyx
-    img: https://github.com/favicon.ico
-    description: "开源企业 AI 搜索平台，可连接多种数据源做 RAG 检索问答，内置权限与连接器，用于搭建内部知识助手。 · 2026-11-20 收录"
   - name: aaif-goose/goose
     url: https://github.com/aaif-goose/goose
     img: https://github.com/favicon.ico
@@ -1037,54 +1231,14 @@ dailyAI_oss:
     url: https://github.com/google-gemini/gemini-cli
     img: https://github.com/favicon.ico
     description: "谷歌开源的终端 AI 编码智能体，在命令行读写代码、执行 shell 命令并集成 MCP，支持 Gemini 模型辅助开发与调试。 · 2026-11-20 收录"
-  - name: NVIDIA-NeMo/Switchyard
-    url: https://github.com/NVIDIA-NeMo/Switchyard
-    img: https://github.com/favicon.ico
-    description: "英伟达开源的 LLM 流量路由工具，保持原生 OpenAI/Anthropic API 兼容，可跨模型与供应商分发请求，便于选型、基准测试与成本优化。 · 2026-11-20 收录"
-  - name: dograh-hq/dograh
-    url: https://github.com/dograh-hq/dograh
-    img: https://github.com/favicon.ico
-    description: "开源自托管语音 AI 平台，可替代 Vapi 与 Retell，支持语音到语音或 LLM/STT/TTS、可视化流程编排、MCP 与电话接入。 · 2026-11-20 收录"
-  - name: karakeep-app/karakeep
-    url: https://github.com/karakeep-app/karakeep
-    img: https://github.com/favicon.ico
-    description: "可自托管的全能收藏应用，支持链接、笔记与图片，提供 AI 自动打标和全文搜索。 · 2026-11-20 收录"
-  - name: docling-project/docling
-    url: https://github.com/docling-project/docling
-    img: https://github.com/favicon.ico
-    description: "开源文档解析库，把 PDF、Word、HTML 等转为 Markdown/JSON 结构化数据，为生成式 AI 与 RAG 流程准备输入。 · 2026-11-20 收录"
-  - name: headroomlabs-ai/headroom
-    url: https://github.com/headroomlabs-ai/headroom
-    img: https://github.com/favicon.ico
-    description: "在送入大模型前压缩工具输出、日志、文件与 RAG 分块，显著降低 token 消耗，提供库、代理与 MCP 服务三种形态。 · 2026-11-20 收录"
   - name: mastra-ai/mastra
     url: https://github.com/mastra-ai/mastra
     img: https://github.com/favicon.ico
     description: "现代 TypeScript AI 应用框架，内置智能体、RAG、评估与 MCP 支持，用于构建聊天机器人和 AI 驱动的应用。 · 2026-11-20 收录"
-  - name: browseros-ai/BrowserOS
-    url: https://github.com/browseros-ai/BrowserOS
-    img: https://github.com/favicon.ico
-    description: "开源智能体浏览器，基于 Chromium 内置本地大模型与自动化能力，主打隐私优先的浏览器任务代理。 · 2026-11-19 收录"
-  - name: Tencent/WeKnora
-    url: https://github.com/Tencent/WeKnora
-    img: https://github.com/favicon.ico
-    description: "腾讯开源大模型知识平台，把文档转成可溯源 RAG 问答、自主推理智能体与自动维护的 Wiki。 · 2026-11-19 收录"
-  - name: browser-use/video-use
-    url: https://github.com/browser-use/video-use
-    img: https://github.com/favicon.ico
-    description: "browser-use 团队开源的剪辑工具，让编码智能体通过对话完成视频剪辑与处理。 · 2026-11-19 收录"
-  - name: duixcom/Duix-Avatar
-    url: https://github.com/duixcom/Duix-Avatar
-    img: https://github.com/favicon.ico
-    description: "真开源离线数字人工具包，支持用真人视频克隆形象与声音，本地生成数字人口播视频。 · 2026-11-19 收录"
   - name: Orkas-AI/Orkas
     url: https://github.com/Orkas-AI/Orkas
     img: https://github.com/favicon.ico
     description: "本地优先的开源多智能体桌面团队，指挥官把目标拆成待办并协调内置专家与主流编码智能体协同完成。 · 2026-11-18 收录"
-  - name: THU-MAIC/OpenMAIC
-    url: https://github.com/THU-MAIC/OpenMAIC
-    img: https://github.com/favicon.ico
-    description: "清华开源的开放式多智能体互动课堂，一键生成含 AI 教师与同学、白板及讲解的沉浸式学习体验。 · 2026-11-18 收录"
   - name: cloudflare/security-audit-skill
     url: https://github.com/cloudflare/security-audit-skill
     img: https://github.com/favicon.ico
@@ -1097,18 +1251,43 @@ dailyAI_oss:
     url: https://github.com/ChesterRa/cccc
     img: https://github.com/favicon.ico
     description: "零基础设施的编码智能体协调器，用群聊式已读与投递回执从手机远程调度多个智能体持续执行任务。 · 2026-11-18 收录"
-  - name: infiniflow/ragflow
-    url: https://github.com/infiniflow/ragflow
-    img: https://github.com/favicon.ico
-    description: "面向智能体的原生 RAG 检索引擎，提供确定性解析、可解释引用与企业级知识库问答能力。 · 2026-11-18 收录"
   - name: mem0ai/mem0
     url: https://github.com/mem0ai/mem0
     img: https://github.com/favicon.ico
     description: "为 AI 智能体提供持久化记忆层的开源基础设施，可跨会话记住用户偏好并注入相关上下文。 · 2026-11-18 收录"
-  - name: hugohe3/ppt-master
-    url: https://github.com/hugohe3/ppt-master
+  - name: bytedance/deer-flow
+    url: https://github.com/bytedance/deer-flow
     img: https://github.com/favicon.ico
-    description: "把文档或主题自动生成原生 PowerPoint 的开源工具，支持形状、图表、动画与模板套用。 · 2026-11-18 收录"
+    description: "字节跳动开源的长程超级智能体框架，集成沙箱、记忆、技能与子智能体，自主完成研究、编码与创作等多步任务。 · 2026-11-17 收录"
+  - name: vercel-labs/agent-browser
+    url: https://github.com/vercel-labs/agent-browser
+    img: https://github.com/favicon.ico
+    description: "Vercel开源的Rust浏览器自动化CLI，以无障碍树读取页面并让AI智能体逐步操作网页元素，失败即报错。 · 2026-11-17 收录"
+  - name: vercel-labs/agent-desktop
+    url: https://github.com/vercel-labs/agent-desktop
+    img: https://github.com/favicon.ico
+    description: "Vercel Labs 开源的命令行工具，通过系统无障碍树让 AI 智能体识别并操作桌面应用，支持无头运行与多平台。 · 2026-11-16 收录"
+  - name: langflow-ai/langflow
+    url: https://github.com/langflow-ai/langflow
+    img: https://github.com/favicon.ico
+    description: "可视化拖拽构建 AI 智能体与工作流的开源工具，支持接入主流大模型并部署为 API。 · 2026-11-15 收录"
+  - name: browser-use/browser-use
+    url: https://github.com/browser-use/browser-use
+    img: https://github.com/favicon.ico
+    description: "开源浏览器智能体框架，让大模型在真实浏览器中自动点击、输入并完成任务，兼容任意 LLM。 · 2026-11-13 收录"
+
+  - name: openclaw/openclaw
+    url: https://github.com/openclaw/openclaw
+    img: https://github.com/favicon.ico
+    description: "开源个人 AI 助手，可在任意操作系统与平台上代用户执行真实任务，强调数据自持，MIT 协议。 · 2026-11-14 收录"
+  - name: pydantic/pydantic-ai
+    url: https://github.com/pydantic/pydantic-ai
+    img: https://github.com/favicon.ico
+    description: "Pydantic 官方 AI Agent 开发框架，端到端类型安全，支持实时语音、图像生成、嵌入与多模型接入。 · 2026-11-24 收录"
+  - name: 0xPlaygrounds/rig
+    url: https://github.com/0xPlaygrounds/rig
+    img: https://github.com/favicon.ico
+    description: "用 Rust 构建模块化、可扩展 LLM 应用的框架，主打高性能与低延迟的 AI 应用开发。 · 2026-11-24 收录"
   - name: iflytek/skillhub
     url: https://github.com/iflytek/skillhub
     img: https://github.com/favicon.ico
@@ -1117,240 +1296,16 @@ dailyAI_oss:
     url: https://github.com/CopilotKit/CopilotKit
     img: https://github.com/favicon.ico
     description: "面向智能体与生成式 UI 的前端开发框架，支持 React、Angular 与移动端快速集成对话交互。 · 2026-11-18 收录"
-  - name: bytedance/deer-flow
-    url: https://github.com/bytedance/deer-flow
+  - name: langchain-ai/langchain
+    url: https://github.com/langchain-ai/langchain
     img: https://github.com/favicon.ico
-    description: "字节跳动开源的长程超级智能体框架，集成沙箱、记忆、技能与子智能体，自主完成研究、编码与创作等多步任务。 · 2026-11-17 收录"
-  - name: NVIDIA/auto-ontology
-    url: https://github.com/NVIDIA/auto-ontology
+    description: "构建大模型应用的开源框架，提供链、工具与智能体抽象。"
+  - name: n8n-io/n8n
+    url: https://github.com/n8n-io/n8n
     img: https://github.com/favicon.ico
-    description: "英伟达开源的Python框架，为数据构建语义图谱推理层，实现确定性查询生成与可解释的LLM智能体分析。 · 2026-11-17 收录"
-  - name: vercel-labs/agent-browser
-    url: https://github.com/vercel-labs/agent-browser
+    description: "可自托管的工作流自动化工具，支持 AI 与数百种集成。"
+  - name: langgenius/dify
+    url: https://github.com/langgenius/dify
     img: https://github.com/favicon.ico
-    description: "Vercel开源的Rust浏览器自动化CLI，以无障碍树读取页面并让AI智能体逐步操作网页元素，失败即报错。 · 2026-11-17 收录"
-  - name: homeassistant-ai/ha-mcp
-    url: https://github.com/homeassistant-ai/ha-mcp
-    img: https://github.com/favicon.ico
-    description: "通过MCP协议让Claude、ChatGPT等AI助手以自然语言配置和自动化Home Assistant智能家居设备。 · 2026-11-17 收录"
-  - name: The-PR-Agent/pr-agent
-    url: https://github.com/The-PR-Agent/pr-agent
-    img: https://github.com/favicon.ico
-    description: "开源AI代码审查助手，自动为拉取请求生成评审意见，支持多家大模型与主流代码托管平台。 · 2026-11-17 收录"
-  - name: vercel-labs/agent-desktop
-    url: https://github.com/vercel-labs/agent-desktop
-    img: https://github.com/favicon.ico
-    description: "Vercel Labs 开源的命令行工具，通过系统无障碍树让 AI 智能体识别并操作桌面应用，支持无头运行与多平台。 · 2026-11-16 收录"
-  - name: heygen-com/hyperframes
-    url: https://github.com/heygen-com/hyperframes
-    img: https://github.com/favicon.ico
-    description: "HeyGen 开源的 TypeScript 视频渲染框架，把 HTML、CSS 与动画确定性输出为 MP4，供 AI 智能体批量生成视频。 · 2026-11-16 收录"
-  - name: langflow-ai/langflow
-    url: https://github.com/langflow-ai/langflow
-    img: https://github.com/favicon.ico
-    description: "可视化拖拽构建 AI 智能体与工作流的开源工具，支持接入主流大模型并部署为 API。 · 2026-11-15 收录"
-  - name: harry0703/MoneyPrinterTurbo
-    url: https://github.com/harry0703/MoneyPrinterTurbo
-    img: https://github.com/favicon.ico
-    description: "基于 AI 大模型自动生成文案、配音与字幕，一键合成高清短视频的开源工作流工具。 · 2026-11-15 收录"
-  - name: TauricResearch/TradingAgents
-    url: https://github.com/TauricResearch/TradingAgents
-    img: https://github.com/favicon.ico
-    description: "基于多智能体大语言模型的金融交易框架，模拟分析师、研究员与交易员协作完成选股与投资决策。 · 2026-11-14 收录"
-  - name: github/spec-kit
-    url: https://github.com/github/spec-kit
-    img: https://github.com/favicon.ico
-    description: "GitHub 出品的规范驱动开发（SDD）工具包，用自然语言规范引导 AI 从需求到代码的分阶段实现。 · 2026-11-14 收录"
-  - name: openclaw/openclaw
-    url: https://github.com/openclaw/openclaw
-    img: https://github.com/favicon.ico
-    description: "开源个人 AI 助手，可在任意操作系统与平台上代用户执行真实任务，强调数据自持，MIT 协议。 · 2026-11-14 收录"
-  - name: unclecode/crawl4ai
-    url: https://github.com/unclecode/crawl4ai
-    img: https://github.com/favicon.ico
-    description: "面向大模型与 AI 智能体的开源网页抓取工具，把网页转成 LLM 就绪的 Markdown，支持自托管。 · 2026-11-13 收录"
-  - name: browser-use/browser-use
-    url: https://github.com/browser-use/browser-use
-    img: https://github.com/favicon.ico
-    description: "开源浏览器智能体框架，让大模型在真实浏览器中自动点击、输入并完成任务，兼容任意 LLM。 · 2026-11-13 收录"
-
-dailyAI_tool:
-  - name: Testsy
-    url: https://testsy.dev
-    img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: "AI 质量测试智能体，接入编码智能体后在真实浏览器与移动模拟器验证功能并给出可分享证据。 · 2026-11-25 收录"
-  - name: Hydrilla
-    url: https://hydrilla.ai
-    img: https://hydrilla.ai/favicon.ico
-    description: "面向游戏影视的 AI 3D 资产生成工具，用文本或图片生成带 PBR 贴图的生产级网格模型。 · 2026-11-25 收录"
-  - name: OLVA
-    url: https://olva.ai
-    img: https://olva.ai/favicon.ico
-    description: "无需以机器人身份入会的实时 AI 会议助手，提供多语转写、实时问答、对话辅导与可搜索的会议记忆。 · 2026-11-24 收录"
-  - name: Fairwai
-    url: https://fairw.ai
-    img: https://fairw.ai/favicon.ico
-    description: "AI 对话服务商，提供可自动接听的语音 Agent、网站聊天机器人与会议纪要生成，可电话直接试听。 · 2026-11-24 收录"
-  - name: "SoftSync AI"
-    url: https://softsync.ai
-    img: https://softsync.ai/favicon.ico
-    description: "面向初创团队的 AI CRM，整合线索、会议纪要、邮件跟进与报表，支持 MCP 与 API 接入。 · 2026-11-23 收录"
-  - name: "Denizen Blu One"
-    url: https://denizenblu.com
-    img: https://denizenblu.com/favicon.ico
-    description: "提供多模型统一订阅与 OpenAI 兼容 API 的在线 AI 服务，按年计费、不按 token 收费。 · 2026-11-23 收录"
-  - name: MerchantFloor
-    url: https://www.merchantfloor.com
-    img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: "面向小型 Shopify 商家的 AI 商品上架工具，上传产品图即可生成白底图、场景图与 SEO 描述并同步店铺。 · 2026-11-21 收录"
-  - name: GlobalGPT
-    url: https://glbgpt.com
-    img: https://glbgpt.com/favicon.ico
-    description: "聚合 ChatGPT、Claude、Gemini 及图像视频模型的一站式订阅平台，用一个账号访问多款主流 AI 服务。 · 2026-11-21 收录"
-  - name: "Kimi API 开放平台"
-    url: https://platform.kimi.com
-    img: https://platform.kimi.com/favicon.ico
-    description: "月之暗面 Kimi 大模型开放平台，提供长上下文、多模态与工具调用的 API，供开发者构建智能对话、代码生成与视觉推理应用。 · 2026-11-20 收录"
-  - name: "Planet AI"
-    url: https://ai.planet.com
-    img: https://ai.planet.com/favicon.ico
-    description: "Planet 官方卫星影像 AI 探索器，用自然语言在地图上检索分析十年高分辨率影像，支持时序对比与深度研究智能体。 · 2026-11-20 收录"
-  - name: Vricko
-    url: https://app.vricko.app
-    img: https://app.vricko.app/favicon.ico
-    description: "面向小企业的 AI 代理平台，一句话即可建站、撰写内容、发邮件与客服支持，每项任务留痕并设月度支出上限。 · 2026-11-20 收录"
-  - name: Turbofy
-    url: https://turbofy.com
-    img: https://turbofy.com/favicon.ico
-    description: "对话式 AI 应用构建平台，用自然语言生成带数据、认证与托管的生产级业务应用，并支持 MCP 连接外部编码智能体。 · 2026-11-20 收录"
-  - name: RigSpark
-    url: https://rigspark.si
-    img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: "开源本地 AI 选型工具，检测电脑内存与显卡后自动挑选可运行的大模型、图像、视频或语音模型并下载运行。 · 2026-11-18 收录"
-  - name: YouArt
-    url: https://youart.ai
-    img: https://youart.ai/favicon.ico
-    description: "对话式 AI 创意平台，用智能体把需求拆成分镜与配音并在画布生成图像视频，支持多模型聚合与桌面版。 · 2026-11-18 收录"
-  - name: "云策 Omni"
-    url: https://www.yuncehub.com
-    img: https://www.yuncehub.com/favicon.ico
-    description: "跨平台本地 AI 工作台，用模型加技能加插件组合让智能体完成开发、创作与自动化任务，数据存于本机。 · 2026-11-18 收录"
-  - name: Clipwright
-    url: https://clipwright.io
-    img: https://clipwright.io/favicon.ico
-    description: "面向AI智能体的视频制作后端，通过MCP或API拆解热门短视频并生成带口播的广告MP4，渲染前先报价。 · 2026-11-17 收录"
-  - name: Cognee
-    url: https://www.cognee.ai
-    img: https://www.cognee.ai/favicon.ico
-    description: "开源 AI 智能体记忆平台，用知识图谱与向量检索为大模型应用构建跨会话持久记忆，支持自托管与云服务。 · 2026-11-16 收录"
-  - name: magpie
-    url: https://usemagpie.ai
-    img: https://usemagpie.ai/favicon.ico
-    description: "本地 AI 模型网关，统一接入 DeepSeek、Claude、Kimi 等模型订阅，供各类编码智能体按需切换。 · 2026-11-15 收录"
-  - name: webAI
-    url: https://www.webai.com
-    img: https://www.webai.com/favicon.ico
-    description: "在 Mac 本地运行小模型的 AI 应用，可搭建多个 AI 专家（Persona）协作处理私有文档，数据不上云、不计 token 费。 · 2026-11-14 收录"
-  - name: DomoAI
-    url: https://domoai.app
-    img: https://domoai.app/favicon.ico
-    description: "在线 AI 视频与动画创作平台，支持用文字、图片或视频素材完成生成、风格化与画质提升。 · 2026-11-14 收录"
-  - name: Ollama
-    url: https://ollama.com
-    img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: "在本地或云端运行开源大模型的工具，支持 macOS、Windows、Linux，一条命令即可启动模型。 · 2026-11-13 收录"
-
-dailyAI_model:
-  - name: karpathy/nanochat
-    url: https://github.com/karpathy/nanochat
-    img: https://github.com/favicon.ico
-    description: "Karpathy 开源的从零实现 ChatGPT 全流程教学框架，约百美元成本即可完成预训练与推理。 · 2026-11-25 收录"
-  - name: JustVugg/colibri
-    url: https://github.com/JustVugg/colibri
-    img: https://github.com/favicon.ico
-    description: "纯 C 编写的分层 MoE 推理引擎，热专家驻留 GPU、冷专家从 NVMe 流式加载，让超大模型跑在普通硬件上。 · 2026-11-24 收录"
-  - name: unslothai/unsloth
-    url: https://github.com/unslothai/unsloth
-    img: https://github.com/favicon.ico
-    description: "本地运行与训练大语言模型及扩散模型的框架，支持 GGUF、MLX 与 Qwen、DeepSeek、FLUX 等模型微调。 · 2026-11-24 收录"
-  - name: microsoft/VibeVoice
-    url: https://github.com/microsoft/VibeVoice
-    img: https://github.com/favicon.ico
-    description: "微软开源的前沿语音 AI 模型，面向高质量语音生成与实时语音交互场景。 · 2026-11-22 收录"
-  - name: Interactive-Active-AI/NextTransformer
-    url: https://github.com/Interactive-Active-AI/NextTransformer
-    img: https://github.com/favicon.ico
-    description: "面向下一代 Transformer 与大模型的开源框架，提供算力对齐基准与架构自主研究能力。 · 2026-11-22 收录"
-  - name: algorithmicsuperintelligence/optillm
-    url: https://github.com/algorithmicsuperintelligence/optillm
-    img: https://github.com/favicon.ico
-    description: "LLM 推理优化代理，通过多种提示与缓存策略降低大模型调用成本并提升响应效率。 · 2026-11-22 收录"
-  - name: cactus-compute/cactus
-    url: https://github.com/cactus-compute/cactus
-    img: https://github.com/favicon.ico
-    description: "面向消费级设备的轻量端侧推理库，体积不足 50MB，本地运行智能体、语音与视觉任务，无需云端。 · 2026-11-21 收录"
-  - name: higurashi-ai/Haru
-    url: https://github.com/higurashi-ai/Haru
-    img: https://github.com/favicon.ico
-    description: "低延迟多语言全双工语音对话模型，可边听边说，以 133 毫秒分块连续生成口语回应。 · 2026-11-21 收录"
-  - name: huawei-csl/MACaQ
-    url: https://github.com/huawei-csl/MACaQ
-    img: https://github.com/favicon.ico
-    description: "华为开源的模型无关量化工具，面向 GGUF 与本地推理，可量化并运行文本、图像、视频与音频模型。 · 2026-11-21 收录"
-  - name: mw00/project-maya
-    url: https://github.com/mw00/project-maya
-    img: https://github.com/favicon.ico
-    description: "开源本地大模型推理引擎，通过 GPU、内存与固态盘三级分层调度权重，让数百 B 模型跑在消费级硬件，兼容 OpenAI/Anthropic API。 · 2026-11-20 收录"
-  - name: Edge0-AI/Edge0
-    url: https://github.com/Edge0-AI/Edge0
-    img: https://github.com/favicon.ico
-    description: "端侧基础模型与流式 MoE 推理框架，通过 SSD 流式权重与专家路由，让 145B 模型跑在笔记本、35B 跑在手机上。 · 2026-11-20 收录"
-  - name: jundot/omlx
-    url: https://github.com/jundot/omlx
-    img: https://github.com/favicon.ico
-    description: "面向苹果芯片的大模型推理服务器，支持连续批处理与 SSD 分层缓存，可从菜单栏管理。 · 2026-11-19 收录"
-  - name: raullenchai/Rapid-MLX
-    url: https://github.com/raullenchai/Rapid-MLX
-    img: https://github.com/favicon.ico
-    description: "基于 MLX 的苹果芯片推理服务器，兼容 OpenAI 与 Anthropic 接口，专注编码智能体工具调用。 · 2026-11-19 收录"
-  - name: skyzh/tiny-llm
-    url: https://github.com/skyzh/tiny-llm
-    img: https://github.com/favicon.ico
-    description: "面向系统工程师的 Apple Silicon LLM 推理教学项目，用 Python 从零搭建迷你 vLLM 并运行 Qwen 模型。 · 2026-11-18 收录"
-  - name: jingyaogong/minimind
-    url: https://github.com/jingyaogong/minimind
-    img: https://github.com/favicon.ico
-    description: "仅需 2 小时即可从零训练 6400 万参数小语言模型的开源项目，适合快速上手大模型训练全流程。 · 2026-11-18 收录"
-  - name: flashml-org/FreeToken
-    url: https://github.com/flashml-org/FreeToken
-    img: https://github.com/favicon.ico
-    description: "把数据中心级模型服务带到桌面的开源引擎，可在个人电脑上本地运行超大规模语言模型。 · 2026-11-18 收录"
-  - name: FareedKhan-dev/kimi-k3-in-c
-    url: https://github.com/FareedKhan-dev/kimi-k3-in-c
-    img: https://github.com/favicon.ico
-    description: "用纯C99实现的推理引擎，可在单核CPU、8GB内存中运行2.78万亿参数的Kimi K3大模型，零依赖。 · 2026-11-17 收录"
-  - name: nv-tlabs/lyra
-    url: https://github.com/nv-tlabs/Lyra
-    img: https://github.com/favicon.ico
-    description: "英伟达开源的生成式 3D 世界模型项目，可从输入图像生成可探索的三维场景，开放代码与预训练权重。 · 2026-11-14 收录"
-
-hotTools:
-  - name: ChatGPT - 用GPT实现聊天机器人
-    url: https://www.lowff.net
-    img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: ChatGPT是一个基于OpenAI的GPT-3 API构建的聊天机器人框架。
-  - name: Spring-cloud-gateway 中文文档
-    url: https://spring-cloud-gateway.lowff.net/
-    img: https://app.gitbook.com/public/images/icon-512.png
-    description: 该项目是基于Spring生态系统构建的API网关，包括Spring 6、Spring Boot 3和Project Reactor
-  - name: xmind转化xls工具
-    url: http://39.104.72.229/
-    img: https://cybermap.halo26812.eu.org/favicon.ico
-    description: xmind转化xls工具
-
-myBlog:
-  - name: 彷徨的蜗牛的博客
-    url: https://blog.csdn.net/ohalo
-    img: /images/cyberblog.png
-    description: 寻找方向
+    description: "开源 LLM 应用开发平台，含编排、知识库与运营能力。"
 

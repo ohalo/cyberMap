@@ -65,7 +65,7 @@ OUT_REL = Path("source/daily/updates.json")
 # 保持「新收录优先建基线」的顺序语义。
 TRACK_CATEGORIES = (
     "dailyAI_oss", "dailyAI_tool", "dailyAI_model",
-    "githubGPT", "aiFrameworks", "GPTModels",
+    "githubGPT", "aiFrameworks", "ragKnowledge", "agentFrameworks", "GPTModels",
     "aiChat", "aiImage", "aiVideo", "aiCode", "aiOffice", "aiAgent",
     "studyGPT", "techBlog", "aiNav", "likeGPT", "hotTools", "myBlog",
 )

@@ -68,7 +68,7 @@ OUT_REL = Path("source/daily/health.json")
 ALL_SITE_CATEGORIES = (
     "dailyAI_oss", "dailyAI_tool", "dailyAI_model",
     "aiChat", "aiImage", "aiVideo", "aiCode", "aiOffice", "aiAgent",
-    "GPTModels", "githubGPT", "aiFrameworks",
+    "GPTModels", "githubGPT", "aiFrameworks", "ragKnowledge", "agentFrameworks",
     "studyGPT", "techBlog", "aiNav", "likeGPT", "hotTools", "myBlog",
 )
 CST = timezone(timedelta(hours=8))

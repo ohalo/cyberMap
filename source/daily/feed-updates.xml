@@ -6,7 +6,7 @@
     <description>已收录 AI 项目最近被检测到的新提交与涨星动态，来源上游变更雷达。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Wed, 25 Nov 2026 15:48:20 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 16:10:59 +0800</lastBuildDate>
     <ttl>1440</ttl>
     <item>
       <title>cloudflare/security-audit-skill · +410 星</title>
@@ -41,19 +41,19 @@
       <category>项目动态</category>
     </item>
     <item>
-      <title>dream-num/univer · 新提交 · +224 星</title>
-      <link>https://github.com/dream-num/univer</link>
-      <guid isPermaLink="false">cybermap-change-github.com/dream-num/univer-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>dream-num/univer：新提交，+224 星。项目最近推送：2026-11-25 01:24 UTC。当前 stars：31.7k。发现日期：2026-11-25。项目地址：https://github.com/dream-num/univer</description>
-      <category>项目动态</category>
-    </item>
-    <item>
       <title>beenuar/AiSOC · 新提交 · +224 星</title>
       <link>https://github.com/beenuar/AiSOC</link>
       <guid isPermaLink="false">cybermap-change-github.com/beenuar/aisoc-2026-11-25</guid>
       <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
       <description>beenuar/AiSOC：新提交，+224 星。项目最近推送：2026-11-24 23:25 UTC。当前 stars：7.8k。发现日期：2026-11-25。项目地址：https://github.com/beenuar/AiSOC</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>dream-num/univer · 新提交 · +224 星</title>
+      <link>https://github.com/dream-num/univer</link>
+      <guid isPermaLink="false">cybermap-change-github.com/dream-num/univer-2026-11-25</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
+      <description>dream-num/univer：新提交，+224 星。项目最近推送：2026-11-25 01:24 UTC。当前 stars：31.7k。发现日期：2026-11-25。项目地址：https://github.com/dream-num/univer</description>
       <category>项目动态</category>
     </item>
     <item>
@@ -153,19 +153,19 @@
       <category>项目动态</category>
     </item>
     <item>
-      <title>google-gemini/gemini-cli · 新提交 · +40 星</title>
-      <link>https://github.com/google-gemini/gemini-cli</link>
-      <guid isPermaLink="false">cybermap-change-github.com/google-gemini/gemini-cli-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>google-gemini/gemini-cli：新提交，+40 星。项目最近推送：2026-11-25 01:08 UTC。当前 stars：109.1k。发现日期：2026-11-25。项目地址：https://github.com/google-gemini/gemini-cli</description>
-      <category>项目动态</category>
-    </item>
-    <item>
       <title>browser-use/video-use · +40 星</title>
       <link>https://github.com/browser-use/video-use</link>
       <guid isPermaLink="false">cybermap-change-github.com/browser-use/video-use-2026-11-25</guid>
       <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
       <description>browser-use/video-use：+40 星。项目最近推送：2026-10-08 22:17 UTC。当前 stars：31.5k。发现日期：2026-11-25。项目地址：https://github.com/browser-use/video-use</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>google-gemini/gemini-cli · 新提交 · +40 星</title>
+      <link>https://github.com/google-gemini/gemini-cli</link>
+      <guid isPermaLink="false">cybermap-change-github.com/google-gemini/gemini-cli-2026-11-25</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
+      <description>google-gemini/gemini-cli：新提交，+40 星。项目最近推送：2026-11-25 01:08 UTC。当前 stars：109.1k。发现日期：2026-11-25。项目地址：https://github.com/google-gemini/gemini-cli</description>
       <category>项目动态</category>
     </item>
     <item>
@@ -217,27 +217,11 @@
       <category>项目动态</category>
     </item>
     <item>
-      <title>pydantic/pydantic-ai · 新提交 · +13 星</title>
-      <link>https://github.com/pydantic/pydantic-ai</link>
-      <guid isPermaLink="false">cybermap-change-github.com/pydantic/pydantic-ai-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>pydantic/pydantic-ai：新提交，+13 星。项目最近推送：2026-11-25 01:57 UTC。当前 stars：21.4k。发现日期：2026-11-25。项目地址：https://github.com/pydantic/pydantic-ai</description>
-      <category>项目动态</category>
-    </item>
-    <item>
       <title>0xPlaygrounds/rig · 新提交 · +13 星</title>
       <link>https://github.com/0xPlaygrounds/rig</link>
       <guid isPermaLink="false">cybermap-change-github.com/0xplaygrounds/rig-2026-11-25</guid>
       <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
       <description>0xPlaygrounds/rig：新提交，+13 星。项目最近推送：2026-11-25 01:41 UTC。当前 stars：9.3k。发现日期：2026-11-25。项目地址：https://github.com/0xPlaygrounds/rig</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>onyx-dot-app/onyx · 新提交 · +13 星</title>
-      <link>https://github.com/onyx-dot-app/onyx</link>
-      <guid isPermaLink="false">cybermap-change-github.com/onyx-dot-app/onyx-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>onyx-dot-app/onyx：新提交，+13 星。项目最近推送：2026-11-25 01:56 UTC。当前 stars：33.5k。发现日期：2026-11-25。项目地址：https://github.com/onyx-dot-app/onyx</description>
       <category>项目动态</category>
     </item>
     <item>
@@ -249,6 +233,22 @@
       <category>项目动态</category>
     </item>
     <item>
+      <title>onyx-dot-app/onyx · 新提交 · +13 星</title>
+      <link>https://github.com/onyx-dot-app/onyx</link>
+      <guid isPermaLink="false">cybermap-change-github.com/onyx-dot-app/onyx-2026-11-25</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
+      <description>onyx-dot-app/onyx：新提交，+13 星。项目最近推送：2026-11-25 01:56 UTC。当前 stars：33.5k。发现日期：2026-11-25。项目地址：https://github.com/onyx-dot-app/onyx</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>pydantic/pydantic-ai · 新提交 · +13 星</title>
+      <link>https://github.com/pydantic/pydantic-ai</link>
+      <guid isPermaLink="false">cybermap-change-github.com/pydantic/pydantic-ai-2026-11-25</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
+      <description>pydantic/pydantic-ai：新提交，+13 星。项目最近推送：2026-11-25 01:57 UTC。当前 stars：21.4k。发现日期：2026-11-25。项目地址：https://github.com/pydantic/pydantic-ai</description>
+      <category>项目动态</category>
+    </item>
+    <item>
       <title>modelflare-ai/AnyModelBot · 新提交 · +11 星</title>
       <link>https://github.com/modelflare-ai/AnyModelBot</link>
       <guid isPermaLink="false">cybermap-change-github.com/modelflare-ai/anymodelbot-2026-11-25</guid>
@@ -257,19 +257,19 @@
       <category>项目动态</category>
     </item>
     <item>
-      <title>yjid/kensaku · 新提交 · +8 星</title>
-      <link>https://github.com/yjid/kensaku</link>
-      <guid isPermaLink="false">cybermap-change-github.com/yjid/kensaku-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>yjid/kensaku：新提交，+8 星。项目最近推送：2026-11-25 01:41 UTC。当前 stars：1.9k。发现日期：2026-11-25。项目地址：https://github.com/yjid/kensaku</description>
-      <category>项目动态</category>
-    </item>
-    <item>
       <title>duixcom/Duix-Avatar · +8 星</title>
       <link>https://github.com/duixcom/Duix-Avatar</link>
       <guid isPermaLink="false">cybermap-change-github.com/duixcom/duix-avatar-2026-11-25</guid>
       <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
       <description>duixcom/Duix-Avatar：+8 星。项目最近推送：2026-04-21 07:06 UTC。当前 stars：16.4k。发现日期：2026-11-25。项目地址：https://github.com/duixcom/Duix-Avatar</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>yjid/kensaku · 新提交 · +8 星</title>
+      <link>https://github.com/yjid/kensaku</link>
+      <guid isPermaLink="false">cybermap-change-github.com/yjid/kensaku-2026-11-25</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
+      <description>yjid/kensaku：新提交，+8 星。项目最近推送：2026-11-25 01:41 UTC。当前 stars：1.9k。发现日期：2026-11-25。项目地址：https://github.com/yjid/kensaku</description>
       <category>项目动态</category>
     </item>
     <item>

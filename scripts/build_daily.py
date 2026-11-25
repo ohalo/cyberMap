@@ -74,6 +74,8 @@ CATEGORY_LABELS = OrderedDict([
     ("GPTModels", ("大语言模型", "llm")),
     ("githubGPT", ("GitHub 项目", "gh")),
     ("aiFrameworks", ("推理与训练框架", "framework")),
+    ("ragKnowledge", ("RAG 与知识库", "rag")),
+    ("agentFrameworks", ("智能体框架", "agentfw")),
     ("studyGPT", ("提示词与教程", "learn")),
     ("techBlog", ("技术博客", "blog")),
     ("aiNav", ("AI 导航站", "nav")),
@@ -90,7 +92,8 @@ CATEGORY_LABELS = OrderedDict([
 #   学习资源流 = 提示词与教程 + 技术博客 + AI 导航站 + 社区与问卷 + 我的博客
 # feed.xml 仍是混合全量流，覆盖所有分类。
 CATEGORY_FEEDS = OrderedDict([
-    ("feed-oss.xml", ("开源项目", ("dailyAI_oss", "githubGPT", "aiFrameworks"))),
+    ("feed-oss.xml", ("开源项目", ("dailyAI_oss", "githubGPT", "aiFrameworks",
+                                  "ragKnowledge", "agentFrameworks"))),
     ("feed-tool.xml", ("工具官网", ("dailyAI_tool", "aiChat", "aiImage", "aiVideo",
                                    "aiCode", "aiOffice", "aiAgent", "hotTools"))),
     ("feed-model.xml", ("模型框架", ("dailyAI_model", "GPTModels"))),
@@ -1058,6 +1061,7 @@ def changes_html(updates: dict) -> str:
     generated = (updates.get("generated_at") or "").replace("T", " ")[:16]
     CAT_LABEL = {"dailyAI_oss": "开源", "dailyAI_tool": "工具", "dailyAI_model": "模型",
                  "githubGPT": "GitHub", "aiFrameworks": "框架", "GPTModels": "模型",
+                 "ragKnowledge": "RAG", "agentFrameworks": "智能体框架",
                  "aiChat": "对话", "aiImage": "图像", "aiVideo": "视频", "aiCode": "代码",
                  "aiOffice": "办公", "aiAgent": "智能体", "studyGPT": "教程",
                  "techBlog": "博客", "aiNav": "导航", "likeGPT": "社区", "hotTools": "常用"}

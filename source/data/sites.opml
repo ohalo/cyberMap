@@ -7,6 +7,11 @@
   <body>
     <outline text="AI 工具箱">
       <outline text="对话与搜索" title="对话与搜索">
+        <outline type="link" text="Denizen Blu One" title="Denizen Blu One" url="https://denizenblu.com" htmlUrl="https://denizenblu.com" description="提供多模型统一订阅与 OpenAI 兼容 API 的在线 AI 服务，按年计费、不按 token 收费。" />
+        <outline type="link" text="GlobalGPT" title="GlobalGPT" url="https://glbgpt.com" htmlUrl="https://glbgpt.com" description="聚合 ChatGPT、Claude、Gemini 及图像视频模型的一站式订阅平台，用一个账号访问多款主流 AI 服务。" />
+        <outline type="link" text="magpie" title="magpie" url="https://usemagpie.ai" htmlUrl="https://usemagpie.ai" description="本地 AI 模型网关，统一接入 DeepSeek、Claude、Kimi 等模型订阅，供各类编码智能体按需切换。" />
+        <outline type="link" text="webAI" title="webAI" url="https://www.webai.com" htmlUrl="https://www.webai.com" description="在 Mac 本地运行小模型的 AI 应用，可搭建多个 AI 专家（Persona）协作处理私有文档，数据不上云、不计 token 费。" />
+        <outline type="link" text="ChatGPT - 用GPT实现聊天机器人" title="ChatGPT - 用GPT实现聊天机器人" url="https://www.lowff.net" htmlUrl="https://www.lowff.net" description="ChatGPT是一个基于OpenAI的GPT-3 API构建的聊天机器人框架。" />
         <outline type="link" text="腾讯元宝" title="腾讯元宝" url="https://yuanbao.tencent.com" htmlUrl="https://yuanbao.tencent.com" description="腾讯混元大模型助手，支持多模态问答与微信生态文件解析。" />
         <outline type="link" text="智谱清言" title="智谱清言" url="https://chatglm.cn" htmlUrl="https://chatglm.cn" description="智谱 AI 基于 GLM 系列的对话助手，支持写作、代码与工具调用。" />
         <outline type="link" text="讯飞星火" title="讯飞星火" url="https://xinghuo.xfyun.cn" htmlUrl="https://xinghuo.xfyun.cn" description="科大讯飞星火大模型对话服务，语音与中文理解能力突出。" />
@@ -19,15 +24,13 @@
         <outline type="link" text="DeepSeek 对话" title="DeepSeek 对话" url="https://chat.deepseek.com" htmlUrl="https://chat.deepseek.com" description="深度求索官方对话服务，提供 DeepSeek 系列推理与通用模型。" />
         <outline type="link" text="Claude" title="Claude" url="https://claude.ai" htmlUrl="https://claude.ai" description="Anthropic 官方 Claude 对话助手，擅长长文写作、分析与代码。" />
         <outline type="link" text="Phind" title="Phind" url="https://www.phind.com" htmlUrl="https://www.phind.com" description="面向开发者的 AI 搜索与问答，答案附技术文档来源。" />
-        <outline type="link" text="Flash GPT - 聊天" title="Flash GPT - 聊天" url="https://www.deflash.ai/" htmlUrl="https://www.deflash.ai/" description="Flash GPT - 聊天" />
-        <outline type="link" text="Vicuna" title="Vicuna" url="https://vicuna.lmsys.org/" htmlUrl="https://vicuna.lmsys.org/" description="Vicuna - An Open-Source Chatbot" />
-        <outline type="link" text="Sage - Poe" title="Sage - Poe" url="https://poe.com/" htmlUrl="https://poe.com/" description="Sage - Poe" />
         <outline type="link" text="perplexity" title="perplexity" url="https://www.perplexity.ai" htmlUrl="https://www.perplexity.ai" description="需要魔法,主打准确度,胡说八道概率低体验优于ChatGPT,免费不限量" />
-        <outline type="link" text="必应" title="必应" url="https://www.bing.com/" htmlUrl="https://www.bing.com/" description="需要魔法,基于GPT-4但是功能做了收束,免费,每轮对话不超过20个问题,每天不超过200个问题" />
-        <outline type="link" text="ora" title="ora" url="https://ora.sh/openai/gpt4" htmlUrl="https://ora.sh/openai/gpt4" description="需要魔法,GPT-4每天免费10次" />
-        <outline type="link" text="forefront.ai" title="forefront.ai" url="https://chat.forefront.ai/" htmlUrl="https://chat.forefront.ai/" description="更好的ChatGPT体验。注册可以免费获取GPT-4,图像生成,自定义人物,可共享聊天等更多功能" />
       </outline>
       <outline text="图像与设计" title="图像与设计">
+        <outline type="link" text="Hydrilla" title="Hydrilla" url="https://hydrilla.ai" htmlUrl="https://hydrilla.ai" description="面向游戏影视的 AI 3D 资产生成工具，用文本或图片生成带 PBR 贴图的生产级网格模型。" />
+        <outline type="link" text="MerchantFloor" title="MerchantFloor" url="https://www.merchantfloor.com" htmlUrl="https://www.merchantfloor.com" description="面向小型 Shopify 商家的 AI 商品上架工具，上传产品图即可生成白底图、场景图与 SEO 描述并同步店铺。" />
+        <outline type="link" text="YouArt" title="YouArt" url="https://youart.ai" htmlUrl="https://youart.ai" description="对话式 AI 创意平台，用智能体把需求拆成分镜与配音并在画布生成图像视频，支持多模型聚合与桌面版。" />
+        <outline type="link" text="Planet AI" title="Planet AI" url="https://ai.planet.com" htmlUrl="https://ai.planet.com" description="Planet 官方卫星影像 AI 探索器，用自然语言在地图上检索分析十年高分辨率影像，支持时序对比与深度研究智能体。" />
         <outline type="link" text="即梦 AI" title="即梦 AI" url="https://jimeng.jianying.com" htmlUrl="https://jimeng.jianying.com" description="字节跳动 AI 创作平台，支持图片生成与视频生成。" />
         <outline type="link" text="Recraft" title="Recraft" url="https://www.recraft.ai" htmlUrl="https://www.recraft.ai" description="可生成矢量图与品牌设计素材的 AI 设计工具。" />
         <outline type="link" text="Canva" title="Canva" url="https://www.canva.com" htmlUrl="https://www.canva.com" description="在线设计平台，内置 AI 生成图片、排版与文案能力。" />
@@ -35,13 +38,19 @@
         <outline type="link" text="Stability AI" title="Stability AI" url="https://stability.ai" htmlUrl="https://stability.ai" description="Stable Diffusion 系列图像生成模型的官方站点与开放平台。" />
         <outline type="link" text="Upscayl" title="Upscayl" url="https://www.upscayl.org" htmlUrl="https://www.upscayl.org" description="开源 AI 图像超分辨率工具，可在本地离线放大图片。" />
         <outline type="link" text="Adobe Firefly" title="Adobe Firefly" url="https://www.adobe.com/products/firefly.html" htmlUrl="https://www.adobe.com/products/firefly.html" description="Adobe 生成式 AI 创意工具，集成于 Photoshop 等设计软件。" />
-        <outline type="link" text="词图PromptTool - AI绘画资料管理网站" title="词图PromptTool - AI绘画资料管理网站" url="https://www.prompttool.com/NovelAI" htmlUrl="https://www.prompttool.com/NovelAI" description="词图PromptTool - AI绘画资料管理网站" />
         <outline type="link" text="AppIcons.ai" title="AppIcons.ai" url="http://AppIcons.ai" htmlUrl="http://AppIcons.ai" description="Appicons AI是一个利用人工智能技术为开发者自动生成漂亮app图标的在线工具。它简单易用,适合不同技术水平的人,可以在几分钟内生成多种专业级的图标设计,提高开发效率,降低设计成本。" />
         <outline type="link" text="StockImg.ai" title="StockImg.ai" url="http://StockImg.ai" htmlUrl="http://StockImg.ai" description="这是一个AI图像设计工具,提供许多免版税的AI生成图像素材。" />
         <outline type="link" text="Midjourney" title="Midjourney" url="http://Midjourney.com" htmlUrl="http://Midjourney.com" description="这是一个AI图像生成工具,可以生成各种风格的AI艺术图像。" />
         <outline type="link" text="Segment Anything | Meta AI" title="Segment Anything | Meta AI" url="https://segment-anything.com/" htmlUrl="https://segment-anything.com/" description="Segment Anything是一个强大的实例分割模型,它可以根据输入提示(如点或框)生成高质量的对象遮罩,并可以用于生成图像中的所有对象的遮罩。它在1100万个遮罩和1100万张图像的大型数据集上进行了训练,在各种分割任务上的零样本性能非常强。" />
       </outline>
       <outline text="视频与音频" title="视频与音频">
+        <outline type="link" text="dograh-hq/dograh" title="dograh-hq/dograh" url="https://github.com/dograh-hq/dograh" htmlUrl="https://github.com/dograh-hq/dograh" description="开源自托管语音 AI 平台，可替代 Vapi 与 Retell，支持语音到语音或 LLM/STT/TTS、可视化流程编排、MCP 与电话接入。" />
+        <outline type="link" text="browser-use/video-use" title="browser-use/video-use" url="https://github.com/browser-use/video-use" htmlUrl="https://github.com/browser-use/video-use" description="browser-use 团队开源的剪辑工具，让编码智能体通过对话完成视频剪辑与处理。" />
+        <outline type="link" text="duixcom/Duix-Avatar" title="duixcom/Duix-Avatar" url="https://github.com/duixcom/Duix-Avatar" htmlUrl="https://github.com/duixcom/Duix-Avatar" description="真开源离线数字人工具包，支持用真人视频克隆形象与声音，本地生成数字人口播视频。" />
+        <outline type="link" text="heygen-com/hyperframes" title="heygen-com/hyperframes" url="https://github.com/heygen-com/hyperframes" htmlUrl="https://github.com/heygen-com/hyperframes" description="HeyGen 开源的 TypeScript 视频渲染框架，把 HTML、CSS 与动画确定性输出为 MP4，供 AI 智能体批量生成视频。" />
+        <outline type="link" text="harry0703/MoneyPrinterTurbo" title="harry0703/MoneyPrinterTurbo" url="https://github.com/harry0703/MoneyPrinterTurbo" htmlUrl="https://github.com/harry0703/MoneyPrinterTurbo" description="基于 AI 大模型自动生成文案、配音与字幕，一键合成高清短视频的开源工作流工具。" />
+        <outline type="link" text="DomoAI" title="DomoAI" url="https://domoai.app" htmlUrl="https://domoai.app" description="在线 AI 视频与动画创作平台，支持用文字、图片或视频素材完成生成、风格化与画质提升。" />
+        <outline type="link" text="Clipwright" title="Clipwright" url="https://clipwright.io" htmlUrl="https://clipwright.io" description="面向AI智能体的视频制作后端，通过MCP或API拆解热门短视频并生成带口播的广告MP4，渲染前先报价。" />
         <outline type="link" text="可灵 AI" title="可灵 AI" url="https://klingai.com" htmlUrl="https://klingai.com" description="快手 AI 视频生成平台，支持文生视频与图生视频。" />
         <outline type="link" text="Runway" title="Runway" url="https://runwayml.com" htmlUrl="https://runwayml.com" description="AI 视频生成与编辑平台，提供 Gen 系列视频模型。" />
         <outline type="link" text="Synthesia" title="Synthesia" url="https://www.synthesia.io" htmlUrl="https://www.synthesia.io" description="企业向 AI 虚拟主播视频生成工具，用于培训与宣介内容。" />
@@ -54,6 +63,9 @@
         <outline type="link" text="Elai" title="Elai" url="http://Elai.io" htmlUrl="http://Elai.io" description="这是一个AI视频工具,可以自动生成和编辑视频片段。" />
       </outline>
       <outline text="编程与开发" title="编程与开发">
+        <outline type="link" text="Testsy" title="Testsy" url="https://testsy.dev" htmlUrl="https://testsy.dev" description="AI 质量测试智能体，接入编码智能体后在真实浏览器与移动模拟器验证功能并给出可分享证据。" />
+        <outline type="link" text="alibaba/open-code-review" title="alibaba/open-code-review" url="https://github.com/alibaba/open-code-review" htmlUrl="https://github.com/alibaba/open-code-review" description="阿里开源的 AI 代码审查工具，读取 Git 差异给出行级评审意见，把确定性检查与大模型智能体结合，自动发现代码问题。" />
+        <outline type="link" text="The-PR-Agent/pr-agent" title="The-PR-Agent/pr-agent" url="https://github.com/The-PR-Agent/pr-agent" htmlUrl="https://github.com/The-PR-Agent/pr-agent" description="开源AI代码审查助手，自动为拉取请求生成评审意见，支持多家大模型与主流代码托管平台。" />
         <outline type="link" text="Cursor" title="Cursor" url="https://www.cursor.com" htmlUrl="https://www.cursor.com" description="AI 原生代码编辑器，支持整库上下文理解与代理式改码。" />
         <outline type="link" text="Windsurf" title="Windsurf" url="https://windsurf.com" htmlUrl="https://windsurf.com" description="Codeium 出品的 AI IDE，具备跨文件上下文与自动执行能力。" />
         <outline type="link" text="v0" title="v0" url="https://v0.dev" htmlUrl="https://v0.dev" description="Vercel 的 AI 前端生成工具，用提示词产出 React 界面代码。" />
@@ -67,12 +79,16 @@
         <outline type="link" text="Continue" title="Continue" url="https://continue.dev" htmlUrl="https://continue.dev" description="开源 AI 编码助手插件，可对接本地或云端模型。" />
         <outline type="link" text="Replit" title="Replit" url="https://replit.com" htmlUrl="https://replit.com" description="在线开发环境，内置 AI 编程助手与应用一键部署。" />
         <outline type="link" text="Lovable" title="Lovable" url="https://lovable.dev" htmlUrl="https://lovable.dev" description="用自然语言生成完整 Web 应用的 AI 开发平台。" />
-        <outline type="link" text="llama-index(gpt-index):后chatgpt时代的对话式文档问答解决方案" title="llama-index(gpt-index):后chatgpt时代的对话式文档问答解决方案" url="https://zhuanlan.zhihu.com/p/613155165" htmlUrl="https://zhuanlan.zhihu.com/p/613155165" description="人工智能(GPT)" />
         <outline type="link" text="AWS - codewhisperer" title="AWS - codewhisperer" url="https://aws.amazon.com/cn/codewhisperer/resources/#Getting_started" htmlUrl="https://aws.amazon.com/cn/codewhisperer/resources/#Getting_started" description="Amazon CodeWhisperer 是一种采用机器学习（ML）的服务，可以根据开发人员用自然语言编写的注释和集成式开发环境（IDE）中的代码生成代码建议，帮助开发人员提高工作效率。" />
         <outline type="link" text="TelePortHQ" title="TelePortHQ" url="http://TelePortHQ.io" htmlUrl="http://TelePortHQ.io" description="这是一个AI编码工具,可以自动生成代码段和脚本。" />
         <outline type="link" text="Hocoos" title="Hocoos" url="http://Hocoos.com" htmlUrl="http://Hocoos.com" description="这是一个AI网站生成工具,可以自动设计和生成网站。" />
       </outline>
       <outline text="办公与效率" title="办公与效率">
+        <outline type="link" text="OLVA" title="OLVA" url="https://olva.ai" htmlUrl="https://olva.ai" description="无需以机器人身份入会的实时 AI 会议助手，提供多语转写、实时问答、对话辅导与可搜索的会议记忆。" />
+        <outline type="link" text="SoftSync AI" title="SoftSync AI" url="https://softsync.ai" htmlUrl="https://softsync.ai" description="面向初创团队的 AI CRM，整合线索、会议纪要、邮件跟进与报表，支持 MCP 与 API 接入。" />
+        <outline type="link" text="dream-num/univer" title="dream-num/univer" url="https://github.com/dream-num/univer" htmlUrl="https://github.com/dream-num/univer" description="AI 办公 SDK，为应用嵌入文档编辑、表格计算与多人协作能力，构建自研 AI Office。" />
+        <outline type="link" text="hugohe3/ppt-master" title="hugohe3/ppt-master" url="https://github.com/hugohe3/ppt-master" htmlUrl="https://github.com/hugohe3/ppt-master" description="把文档或主题自动生成原生 PowerPoint 的开源工具，支持形状、图表、动画与模板套用。" />
+        <outline type="link" text="ChatMind - 智能后台系统" title="ChatMind - 智能后台系统" url="https://www.chatmind.tech/" htmlUrl="https://www.chatmind.tech/" description="ChatMind是一个开源的人工智能后台系统,可以帮助企业和开发者快速构建强大的AI产品与服务。" />
         <outline type="link" text="Grammarly" title="Grammarly" url="https://www.grammarly.com" htmlUrl="https://www.grammarly.com" description="AI 英文写作校对工具，检查语法、语气与表达清晰度。" />
         <outline type="link" text="Jasper" title="Jasper" url="https://www.jasper.ai" htmlUrl="https://www.jasper.ai" description="面向营销团队的 AI 文案生成与品牌语气管理平台。" />
         <outline type="link" text="Zapier" title="Zapier" url="https://zapier.com" htmlUrl="https://zapier.com" description="应用间自动化工作流平台，内置 AI 步骤与智能体能力。" />
@@ -84,13 +100,19 @@
         <outline type="link" text="ChatPDF - 与PDF聊天" title="ChatPDF - 与PDF聊天" url="https://www.chatpdf.com/" htmlUrl="https://www.chatpdf.com/" description="ChatPDF 使用人工智能为PDF文件提供自然语言问答交互。" />
         <outline type="link" text="制作PPT的工具" title="制作PPT的工具" url="http://Beautiful.ai" htmlUrl="http://Beautiful.ai" description="Beautiful.ai" />
         <outline type="link" text="文案生成AI" title="文案生成AI" url="https://www.copy.ai/" htmlUrl="https://www.copy.ai/" description="copy AI" />
-        <outline type="link" text="猎研SciRadar" title="猎研SciRadar" url="https://www.sciradar.com/" htmlUrl="https://www.sciradar.com/" description="不需要魔法;每天免费1万字符" />
         <outline type="link" text="Textblaze" title="Textblaze" url="http://Textblaze.me/ai" htmlUrl="http://Textblaze.me/ai" description="Text Blaze是一个Chrome插件,用于快速插入常用文本,大幅提高工作效率" />
         <outline type="link" text="Sendsteps" title="Sendsteps" url="http://Sendsteps.com" htmlUrl="http://Sendsteps.com" description="这是一个AI幻灯片工具,可以自动设计和生成幻灯片。" />
         <outline type="link" text="Remail" title="Remail" url="http://Remail.ai" htmlUrl="http://Remail.ai" description="这是一个AI电子邮件助手,可以自动回复和组织电子邮件。" />
         <outline type="link" text="Otter.ai" title="Otter.ai" url="http://Otter.ai" htmlUrl="http://Otter.ai" description="这是一个AI会议工具,可以自动记录、转录和总结会议" />
       </outline>
       <outline text="智能体与自动化" title="智能体与自动化">
+        <outline type="link" text="Activepieces/activepieces" title="Activepieces/activepieces" url="https://github.com/Activepieces/activepieces" htmlUrl="https://github.com/Activepieces/activepieces" description="开源自动化平台，用可视化流程连接 AI 智能体与数百款应用，支持自托管，用于搭建客服、运营等自动化工作流。" />
+        <outline type="link" text="browseros-ai/BrowserOS" title="browseros-ai/BrowserOS" url="https://github.com/browseros-ai/BrowserOS" htmlUrl="https://github.com/browseros-ai/BrowserOS" description="开源智能体浏览器，基于 Chromium 内置本地大模型与自动化能力，主打隐私优先的浏览器任务代理。" />
+        <outline type="link" text="Vricko" title="Vricko" url="https://app.vricko.app" htmlUrl="https://app.vricko.app" description="面向小企业的 AI 代理平台，一句话即可建站、撰写内容、发邮件与客服支持，每项任务留痕并设月度支出上限。" />
+        <outline type="link" text="Turbofy" title="Turbofy" url="https://turbofy.com" htmlUrl="https://turbofy.com" description="对话式 AI 应用构建平台，用自然语言生成带数据、认证与托管的生产级业务应用，并支持 MCP 连接外部编码智能体。" />
+        <outline type="link" text="云策 Omni" title="云策 Omni" url="https://www.yuncehub.com" htmlUrl="https://www.yuncehub.com" description="跨平台本地 AI 工作台，用模型加技能加插件组合让智能体完成开发、创作与自动化任务，数据存于本机。" />
+        <outline type="link" text="Cognee" title="Cognee" url="https://www.cognee.ai" htmlUrl="https://www.cognee.ai" description="开源 AI 智能体记忆平台，用知识图谱与向量检索为大模型应用构建跨会话持久记忆，支持自托管与云服务。" />
+        <outline type="link" text="Fairwai" title="Fairwai" url="https://fairw.ai" htmlUrl="https://fairw.ai" description="AI 对话服务商，提供可自动接听的语音 Agent、网站聊天机器人与会议纪要生成，可电话直接试听。" />
         <outline type="link" text="Coze" title="Coze" url="https://www.coze.com" htmlUrl="https://www.coze.com" description="AI Bot 搭建平台，可配置插件、知识库并发布到多渠道。" />
         <outline type="link" text="Flowise" title="Flowise" url="https://flowiseai.com" htmlUrl="https://flowiseai.com" description="开源低代码 LLM 流程编排器，拖拽即可构建问答链。" />
         <outline type="link" text="n8n" title="n8n" url="https://n8n.io" htmlUrl="https://n8n.io" description="开源工作流自动化平台，内置 AI 节点与自托管智能体。" />
@@ -99,13 +121,13 @@
         <outline type="link" text="CrewAI" title="CrewAI" url="https://www.crewai.com" htmlUrl="https://www.crewai.com" description="多智能体协作框架，用角色分工完成复杂任务。" />
         <outline type="link" text="LangChain" title="LangChain" url="https://www.langchain.com" htmlUrl="https://www.langchain.com" description="LLM 应用开发框架与生态，提供链、智能体与可观测工具。" />
         <outline type="link" text="Dify" title="Dify" url="https://dify.ai" htmlUrl="https://dify.ai" description="开源 LLM 应用开发平台，可视化编排智能体与知识库。" />
-        <outline type="link" text="ChatMind - 智能后台系统" title="ChatMind - 智能后台系统" url="https://www.chatmind.tech/" htmlUrl="https://www.chatmind.tech/" description="ChatMind是一个开源的人工智能后台系统,可以帮助企业和开发者快速构建强大的AI产品与服务。" />
-        <outline type="link" text="Godmode.space" title="Godmode.space" url="https://godmode.space/" htmlUrl="https://godmode.space/" description="Godmode.space" />
-        <outline type="link" text="Cognosys - Your personal AI Agent" title="Cognosys - Your personal AI Agent" url="https://www.cognosys.ai/create" htmlUrl="https://www.cognosys.ai/create" description="Cognosys - Your personal AI Agent" />
       </outline>
     </outline>
     <outline text="模型与开源">
       <outline text="大语言模型" title="大语言模型">
+        <outline type="link" text="Kimi API 开放平台" title="Kimi API 开放平台" url="https://platform.kimi.com" htmlUrl="https://platform.kimi.com" description="月之暗面 Kimi 大模型开放平台，提供长上下文、多模态与工具调用的 API，供开发者构建智能对话、代码生成与视觉推理应用。" />
+        <outline type="link" text="microsoft/VibeVoice" title="microsoft/VibeVoice" url="https://github.com/microsoft/VibeVoice" htmlUrl="https://github.com/microsoft/VibeVoice" description="微软开源的前沿语音 AI 模型，面向高质量语音生成与实时语音交互场景。" />
+        <outline type="link" text="higurashi-ai/Haru" title="higurashi-ai/Haru" url="https://github.com/higurashi-ai/Haru" htmlUrl="https://github.com/higurashi-ai/Haru" description="低延迟多语言全双工语音对话模型，可边听边说，以 133 毫秒分块连续生成口语回应。" />
         <outline type="link" text="Qwen" title="Qwen" url="https://qwenlm.github.io" htmlUrl="https://qwenlm.github.io" description="通义千问 Qwen 开源模型的项目主页与文档入口。" />
         <outline type="link" text="DeepSeek" title="DeepSeek" url="https://www.deepseek.com" htmlUrl="https://www.deepseek.com" description="深度求索官网，发布 DeepSeek 系列模型与开放 API。" />
         <outline type="link" text="魔搭 ModelScope" title="魔搭 ModelScope" url="https://modelscope.cn" htmlUrl="https://modelscope.cn" description="阿里魔搭模型社区，提供中文模型下载、体验与数据集。" />
@@ -124,29 +146,48 @@
         <outline type="link" text="Chinese-LLaMA基础模型;ChatFlow中文对话模型;NLP预训练/指令微调数据集" title="Chinese-LLaMA基础模型;ChatFlow中文对话模型;NLP预训练/指令微调数据集" url="https://github.com/CVI-SZU/Linly" htmlUrl="https://github.com/CVI-SZU/Linly" description="Linly是一个中文NLP工具包,提供预训练语言模型、词典、数据集和工具。其主要目的是研究中文NLP,推动开源人工智能技术的发展。Linly通过集成多个中文NLP资源,能显著降低中文NLP建模的门槛,加速研究与开发过程。" />
       </outline>
       <outline text="GitHub 项目" title="GitHub 项目">
+        <outline type="link" text="nv-tlabs/lyra" title="nv-tlabs/lyra" url="https://github.com/nv-tlabs/Lyra" htmlUrl="https://github.com/nv-tlabs/Lyra" description="英伟达开源的生成式 3D 世界模型项目，可从输入图像生成可探索的三维场景，开放代码与预训练权重。" />
+        <outline type="link" text="Juneo-Lab/decision-forge" title="Juneo-Lab/decision-forge" url="https://github.com/Juneo-Lab/decision-forge" htmlUrl="https://github.com/Juneo-Lab/decision-forge" description="将组织规章策略编译为可验证的决策训练数据，支持数据溯源，用于微调合规决策模型。" />
+        <outline type="link" text="modelflare-ai/AnyModelBot" title="modelflare-ai/AnyModelBot" url="https://github.com/modelflare-ai/AnyModelBot" htmlUrl="https://github.com/modelflare-ai/AnyModelBot" description="本地优先的开源 AI 机器人，可接入 GPT、Claude、Gemini 等多种模型搭建专属对话助手。" />
+        <outline type="link" text="JosssphZhou/poki" title="JosssphZhou/poki" url="https://github.com/JosssphZhou/poki" htmlUrl="https://github.com/JosssphZhou/poki" description="开源 iPhone 智能体应用，能读取屏幕并自动点击滑动，通过本地 MCP 自动化操作 iOS 设备。" />
+        <outline type="link" text="ZhuLinsen/daily_stock_analysis" title="ZhuLinsen/daily_stock_analysis" url="https://github.com/ZhuLinsen/daily_stock_analysis" htmlUrl="https://github.com/ZhuLinsen/daily_stock_analysis" description="LLM 驱动的多市场股票智能分析系统，聚合行情与新闻、生成决策看板并支持定时推送。" />
+        <outline type="link" text="max-sixty/worktrunk" title="max-sixty/worktrunk" url="https://github.com/max-sixty/worktrunk" htmlUrl="https://github.com/max-sixty/worktrunk" description="为并行 AI 编码智能体设计的 Git worktree 管理命令行工具，快速创建、切换与清理隔离工作区。" />
+        <outline type="link" text="beenuar/AiSOC" title="beenuar/AiSOC" url="https://github.com/beenuar/AiSOC" htmlUrl="https://github.com/beenuar/AiSOC" description="开源 AI 安全运营中心，融合告警并用大模型智能体做威胁研判，覆盖 MITRE ATT&amp;CK 并留痕可回放。" />
+        <outline type="link" text="karakeep-app/karakeep" title="karakeep-app/karakeep" url="https://github.com/karakeep-app/karakeep" htmlUrl="https://github.com/karakeep-app/karakeep" description="可自托管的全能收藏应用，支持链接、笔记与图片，提供 AI 自动打标和全文搜索。" />
+        <outline type="link" text="THU-MAIC/OpenMAIC" title="THU-MAIC/OpenMAIC" url="https://github.com/THU-MAIC/OpenMAIC" htmlUrl="https://github.com/THU-MAIC/OpenMAIC" description="清华开源的开放式多智能体互动课堂，一键生成含 AI 教师与同学、白板及讲解的沉浸式学习体验。" />
+        <outline type="link" text="NVIDIA/auto-ontology" title="NVIDIA/auto-ontology" url="https://github.com/NVIDIA/auto-ontology" htmlUrl="https://github.com/NVIDIA/auto-ontology" description="英伟达开源的Python框架，为数据构建语义图谱推理层，实现确定性查询生成与可解释的LLM智能体分析。" />
+        <outline type="link" text="homeassistant-ai/ha-mcp" title="homeassistant-ai/ha-mcp" url="https://github.com/homeassistant-ai/ha-mcp" htmlUrl="https://github.com/homeassistant-ai/ha-mcp" description="通过MCP协议让Claude、ChatGPT等AI助手以自然语言配置和自动化Home Assistant智能家居设备。" />
+        <outline type="link" text="TauricResearch/TradingAgents" title="TauricResearch/TradingAgents" url="https://github.com/TauricResearch/TradingAgents" htmlUrl="https://github.com/TauricResearch/TradingAgents" description="基于多智能体大语言模型的金融交易框架，模拟分析师、研究员与交易员协作完成选股与投资决策。" />
+        <outline type="link" text="github/spec-kit" title="github/spec-kit" url="https://github.com/github/spec-kit" htmlUrl="https://github.com/github/spec-kit" description="GitHub 出品的规范驱动开发（SDD）工具包，用自然语言规范引导 AI 从需求到代码的分阶段实现。" />
+        <outline type="link" text="karpathy/nanochat" title="karpathy/nanochat" url="https://github.com/karpathy/nanochat" htmlUrl="https://github.com/karpathy/nanochat" description="Karpathy 开源的从零实现 ChatGPT 全流程教学框架，约百美元成本即可完成预训练与推理。" />
+        <outline type="link" text="skyzh/tiny-llm" title="skyzh/tiny-llm" url="https://github.com/skyzh/tiny-llm" htmlUrl="https://github.com/skyzh/tiny-llm" description="面向系统工程师的 Apple Silicon LLM 推理教学项目，用 Python 从零搭建迷你 vLLM 并运行 Qwen 模型。" />
         <outline type="link" text="open-webui/open-webui" title="open-webui/open-webui" url="https://github.com/open-webui/open-webui" htmlUrl="https://github.com/open-webui/open-webui" description="自托管的 AI 对话 Web 界面，可对接 Ollama 与多种 API。" />
         <outline type="link" text="firecrawl/firecrawl" title="firecrawl/firecrawl" url="https://github.com/firecrawl/firecrawl" htmlUrl="https://github.com/firecrawl/firecrawl" description="把网站抓取并转成 LLM 就绪数据的开源服务与 API。" />
-        <outline type="link" text="run-llama/llama_index" title="run-llama/llama_index" url="https://github.com/run-llama/llama_index" htmlUrl="https://github.com/run-llama/llama_index" description="面向私有数据的 RAG 索引与查询开源框架。" />
-        <outline type="link" text="langchain-ai/langchain" title="langchain-ai/langchain" url="https://github.com/langchain-ai/langchain" htmlUrl="https://github.com/langchain-ai/langchain" description="构建大模型应用的开源框架，提供链、工具与智能体抽象。" />
-        <outline type="link" text="chroma-core/chroma" title="chroma-core/chroma" url="https://github.com/chroma-core/chroma" htmlUrl="https://github.com/chroma-core/chroma" description="开源向量数据库，常用于 RAG 应用的嵌入检索。" />
-        <outline type="link" text="milvus-io/milvus" title="milvus-io/milvus" url="https://github.com/milvus-io/milvus" htmlUrl="https://github.com/milvus-io/milvus" description="分布式开源向量数据库，面向大规模相似性检索。" />
-        <outline type="link" text="qdrant/qdrant" title="qdrant/qdrant" url="https://github.com/qdrant/qdrant" htmlUrl="https://github.com/qdrant/qdrant" description="开源向量搜索引擎，提供过滤与混合检索能力。" />
         <outline type="link" text="CherryHQ/cherry-studio" title="CherryHQ/cherry-studio" url="https://github.com/CherryHQ/cherry-studio" htmlUrl="https://github.com/CherryHQ/cherry-studio" description="桌面端多模型 AI 助手，支持本地知识库与多服务商。" />
-        <outline type="link" text="Mintplex-Labs/anything-llm" title="Mintplex-Labs/anything-llm" url="https://github.com/Mintplex-Labs/anything-llm" htmlUrl="https://github.com/Mintplex-Labs/anything-llm" description="把文档转成可问答知识库的开源桌面与服务端应用。" />
         <outline type="link" text="gradio-app/gradio" title="gradio-app/gradio" url="https://github.com/gradio-app/gradio" htmlUrl="https://github.com/gradio-app/gradio" description="用几行 Python 为机器学习模型生成 Web 演示界面。" />
-        <outline type="link" text="n8n-io/n8n" title="n8n-io/n8n" url="https://github.com/n8n-io/n8n" htmlUrl="https://github.com/n8n-io/n8n" description="可自托管的工作流自动化工具，支持 AI 与数百种集成。" />
         <outline type="link" text="streamlit/streamlit" title="streamlit/streamlit" url="https://github.com/streamlit/streamlit" htmlUrl="https://github.com/streamlit/streamlit" description="把 Python 脚本快速变成数据应用的开源框架。" />
-        <outline type="link" text="langgenius/dify" title="langgenius/dify" url="https://github.com/langgenius/dify" htmlUrl="https://github.com/langgenius/dify" description="开源 LLM 应用开发平台，含编排、知识库与运营能力。" />
-        <outline type="link" text="facebookresearch/faiss" title="facebookresearch/faiss" url="https://github.com/facebookresearch/faiss" htmlUrl="https://github.com/facebookresearch/faiss" description="Meta 开源的高效向量相似性搜索与聚类库。" />
         <outline type="link" text="Segment Anything Model(SAM)" title="Segment Anything Model(SAM)" url="https://github.com/facebookresearch/segment-anything/" htmlUrl="https://github.com/facebookresearch/segment-anything/" description="该仓库提供了使用Segment Anything Model(SAM)进行推理的代码、训练的模型检查点的下载链接" />
-        <outline type="link" text="xinsblog/try-llama-index" title="xinsblog/try-llama-index" url="https://github.com/xinsblog/try-llama-index" htmlUrl="https://github.com/xinsblog/try-llama-index" description="xinsblog/try-llama-index" />
-        <outline type="link" text="AutoGPT - 中文版" title="AutoGPT - 中文版" url="https://github.com/RealHossie/Auto-GPT-Chinese.git" htmlUrl="https://github.com/RealHossie/Auto-GPT-Chinese.git" description="AutoGPT中文版" />
         <outline type="link" text="yetone/openai-translator" title="yetone/openai-translator" url="https://github.com/yetone/openai-translator" htmlUrl="https://github.com/yetone/openai-translator" description="基于 ChatGPT API 的划词翻译浏览器插件和跨平台桌面端应用" />
-        <outline type="link" text="Github + ChatGPT 实现代码对话" title="Github + ChatGPT 实现代码对话" url="https://github.com/peterw/Chat-with-Github-Repo" htmlUrl="https://github.com/peterw/Chat-with-Github-Repo" description="该项目包含两个 Python 脚本,演示了如何使用 Streamlit、OpenAI GPT-3.5-turbo 和 Deep Lake 来创建 AI 聊天机器人。聊天机器人会自动搜索存储在 Deep Lake 中的数据集以查找相关信息,并根据用户的输入生成答案,让你直接跟 GitHub 仓库进行对话。" />
-        <outline type="link" text="集成GPT,开始跟PDF文档聊天" title="集成GPT,开始跟PDF文档聊天" url="https://github.com/bhaskatripathi/pdfGPT" htmlUrl="https://github.com/bhaskatripathi/pdfGPT" description="跟 PDF 文档进行一对一对话;自动切割内容,并使用强大的深度平均网络编码器来生成嵌入;对 PDF 内容执行语义搜索,并将最相关的嵌入传递给 Open AI;自定义逻辑,生成更精确的响应信息,速度要比 OpenAI 的快。" />
-        <outline type="link" text="加快ChatGPT访问速度" title="加快ChatGPT访问速度" url="https://github.com/pengzhile/pandora" htmlUrl="https://github.com/pengzhile/pandora" description="该工具能直接通过 access token 来访问网站功能。后端优化,绕过 Cloudflare,提升访问速度。除此之外,该工具还提供了以下功能:高峰期能绕过官方限制,继续使用;应答速度直逼 PLUS;官方故障的时候,它可能还是能跑;多模式:网页 / 命令行 / API,私有化部署;不会像官方那样无故断线、报错。" />
       </outline>
       <outline text="推理与训练框架" title="推理与训练框架">
+        <outline type="link" text="JustVugg/colibri" title="JustVugg/colibri" url="https://github.com/JustVugg/colibri" htmlUrl="https://github.com/JustVugg/colibri" description="纯 C 编写的分层 MoE 推理引擎，热专家驻留 GPU、冷专家从 NVMe 流式加载，让超大模型跑在普通硬件上。" />
+        <outline type="link" text="unslothai/unsloth" title="unslothai/unsloth" url="https://github.com/unslothai/unsloth" htmlUrl="https://github.com/unslothai/unsloth" description="本地运行与训练大语言模型及扩散模型的框架，支持 GGUF、MLX 与 Qwen、DeepSeek、FLUX 等模型微调。" />
+        <outline type="link" text="Interactive-Active-AI/NextTransformer" title="Interactive-Active-AI/NextTransformer" url="https://github.com/Interactive-Active-AI/NextTransformer" htmlUrl="https://github.com/Interactive-Active-AI/NextTransformer" description="面向下一代 Transformer 与大模型的开源框架，提供算力对齐基准与架构自主研究能力。" />
+        <outline type="link" text="algorithmicsuperintelligence/optillm" title="algorithmicsuperintelligence/optillm" url="https://github.com/algorithmicsuperintelligence/optillm" htmlUrl="https://github.com/algorithmicsuperintelligence/optillm" description="LLM 推理优化代理，通过多种提示与缓存策略降低大模型调用成本并提升响应效率。" />
+        <outline type="link" text="cactus-compute/cactus" title="cactus-compute/cactus" url="https://github.com/cactus-compute/cactus" htmlUrl="https://github.com/cactus-compute/cactus" description="面向消费级设备的轻量端侧推理库，体积不足 50MB，本地运行智能体、语音与视觉任务，无需云端。" />
+        <outline type="link" text="huawei-csl/MACaQ" title="huawei-csl/MACaQ" url="https://github.com/huawei-csl/MACaQ" htmlUrl="https://github.com/huawei-csl/MACaQ" description="华为开源的模型无关量化工具，面向 GGUF 与本地推理，可量化并运行文本、图像、视频与音频模型。" />
+        <outline type="link" text="mw00/project-maya" title="mw00/project-maya" url="https://github.com/mw00/project-maya" htmlUrl="https://github.com/mw00/project-maya" description="开源本地大模型推理引擎，通过 GPU、内存与固态盘三级分层调度权重，让数百 B 模型跑在消费级硬件，兼容 OpenAI/Anthropic API。" />
+        <outline type="link" text="Edge0-AI/Edge0" title="Edge0-AI/Edge0" url="https://github.com/Edge0-AI/Edge0" htmlUrl="https://github.com/Edge0-AI/Edge0" description="端侧基础模型与流式 MoE 推理框架，通过 SSD 流式权重与专家路由，让 145B 模型跑在笔记本、35B 跑在手机上。" />
+        <outline type="link" text="jundot/omlx" title="jundot/omlx" url="https://github.com/jundot/omlx" htmlUrl="https://github.com/jundot/omlx" description="面向苹果芯片的大模型推理服务器，支持连续批处理与 SSD 分层缓存，可从菜单栏管理。" />
+        <outline type="link" text="raullenchai/Rapid-MLX" title="raullenchai/Rapid-MLX" url="https://github.com/raullenchai/Rapid-MLX" htmlUrl="https://github.com/raullenchai/Rapid-MLX" description="基于 MLX 的苹果芯片推理服务器，兼容 OpenAI 与 Anthropic 接口，专注编码智能体工具调用。" />
+        <outline type="link" text="jingyaogong/minimind" title="jingyaogong/minimind" url="https://github.com/jingyaogong/minimind" htmlUrl="https://github.com/jingyaogong/minimind" description="仅需 2 小时即可从零训练 6400 万参数小语言模型的开源项目，适合快速上手大模型训练全流程。" />
+        <outline type="link" text="flashml-org/FreeToken" title="flashml-org/FreeToken" url="https://github.com/flashml-org/FreeToken" htmlUrl="https://github.com/flashml-org/FreeToken" description="把数据中心级模型服务带到桌面的开源引擎，可在个人电脑上本地运行超大规模语言模型。" />
+        <outline type="link" text="FareedKhan-dev/kimi-k3-in-c" title="FareedKhan-dev/kimi-k3-in-c" url="https://github.com/FareedKhan-dev/kimi-k3-in-c" htmlUrl="https://github.com/FareedKhan-dev/kimi-k3-in-c" description="用纯C99实现的推理引擎，可在单核CPU、8GB内存中运行2.78万亿参数的Kimi K3大模型，零依赖。" />
+        <outline type="link" text="sybil-solutions/inference-optimisation-skill" title="sybil-solutions/inference-optimisation-skill" url="https://github.com/sybil-solutions/inference-optimisation-skill" htmlUrl="https://github.com/sybil-solutions/inference-optimisation-skill" description="自动调优本地 LLM 推理速度的 Agent 技能，用爬山法搜索解码、预填充与 KV 缓存的最优配置。" />
+        <outline type="link" text="NVIDIA-NeMo/Switchyard" title="NVIDIA-NeMo/Switchyard" url="https://github.com/NVIDIA-NeMo/Switchyard" htmlUrl="https://github.com/NVIDIA-NeMo/Switchyard" description="英伟达开源的 LLM 流量路由工具，保持原生 OpenAI/Anthropic API 兼容，可跨模型与供应商分发请求，便于选型、基准测试与成本优化。" />
+        <outline type="link" text="eliasbiondo/antirion" title="eliasbiondo/antirion" url="https://github.com/eliasbiondo/antirion" htmlUrl="https://github.com/eliasbiondo/antirion" description="开源 AI/LLM 网关，单文件内置控制台，统一路由、限流与观测多家大模型服务调用。" />
+        <outline type="link" text="Ollama" title="Ollama" url="https://ollama.com" htmlUrl="https://ollama.com" description="在本地或云端运行开源大模型的工具，支持 macOS、Windows、Linux，一条命令即可启动模型。" />
+        <outline type="link" text="RigSpark" title="RigSpark" url="https://rigspark.si" htmlUrl="https://rigspark.si" description="开源本地 AI 选型工具，检测电脑内存与显卡后自动挑选可运行的大模型、图像、视频或语音模型并下载运行。" />
         <outline type="link" text="ollama/ollama" title="ollama/ollama" url="https://github.com/ollama/ollama" htmlUrl="https://github.com/ollama/ollama" description="在本地一键运行与管理开源大模型的工具，支持多平台。" />
         <outline type="link" text="ggml-org/llama.cpp" title="ggml-org/llama.cpp" url="https://github.com/ggml-org/llama.cpp" htmlUrl="https://github.com/ggml-org/llama.cpp" description="C/C++ 实现的大模型推理引擎，支持 CPU 与量化模型。" />
         <outline type="link" text="vllm-project/vllm" title="vllm-project/vllm" url="https://github.com/vllm-project/vllm" htmlUrl="https://github.com/vllm-project/vllm" description="高吞吐大模型推理与服务框架，采用 PagedAttention。" />
@@ -160,9 +201,63 @@
         <outline type="link" text="ggml-org/whisper.cpp" title="ggml-org/whisper.cpp" url="https://github.com/ggml-org/whisper.cpp" htmlUrl="https://github.com/ggml-org/whisper.cpp" description="Whisper 语音识别模型的 C/C++ 本地推理实现。" />
         <outline type="link" text="pytorch/pytorch" title="pytorch/pytorch" url="https://github.com/pytorch/pytorch" htmlUrl="https://github.com/pytorch/pytorch" description="主流深度学习框架，提供张量计算与自动微分能力。" />
       </outline>
+      <outline text="RAG 与知识库" title="RAG 与知识库">
+        <outline type="link" text="alibaba/zvec" title="alibaba/zvec" url="https://github.com/alibaba/zvec" htmlUrl="https://github.com/alibaba/zvec" description="阿里开源的轻量级进程内向量数据库，C++ 实现，直接嵌入应用即可做高速向量检索，面向 RAG 与边缘场景。" />
+        <outline type="link" text="yjid/kensaku" title="yjid/kensaku" url="https://github.com/yjid/kensaku" htmlUrl="https://github.com/yjid/kensaku" description="开源本地文件检索工具，索引文档、代码和截图文字，支持 OCR 与语义搜索，可经只读 MCP 供智能体调用。" />
+        <outline type="link" text="onyx-dot-app/onyx" title="onyx-dot-app/onyx" url="https://github.com/onyx-dot-app/onyx" htmlUrl="https://github.com/onyx-dot-app/onyx" description="开源企业 AI 搜索平台，可连接多种数据源做 RAG 检索问答，内置权限与连接器，用于搭建内部知识助手。" />
+        <outline type="link" text="docling-project/docling" title="docling-project/docling" url="https://github.com/docling-project/docling" htmlUrl="https://github.com/docling-project/docling" description="开源文档解析库，把 PDF、Word、HTML 等转为 Markdown/JSON 结构化数据，为生成式 AI 与 RAG 流程准备输入。" />
+        <outline type="link" text="Tencent/WeKnora" title="Tencent/WeKnora" url="https://github.com/Tencent/WeKnora" htmlUrl="https://github.com/Tencent/WeKnora" description="腾讯开源大模型知识平台，把文档转成可溯源 RAG 问答、自主推理智能体与自动维护的 Wiki。" />
+        <outline type="link" text="infiniflow/ragflow" title="infiniflow/ragflow" url="https://github.com/infiniflow/ragflow" htmlUrl="https://github.com/infiniflow/ragflow" description="面向智能体的原生 RAG 检索引擎，提供确定性解析、可解释引用与企业级知识库问答能力。" />
+        <outline type="link" text="unclecode/crawl4ai" title="unclecode/crawl4ai" url="https://github.com/unclecode/crawl4ai" htmlUrl="https://github.com/unclecode/crawl4ai" description="面向大模型与 AI 智能体的开源网页抓取工具，把网页转成 LLM 就绪的 Markdown，支持自托管。" />
+        <outline type="link" text="headroomlabs-ai/headroom" title="headroomlabs-ai/headroom" url="https://github.com/headroomlabs-ai/headroom" htmlUrl="https://github.com/headroomlabs-ai/headroom" description="在送入大模型前压缩工具输出、日志、文件与 RAG 分块，显著降低 token 消耗，提供库、代理与 MCP 服务三种形态。" />
+        <outline type="link" text="run-llama/llama_index" title="run-llama/llama_index" url="https://github.com/run-llama/llama_index" htmlUrl="https://github.com/run-llama/llama_index" description="面向私有数据的 RAG 索引与查询开源框架。" />
+        <outline type="link" text="chroma-core/chroma" title="chroma-core/chroma" url="https://github.com/chroma-core/chroma" htmlUrl="https://github.com/chroma-core/chroma" description="开源向量数据库，常用于 RAG 应用的嵌入检索。" />
+        <outline type="link" text="milvus-io/milvus" title="milvus-io/milvus" url="https://github.com/milvus-io/milvus" htmlUrl="https://github.com/milvus-io/milvus" description="分布式开源向量数据库，面向大规模相似性检索。" />
+        <outline type="link" text="qdrant/qdrant" title="qdrant/qdrant" url="https://github.com/qdrant/qdrant" htmlUrl="https://github.com/qdrant/qdrant" description="开源向量搜索引擎，提供过滤与混合检索能力。" />
+        <outline type="link" text="facebookresearch/faiss" title="facebookresearch/faiss" url="https://github.com/facebookresearch/faiss" htmlUrl="https://github.com/facebookresearch/faiss" description="Meta 开源的高效向量相似性搜索与聚类库。" />
+        <outline type="link" text="Mintplex-Labs/anything-llm" title="Mintplex-Labs/anything-llm" url="https://github.com/Mintplex-Labs/anything-llm" htmlUrl="https://github.com/Mintplex-Labs/anything-llm" description="把文档转成可问答知识库的开源桌面与服务端应用。" />
+        <outline type="link" text="集成GPT,开始跟PDF文档聊天" title="集成GPT,开始跟PDF文档聊天" url="https://github.com/bhaskatripathi/pdfGPT" htmlUrl="https://github.com/bhaskatripathi/pdfGPT" description="跟 PDF 文档进行一对一对话;自动切割内容,并使用强大的深度平均网络编码器来生成嵌入;对 PDF 内容执行语义搜索,并将最相关的嵌入传递给 Open AI;自定义逻辑,生成更精确的响应信息,速度要比 OpenAI 的快。" />
+      </outline>
+      <outline text="智能体框架" title="智能体框架">
+        <outline type="link" text="withcoral/coral" title="withcoral/coral" url="https://github.com/withcoral/coral" htmlUrl="https://github.com/withcoral/coral" description="为 AI 智能体访问企业敏感系统提供执行护栏，按精细权限与自定义工具安全调用，减少 token 消耗。" />
+        <outline type="link" text="get-bb/bb" title="get-bb/bb" url="https://github.com/get-bb/bb" htmlUrl="https://github.com/get-bb/bb" description="面向智能体的集成开发环境，围绕 Claude Code、Codex 等编码智能体构建，可自主迭代扩展能力。" />
+        <outline type="link" text="mvanhorn/cli-printing-press" title="mvanhorn/cli-printing-press" url="https://github.com/mvanhorn/cli-printing-press" htmlUrl="https://github.com/mvanhorn/cli-printing-press" description="读取 API 文档自动生成面向 AI 智能体的命令行工具，内置 SQLite 同步、离线检索与组合洞察命令。" />
+        <outline type="link" text="didi/helixharness" title="didi/helixharness" url="https://github.com/didi/helixharness" htmlUrl="https://github.com/didi/helixharness" description="滴滴开源的 AI 编码工程化框架，支持团队结合业务知识与研发流程持续构建专属 Harness。" />
+        <outline type="link" text="eduwxyz/tucano" title="eduwxyz/tucano" url="https://github.com/eduwxyz/tucano" htmlUrl="https://github.com/eduwxyz/tucano" description="在本地组建 AI 智能体团队，可频道协作、写代码、互相评审，真实世界操作需人工确认。" />
+        <outline type="link" text="conorbronsdon/avoid-ai-writing" title="conorbronsdon/avoid-ai-writing" url="https://github.com/conorbronsdon/avoid-ai-writing" htmlUrl="https://github.com/conorbronsdon/avoid-ai-writing" description="智能体技能插件，审查并改写文本去除 AI 写作痕迹，兼容 Claude Code、Codex、Hermes 等。" />
+        <outline type="link" text="simplexai-labs/linger" title="simplexai-labs/linger" url="https://github.com/simplexai-labs/linger" htmlUrl="https://github.com/simplexai-labs/linger" description="可完全跑在本机的开源个人智能体，自研 PolyStrata 引擎让大模型在消费级硬件上运行，数据留存本地。" />
+        <outline type="link" text="trpc-group/trpc-agent-go" title="trpc-group/trpc-agent-go" url="https://github.com/trpc-group/trpc-agent-go" htmlUrl="https://github.com/trpc-group/trpc-agent-go" description="腾讯开源的 Go 语言生产级智能体框架，支持图工作流、记忆、A2A 与 MCP 协议，内置评测与可观测能力。" />
+        <outline type="link" text="ag-ui-protocol/ag-ui" title="ag-ui-protocol/ag-ui" url="https://github.com/ag-ui-protocol/ag-ui" htmlUrl="https://github.com/ag-ui-protocol/ag-ui" description="Agent-User Interaction 协议，为 AI 智能体与前端应用提供标准化的事件交互与状态同步接口。" />
+        <outline type="link" text="ChromeDevTools/chrome-devtools-mcp" title="ChromeDevTools/chrome-devtools-mcp" url="https://github.com/ChromeDevTools/chrome-devtools-mcp" htmlUrl="https://github.com/ChromeDevTools/chrome-devtools-mcp" description="把 Chrome 开发者工具通过 MCP 暴露给编码智能体，支持页面调试、检查与交互自动化。" />
+        <outline type="link" text="NVIDIA/SkillEvaluator" title="NVIDIA/SkillEvaluator" url="https://github.com/NVIDIA/SkillEvaluator" htmlUrl="https://github.com/NVIDIA/SkillEvaluator" description="英伟达开源的多层评估框架，用质量门槛与安全扫描检验 AI 智能体技能与插件。" />
+        <outline type="link" text="Tencent/LoopForge" title="Tencent/LoopForge" url="https://github.com/Tencent/LoopForge" htmlUrl="https://github.com/Tencent/LoopForge" description="腾讯开源的自托管编码智能体交付工作流，编排 CodeBuddy、Codex 等并支持人工审批。" />
+        <outline type="link" text="deepseek-ai/dsh-superagent-prototype" title="deepseek-ai/dsh-superagent-prototype" url="https://github.com/deepseek-ai/dsh-superagent-prototype" htmlUrl="https://github.com/deepseek-ai/dsh-superagent-prototype" description="DeepSeek 开源的自主智能体原型，采用 Router+Worker 双层架构，让编码 Agent 自行拆解任务、发现缺陷并提交修复 PR。" />
+        <outline type="link" text="aaif-goose/goose" title="aaif-goose/goose" url="https://github.com/aaif-goose/goose" htmlUrl="https://github.com/aaif-goose/goose" description="可扩展的开源 AI 智能体，支持命令行、桌面与 API 多种形态，能连接任意大模型和 MCP 工具，自动完成开发与日常任务。" />
+        <outline type="link" text="google-gemini/gemini-cli" title="google-gemini/gemini-cli" url="https://github.com/google-gemini/gemini-cli" htmlUrl="https://github.com/google-gemini/gemini-cli" description="谷歌开源的终端 AI 编码智能体，在命令行读写代码、执行 shell 命令并集成 MCP，支持 Gemini 模型辅助开发与调试。" />
+        <outline type="link" text="mastra-ai/mastra" title="mastra-ai/mastra" url="https://github.com/mastra-ai/mastra" htmlUrl="https://github.com/mastra-ai/mastra" description="现代 TypeScript AI 应用框架，内置智能体、RAG、评估与 MCP 支持，用于构建聊天机器人和 AI 驱动的应用。" />
+        <outline type="link" text="Orkas-AI/Orkas" title="Orkas-AI/Orkas" url="https://github.com/Orkas-AI/Orkas" htmlUrl="https://github.com/Orkas-AI/Orkas" description="本地优先的开源多智能体桌面团队，指挥官把目标拆成待办并协调内置专家与主流编码智能体协同完成。" />
+        <outline type="link" text="cloudflare/security-audit-skill" title="cloudflare/security-audit-skill" url="https://github.com/cloudflare/security-audit-skill" htmlUrl="https://github.com/cloudflare/security-audit-skill" description="Cloudflare 开源的编码智能体技能，执行多阶段安全审计并输出经独立验证、机器可读的漏洞发现结果。" />
+        <outline type="link" text="nanocodexyz/nanocode" title="nanocodexyz/nanocode" url="https://github.com/nanocodexyz/nanocode" htmlUrl="https://github.com/nanocodexyz/nanocode" description="面向前沿嵌入式场景的智能体 SDK，提供可长期运行、支持代码模式的智能体开发接口与工具链。" />
+        <outline type="link" text="ChesterRa/cccc" title="ChesterRa/cccc" url="https://github.com/ChesterRa/cccc" htmlUrl="https://github.com/ChesterRa/cccc" description="零基础设施的编码智能体协调器，用群聊式已读与投递回执从手机远程调度多个智能体持续执行任务。" />
+        <outline type="link" text="mem0ai/mem0" title="mem0ai/mem0" url="https://github.com/mem0ai/mem0" htmlUrl="https://github.com/mem0ai/mem0" description="为 AI 智能体提供持久化记忆层的开源基础设施，可跨会话记住用户偏好并注入相关上下文。" />
+        <outline type="link" text="bytedance/deer-flow" title="bytedance/deer-flow" url="https://github.com/bytedance/deer-flow" htmlUrl="https://github.com/bytedance/deer-flow" description="字节跳动开源的长程超级智能体框架，集成沙箱、记忆、技能与子智能体，自主完成研究、编码与创作等多步任务。" />
+        <outline type="link" text="vercel-labs/agent-browser" title="vercel-labs/agent-browser" url="https://github.com/vercel-labs/agent-browser" htmlUrl="https://github.com/vercel-labs/agent-browser" description="Vercel开源的Rust浏览器自动化CLI，以无障碍树读取页面并让AI智能体逐步操作网页元素，失败即报错。" />
+        <outline type="link" text="vercel-labs/agent-desktop" title="vercel-labs/agent-desktop" url="https://github.com/vercel-labs/agent-desktop" htmlUrl="https://github.com/vercel-labs/agent-desktop" description="Vercel Labs 开源的命令行工具，通过系统无障碍树让 AI 智能体识别并操作桌面应用，支持无头运行与多平台。" />
+        <outline type="link" text="langflow-ai/langflow" title="langflow-ai/langflow" url="https://github.com/langflow-ai/langflow" htmlUrl="https://github.com/langflow-ai/langflow" description="可视化拖拽构建 AI 智能体与工作流的开源工具，支持接入主流大模型并部署为 API。" />
+        <outline type="link" text="browser-use/browser-use" title="browser-use/browser-use" url="https://github.com/browser-use/browser-use" htmlUrl="https://github.com/browser-use/browser-use" description="开源浏览器智能体框架，让大模型在真实浏览器中自动点击、输入并完成任务，兼容任意 LLM。" />
+        <outline type="link" text="openclaw/openclaw" title="openclaw/openclaw" url="https://github.com/openclaw/openclaw" htmlUrl="https://github.com/openclaw/openclaw" description="开源个人 AI 助手，可在任意操作系统与平台上代用户执行真实任务，强调数据自持，MIT 协议。" />
+        <outline type="link" text="pydantic/pydantic-ai" title="pydantic/pydantic-ai" url="https://github.com/pydantic/pydantic-ai" htmlUrl="https://github.com/pydantic/pydantic-ai" description="Pydantic 官方 AI Agent 开发框架，端到端类型安全，支持实时语音、图像生成、嵌入与多模型接入。" />
+        <outline type="link" text="0xPlaygrounds/rig" title="0xPlaygrounds/rig" url="https://github.com/0xPlaygrounds/rig" htmlUrl="https://github.com/0xPlaygrounds/rig" description="用 Rust 构建模块化、可扩展 LLM 应用的框架，主打高性能与低延迟的 AI 应用开发。" />
+        <outline type="link" text="iflytek/skillhub" title="iflytek/skillhub" url="https://github.com/iflytek/skillhub" htmlUrl="https://github.com/iflytek/skillhub" description="科大讯飞开源的企业级自托管智能体技能注册中心，支持技能包发布、版本管理与权限治理。" />
+        <outline type="link" text="CopilotKit/CopilotKit" title="CopilotKit/CopilotKit" url="https://github.com/CopilotKit/CopilotKit" htmlUrl="https://github.com/CopilotKit/CopilotKit" description="面向智能体与生成式 UI 的前端开发框架，支持 React、Angular 与移动端快速集成对话交互。" />
+        <outline type="link" text="langchain-ai/langchain" title="langchain-ai/langchain" url="https://github.com/langchain-ai/langchain" htmlUrl="https://github.com/langchain-ai/langchain" description="构建大模型应用的开源框架，提供链、工具与智能体抽象。" />
+        <outline type="link" text="n8n-io/n8n" title="n8n-io/n8n" url="https://github.com/n8n-io/n8n" htmlUrl="https://github.com/n8n-io/n8n" description="可自托管的工作流自动化工具，支持 AI 与数百种集成。" />
+        <outline type="link" text="langgenius/dify" title="langgenius/dify" url="https://github.com/langgenius/dify" htmlUrl="https://github.com/langgenius/dify" description="开源 LLM 应用开发平台，含编排、知识库与运营能力。" />
+      </outline>
     </outline>
     <outline text="学习与资源">
       <outline text="提示词与教程" title="提示词与教程">
+        <outline type="link" text="词图PromptTool - AI绘画资料管理网站" title="词图PromptTool - AI绘画资料管理网站" url="https://www.prompttool.com/NovelAI" htmlUrl="https://www.prompttool.com/NovelAI" description="词图PromptTool - AI绘画资料管理网站" />
         <outline type="link" text="Prompt Engineering Guide" title="Prompt Engineering Guide" url="https://www.promptingguide.ai" htmlUrl="https://www.promptingguide.ai" description="系统化提示词工程教程，覆盖技巧、模型与应用场景。" />
         <outline type="link" text="DeepLearning.AI" title="DeepLearning.AI" url="https://www.deeplearning.ai" htmlUrl="https://www.deeplearning.ai" description="吴恩达团队的 AI 课程平台，提供短课与实战项目。" />
         <outline type="link" text="arXiv" title="arXiv" url="https://arxiv.org" htmlUrl="https://arxiv.org" description="开放预印本平台，AI 领域最新论文的主要发布地。" />
@@ -180,6 +275,7 @@
         <outline type="link" text="ChatGPT Prompt Engineering for Developers 中文版" title="ChatGPT Prompt Engineering for Developers 中文版" url="https://github.com/datawhalechina/prompt-engineering-for-developers" htmlUrl="https://github.com/datawhalechina/prompt-engineering-for-developers" description="主要内容为指导开发者如何构建 Prompt 并基于 OpenAI API 构建新的、基于 LLM 的应用" />
       </outline>
       <outline text="技术博客" title="技术博客">
+        <outline type="link" text="llama-index(gpt-index):后chatgpt时代的对话式文档问答解决方案" title="llama-index(gpt-index):后chatgpt时代的对话式文档问答解决方案" url="https://zhuanlan.zhihu.com/p/613155165" htmlUrl="https://zhuanlan.zhihu.com/p/613155165" description="人工智能(GPT)" />
         <outline type="link" text="Lil'Log" title="Lil'Log" url="https://lilianweng.github.io" htmlUrl="https://lilianweng.github.io" description="Lilian Weng 的深度技术博客，系统梳理大模型与智能体主题。" />
         <outline type="link" text="Anthropic Research" title="Anthropic Research" url="https://www.anthropic.com/research" htmlUrl="https://www.anthropic.com/research" description="Anthropic 研究博客，发布对齐、可解释性与模型评估文章。" />
         <outline type="link" text="The Illustrated Transformer" title="The Illustrated Transformer" url="https://jalammar.github.io" htmlUrl="https://jalammar.github.io" description="用图解方式讲清 Transformer、BERT 等模型原理的技术博客。" />
@@ -206,120 +302,12 @@
       </outline>
     </outline>
     <outline text="每日 AI 新发现">
-      <outline text="开源项目" title="开源项目">
-        <outline type="link" text="withcoral/coral" title="withcoral/coral" url="https://github.com/withcoral/coral" htmlUrl="https://github.com/withcoral/coral" description="为 AI 智能体访问企业敏感系统提供执行护栏，按精细权限与自定义工具安全调用，减少 token 消耗。" />
-        <outline type="link" text="get-bb/bb" title="get-bb/bb" url="https://github.com/get-bb/bb" htmlUrl="https://github.com/get-bb/bb" description="面向智能体的集成开发环境，围绕 Claude Code、Codex 等编码智能体构建，可自主迭代扩展能力。" />
-        <outline type="link" text="mvanhorn/cli-printing-press" title="mvanhorn/cli-printing-press" url="https://github.com/mvanhorn/cli-printing-press" htmlUrl="https://github.com/mvanhorn/cli-printing-press" description="读取 API 文档自动生成面向 AI 智能体的命令行工具，内置 SQLite 同步、离线检索与组合洞察命令。" />
-        <outline type="link" text="didi/helixharness" title="didi/helixharness" url="https://github.com/didi/helixharness" htmlUrl="https://github.com/didi/helixharness" description="滴滴开源的 AI 编码工程化框架，支持团队结合业务知识与研发流程持续构建专属 Harness。" />
-        <outline type="link" text="eduwxyz/tucano" title="eduwxyz/tucano" url="https://github.com/eduwxyz/tucano" htmlUrl="https://github.com/eduwxyz/tucano" description="在本地组建 AI 智能体团队，可频道协作、写代码、互相评审，真实世界操作需人工确认。" />
-        <outline type="link" text="conorbronsdon/avoid-ai-writing" title="conorbronsdon/avoid-ai-writing" url="https://github.com/conorbronsdon/avoid-ai-writing" htmlUrl="https://github.com/conorbronsdon/avoid-ai-writing" description="智能体技能插件，审查并改写文本去除 AI 写作痕迹，兼容 Claude Code、Codex、Hermes 等。" />
-        <outline type="link" text="Juneo-Lab/decision-forge" title="Juneo-Lab/decision-forge" url="https://github.com/Juneo-Lab/decision-forge" htmlUrl="https://github.com/Juneo-Lab/decision-forge" description="将组织规章策略编译为可验证的决策训练数据，支持数据溯源，用于微调合规决策模型。" />
-        <outline type="link" text="pydantic/pydantic-ai" title="pydantic/pydantic-ai" url="https://github.com/pydantic/pydantic-ai" htmlUrl="https://github.com/pydantic/pydantic-ai" description="Pydantic 官方 AI Agent 开发框架，端到端类型安全，支持实时语音、图像生成、嵌入与多模型接入。" />
-        <outline type="link" text="0xPlaygrounds/rig" title="0xPlaygrounds/rig" url="https://github.com/0xPlaygrounds/rig" htmlUrl="https://github.com/0xPlaygrounds/rig" description="用 Rust 构建模块化、可扩展 LLM 应用的框架，主打高性能与低延迟的 AI 应用开发。" />
-        <outline type="link" text="sybil-solutions/inference-optimisation-skill" title="sybil-solutions/inference-optimisation-skill" url="https://github.com/sybil-solutions/inference-optimisation-skill" htmlUrl="https://github.com/sybil-solutions/inference-optimisation-skill" description="自动调优本地 LLM 推理速度的 Agent 技能，用爬山法搜索解码、预填充与 KV 缓存的最优配置。" />
-        <outline type="link" text="simplexai-labs/linger" title="simplexai-labs/linger" url="https://github.com/simplexai-labs/linger" htmlUrl="https://github.com/simplexai-labs/linger" description="可完全跑在本机的开源个人智能体，自研 PolyStrata 引擎让大模型在消费级硬件上运行，数据留存本地。" />
-        <outline type="link" text="trpc-group/trpc-agent-go" title="trpc-group/trpc-agent-go" url="https://github.com/trpc-group/trpc-agent-go" htmlUrl="https://github.com/trpc-group/trpc-agent-go" description="腾讯开源的 Go 语言生产级智能体框架，支持图工作流、记忆、A2A 与 MCP 协议，内置评测与可观测能力。" />
-        <outline type="link" text="modelflare-ai/AnyModelBot" title="modelflare-ai/AnyModelBot" url="https://github.com/modelflare-ai/AnyModelBot" htmlUrl="https://github.com/modelflare-ai/AnyModelBot" description="本地优先的开源 AI 机器人，可接入 GPT、Claude、Gemini 等多种模型搭建专属对话助手。" />
-        <outline type="link" text="JosssphZhou/poki" title="JosssphZhou/poki" url="https://github.com/JosssphZhou/poki" htmlUrl="https://github.com/JosssphZhou/poki" description="开源 iPhone 智能体应用，能读取屏幕并自动点击滑动，通过本地 MCP 自动化操作 iOS 设备。" />
-        <outline type="link" text="ag-ui-protocol/ag-ui" title="ag-ui-protocol/ag-ui" url="https://github.com/ag-ui-protocol/ag-ui" htmlUrl="https://github.com/ag-ui-protocol/ag-ui" description="Agent-User Interaction 协议，为 AI 智能体与前端应用提供标准化的事件交互与状态同步接口。" />
-        <outline type="link" text="ChromeDevTools/chrome-devtools-mcp" title="ChromeDevTools/chrome-devtools-mcp" url="https://github.com/ChromeDevTools/chrome-devtools-mcp" htmlUrl="https://github.com/ChromeDevTools/chrome-devtools-mcp" description="把 Chrome 开发者工具通过 MCP 暴露给编码智能体，支持页面调试、检查与交互自动化。" />
-        <outline type="link" text="NVIDIA/SkillEvaluator" title="NVIDIA/SkillEvaluator" url="https://github.com/NVIDIA/SkillEvaluator" htmlUrl="https://github.com/NVIDIA/SkillEvaluator" description="英伟达开源的多层评估框架，用质量门槛与安全扫描检验 AI 智能体技能与插件。" />
-        <outline type="link" text="Tencent/LoopForge" title="Tencent/LoopForge" url="https://github.com/Tencent/LoopForge" htmlUrl="https://github.com/Tencent/LoopForge" description="腾讯开源的自托管编码智能体交付工作流，编排 CodeBuddy、Codex 等并支持人工审批。" />
-        <outline type="link" text="eliasbiondo/antirion" title="eliasbiondo/antirion" url="https://github.com/eliasbiondo/antirion" htmlUrl="https://github.com/eliasbiondo/antirion" description="开源 AI/LLM 网关，单文件内置控制台，统一路由、限流与观测多家大模型服务调用。" />
-        <outline type="link" text="dream-num/univer" title="dream-num/univer" url="https://github.com/dream-num/univer" htmlUrl="https://github.com/dream-num/univer" description="AI 办公 SDK，为应用嵌入文档编辑、表格计算与多人协作能力，构建自研 AI Office。" />
-        <outline type="link" text="ZhuLinsen/daily_stock_analysis" title="ZhuLinsen/daily_stock_analysis" url="https://github.com/ZhuLinsen/daily_stock_analysis" htmlUrl="https://github.com/ZhuLinsen/daily_stock_analysis" description="LLM 驱动的多市场股票智能分析系统，聚合行情与新闻、生成决策看板并支持定时推送。" />
-        <outline type="link" text="deepseek-ai/dsh-superagent-prototype" title="deepseek-ai/dsh-superagent-prototype" url="https://github.com/deepseek-ai/dsh-superagent-prototype" htmlUrl="https://github.com/deepseek-ai/dsh-superagent-prototype" description="DeepSeek 开源的自主智能体原型，采用 Router+Worker 双层架构，让编码 Agent 自行拆解任务、发现缺陷并提交修复 PR。" />
-        <outline type="link" text="alibaba/zvec" title="alibaba/zvec" url="https://github.com/alibaba/zvec" htmlUrl="https://github.com/alibaba/zvec" description="阿里开源的轻量级进程内向量数据库，C++ 实现，直接嵌入应用即可做高速向量检索，面向 RAG 与边缘场景。" />
-        <outline type="link" text="max-sixty/worktrunk" title="max-sixty/worktrunk" url="https://github.com/max-sixty/worktrunk" htmlUrl="https://github.com/max-sixty/worktrunk" description="为并行 AI 编码智能体设计的 Git worktree 管理命令行工具，快速创建、切换与清理隔离工作区。" />
-        <outline type="link" text="beenuar/AiSOC" title="beenuar/AiSOC" url="https://github.com/beenuar/AiSOC" htmlUrl="https://github.com/beenuar/AiSOC" description="开源 AI 安全运营中心，融合告警并用大模型智能体做威胁研判，覆盖 MITRE ATT&amp;CK 并留痕可回放。" />
-        <outline type="link" text="yjid/kensaku" title="yjid/kensaku" url="https://github.com/yjid/kensaku" htmlUrl="https://github.com/yjid/kensaku" description="开源本地文件检索工具，索引文档、代码和截图文字，支持 OCR 与语义搜索，可经只读 MCP 供智能体调用。" />
-        <outline type="link" text="alibaba/open-code-review" title="alibaba/open-code-review" url="https://github.com/alibaba/open-code-review" htmlUrl="https://github.com/alibaba/open-code-review" description="阿里开源的 AI 代码审查工具，读取 Git 差异给出行级评审意见，把确定性检查与大模型智能体结合，自动发现代码问题。" />
-        <outline type="link" text="Activepieces/activepieces" title="Activepieces/activepieces" url="https://github.com/Activepieces/activepieces" htmlUrl="https://github.com/Activepieces/activepieces" description="开源自动化平台，用可视化流程连接 AI 智能体与数百款应用，支持自托管，用于搭建客服、运营等自动化工作流。" />
-        <outline type="link" text="onyx-dot-app/onyx" title="onyx-dot-app/onyx" url="https://github.com/onyx-dot-app/onyx" htmlUrl="https://github.com/onyx-dot-app/onyx" description="开源企业 AI 搜索平台，可连接多种数据源做 RAG 检索问答，内置权限与连接器，用于搭建内部知识助手。" />
-        <outline type="link" text="aaif-goose/goose" title="aaif-goose/goose" url="https://github.com/aaif-goose/goose" htmlUrl="https://github.com/aaif-goose/goose" description="可扩展的开源 AI 智能体，支持命令行、桌面与 API 多种形态，能连接任意大模型和 MCP 工具，自动完成开发与日常任务。" />
-        <outline type="link" text="google-gemini/gemini-cli" title="google-gemini/gemini-cli" url="https://github.com/google-gemini/gemini-cli" htmlUrl="https://github.com/google-gemini/gemini-cli" description="谷歌开源的终端 AI 编码智能体，在命令行读写代码、执行 shell 命令并集成 MCP，支持 Gemini 模型辅助开发与调试。" />
-        <outline type="link" text="NVIDIA-NeMo/Switchyard" title="NVIDIA-NeMo/Switchyard" url="https://github.com/NVIDIA-NeMo/Switchyard" htmlUrl="https://github.com/NVIDIA-NeMo/Switchyard" description="英伟达开源的 LLM 流量路由工具，保持原生 OpenAI/Anthropic API 兼容，可跨模型与供应商分发请求，便于选型、基准测试与成本优化。" />
-        <outline type="link" text="dograh-hq/dograh" title="dograh-hq/dograh" url="https://github.com/dograh-hq/dograh" htmlUrl="https://github.com/dograh-hq/dograh" description="开源自托管语音 AI 平台，可替代 Vapi 与 Retell，支持语音到语音或 LLM/STT/TTS、可视化流程编排、MCP 与电话接入。" />
-        <outline type="link" text="karakeep-app/karakeep" title="karakeep-app/karakeep" url="https://github.com/karakeep-app/karakeep" htmlUrl="https://github.com/karakeep-app/karakeep" description="可自托管的全能收藏应用，支持链接、笔记与图片，提供 AI 自动打标和全文搜索。" />
-        <outline type="link" text="docling-project/docling" title="docling-project/docling" url="https://github.com/docling-project/docling" htmlUrl="https://github.com/docling-project/docling" description="开源文档解析库，把 PDF、Word、HTML 等转为 Markdown/JSON 结构化数据，为生成式 AI 与 RAG 流程准备输入。" />
-        <outline type="link" text="headroomlabs-ai/headroom" title="headroomlabs-ai/headroom" url="https://github.com/headroomlabs-ai/headroom" htmlUrl="https://github.com/headroomlabs-ai/headroom" description="在送入大模型前压缩工具输出、日志、文件与 RAG 分块，显著降低 token 消耗，提供库、代理与 MCP 服务三种形态。" />
-        <outline type="link" text="mastra-ai/mastra" title="mastra-ai/mastra" url="https://github.com/mastra-ai/mastra" htmlUrl="https://github.com/mastra-ai/mastra" description="现代 TypeScript AI 应用框架，内置智能体、RAG、评估与 MCP 支持，用于构建聊天机器人和 AI 驱动的应用。" />
-        <outline type="link" text="browseros-ai/BrowserOS" title="browseros-ai/BrowserOS" url="https://github.com/browseros-ai/BrowserOS" htmlUrl="https://github.com/browseros-ai/BrowserOS" description="开源智能体浏览器，基于 Chromium 内置本地大模型与自动化能力，主打隐私优先的浏览器任务代理。" />
-        <outline type="link" text="Tencent/WeKnora" title="Tencent/WeKnora" url="https://github.com/Tencent/WeKnora" htmlUrl="https://github.com/Tencent/WeKnora" description="腾讯开源大模型知识平台，把文档转成可溯源 RAG 问答、自主推理智能体与自动维护的 Wiki。" />
-        <outline type="link" text="browser-use/video-use" title="browser-use/video-use" url="https://github.com/browser-use/video-use" htmlUrl="https://github.com/browser-use/video-use" description="browser-use 团队开源的剪辑工具，让编码智能体通过对话完成视频剪辑与处理。" />
-        <outline type="link" text="duixcom/Duix-Avatar" title="duixcom/Duix-Avatar" url="https://github.com/duixcom/Duix-Avatar" htmlUrl="https://github.com/duixcom/Duix-Avatar" description="真开源离线数字人工具包，支持用真人视频克隆形象与声音，本地生成数字人口播视频。" />
-        <outline type="link" text="Orkas-AI/Orkas" title="Orkas-AI/Orkas" url="https://github.com/Orkas-AI/Orkas" htmlUrl="https://github.com/Orkas-AI/Orkas" description="本地优先的开源多智能体桌面团队，指挥官把目标拆成待办并协调内置专家与主流编码智能体协同完成。" />
-        <outline type="link" text="THU-MAIC/OpenMAIC" title="THU-MAIC/OpenMAIC" url="https://github.com/THU-MAIC/OpenMAIC" htmlUrl="https://github.com/THU-MAIC/OpenMAIC" description="清华开源的开放式多智能体互动课堂，一键生成含 AI 教师与同学、白板及讲解的沉浸式学习体验。" />
-        <outline type="link" text="cloudflare/security-audit-skill" title="cloudflare/security-audit-skill" url="https://github.com/cloudflare/security-audit-skill" htmlUrl="https://github.com/cloudflare/security-audit-skill" description="Cloudflare 开源的编码智能体技能，执行多阶段安全审计并输出经独立验证、机器可读的漏洞发现结果。" />
-        <outline type="link" text="nanocodexyz/nanocode" title="nanocodexyz/nanocode" url="https://github.com/nanocodexyz/nanocode" htmlUrl="https://github.com/nanocodexyz/nanocode" description="面向前沿嵌入式场景的智能体 SDK，提供可长期运行、支持代码模式的智能体开发接口与工具链。" />
-        <outline type="link" text="ChesterRa/cccc" title="ChesterRa/cccc" url="https://github.com/ChesterRa/cccc" htmlUrl="https://github.com/ChesterRa/cccc" description="零基础设施的编码智能体协调器，用群聊式已读与投递回执从手机远程调度多个智能体持续执行任务。" />
-        <outline type="link" text="infiniflow/ragflow" title="infiniflow/ragflow" url="https://github.com/infiniflow/ragflow" htmlUrl="https://github.com/infiniflow/ragflow" description="面向智能体的原生 RAG 检索引擎，提供确定性解析、可解释引用与企业级知识库问答能力。" />
-        <outline type="link" text="mem0ai/mem0" title="mem0ai/mem0" url="https://github.com/mem0ai/mem0" htmlUrl="https://github.com/mem0ai/mem0" description="为 AI 智能体提供持久化记忆层的开源基础设施，可跨会话记住用户偏好并注入相关上下文。" />
-        <outline type="link" text="hugohe3/ppt-master" title="hugohe3/ppt-master" url="https://github.com/hugohe3/ppt-master" htmlUrl="https://github.com/hugohe3/ppt-master" description="把文档或主题自动生成原生 PowerPoint 的开源工具，支持形状、图表、动画与模板套用。" />
-        <outline type="link" text="iflytek/skillhub" title="iflytek/skillhub" url="https://github.com/iflytek/skillhub" htmlUrl="https://github.com/iflytek/skillhub" description="科大讯飞开源的企业级自托管智能体技能注册中心，支持技能包发布、版本管理与权限治理。" />
-        <outline type="link" text="CopilotKit/CopilotKit" title="CopilotKit/CopilotKit" url="https://github.com/CopilotKit/CopilotKit" htmlUrl="https://github.com/CopilotKit/CopilotKit" description="面向智能体与生成式 UI 的前端开发框架，支持 React、Angular 与移动端快速集成对话交互。" />
-        <outline type="link" text="bytedance/deer-flow" title="bytedance/deer-flow" url="https://github.com/bytedance/deer-flow" htmlUrl="https://github.com/bytedance/deer-flow" description="字节跳动开源的长程超级智能体框架，集成沙箱、记忆、技能与子智能体，自主完成研究、编码与创作等多步任务。" />
-        <outline type="link" text="NVIDIA/auto-ontology" title="NVIDIA/auto-ontology" url="https://github.com/NVIDIA/auto-ontology" htmlUrl="https://github.com/NVIDIA/auto-ontology" description="英伟达开源的Python框架，为数据构建语义图谱推理层，实现确定性查询生成与可解释的LLM智能体分析。" />
-        <outline type="link" text="vercel-labs/agent-browser" title="vercel-labs/agent-browser" url="https://github.com/vercel-labs/agent-browser" htmlUrl="https://github.com/vercel-labs/agent-browser" description="Vercel开源的Rust浏览器自动化CLI，以无障碍树读取页面并让AI智能体逐步操作网页元素，失败即报错。" />
-        <outline type="link" text="homeassistant-ai/ha-mcp" title="homeassistant-ai/ha-mcp" url="https://github.com/homeassistant-ai/ha-mcp" htmlUrl="https://github.com/homeassistant-ai/ha-mcp" description="通过MCP协议让Claude、ChatGPT等AI助手以自然语言配置和自动化Home Assistant智能家居设备。" />
-        <outline type="link" text="The-PR-Agent/pr-agent" title="The-PR-Agent/pr-agent" url="https://github.com/The-PR-Agent/pr-agent" htmlUrl="https://github.com/The-PR-Agent/pr-agent" description="开源AI代码审查助手，自动为拉取请求生成评审意见，支持多家大模型与主流代码托管平台。" />
-        <outline type="link" text="vercel-labs/agent-desktop" title="vercel-labs/agent-desktop" url="https://github.com/vercel-labs/agent-desktop" htmlUrl="https://github.com/vercel-labs/agent-desktop" description="Vercel Labs 开源的命令行工具，通过系统无障碍树让 AI 智能体识别并操作桌面应用，支持无头运行与多平台。" />
-        <outline type="link" text="heygen-com/hyperframes" title="heygen-com/hyperframes" url="https://github.com/heygen-com/hyperframes" htmlUrl="https://github.com/heygen-com/hyperframes" description="HeyGen 开源的 TypeScript 视频渲染框架，把 HTML、CSS 与动画确定性输出为 MP4，供 AI 智能体批量生成视频。" />
-        <outline type="link" text="langflow-ai/langflow" title="langflow-ai/langflow" url="https://github.com/langflow-ai/langflow" htmlUrl="https://github.com/langflow-ai/langflow" description="可视化拖拽构建 AI 智能体与工作流的开源工具，支持接入主流大模型并部署为 API。" />
-        <outline type="link" text="harry0703/MoneyPrinterTurbo" title="harry0703/MoneyPrinterTurbo" url="https://github.com/harry0703/MoneyPrinterTurbo" htmlUrl="https://github.com/harry0703/MoneyPrinterTurbo" description="基于 AI 大模型自动生成文案、配音与字幕，一键合成高清短视频的开源工作流工具。" />
-        <outline type="link" text="TauricResearch/TradingAgents" title="TauricResearch/TradingAgents" url="https://github.com/TauricResearch/TradingAgents" htmlUrl="https://github.com/TauricResearch/TradingAgents" description="基于多智能体大语言模型的金融交易框架，模拟分析师、研究员与交易员协作完成选股与投资决策。" />
-        <outline type="link" text="github/spec-kit" title="github/spec-kit" url="https://github.com/github/spec-kit" htmlUrl="https://github.com/github/spec-kit" description="GitHub 出品的规范驱动开发（SDD）工具包，用自然语言规范引导 AI 从需求到代码的分阶段实现。" />
-        <outline type="link" text="openclaw/openclaw" title="openclaw/openclaw" url="https://github.com/openclaw/openclaw" htmlUrl="https://github.com/openclaw/openclaw" description="开源个人 AI 助手，可在任意操作系统与平台上代用户执行真实任务，强调数据自持，MIT 协议。" />
-        <outline type="link" text="unclecode/crawl4ai" title="unclecode/crawl4ai" url="https://github.com/unclecode/crawl4ai" htmlUrl="https://github.com/unclecode/crawl4ai" description="面向大模型与 AI 智能体的开源网页抓取工具，把网页转成 LLM 就绪的 Markdown，支持自托管。" />
-        <outline type="link" text="browser-use/browser-use" title="browser-use/browser-use" url="https://github.com/browser-use/browser-use" htmlUrl="https://github.com/browser-use/browser-use" description="开源浏览器智能体框架，让大模型在真实浏览器中自动点击、输入并完成任务，兼容任意 LLM。" />
-      </outline>
-      <outline text="工具官网" title="工具官网">
-        <outline type="link" text="Testsy" title="Testsy" url="https://testsy.dev" htmlUrl="https://testsy.dev" description="AI 质量测试智能体，接入编码智能体后在真实浏览器与移动模拟器验证功能并给出可分享证据。" />
-        <outline type="link" text="Hydrilla" title="Hydrilla" url="https://hydrilla.ai" htmlUrl="https://hydrilla.ai" description="面向游戏影视的 AI 3D 资产生成工具，用文本或图片生成带 PBR 贴图的生产级网格模型。" />
-        <outline type="link" text="OLVA" title="OLVA" url="https://olva.ai" htmlUrl="https://olva.ai" description="无需以机器人身份入会的实时 AI 会议助手，提供多语转写、实时问答、对话辅导与可搜索的会议记忆。" />
-        <outline type="link" text="Fairwai" title="Fairwai" url="https://fairw.ai" htmlUrl="https://fairw.ai" description="AI 对话服务商，提供可自动接听的语音 Agent、网站聊天机器人与会议纪要生成，可电话直接试听。" />
-        <outline type="link" text="SoftSync AI" title="SoftSync AI" url="https://softsync.ai" htmlUrl="https://softsync.ai" description="面向初创团队的 AI CRM，整合线索、会议纪要、邮件跟进与报表，支持 MCP 与 API 接入。" />
-        <outline type="link" text="Denizen Blu One" title="Denizen Blu One" url="https://denizenblu.com" htmlUrl="https://denizenblu.com" description="提供多模型统一订阅与 OpenAI 兼容 API 的在线 AI 服务，按年计费、不按 token 收费。" />
-        <outline type="link" text="MerchantFloor" title="MerchantFloor" url="https://www.merchantfloor.com" htmlUrl="https://www.merchantfloor.com" description="面向小型 Shopify 商家的 AI 商品上架工具，上传产品图即可生成白底图、场景图与 SEO 描述并同步店铺。" />
-        <outline type="link" text="GlobalGPT" title="GlobalGPT" url="https://glbgpt.com" htmlUrl="https://glbgpt.com" description="聚合 ChatGPT、Claude、Gemini 及图像视频模型的一站式订阅平台，用一个账号访问多款主流 AI 服务。" />
-        <outline type="link" text="Kimi API 开放平台" title="Kimi API 开放平台" url="https://platform.kimi.com" htmlUrl="https://platform.kimi.com" description="月之暗面 Kimi 大模型开放平台，提供长上下文、多模态与工具调用的 API，供开发者构建智能对话、代码生成与视觉推理应用。" />
-        <outline type="link" text="Planet AI" title="Planet AI" url="https://ai.planet.com" htmlUrl="https://ai.planet.com" description="Planet 官方卫星影像 AI 探索器，用自然语言在地图上检索分析十年高分辨率影像，支持时序对比与深度研究智能体。" />
-        <outline type="link" text="Vricko" title="Vricko" url="https://app.vricko.app" htmlUrl="https://app.vricko.app" description="面向小企业的 AI 代理平台，一句话即可建站、撰写内容、发邮件与客服支持，每项任务留痕并设月度支出上限。" />
-        <outline type="link" text="Turbofy" title="Turbofy" url="https://turbofy.com" htmlUrl="https://turbofy.com" description="对话式 AI 应用构建平台，用自然语言生成带数据、认证与托管的生产级业务应用，并支持 MCP 连接外部编码智能体。" />
-        <outline type="link" text="RigSpark" title="RigSpark" url="https://rigspark.si" htmlUrl="https://rigspark.si" description="开源本地 AI 选型工具，检测电脑内存与显卡后自动挑选可运行的大模型、图像、视频或语音模型并下载运行。" />
-        <outline type="link" text="YouArt" title="YouArt" url="https://youart.ai" htmlUrl="https://youart.ai" description="对话式 AI 创意平台，用智能体把需求拆成分镜与配音并在画布生成图像视频，支持多模型聚合与桌面版。" />
-        <outline type="link" text="云策 Omni" title="云策 Omni" url="https://www.yuncehub.com" htmlUrl="https://www.yuncehub.com" description="跨平台本地 AI 工作台，用模型加技能加插件组合让智能体完成开发、创作与自动化任务，数据存于本机。" />
-        <outline type="link" text="Clipwright" title="Clipwright" url="https://clipwright.io" htmlUrl="https://clipwright.io" description="面向AI智能体的视频制作后端，通过MCP或API拆解热门短视频并生成带口播的广告MP4，渲染前先报价。" />
-        <outline type="link" text="Cognee" title="Cognee" url="https://www.cognee.ai" htmlUrl="https://www.cognee.ai" description="开源 AI 智能体记忆平台，用知识图谱与向量检索为大模型应用构建跨会话持久记忆，支持自托管与云服务。" />
-        <outline type="link" text="magpie" title="magpie" url="https://usemagpie.ai" htmlUrl="https://usemagpie.ai" description="本地 AI 模型网关，统一接入 DeepSeek、Claude、Kimi 等模型订阅，供各类编码智能体按需切换。" />
-        <outline type="link" text="webAI" title="webAI" url="https://www.webai.com" htmlUrl="https://www.webai.com" description="在 Mac 本地运行小模型的 AI 应用，可搭建多个 AI 专家（Persona）协作处理私有文档，数据不上云、不计 token 费。" />
-        <outline type="link" text="DomoAI" title="DomoAI" url="https://domoai.app" htmlUrl="https://domoai.app" description="在线 AI 视频与动画创作平台，支持用文字、图片或视频素材完成生成、风格化与画质提升。" />
-        <outline type="link" text="Ollama" title="Ollama" url="https://ollama.com" htmlUrl="https://ollama.com" description="在本地或云端运行开源大模型的工具，支持 macOS、Windows、Linux，一条命令即可启动模型。" />
-      </outline>
-      <outline text="模型框架" title="模型框架">
-        <outline type="link" text="karpathy/nanochat" title="karpathy/nanochat" url="https://github.com/karpathy/nanochat" htmlUrl="https://github.com/karpathy/nanochat" description="Karpathy 开源的从零实现 ChatGPT 全流程教学框架，约百美元成本即可完成预训练与推理。" />
-        <outline type="link" text="JustVugg/colibri" title="JustVugg/colibri" url="https://github.com/JustVugg/colibri" htmlUrl="https://github.com/JustVugg/colibri" description="纯 C 编写的分层 MoE 推理引擎，热专家驻留 GPU、冷专家从 NVMe 流式加载，让超大模型跑在普通硬件上。" />
-        <outline type="link" text="unslothai/unsloth" title="unslothai/unsloth" url="https://github.com/unslothai/unsloth" htmlUrl="https://github.com/unslothai/unsloth" description="本地运行与训练大语言模型及扩散模型的框架，支持 GGUF、MLX 与 Qwen、DeepSeek、FLUX 等模型微调。" />
-        <outline type="link" text="microsoft/VibeVoice" title="microsoft/VibeVoice" url="https://github.com/microsoft/VibeVoice" htmlUrl="https://github.com/microsoft/VibeVoice" description="微软开源的前沿语音 AI 模型，面向高质量语音生成与实时语音交互场景。" />
-        <outline type="link" text="Interactive-Active-AI/NextTransformer" title="Interactive-Active-AI/NextTransformer" url="https://github.com/Interactive-Active-AI/NextTransformer" htmlUrl="https://github.com/Interactive-Active-AI/NextTransformer" description="面向下一代 Transformer 与大模型的开源框架，提供算力对齐基准与架构自主研究能力。" />
-        <outline type="link" text="algorithmicsuperintelligence/optillm" title="algorithmicsuperintelligence/optillm" url="https://github.com/algorithmicsuperintelligence/optillm" htmlUrl="https://github.com/algorithmicsuperintelligence/optillm" description="LLM 推理优化代理，通过多种提示与缓存策略降低大模型调用成本并提升响应效率。" />
-        <outline type="link" text="cactus-compute/cactus" title="cactus-compute/cactus" url="https://github.com/cactus-compute/cactus" htmlUrl="https://github.com/cactus-compute/cactus" description="面向消费级设备的轻量端侧推理库，体积不足 50MB，本地运行智能体、语音与视觉任务，无需云端。" />
-        <outline type="link" text="higurashi-ai/Haru" title="higurashi-ai/Haru" url="https://github.com/higurashi-ai/Haru" htmlUrl="https://github.com/higurashi-ai/Haru" description="低延迟多语言全双工语音对话模型，可边听边说，以 133 毫秒分块连续生成口语回应。" />
-        <outline type="link" text="huawei-csl/MACaQ" title="huawei-csl/MACaQ" url="https://github.com/huawei-csl/MACaQ" htmlUrl="https://github.com/huawei-csl/MACaQ" description="华为开源的模型无关量化工具，面向 GGUF 与本地推理，可量化并运行文本、图像、视频与音频模型。" />
-        <outline type="link" text="mw00/project-maya" title="mw00/project-maya" url="https://github.com/mw00/project-maya" htmlUrl="https://github.com/mw00/project-maya" description="开源本地大模型推理引擎，通过 GPU、内存与固态盘三级分层调度权重，让数百 B 模型跑在消费级硬件，兼容 OpenAI/Anthropic API。" />
-        <outline type="link" text="Edge0-AI/Edge0" title="Edge0-AI/Edge0" url="https://github.com/Edge0-AI/Edge0" htmlUrl="https://github.com/Edge0-AI/Edge0" description="端侧基础模型与流式 MoE 推理框架，通过 SSD 流式权重与专家路由，让 145B 模型跑在笔记本、35B 跑在手机上。" />
-        <outline type="link" text="jundot/omlx" title="jundot/omlx" url="https://github.com/jundot/omlx" htmlUrl="https://github.com/jundot/omlx" description="面向苹果芯片的大模型推理服务器，支持连续批处理与 SSD 分层缓存，可从菜单栏管理。" />
-        <outline type="link" text="raullenchai/Rapid-MLX" title="raullenchai/Rapid-MLX" url="https://github.com/raullenchai/Rapid-MLX" htmlUrl="https://github.com/raullenchai/Rapid-MLX" description="基于 MLX 的苹果芯片推理服务器，兼容 OpenAI 与 Anthropic 接口，专注编码智能体工具调用。" />
-        <outline type="link" text="skyzh/tiny-llm" title="skyzh/tiny-llm" url="https://github.com/skyzh/tiny-llm" htmlUrl="https://github.com/skyzh/tiny-llm" description="面向系统工程师的 Apple Silicon LLM 推理教学项目，用 Python 从零搭建迷你 vLLM 并运行 Qwen 模型。" />
-        <outline type="link" text="jingyaogong/minimind" title="jingyaogong/minimind" url="https://github.com/jingyaogong/minimind" htmlUrl="https://github.com/jingyaogong/minimind" description="仅需 2 小时即可从零训练 6400 万参数小语言模型的开源项目，适合快速上手大模型训练全流程。" />
-        <outline type="link" text="flashml-org/FreeToken" title="flashml-org/FreeToken" url="https://github.com/flashml-org/FreeToken" htmlUrl="https://github.com/flashml-org/FreeToken" description="把数据中心级模型服务带到桌面的开源引擎，可在个人电脑上本地运行超大规模语言模型。" />
-        <outline type="link" text="FareedKhan-dev/kimi-k3-in-c" title="FareedKhan-dev/kimi-k3-in-c" url="https://github.com/FareedKhan-dev/kimi-k3-in-c" htmlUrl="https://github.com/FareedKhan-dev/kimi-k3-in-c" description="用纯C99实现的推理引擎，可在单核CPU、8GB内存中运行2.78万亿参数的Kimi K3大模型，零依赖。" />
-        <outline type="link" text="nv-tlabs/lyra" title="nv-tlabs/lyra" url="https://github.com/nv-tlabs/Lyra" htmlUrl="https://github.com/nv-tlabs/Lyra" description="英伟达开源的生成式 3D 世界模型项目，可从输入图像生成可探索的三维场景，开放代码与预训练权重。" />
-      </outline>
+      <outline text="开源项目" title="开源项目" />
+      <outline text="工具官网" title="工具官网" />
+      <outline text="模型框架" title="模型框架" />
     </outline>
     <outline text="站点与常用">
       <outline text="常用工具" title="常用工具">
-        <outline type="link" text="ChatGPT - 用GPT实现聊天机器人" title="ChatGPT - 用GPT实现聊天机器人" url="https://www.lowff.net" htmlUrl="https://www.lowff.net" description="ChatGPT是一个基于OpenAI的GPT-3 API构建的聊天机器人框架。" />
         <outline type="link" text="Spring-cloud-gateway 中文文档" title="Spring-cloud-gateway 中文文档" url="https://spring-cloud-gateway.lowff.net/" htmlUrl="https://spring-cloud-gateway.lowff.net/" description="该项目是基于Spring生态系统构建的API网关，包括Spring 6、Spring Boot 3和Project Reactor" />
         <outline type="link" text="xmind转化xls工具" title="xmind转化xls工具" url="http://39.104.72.229/" htmlUrl="http://39.104.72.229/" description="xmind转化xls工具" />
       </outline>

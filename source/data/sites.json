@@ -1,67 +1,79 @@
 {
   "categories": [
     {
-      "count": 19,
+      "count": 18,
       "group": "AI 工具箱",
       "key": "aiChat",
       "name": "对话与搜索"
     },
     {
-      "count": 12,
+      "count": 15,
       "group": "AI 工具箱",
       "key": "aiImage",
       "name": "图像与设计"
     },
     {
-      "count": 10,
+      "count": 17,
       "group": "AI 工具箱",
       "key": "aiVideo",
       "name": "视频与音频"
     },
     {
-      "count": 17,
+      "count": 19,
       "group": "AI 工具箱",
       "key": "aiCode",
       "name": "编程与开发"
     },
     {
-      "count": 16,
+      "count": 20,
       "group": "AI 工具箱",
       "key": "aiOffice",
       "name": "办公与效率"
     },
     {
-      "count": 11,
+      "count": 15,
       "group": "AI 工具箱",
       "key": "aiAgent",
       "name": "智能体与自动化"
     },
     {
-      "count": 16,
+      "count": 19,
       "group": "模型与开源",
       "key": "GPTModels",
       "name": "大语言模型"
     },
     {
-      "count": 21,
+      "count": 22,
       "group": "模型与开源",
       "key": "githubGPT",
       "name": "GitHub 项目"
     },
     {
-      "count": 12,
+      "count": 30,
       "group": "模型与开源",
       "key": "aiFrameworks",
       "name": "推理与训练框架"
     },
     {
       "count": 15,
+      "group": "模型与开源",
+      "key": "ragKnowledge",
+      "name": "RAG 与知识库"
+    },
+    {
+      "count": 34,
+      "group": "模型与开源",
+      "key": "agentFrameworks",
+      "name": "智能体框架"
+    },
+    {
+      "count": 16,
       "group": "学习与资源",
       "key": "studyGPT",
       "name": "提示词与教程"
     },
     {
-      "count": 8,
+      "count": 9,
       "group": "学习与资源",
       "key": "techBlog",
       "name": "技术博客"
@@ -79,25 +91,25 @@
       "name": "社区与问卷"
     },
     {
-      "count": 65,
+      "count": 0,
       "group": "每日 AI 新发现",
       "key": "dailyAI_oss",
       "name": "开源项目"
     },
     {
-      "count": 21,
+      "count": 0,
       "group": "每日 AI 新发现",
       "key": "dailyAI_tool",
       "name": "工具官网"
     },
     {
-      "count": 18,
+      "count": 0,
       "group": "每日 AI 新发现",
       "key": "dailyAI_model",
       "name": "模型框架"
     },
     {
-      "count": 3,
+      "count": 2,
       "group": "站点与常用",
       "key": "hotTools",
       "name": "常用工具"
@@ -110,10 +122,10 @@
     }
   ],
   "counts": {
-    "categories": 18,
+    "categories": 20,
     "groups": 5,
-    "health_checked": 44,
-    "sites": 276,
+    "health_checked": 276,
+    "sites": 263,
     "verified": 105
   },
   "group_index": [
@@ -126,16 +138,18 @@
         "aiOffice",
         "aiAgent"
       ],
-      "count": 85,
+      "count": 104,
       "name": "AI 工具箱"
     },
     {
       "categories": [
         "GPTModels",
         "githubGPT",
-        "aiFrameworks"
+        "aiFrameworks",
+        "ragKnowledge",
+        "agentFrameworks"
       ],
-      "count": 49,
+      "count": 120,
       "name": "模型与开源"
     },
     {
@@ -145,7 +159,7 @@
         "aiNav",
         "likeGPT"
       ],
-      "count": 34,
+      "count": 36,
       "name": "学习与资源"
     },
     {
@@ -154,7 +168,7 @@
         "dailyAI_tool",
         "dailyAI_model"
       ],
-      "count": 104,
+      "count": 0,
       "name": "每日 AI 新发现"
     },
     {
@@ -162,7 +176,7 @@
         "hotTools",
         "myBlog"
       ],
-      "count": 4,
+      "count": 3,
       "name": "站点与常用"
     }
   ],
@@ -176,10 +190,110 @@
     {
       "category": "aiChat",
       "category_name": "对话与搜索",
+      "date": "2026-11-23",
+      "description": "提供多模型统一订阅与 OpenAI 兼容 API 的在线 AI 服务，按年计费、不按 token 收费。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://denizenblu.com/favicon.ico",
+      "name": "Denizen Blu One",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://denizenblu.com",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-23T10:15:14+08:00",
+        "date": "2026-11-23",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "aiChat",
+      "category_name": "对话与搜索",
+      "date": "2026-11-21",
+      "description": "聚合 ChatGPT、Claude、Gemini 及图像视频模型的一站式订阅平台，用一个账号访问多款主流 AI 服务。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://glbgpt.com/favicon.ico",
+      "name": "GlobalGPT",
+      "tags": [
+        "视频图像"
+      ],
+      "url": "https://glbgpt.com",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-21T09:45:15+08:00",
+        "date": "2026-11-21",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "aiChat",
+      "category_name": "对话与搜索",
+      "date": "2026-11-15",
+      "description": "本地 AI 模型网关，统一接入 DeepSeek、Claude、Kimi 等模型订阅，供各类编码智能体按需切换。",
+      "group": "AI 工具箱",
+      "health": "unverified",
+      "img": "https://usemagpie.ai/favicon.ico",
+      "name": "magpie",
+      "tags": [
+        "本地运行"
+      ],
+      "url": "https://usemagpie.ai",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-15T09:15:50+08:00",
+        "date": "2026-11-15",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "aiChat",
+      "category_name": "对话与搜索",
+      "date": "2026-11-14",
+      "description": "在 Mac 本地运行小模型的 AI 应用，可搭建多个 AI 专家（Persona）协作处理私有文档，数据不上云、不计 token 费。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://www.webai.com/favicon.ico",
+      "name": "webAI",
+      "tags": [
+        "办公文档",
+        "本地运行"
+      ],
+      "url": "https://www.webai.com",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-14T15:20:15+08:00",
+        "date": "2026-11-14",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "aiChat",
+      "category_name": "对话与搜索",
+      "date": null,
+      "description": "ChatGPT是一个基于OpenAI的GPT-3 API构建的聊天机器人框架。",
+      "group": "AI 工具箱",
+      "health": "unverified",
+      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
+      "name": "ChatGPT - 用GPT实现聊天机器人",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://www.lowff.net",
+      "verified": null
+    },
+    {
+      "category": "aiChat",
+      "category_name": "对话与搜索",
       "date": null,
       "description": "腾讯混元大模型助手，支持多模态问答与微信生态文件解析。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://yuanbao.tencent.com/favicon.ico",
       "name": "腾讯元宝",
       "tags": [
@@ -194,7 +308,7 @@
       "date": null,
       "description": "智谱 AI 基于 GLM 系列的对话助手，支持写作、代码与工具调用。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://chatglm.cn/favicon.ico",
       "name": "智谱清言",
       "tags": [
@@ -209,7 +323,7 @@
       "date": null,
       "description": "科大讯飞星火大模型对话服务，语音与中文理解能力突出。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://xinghuo.xfyun.cn/favicon.ico",
       "name": "讯飞星火",
       "tags": [
@@ -224,7 +338,7 @@
       "date": null,
       "description": "无广告 AI 搜索引擎，聚合资料并给出带来源的结构化回答。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://metaso.cn/favicon.ico",
       "name": "秘塔 AI 搜索",
       "tags": [
@@ -239,7 +353,7 @@
       "date": null,
       "description": "月之暗面长文本对话助手，擅长超长文档阅读与资料整理。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://www.kimi.com/favicon.ico",
       "name": "Kimi",
       "tags": [
@@ -254,7 +368,7 @@
       "date": null,
       "description": "昆仑万维 AI 助手，提供搜索、对话与文档解读。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://www.tiangong.cn/favicon.ico",
       "name": "天工 AI",
       "tags": [
@@ -269,7 +383,7 @@
       "date": null,
       "description": "百度文心大模型对话助手，支持中文创作、问答与多模态生成。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "文心一言",
       "tags": [
@@ -284,7 +398,7 @@
       "date": null,
       "description": "阿里云通义大模型对话服务，提供问答、创作与文档分析。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "通义千问",
       "tags": [
@@ -299,7 +413,7 @@
       "date": null,
       "description": "字节跳动 AI 对话助手，支持聊天、写作、绘图与文件解析。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://www.doubao.com/favicon.ico",
       "name": "豆包",
       "tags": [
@@ -314,7 +428,7 @@
       "date": null,
       "description": "深度求索官方对话服务，提供 DeepSeek 系列推理与通用模型。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://chat.deepseek.com/favicon.ico",
       "name": "DeepSeek 对话",
       "tags": [
@@ -329,7 +443,7 @@
       "date": null,
       "description": "Anthropic 官方 Claude 对话助手，擅长长文写作、分析与代码。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://claude.ai/favicon.ico",
       "name": "Claude",
       "tags": [
@@ -344,7 +458,7 @@
       "date": null,
       "description": "面向开发者的 AI 搜索与问答，答案附技术文档来源。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "unverified",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Phind",
       "tags": [
@@ -358,54 +472,9 @@
       "category": "aiChat",
       "category_name": "对话与搜索",
       "date": null,
-      "description": "Flash GPT - 聊天",
-      "group": "AI 工具箱",
-      "health": null,
-      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
-      "name": "Flash GPT - 聊天",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://www.deflash.ai/",
-      "verified": null
-    },
-    {
-      "category": "aiChat",
-      "category_name": "对话与搜索",
-      "date": null,
-      "description": "Vicuna - An Open-Source Chatbot",
-      "group": "AI 工具箱",
-      "health": null,
-      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
-      "name": "Vicuna",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://vicuna.lmsys.org/",
-      "verified": null
-    },
-    {
-      "category": "aiChat",
-      "category_name": "对话与搜索",
-      "date": null,
-      "description": "Sage - Poe",
-      "group": "AI 工具箱",
-      "health": null,
-      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
-      "name": "Sage - Poe",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://poe.com/",
-      "verified": null
-    },
-    {
-      "category": "aiChat",
-      "category_name": "对话与搜索",
-      "date": null,
       "description": "需要魔法,主打准确度,胡说八道概率低体验优于ChatGPT,免费不限量",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "unverified",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "perplexity",
       "tags": [
@@ -415,49 +484,90 @@
       "verified": null
     },
     {
-      "category": "aiChat",
-      "category_name": "对话与搜索",
-      "date": null,
-      "description": "需要魔法,基于GPT-4但是功能做了收束,免费,每轮对话不超过20个问题,每天不超过200个问题",
+      "category": "aiImage",
+      "category_name": "图像与设计",
+      "date": "2026-11-25",
+      "description": "面向游戏影视的 AI 3D 资产生成工具，用文本或图片生成带 PBR 贴图的生产级网格模型。",
       "group": "AI 工具箱",
-      "health": null,
-      "img": "https://www.bing.com/sa/simg/bing_p_rr_teal_min.ico",
-      "name": "必应",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://www.bing.com/",
-      "verified": null
-    },
-    {
-      "category": "aiChat",
-      "category_name": "对话与搜索",
-      "date": null,
-      "description": "需要魔法,GPT-4每天免费10次",
-      "group": "AI 工具箱",
-      "health": null,
-      "img": "https://ora.sh/favicon.ico",
-      "name": "ora",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://ora.sh/openai/gpt4",
-      "verified": null
-    },
-    {
-      "category": "aiChat",
-      "category_name": "对话与搜索",
-      "date": null,
-      "description": "更好的ChatGPT体验。注册可以免费获取GPT-4,图像生成,自定义人物,可共享聊天等更多功能",
-      "group": "AI 工具箱",
-      "health": null,
-      "img": "https://uploads-ssl.webflow.com/628193922a4d18e69ba81f14/628193922a4d180bf1a81f46_Favicon.png",
-      "name": "forefront.ai",
+      "health": "unverified",
+      "img": "https://hydrilla.ai/favicon.ico",
+      "name": "Hydrilla",
       "tags": [
         "视频图像"
       ],
-      "url": "https://chat.forefront.ai/",
-      "verified": null
+      "url": "https://hydrilla.ai",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-25T09:56:44+08:00",
+        "date": "2026-11-25",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "aiImage",
+      "category_name": "图像与设计",
+      "date": "2026-11-21",
+      "description": "面向小型 Shopify 商家的 AI 商品上架工具，上传产品图即可生成白底图、场景图与 SEO 描述并同步店铺。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
+      "name": "MerchantFloor",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://www.merchantfloor.com",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-21T09:44:58+08:00",
+        "date": "2026-11-21",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "aiImage",
+      "category_name": "图像与设计",
+      "date": "2026-11-18",
+      "description": "对话式 AI 创意平台，用智能体把需求拆成分镜与配音并在画布生成图像视频，支持多模型聚合与桌面版。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://youart.ai/favicon.ico",
+      "name": "YouArt",
+      "tags": [
+        "视频图像",
+        "本地运行",
+        "语音"
+      ],
+      "url": "https://youart.ai",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-18T10:32:21+08:00",
+        "date": "2026-11-18",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "aiImage",
+      "category_name": "图像与设计",
+      "date": "2026-11-20",
+      "description": "Planet 官方卫星影像 AI 探索器，用自然语言在地图上检索分析十年高分辨率影像，支持时序对比与深度研究智能体。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://ai.planet.com/favicon.ico",
+      "name": "Planet AI",
+      "tags": [
+        "RAG 检索"
+      ],
+      "url": "https://ai.planet.com",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-20T10:59:09+08:00",
+        "date": "2026-11-20",
+        "http_status": 200,
+        "stars": null
+      }
     },
     {
       "category": "aiImage",
@@ -465,7 +575,7 @@
       "date": null,
       "description": "字节跳动 AI 创作平台，支持图片生成与视频生成。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://jimeng.jianying.com/favicon.ico",
       "name": "即梦 AI",
       "tags": [
@@ -480,7 +590,7 @@
       "date": null,
       "description": "可生成矢量图与品牌设计素材的 AI 设计工具。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "unverified",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Recraft",
       "tags": [
@@ -495,7 +605,7 @@
       "date": null,
       "description": "在线设计平台，内置 AI 生成图片、排版与文案能力。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://www.canva.com/favicon.ico",
       "name": "Canva",
       "tags": [
@@ -510,7 +620,7 @@
       "date": null,
       "description": "AI 一键去除图片背景的在线工具，支持批量处理。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://www.remove.bg/favicon.ico",
       "name": "Remove.bg",
       "tags": [
@@ -525,7 +635,7 @@
       "date": null,
       "description": "Stable Diffusion 系列图像生成模型的官方站点与开放平台。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://stability.ai/favicon.ico",
       "name": "Stability AI",
       "tags": [
@@ -540,7 +650,7 @@
       "date": null,
       "description": "开源 AI 图像超分辨率工具，可在本地离线放大图片。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "unverified",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Upscayl",
       "tags": [
@@ -556,7 +666,7 @@
       "date": null,
       "description": "Adobe 生成式 AI 创意工具，集成于 Photoshop 等设计软件。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "unverified",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Adobe Firefly",
       "tags": [
@@ -569,24 +679,9 @@
       "category": "aiImage",
       "category_name": "图像与设计",
       "date": null,
-      "description": "词图PromptTool - AI绘画资料管理网站",
-      "group": "AI 工具箱",
-      "health": null,
-      "img": "https://www.prompttool.com/prompttool.ico",
-      "name": "词图PromptTool - AI绘画资料管理网站",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://www.prompttool.com/NovelAI",
-      "verified": null
-    },
-    {
-      "category": "aiImage",
-      "category_name": "图像与设计",
-      "date": null,
       "description": "Appicons AI是一个利用人工智能技术为开发者自动生成漂亮app图标的在线工具。它简单易用,适合不同技术水平的人,可以在几分钟内生成多种专业级的图标设计,提高开发效率,降低设计成本。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://appicons.ai/favicon.ico",
       "name": "AppIcons.ai",
       "tags": [
@@ -601,7 +696,7 @@
       "date": null,
       "description": "这是一个AI图像设计工具,提供许多免版税的AI生成图像素材。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://stockimg.ai/favicon.ico",
       "name": "StockImg.ai",
       "tags": [
@@ -616,7 +711,7 @@
       "date": null,
       "description": "这是一个AI图像生成工具,可以生成各种风格的AI艺术图像。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "unverified",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Midjourney",
       "tags": [
@@ -631,7 +726,7 @@
       "date": null,
       "description": "Segment Anything是一个强大的实例分割模型,它可以根据输入提示(如点或框)生成高质量的对象遮罩,并可以用于生成图像中的所有对象的遮罩。它在1100万个遮罩和1100万张图像的大型数据集上进行了训练,在各种分割任务上的零样本性能非常强。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "unverified",
       "img": "https://segment-anything.com/assets/M_Favicon.ico",
       "name": "Segment Anything | Meta AI",
       "tags": [
@@ -644,10 +739,151 @@
     {
       "category": "aiVideo",
       "category_name": "视频与音频",
+      "date": "2026-11-20",
+      "description": "开源自托管语音 AI 平台，可替代 Vapi 与 Retell，支持语音到语音或 LLM/STT/TTS、可视化流程编排、MCP 与电话接入。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "dograh-hq/dograh",
+      "tags": [
+        "多智能体",
+        "MCP",
+        "语音"
+      ],
+      "url": "https://github.com/dograh-hq/dograh",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-20T10:57:12+08:00",
+        "date": "2026-11-20",
+        "http_status": 0,
+        "stars": 6231
+      }
+    },
+    {
+      "category": "aiVideo",
+      "category_name": "视频与音频",
+      "date": "2026-11-19",
+      "description": "browser-use 团队开源的剪辑工具，让编码智能体通过对话完成视频剪辑与处理。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "browser-use/video-use",
+      "tags": [
+        "视频图像",
+        "浏览器自动化",
+        "多智能体"
+      ],
+      "url": "https://github.com/browser-use/video-use",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-19T09:17:00+08:00",
+        "date": "2026-11-19",
+        "http_status": 0,
+        "stars": 31263
+      }
+    },
+    {
+      "category": "aiVideo",
+      "category_name": "视频与音频",
+      "date": "2026-11-19",
+      "description": "真开源离线数字人工具包，支持用真人视频克隆形象与声音，本地生成数字人口播视频。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "duixcom/Duix-Avatar",
+      "tags": [
+        "视频图像",
+        "本地运行"
+      ],
+      "url": "https://github.com/duixcom/Duix-Avatar",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-19T09:15:05+08:00",
+        "date": "2026-11-19",
+        "http_status": 0,
+        "stars": 16388
+      }
+    },
+    {
+      "category": "aiVideo",
+      "category_name": "视频与音频",
+      "date": "2026-11-16",
+      "description": "HeyGen 开源的 TypeScript 视频渲染框架，把 HTML、CSS 与动画确定性输出为 MP4，供 AI 智能体批量生成视频。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "heygen-com/hyperframes",
+      "tags": [
+        "视频图像"
+      ],
+      "url": "https://github.com/heygen-com/hyperframes",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-16T09:13:44+08:00",
+        "date": "2026-11-16",
+        "http_status": 200,
+        "stars": 84753
+      }
+    },
+    {
+      "category": "aiVideo",
+      "category_name": "视频与音频",
+      "date": "2026-11-15",
+      "description": "基于 AI 大模型自动生成文案、配音与字幕，一键合成高清短视频的开源工作流工具。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "harry0703/MoneyPrinterTurbo",
+      "tags": [
+        "视频图像",
+        "语音"
+      ],
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-15T09:15:43+08:00",
+        "date": "2026-11-15",
+        "http_status": 200,
+        "stars": 143590
+      }
+    },
+    {
+      "category": "aiVideo",
+      "category_name": "视频与音频",
+      "date": "2026-11-14",
+      "description": "在线 AI 视频与动画创作平台，支持用文字、图片或视频素材完成生成、风格化与画质提升。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://domoai.app/favicon.ico",
+      "name": "DomoAI",
+      "tags": [
+        "视频图像"
+      ],
+      "url": "https://domoai.app",
+      "verified": null
+    },
+    {
+      "category": "aiVideo",
+      "category_name": "视频与音频",
+      "date": "2026-11-17",
+      "description": "面向AI智能体的视频制作后端，通过MCP或API拆解热门短视频并生成带口播的广告MP4，渲染前先报价。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://clipwright.io/favicon.ico",
+      "name": "Clipwright",
+      "tags": [
+        "视频图像"
+      ],
+      "url": "https://clipwright.io",
+      "verified": null
+    },
+    {
+      "category": "aiVideo",
+      "category_name": "视频与音频",
       "date": null,
       "description": "快手 AI 视频生成平台，支持文生视频与图生视频。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://klingai.com/favicon.ico",
       "name": "可灵 AI",
       "tags": [
@@ -662,7 +898,7 @@
       "date": null,
       "description": "AI 视频生成与编辑平台，提供 Gen 系列视频模型。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "unverified",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Runway",
       "tags": [
@@ -677,7 +913,7 @@
       "date": null,
       "description": "企业向 AI 虚拟主播视频生成工具，用于培训与宣介内容。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Synthesia",
       "tags": [
@@ -692,7 +928,7 @@
       "date": null,
       "description": "AI 语音合成与声音克隆平台，支持多语言配音。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://elevenlabs.io/favicon.ico",
       "name": "ElevenLabs",
       "tags": [
@@ -707,7 +943,7 @@
       "date": null,
       "description": "MiniMax 旗下 AI 创作平台，提供视频生成与语音合成。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://hailuoai.com/favicon.ico",
       "name": "海螺 AI",
       "tags": [
@@ -723,7 +959,7 @@
       "date": null,
       "description": "以文字稿方式剪辑音视频的工具，含转录与 AI 降噪。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://www.descript.com/favicon.ico",
       "name": "Descript",
       "tags": [
@@ -738,7 +974,7 @@
       "date": null,
       "description": "AI 音乐生成工具，可按风格与歌词生成歌曲片段。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://www.udio.com/favicon.ico",
       "name": "Udio",
       "tags": [
@@ -753,7 +989,7 @@
       "date": null,
       "description": "剪映国际版视频编辑器，内置字幕、抠像等 AI 功能。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "CapCut",
       "tags": [
@@ -768,7 +1004,7 @@
       "date": null,
       "description": "让你的想象力成为现实，使用我们最先进的 AI 生成引擎将您的想法转化为您梦想中的视觉故事。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://kaiber.ai/apple-touch-icon.png",
       "name": "kaiber.ai",
       "tags": [
@@ -783,7 +1019,7 @@
       "date": null,
       "description": "这是一个AI视频工具,可以自动生成和编辑视频片段。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Elai",
       "tags": [
@@ -795,10 +1031,73 @@
     {
       "category": "aiCode",
       "category_name": "编程与开发",
+      "date": "2026-11-25",
+      "description": "AI 质量测试智能体，接入编码智能体后在真实浏览器与移动模拟器验证功能并给出可分享证据。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
+      "name": "Testsy",
+      "tags": [
+        "浏览器自动化"
+      ],
+      "url": "https://testsy.dev",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-25T09:56:01+08:00",
+        "date": "2026-11-25",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "aiCode",
+      "category_name": "编程与开发",
+      "date": "2026-11-20",
+      "description": "阿里开源的 AI 代码审查工具，读取 Git 差异给出行级评审意见，把确定性检查与大模型智能体结合，自动发现代码问题。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "alibaba/open-code-review",
+      "tags": [
+        "代码开发"
+      ],
+      "url": "https://github.com/alibaba/open-code-review",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-20T11:09:43+08:00",
+        "date": "2026-11-20",
+        "http_status": 0,
+        "stars": 54417
+      }
+    },
+    {
+      "category": "aiCode",
+      "category_name": "编程与开发",
+      "date": "2026-11-17",
+      "description": "开源AI代码审查助手，自动为拉取请求生成评审意见，支持多家大模型与主流代码托管平台。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "The-PR-Agent/pr-agent",
+      "tags": [
+        "代码开发"
+      ],
+      "url": "https://github.com/The-PR-Agent/pr-agent",
+      "verified": {
+        "ai_hits": 5,
+        "checked_at": "2026-11-17T09:16:31+08:00",
+        "date": "2026-11-17",
+        "http_status": 200,
+        "stars": 16300
+      }
+    },
+    {
+      "category": "aiCode",
+      "category_name": "编程与开发",
       "date": null,
       "description": "AI 原生代码编辑器，支持整库上下文理解与代理式改码。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://www.cursor.com/favicon.ico",
       "name": "Cursor",
       "tags": [
@@ -819,7 +1118,7 @@
       "date": null,
       "description": "Codeium 出品的 AI IDE，具备跨文件上下文与自动执行能力。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "unverified",
       "img": "https://windsurf.com/favicon.ico",
       "name": "Windsurf",
       "tags": [
@@ -834,7 +1133,7 @@
       "date": null,
       "description": "Vercel 的 AI 前端生成工具，用提示词产出 React 界面代码。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://v0.dev/favicon.png",
       "name": "v0",
       "tags": [
@@ -850,7 +1149,7 @@
       "date": null,
       "description": "字节跳动 AI IDE，提供 Builder 模式与中文交互。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://www.trae.ai/favicon.ico",
       "name": "TRAE",
       "tags": [
@@ -865,7 +1164,7 @@
       "date": null,
       "description": "浏览器内 AI 全栈应用生成工具，用对话搭建并运行项目。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://bolt.new/favicon.ico",
       "name": "Bolt.new",
       "tags": [
@@ -880,7 +1179,7 @@
       "date": null,
       "description": "代码补全与 AI 编程助手，支持私有代码库私有化部署。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Tabnine",
       "tags": [
@@ -895,7 +1194,7 @@
       "date": null,
       "description": "提供免费 AI 代码补全与聊天能力的开发插件。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "unverified",
       "img": "https://codeium.com/favicon.ico",
       "name": "Codeium",
       "tags": [
@@ -910,7 +1209,7 @@
       "date": null,
       "description": "基于全代码库检索的 AI 编码助手，适合大型仓库。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Sourcegraph Cody",
       "tags": [
@@ -926,7 +1225,7 @@
       "date": null,
       "description": "浏览器内运行的在线 IDE，可即时预览 Web 项目。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://stackblitz.com/favicon.ico",
       "name": "StackBlitz",
       "tags": [
@@ -941,7 +1240,7 @@
       "date": null,
       "description": "主打低延迟长上下文的 AI 代码补全工具。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "unverified",
       "img": "https://supermaven.com/favicon.ico",
       "name": "Supermaven",
       "tags": [
@@ -957,7 +1256,7 @@
       "date": null,
       "description": "开源 AI 编码助手插件，可对接本地或云端模型。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://continue.dev/favicon.png",
       "name": "Continue",
       "tags": [
@@ -972,7 +1271,7 @@
       "date": null,
       "description": "在线开发环境，内置 AI 编程助手与应用一键部署。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "unverified",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Replit",
       "tags": [
@@ -987,7 +1286,7 @@
       "date": null,
       "description": "用自然语言生成完整 Web 应用的 AI 开发平台。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "unverified",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Lovable",
       "tags": [
@@ -1000,24 +1299,9 @@
       "category": "aiCode",
       "category_name": "编程与开发",
       "date": null,
-      "description": "人工智能(GPT)",
-      "group": "AI 工具箱",
-      "health": null,
-      "img": "https://zhuanlan.zhihu.com/favicon.ico",
-      "name": "llama-index(gpt-index):后chatgpt时代的对话式文档问答解决方案",
-      "tags": [
-        "办公文档"
-      ],
-      "url": "https://zhuanlan.zhihu.com/p/613155165",
-      "verified": null
-    },
-    {
-      "category": "aiCode",
-      "category_name": "编程与开发",
-      "date": null,
       "description": "Amazon CodeWhisperer 是一种采用机器学习（ML）的服务，可以根据开发人员用自然语言编写的注释和集成式开发环境（IDE）中的代码生成代码建议，帮助开发人员提高工作效率。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico",
       "name": "AWS - codewhisperer",
       "tags": [
@@ -1034,7 +1318,7 @@
       "date": null,
       "description": "这是一个AI编码工具,可以自动生成代码段和脚本。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "TelePortHQ",
       "tags": [
@@ -1049,7 +1333,7 @@
       "date": null,
       "description": "这是一个AI网站生成工具,可以自动设计和生成网站。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Hocoos",
       "tags": [
@@ -1061,10 +1345,112 @@
     {
       "category": "aiOffice",
       "category_name": "办公与效率",
+      "date": "2026-11-24",
+      "description": "无需以机器人身份入会的实时 AI 会议助手，提供多语转写、实时问答、对话辅导与可搜索的会议记忆。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://olva.ai/favicon.ico",
+      "name": "OLVA",
+      "tags": [
+        "记忆"
+      ],
+      "url": "https://olva.ai",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-24T10:31:44+08:00",
+        "date": "2026-11-24",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "aiOffice",
+      "category_name": "办公与效率",
+      "date": "2026-11-23",
+      "description": "面向初创团队的 AI CRM，整合线索、会议纪要、邮件跟进与报表，支持 MCP 与 API 接入。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://softsync.ai/favicon.ico",
+      "name": "SoftSync AI",
+      "tags": [
+        "多智能体",
+        "MCP"
+      ],
+      "url": "https://softsync.ai",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-23T10:15:09+08:00",
+        "date": "2026-11-23",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "aiOffice",
+      "category_name": "办公与效率",
+      "date": "2026-11-22",
+      "description": "AI 办公 SDK，为应用嵌入文档编辑、表格计算与多人协作能力，构建自研 AI Office。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "dream-num/univer",
+      "tags": [
+        "办公文档",
+        "代码开发"
+      ],
+      "url": "https://github.com/dream-num/univer",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-22T09:56:34+08:00",
+        "date": "2026-11-22",
+        "http_status": 0,
+        "stars": 31105
+      }
+    },
+    {
+      "category": "aiOffice",
+      "category_name": "办公与效率",
+      "date": "2026-11-18",
+      "description": "把文档或主题自动生成原生 PowerPoint 的开源工具，支持形状、图表、动画与模板套用。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "hugohe3/ppt-master",
+      "tags": [
+        "视频图像",
+        "办公文档"
+      ],
+      "url": "https://github.com/hugohe3/ppt-master",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-18T10:22:38+08:00",
+        "date": "2026-11-18",
+        "http_status": 200,
+        "stars": 77962
+      }
+    },
+    {
+      "category": "aiOffice",
+      "category_name": "办公与效率",
+      "date": null,
+      "description": "ChatMind是一个开源的人工智能后台系统,可以帮助企业和开发者快速构建强大的AI产品与服务。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://www.chatmind.tech/favicon.ico",
+      "name": "ChatMind - 智能后台系统",
+      "tags": [
+        "代码开发"
+      ],
+      "url": "https://www.chatmind.tech/",
+      "verified": null
+    },
+    {
+      "category": "aiOffice",
+      "category_name": "办公与效率",
       "date": null,
       "description": "AI 英文写作校对工具，检查语法、语气与表达清晰度。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Grammarly",
       "tags": [
@@ -1079,7 +1465,7 @@
       "date": null,
       "description": "面向营销团队的 AI 文案生成与品牌语气管理平台。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Jasper",
       "tags": [
@@ -1094,7 +1480,7 @@
       "date": null,
       "description": "应用间自动化工作流平台，内置 AI 步骤与智能体能力。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://zapier.com/favicon.ico",
       "name": "Zapier",
       "tags": [
@@ -1109,7 +1495,7 @@
       "date": null,
       "description": "Notion 内置 AI 助手，用于写作、总结与知识库问答。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Notion AI",
       "tags": [
@@ -1124,7 +1510,7 @@
       "date": null,
       "description": "可视化自动化编排平台，可串联 SaaS 与 AI 服务。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Make",
       "tags": [
@@ -1139,7 +1525,7 @@
       "date": null,
       "description": "把文字自动转成图表、流程图与信息图的 AI 工具。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://www.napkin.ai/favicon.ico",
       "name": "Napkin AI",
       "tags": [
@@ -1154,7 +1540,7 @@
       "date": null,
       "description": "在线流程图与思维导图工具，支持 AI 辅助生成结构。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Whimsical",
       "tags": [
@@ -1169,7 +1555,7 @@
       "date": null,
       "description": "AI 会议助手，自动录音、转录并提取待办与摘要。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Fireflies.ai",
       "tags": [
@@ -1184,7 +1570,7 @@
       "date": null,
       "description": "ChatPDF 使用人工智能为PDF文件提供自然语言问答交互。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "unverified",
       "img": "https://www.chatpdf.com/favicon.ico",
       "name": "ChatPDF - 与PDF聊天",
       "tags": [
@@ -1199,7 +1585,7 @@
       "date": null,
       "description": "Beautiful.ai",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://www.beautiful.ai/favicon.ico",
       "name": "制作PPT的工具",
       "tags": [
@@ -1214,7 +1600,7 @@
       "date": null,
       "description": "copy AI",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://assets-global.website-files.com/628288c5cd3e8411b90a36a4/629a333177bcc87edf861bbb_favico-2.png",
       "name": "文案生成AI",
       "tags": [
@@ -1227,24 +1613,9 @@
       "category": "aiOffice",
       "category_name": "办公与效率",
       "date": null,
-      "description": "不需要魔法;每天免费1万字符",
-      "group": "AI 工具箱",
-      "health": null,
-      "img": "https://www.sciradar.com/favicon.ico",
-      "name": "猎研SciRadar",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://www.sciradar.com/",
-      "verified": null
-    },
-    {
-      "category": "aiOffice",
-      "category_name": "办公与效率",
-      "date": null,
       "description": "Text Blaze是一个Chrome插件,用于快速插入常用文本,大幅提高工作效率",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://textblaze.me/favicon.ico",
       "name": "Textblaze",
       "tags": [
@@ -1259,7 +1630,7 @@
       "date": null,
       "description": "这是一个AI幻灯片工具,可以自动设计和生成幻灯片。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://www.sendsteps.com/favicon.ico",
       "name": "Sendsteps",
       "tags": [
@@ -1274,7 +1645,7 @@
       "date": null,
       "description": "这是一个AI电子邮件助手,可以自动回复和组织电子邮件。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Remail",
       "tags": [
@@ -1289,7 +1660,7 @@
       "date": null,
       "description": "这是一个AI会议工具,可以自动记录、转录和总结会议",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Otter.ai",
       "tags": [
@@ -1301,10 +1672,161 @@
     {
       "category": "aiAgent",
       "category_name": "智能体与自动化",
+      "date": "2026-11-20",
+      "description": "开源自动化平台，用可视化流程连接 AI 智能体与数百款应用，支持自托管，用于搭建客服、运营等自动化工作流。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "Activepieces/activepieces",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://github.com/Activepieces/activepieces",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-20T11:09:57+08:00",
+        "date": "2026-11-20",
+        "http_status": 0,
+        "stars": 25626
+      }
+    },
+    {
+      "category": "aiAgent",
+      "category_name": "智能体与自动化",
+      "date": "2026-11-19",
+      "description": "开源智能体浏览器，基于 Chromium 内置本地大模型与自动化能力，主打隐私优先的浏览器任务代理。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "browseros-ai/BrowserOS",
+      "tags": [
+        "浏览器自动化",
+        "本地运行"
+      ],
+      "url": "https://github.com/browseros-ai/BrowserOS",
+      "verified": {
+        "ai_hits": 6,
+        "checked_at": "2026-11-19T09:15:34+08:00",
+        "date": "2026-11-19",
+        "http_status": 0,
+        "stars": 14403
+      }
+    },
+    {
+      "category": "aiAgent",
+      "category_name": "智能体与自动化",
+      "date": "2026-11-20",
+      "description": "面向小企业的 AI 代理平台，一句话即可建站、撰写内容、发邮件与客服支持，每项任务留痕并设月度支出上限。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://app.vricko.app/favicon.ico",
+      "name": "Vricko",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://app.vricko.app",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-20T10:59:35+08:00",
+        "date": "2026-11-20",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "aiAgent",
+      "category_name": "智能体与自动化",
+      "date": "2026-11-20",
+      "description": "对话式 AI 应用构建平台，用自然语言生成带数据、认证与托管的生产级业务应用，并支持 MCP 连接外部编码智能体。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://turbofy.com/favicon.ico",
+      "name": "Turbofy",
+      "tags": [
+        "MCP"
+      ],
+      "url": "https://turbofy.com",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-20T10:59:13+08:00",
+        "date": "2026-11-20",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "aiAgent",
+      "category_name": "智能体与自动化",
+      "date": "2026-11-18",
+      "description": "跨平台本地 AI 工作台，用模型加技能加插件组合让智能体完成开发、创作与自动化任务，数据存于本机。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://www.yuncehub.com/favicon.ico",
+      "name": "云策 Omni",
+      "tags": [
+        "技能生态",
+        "代码开发",
+        "本地运行"
+      ],
+      "url": "https://www.yuncehub.com",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-18T10:32:22+08:00",
+        "date": "2026-11-18",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "aiAgent",
+      "category_name": "智能体与自动化",
+      "date": "2026-11-16",
+      "description": "开源 AI 智能体记忆平台，用知识图谱与向量检索为大模型应用构建跨会话持久记忆，支持自托管与云服务。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://www.cognee.ai/favicon.ico",
+      "name": "Cognee",
+      "tags": [
+        "RAG 检索",
+        "记忆"
+      ],
+      "url": "https://www.cognee.ai",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-16T09:13:40+08:00",
+        "date": "2026-11-16",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "aiAgent",
+      "category_name": "智能体与自动化",
+      "date": "2026-11-24",
+      "description": "AI 对话服务商，提供可自动接听的语音 Agent、网站聊天机器人与会议纪要生成，可电话直接试听。",
+      "group": "AI 工具箱",
+      "health": "ok",
+      "img": "https://fairw.ai/favicon.ico",
+      "name": "Fairwai",
+      "tags": [
+        "语音"
+      ],
+      "url": "https://fairw.ai",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-24T10:31:47+08:00",
+        "date": "2026-11-24",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "aiAgent",
+      "category_name": "智能体与自动化",
       "date": null,
       "description": "AI Bot 搭建平台，可配置插件、知识库并发布到多渠道。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://www.coze.com/favicon.ico",
       "name": "Coze",
       "tags": [
@@ -1319,7 +1841,7 @@
       "date": null,
       "description": "开源低代码 LLM 流程编排器，拖拽即可构建问答链。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://flowiseai.com/favicon.ico",
       "name": "Flowise",
       "tags": [
@@ -1335,7 +1857,7 @@
       "date": null,
       "description": "开源工作流自动化平台，内置 AI 节点与自托管智能体。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://n8n.io/favicon.ico",
       "name": "n8n",
       "tags": [
@@ -1350,7 +1872,7 @@
       "date": null,
       "description": "可视化搭建 LangChain 流程与智能体的开源工具。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://www.langflow.org/favicon.ico",
       "name": "Langflow",
       "tags": [
@@ -1365,7 +1887,7 @@
       "date": null,
       "description": "自主智能体平台，可让 AI 拆解目标并连续执行任务。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://agpt.co/favicon.png",
       "name": "AutoGPT",
       "tags": [
@@ -1380,7 +1902,7 @@
       "date": null,
       "description": "多智能体协作框架，用角色分工完成复杂任务。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://www.crewai.com/favicon.ico",
       "name": "CrewAI",
       "tags": [
@@ -1395,7 +1917,7 @@
       "date": null,
       "description": "LLM 应用开发框架与生态，提供链、智能体与可观测工具。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "LangChain",
       "tags": [
@@ -1410,7 +1932,7 @@
       "date": null,
       "description": "开源 LLM 应用开发平台，可视化编排智能体与知识库。",
       "group": "AI 工具箱",
-      "health": null,
+      "health": "ok",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Dify",
       "tags": [
@@ -1422,49 +1944,70 @@
       "verified": null
     },
     {
-      "category": "aiAgent",
-      "category_name": "智能体与自动化",
-      "date": null,
-      "description": "ChatMind是一个开源的人工智能后台系统,可以帮助企业和开发者快速构建强大的AI产品与服务。",
-      "group": "AI 工具箱",
-      "health": null,
-      "img": "https://www.chatmind.tech/favicon.ico",
-      "name": "ChatMind - 智能后台系统",
+      "category": "GPTModels",
+      "category_name": "大语言模型",
+      "date": "2026-11-20",
+      "description": "月之暗面 Kimi 大模型开放平台，提供长上下文、多模态与工具调用的 API，供开发者构建智能对话、代码生成与视觉推理应用。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://platform.kimi.com/favicon.ico",
+      "name": "Kimi API 开放平台",
       "tags": [
+        "视频图像",
+        "推理引擎",
         "代码开发"
       ],
-      "url": "https://www.chatmind.tech/",
-      "verified": null
+      "url": "https://platform.kimi.com",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-20T11:11:25+08:00",
+        "date": "2026-11-20",
+        "http_status": 200,
+        "stars": null
+      }
     },
     {
-      "category": "aiAgent",
-      "category_name": "智能体与自动化",
-      "date": null,
-      "description": "Godmode.space",
-      "group": "AI 工具箱",
-      "health": null,
-      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
-      "name": "Godmode.space",
+      "category": "GPTModels",
+      "category_name": "大语言模型",
+      "date": "2026-11-22",
+      "description": "微软开源的前沿语音 AI 模型，面向高质量语音生成与实时语音交互场景。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "microsoft/VibeVoice",
       "tags": [
-        "AI 应用"
+        "语音"
       ],
-      "url": "https://godmode.space/",
-      "verified": null
+      "url": "https://github.com/microsoft/VibeVoice",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-22T09:55:36+08:00",
+        "date": "2026-11-22",
+        "http_status": 0,
+        "stars": 57472
+      }
     },
     {
-      "category": "aiAgent",
-      "category_name": "智能体与自动化",
-      "date": null,
-      "description": "Cognosys - Your personal AI Agent",
-      "group": "AI 工具箱",
-      "health": null,
-      "img": "https://framerusercontent.com/modules/kGe5PQ65Dg7J7GN8OGx2/gwPd9Wln9Sg5rYiZ1QJB/assets/eWXiM6SACMmNKcytzyDksBgMok.png",
-      "name": "Cognosys - Your personal AI Agent",
+      "category": "GPTModels",
+      "category_name": "大语言模型",
+      "date": "2026-11-21",
+      "description": "低延迟多语言全双工语音对话模型，可边听边说，以 133 毫秒分块连续生成口语回应。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "higurashi-ai/Haru",
       "tags": [
-        "AI 应用"
+        "推理引擎",
+        "语音"
       ],
-      "url": "https://www.cognosys.ai/create",
-      "verified": null
+      "url": "https://github.com/higurashi-ai/Haru",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-21T09:44:55+08:00",
+        "date": "2026-11-21",
+        "http_status": 200,
+        "stars": 704
+      }
     },
     {
       "category": "GPTModels",
@@ -1472,7 +2015,7 @@
       "date": null,
       "description": "通义千问 Qwen 开源模型的项目主页与文档入口。",
       "group": "模型与开源",
-      "health": null,
+      "health": "ok",
       "img": "https://qwenlm.github.io/favicon.png",
       "name": "Qwen",
       "tags": [
@@ -1487,7 +2030,7 @@
       "date": null,
       "description": "深度求索官网，发布 DeepSeek 系列模型与开放 API。",
       "group": "模型与开源",
-      "health": null,
+      "health": "ok",
       "img": "https://www.deepseek.com/favicon.ico",
       "name": "DeepSeek",
       "tags": [
@@ -1502,7 +2045,7 @@
       "date": null,
       "description": "阿里魔搭模型社区，提供中文模型下载、体验与数据集。",
       "group": "模型与开源",
-      "health": null,
+      "health": "ok",
       "img": "https://modelscope.cn/favicon.ico",
       "name": "魔搭 ModelScope",
       "tags": [
@@ -1517,7 +2060,7 @@
       "date": null,
       "description": "基于 LPU 的低延迟大模型推理服务与开发者平台。",
       "group": "模型与开源",
-      "health": null,
+      "health": "ok",
       "img": "https://groq.com/favicon.ico",
       "name": "Groq",
       "tags": [
@@ -1533,7 +2076,7 @@
       "date": null,
       "description": "智谱华章官网，发布 GLM 系列模型与开放平台。",
       "group": "模型与开源",
-      "health": null,
+      "health": "ok",
       "img": "https://www.zhipuai.cn/favicon.ico",
       "name": "智谱 AI",
       "tags": [
@@ -1548,7 +2091,7 @@
       "date": null,
       "description": "多厂商大模型 API 聚合与路由平台，可统一计费切换模型。",
       "group": "模型与开源",
-      "health": null,
+      "health": "ok",
       "img": "https://openrouter.ai/favicon.ico",
       "name": "OpenRouter",
       "tags": [
@@ -1563,7 +2106,7 @@
       "date": null,
       "description": "云端运行开源模型的平台，提供 API 与一键部署。",
       "group": "模型与开源",
-      "health": null,
+      "health": "ok",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Replicate",
       "tags": [
@@ -1578,7 +2121,7 @@
       "date": null,
       "description": "开源模型推理与微调云服务，提供兼容 OpenAI 的 API。",
       "group": "模型与开源",
-      "health": null,
+      "health": "ok",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "Together AI",
       "tags": [
@@ -1594,7 +2137,7 @@
       "date": null,
       "description": "这是一个用于训练,服务和评估大型语言的开放平台。Vicuna和FastChat-T5的发布仓库。",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.githubassets.com/favicons/favicon.png",
       "name": "lm-sys/FastChat",
       "tags": [
@@ -1609,7 +2152,7 @@
       "date": null,
       "description": "来自复旦大学的开源工具增强会话语言模型",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "OpenLMLab/MOSS",
       "tags": [
@@ -1624,7 +2167,7 @@
       "date": null,
       "description": "LLaMA模型的推理代码",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "facebookresearch/llama",
       "tags": [
@@ -1640,7 +2183,7 @@
       "date": null,
       "description": "我们现在提供与Vicuna-7B对齐的预训练MiniGPT-4!演示GPU内存消耗现在可以低至12GB",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "MiniGPT-4",
       "tags": [
@@ -1656,7 +2199,7 @@
       "date": null,
       "description": "中文LLaMA&Alpaca大语言模型+本地CPU/GPU部署 (Chinese LLaMA & Alpaca LLMs)",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "中文LLaMA&Alpaca大语言模型",
       "tags": [
@@ -1671,7 +2214,7 @@
       "date": null,
       "description": "ChatGLM-6B An Open Bilingual Dialogue Language Model | 开源双语对话语言模型",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "THUDM/ChatGLM-6B",
       "tags": [
@@ -1686,7 +2229,7 @@
       "date": null,
       "description": "LLM引擎用于快速定制模型。Lamini通过利用数据解锁每个公司的生成AI的力量。",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "lamini-ai/lamini",
       "tags": [
@@ -1701,7 +2244,7 @@
       "date": null,
       "description": "Linly是一个中文NLP工具包,提供预训练语言模型、词典、数据集和工具。其主要目的是研究中文NLP,推动开源人工智能技术的发展。Linly通过集成多个中文NLP资源,能显著降低中文NLP建模的门槛,加速研究与开发过程。",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
       "name": "Chinese-LLaMA基础模型;ChatFlow中文对话模型;NLP预训练/指令微调数据集",
       "tags": [
@@ -1714,10 +2257,327 @@
     {
       "category": "githubGPT",
       "category_name": "GitHub 项目",
+      "date": "2026-11-14",
+      "description": "英伟达开源的生成式 3D 世界模型项目，可从输入图像生成可探索的三维场景，开放代码与预训练权重。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "nv-tlabs/lyra",
+      "tags": [
+        "视频图像",
+        "训练微调",
+        "代码开发"
+      ],
+      "url": "https://github.com/nv-tlabs/Lyra",
+      "verified": null
+    },
+    {
+      "category": "githubGPT",
+      "category_name": "GitHub 项目",
+      "date": "2026-11-25",
+      "description": "将组织规章策略编译为可验证的决策训练数据，支持数据溯源，用于微调合规决策模型。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "Juneo-Lab/decision-forge",
+      "tags": [
+        "训练微调"
+      ],
+      "url": "https://github.com/Juneo-Lab/decision-forge",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-25T09:55:58+08:00",
+        "date": "2026-11-25",
+        "http_status": 200,
+        "stars": 352
+      }
+    },
+    {
+      "category": "githubGPT",
+      "category_name": "GitHub 项目",
+      "date": "2026-11-23",
+      "description": "本地优先的开源 AI 机器人，可接入 GPT、Claude、Gemini 等多种模型搭建专属对话助手。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "modelflare-ai/AnyModelBot",
+      "tags": [
+        "本地运行"
+      ],
+      "url": "https://github.com/modelflare-ai/AnyModelBot",
+      "verified": {
+        "ai_hits": 5,
+        "checked_at": "2026-11-23T10:15:01+08:00",
+        "date": "2026-11-23",
+        "http_status": 200,
+        "stars": 4975
+      }
+    },
+    {
+      "category": "githubGPT",
+      "category_name": "GitHub 项目",
+      "date": "2026-11-23",
+      "description": "开源 iPhone 智能体应用，能读取屏幕并自动点击滑动，通过本地 MCP 自动化操作 iOS 设备。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "JosssphZhou/poki",
+      "tags": [
+        "MCP",
+        "本地运行"
+      ],
+      "url": "https://github.com/JosssphZhou/poki",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-23T10:15:05+08:00",
+        "date": "2026-11-23",
+        "http_status": 200,
+        "stars": 1840
+      }
+    },
+    {
+      "category": "githubGPT",
+      "category_name": "GitHub 项目",
+      "date": "2026-11-22",
+      "description": "LLM 驱动的多市场股票智能分析系统，聚合行情与新闻、生成决策看板并支持定时推送。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "ZhuLinsen/daily_stock_analysis",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-22T09:56:48+08:00",
+        "date": "2026-11-22",
+        "http_status": 0,
+        "stars": 73639
+      }
+    },
+    {
+      "category": "githubGPT",
+      "category_name": "GitHub 项目",
+      "date": "2026-11-21",
+      "description": "为并行 AI 编码智能体设计的 Git worktree 管理命令行工具，快速创建、切换与清理隔离工作区。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "max-sixty/worktrunk",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://github.com/max-sixty/worktrunk",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-21T09:44:39+08:00",
+        "date": "2026-11-21",
+        "http_status": 200,
+        "stars": 12674
+      }
+    },
+    {
+      "category": "githubGPT",
+      "category_name": "GitHub 项目",
+      "date": "2026-11-21",
+      "description": "开源 AI 安全运营中心，融合告警并用大模型智能体做威胁研判，覆盖 MITRE ATT&CK 并留痕可回放。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "beenuar/AiSOC",
+      "tags": [
+        "安全审计"
+      ],
+      "url": "https://github.com/beenuar/AiSOC",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-21T09:44:45+08:00",
+        "date": "2026-11-21",
+        "http_status": 200,
+        "stars": 7133
+      }
+    },
+    {
+      "category": "githubGPT",
+      "category_name": "GitHub 项目",
+      "date": "2026-11-20",
+      "description": "可自托管的全能收藏应用，支持链接、笔记与图片，提供 AI 自动打标和全文搜索。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "karakeep-app/karakeep",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://github.com/karakeep-app/karakeep",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-20T10:57:55+08:00",
+        "date": "2026-11-20",
+        "http_status": 0,
+        "stars": 30705
+      }
+    },
+    {
+      "category": "githubGPT",
+      "category_name": "GitHub 项目",
+      "date": "2026-11-18",
+      "description": "清华开源的开放式多智能体互动课堂，一键生成含 AI 教师与同学、白板及讲解的沉浸式学习体验。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "THU-MAIC/OpenMAIC",
+      "tags": [
+        "教育课堂",
+        "多智能体"
+      ],
+      "url": "https://github.com/THU-MAIC/OpenMAIC",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-18T10:31:55+08:00",
+        "date": "2026-11-18",
+        "http_status": 200,
+        "stars": 43839
+      }
+    },
+    {
+      "category": "githubGPT",
+      "category_name": "GitHub 项目",
+      "date": "2026-11-17",
+      "description": "英伟达开源的Python框架，为数据构建语义图谱推理层，实现确定性查询生成与可解释的LLM智能体分析。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "NVIDIA/auto-ontology",
+      "tags": [
+        "推理引擎"
+      ],
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-17T09:16:21+08:00",
+        "date": "2026-11-17",
+        "http_status": 200,
+        "stars": 13318
+      }
+    },
+    {
+      "category": "githubGPT",
+      "category_name": "GitHub 项目",
+      "date": "2026-11-17",
+      "description": "通过MCP协议让Claude、ChatGPT等AI助手以自然语言配置和自动化Home Assistant智能家居设备。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "homeassistant-ai/ha-mcp",
+      "tags": [
+        "MCP"
+      ],
+      "url": "https://github.com/homeassistant-ai/ha-mcp",
+      "verified": {
+        "ai_hits": 5,
+        "checked_at": "2026-11-17T09:16:27+08:00",
+        "date": "2026-11-17",
+        "http_status": 200,
+        "stars": 7909
+      }
+    },
+    {
+      "category": "githubGPT",
+      "category_name": "GitHub 项目",
+      "date": "2026-11-14",
+      "description": "基于多智能体大语言模型的金融交易框架，模拟分析师、研究员与交易员协作完成选股与投资决策。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "TauricResearch/TradingAgents",
+      "tags": [
+        "多智能体"
+      ],
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-14T15:20:07+08:00",
+        "date": "2026-11-14",
+        "http_status": 200,
+        "stars": 122488
+      }
+    },
+    {
+      "category": "githubGPT",
+      "category_name": "GitHub 项目",
+      "date": "2026-11-14",
+      "description": "GitHub 出品的规范驱动开发（SDD）工具包，用自然语言规范引导 AI 从需求到代码的分阶段实现。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "github/spec-kit",
+      "tags": [
+        "代码开发"
+      ],
+      "url": "https://github.com/github/spec-kit",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-14T15:20:06+08:00",
+        "date": "2026-11-14",
+        "http_status": 200,
+        "stars": 149730
+      }
+    },
+    {
+      "category": "githubGPT",
+      "category_name": "GitHub 项目",
+      "date": "2026-11-25",
+      "description": "Karpathy 开源的从零实现 ChatGPT 全流程教学框架，约百美元成本即可完成预训练与推理。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "karpathy/nanochat",
+      "tags": [
+        "教育课堂",
+        "推理引擎",
+        "训练微调"
+      ],
+      "url": "https://github.com/karpathy/nanochat",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-25T09:55:57+08:00",
+        "date": "2026-11-25",
+        "http_status": 200,
+        "stars": 60839
+      }
+    },
+    {
+      "category": "githubGPT",
+      "category_name": "GitHub 项目",
+      "date": "2026-11-18",
+      "description": "面向系统工程师的 Apple Silicon LLM 推理教学项目，用 Python 从零搭建迷你 vLLM 并运行 Qwen 模型。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "skyzh/tiny-llm",
+      "tags": [
+        "教育课堂",
+        "推理引擎",
+        "训练微调"
+      ],
+      "url": "https://github.com/skyzh/tiny-llm",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-18T10:22:35+08:00",
+        "date": "2026-11-18",
+        "http_status": 200,
+        "stars": 5752
+      }
+    },
+    {
+      "category": "githubGPT",
+      "category_name": "GitHub 项目",
       "date": null,
       "description": "自托管的 AI 对话 Web 界面，可对接 Ollama 与多种 API。",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "open-webui/open-webui",
       "tags": [
@@ -1739,7 +2599,7 @@
       "date": null,
       "description": "把网站抓取并转成 LLM 就绪数据的开源服务与 API。",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "firecrawl/firecrawl",
       "tags": [
@@ -1758,84 +2618,9 @@
       "category": "githubGPT",
       "category_name": "GitHub 项目",
       "date": null,
-      "description": "面向私有数据的 RAG 索引与查询开源框架。",
-      "group": "模型与开源",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "run-llama/llama_index",
-      "tags": [
-        "RAG 检索"
-      ],
-      "url": "https://github.com/run-llama/llama_index",
-      "verified": null
-    },
-    {
-      "category": "githubGPT",
-      "category_name": "GitHub 项目",
-      "date": null,
-      "description": "构建大模型应用的开源框架，提供链、工具与智能体抽象。",
-      "group": "模型与开源",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "langchain-ai/langchain",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://github.com/langchain-ai/langchain",
-      "verified": null
-    },
-    {
-      "category": "githubGPT",
-      "category_name": "GitHub 项目",
-      "date": null,
-      "description": "开源向量数据库，常用于 RAG 应用的嵌入检索。",
-      "group": "模型与开源",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "chroma-core/chroma",
-      "tags": [
-        "RAG 检索"
-      ],
-      "url": "https://github.com/chroma-core/chroma",
-      "verified": null
-    },
-    {
-      "category": "githubGPT",
-      "category_name": "GitHub 项目",
-      "date": null,
-      "description": "分布式开源向量数据库，面向大规模相似性检索。",
-      "group": "模型与开源",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "milvus-io/milvus",
-      "tags": [
-        "RAG 检索"
-      ],
-      "url": "https://github.com/milvus-io/milvus",
-      "verified": null
-    },
-    {
-      "category": "githubGPT",
-      "category_name": "GitHub 项目",
-      "date": null,
-      "description": "开源向量搜索引擎，提供过滤与混合检索能力。",
-      "group": "模型与开源",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "qdrant/qdrant",
-      "tags": [
-        "RAG 检索"
-      ],
-      "url": "https://github.com/qdrant/qdrant",
-      "verified": null
-    },
-    {
-      "category": "githubGPT",
-      "category_name": "GitHub 项目",
-      "date": null,
       "description": "桌面端多模型 AI 助手，支持本地知识库与多服务商。",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "CherryHQ/cherry-studio",
       "tags": [
@@ -1849,26 +2634,9 @@
       "category": "githubGPT",
       "category_name": "GitHub 项目",
       "date": null,
-      "description": "把文档转成可问答知识库的开源桌面与服务端应用。",
-      "group": "模型与开源",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "Mintplex-Labs/anything-llm",
-      "tags": [
-        "办公文档",
-        "RAG 检索",
-        "本地运行"
-      ],
-      "url": "https://github.com/Mintplex-Labs/anything-llm",
-      "verified": null
-    },
-    {
-      "category": "githubGPT",
-      "category_name": "GitHub 项目",
-      "date": null,
       "description": "用几行 Python 为机器学习模型生成 Web 演示界面。",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "gradio-app/gradio",
       "tags": [
@@ -1883,30 +2651,9 @@
       "category": "githubGPT",
       "category_name": "GitHub 项目",
       "date": null,
-      "description": "可自托管的工作流自动化工具，支持 AI 与数百种集成。",
-      "group": "模型与开源",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "n8n-io/n8n",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://github.com/n8n-io/n8n",
-      "verified": {
-        "ai_hits": 1,
-        "checked_at": "2026-11-13T16:07:31+08:00",
-        "date": "2026-11-13",
-        "http_status": 200,
-        "stars": 210354
-      }
-    },
-    {
-      "category": "githubGPT",
-      "category_name": "GitHub 项目",
-      "date": null,
       "description": "把 Python 脚本快速变成数据应用的开源框架。",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "streamlit/streamlit",
       "tags": [
@@ -1919,41 +2666,9 @@
       "category": "githubGPT",
       "category_name": "GitHub 项目",
       "date": null,
-      "description": "开源 LLM 应用开发平台，含编排、知识库与运营能力。",
-      "group": "模型与开源",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "langgenius/dify",
-      "tags": [
-        "RAG 检索",
-        "多智能体",
-        "代码开发"
-      ],
-      "url": "https://github.com/langgenius/dify",
-      "verified": null
-    },
-    {
-      "category": "githubGPT",
-      "category_name": "GitHub 项目",
-      "date": null,
-      "description": "Meta 开源的高效向量相似性搜索与聚类库。",
-      "group": "模型与开源",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "facebookresearch/faiss",
-      "tags": [
-        "RAG 检索"
-      ],
-      "url": "https://github.com/facebookresearch/faiss",
-      "verified": null
-    },
-    {
-      "category": "githubGPT",
-      "category_name": "GitHub 项目",
-      "date": null,
       "description": "该仓库提供了使用Segment Anything Model(SAM)进行推理的代码、训练的模型检查点的下载链接",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "Segment Anything Model(SAM)",
       "tags": [
@@ -1968,39 +2683,9 @@
       "category": "githubGPT",
       "category_name": "GitHub 项目",
       "date": null,
-      "description": "xinsblog/try-llama-index",
-      "group": "模型与开源",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "xinsblog/try-llama-index",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://github.com/xinsblog/try-llama-index",
-      "verified": null
-    },
-    {
-      "category": "githubGPT",
-      "category_name": "GitHub 项目",
-      "date": null,
-      "description": "AutoGPT中文版",
-      "group": "模型与开源",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "AutoGPT - 中文版",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://github.com/RealHossie/Auto-GPT-Chinese.git",
-      "verified": null
-    },
-    {
-      "category": "githubGPT",
-      "category_name": "GitHub 项目",
-      "date": null,
       "description": "基于 ChatGPT API 的划词翻译浏览器插件和跨平台桌面端应用",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "yetone/openai-translator",
       "tags": [
@@ -2011,50 +2696,394 @@
       "verified": null
     },
     {
-      "category": "githubGPT",
-      "category_name": "GitHub 项目",
-      "date": null,
-      "description": "该项目包含两个 Python 脚本,演示了如何使用 Streamlit、OpenAI GPT-3.5-turbo 和 Deep Lake 来创建 AI 聊天机器人。聊天机器人会自动搜索存储在 Deep Lake 中的数据集以查找相关信息,并根据用户的输入生成答案,让你直接跟 GitHub 仓库进行对话。",
+      "category": "aiFrameworks",
+      "category_name": "推理与训练框架",
+      "date": "2026-11-24",
+      "description": "纯 C 编写的分层 MoE 推理引擎，热专家驻留 GPU、冷专家从 NVMe 流式加载，让超大模型跑在普通硬件上。",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
-      "name": "Github + ChatGPT 实现代码对话",
+      "name": "JustVugg/colibri",
       "tags": [
-        "办公文档",
-        "代码开发"
+        "推理引擎"
       ],
-      "url": "https://github.com/peterw/Chat-with-Github-Repo",
-      "verified": null
+      "url": "https://github.com/JustVugg/colibri",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-24T10:31:13+08:00",
+        "date": "2026-11-24",
+        "http_status": 0,
+        "stars": 53168
+      }
     },
     {
-      "category": "githubGPT",
-      "category_name": "GitHub 项目",
-      "date": null,
-      "description": "跟 PDF 文档进行一对一对话;自动切割内容,并使用强大的深度平均网络编码器来生成嵌入;对 PDF 内容执行语义搜索,并将最相关的嵌入传递给 Open AI;自定义逻辑,生成更精确的响应信息,速度要比 OpenAI 的快。",
+      "category": "aiFrameworks",
+      "category_name": "推理与训练框架",
+      "date": "2026-11-24",
+      "description": "本地运行与训练大语言模型及扩散模型的框架，支持 GGUF、MLX 与 Qwen、DeepSeek、FLUX 等模型微调。",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
-      "name": "集成GPT,开始跟PDF文档聊天",
+      "name": "unslothai/unsloth",
       "tags": [
-        "办公文档"
+        "训练微调",
+        "本地运行"
       ],
-      "url": "https://github.com/bhaskatripathi/pdfGPT",
-      "verified": null
+      "url": "https://github.com/unslothai/unsloth",
+      "verified": {
+        "ai_hits": 8,
+        "checked_at": "2026-11-24T10:31:42+08:00",
+        "date": "2026-11-24",
+        "http_status": 0,
+        "stars": 80102
+      }
     },
     {
-      "category": "githubGPT",
-      "category_name": "GitHub 项目",
-      "date": null,
-      "description": "该工具能直接通过 access token 来访问网站功能。后端优化,绕过 Cloudflare,提升访问速度。除此之外,该工具还提供了以下功能:高峰期能绕过官方限制,继续使用;应答速度直逼 PLUS;官方故障的时候,它可能还是能跑;多模式:网页 / 命令行 / API,私有化部署;不会像官方那样无故断线、报错。",
+      "category": "aiFrameworks",
+      "category_name": "推理与训练框架",
+      "date": "2026-11-22",
+      "description": "面向下一代 Transformer 与大模型的开源框架，提供算力对齐基准与架构自主研究能力。",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
-      "name": "加快ChatGPT访问速度",
+      "name": "Interactive-Active-AI/NextTransformer",
       "tags": [
         "AI 应用"
       ],
-      "url": "https://github.com/pengzhile/pandora",
-      "verified": null
+      "url": "https://github.com/Interactive-Active-AI/NextTransformer",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-22T09:54:24+08:00",
+        "date": "2026-11-22",
+        "http_status": 0,
+        "stars": 489
+      }
+    },
+    {
+      "category": "aiFrameworks",
+      "category_name": "推理与训练框架",
+      "date": "2026-11-22",
+      "description": "LLM 推理优化代理，通过多种提示与缓存策略降低大模型调用成本并提升响应效率。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "algorithmicsuperintelligence/optillm",
+      "tags": [
+        "推理引擎"
+      ],
+      "url": "https://github.com/algorithmicsuperintelligence/optillm",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-22T09:56:20+08:00",
+        "date": "2026-11-22",
+        "http_status": 0,
+        "stars": 4344
+      }
+    },
+    {
+      "category": "aiFrameworks",
+      "category_name": "推理与训练框架",
+      "date": "2026-11-21",
+      "description": "面向消费级设备的轻量端侧推理库，体积不足 50MB，本地运行智能体、语音与视觉任务，无需云端。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "cactus-compute/cactus",
+      "tags": [
+        "推理引擎",
+        "本地运行",
+        "语音"
+      ],
+      "url": "https://github.com/cactus-compute/cactus",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-21T09:44:53+08:00",
+        "date": "2026-11-21",
+        "http_status": 200,
+        "stars": 14858
+      }
+    },
+    {
+      "category": "aiFrameworks",
+      "category_name": "推理与训练框架",
+      "date": "2026-11-21",
+      "description": "华为开源的模型无关量化工具，面向 GGUF 与本地推理，可量化并运行文本、图像、视频与音频模型。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "huawei-csl/MACaQ",
+      "tags": [
+        "视频图像",
+        "推理引擎",
+        "本地运行"
+      ],
+      "url": "https://github.com/huawei-csl/MACaQ",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-21T09:44:54+08:00",
+        "date": "2026-11-21",
+        "http_status": 200,
+        "stars": 383
+      }
+    },
+    {
+      "category": "aiFrameworks",
+      "category_name": "推理与训练框架",
+      "date": "2026-11-20",
+      "description": "开源本地大模型推理引擎，通过 GPU、内存与固态盘三级分层调度权重，让数百 B 模型跑在消费级硬件，兼容 OpenAI/Anthropic API。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "mw00/project-maya",
+      "tags": [
+        "推理引擎",
+        "本地运行"
+      ],
+      "url": "https://github.com/mw00/project-maya",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-20T11:08:45+08:00",
+        "date": "2026-11-20",
+        "http_status": 0,
+        "stars": 3077
+      }
+    },
+    {
+      "category": "aiFrameworks",
+      "category_name": "推理与训练框架",
+      "date": "2026-11-20",
+      "description": "端侧基础模型与流式 MoE 推理框架，通过 SSD 流式权重与专家路由，让 145B 模型跑在笔记本、35B 跑在手机上。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "Edge0-AI/Edge0",
+      "tags": [
+        "推理引擎",
+        "本地运行"
+      ],
+      "url": "https://github.com/Edge0-AI/Edge0",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-20T10:58:38+08:00",
+        "date": "2026-11-20",
+        "http_status": 0,
+        "stars": 12099
+      }
+    },
+    {
+      "category": "aiFrameworks",
+      "category_name": "推理与训练框架",
+      "date": "2026-11-19",
+      "description": "面向苹果芯片的大模型推理服务器，支持连续批处理与 SSD 分层缓存，可从菜单栏管理。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "jundot/omlx",
+      "tags": [
+        "推理引擎"
+      ],
+      "url": "https://github.com/jundot/omlx",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-19T09:17:15+08:00",
+        "date": "2026-11-19",
+        "http_status": 0,
+        "stars": 23739
+      }
+    },
+    {
+      "category": "aiFrameworks",
+      "category_name": "推理与训练框架",
+      "date": "2026-11-19",
+      "description": "基于 MLX 的苹果芯片推理服务器，兼容 OpenAI 与 Anthropic 接口，专注编码智能体工具调用。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "raullenchai/Rapid-MLX",
+      "tags": [
+        "推理引擎"
+      ],
+      "url": "https://github.com/raullenchai/Rapid-MLX",
+      "verified": {
+        "ai_hits": 7,
+        "checked_at": "2026-11-19T09:17:29+08:00",
+        "date": "2026-11-19",
+        "http_status": 0,
+        "stars": 4165
+      }
+    },
+    {
+      "category": "aiFrameworks",
+      "category_name": "推理与训练框架",
+      "date": "2026-11-18",
+      "description": "仅需 2 小时即可从零训练 6400 万参数小语言模型的开源项目，适合快速上手大模型训练全流程。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "jingyaogong/minimind",
+      "tags": [
+        "训练微调"
+      ],
+      "url": "https://github.com/jingyaogong/minimind",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-18T10:22:36+08:00",
+        "date": "2026-11-18",
+        "http_status": 200,
+        "stars": 66051
+      }
+    },
+    {
+      "category": "aiFrameworks",
+      "category_name": "推理与训练框架",
+      "date": "2026-11-18",
+      "description": "把数据中心级模型服务带到桌面的开源引擎，可在个人电脑上本地运行超大规模语言模型。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "flashml-org/FreeToken",
+      "tags": [
+        "推理引擎",
+        "本地运行"
+      ],
+      "url": "https://github.com/flashml-org/FreeToken",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-18T10:22:37+08:00",
+        "date": "2026-11-18",
+        "http_status": 200,
+        "stars": 17275
+      }
+    },
+    {
+      "category": "aiFrameworks",
+      "category_name": "推理与训练框架",
+      "date": "2026-11-17",
+      "description": "用纯C99实现的推理引擎，可在单核CPU、8GB内存中运行2.78万亿参数的Kimi K3大模型，零依赖。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "FareedKhan-dev/kimi-k3-in-c",
+      "tags": [
+        "推理引擎"
+      ],
+      "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-17T09:16:30+08:00",
+        "date": "2026-11-17",
+        "http_status": 200,
+        "stars": 12209
+      }
+    },
+    {
+      "category": "aiFrameworks",
+      "category_name": "推理与训练框架",
+      "date": "2026-11-24",
+      "description": "自动调优本地 LLM 推理速度的 Agent 技能，用爬山法搜索解码、预填充与 KV 缓存的最优配置。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "sybil-solutions/inference-optimisation-skill",
+      "tags": [
+        "推理引擎",
+        "技能生态",
+        "本地运行"
+      ],
+      "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-24T10:30:01+08:00",
+        "date": "2026-11-24",
+        "http_status": 0,
+        "stars": 2198
+      }
+    },
+    {
+      "category": "aiFrameworks",
+      "category_name": "推理与训练框架",
+      "date": "2026-11-20",
+      "description": "英伟达开源的 LLM 流量路由工具，保持原生 OpenAI/Anthropic API 兼容，可跨模型与供应商分发请求，便于选型、基准测试与成本优化。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "NVIDIA-NeMo/Switchyard",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://github.com/NVIDIA-NeMo/Switchyard",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-20T10:56:43+08:00",
+        "date": "2026-11-20",
+        "http_status": 0,
+        "stars": 3659
+      }
+    },
+    {
+      "category": "aiFrameworks",
+      "category_name": "推理与训练框架",
+      "date": "2026-11-22",
+      "description": "开源 AI/LLM 网关，单文件内置控制台，统一路由、限流与观测多家大模型服务调用。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "eliasbiondo/antirion",
+      "tags": [
+        "推理引擎"
+      ],
+      "url": "https://github.com/eliasbiondo/antirion",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-22T09:55:22+08:00",
+        "date": "2026-11-22",
+        "http_status": 0,
+        "stars": 429
+      }
+    },
+    {
+      "category": "aiFrameworks",
+      "category_name": "推理与训练框架",
+      "date": "2026-11-13",
+      "description": "在本地或云端运行开源大模型的工具，支持 macOS、Windows、Linux，一条命令即可启动模型。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
+      "name": "Ollama",
+      "tags": [
+        "本地运行"
+      ],
+      "url": "https://ollama.com",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-13T16:07:35+08:00",
+        "date": "2026-11-13",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "aiFrameworks",
+      "category_name": "推理与训练框架",
+      "date": "2026-11-18",
+      "description": "开源本地 AI 选型工具，检测电脑内存与显卡后自动挑选可运行的大模型、图像、视频或语音模型并下载运行。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
+      "name": "RigSpark",
+      "tags": [
+        "视频图像",
+        "本地运行",
+        "语音"
+      ],
+      "url": "https://rigspark.si",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-18T10:32:11+08:00",
+        "date": "2026-11-18",
+        "http_status": 200,
+        "stars": null
+      }
     },
     {
       "category": "aiFrameworks",
@@ -2062,7 +3091,7 @@
       "date": null,
       "description": "在本地一键运行与管理开源大模型的工具，支持多平台。",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "ollama/ollama",
       "tags": [
@@ -2083,7 +3112,7 @@
       "date": null,
       "description": "C/C++ 实现的大模型推理引擎，支持 CPU 与量化模型。",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "ggml-org/llama.cpp",
       "tags": [
@@ -2098,7 +3127,7 @@
       "date": null,
       "description": "高吞吐大模型推理与服务框架，采用 PagedAttention。",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "vllm-project/vllm",
       "tags": [
@@ -2113,7 +3142,7 @@
       "date": null,
       "description": "主流预训练模型库，统一加载与训练各类 Transformer 模型。",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "huggingface/transformers",
       "tags": [
@@ -2128,7 +3157,7 @@
       "date": null,
       "description": "面向大模型的高效推理与服务框架，支持复杂生成流程。",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "sgl-project/sglang",
       "tags": [
@@ -2143,7 +3172,7 @@
       "date": null,
       "description": "大模型压缩、部署与推理工具链，支持多后端。",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "InternLM/lmdeploy",
       "tags": [
@@ -2158,7 +3187,7 @@
       "date": null,
       "description": "NVIDIA GPU 上的大模型推理优化库，提供高吞吐服务。",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "NVIDIA/TensorRT-LLM",
       "tags": [
@@ -2173,7 +3202,7 @@
       "date": null,
       "description": "Stable Diffusion 的本地 Web 界面，支持插件与多种生成方式。",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "AUTOMATIC1111/stable-diffusion-webui",
       "tags": [
@@ -2189,7 +3218,7 @@
       "date": null,
       "description": "节点式扩散模型工作流界面，可自由编排图像生成流程。",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "comfyanonymous/ComfyUI",
       "tags": [
@@ -2206,7 +3235,7 @@
       "date": null,
       "description": "大模型分布式训练与推理优化库，显著降低显存占用。",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "microsoft/DeepSpeed",
       "tags": [
@@ -2222,7 +3251,7 @@
       "date": null,
       "description": "Whisper 语音识别模型的 C/C++ 本地推理实现。",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "ggml-org/whisper.cpp",
       "tags": [
@@ -2239,7 +3268,7 @@
       "date": null,
       "description": "主流深度学习框架，提供张量计算与自动微分能力。",
       "group": "模型与开源",
-      "health": null,
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "pytorch/pytorch",
       "tags": [
@@ -2249,1003 +3278,12 @@
       "verified": null
     },
     {
-      "category": "studyGPT",
-      "category_name": "提示词与教程",
-      "date": null,
-      "description": "系统化提示词工程教程，覆盖技巧、模型与应用场景。",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
-      "name": "Prompt Engineering Guide",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://www.promptingguide.ai",
-      "verified": null
-    },
-    {
-      "category": "studyGPT",
-      "category_name": "提示词与教程",
-      "date": null,
-      "description": "吴恩达团队的 AI 课程平台，提供短课与实战项目。",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://www.deeplearning.ai/favicon.ico",
-      "name": "DeepLearning.AI",
-      "tags": [
-        "教育课堂",
-        "多智能体"
-      ],
-      "url": "https://www.deeplearning.ai",
-      "verified": null
-    },
-    {
-      "category": "studyGPT",
-      "category_name": "提示词与教程",
-      "date": null,
-      "description": "开放预印本平台，AI 领域最新论文的主要发布地。",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://arxiv.org/favicon.ico",
-      "name": "arXiv",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://arxiv.org",
-      "verified": null
-    },
-    {
-      "category": "studyGPT",
-      "category_name": "提示词与教程",
-      "date": null,
-      "description": "LangChain Python 版官方文档与开发教程。",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://python.langchain.com/favicon.ico",
-      "name": "LangChain 文档",
-      "tags": [
-        "办公文档",
-        "代码开发"
-      ],
-      "url": "https://python.langchain.com",
-      "verified": null
-    },
-    {
-      "category": "studyGPT",
-      "category_name": "提示词与教程",
-      "date": null,
-      "description": "Kaggle 免费实战微课程，覆盖 Python、机器学习与 LLM。",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
-      "name": "Kaggle Learn",
-      "tags": [
-        "教育课堂"
-      ],
-      "url": "https://www.kaggle.com/learn",
-      "verified": null
-    },
-    {
-      "category": "studyGPT",
-      "category_name": "提示词与教程",
-      "date": null,
-      "description": "开源提示词工程课程，从入门到进阶并提供多语言版本。",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://learnprompting.org/favicon.ico",
-      "name": "Learn Prompting",
-      "tags": [
-        "教育课堂"
-      ],
-      "url": "https://learnprompting.org",
-      "verified": null
-    },
-    {
-      "category": "studyGPT",
-      "category_name": "提示词与教程",
-      "date": null,
-      "description": "Claude API 官方文档与提示词工程指南。",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://docs.anthropic.com/favicon.ico",
-      "name": "Anthropic 文档",
-      "tags": [
-        "办公文档"
-      ],
-      "url": "https://docs.anthropic.com",
-      "verified": null
-    },
-    {
-      "category": "studyGPT",
-      "category_name": "提示词与教程",
-      "date": null,
-      "description": "OpenAI API 官方文档，包含模型、接口与最佳实践说明。",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
-      "name": "OpenAI 文档",
-      "tags": [
-        "办公文档"
-      ],
-      "url": "https://platform.openai.com/docs",
-      "verified": null
-    },
-    {
-      "category": "studyGPT",
-      "category_name": "提示词与教程",
-      "date": null,
-      "description": "ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话。",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "PlexPt/awesome-chatgpt-prompts-zh",
-      "tags": [
-        "教育课堂"
-      ],
-      "url": "https://github.com/PlexPt/awesome-chatgpt-prompts-zh",
-      "verified": null
-    },
-    {
-      "category": "studyGPT",
-      "category_name": "提示词与教程",
-      "date": null,
-      "description": "ChatGPT 中文调教指南",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
-      "name": "ChatGPT 中文调教指南",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://chatguide.plexpt.com/",
-      "verified": null
-    },
-    {
-      "category": "studyGPT",
-      "category_name": "提示词与教程",
-      "date": null,
-      "description": "元素法典——Novel AI 元素魔法全收录",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://docs.gtimg.com/docs-design-resources/mobile/png@3x/file_doc_64@3x-58ec57f56b.png",
-      "name": "元素法典——Novel AI 元素魔法全收录",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://docs.qq.com/doc/DWHl3am5Zb05QbGVs",
-      "verified": null
-    },
-    {
-      "category": "studyGPT",
-      "category_name": "提示词与教程",
-      "date": null,
-      "description": "指南针- Midjourney 学习导航",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://learningprompt.wiki/img/favicon.ico",
-      "name": "指南针- Midjourney 学习导航",
-      "tags": [
-        "教育课堂"
-      ],
-      "url": "https://learningprompt.wiki/docs/midjourney-learning-path",
-      "verified": null
-    },
-    {
-      "category": "studyGPT",
-      "category_name": "提示词与教程",
-      "date": null,
-      "description": "AutoGPT 4.11",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://three-recorder-52a.notion.site/images/logo-ios.png",
-      "name": "AutoGPT 4.11",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://three-recorder-52a.notion.site/AutoGPT-4-11-7b4bc7a71f8d4d4b940abc9b3232954a",
-      "verified": null
-    },
-    {
-      "category": "studyGPT",
-      "category_name": "提示词与教程",
-      "date": null,
-      "description": "Hello from Learning Prompt",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://learningprompt.wiki/img/favicon.ico",
-      "name": "Hello from Learning Prompt",
-      "tags": [
-        "教育课堂"
-      ],
-      "url": "https://learningprompt.wiki/",
-      "verified": null
-    },
-    {
-      "category": "studyGPT",
-      "category_name": "提示词与教程",
-      "date": null,
-      "description": "主要内容为指导开发者如何构建 Prompt 并基于 OpenAI API 构建新的、基于 LLM 的应用",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "ChatGPT Prompt Engineering for Developers 中文版",
-      "tags": [
-        "代码开发"
-      ],
-      "url": "https://github.com/datawhalechina/prompt-engineering-for-developers",
-      "verified": null
-    },
-    {
-      "category": "techBlog",
-      "category_name": "技术博客",
-      "date": null,
-      "description": "Lilian Weng 的深度技术博客，系统梳理大模型与智能体主题。",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
-      "name": "Lil'Log",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://lilianweng.github.io",
-      "verified": null
-    },
-    {
-      "category": "techBlog",
-      "category_name": "技术博客",
-      "date": null,
-      "description": "Anthropic 研究博客，发布对齐、可解释性与模型评估文章。",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://www.anthropic.com/favicon.ico",
-      "name": "Anthropic Research",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://www.anthropic.com/research",
-      "verified": null
-    },
-    {
-      "category": "techBlog",
-      "category_name": "技术博客",
-      "date": null,
-      "description": "用图解方式讲清 Transformer、BERT 等模型原理的技术博客。",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
-      "name": "The Illustrated Transformer",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://jalammar.github.io",
-      "verified": null
-    },
-    {
-      "category": "techBlog",
-      "category_name": "技术博客",
-      "date": null,
-      "description": "DeepLearning.AI 的 AI 行业周刊，追踪研究与产品动态。",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://www.deeplearning.ai/favicon.ico",
-      "name": "The Batch",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://www.deeplearning.ai/the-batch/",
-      "verified": null
-    },
-    {
-      "category": "techBlog",
-      "category_name": "技术博客",
-      "date": null,
-      "description": "OpenAI 官方动态与研究发布页面。",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
-      "name": "OpenAI News",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://openai.com/news/",
-      "verified": null
-    },
-    {
-      "category": "techBlog",
-      "category_name": "技术博客",
-      "date": null,
-      "description": "ShinChven's Blog",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://atlassc.net/favicon.ico",
-      "name": "ShinChven's Blog",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://atlassc.net/",
-      "verified": null
-    },
-    {
-      "category": "techBlog",
-      "category_name": "技术博客",
-      "date": null,
-      "description": "Stable Diffusion Prompt Note",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://atlassc.net/favicon.ico",
-      "name": "Stable Diffusion Prompt Note",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://atlassc.net/2023/03/24/stable-diffusion-prompt",
-      "verified": null
-    },
-    {
-      "category": "techBlog",
-      "category_name": "技术博客",
-      "date": null,
-      "description": "【笔记】跟吴恩达和IsaFulford学提示词工程（初级开发者入门课程）",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://cdn.hashnode.com/res/hashnode/image/upload/v1611242155728/W3_BYVVVh.png",
-      "name": "跟吴恩达和IsaFulford学提示词工程（初级开发者入门课程）",
-      "tags": [
-        "教育课堂",
-        "代码开发"
-      ],
-      "url": "https://volnet.hashnode.dev/gpt-prompt-dev-deeplearningai",
-      "verified": null
-    },
-    {
-      "category": "aiNav",
-      "category_name": "AI 导航站",
-      "date": null,
-      "description": "中文 AI 资讯与 AI 工具库，提供产品收录与榜单。",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://www.aibase.com/favicon.ico",
-      "name": "AIbase",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://www.aibase.com",
-      "verified": null
-    },
-    {
-      "category": "aiNav",
-      "category_name": "AI 导航站",
-      "date": null,
-      "description": "中文 AI 工具与资源导航，覆盖办公、设计与开发场景。",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://www.aihub.cn/favicon.ico",
-      "name": "AIHub",
-      "tags": [
-        "办公文档",
-        "代码开发"
-      ],
-      "url": "https://www.aihub.cn",
-      "verified": null
-    },
-    {
-      "category": "aiNav",
-      "category_name": "AI 导航站",
-      "date": null,
-      "description": "curated AI 工具目录，标注免费与付费并附简介。",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://www.futuretools.io/favicon.ico",
-      "name": "Future Tools",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://www.futuretools.io",
-      "verified": null
-    },
-    {
-      "category": "aiNav",
-      "category_name": "AI 导航站",
-      "date": null,
-      "description": "按类别与任务筛选 AI 工具的导航目录。",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
-      "name": "TopAI.tools",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://topai.tools",
-      "verified": null
-    },
-    {
-      "category": "aiNav",
-      "category_name": "AI 导航站",
-      "date": null,
-      "description": "AI 工具目录与教程站，按用途分类并提供评测信息。",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://www.futurepedia.io/favicon.ico",
-      "name": "Futurepedia",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://www.futurepedia.io",
-      "verified": null
-    },
-    {
-      "category": "aiNav",
-      "category_name": "AI 导航站",
-      "date": null,
-      "description": "按任务检索 AI 工具的导航站，收录量庞大并持续更新。",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
-      "name": "There's An AI For That",
-      "tags": [
-        "RAG 检索"
-      ],
-      "url": "https://theresanaiforthat.com",
-      "verified": null
-    },
-    {
-      "category": "aiNav",
-      "category_name": "AI 导航站",
-      "date": null,
-      "description": "AI 工具排行榜与分类目录，含流量与热度数据。",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
-      "name": "Toolify",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://www.toolify.ai",
-      "verified": null
-    },
-    {
-      "category": "aiNav",
-      "category_name": "AI 导航站",
-      "date": null,
-      "description": "500+ AI工具导航大全,国内外AI工具集合网站",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://ai-bot.cn/favicon.ico",
-      "name": "AI工具集导航",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://ai-bot.cn/",
-      "verified": null
-    },
-    {
-      "category": "aiNav",
-      "category_name": "AI 导航站",
-      "date": null,
-      "description": "神器集",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
-      "name": "发现最酷的互联网产品工具和智能神器!",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://hao.logosc.cn/",
-      "verified": null
-    },
-    {
-      "category": "aiNav",
-      "category_name": "AI 导航站",
-      "date": null,
-      "description": "AIGC工具导航.探索全球1240+AI工具，里面有包含国内的一些免费的chatgpt工具",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
-      "name": "无聊Ai工具导航 | —发现全球优质AIGC工具",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://www.wuliaoai.com/",
-      "verified": null
-    },
-    {
-      "category": "likeGPT",
-      "category_name": "社区与问卷",
-      "date": null,
-      "description": "填写你最喜欢使用的AI地址",
-      "group": "学习与资源",
-      "health": null,
-      "img": "https://sf3-scmcdn2-cn.feishucdn.com/ccm/pc/web/resource/bear/src/common/assets/favicons/icon_file_bitable_nor-32x32.0e0cacddafbc7fd2d308.png",
-      "name": "填写你最喜欢使用的AI地址",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://fmhitm4i2c.feishu.cn/share/base/form/shrcnVmzXGaoLJWDf84a8fstb7c",
-      "verified": null
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-25",
-      "description": "为 AI 智能体访问企业敏感系统提供执行护栏，按精细权限与自定义工具安全调用，减少 token 消耗。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "withcoral/coral",
-      "tags": [
-        "安全审计"
-      ],
-      "url": "https://github.com/withcoral/coral",
-      "verified": {
-        "ai_hits": 2,
-        "checked_at": "2026-11-25T09:55:48+08:00",
-        "date": "2026-11-25",
-        "http_status": 200,
-        "stars": 5031
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-25",
-      "description": "面向智能体的集成开发环境，围绕 Claude Code、Codex 等编码智能体构建，可自主迭代扩展能力。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "get-bb/bb",
-      "tags": [
-        "代码开发"
-      ],
-      "url": "https://github.com/get-bb/bb",
-      "verified": {
-        "ai_hits": 2,
-        "checked_at": "2026-11-25T09:55:49+08:00",
-        "date": "2026-11-25",
-        "http_status": 200,
-        "stars": 5989
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-25",
-      "description": "读取 API 文档自动生成面向 AI 智能体的命令行工具，内置 SQLite 同步、离线检索与组合洞察命令。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "mvanhorn/cli-printing-press",
-      "tags": [
-        "办公文档",
-        "RAG 检索",
-        "代码开发"
-      ],
-      "url": "https://github.com/mvanhorn/cli-printing-press",
-      "verified": {
-        "ai_hits": 2,
-        "checked_at": "2026-11-25T09:55:50+08:00",
-        "date": "2026-11-25",
-        "http_status": 200,
-        "stars": 5049
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-25",
-      "description": "滴滴开源的 AI 编码工程化框架，支持团队结合业务知识与研发流程持续构建专属 Harness。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "didi/helixharness",
-      "tags": [
-        "多智能体"
-      ],
-      "url": "https://github.com/didi/helixharness",
-      "verified": {
-        "ai_hits": 2,
-        "checked_at": "2026-11-25T09:55:51+08:00",
-        "date": "2026-11-25",
-        "http_status": 200,
-        "stars": 461
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-25",
-      "description": "在本地组建 AI 智能体团队，可频道协作、写代码、互相评审，真实世界操作需人工确认。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "eduwxyz/tucano",
-      "tags": [
-        "多智能体",
-        "代码开发",
-        "本地运行"
-      ],
-      "url": "https://github.com/eduwxyz/tucano",
-      "verified": {
-        "ai_hits": 3,
-        "checked_at": "2026-11-25T09:55:52+08:00",
-        "date": "2026-11-25",
-        "http_status": 200,
-        "stars": 460
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-25",
-      "description": "智能体技能插件，审查并改写文本去除 AI 写作痕迹，兼容 Claude Code、Codex、Hermes 等。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "conorbronsdon/avoid-ai-writing",
-      "tags": [
-        "技能生态",
-        "代码开发"
-      ],
-      "url": "https://github.com/conorbronsdon/avoid-ai-writing",
-      "verified": {
-        "ai_hits": 5,
-        "checked_at": "2026-11-25T09:55:53+08:00",
-        "date": "2026-11-25",
-        "http_status": 200,
-        "stars": 6265
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-25",
-      "description": "将组织规章策略编译为可验证的决策训练数据，支持数据溯源，用于微调合规决策模型。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "Juneo-Lab/decision-forge",
-      "tags": [
-        "训练微调"
-      ],
-      "url": "https://github.com/Juneo-Lab/decision-forge",
-      "verified": {
-        "ai_hits": 4,
-        "checked_at": "2026-11-25T09:55:58+08:00",
-        "date": "2026-11-25",
-        "http_status": 200,
-        "stars": 352
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-24",
-      "description": "Pydantic 官方 AI Agent 开发框架，端到端类型安全，支持实时语音、图像生成、嵌入与多模型接入。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "pydantic/pydantic-ai",
-      "tags": [
-        "安全审计",
-        "视频图像",
-        "代码开发"
-      ],
-      "url": "https://github.com/pydantic/pydantic-ai",
-      "verified": {
-        "ai_hits": 4,
-        "checked_at": "2026-11-24T10:29:17+08:00",
-        "date": "2026-11-24",
-        "http_status": 0,
-        "stars": 21357
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-24",
-      "description": "用 Rust 构建模块化、可扩展 LLM 应用的框架，主打高性能与低延迟的 AI 应用开发。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "0xPlaygrounds/rig",
-      "tags": [
-        "推理引擎",
-        "代码开发"
-      ],
-      "url": "https://github.com/0xPlaygrounds/rig",
-      "verified": {
-        "ai_hits": 4,
-        "checked_at": "2026-11-24T10:29:32+08:00",
-        "date": "2026-11-24",
-        "http_status": 0,
-        "stars": 9241
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-24",
-      "description": "自动调优本地 LLM 推理速度的 Agent 技能，用爬山法搜索解码、预填充与 KV 缓存的最优配置。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "sybil-solutions/inference-optimisation-skill",
-      "tags": [
-        "推理引擎",
-        "技能生态",
-        "本地运行"
-      ],
-      "url": "https://github.com/sybil-solutions/inference-optimisation-skill",
-      "verified": {
-        "ai_hits": 4,
-        "checked_at": "2026-11-24T10:30:01+08:00",
-        "date": "2026-11-24",
-        "http_status": 0,
-        "stars": 2198
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-24",
-      "description": "可完全跑在本机的开源个人智能体，自研 PolyStrata 引擎让大模型在消费级硬件上运行，数据留存本地。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "simplexai-labs/linger",
-      "tags": [
-        "本地运行"
-      ],
-      "url": "https://github.com/simplexai-labs/linger",
-      "verified": {
-        "ai_hits": 3,
-        "checked_at": "2026-11-24T10:30:15+08:00",
-        "date": "2026-11-24",
-        "http_status": 0,
-        "stars": 4202
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-23",
-      "description": "腾讯开源的 Go 语言生产级智能体框架，支持图工作流、记忆、A2A 与 MCP 协议，内置评测与可观测能力。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "trpc-group/trpc-agent-go",
-      "tags": [
-        "记忆",
-        "MCP"
-      ],
-      "url": "https://github.com/trpc-group/trpc-agent-go",
-      "verified": {
-        "ai_hits": 3,
-        "checked_at": "2026-11-23T10:14:58+08:00",
-        "date": "2026-11-23",
-        "http_status": 200,
-        "stars": 1940
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-23",
-      "description": "本地优先的开源 AI 机器人，可接入 GPT、Claude、Gemini 等多种模型搭建专属对话助手。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "modelflare-ai/AnyModelBot",
-      "tags": [
-        "本地运行"
-      ],
-      "url": "https://github.com/modelflare-ai/AnyModelBot",
-      "verified": {
-        "ai_hits": 5,
-        "checked_at": "2026-11-23T10:15:01+08:00",
-        "date": "2026-11-23",
-        "http_status": 200,
-        "stars": 4975
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-23",
-      "description": "开源 iPhone 智能体应用，能读取屏幕并自动点击滑动，通过本地 MCP 自动化操作 iOS 设备。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "JosssphZhou/poki",
-      "tags": [
-        "MCP",
-        "本地运行"
-      ],
-      "url": "https://github.com/JosssphZhou/poki",
-      "verified": {
-        "ai_hits": 4,
-        "checked_at": "2026-11-23T10:15:05+08:00",
-        "date": "2026-11-23",
-        "http_status": 200,
-        "stars": 1840
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-22",
-      "description": "Agent-User Interaction 协议，为 AI 智能体与前端应用提供标准化的事件交互与状态同步接口。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "ag-ui-protocol/ag-ui",
-      "tags": [
-        "前端 UI"
-      ],
-      "url": "https://github.com/ag-ui-protocol/ag-ui",
-      "verified": {
-        "ai_hits": 2,
-        "checked_at": "2026-11-22T09:52:57+08:00",
-        "date": "2026-11-22",
-        "http_status": 0,
-        "stars": 21026
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-22",
-      "description": "把 Chrome 开发者工具通过 MCP 暴露给编码智能体，支持页面调试、检查与交互自动化。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "ChromeDevTools/chrome-devtools-mcp",
-      "tags": [
-        "MCP",
-        "代码开发"
-      ],
-      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-      "verified": {
-        "ai_hits": 1,
-        "checked_at": "2026-11-22T09:53:12+08:00",
-        "date": "2026-11-22",
-        "http_status": 0,
-        "stars": 58699
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-22",
-      "description": "英伟达开源的多层评估框架，用质量门槛与安全扫描检验 AI 智能体技能与插件。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "NVIDIA/SkillEvaluator",
-      "tags": [
-        "安全审计",
-        "技能生态"
-      ],
-      "url": "https://github.com/NVIDIA/SkillEvaluator",
-      "verified": {
-        "ai_hits": 3,
-        "checked_at": "2026-11-22T09:53:26+08:00",
-        "date": "2026-11-22",
-        "http_status": 0,
-        "stars": 4333
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-22",
-      "description": "腾讯开源的自托管编码智能体交付工作流，编排 CodeBuddy、Codex 等并支持人工审批。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "Tencent/LoopForge",
-      "tags": [
-        "多智能体"
-      ],
-      "url": "https://github.com/Tencent/LoopForge",
-      "verified": {
-        "ai_hits": 3,
-        "checked_at": "2026-11-22T09:53:55+08:00",
-        "date": "2026-11-22",
-        "http_status": 0,
-        "stars": 5523
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-22",
-      "description": "开源 AI/LLM 网关，单文件内置控制台，统一路由、限流与观测多家大模型服务调用。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "eliasbiondo/antirion",
-      "tags": [
-        "推理引擎"
-      ],
-      "url": "https://github.com/eliasbiondo/antirion",
-      "verified": {
-        "ai_hits": 4,
-        "checked_at": "2026-11-22T09:55:22+08:00",
-        "date": "2026-11-22",
-        "http_status": 0,
-        "stars": 429
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-22",
-      "description": "AI 办公 SDK，为应用嵌入文档编辑、表格计算与多人协作能力，构建自研 AI Office。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "dream-num/univer",
-      "tags": [
-        "办公文档",
-        "代码开发"
-      ],
-      "url": "https://github.com/dream-num/univer",
-      "verified": {
-        "ai_hits": 2,
-        "checked_at": "2026-11-22T09:56:34+08:00",
-        "date": "2026-11-22",
-        "http_status": 0,
-        "stars": 31105
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-22",
-      "description": "LLM 驱动的多市场股票智能分析系统，聚合行情与新闻、生成决策看板并支持定时推送。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "ZhuLinsen/daily_stock_analysis",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-      "verified": {
-        "ai_hits": 4,
-        "checked_at": "2026-11-22T09:56:48+08:00",
-        "date": "2026-11-22",
-        "http_status": 0,
-        "stars": 73639
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-21",
-      "description": "DeepSeek 开源的自主智能体原型，采用 Router+Worker 双层架构，让编码 Agent 自行拆解任务、发现缺陷并提交修复 PR。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "deepseek-ai/dsh-superagent-prototype",
-      "tags": [
-        "代码开发"
-      ],
-      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
-      "verified": {
-        "ai_hits": 2,
-        "checked_at": "2026-11-21T09:44:37+08:00",
-        "date": "2026-11-21",
-        "http_status": 200,
-        "stars": 24081
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
+      "category": "ragKnowledge",
+      "category_name": "RAG 与知识库",
       "date": "2026-11-21",
       "description": "阿里开源的轻量级进程内向量数据库，C++ 实现，直接嵌入应用即可做高速向量检索，面向 RAG 与边缘场景。",
-      "group": "每日 AI 新发现",
-      "health": null,
+      "group": "模型与开源",
+      "health": "ok",
       "img": "https://github.com/favicon.ico",
       "name": "alibaba/zvec",
       "tags": [
@@ -3261,54 +3299,12 @@
       }
     },
     {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-21",
-      "description": "为并行 AI 编码智能体设计的 Git worktree 管理命令行工具，快速创建、切换与清理隔离工作区。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "max-sixty/worktrunk",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://github.com/max-sixty/worktrunk",
-      "verified": {
-        "ai_hits": 3,
-        "checked_at": "2026-11-21T09:44:39+08:00",
-        "date": "2026-11-21",
-        "http_status": 200,
-        "stars": 12674
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-21",
-      "description": "开源 AI 安全运营中心，融合告警并用大模型智能体做威胁研判，覆盖 MITRE ATT&CK 并留痕可回放。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "beenuar/AiSOC",
-      "tags": [
-        "安全审计"
-      ],
-      "url": "https://github.com/beenuar/AiSOC",
-      "verified": {
-        "ai_hits": 4,
-        "checked_at": "2026-11-21T09:44:45+08:00",
-        "date": "2026-11-21",
-        "http_status": 200,
-        "stars": 7133
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
+      "category": "ragKnowledge",
+      "category_name": "RAG 与知识库",
       "date": "2026-11-21",
       "description": "开源本地文件检索工具，索引文档、代码和截图文字，支持 OCR 与语义搜索，可经只读 MCP 供智能体调用。",
-      "group": "每日 AI 新发现",
-      "health": null,
+      "group": "模型与开源",
+      "health": "ok",
       "img": "https://github.com/favicon.ico",
       "name": "yjid/kensaku",
       "tags": [
@@ -3326,54 +3322,12 @@
       }
     },
     {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-20",
-      "description": "阿里开源的 AI 代码审查工具，读取 Git 差异给出行级评审意见，把确定性检查与大模型智能体结合，自动发现代码问题。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "alibaba/open-code-review",
-      "tags": [
-        "代码开发"
-      ],
-      "url": "https://github.com/alibaba/open-code-review",
-      "verified": {
-        "ai_hits": 4,
-        "checked_at": "2026-11-20T11:09:43+08:00",
-        "date": "2026-11-20",
-        "http_status": 0,
-        "stars": 54417
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-20",
-      "description": "开源自动化平台，用可视化流程连接 AI 智能体与数百款应用，支持自托管，用于搭建客服、运营等自动化工作流。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "Activepieces/activepieces",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://github.com/Activepieces/activepieces",
-      "verified": {
-        "ai_hits": 2,
-        "checked_at": "2026-11-20T11:09:57+08:00",
-        "date": "2026-11-20",
-        "http_status": 0,
-        "stars": 25626
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
+      "category": "ragKnowledge",
+      "category_name": "RAG 与知识库",
       "date": "2026-11-20",
       "description": "开源企业 AI 搜索平台，可连接多种数据源做 RAG 检索问答，内置权限与连接器，用于搭建内部知识助手。",
-      "group": "每日 AI 新发现",
-      "health": null,
+      "group": "模型与开源",
+      "health": "ok",
       "img": "https://github.com/favicon.ico",
       "name": "onyx-dot-app/onyx",
       "tags": [
@@ -3389,122 +3343,12 @@
       }
     },
     {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-20",
-      "description": "可扩展的开源 AI 智能体，支持命令行、桌面与 API 多种形态，能连接任意大模型和 MCP 工具，自动完成开发与日常任务。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "aaif-goose/goose",
-      "tags": [
-        "MCP",
-        "代码开发",
-        "本地运行"
-      ],
-      "url": "https://github.com/aaif-goose/goose",
-      "verified": {
-        "ai_hits": 3,
-        "checked_at": "2026-11-20T11:10:56+08:00",
-        "date": "2026-11-20",
-        "http_status": 0,
-        "stars": 56795
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-20",
-      "description": "谷歌开源的终端 AI 编码智能体，在命令行读写代码、执行 shell 命令并集成 MCP，支持 Gemini 模型辅助开发与调试。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "google-gemini/gemini-cli",
-      "tags": [
-        "MCP",
-        "代码开发"
-      ],
-      "url": "https://github.com/google-gemini/gemini-cli",
-      "verified": {
-        "ai_hits": 2,
-        "checked_at": "2026-11-20T11:11:10+08:00",
-        "date": "2026-11-20",
-        "http_status": 0,
-        "stars": 108945
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-20",
-      "description": "英伟达开源的 LLM 流量路由工具，保持原生 OpenAI/Anthropic API 兼容，可跨模型与供应商分发请求，便于选型、基准测试与成本优化。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "NVIDIA-NeMo/Switchyard",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://github.com/NVIDIA-NeMo/Switchyard",
-      "verified": {
-        "ai_hits": 3,
-        "checked_at": "2026-11-20T10:56:43+08:00",
-        "date": "2026-11-20",
-        "http_status": 0,
-        "stars": 3659
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-20",
-      "description": "开源自托管语音 AI 平台，可替代 Vapi 与 Retell，支持语音到语音或 LLM/STT/TTS、可视化流程编排、MCP 与电话接入。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "dograh-hq/dograh",
-      "tags": [
-        "多智能体",
-        "MCP",
-        "语音"
-      ],
-      "url": "https://github.com/dograh-hq/dograh",
-      "verified": {
-        "ai_hits": 3,
-        "checked_at": "2026-11-20T10:57:12+08:00",
-        "date": "2026-11-20",
-        "http_status": 0,
-        "stars": 6231
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-20",
-      "description": "可自托管的全能收藏应用，支持链接、笔记与图片，提供 AI 自动打标和全文搜索。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "karakeep-app/karakeep",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://github.com/karakeep-app/karakeep",
-      "verified": {
-        "ai_hits": 1,
-        "checked_at": "2026-11-20T10:57:55+08:00",
-        "date": "2026-11-20",
-        "http_status": 0,
-        "stars": 30705
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
+      "category": "ragKnowledge",
+      "category_name": "RAG 与知识库",
       "date": "2026-11-20",
       "description": "开源文档解析库，把 PDF、Word、HTML 等转为 Markdown/JSON 结构化数据，为生成式 AI 与 RAG 流程准备输入。",
-      "group": "每日 AI 新发现",
-      "health": null,
+      "group": "模型与开源",
+      "health": "ok",
       "img": "https://github.com/favicon.ico",
       "name": "docling-project/docling",
       "tags": [
@@ -3521,77 +3365,11 @@
       }
     },
     {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-20",
-      "description": "在送入大模型前压缩工具输出、日志、文件与 RAG 分块，显著降低 token 消耗，提供库、代理与 MCP 服务三种形态。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "headroomlabs-ai/headroom",
-      "tags": [
-        "RAG 检索",
-        "MCP"
-      ],
-      "url": "https://github.com/headroomlabs-ai/headroom",
-      "verified": {
-        "ai_hits": 6,
-        "checked_at": "2026-11-20T10:58:24+08:00",
-        "date": "2026-11-20",
-        "http_status": 0,
-        "stars": 80175
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-20",
-      "description": "现代 TypeScript AI 应用框架，内置智能体、RAG、评估与 MCP 支持，用于构建聊天机器人和 AI 驱动的应用。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "mastra-ai/mastra",
-      "tags": [
-        "RAG 检索",
-        "MCP"
-      ],
-      "url": "https://github.com/mastra-ai/mastra",
-      "verified": {
-        "ai_hits": 3,
-        "checked_at": "2026-11-20T10:57:41+08:00",
-        "date": "2026-11-20",
-        "http_status": 0,
-        "stars": 29671
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-19",
-      "description": "开源智能体浏览器，基于 Chromium 内置本地大模型与自动化能力，主打隐私优先的浏览器任务代理。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://github.com/favicon.ico",
-      "name": "browseros-ai/BrowserOS",
-      "tags": [
-        "浏览器自动化",
-        "本地运行"
-      ],
-      "url": "https://github.com/browseros-ai/BrowserOS",
-      "verified": {
-        "ai_hits": 6,
-        "checked_at": "2026-11-19T09:15:34+08:00",
-        "date": "2026-11-19",
-        "http_status": 0,
-        "stars": 14403
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
+      "category": "ragKnowledge",
+      "category_name": "RAG 与知识库",
       "date": "2026-11-19",
       "description": "腾讯开源大模型知识平台，把文档转成可溯源 RAG 问答、自主推理智能体与自动维护的 Wiki。",
-      "group": "每日 AI 新发现",
+      "group": "模型与开源",
       "health": "ok",
       "img": "https://github.com/favicon.ico",
       "name": "Tencent/WeKnora",
@@ -3610,56 +3388,530 @@
       }
     },
     {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-19",
-      "description": "browser-use 团队开源的剪辑工具，让编码智能体通过对话完成视频剪辑与处理。",
-      "group": "每日 AI 新发现",
+      "category": "ragKnowledge",
+      "category_name": "RAG 与知识库",
+      "date": "2026-11-18",
+      "description": "面向智能体的原生 RAG 检索引擎，提供确定性解析、可解释引用与企业级知识库问答能力。",
+      "group": "模型与开源",
       "health": "ok",
       "img": "https://github.com/favicon.ico",
-      "name": "browser-use/video-use",
+      "name": "infiniflow/ragflow",
       "tags": [
-        "视频图像",
-        "浏览器自动化",
-        "多智能体"
+        "RAG 检索"
       ],
-      "url": "https://github.com/browser-use/video-use",
+      "url": "https://github.com/infiniflow/ragflow",
       "verified": {
-        "ai_hits": 1,
-        "checked_at": "2026-11-19T09:17:00+08:00",
-        "date": "2026-11-19",
-        "http_status": 0,
-        "stars": 31263
+        "ai_hits": 3,
+        "checked_at": "2026-11-18T10:22:33+08:00",
+        "date": "2026-11-18",
+        "http_status": 200,
+        "stars": 94337
       }
     },
     {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-19",
-      "description": "真开源离线数字人工具包，支持用真人视频克隆形象与声音，本地生成数字人口播视频。",
-      "group": "每日 AI 新发现",
+      "category": "ragKnowledge",
+      "category_name": "RAG 与知识库",
+      "date": "2026-11-13",
+      "description": "面向大模型与 AI 智能体的开源网页抓取工具，把网页转成 LLM 就绪的 Markdown，支持自托管。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "unclecode/crawl4ai",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://github.com/unclecode/crawl4ai",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-13T16:07:28+08:00",
+        "date": "2026-11-13",
+        "http_status": 200,
+        "stars": 87298
+      }
+    },
+    {
+      "category": "ragKnowledge",
+      "category_name": "RAG 与知识库",
+      "date": "2026-11-20",
+      "description": "在送入大模型前压缩工具输出、日志、文件与 RAG 分块，显著降低 token 消耗，提供库、代理与 MCP 服务三种形态。",
+      "group": "模型与开源",
       "health": "ok",
       "img": "https://github.com/favicon.ico",
-      "name": "duixcom/Duix-Avatar",
+      "name": "headroomlabs-ai/headroom",
       "tags": [
-        "视频图像",
+        "RAG 检索",
+        "MCP"
+      ],
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "verified": {
+        "ai_hits": 6,
+        "checked_at": "2026-11-20T10:58:24+08:00",
+        "date": "2026-11-20",
+        "http_status": 0,
+        "stars": 80175
+      }
+    },
+    {
+      "category": "ragKnowledge",
+      "category_name": "RAG 与知识库",
+      "date": null,
+      "description": "面向私有数据的 RAG 索引与查询开源框架。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "run-llama/llama_index",
+      "tags": [
+        "RAG 检索"
+      ],
+      "url": "https://github.com/run-llama/llama_index",
+      "verified": null
+    },
+    {
+      "category": "ragKnowledge",
+      "category_name": "RAG 与知识库",
+      "date": null,
+      "description": "开源向量数据库，常用于 RAG 应用的嵌入检索。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "chroma-core/chroma",
+      "tags": [
+        "RAG 检索"
+      ],
+      "url": "https://github.com/chroma-core/chroma",
+      "verified": null
+    },
+    {
+      "category": "ragKnowledge",
+      "category_name": "RAG 与知识库",
+      "date": null,
+      "description": "分布式开源向量数据库，面向大规模相似性检索。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "milvus-io/milvus",
+      "tags": [
+        "RAG 检索"
+      ],
+      "url": "https://github.com/milvus-io/milvus",
+      "verified": null
+    },
+    {
+      "category": "ragKnowledge",
+      "category_name": "RAG 与知识库",
+      "date": null,
+      "description": "开源向量搜索引擎，提供过滤与混合检索能力。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "qdrant/qdrant",
+      "tags": [
+        "RAG 检索"
+      ],
+      "url": "https://github.com/qdrant/qdrant",
+      "verified": null
+    },
+    {
+      "category": "ragKnowledge",
+      "category_name": "RAG 与知识库",
+      "date": null,
+      "description": "Meta 开源的高效向量相似性搜索与聚类库。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "facebookresearch/faiss",
+      "tags": [
+        "RAG 检索"
+      ],
+      "url": "https://github.com/facebookresearch/faiss",
+      "verified": null
+    },
+    {
+      "category": "ragKnowledge",
+      "category_name": "RAG 与知识库",
+      "date": null,
+      "description": "把文档转成可问答知识库的开源桌面与服务端应用。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "Mintplex-Labs/anything-llm",
+      "tags": [
+        "办公文档",
+        "RAG 检索",
         "本地运行"
       ],
-      "url": "https://github.com/duixcom/Duix-Avatar",
+      "url": "https://github.com/Mintplex-Labs/anything-llm",
+      "verified": null
+    },
+    {
+      "category": "ragKnowledge",
+      "category_name": "RAG 与知识库",
+      "date": null,
+      "description": "跟 PDF 文档进行一对一对话;自动切割内容,并使用强大的深度平均网络编码器来生成嵌入;对 PDF 内容执行语义搜索,并将最相关的嵌入传递给 Open AI;自定义逻辑,生成更精确的响应信息,速度要比 OpenAI 的快。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "集成GPT,开始跟PDF文档聊天",
+      "tags": [
+        "办公文档"
+      ],
+      "url": "https://github.com/bhaskatripathi/pdfGPT",
+      "verified": null
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-25",
+      "description": "为 AI 智能体访问企业敏感系统提供执行护栏，按精细权限与自定义工具安全调用，减少 token 消耗。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "withcoral/coral",
+      "tags": [
+        "安全审计"
+      ],
+      "url": "https://github.com/withcoral/coral",
       "verified": {
         "ai_hits": 2,
-        "checked_at": "2026-11-19T09:15:05+08:00",
-        "date": "2026-11-19",
-        "http_status": 0,
-        "stars": 16388
+        "checked_at": "2026-11-25T09:55:48+08:00",
+        "date": "2026-11-25",
+        "http_status": 200,
+        "stars": 5031
       }
     },
     {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-25",
+      "description": "面向智能体的集成开发环境，围绕 Claude Code、Codex 等编码智能体构建，可自主迭代扩展能力。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "get-bb/bb",
+      "tags": [
+        "代码开发"
+      ],
+      "url": "https://github.com/get-bb/bb",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-25T09:55:49+08:00",
+        "date": "2026-11-25",
+        "http_status": 200,
+        "stars": 5989
+      }
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-25",
+      "description": "读取 API 文档自动生成面向 AI 智能体的命令行工具，内置 SQLite 同步、离线检索与组合洞察命令。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "mvanhorn/cli-printing-press",
+      "tags": [
+        "办公文档",
+        "RAG 检索",
+        "代码开发"
+      ],
+      "url": "https://github.com/mvanhorn/cli-printing-press",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-25T09:55:50+08:00",
+        "date": "2026-11-25",
+        "http_status": 200,
+        "stars": 5049
+      }
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-25",
+      "description": "滴滴开源的 AI 编码工程化框架，支持团队结合业务知识与研发流程持续构建专属 Harness。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "didi/helixharness",
+      "tags": [
+        "多智能体"
+      ],
+      "url": "https://github.com/didi/helixharness",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-25T09:55:51+08:00",
+        "date": "2026-11-25",
+        "http_status": 200,
+        "stars": 461
+      }
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-25",
+      "description": "在本地组建 AI 智能体团队，可频道协作、写代码、互相评审，真实世界操作需人工确认。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "eduwxyz/tucano",
+      "tags": [
+        "多智能体",
+        "代码开发",
+        "本地运行"
+      ],
+      "url": "https://github.com/eduwxyz/tucano",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-25T09:55:52+08:00",
+        "date": "2026-11-25",
+        "http_status": 200,
+        "stars": 460
+      }
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-25",
+      "description": "智能体技能插件，审查并改写文本去除 AI 写作痕迹，兼容 Claude Code、Codex、Hermes 等。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "conorbronsdon/avoid-ai-writing",
+      "tags": [
+        "技能生态",
+        "代码开发"
+      ],
+      "url": "https://github.com/conorbronsdon/avoid-ai-writing",
+      "verified": {
+        "ai_hits": 5,
+        "checked_at": "2026-11-25T09:55:53+08:00",
+        "date": "2026-11-25",
+        "http_status": 200,
+        "stars": 6265
+      }
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-24",
+      "description": "可完全跑在本机的开源个人智能体，自研 PolyStrata 引擎让大模型在消费级硬件上运行，数据留存本地。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "simplexai-labs/linger",
+      "tags": [
+        "本地运行"
+      ],
+      "url": "https://github.com/simplexai-labs/linger",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-24T10:30:15+08:00",
+        "date": "2026-11-24",
+        "http_status": 0,
+        "stars": 4202
+      }
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-23",
+      "description": "腾讯开源的 Go 语言生产级智能体框架，支持图工作流、记忆、A2A 与 MCP 协议，内置评测与可观测能力。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "trpc-group/trpc-agent-go",
+      "tags": [
+        "记忆",
+        "MCP"
+      ],
+      "url": "https://github.com/trpc-group/trpc-agent-go",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-23T10:14:58+08:00",
+        "date": "2026-11-23",
+        "http_status": 200,
+        "stars": 1940
+      }
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-22",
+      "description": "Agent-User Interaction 协议，为 AI 智能体与前端应用提供标准化的事件交互与状态同步接口。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "ag-ui-protocol/ag-ui",
+      "tags": [
+        "前端 UI"
+      ],
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-22T09:52:57+08:00",
+        "date": "2026-11-22",
+        "http_status": 0,
+        "stars": 21026
+      }
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-22",
+      "description": "把 Chrome 开发者工具通过 MCP 暴露给编码智能体，支持页面调试、检查与交互自动化。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "ChromeDevTools/chrome-devtools-mcp",
+      "tags": [
+        "MCP",
+        "代码开发"
+      ],
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-22T09:53:12+08:00",
+        "date": "2026-11-22",
+        "http_status": 0,
+        "stars": 58699
+      }
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-22",
+      "description": "英伟达开源的多层评估框架，用质量门槛与安全扫描检验 AI 智能体技能与插件。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "NVIDIA/SkillEvaluator",
+      "tags": [
+        "安全审计",
+        "技能生态"
+      ],
+      "url": "https://github.com/NVIDIA/SkillEvaluator",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-22T09:53:26+08:00",
+        "date": "2026-11-22",
+        "http_status": 0,
+        "stars": 4333
+      }
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-22",
+      "description": "腾讯开源的自托管编码智能体交付工作流，编排 CodeBuddy、Codex 等并支持人工审批。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "Tencent/LoopForge",
+      "tags": [
+        "多智能体"
+      ],
+      "url": "https://github.com/Tencent/LoopForge",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-22T09:53:55+08:00",
+        "date": "2026-11-22",
+        "http_status": 0,
+        "stars": 5523
+      }
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-21",
+      "description": "DeepSeek 开源的自主智能体原型，采用 Router+Worker 双层架构，让编码 Agent 自行拆解任务、发现缺陷并提交修复 PR。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "deepseek-ai/dsh-superagent-prototype",
+      "tags": [
+        "代码开发"
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-21T09:44:37+08:00",
+        "date": "2026-11-21",
+        "http_status": 200,
+        "stars": 24081
+      }
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-20",
+      "description": "可扩展的开源 AI 智能体，支持命令行、桌面与 API 多种形态，能连接任意大模型和 MCP 工具，自动完成开发与日常任务。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "aaif-goose/goose",
+      "tags": [
+        "MCP",
+        "代码开发",
+        "本地运行"
+      ],
+      "url": "https://github.com/aaif-goose/goose",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-20T11:10:56+08:00",
+        "date": "2026-11-20",
+        "http_status": 0,
+        "stars": 56795
+      }
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-20",
+      "description": "谷歌开源的终端 AI 编码智能体，在命令行读写代码、执行 shell 命令并集成 MCP，支持 Gemini 模型辅助开发与调试。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "google-gemini/gemini-cli",
+      "tags": [
+        "MCP",
+        "代码开发"
+      ],
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-20T11:11:10+08:00",
+        "date": "2026-11-20",
+        "http_status": 0,
+        "stars": 108945
+      }
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-20",
+      "description": "现代 TypeScript AI 应用框架，内置智能体、RAG、评估与 MCP 支持，用于构建聊天机器人和 AI 驱动的应用。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "mastra-ai/mastra",
+      "tags": [
+        "RAG 检索",
+        "MCP"
+      ],
+      "url": "https://github.com/mastra-ai/mastra",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-20T10:57:41+08:00",
+        "date": "2026-11-20",
+        "http_status": 0,
+        "stars": 29671
+      }
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
       "date": "2026-11-18",
       "description": "本地优先的开源多智能体桌面团队，指挥官把目标拆成待办并协调内置专家与主流编码智能体协同完成。",
-      "group": "每日 AI 新发现",
+      "group": "模型与开源",
       "health": "ok",
       "img": "https://github.com/favicon.ico",
       "name": "Orkas-AI/Orkas",
@@ -3677,33 +3929,11 @@
       }
     },
     {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-18",
-      "description": "清华开源的开放式多智能体互动课堂，一键生成含 AI 教师与同学、白板及讲解的沉浸式学习体验。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://github.com/favicon.ico",
-      "name": "THU-MAIC/OpenMAIC",
-      "tags": [
-        "教育课堂",
-        "多智能体"
-      ],
-      "url": "https://github.com/THU-MAIC/OpenMAIC",
-      "verified": {
-        "ai_hits": 1,
-        "checked_at": "2026-11-18T10:31:55+08:00",
-        "date": "2026-11-18",
-        "http_status": 200,
-        "stars": 43839
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
       "date": "2026-11-18",
       "description": "Cloudflare 开源的编码智能体技能，执行多阶段安全审计并输出经独立验证、机器可读的漏洞发现结果。",
-      "group": "每日 AI 新发现",
+      "group": "模型与开源",
       "health": "ok",
       "img": "https://github.com/favicon.ico",
       "name": "cloudflare/security-audit-skill",
@@ -3721,11 +3951,11 @@
       }
     },
     {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
       "date": "2026-11-18",
       "description": "面向前沿嵌入式场景的智能体 SDK，提供可长期运行、支持代码模式的智能体开发接口与工具链。",
-      "group": "每日 AI 新发现",
+      "group": "模型与开源",
       "health": "ok",
       "img": "https://github.com/favicon.ico",
       "name": "nanocodexyz/nanocode",
@@ -3742,11 +3972,11 @@
       }
     },
     {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
       "date": "2026-11-18",
       "description": "零基础设施的编码智能体协调器，用群聊式已读与投递回执从手机远程调度多个智能体持续执行任务。",
-      "group": "每日 AI 新发现",
+      "group": "模型与开源",
       "health": "ok",
       "img": "https://github.com/favicon.ico",
       "name": "ChesterRa/cccc",
@@ -3763,32 +3993,11 @@
       }
     },
     {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-18",
-      "description": "面向智能体的原生 RAG 检索引擎，提供确定性解析、可解释引用与企业级知识库问答能力。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://github.com/favicon.ico",
-      "name": "infiniflow/ragflow",
-      "tags": [
-        "RAG 检索"
-      ],
-      "url": "https://github.com/infiniflow/ragflow",
-      "verified": {
-        "ai_hits": 3,
-        "checked_at": "2026-11-18T10:22:33+08:00",
-        "date": "2026-11-18",
-        "http_status": 200,
-        "stars": 94337
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
       "date": "2026-11-18",
       "description": "为 AI 智能体提供持久化记忆层的开源基础设施，可跨会话记住用户偏好并注入相关上下文。",
-      "group": "每日 AI 新发现",
+      "group": "模型与开源",
       "health": "ok",
       "img": "https://github.com/favicon.ico",
       "name": "mem0ai/mem0",
@@ -3805,76 +4014,11 @@
       }
     },
     {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-18",
-      "description": "把文档或主题自动生成原生 PowerPoint 的开源工具，支持形状、图表、动画与模板套用。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://github.com/favicon.ico",
-      "name": "hugohe3/ppt-master",
-      "tags": [
-        "视频图像",
-        "办公文档"
-      ],
-      "url": "https://github.com/hugohe3/ppt-master",
-      "verified": {
-        "ai_hits": 2,
-        "checked_at": "2026-11-18T10:22:38+08:00",
-        "date": "2026-11-18",
-        "http_status": 200,
-        "stars": 77962
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-18",
-      "description": "科大讯飞开源的企业级自托管智能体技能注册中心，支持技能包发布、版本管理与权限治理。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://github.com/favicon.ico",
-      "name": "iflytek/skillhub",
-      "tags": [
-        "技能生态"
-      ],
-      "url": "https://github.com/iflytek/skillhub",
-      "verified": {
-        "ai_hits": 2,
-        "checked_at": "2026-11-18T10:22:42+08:00",
-        "date": "2026-11-18",
-        "http_status": 200,
-        "stars": 5440
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-18",
-      "description": "面向智能体与生成式 UI 的前端开发框架，支持 React、Angular 与移动端快速集成对话交互。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://github.com/favicon.ico",
-      "name": "CopilotKit/CopilotKit",
-      "tags": [
-        "前端 UI",
-        "代码开发"
-      ],
-      "url": "https://github.com/CopilotKit/CopilotKit",
-      "verified": {
-        "ai_hits": 4,
-        "checked_at": "2026-11-18T10:22:39+08:00",
-        "date": "2026-11-18",
-        "http_status": 200,
-        "stars": 38779
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
       "date": "2026-11-17",
       "description": "字节跳动开源的长程超级智能体框架，集成沙箱、记忆、技能与子智能体，自主完成研究、编码与创作等多步任务。",
-      "group": "每日 AI 新发现",
+      "group": "模型与开源",
       "health": "ok",
       "img": "https://github.com/favicon.ico",
       "name": "bytedance/deer-flow",
@@ -3892,32 +4036,11 @@
       }
     },
     {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-17",
-      "description": "英伟达开源的Python框架，为数据构建语义图谱推理层，实现确定性查询生成与可解释的LLM智能体分析。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://github.com/favicon.ico",
-      "name": "NVIDIA/auto-ontology",
-      "tags": [
-        "推理引擎"
-      ],
-      "url": "https://github.com/NVIDIA/auto-ontology",
-      "verified": {
-        "ai_hits": 3,
-        "checked_at": "2026-11-17T09:16:21+08:00",
-        "date": "2026-11-17",
-        "http_status": 200,
-        "stars": 13318
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
       "date": "2026-11-17",
       "description": "Vercel开源的Rust浏览器自动化CLI，以无障碍树读取页面并让AI智能体逐步操作网页元素，失败即报错。",
-      "group": "每日 AI 新发现",
+      "group": "模型与开源",
       "health": "ok",
       "img": "https://github.com/favicon.ico",
       "name": "vercel-labs/agent-browser",
@@ -3934,53 +4057,11 @@
       }
     },
     {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-17",
-      "description": "通过MCP协议让Claude、ChatGPT等AI助手以自然语言配置和自动化Home Assistant智能家居设备。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://github.com/favicon.ico",
-      "name": "homeassistant-ai/ha-mcp",
-      "tags": [
-        "MCP"
-      ],
-      "url": "https://github.com/homeassistant-ai/ha-mcp",
-      "verified": {
-        "ai_hits": 5,
-        "checked_at": "2026-11-17T09:16:27+08:00",
-        "date": "2026-11-17",
-        "http_status": 200,
-        "stars": 7909
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-17",
-      "description": "开源AI代码审查助手，自动为拉取请求生成评审意见，支持多家大模型与主流代码托管平台。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://github.com/favicon.ico",
-      "name": "The-PR-Agent/pr-agent",
-      "tags": [
-        "代码开发"
-      ],
-      "url": "https://github.com/The-PR-Agent/pr-agent",
-      "verified": {
-        "ai_hits": 5,
-        "checked_at": "2026-11-17T09:16:31+08:00",
-        "date": "2026-11-17",
-        "http_status": 200,
-        "stars": 16300
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
       "date": "2026-11-16",
       "description": "Vercel Labs 开源的命令行工具，通过系统无障碍树让 AI 智能体识别并操作桌面应用，支持无头运行与多平台。",
-      "group": "每日 AI 新发现",
+      "group": "模型与开源",
       "health": "ok",
       "img": "https://github.com/favicon.ico",
       "name": "vercel-labs/agent-desktop",
@@ -3998,32 +4079,11 @@
       }
     },
     {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-16",
-      "description": "HeyGen 开源的 TypeScript 视频渲染框架，把 HTML、CSS 与动画确定性输出为 MP4，供 AI 智能体批量生成视频。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://github.com/favicon.ico",
-      "name": "heygen-com/hyperframes",
-      "tags": [
-        "视频图像"
-      ],
-      "url": "https://github.com/heygen-com/hyperframes",
-      "verified": {
-        "ai_hits": 3,
-        "checked_at": "2026-11-16T09:13:44+08:00",
-        "date": "2026-11-16",
-        "http_status": 200,
-        "stars": 84753
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
       "date": "2026-11-15",
       "description": "可视化拖拽构建 AI 智能体与工作流的开源工具，支持接入主流大模型并部署为 API。",
-      "group": "每日 AI 新发现",
+      "group": "模型与开源",
       "health": "ok",
       "img": "https://github.com/favicon.ico",
       "name": "langflow-ai/langflow",
@@ -4040,112 +4100,12 @@
       }
     },
     {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-15",
-      "description": "基于 AI 大模型自动生成文案、配音与字幕，一键合成高清短视频的开源工作流工具。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://github.com/favicon.ico",
-      "name": "harry0703/MoneyPrinterTurbo",
-      "tags": [
-        "视频图像",
-        "语音"
-      ],
-      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-      "verified": {
-        "ai_hits": 4,
-        "checked_at": "2026-11-15T09:15:43+08:00",
-        "date": "2026-11-15",
-        "http_status": 200,
-        "stars": 143590
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-14",
-      "description": "基于多智能体大语言模型的金融交易框架，模拟分析师、研究员与交易员协作完成选股与投资决策。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://github.com/favicon.ico",
-      "name": "TauricResearch/TradingAgents",
-      "tags": [
-        "多智能体"
-      ],
-      "url": "https://github.com/TauricResearch/TradingAgents",
-      "verified": {
-        "ai_hits": 2,
-        "checked_at": "2026-11-14T15:20:07+08:00",
-        "date": "2026-11-14",
-        "http_status": 200,
-        "stars": 122488
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-14",
-      "description": "GitHub 出品的规范驱动开发（SDD）工具包，用自然语言规范引导 AI 从需求到代码的分阶段实现。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://github.com/favicon.ico",
-      "name": "github/spec-kit",
-      "tags": [
-        "代码开发"
-      ],
-      "url": "https://github.com/github/spec-kit",
-      "verified": {
-        "ai_hits": 2,
-        "checked_at": "2026-11-14T15:20:06+08:00",
-        "date": "2026-11-14",
-        "http_status": 200,
-        "stars": 149730
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-14",
-      "description": "开源个人 AI 助手，可在任意操作系统与平台上代用户执行真实任务，强调数据自持，MIT 协议。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://github.com/favicon.ico",
-      "name": "openclaw/openclaw",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://github.com/openclaw/openclaw",
-      "verified": null
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
-      "date": "2026-11-13",
-      "description": "面向大模型与 AI 智能体的开源网页抓取工具，把网页转成 LLM 就绪的 Markdown，支持自托管。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://github.com/favicon.ico",
-      "name": "unclecode/crawl4ai",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://github.com/unclecode/crawl4ai",
-      "verified": {
-        "ai_hits": 4,
-        "checked_at": "2026-11-13T16:07:28+08:00",
-        "date": "2026-11-13",
-        "http_status": 200,
-        "stars": 87298
-      }
-    },
-    {
-      "category": "dailyAI_oss",
-      "category_name": "开源项目",
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
       "date": "2026-11-13",
       "description": "开源浏览器智能体框架，让大模型在真实浏览器中自动点击、输入并完成任务，兼容任意 LLM。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
+      "group": "模型与开源",
+      "health": "unverified",
       "img": "https://github.com/favicon.ico",
       "name": "browser-use/browser-use",
       "tags": [
@@ -4161,845 +4121,703 @@
       }
     },
     {
-      "category": "dailyAI_tool",
-      "category_name": "工具官网",
-      "date": "2026-11-25",
-      "description": "AI 质量测试智能体，接入编码智能体后在真实浏览器与移动模拟器验证功能并给出可分享证据。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
-      "name": "Testsy",
-      "tags": [
-        "浏览器自动化"
-      ],
-      "url": "https://testsy.dev",
-      "verified": {
-        "ai_hits": 4,
-        "checked_at": "2026-11-25T09:56:01+08:00",
-        "date": "2026-11-25",
-        "http_status": 200,
-        "stars": null
-      }
-    },
-    {
-      "category": "dailyAI_tool",
-      "category_name": "工具官网",
-      "date": "2026-11-25",
-      "description": "面向游戏影视的 AI 3D 资产生成工具，用文本或图片生成带 PBR 贴图的生产级网格模型。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://hydrilla.ai/favicon.ico",
-      "name": "Hydrilla",
-      "tags": [
-        "视频图像"
-      ],
-      "url": "https://hydrilla.ai",
-      "verified": {
-        "ai_hits": 1,
-        "checked_at": "2026-11-25T09:56:44+08:00",
-        "date": "2026-11-25",
-        "http_status": 200,
-        "stars": null
-      }
-    },
-    {
-      "category": "dailyAI_tool",
-      "category_name": "工具官网",
-      "date": "2026-11-24",
-      "description": "无需以机器人身份入会的实时 AI 会议助手，提供多语转写、实时问答、对话辅导与可搜索的会议记忆。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://olva.ai/favicon.ico",
-      "name": "OLVA",
-      "tags": [
-        "记忆"
-      ],
-      "url": "https://olva.ai",
-      "verified": {
-        "ai_hits": 1,
-        "checked_at": "2026-11-24T10:31:44+08:00",
-        "date": "2026-11-24",
-        "http_status": 200,
-        "stars": null
-      }
-    },
-    {
-      "category": "dailyAI_tool",
-      "category_name": "工具官网",
-      "date": "2026-11-24",
-      "description": "AI 对话服务商，提供可自动接听的语音 Agent、网站聊天机器人与会议纪要生成，可电话直接试听。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://fairw.ai/favicon.ico",
-      "name": "Fairwai",
-      "tags": [
-        "语音"
-      ],
-      "url": "https://fairw.ai",
-      "verified": {
-        "ai_hits": 2,
-        "checked_at": "2026-11-24T10:31:47+08:00",
-        "date": "2026-11-24",
-        "http_status": 200,
-        "stars": null
-      }
-    },
-    {
-      "category": "dailyAI_tool",
-      "category_name": "工具官网",
-      "date": "2026-11-23",
-      "description": "面向初创团队的 AI CRM，整合线索、会议纪要、邮件跟进与报表，支持 MCP 与 API 接入。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://softsync.ai/favicon.ico",
-      "name": "SoftSync AI",
-      "tags": [
-        "多智能体",
-        "MCP"
-      ],
-      "url": "https://softsync.ai",
-      "verified": {
-        "ai_hits": 1,
-        "checked_at": "2026-11-23T10:15:09+08:00",
-        "date": "2026-11-23",
-        "http_status": 200,
-        "stars": null
-      }
-    },
-    {
-      "category": "dailyAI_tool",
-      "category_name": "工具官网",
-      "date": "2026-11-23",
-      "description": "提供多模型统一订阅与 OpenAI 兼容 API 的在线 AI 服务，按年计费、不按 token 收费。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://denizenblu.com/favicon.ico",
-      "name": "Denizen Blu One",
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-14",
+      "description": "开源个人 AI 助手，可在任意操作系统与平台上代用户执行真实任务，强调数据自持，MIT 协议。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "openclaw/openclaw",
       "tags": [
         "AI 应用"
       ],
-      "url": "https://denizenblu.com",
-      "verified": {
-        "ai_hits": 2,
-        "checked_at": "2026-11-23T10:15:14+08:00",
-        "date": "2026-11-23",
-        "http_status": 200,
-        "stars": null
-      }
+      "url": "https://github.com/openclaw/openclaw",
+      "verified": null
     },
     {
-      "category": "dailyAI_tool",
-      "category_name": "工具官网",
-      "date": "2026-11-21",
-      "description": "面向小型 Shopify 商家的 AI 商品上架工具，上传产品图即可生成白底图、场景图与 SEO 描述并同步店铺。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
-      "name": "MerchantFloor",
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-24",
+      "description": "Pydantic 官方 AI Agent 开发框架，端到端类型安全，支持实时语音、图像生成、嵌入与多模型接入。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "pydantic/pydantic-ai",
       "tags": [
-        "AI 应用"
-      ],
-      "url": "https://www.merchantfloor.com",
-      "verified": {
-        "ai_hits": 1,
-        "checked_at": "2026-11-21T09:44:58+08:00",
-        "date": "2026-11-21",
-        "http_status": 200,
-        "stars": null
-      }
-    },
-    {
-      "category": "dailyAI_tool",
-      "category_name": "工具官网",
-      "date": "2026-11-21",
-      "description": "聚合 ChatGPT、Claude、Gemini 及图像视频模型的一站式订阅平台，用一个账号访问多款主流 AI 服务。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://glbgpt.com/favicon.ico",
-      "name": "GlobalGPT",
-      "tags": [
-        "视频图像"
-      ],
-      "url": "https://glbgpt.com",
-      "verified": {
-        "ai_hits": 4,
-        "checked_at": "2026-11-21T09:45:15+08:00",
-        "date": "2026-11-21",
-        "http_status": 200,
-        "stars": null
-      }
-    },
-    {
-      "category": "dailyAI_tool",
-      "category_name": "工具官网",
-      "date": "2026-11-20",
-      "description": "月之暗面 Kimi 大模型开放平台，提供长上下文、多模态与工具调用的 API，供开发者构建智能对话、代码生成与视觉推理应用。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://platform.kimi.com/favicon.ico",
-      "name": "Kimi API 开放平台",
-      "tags": [
+        "安全审计",
         "视频图像",
+        "代码开发"
+      ],
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-24T10:29:17+08:00",
+        "date": "2026-11-24",
+        "http_status": 0,
+        "stars": 21357
+      }
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-24",
+      "description": "用 Rust 构建模块化、可扩展 LLM 应用的框架，主打高性能与低延迟的 AI 应用开发。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "0xPlaygrounds/rig",
+      "tags": [
         "推理引擎",
         "代码开发"
       ],
-      "url": "https://platform.kimi.com",
+      "url": "https://github.com/0xPlaygrounds/rig",
       "verified": {
-        "ai_hits": 3,
-        "checked_at": "2026-11-20T11:11:25+08:00",
-        "date": "2026-11-20",
-        "http_status": 200,
-        "stars": null
+        "ai_hits": 4,
+        "checked_at": "2026-11-24T10:29:32+08:00",
+        "date": "2026-11-24",
+        "http_status": 0,
+        "stars": 9241
       }
     },
     {
-      "category": "dailyAI_tool",
-      "category_name": "工具官网",
-      "date": "2026-11-20",
-      "description": "Planet 官方卫星影像 AI 探索器，用自然语言在地图上检索分析十年高分辨率影像，支持时序对比与深度研究智能体。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://ai.planet.com/favicon.ico",
-      "name": "Planet AI",
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-18",
+      "description": "科大讯飞开源的企业级自托管智能体技能注册中心，支持技能包发布、版本管理与权限治理。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "iflytek/skillhub",
+      "tags": [
+        "技能生态"
+      ],
+      "url": "https://github.com/iflytek/skillhub",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-18T10:22:42+08:00",
+        "date": "2026-11-18",
+        "http_status": 200,
+        "stars": 5440
+      }
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-18",
+      "description": "面向智能体与生成式 UI 的前端开发框架，支持 React、Angular 与移动端快速集成对话交互。",
+      "group": "模型与开源",
+      "health": "ok",
+      "img": "https://github.com/favicon.ico",
+      "name": "CopilotKit/CopilotKit",
+      "tags": [
+        "前端 UI",
+        "代码开发"
+      ],
+      "url": "https://github.com/CopilotKit/CopilotKit",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-18T10:22:39+08:00",
+        "date": "2026-11-18",
+        "http_status": 200,
+        "stars": 38779
+      }
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": null,
+      "description": "构建大模型应用的开源框架，提供链、工具与智能体抽象。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "langchain-ai/langchain",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://github.com/langchain-ai/langchain",
+      "verified": null
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": null,
+      "description": "可自托管的工作流自动化工具，支持 AI 与数百种集成。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "n8n-io/n8n",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://github.com/n8n-io/n8n",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-13T16:07:31+08:00",
+        "date": "2026-11-13",
+        "http_status": 200,
+        "stars": 210354
+      }
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": null,
+      "description": "开源 LLM 应用开发平台，含编排、知识库与运营能力。",
+      "group": "模型与开源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "langgenius/dify",
+      "tags": [
+        "RAG 检索",
+        "多智能体",
+        "代码开发"
+      ],
+      "url": "https://github.com/langgenius/dify",
+      "verified": null
+    },
+    {
+      "category": "studyGPT",
+      "category_name": "提示词与教程",
+      "date": null,
+      "description": "词图PromptTool - AI绘画资料管理网站",
+      "group": "学习与资源",
+      "health": "unverified",
+      "img": "https://www.prompttool.com/prompttool.ico",
+      "name": "词图PromptTool - AI绘画资料管理网站",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://www.prompttool.com/NovelAI",
+      "verified": null
+    },
+    {
+      "category": "studyGPT",
+      "category_name": "提示词与教程",
+      "date": null,
+      "description": "系统化提示词工程教程，覆盖技巧、模型与应用场景。",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
+      "name": "Prompt Engineering Guide",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://www.promptingguide.ai",
+      "verified": null
+    },
+    {
+      "category": "studyGPT",
+      "category_name": "提示词与教程",
+      "date": null,
+      "description": "吴恩达团队的 AI 课程平台，提供短课与实战项目。",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://www.deeplearning.ai/favicon.ico",
+      "name": "DeepLearning.AI",
+      "tags": [
+        "教育课堂",
+        "多智能体"
+      ],
+      "url": "https://www.deeplearning.ai",
+      "verified": null
+    },
+    {
+      "category": "studyGPT",
+      "category_name": "提示词与教程",
+      "date": null,
+      "description": "开放预印本平台，AI 领域最新论文的主要发布地。",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://arxiv.org/favicon.ico",
+      "name": "arXiv",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://arxiv.org",
+      "verified": null
+    },
+    {
+      "category": "studyGPT",
+      "category_name": "提示词与教程",
+      "date": null,
+      "description": "LangChain Python 版官方文档与开发教程。",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://python.langchain.com/favicon.ico",
+      "name": "LangChain 文档",
+      "tags": [
+        "办公文档",
+        "代码开发"
+      ],
+      "url": "https://python.langchain.com",
+      "verified": null
+    },
+    {
+      "category": "studyGPT",
+      "category_name": "提示词与教程",
+      "date": null,
+      "description": "Kaggle 免费实战微课程，覆盖 Python、机器学习与 LLM。",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
+      "name": "Kaggle Learn",
+      "tags": [
+        "教育课堂"
+      ],
+      "url": "https://www.kaggle.com/learn",
+      "verified": null
+    },
+    {
+      "category": "studyGPT",
+      "category_name": "提示词与教程",
+      "date": null,
+      "description": "开源提示词工程课程，从入门到进阶并提供多语言版本。",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://learnprompting.org/favicon.ico",
+      "name": "Learn Prompting",
+      "tags": [
+        "教育课堂"
+      ],
+      "url": "https://learnprompting.org",
+      "verified": null
+    },
+    {
+      "category": "studyGPT",
+      "category_name": "提示词与教程",
+      "date": null,
+      "description": "Claude API 官方文档与提示词工程指南。",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://docs.anthropic.com/favicon.ico",
+      "name": "Anthropic 文档",
+      "tags": [
+        "办公文档"
+      ],
+      "url": "https://docs.anthropic.com",
+      "verified": null
+    },
+    {
+      "category": "studyGPT",
+      "category_name": "提示词与教程",
+      "date": null,
+      "description": "OpenAI API 官方文档，包含模型、接口与最佳实践说明。",
+      "group": "学习与资源",
+      "health": "unverified",
+      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
+      "name": "OpenAI 文档",
+      "tags": [
+        "办公文档"
+      ],
+      "url": "https://platform.openai.com/docs",
+      "verified": null
+    },
+    {
+      "category": "studyGPT",
+      "category_name": "提示词与教程",
+      "date": null,
+      "description": "ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话。",
+      "group": "学习与资源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "PlexPt/awesome-chatgpt-prompts-zh",
+      "tags": [
+        "教育课堂"
+      ],
+      "url": "https://github.com/PlexPt/awesome-chatgpt-prompts-zh",
+      "verified": null
+    },
+    {
+      "category": "studyGPT",
+      "category_name": "提示词与教程",
+      "date": null,
+      "description": "ChatGPT 中文调教指南",
+      "group": "学习与资源",
+      "health": "unverified",
+      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
+      "name": "ChatGPT 中文调教指南",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://chatguide.plexpt.com/",
+      "verified": null
+    },
+    {
+      "category": "studyGPT",
+      "category_name": "提示词与教程",
+      "date": null,
+      "description": "元素法典——Novel AI 元素魔法全收录",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://docs.gtimg.com/docs-design-resources/mobile/png@3x/file_doc_64@3x-58ec57f56b.png",
+      "name": "元素法典——Novel AI 元素魔法全收录",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://docs.qq.com/doc/DWHl3am5Zb05QbGVs",
+      "verified": null
+    },
+    {
+      "category": "studyGPT",
+      "category_name": "提示词与教程",
+      "date": null,
+      "description": "指南针- Midjourney 学习导航",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://learningprompt.wiki/img/favicon.ico",
+      "name": "指南针- Midjourney 学习导航",
+      "tags": [
+        "教育课堂"
+      ],
+      "url": "https://learningprompt.wiki/docs/midjourney-learning-path",
+      "verified": null
+    },
+    {
+      "category": "studyGPT",
+      "category_name": "提示词与教程",
+      "date": null,
+      "description": "AutoGPT 4.11",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://three-recorder-52a.notion.site/images/logo-ios.png",
+      "name": "AutoGPT 4.11",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://three-recorder-52a.notion.site/AutoGPT-4-11-7b4bc7a71f8d4d4b940abc9b3232954a",
+      "verified": null
+    },
+    {
+      "category": "studyGPT",
+      "category_name": "提示词与教程",
+      "date": null,
+      "description": "Hello from Learning Prompt",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://learningprompt.wiki/img/favicon.ico",
+      "name": "Hello from Learning Prompt",
+      "tags": [
+        "教育课堂"
+      ],
+      "url": "https://learningprompt.wiki/",
+      "verified": null
+    },
+    {
+      "category": "studyGPT",
+      "category_name": "提示词与教程",
+      "date": null,
+      "description": "主要内容为指导开发者如何构建 Prompt 并基于 OpenAI API 构建新的、基于 LLM 的应用",
+      "group": "学习与资源",
+      "health": "unverified",
+      "img": "https://github.com/favicon.ico",
+      "name": "ChatGPT Prompt Engineering for Developers 中文版",
+      "tags": [
+        "代码开发"
+      ],
+      "url": "https://github.com/datawhalechina/prompt-engineering-for-developers",
+      "verified": null
+    },
+    {
+      "category": "techBlog",
+      "category_name": "技术博客",
+      "date": null,
+      "description": "人工智能(GPT)",
+      "group": "学习与资源",
+      "health": "unverified",
+      "img": "https://zhuanlan.zhihu.com/favicon.ico",
+      "name": "llama-index(gpt-index):后chatgpt时代的对话式文档问答解决方案",
+      "tags": [
+        "办公文档"
+      ],
+      "url": "https://zhuanlan.zhihu.com/p/613155165",
+      "verified": null
+    },
+    {
+      "category": "techBlog",
+      "category_name": "技术博客",
+      "date": null,
+      "description": "Lilian Weng 的深度技术博客，系统梳理大模型与智能体主题。",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
+      "name": "Lil'Log",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://lilianweng.github.io",
+      "verified": null
+    },
+    {
+      "category": "techBlog",
+      "category_name": "技术博客",
+      "date": null,
+      "description": "Anthropic 研究博客，发布对齐、可解释性与模型评估文章。",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://www.anthropic.com/favicon.ico",
+      "name": "Anthropic Research",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://www.anthropic.com/research",
+      "verified": null
+    },
+    {
+      "category": "techBlog",
+      "category_name": "技术博客",
+      "date": null,
+      "description": "用图解方式讲清 Transformer、BERT 等模型原理的技术博客。",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
+      "name": "The Illustrated Transformer",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://jalammar.github.io",
+      "verified": null
+    },
+    {
+      "category": "techBlog",
+      "category_name": "技术博客",
+      "date": null,
+      "description": "DeepLearning.AI 的 AI 行业周刊，追踪研究与产品动态。",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://www.deeplearning.ai/favicon.ico",
+      "name": "The Batch",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://www.deeplearning.ai/the-batch/",
+      "verified": null
+    },
+    {
+      "category": "techBlog",
+      "category_name": "技术博客",
+      "date": null,
+      "description": "OpenAI 官方动态与研究发布页面。",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
+      "name": "OpenAI News",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://openai.com/news/",
+      "verified": null
+    },
+    {
+      "category": "techBlog",
+      "category_name": "技术博客",
+      "date": null,
+      "description": "ShinChven's Blog",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://atlassc.net/favicon.ico",
+      "name": "ShinChven's Blog",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://atlassc.net/",
+      "verified": null
+    },
+    {
+      "category": "techBlog",
+      "category_name": "技术博客",
+      "date": null,
+      "description": "Stable Diffusion Prompt Note",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://atlassc.net/favicon.ico",
+      "name": "Stable Diffusion Prompt Note",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://atlassc.net/2023/03/24/stable-diffusion-prompt",
+      "verified": null
+    },
+    {
+      "category": "techBlog",
+      "category_name": "技术博客",
+      "date": null,
+      "description": "【笔记】跟吴恩达和IsaFulford学提示词工程（初级开发者入门课程）",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://cdn.hashnode.com/res/hashnode/image/upload/v1611242155728/W3_BYVVVh.png",
+      "name": "跟吴恩达和IsaFulford学提示词工程（初级开发者入门课程）",
+      "tags": [
+        "教育课堂",
+        "代码开发"
+      ],
+      "url": "https://volnet.hashnode.dev/gpt-prompt-dev-deeplearningai",
+      "verified": null
+    },
+    {
+      "category": "aiNav",
+      "category_name": "AI 导航站",
+      "date": null,
+      "description": "中文 AI 资讯与 AI 工具库，提供产品收录与榜单。",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://www.aibase.com/favicon.ico",
+      "name": "AIbase",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://www.aibase.com",
+      "verified": null
+    },
+    {
+      "category": "aiNav",
+      "category_name": "AI 导航站",
+      "date": null,
+      "description": "中文 AI 工具与资源导航，覆盖办公、设计与开发场景。",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://www.aihub.cn/favicon.ico",
+      "name": "AIHub",
+      "tags": [
+        "办公文档",
+        "代码开发"
+      ],
+      "url": "https://www.aihub.cn",
+      "verified": null
+    },
+    {
+      "category": "aiNav",
+      "category_name": "AI 导航站",
+      "date": null,
+      "description": "curated AI 工具目录，标注免费与付费并附简介。",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://www.futuretools.io/favicon.ico",
+      "name": "Future Tools",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://www.futuretools.io",
+      "verified": null
+    },
+    {
+      "category": "aiNav",
+      "category_name": "AI 导航站",
+      "date": null,
+      "description": "按类别与任务筛选 AI 工具的导航目录。",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
+      "name": "TopAI.tools",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://topai.tools",
+      "verified": null
+    },
+    {
+      "category": "aiNav",
+      "category_name": "AI 导航站",
+      "date": null,
+      "description": "AI 工具目录与教程站，按用途分类并提供评测信息。",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://www.futurepedia.io/favicon.ico",
+      "name": "Futurepedia",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://www.futurepedia.io",
+      "verified": null
+    },
+    {
+      "category": "aiNav",
+      "category_name": "AI 导航站",
+      "date": null,
+      "description": "按任务检索 AI 工具的导航站，收录量庞大并持续更新。",
+      "group": "学习与资源",
+      "health": "unverified",
+      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
+      "name": "There's An AI For That",
       "tags": [
         "RAG 检索"
       ],
-      "url": "https://ai.planet.com",
-      "verified": {
-        "ai_hits": 2,
-        "checked_at": "2026-11-20T10:59:09+08:00",
-        "date": "2026-11-20",
-        "http_status": 200,
-        "stars": null
-      }
-    },
-    {
-      "category": "dailyAI_tool",
-      "category_name": "工具官网",
-      "date": "2026-11-20",
-      "description": "面向小企业的 AI 代理平台，一句话即可建站、撰写内容、发邮件与客服支持，每项任务留痕并设月度支出上限。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://app.vricko.app/favicon.ico",
-      "name": "Vricko",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://app.vricko.app",
-      "verified": {
-        "ai_hits": 1,
-        "checked_at": "2026-11-20T10:59:35+08:00",
-        "date": "2026-11-20",
-        "http_status": 200,
-        "stars": null
-      }
-    },
-    {
-      "category": "dailyAI_tool",
-      "category_name": "工具官网",
-      "date": "2026-11-20",
-      "description": "对话式 AI 应用构建平台，用自然语言生成带数据、认证与托管的生产级业务应用，并支持 MCP 连接外部编码智能体。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://turbofy.com/favicon.ico",
-      "name": "Turbofy",
-      "tags": [
-        "MCP"
-      ],
-      "url": "https://turbofy.com",
-      "verified": {
-        "ai_hits": 1,
-        "checked_at": "2026-11-20T10:59:13+08:00",
-        "date": "2026-11-20",
-        "http_status": 200,
-        "stars": null
-      }
-    },
-    {
-      "category": "dailyAI_tool",
-      "category_name": "工具官网",
-      "date": "2026-11-18",
-      "description": "开源本地 AI 选型工具，检测电脑内存与显卡后自动挑选可运行的大模型、图像、视频或语音模型并下载运行。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
-      "name": "RigSpark",
-      "tags": [
-        "视频图像",
-        "本地运行",
-        "语音"
-      ],
-      "url": "https://rigspark.si",
-      "verified": {
-        "ai_hits": 1,
-        "checked_at": "2026-11-18T10:32:11+08:00",
-        "date": "2026-11-18",
-        "http_status": 200,
-        "stars": null
-      }
-    },
-    {
-      "category": "dailyAI_tool",
-      "category_name": "工具官网",
-      "date": "2026-11-18",
-      "description": "对话式 AI 创意平台，用智能体把需求拆成分镜与配音并在画布生成图像视频，支持多模型聚合与桌面版。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://youart.ai/favicon.ico",
-      "name": "YouArt",
-      "tags": [
-        "视频图像",
-        "本地运行",
-        "语音"
-      ],
-      "url": "https://youart.ai",
-      "verified": {
-        "ai_hits": 1,
-        "checked_at": "2026-11-18T10:32:21+08:00",
-        "date": "2026-11-18",
-        "http_status": 200,
-        "stars": null
-      }
-    },
-    {
-      "category": "dailyAI_tool",
-      "category_name": "工具官网",
-      "date": "2026-11-18",
-      "description": "跨平台本地 AI 工作台，用模型加技能加插件组合让智能体完成开发、创作与自动化任务，数据存于本机。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://www.yuncehub.com/favicon.ico",
-      "name": "云策 Omni",
-      "tags": [
-        "技能生态",
-        "代码开发",
-        "本地运行"
-      ],
-      "url": "https://www.yuncehub.com",
-      "verified": {
-        "ai_hits": 3,
-        "checked_at": "2026-11-18T10:32:22+08:00",
-        "date": "2026-11-18",
-        "http_status": 200,
-        "stars": null
-      }
-    },
-    {
-      "category": "dailyAI_tool",
-      "category_name": "工具官网",
-      "date": "2026-11-17",
-      "description": "面向AI智能体的视频制作后端，通过MCP或API拆解热门短视频并生成带口播的广告MP4，渲染前先报价。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://clipwright.io/favicon.ico",
-      "name": "Clipwright",
-      "tags": [
-        "视频图像"
-      ],
-      "url": "https://clipwright.io",
+      "url": "https://theresanaiforthat.com",
       "verified": null
     },
     {
-      "category": "dailyAI_tool",
-      "category_name": "工具官网",
-      "date": "2026-11-16",
-      "description": "开源 AI 智能体记忆平台，用知识图谱与向量检索为大模型应用构建跨会话持久记忆，支持自托管与云服务。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://www.cognee.ai/favicon.ico",
-      "name": "Cognee",
-      "tags": [
-        "RAG 检索",
-        "记忆"
-      ],
-      "url": "https://www.cognee.ai",
-      "verified": {
-        "ai_hits": 3,
-        "checked_at": "2026-11-16T09:13:40+08:00",
-        "date": "2026-11-16",
-        "http_status": 200,
-        "stars": null
-      }
-    },
-    {
-      "category": "dailyAI_tool",
-      "category_name": "工具官网",
-      "date": "2026-11-15",
-      "description": "本地 AI 模型网关，统一接入 DeepSeek、Claude、Kimi 等模型订阅，供各类编码智能体按需切换。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://usemagpie.ai/favicon.ico",
-      "name": "magpie",
-      "tags": [
-        "本地运行"
-      ],
-      "url": "https://usemagpie.ai",
-      "verified": {
-        "ai_hits": 3,
-        "checked_at": "2026-11-15T09:15:50+08:00",
-        "date": "2026-11-15",
-        "http_status": 200,
-        "stars": null
-      }
-    },
-    {
-      "category": "dailyAI_tool",
-      "category_name": "工具官网",
-      "date": "2026-11-14",
-      "description": "在 Mac 本地运行小模型的 AI 应用，可搭建多个 AI 专家（Persona）协作处理私有文档，数据不上云、不计 token 费。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://www.webai.com/favicon.ico",
-      "name": "webAI",
-      "tags": [
-        "办公文档",
-        "本地运行"
-      ],
-      "url": "https://www.webai.com",
-      "verified": {
-        "ai_hits": 1,
-        "checked_at": "2026-11-14T15:20:15+08:00",
-        "date": "2026-11-14",
-        "http_status": 200,
-        "stars": null
-      }
-    },
-    {
-      "category": "dailyAI_tool",
-      "category_name": "工具官网",
-      "date": "2026-11-14",
-      "description": "在线 AI 视频与动画创作平台，支持用文字、图片或视频素材完成生成、风格化与画质提升。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://domoai.app/favicon.ico",
-      "name": "DomoAI",
-      "tags": [
-        "视频图像"
-      ],
-      "url": "https://domoai.app",
-      "verified": null
-    },
-    {
-      "category": "dailyAI_tool",
-      "category_name": "工具官网",
-      "date": "2026-11-13",
-      "description": "在本地或云端运行开源大模型的工具，支持 macOS、Windows、Linux，一条命令即可启动模型。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
-      "name": "Ollama",
-      "tags": [
-        "本地运行"
-      ],
-      "url": "https://ollama.com",
-      "verified": {
-        "ai_hits": 2,
-        "checked_at": "2026-11-13T16:07:35+08:00",
-        "date": "2026-11-13",
-        "http_status": 200,
-        "stars": null
-      }
-    },
-    {
-      "category": "dailyAI_model",
-      "category_name": "模型框架",
-      "date": "2026-11-25",
-      "description": "Karpathy 开源的从零实现 ChatGPT 全流程教学框架，约百美元成本即可完成预训练与推理。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "karpathy/nanochat",
-      "tags": [
-        "教育课堂",
-        "推理引擎",
-        "训练微调"
-      ],
-      "url": "https://github.com/karpathy/nanochat",
-      "verified": {
-        "ai_hits": 2,
-        "checked_at": "2026-11-25T09:55:57+08:00",
-        "date": "2026-11-25",
-        "http_status": 200,
-        "stars": 60839
-      }
-    },
-    {
-      "category": "dailyAI_model",
-      "category_name": "模型框架",
-      "date": "2026-11-24",
-      "description": "纯 C 编写的分层 MoE 推理引擎，热专家驻留 GPU、冷专家从 NVMe 流式加载，让超大模型跑在普通硬件上。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "JustVugg/colibri",
-      "tags": [
-        "推理引擎"
-      ],
-      "url": "https://github.com/JustVugg/colibri",
-      "verified": {
-        "ai_hits": 1,
-        "checked_at": "2026-11-24T10:31:13+08:00",
-        "date": "2026-11-24",
-        "http_status": 0,
-        "stars": 53168
-      }
-    },
-    {
-      "category": "dailyAI_model",
-      "category_name": "模型框架",
-      "date": "2026-11-24",
-      "description": "本地运行与训练大语言模型及扩散模型的框架，支持 GGUF、MLX 与 Qwen、DeepSeek、FLUX 等模型微调。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "unslothai/unsloth",
-      "tags": [
-        "训练微调",
-        "本地运行"
-      ],
-      "url": "https://github.com/unslothai/unsloth",
-      "verified": {
-        "ai_hits": 8,
-        "checked_at": "2026-11-24T10:31:42+08:00",
-        "date": "2026-11-24",
-        "http_status": 0,
-        "stars": 80102
-      }
-    },
-    {
-      "category": "dailyAI_model",
-      "category_name": "模型框架",
-      "date": "2026-11-22",
-      "description": "微软开源的前沿语音 AI 模型，面向高质量语音生成与实时语音交互场景。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "microsoft/VibeVoice",
-      "tags": [
-        "语音"
-      ],
-      "url": "https://github.com/microsoft/VibeVoice",
-      "verified": {
-        "ai_hits": 1,
-        "checked_at": "2026-11-22T09:55:36+08:00",
-        "date": "2026-11-22",
-        "http_status": 0,
-        "stars": 57472
-      }
-    },
-    {
-      "category": "dailyAI_model",
-      "category_name": "模型框架",
-      "date": "2026-11-22",
-      "description": "面向下一代 Transformer 与大模型的开源框架，提供算力对齐基准与架构自主研究能力。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "Interactive-Active-AI/NextTransformer",
-      "tags": [
-        "AI 应用"
-      ],
-      "url": "https://github.com/Interactive-Active-AI/NextTransformer",
-      "verified": {
-        "ai_hits": 3,
-        "checked_at": "2026-11-22T09:54:24+08:00",
-        "date": "2026-11-22",
-        "http_status": 0,
-        "stars": 489
-      }
-    },
-    {
-      "category": "dailyAI_model",
-      "category_name": "模型框架",
-      "date": "2026-11-22",
-      "description": "LLM 推理优化代理，通过多种提示与缓存策略降低大模型调用成本并提升响应效率。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "algorithmicsuperintelligence/optillm",
-      "tags": [
-        "推理引擎"
-      ],
-      "url": "https://github.com/algorithmicsuperintelligence/optillm",
-      "verified": {
-        "ai_hits": 4,
-        "checked_at": "2026-11-22T09:56:20+08:00",
-        "date": "2026-11-22",
-        "http_status": 0,
-        "stars": 4344
-      }
-    },
-    {
-      "category": "dailyAI_model",
-      "category_name": "模型框架",
-      "date": "2026-11-21",
-      "description": "面向消费级设备的轻量端侧推理库，体积不足 50MB，本地运行智能体、语音与视觉任务，无需云端。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "cactus-compute/cactus",
-      "tags": [
-        "推理引擎",
-        "本地运行",
-        "语音"
-      ],
-      "url": "https://github.com/cactus-compute/cactus",
-      "verified": {
-        "ai_hits": 3,
-        "checked_at": "2026-11-21T09:44:53+08:00",
-        "date": "2026-11-21",
-        "http_status": 200,
-        "stars": 14858
-      }
-    },
-    {
-      "category": "dailyAI_model",
-      "category_name": "模型框架",
-      "date": "2026-11-21",
-      "description": "低延迟多语言全双工语音对话模型，可边听边说，以 133 毫秒分块连续生成口语回应。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "higurashi-ai/Haru",
-      "tags": [
-        "推理引擎",
-        "语音"
-      ],
-      "url": "https://github.com/higurashi-ai/Haru",
-      "verified": {
-        "ai_hits": 1,
-        "checked_at": "2026-11-21T09:44:55+08:00",
-        "date": "2026-11-21",
-        "http_status": 200,
-        "stars": 704
-      }
-    },
-    {
-      "category": "dailyAI_model",
-      "category_name": "模型框架",
-      "date": "2026-11-21",
-      "description": "华为开源的模型无关量化工具，面向 GGUF 与本地推理，可量化并运行文本、图像、视频与音频模型。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "huawei-csl/MACaQ",
-      "tags": [
-        "视频图像",
-        "推理引擎",
-        "本地运行"
-      ],
-      "url": "https://github.com/huawei-csl/MACaQ",
-      "verified": {
-        "ai_hits": 3,
-        "checked_at": "2026-11-21T09:44:54+08:00",
-        "date": "2026-11-21",
-        "http_status": 200,
-        "stars": 383
-      }
-    },
-    {
-      "category": "dailyAI_model",
-      "category_name": "模型框架",
-      "date": "2026-11-20",
-      "description": "开源本地大模型推理引擎，通过 GPU、内存与固态盘三级分层调度权重，让数百 B 模型跑在消费级硬件，兼容 OpenAI/Anthropic API。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "mw00/project-maya",
-      "tags": [
-        "推理引擎",
-        "本地运行"
-      ],
-      "url": "https://github.com/mw00/project-maya",
-      "verified": {
-        "ai_hits": 4,
-        "checked_at": "2026-11-20T11:08:45+08:00",
-        "date": "2026-11-20",
-        "http_status": 0,
-        "stars": 3077
-      }
-    },
-    {
-      "category": "dailyAI_model",
-      "category_name": "模型框架",
-      "date": "2026-11-20",
-      "description": "端侧基础模型与流式 MoE 推理框架，通过 SSD 流式权重与专家路由，让 145B 模型跑在笔记本、35B 跑在手机上。",
-      "group": "每日 AI 新发现",
-      "health": null,
-      "img": "https://github.com/favicon.ico",
-      "name": "Edge0-AI/Edge0",
-      "tags": [
-        "推理引擎",
-        "本地运行"
-      ],
-      "url": "https://github.com/Edge0-AI/Edge0",
-      "verified": {
-        "ai_hits": 1,
-        "checked_at": "2026-11-20T10:58:38+08:00",
-        "date": "2026-11-20",
-        "http_status": 0,
-        "stars": 12099
-      }
-    },
-    {
-      "category": "dailyAI_model",
-      "category_name": "模型框架",
-      "date": "2026-11-19",
-      "description": "面向苹果芯片的大模型推理服务器，支持连续批处理与 SSD 分层缓存，可从菜单栏管理。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://github.com/favicon.ico",
-      "name": "jundot/omlx",
-      "tags": [
-        "推理引擎"
-      ],
-      "url": "https://github.com/jundot/omlx",
-      "verified": {
-        "ai_hits": 3,
-        "checked_at": "2026-11-19T09:17:15+08:00",
-        "date": "2026-11-19",
-        "http_status": 0,
-        "stars": 23739
-      }
-    },
-    {
-      "category": "dailyAI_model",
-      "category_name": "模型框架",
-      "date": "2026-11-19",
-      "description": "基于 MLX 的苹果芯片推理服务器，兼容 OpenAI 与 Anthropic 接口，专注编码智能体工具调用。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://github.com/favicon.ico",
-      "name": "raullenchai/Rapid-MLX",
-      "tags": [
-        "推理引擎"
-      ],
-      "url": "https://github.com/raullenchai/Rapid-MLX",
-      "verified": {
-        "ai_hits": 7,
-        "checked_at": "2026-11-19T09:17:29+08:00",
-        "date": "2026-11-19",
-        "http_status": 0,
-        "stars": 4165
-      }
-    },
-    {
-      "category": "dailyAI_model",
-      "category_name": "模型框架",
-      "date": "2026-11-18",
-      "description": "面向系统工程师的 Apple Silicon LLM 推理教学项目，用 Python 从零搭建迷你 vLLM 并运行 Qwen 模型。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://github.com/favicon.ico",
-      "name": "skyzh/tiny-llm",
-      "tags": [
-        "教育课堂",
-        "推理引擎",
-        "训练微调"
-      ],
-      "url": "https://github.com/skyzh/tiny-llm",
-      "verified": {
-        "ai_hits": 2,
-        "checked_at": "2026-11-18T10:22:35+08:00",
-        "date": "2026-11-18",
-        "http_status": 200,
-        "stars": 5752
-      }
-    },
-    {
-      "category": "dailyAI_model",
-      "category_name": "模型框架",
-      "date": "2026-11-18",
-      "description": "仅需 2 小时即可从零训练 6400 万参数小语言模型的开源项目，适合快速上手大模型训练全流程。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://github.com/favicon.ico",
-      "name": "jingyaogong/minimind",
-      "tags": [
-        "训练微调"
-      ],
-      "url": "https://github.com/jingyaogong/minimind",
-      "verified": {
-        "ai_hits": 1,
-        "checked_at": "2026-11-18T10:22:36+08:00",
-        "date": "2026-11-18",
-        "http_status": 200,
-        "stars": 66051
-      }
-    },
-    {
-      "category": "dailyAI_model",
-      "category_name": "模型框架",
-      "date": "2026-11-18",
-      "description": "把数据中心级模型服务带到桌面的开源引擎，可在个人电脑上本地运行超大规模语言模型。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://github.com/favicon.ico",
-      "name": "flashml-org/FreeToken",
-      "tags": [
-        "推理引擎",
-        "本地运行"
-      ],
-      "url": "https://github.com/flashml-org/FreeToken",
-      "verified": {
-        "ai_hits": 2,
-        "checked_at": "2026-11-18T10:22:37+08:00",
-        "date": "2026-11-18",
-        "http_status": 200,
-        "stars": 17275
-      }
-    },
-    {
-      "category": "dailyAI_model",
-      "category_name": "模型框架",
-      "date": "2026-11-17",
-      "description": "用纯C99实现的推理引擎，可在单核CPU、8GB内存中运行2.78万亿参数的Kimi K3大模型，零依赖。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://github.com/favicon.ico",
-      "name": "FareedKhan-dev/kimi-k3-in-c",
-      "tags": [
-        "推理引擎"
-      ],
-      "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
-      "verified": {
-        "ai_hits": 2,
-        "checked_at": "2026-11-17T09:16:30+08:00",
-        "date": "2026-11-17",
-        "http_status": 200,
-        "stars": 12209
-      }
-    },
-    {
-      "category": "dailyAI_model",
-      "category_name": "模型框架",
-      "date": "2026-11-14",
-      "description": "英伟达开源的生成式 3D 世界模型项目，可从输入图像生成可探索的三维场景，开放代码与预训练权重。",
-      "group": "每日 AI 新发现",
-      "health": "ok",
-      "img": "https://github.com/favicon.ico",
-      "name": "nv-tlabs/lyra",
-      "tags": [
-        "视频图像",
-        "训练微调",
-        "代码开发"
-      ],
-      "url": "https://github.com/nv-tlabs/Lyra",
-      "verified": null
-    },
-    {
-      "category": "hotTools",
-      "category_name": "常用工具",
+      "category": "aiNav",
+      "category_name": "AI 导航站",
       "date": null,
-      "description": "ChatGPT是一个基于OpenAI的GPT-3 API构建的聊天机器人框架。",
-      "group": "站点与常用",
-      "health": null,
+      "description": "AI 工具排行榜与分类目录，含流量与热度数据。",
+      "group": "学习与资源",
+      "health": "unverified",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
-      "name": "ChatGPT - 用GPT实现聊天机器人",
+      "name": "Toolify",
       "tags": [
         "AI 应用"
       ],
-      "url": "https://www.lowff.net",
+      "url": "https://www.toolify.ai",
+      "verified": null
+    },
+    {
+      "category": "aiNav",
+      "category_name": "AI 导航站",
+      "date": null,
+      "description": "500+ AI工具导航大全,国内外AI工具集合网站",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://ai-bot.cn/favicon.ico",
+      "name": "AI工具集导航",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://ai-bot.cn/",
+      "verified": null
+    },
+    {
+      "category": "aiNav",
+      "category_name": "AI 导航站",
+      "date": null,
+      "description": "神器集",
+      "group": "学习与资源",
+      "health": "unverified",
+      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
+      "name": "发现最酷的互联网产品工具和智能神器!",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://hao.logosc.cn/",
+      "verified": null
+    },
+    {
+      "category": "aiNav",
+      "category_name": "AI 导航站",
+      "date": null,
+      "description": "AIGC工具导航.探索全球1240+AI工具，里面有包含国内的一些免费的chatgpt工具",
+      "group": "学习与资源",
+      "health": "unverified",
+      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
+      "name": "无聊Ai工具导航 | —发现全球优质AIGC工具",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://www.wuliaoai.com/",
+      "verified": null
+    },
+    {
+      "category": "likeGPT",
+      "category_name": "社区与问卷",
+      "date": null,
+      "description": "填写你最喜欢使用的AI地址",
+      "group": "学习与资源",
+      "health": "ok",
+      "img": "https://sf3-scmcdn2-cn.feishucdn.com/ccm/pc/web/resource/bear/src/common/assets/favicons/icon_file_bitable_nor-32x32.0e0cacddafbc7fd2d308.png",
+      "name": "填写你最喜欢使用的AI地址",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://fmhitm4i2c.feishu.cn/share/base/form/shrcnVmzXGaoLJWDf84a8fstb7c",
       "verified": null
     },
     {
@@ -5008,7 +4826,7 @@
       "date": null,
       "description": "该项目是基于Spring生态系统构建的API网关，包括Spring 6、Spring Boot 3和Project Reactor",
       "group": "站点与常用",
-      "health": null,
+      "health": "unverified",
       "img": "https://app.gitbook.com/public/images/icon-512.png",
       "name": "Spring-cloud-gateway 中文文档",
       "tags": [
@@ -5024,7 +4842,7 @@
       "date": null,
       "description": "xmind转化xls工具",
       "group": "站点与常用",
-      "health": null,
+      "health": "unverified",
       "img": "https://cybermap.halo26812.eu.org/favicon.ico",
       "name": "xmind转化xls工具",
       "tags": [
@@ -5039,7 +4857,7 @@
       "date": null,
       "description": "寻找方向",
       "group": "站点与常用",
-      "health": null,
+      "health": "unverified",
       "img": "/images/cyberblog.png",
       "name": "彷徨的蜗牛的博客",
       "tags": [

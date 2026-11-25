@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T09:57:23+08:00",
+  "generated_at": "2026-11-25T16:10:35+08:00",
   "note": "每天采集 pushed_at/stars 并与上次快照对比；304 条件请求不计配额；首次采集仅建立基线不报变更；配额不足的仓库留待次日。",
   "recent": [
     {
@@ -46,21 +46,21 @@
       "category": "dailyAI_oss",
       "date": "2026-11-25",
       "has_push": true,
-      "name": "dream-num/univer",
-      "pushed_at": "2026-11-25T01:24:13Z",
-      "star_delta": 224,
-      "stars": 31699,
-      "url": "https://github.com/dream-num/univer"
-    },
-    {
-      "category": "dailyAI_oss",
-      "date": "2026-11-25",
-      "has_push": true,
       "name": "beenuar/AiSOC",
       "pushed_at": "2026-11-24T23:25:03Z",
       "star_delta": 224,
       "stars": 7807,
       "url": "https://github.com/beenuar/AiSOC"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-25",
+      "has_push": true,
+      "name": "dream-num/univer",
+      "pushed_at": "2026-11-25T01:24:13Z",
+      "star_delta": 224,
+      "stars": 31699,
+      "url": "https://github.com/dream-num/univer"
     },
     {
       "category": "dailyAI_oss",
@@ -185,22 +185,22 @@
     {
       "category": "dailyAI_oss",
       "date": "2026-11-25",
-      "has_push": true,
-      "name": "google-gemini/gemini-cli",
-      "pushed_at": "2026-11-25T01:08:48Z",
-      "star_delta": 40,
-      "stars": 109068,
-      "url": "https://github.com/google-gemini/gemini-cli"
-    },
-    {
-      "category": "dailyAI_oss",
-      "date": "2026-11-25",
       "has_push": false,
       "name": "browser-use/video-use",
       "pushed_at": "2026-10-08T22:17:01Z",
       "star_delta": 40,
       "stars": 31534,
       "url": "https://github.com/browser-use/video-use"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-25",
+      "has_push": true,
+      "name": "google-gemini/gemini-cli",
+      "pushed_at": "2026-11-25T01:08:48Z",
+      "star_delta": 40,
+      "stars": 109068,
+      "url": "https://github.com/google-gemini/gemini-cli"
     },
     {
       "category": "dailyAI_oss",
@@ -266,31 +266,11 @@
       "category": "dailyAI_oss",
       "date": "2026-11-25",
       "has_push": true,
-      "name": "pydantic/pydantic-ai",
-      "pushed_at": "2026-11-25T01:57:03Z",
-      "star_delta": 13,
-      "stars": 21370,
-      "url": "https://github.com/pydantic/pydantic-ai"
-    },
-    {
-      "category": "dailyAI_oss",
-      "date": "2026-11-25",
-      "has_push": true,
       "name": "0xPlaygrounds/rig",
       "pushed_at": "2026-11-25T01:41:57Z",
       "star_delta": 13,
       "stars": 9254,
       "url": "https://github.com/0xPlaygrounds/rig"
-    },
-    {
-      "category": "dailyAI_oss",
-      "date": "2026-11-25",
-      "has_push": true,
-      "name": "onyx-dot-app/onyx",
-      "pushed_at": "2026-11-25T01:56:14Z",
-      "star_delta": 13,
-      "stars": 33530,
-      "url": "https://github.com/onyx-dot-app/onyx"
     },
     {
       "category": "dailyAI_oss",
@@ -306,21 +286,31 @@
       "category": "dailyAI_oss",
       "date": "2026-11-25",
       "has_push": true,
-      "name": "modelflare-ai/AnyModelBot",
-      "pushed_at": "2026-11-24T18:35:35Z",
-      "star_delta": 11,
-      "stars": 5005,
-      "url": "https://github.com/modelflare-ai/AnyModelBot"
+      "name": "onyx-dot-app/onyx",
+      "pushed_at": "2026-11-25T01:56:14Z",
+      "star_delta": 13,
+      "stars": 33530,
+      "url": "https://github.com/onyx-dot-app/onyx"
     },
     {
       "category": "dailyAI_oss",
       "date": "2026-11-25",
       "has_push": true,
-      "name": "yjid/kensaku",
-      "pushed_at": "2026-11-25T01:41:13Z",
-      "star_delta": 8,
-      "stars": 1917,
-      "url": "https://github.com/yjid/kensaku"
+      "name": "pydantic/pydantic-ai",
+      "pushed_at": "2026-11-25T01:57:03Z",
+      "star_delta": 13,
+      "stars": 21370,
+      "url": "https://github.com/pydantic/pydantic-ai"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-25",
+      "has_push": true,
+      "name": "modelflare-ai/AnyModelBot",
+      "pushed_at": "2026-11-24T18:35:35Z",
+      "star_delta": 11,
+      "stars": 5005,
+      "url": "https://github.com/modelflare-ai/AnyModelBot"
     },
     {
       "category": "dailyAI_oss",
@@ -331,6 +321,16 @@
       "star_delta": 8,
       "stars": 16438,
       "url": "https://github.com/duixcom/Duix-Avatar"
+    },
+    {
+      "category": "dailyAI_oss",
+      "date": "2026-11-25",
+      "has_push": true,
+      "name": "yjid/kensaku",
+      "pushed_at": "2026-11-25T01:41:13Z",
+      "star_delta": 8,
+      "stars": 1917,
+      "url": "https://github.com/yjid/kensaku"
     },
     {
       "category": "dailyAI_oss",
@@ -2246,55 +2246,24 @@
     }
   },
   "schema": 1,
-  "source": "source/_data/webstack.yml :: dailyAI_* GitHub repos",
+  "source": "source/_data/webstack.yml :: 全部分类 GitHub repos",
   "summary": {
-    "baseline_added": 7,
-    "changed": 39,
-    "checked_today": 47,
+    "baseline_added": 0,
+    "changed": 0,
+    "checked_today": 5,
     "new_pushes": 33,
     "not_modified": 0,
-    "pending": 36,
-    "rate_remaining": 2,
+    "pending": 117,
+    "rate_remaining": 0,
     "star_gains": 39,
-    "total_repos": 83,
+    "total_repos": 122,
     "tracked": 60
   },
   "warnings": [
-    "mem0ai/mem0 因 API 配额未采集，留待明日",
-    "hugohe3/ppt-master 因 API 配额未采集，留待明日",
-    "iflytek/skillhub 因 API 配额未采集，留待明日",
-    "CopilotKit/CopilotKit 因 API 配额未采集，留待明日",
-    "bytedance/deer-flow 因 API 配额未采集，留待明日",
-    "NVIDIA/auto-ontology 因 API 配额未采集，留待明日",
-    "vercel-labs/agent-browser 因 API 配额未采集，留待明日",
-    "homeassistant-ai/ha-mcp 因 API 配额未采集，留待明日",
-    "The-PR-Agent/pr-agent 因 API 配额未采集，留待明日",
-    "vercel-labs/agent-desktop 因 API 配额未采集，留待明日",
-    "heygen-com/hyperframes 因 API 配额未采集，留待明日",
-    "langflow-ai/langflow 因 API 配额未采集，留待明日",
-    "harry0703/MoneyPrinterTurbo 因 API 配额未采集，留待明日",
-    "TauricResearch/TradingAgents 因 API 配额未采集，留待明日",
-    "github/spec-kit 因 API 配额未采集，留待明日",
-    "openclaw/openclaw 因 API 配额未采集，留待明日",
-    "unclecode/crawl4ai 因 API 配额未采集，留待明日",
-    "browser-use/browser-use 因 API 配额未采集，留待明日",
-    "karpathy/nanochat 因 API 配额未采集，留待明日",
-    "JustVugg/colibri 因 API 配额未采集，留待明日",
-    "unslothai/unsloth 因 API 配额未采集，留待明日",
-    "microsoft/VibeVoice 因 API 配额未采集，留待明日",
-    "Interactive-Active-AI/NextTransformer 因 API 配额未采集，留待明日",
-    "algorithmicsuperintelligence/optillm 因 API 配额未采集，留待明日",
-    "cactus-compute/cactus 因 API 配额未采集，留待明日",
-    "higurashi-ai/Haru 因 API 配额未采集，留待明日",
-    "huawei-csl/MACaQ 因 API 配额未采集，留待明日",
-    "mw00/project-maya 因 API 配额未采集，留待明日",
-    "Edge0-AI/Edge0 因 API 配额未采集，留待明日",
-    "jundot/omlx 因 API 配额未采集，留待明日",
-    "raullenchai/Rapid-MLX 因 API 配额未采集，留待明日",
-    "skyzh/tiny-llm 因 API 配额未采集，留待明日",
-    "jingyaogong/minimind 因 API 配额未采集，留待明日",
-    "flashml-org/FreeToken 因 API 配额未采集，留待明日",
-    "FareedKhan-dev/kimi-k3-in-c 因 API 配额未采集，留待明日",
-    "nv-tlabs/lyra 因 API 配额未采集，留待明日"
+    "modelflare-ai/AnyModelBot 因 API 配额未采集，留待明日",
+    "JosssphZhou/poki 因 API 配额未采集，留待明日",
+    "ZhuLinsen/daily_stock_analysis 因 API 配额未采集，留待明日",
+    "nv-tlabs/lyra 因 API 配额未采集，留待明日",
+    "Juneo-Lab/decision-forge 因 API 配额未采集，留待明日"
   ]
 }
