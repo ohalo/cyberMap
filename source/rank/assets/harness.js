@@ -10,12 +10,16 @@
   var fmt = function (n) { return Number(n || 0).toLocaleString('en-US'); };
   function lang() { return (window.RANK_I18N && window.RANK_I18N.lang === 'en') ? 'en' : 'zh'; }
   function bi(zh, en) { return lang() === 'en' ? en : zh; }
+  // 榜单有两套入口：/rank/harness.html（文件）与 /rank/harness/、/rank/harness/index.html（目录）。
+  // 目录页的相对路径基准是 /rank/harness/，数据实际在 /rank/data/，需要回退一级。
+  function isDirEntry() { return /\/harness\/(?:index\.html)?$/.test(location.pathname); }
+  function dataUrls() {
+    var rel = 'data/harness/top.json';
+    return isDirEntry() ? ['../' + rel, rel] : [rel, '../' + rel];
+  }
   function detailHref(x) {
-    // /rank/harness.html 与 /rank/harness/ 两种入口共用同一份数据
-    if (/\/harness\/$/.test(location.pathname)) {
-      return String(x.detail_url || '').replace(/^harness\//, '');
-    }
-    return x.detail_url;
+    var url = String(x.detail_url || '');
+    return isDirEntry() ? url.replace(/^harness\//, '') : url;
   }
   function catName(x) {
     var labels = state.data.meta.categories || {};
@@ -150,10 +154,25 @@
   $('h-sort').addEventListener('change', function (e) { state.sort = e.target.value; render(); });
   $('h-curated-only').addEventListener('change', function (e) { state.curatedOnly = e.target.checked; render(); });
 
-  fetch('data/harness/top.json?t=' + Date.now(), { cache: 'no-store' })
-    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+  function fetchFirst(urls, i) {
+    i = i || 0;
+    if (i >= urls.length) return Promise.reject(new Error('HTTP 404'));
+    return fetch(urls[i] + '?t=' + Date.now(), { cache: 'no-store' })
+      .then(function (r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      })
+      .catch(function (e) {
+        if (i + 1 < urls.length) return fetchFirst(urls, i + 1);
+        throw e;
+      });
+  }
+
+  fetchFirst(dataUrls())
     .then(boot)
     .catch(function (e) {
-      $('h-list').innerHTML = '<div class="empty">' + esc(e.message) + '</div>';
+      $('h-list').innerHTML = '<div class="empty">' +
+        bi('榜单数据加载失败，请稍后刷新重试', 'Failed to load ranking data, please retry') +
+        ' (' + esc(e.message) + ')</div>';
     });
 })();
