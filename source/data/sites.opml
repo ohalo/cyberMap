@@ -207,6 +207,13 @@
     </outline>
     <outline text="每日 AI 新发现">
       <outline text="开源项目" title="开源项目">
+        <outline type="link" text="withcoral/coral" title="withcoral/coral" url="https://github.com/withcoral/coral" htmlUrl="https://github.com/withcoral/coral" description="为 AI 智能体访问企业敏感系统提供执行护栏，按精细权限与自定义工具安全调用，减少 token 消耗。" />
+        <outline type="link" text="get-bb/bb" title="get-bb/bb" url="https://github.com/get-bb/bb" htmlUrl="https://github.com/get-bb/bb" description="面向智能体的集成开发环境，围绕 Claude Code、Codex 等编码智能体构建，可自主迭代扩展能力。" />
+        <outline type="link" text="mvanhorn/cli-printing-press" title="mvanhorn/cli-printing-press" url="https://github.com/mvanhorn/cli-printing-press" htmlUrl="https://github.com/mvanhorn/cli-printing-press" description="读取 API 文档自动生成面向 AI 智能体的命令行工具，内置 SQLite 同步、离线检索与组合洞察命令。" />
+        <outline type="link" text="didi/helixharness" title="didi/helixharness" url="https://github.com/didi/helixharness" htmlUrl="https://github.com/didi/helixharness" description="滴滴开源的 AI 编码工程化框架，支持团队结合业务知识与研发流程持续构建专属 Harness。" />
+        <outline type="link" text="eduwxyz/tucano" title="eduwxyz/tucano" url="https://github.com/eduwxyz/tucano" htmlUrl="https://github.com/eduwxyz/tucano" description="在本地组建 AI 智能体团队，可频道协作、写代码、互相评审，真实世界操作需人工确认。" />
+        <outline type="link" text="conorbronsdon/avoid-ai-writing" title="conorbronsdon/avoid-ai-writing" url="https://github.com/conorbronsdon/avoid-ai-writing" htmlUrl="https://github.com/conorbronsdon/avoid-ai-writing" description="智能体技能插件，审查并改写文本去除 AI 写作痕迹，兼容 Claude Code、Codex、Hermes 等。" />
+        <outline type="link" text="Juneo-Lab/decision-forge" title="Juneo-Lab/decision-forge" url="https://github.com/Juneo-Lab/decision-forge" htmlUrl="https://github.com/Juneo-Lab/decision-forge" description="将组织规章策略编译为可验证的决策训练数据，支持数据溯源，用于微调合规决策模型。" />
         <outline type="link" text="pydantic/pydantic-ai" title="pydantic/pydantic-ai" url="https://github.com/pydantic/pydantic-ai" htmlUrl="https://github.com/pydantic/pydantic-ai" description="Pydantic 官方 AI Agent 开发框架，端到端类型安全，支持实时语音、图像生成、嵌入与多模型接入。" />
         <outline type="link" text="0xPlaygrounds/rig" title="0xPlaygrounds/rig" url="https://github.com/0xPlaygrounds/rig" htmlUrl="https://github.com/0xPlaygrounds/rig" description="用 Rust 构建模块化、可扩展 LLM 应用的框架，主打高性能与低延迟的 AI 应用开发。" />
         <outline type="link" text="sybil-solutions/inference-optimisation-skill" title="sybil-solutions/inference-optimisation-skill" url="https://github.com/sybil-solutions/inference-optimisation-skill" htmlUrl="https://github.com/sybil-solutions/inference-optimisation-skill" description="自动调优本地 LLM 推理速度的 Agent 技能，用爬山法搜索解码、预填充与 KV 缓存的最优配置。" />
@@ -267,6 +274,8 @@
         <outline type="link" text="browser-use/browser-use" title="browser-use/browser-use" url="https://github.com/browser-use/browser-use" htmlUrl="https://github.com/browser-use/browser-use" description="开源浏览器智能体框架，让大模型在真实浏览器中自动点击、输入并完成任务，兼容任意 LLM。" />
       </outline>
       <outline text="工具官网" title="工具官网">
+        <outline type="link" text="Testsy" title="Testsy" url="https://testsy.dev" htmlUrl="https://testsy.dev" description="AI 质量测试智能体，接入编码智能体后在真实浏览器与移动模拟器验证功能并给出可分享证据。" />
+        <outline type="link" text="Hydrilla" title="Hydrilla" url="https://hydrilla.ai" htmlUrl="https://hydrilla.ai" description="面向游戏影视的 AI 3D 资产生成工具，用文本或图片生成带 PBR 贴图的生产级网格模型。" />
         <outline type="link" text="OLVA" title="OLVA" url="https://olva.ai" htmlUrl="https://olva.ai" description="无需以机器人身份入会的实时 AI 会议助手，提供多语转写、实时问答、对话辅导与可搜索的会议记忆。" />
         <outline type="link" text="Fairwai" title="Fairwai" url="https://fairw.ai" htmlUrl="https://fairw.ai" description="AI 对话服务商，提供可自动接听的语音 Agent、网站聊天机器人与会议纪要生成，可电话直接试听。" />
         <outline type="link" text="SoftSync AI" title="SoftSync AI" url="https://softsync.ai" htmlUrl="https://softsync.ai" description="面向初创团队的 AI CRM，整合线索、会议纪要、邮件跟进与报表，支持 MCP 与 API 接入。" />
@@ -288,6 +297,7 @@
         <outline type="link" text="Ollama" title="Ollama" url="https://ollama.com" htmlUrl="https://ollama.com" description="在本地或云端运行开源大模型的工具，支持 macOS、Windows、Linux，一条命令即可启动模型。" />
       </outline>
       <outline text="模型框架" title="模型框架">
+        <outline type="link" text="karpathy/nanochat" title="karpathy/nanochat" url="https://github.com/karpathy/nanochat" htmlUrl="https://github.com/karpathy/nanochat" description="Karpathy 开源的从零实现 ChatGPT 全流程教学框架，约百美元成本即可完成预训练与推理。" />
         <outline type="link" text="JustVugg/colibri" title="JustVugg/colibri" url="https://github.com/JustVugg/colibri" htmlUrl="https://github.com/JustVugg/colibri" description="纯 C 编写的分层 MoE 推理引擎，热专家驻留 GPU、冷专家从 NVMe 流式加载，让超大模型跑在普通硬件上。" />
         <outline type="link" text="unslothai/unsloth" title="unslothai/unsloth" url="https://github.com/unslothai/unsloth" htmlUrl="https://github.com/unslothai/unsloth" description="本地运行与训练大语言模型及扩散模型的框架，支持 GGUF、MLX 与 Qwen、DeepSeek、FLUX 等模型微调。" />
         <outline type="link" text="microsoft/VibeVoice" title="microsoft/VibeVoice" url="https://github.com/microsoft/VibeVoice" htmlUrl="https://github.com/microsoft/VibeVoice" description="微软开源的前沿语音 AI 模型，面向高质量语音生成与实时语音交互场景。" />

@@ -6,8 +6,22 @@
     <description>cyberMap 每日核验收录的 AI 开源项目，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Tue, 24 Nov 2026 10:32:37 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 09:57:30 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 开源项目 · 2026-11-25（7 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-25</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_oss-2026-11-25</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
+      <description>withcoral/coral［开源项目］为 AI 智能体访问企业敏感系统提供执行护栏，按精细权限与自定义工具安全调用，减少 token 消耗。 — https://github.com/withcoral/coral
+get-bb/bb［开源项目］面向智能体的集成开发环境，围绕 Claude Code、Codex 等编码智能体构建，可自主迭代扩展能力。 — https://github.com/get-bb/bb
+mvanhorn/cli-printing-press［开源项目］读取 API 文档自动生成面向 AI 智能体的命令行工具，内置 SQLite 同步、离线检索与组合洞察命令。 — https://github.com/mvanhorn/cli-printing-press
+didi/helixharness［开源项目］滴滴开源的 AI 编码工程化框架，支持团队结合业务知识与研发流程持续构建专属 Harness。 — https://github.com/didi/helixharness
+eduwxyz/tucano［开源项目］在本地组建 AI 智能体团队，可频道协作、写代码、互相评审，真实世界操作需人工确认。 — https://github.com/eduwxyz/tucano
+conorbronsdon/avoid-ai-writing［开源项目］智能体技能插件，审查并改写文本去除 AI 写作痕迹，兼容 Claude Code、Codex、Hermes 等。 — https://github.com/conorbronsdon/avoid-ai-writing
+Juneo-Lab/decision-forge［开源项目］将组织规章策略编译为可验证的决策训练数据，支持数据溯源，用于微调合规决策模型。 — https://github.com/Juneo-Lab/decision-forge</description>
+      <category>开源项目</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 开源项目 · 2026-11-24（4 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-24</link>

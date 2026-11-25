@@ -6,8 +6,17 @@
     <description>cyberMap 每日核验收录的 AI 工具官网，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Tue, 24 Nov 2026 10:32:37 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 09:57:30 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 工具官网 · 2026-11-25（2 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-25</link>
+      <guid isPermaLink="false">cybermap-daily-dailyAI_tool-2026-11-25</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
+      <description>Testsy［工具官网］AI 质量测试智能体，接入编码智能体后在真实浏览器与移动模拟器验证功能并给出可分享证据。 — https://testsy.dev
+Hydrilla［工具官网］面向游戏影视的 AI 3D 资产生成工具，用文本或图片生成带 PBR 贴图的生产级网格模型。 — https://hydrilla.ai</description>
+      <category>工具官网</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 工具官网 · 2026-11-24（2 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-24</link>

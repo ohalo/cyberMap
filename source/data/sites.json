@@ -79,19 +79,19 @@
       "name": "社区与问卷"
     },
     {
-      "count": 58,
+      "count": 65,
       "group": "每日 AI 新发现",
       "key": "dailyAI_oss",
       "name": "开源项目"
     },
     {
-      "count": 19,
+      "count": 21,
       "group": "每日 AI 新发现",
       "key": "dailyAI_tool",
       "name": "工具官网"
     },
     {
-      "count": 17,
+      "count": 18,
       "group": "每日 AI 新发现",
       "key": "dailyAI_model",
       "name": "模型框架"
@@ -113,8 +113,8 @@
     "categories": 18,
     "groups": 5,
     "health_checked": 44,
-    "sites": 266,
-    "verified": 95
+    "sites": 276,
+    "verified": 105
   },
   "group_index": [
     {
@@ -154,7 +154,7 @@
         "dailyAI_tool",
         "dailyAI_model"
       ],
-      "count": 94,
+      "count": 104,
       "name": "每日 AI 新发现"
     },
     {
@@ -2765,6 +2765,158 @@
     {
       "category": "dailyAI_oss",
       "category_name": "开源项目",
+      "date": "2026-11-25",
+      "description": "为 AI 智能体访问企业敏感系统提供执行护栏，按精细权限与自定义工具安全调用，减少 token 消耗。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "withcoral/coral",
+      "tags": [
+        "安全审计"
+      ],
+      "url": "https://github.com/withcoral/coral",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-25T09:55:48+08:00",
+        "date": "2026-11-25",
+        "http_status": 200,
+        "stars": 5031
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
+      "date": "2026-11-25",
+      "description": "面向智能体的集成开发环境，围绕 Claude Code、Codex 等编码智能体构建，可自主迭代扩展能力。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "get-bb/bb",
+      "tags": [
+        "代码开发"
+      ],
+      "url": "https://github.com/get-bb/bb",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-25T09:55:49+08:00",
+        "date": "2026-11-25",
+        "http_status": 200,
+        "stars": 5989
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
+      "date": "2026-11-25",
+      "description": "读取 API 文档自动生成面向 AI 智能体的命令行工具，内置 SQLite 同步、离线检索与组合洞察命令。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "mvanhorn/cli-printing-press",
+      "tags": [
+        "办公文档",
+        "RAG 检索",
+        "代码开发"
+      ],
+      "url": "https://github.com/mvanhorn/cli-printing-press",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-25T09:55:50+08:00",
+        "date": "2026-11-25",
+        "http_status": 200,
+        "stars": 5049
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
+      "date": "2026-11-25",
+      "description": "滴滴开源的 AI 编码工程化框架，支持团队结合业务知识与研发流程持续构建专属 Harness。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "didi/helixharness",
+      "tags": [
+        "多智能体"
+      ],
+      "url": "https://github.com/didi/helixharness",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-25T09:55:51+08:00",
+        "date": "2026-11-25",
+        "http_status": 200,
+        "stars": 461
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
+      "date": "2026-11-25",
+      "description": "在本地组建 AI 智能体团队，可频道协作、写代码、互相评审，真实世界操作需人工确认。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "eduwxyz/tucano",
+      "tags": [
+        "多智能体",
+        "代码开发",
+        "本地运行"
+      ],
+      "url": "https://github.com/eduwxyz/tucano",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-25T09:55:52+08:00",
+        "date": "2026-11-25",
+        "http_status": 200,
+        "stars": 460
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
+      "date": "2026-11-25",
+      "description": "智能体技能插件，审查并改写文本去除 AI 写作痕迹，兼容 Claude Code、Codex、Hermes 等。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "conorbronsdon/avoid-ai-writing",
+      "tags": [
+        "技能生态",
+        "代码开发"
+      ],
+      "url": "https://github.com/conorbronsdon/avoid-ai-writing",
+      "verified": {
+        "ai_hits": 5,
+        "checked_at": "2026-11-25T09:55:53+08:00",
+        "date": "2026-11-25",
+        "http_status": 200,
+        "stars": 6265
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
+      "date": "2026-11-25",
+      "description": "将组织规章策略编译为可验证的决策训练数据，支持数据溯源，用于微调合规决策模型。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "Juneo-Lab/decision-forge",
+      "tags": [
+        "训练微调"
+      ],
+      "url": "https://github.com/Juneo-Lab/decision-forge",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-25T09:55:58+08:00",
+        "date": "2026-11-25",
+        "http_status": 200,
+        "stars": 352
+      }
+    },
+    {
+      "category": "dailyAI_oss",
+      "category_name": "开源项目",
       "date": "2026-11-24",
       "description": "Pydantic 官方 AI Agent 开发框架，端到端类型安全，支持实时语音、图像生成、嵌入与多模型接入。",
       "group": "每日 AI 新发现",
@@ -4011,6 +4163,48 @@
     {
       "category": "dailyAI_tool",
       "category_name": "工具官网",
+      "date": "2026-11-25",
+      "description": "AI 质量测试智能体，接入编码智能体后在真实浏览器与移动模拟器验证功能并给出可分享证据。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://cybermap.halo26812.eu.org/favicon.ico",
+      "name": "Testsy",
+      "tags": [
+        "浏览器自动化"
+      ],
+      "url": "https://testsy.dev",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-25T09:56:01+08:00",
+        "date": "2026-11-25",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "dailyAI_tool",
+      "category_name": "工具官网",
+      "date": "2026-11-25",
+      "description": "面向游戏影视的 AI 3D 资产生成工具，用文本或图片生成带 PBR 贴图的生产级网格模型。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://hydrilla.ai/favicon.ico",
+      "name": "Hydrilla",
+      "tags": [
+        "视频图像"
+      ],
+      "url": "https://hydrilla.ai",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-25T09:56:44+08:00",
+        "date": "2026-11-25",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "dailyAI_tool",
+      "category_name": "工具官网",
       "date": "2026-11-24",
       "description": "无需以机器人身份入会的实时 AI 会议助手，提供多语转写、实时问答、对话辅导与可搜索的会议记忆。",
       "group": "每日 AI 新发现",
@@ -4404,6 +4598,29 @@
         "date": "2026-11-13",
         "http_status": 200,
         "stars": null
+      }
+    },
+    {
+      "category": "dailyAI_model",
+      "category_name": "模型框架",
+      "date": "2026-11-25",
+      "description": "Karpathy 开源的从零实现 ChatGPT 全流程教学框架，约百美元成本即可完成预训练与推理。",
+      "group": "每日 AI 新发现",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "karpathy/nanochat",
+      "tags": [
+        "教育课堂",
+        "推理引擎",
+        "训练微调"
+      ],
+      "url": "https://github.com/karpathy/nanochat",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-25T09:55:57+08:00",
+        "date": "2026-11-25",
+        "http_status": 200,
+        "stars": 60839
       }
     },
     {

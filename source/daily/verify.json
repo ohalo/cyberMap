@@ -297,6 +297,35 @@
         }
       ],
       "review": 1
+    },
+    "2026-11-25": {
+      "added": 10,
+      "checked": 15,
+      "fail": 4,
+      "pass": 11,
+      "rejected": [
+        {
+          "reason": "HTTP 404，链接已失效；GitHub 仓库不存在或已删除；页面与仓库元数据中未检出 AI 相关性关键词",
+          "url": "https://github.com/PraisonAI/PraisonAI",
+          "verdict": "fail"
+        },
+        {
+          "reason": "页面与仓库元数据中未检出 AI 相关性关键词",
+          "url": "https://github.com/basetenlabs/deepseek-ultrafast",
+          "verdict": "fail"
+        },
+        {
+          "reason": "站点不可达：ConnectionError: HTTPSConnectionPool(host='motionflare.ai', port=443): Read timed out.",
+          "url": "https://motionflare.ai",
+          "verdict": "fail"
+        },
+        {
+          "reason": "页面与仓库元数据中未检出 AI 相关性关键词",
+          "url": "https://polylane.com",
+          "verdict": "fail"
+        }
+      ],
+      "review": 0
     }
   },
   "evidence": {
@@ -825,6 +854,24 @@
       "title": "GitHub - codewhale-hq/Codewhale: An open-source coding agent for your terminal, written in Rust. It works with any model, can split one task across several agents, and every line o",
       "verdict": "pass"
     },
+    "github.com/conorbronsdon/avoid-ai-writing": {
+      "ai_hits": 5,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude",
+        "llm",
+        "prompt"
+      ],
+      "checked_at": "2026-11-25T09:55:53+08:00",
+      "date": "2026-11-25",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-24T23:58:06Z",
+      "stars": 6265,
+      "title": "GitHub - conorbronsdon/avoid-ai-writing: Skill that audits and rewrites content to remove AI writing patterns. Use it with your favorite agents including Claude Code, OpenClaw, Cod",
+      "verdict": "pass"
+    },
     "github.com/copilotkit/copilotkit": {
       "ai_hits": 4,
       "ai_keywords": [
@@ -869,6 +916,21 @@
       "pushed_at": "2026-11-03T09:29:14Z",
       "stars": 24081,
       "title": "GitHub - deepseek-ai/dsh-superagent-prototype: Towards a More Autonomous Agent System · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/didi/helixharness": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-25T09:55:51+08:00",
+      "date": "2026-11-25",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-24T13:54:49Z",
+      "stars": 461,
+      "title": "GitHub - didi/helixharness: HelixHarness 提供完整的 AI Coding 工程化基础能力，还支持不同企业和团队结合自身的业务知识、工程规范和研发流程，持续构建和演进属于自己的专属 Harness · GitHub",
       "verdict": "pass"
     },
     "github.com/docling-project/docling": {
@@ -943,6 +1005,22 @@
       "pushed_at": "2026-11-19T16:56:09Z",
       "stars": 12099,
       "title": "",
+      "verdict": "pass"
+    },
+    "github.com/eduwxyz/tucano": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude"
+      ],
+      "checked_at": "2026-11-25T09:55:52+08:00",
+      "date": "2026-11-25",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-24T19:00:33Z",
+      "stars": 460,
+      "title": "GitHub - eduwxyz/tucano: Your team of AI agents, on your Mac, Windows or Linux. Agents that talk in channels, write code, review each other and use your tools, on the Claude Code, ",
       "verdict": "pass"
     },
     "github.com/eliasbiondo/antirion": {
@@ -1021,6 +1099,21 @@
       "pushed_at": "2026-11-14T06:18:30Z",
       "stars": 8172,
       "title": "GitHub - Gentleman-Programming/engram: Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI. · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/get-bb/bb": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "agent",
+        "claude"
+      ],
+      "checked_at": "2026-11-25T09:55:49+08:00",
+      "date": "2026-11-25",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-25T01:30:58Z",
+      "stars": 5989,
+      "title": "GitHub - get-bb/bb: The agent IDE that builds itself · GitHub",
       "verdict": "pass"
     },
     "github.com/github/spec-kit": {
@@ -1372,6 +1465,23 @@
       "title": "",
       "verdict": "pass"
     },
+    "github.com/juneo-lab/decision-forge": {
+      "ai_hits": 4,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "fine[- ]?tun",
+        "llm"
+      ],
+      "checked_at": "2026-11-25T09:55:58+08:00",
+      "date": "2026-11-25",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-22T07:26:09Z",
+      "stars": 352,
+      "title": "GitHub - Juneo-Lab/decision-forge: Compile organizational policy into verifiable decision training data. · GitHub",
+      "verdict": "pass"
+    },
     "github.com/justvugg/colibri": {
       "ai_hits": 1,
       "ai_keywords": [
@@ -1398,6 +1508,21 @@
       "pushed_at": "2026-11-19T20:17:57Z",
       "stars": 30705,
       "title": "",
+      "verdict": "pass"
+    },
+    "github.com/karpathy/nanochat": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "chatgpt",
+        "gpt"
+      ],
+      "checked_at": "2026-11-25T09:55:57+08:00",
+      "date": "2026-11-25",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-09-07T20:06:43Z",
+      "stars": 60839,
+      "title": "GitHub - karpathy/nanochat: The best ChatGPT that $100 can buy. · GitHub",
       "verdict": "pass"
     },
     "github.com/kaushikb11/awesome-llm-agents": {
@@ -1588,6 +1713,21 @@
       "pushed_at": "2026-11-22T18:58:42Z",
       "stars": 4975,
       "title": "GitHub - modelflare-ai/AnyModelBot: 🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepS",
+      "verdict": "pass"
+    },
+    "github.com/mvanhorn/cli-printing-press": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-25T09:55:50+08:00",
+      "date": "2026-11-25",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-24T21:41:20Z",
+      "stars": 5049,
+      "title": "GitHub - mvanhorn/cli-printing-press: Every API has a secret identity. This finds it, absorbs every feature from every competing tool, then builds the GOAT CLI — designed for AI ag",
       "verdict": "pass"
     },
     "github.com/mw00/project-maya": {
@@ -2012,6 +2152,22 @@
       "title": "",
       "verdict": "pass"
     },
+    "github.com/skyvern-ai/skyvern": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "gpt",
+        "llm"
+      ],
+      "checked_at": "2026-11-25T09:55:54+08:00",
+      "date": "2026-11-25",
+      "http_status": 200,
+      "license": "AGPL-3.0",
+      "pushed_at": "2026-11-25T01:24:54Z",
+      "stars": 23511,
+      "title": "GitHub - Skyvern-AI/skyvern: Automate browser based workflows with AI · GitHub",
+      "verdict": "pass"
+    },
     "github.com/skyzh/tiny-llm": {
       "ai_hits": 2,
       "ai_keywords": [
@@ -2381,6 +2537,21 @@
       "title": "",
       "verdict": "pass"
     },
+    "github.com/withcoral/coral": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-25T09:55:48+08:00",
+      "date": "2026-11-25",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-24T19:54:25Z",
+      "stars": 5031,
+      "title": "GitHub - withcoral/coral: Execution rails for agents. Equip your AI to work with sensitive enterprise systems. Give agents precise permissions and custom tools that work faster wit",
+      "verdict": "pass"
+    },
     "github.com/yetone/magpie": {
       "ai_hits": 3,
       "ai_keywords": [
@@ -2473,6 +2644,20 @@
       "pushed_at": null,
       "stars": null,
       "title": "Linger — Your personal agent, on your own computer.",
+      "verdict": "pass"
+    },
+    "hydrilla.ai/": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "\\bai\\b"
+      ],
+      "checked_at": "2026-11-25T09:56:44+08:00",
+      "date": "2026-11-25",
+      "http_status": 200,
+      "license": null,
+      "pushed_at": null,
+      "stars": null,
+      "title": "Hydrilla | Production-Ready 3D Assets, Generated Fast",
       "verdict": "pass"
     },
     "merchantfloor.com/": {
@@ -2576,6 +2761,23 @@
       "title": "All-in-One CRM and AI CRM for Growing Teams | SoftSync",
       "verdict": "pass"
     },
+    "testsy.dev/": {
+      "ai_hits": 4,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude",
+        "prompt"
+      ],
+      "checked_at": "2026-11-25T09:56:01+08:00",
+      "date": "2026-11-25",
+      "http_status": 200,
+      "license": null,
+      "pushed_at": null,
+      "stars": null,
+      "title": "Testsy â Your AI agent says it works. Make it prove it.",
+      "verdict": "pass"
+    },
     "turbofy.com/": {
       "ai_hits": 1,
       "ai_keywords": [
@@ -2654,13 +2856,13 @@
   "schema": 1,
   "source": "cybermap-daily/state/reports/verify-YYYY-MM-DD.json",
   "totals": {
-    "added": 94,
-    "checked": 191,
-    "days": 12,
-    "fail": 15,
-    "pass": 153,
+    "added": 104,
+    "checked": 206,
+    "days": 13,
+    "fail": 19,
+    "pass": 164,
     "review": 23,
-    "verified_sites": 148
+    "verified_sites": 159
   },
   "warnings": []
 }
