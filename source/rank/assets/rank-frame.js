@@ -28,6 +28,40 @@
       btn.setAttribute('title', on ? '切换到浅色模式' : '切换到深色模式');
       btn.setAttribute('aria-label', btn.getAttribute('title'));
     }
+    syncDesignCopy();
+  }
+
+  /* 设计稿 04 号板：顶部 HUD 时钟 / 数据日期 / 英文表头。
+     只在赛博态改写，切回经典态立即还原原中文表头。 */
+  var originalHead = null;
+  function syncDesignCopy() {
+    var cyber = document.body.classList.contains('night');
+    var heads = document.querySelectorAll('.list-head span');
+    var design = ['RANK', 'PLUGIN', 'PLATFORM', 'SCORE', 'CHANGE', 'STARS'];
+    if (cyber) {
+      if (!originalHead) {
+        originalHead = [];
+        Array.prototype.forEach.call(heads, function (s) { originalHead.push(s.textContent); });
+      }
+      Array.prototype.forEach.call(heads, function (s, i) {
+        if (design[i]) s.textContent = design[i];
+      });
+    } else if (originalHead) {
+      Array.prototype.forEach.call(heads, function (s, i) {
+        if (originalHead[i] != null) s.textContent = originalHead[i];
+      });
+    }
+    var dateEl = document.querySelector('.cm-rank-hud-date');
+    var statDate = document.getElementById('stat-date');
+    if (dateEl && statDate && statDate.textContent && statDate.textContent !== '—') {
+      dateEl.textContent = statDate.textContent;
+    }
+  }
+  function tickRankClock() {
+    var clock = document.querySelector('.cm-rank-hud-clock');
+    if (!clock) return;
+    var d = new Date(), p = function (n) { return (n < 10 ? '0' : '') + n; };
+    clock.textContent = p(d.getHours()) + ':' + p(d.getMinutes()) + ':' + p(d.getSeconds());
   }
 
   function markActive() {
@@ -66,6 +100,11 @@
       });
     }
     markActive();
+    syncDesignCopy();
+    tickRankClock();
+    setTimeout(syncDesignCopy, 400);
+    setInterval(tickRankClock, 1000);
+    setInterval(syncDesignCopy, 3000);
   }
 
   if (document.readyState === 'loading') {

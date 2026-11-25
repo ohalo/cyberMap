@@ -31,27 +31,31 @@
   --cm-shadow-topbar: 0 8px 28px rgba(19, 32, 62, .06);
 }
 
+/* 设计稿 05 号板：赛博态全站统一 token，不另起一套紫色系 */
+@font-face{font-family:"CM Orbitron";src:url("/fonts/cm-orbitron-latin.woff2") format("woff2");font-style:normal;font-weight:400 900;font-display:swap}
+@font-face{font-family:"CM Chakra";src:url("/fonts/cm-chakra-600-latin.woff2") format("woff2");font-style:normal;font-weight:600;font-display:swap}
+@font-face{font-family:"CM Mono";src:url("/fonts/cm-jetbrains-latin.woff2") format("woff2");font-style:normal;font-weight:400 700;font-display:swap}
 body.night {
-  --cm-bg: #080d1a;
-  --cm-glow-a: rgba(34, 211, 238, .16);
-  --cm-glow-b: rgba(139, 92, 246, .18);
-  --cm-grid: rgba(148, 163, 184, .045);
-  --cm-surface: rgba(17, 25, 44, .72);
-  --cm-surface-solid: #121a2e;
-  --cm-topbar: rgba(12, 19, 36, .76);
-  --cm-border: rgba(148, 163, 184, .14);
-  --cm-border-strong: rgba(148, 163, 184, .26);
-  --cm-text: #eef3ff;
-  --cm-text-soft: #c3cee4;
-  --cm-text-muted: #98a6c2;
-  --cm-text-faint: #6d7c99;
-  --cm-accent: #7c8cff;
-  --cm-accent-2: #22d3ee;
-  --cm-accent-soft: rgba(124, 140, 255, .55);
-  --cm-accent-wash: rgba(124, 140, 255, .12);
-  --cm-chip: rgba(124, 140, 255, .15);
-  --cm-shadow-sm: 0 2px 14px rgba(0, 0, 0, .28);
-  --cm-shadow-topbar: 0 10px 30px rgba(0, 0, 0, .3);
+  --cm-bg: #05070b;
+  --cm-glow-a: rgba(0, 229, 255, .12);
+  --cm-glow-b: rgba(255, 46, 166, .10);
+  --cm-grid: rgba(0, 229, 255, .05);
+  --cm-surface: rgba(11, 18, 27, .86);
+  --cm-surface-solid: #0b121b;
+  --cm-topbar: rgba(11, 18, 27, .88);
+  --cm-border: rgba(18, 48, 63, .9);
+  --cm-border-strong: #12303f;
+  --cm-text: #e6f5ff;
+  --cm-text-soft: #b7c9df;
+  --cm-text-muted: #8ba0bd;
+  --cm-text-faint: #5e7396;
+  --cm-accent: #00e5ff;
+  --cm-accent-2: #ff2ea6;
+  --cm-accent-soft: rgba(0, 229, 255, .45);
+  --cm-accent-wash: rgba(0, 229, 255, .10);
+  --cm-chip: rgba(0, 229, 255, .12);
+  --cm-shadow-sm: 0 2px 14px rgba(0, 0, 0, .4);
+  --cm-shadow-topbar: 0 10px 30px rgba(0, 0, 0, .45);
 }
 
 /* 覆写排行榜自身 style.css 的变量，让内容区融入导航站外观 */
@@ -208,4 +212,135 @@ body.rank-embedded.night .tab { background: var(--cm-surface-solid); }
   .cm-rank-home { font-size: 0; gap: 0; }
   .cm-rank-home .cm-rank-back { font-size: 17px; }
   body.rank-embedded .wrap { padding: 20px 14px 44px; }
+}
+
+/* ==========================================================================
+   设计稿 04 号板 · 插件排行榜（仅 body.night 生效）
+   --------------------------------------------------------------------------
+   SECTION 04 HUD + AI PLUGIN LEADERBOARD 标题区 + TOP 100 强调数字 +
+   真实榜单表格 + SCORING MATRIX。经典态完全沿用排行榜原样式。
+   ========================================================================== */
+.cm-rank-design-only{display:none!important}
+body.night.rank-embedded::after{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:9999;
+  background:repeating-linear-gradient(0deg,rgba(0,0,0,.12) 0 1px,transparent 1px 3px);
+  opacity:.45
+}
+body.night .cm-rank-hud{
+  display:flex!important;position:sticky;top:0;z-index:90;
+  align-items:center;gap:12px;height:28px;padding:0 24px;
+  background:#07121c;border-bottom:1px solid var(--cm-border);
+  font-family:"CM Mono",monospace;font-size:10px;letter-spacing:.1em;
+  color:var(--cm-text-faint)
+}
+body.night .cm-rank-hud::before{
+  content:"";width:6px;height:6px;border-radius:50%;
+  background:var(--cm-accent-2);box-shadow:0 0 8px var(--cm-accent-2)
+}
+body.night .cm-rank-hud-title{color:var(--cm-accent-2);font-weight:700}
+body.night .cm-rank-hud-right{margin-left:auto}
+body.night .cm-rank-hud-clock{font-family:"CM Orbitron",sans-serif;color:var(--cm-accent);font-weight:900}
+body.night .cm-rank-bar{top:28px}
+body.night.rank-embedded .wrap{max-width:1180px;margin:0 auto;padding-top:26px}
+body.night.rank-embedded .site-head{
+  display:block;margin-bottom:18px;padding-bottom:14px;
+  border-bottom:1px solid var(--cm-border)
+}
+body.night.rank-embedded .site-head h1{
+  font-family:"CM Chakra",sans-serif;font-size:clamp(30px,3.4vw,44px);
+  font-weight:900;letter-spacing:-.02em;color:var(--cm-text)
+}
+body.night.rank-embedded .site-head .sub{display:none}
+body.night .cm-rank-design-head{
+  display:flex!important;align-items:flex-end;gap:18px;flex-wrap:wrap;margin-bottom:8px
+}
+body.night .cm-rank-kicker{
+  flex:1 1 auto;font-family:"CM Mono",monospace;font-size:11px;
+  letter-spacing:.14em;color:var(--cm-accent)
+}
+body.night .cm-rank-topnum{
+  font-family:"CM Orbitron",sans-serif;font-size:26px;font-weight:900;
+  line-height:1;color:var(--cm-accent-2);
+  text-shadow:0 0 18px rgba(255,46,166,.45)
+}
+body.night .cm-rank-subline{
+  flex:1 1 100%;font-family:"CM Chakra",sans-serif;font-size:12px;
+  color:var(--cm-text-muted)
+}
+body.night.rank-embedded .stats{display:none}
+body.night.rank-embedded .toolbar{
+  margin-bottom:12px;padding:10px 0;border-top:1px solid var(--cm-border);
+  border-bottom:1px solid var(--cm-border)
+}
+body.night.rank-embedded .tab,
+body.night.rank-embedded input[type=search],
+body.night.rank-embedded select{
+  border-radius:2px;border-color:var(--cm-border);background:rgba(11,18,27,.86);
+  font-family:"CM Mono",monospace;font-size:10.5px
+}
+body.night.rank-embedded .tab.on{background:rgba(255,46,166,.16);border-color:var(--cm-accent-2);color:var(--cm-accent-2)}
+body.night.rank-embedded .list-head,
+body.night.rank-embedded .row{
+  grid-template-columns:52px minmax(0,1fr) 188px 80px 88px 108px;
+  gap:10px;padding-left:10px;padding-right:10px
+}
+body.night.rank-embedded .list-head{
+  border-bottom-color:var(--cm-border-strong);
+  font-family:"CM Mono",monospace;font-size:10px;letter-spacing:.08em;
+  color:var(--cm-text-faint)
+}
+body.night.rank-embedded .row{
+  border-bottom:1px solid var(--cm-border);padding-top:10px;padding-bottom:10px
+}
+body.night.rank-embedded .row:nth-child(-n+4){
+  background:linear-gradient(90deg,rgba(0,229,255,.05),transparent 60%)
+}
+body.night.rank-embedded .row:hover{background:rgba(0,229,255,.08)}
+body.night.rank-embedded .rank{
+  font-family:"CM Orbitron",sans-serif;font-size:18px;font-weight:900;
+  color:var(--cm-accent)
+}
+body.night.rank-embedded .pname{
+  font-family:"CM Chakra",sans-serif;font-size:13px;font-weight:600
+}
+body.night.rank-embedded .muted,
+body.night.rank-embedded .pdesc{font-size:11px;color:var(--cm-text-muted)}
+body.night.rank-embedded .badges{font-family:"CM Mono",monospace;font-size:9.5px}
+body.night.rank-embedded .score{
+  font-family:"CM Orbitron",sans-serif;font-size:20px;font-weight:900;
+  color:var(--cm-accent-2)
+}
+body.night.rank-embedded .delta{font-family:"CM Mono",monospace;font-size:11px}
+body.night.rank-embedded .stars{
+  font-family:"CM Mono",monospace;font-size:10.5px;color:var(--cm-text-soft)
+}
+body.night .cm-rank-scoring{
+  display:block!important;margin-top:22px;padding:16px 18px;
+  border:1px solid var(--cm-border);border-radius:3px;background:rgba(11,18,27,.86)
+}
+body.night .cm-scoring-title{
+  margin-bottom:12px;font-family:"CM Mono",monospace;font-size:10px;
+  letter-spacing:.1em;color:var(--cm-accent-2)
+}
+body.night .cm-scoring-grid{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px
+}
+body.night .cm-scoring-node b{
+  display:block;font-family:"CM Orbitron",sans-serif;font-size:34px;font-weight:900;
+  line-height:1.1;color:var(--cm-accent)
+}
+body.night .cm-scoring-node:nth-child(2) b{color:#39ff88}
+body.night .cm-scoring-node:nth-child(3) b{color:#ffb020}
+body.night .cm-scoring-node span{
+  display:block;margin-top:4px;font-size:11px;color:var(--cm-text-muted);line-height:1.5
+}
+body.night .cm-scoring-source{
+  margin-left:auto;font-family:"CM Mono",monospace;font-size:9.5px;
+  color:var(--cm-text-faint)
+}
+@media (max-width:900px){
+  body.night.rank-embedded .list-head{display:none}
+  body.night.rank-embedded .row{grid-template-columns:40px minmax(0,1fr) 66px 76px}
+  body.night.rank-embedded .row .badges,body.night.rank-embedded .row .stars{display:none}
+  body.night .cm-scoring-grid{grid-template-columns:1fr;gap:10px}
 }

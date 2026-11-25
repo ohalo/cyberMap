@@ -636,17 +636,123 @@ body.night .dy-kicker{animation-delay:.08s}
 body.night .dy-hero h1{animation-delay:.14s}
 body.night .dy-hero p{animation-delay:.20s}
 body.night .dy-stats{animation-delay:.26s}
-/* 03 号板：知识库区左右分栏——左侧时间轴，右侧方向标签与筛选状态 */
-body.night .dy-kb{
+/* 03 号板：正文控制台——漏斗条 + 左侧时间轴 + 右侧三块功能面板 */
+.dy-design-only{display:none}
+.dy-console{display:contents}
+body.night .dy-console{
   display:grid;grid-template-columns:minmax(0,1fr) 500px;
-  gap:18px 24px;align-items:start
+  gap:16px 24px;align-items:start
 }
-body.night .dy-kb-head{grid-column:1 / span 2}
-body.night .dy-timeline{grid-column:1;grid-row:2}
-body.night .dy-tagcloud{grid-column:2;grid-row:2;align-self:start}
-body.night .dy-kb-status{grid-column:2;grid-row:3;align-self:start}
+body.night .dy-hudbar{
+  display:flex!important;position:sticky;top:0;z-index:30;
+  align-items:center;gap:14px;height:28px;padding:0 clamp(16px,4vw,42px);
+  background:#07121c;border-bottom:1px solid var(--dy-border);
+  font-family:"CM Mono",monospace;font-size:10px;letter-spacing:.08em;
+  color:var(--dy-muted)
+}
+body.night .dy-top{top:28px}
+body.night .dy-hudbar-dot{
+  width:6px;height:6px;border-radius:50%;background:#39ff88;
+  box-shadow:0 0 8px #39ff88
+}
+body.night .dy-hudbar-title{color:#39ff88;font-weight:700}
+body.night .dy-hudbar-right{margin-left:auto;color:var(--dy-muted)}
+body.night .dy-hudbar-clock{font-family:"CM Orbitron",sans-serif;color:#00e5ff;font-weight:900}
+body.night .dy-hero::before{display:none}
+body.night .dy-kicker{font-size:0!important}
+body.night .dy-kicker::before{
+  content:"// 03   VERIFIED DAILY DISCOVERIES";
+  font-size:11px;letter-spacing:.14em
+}
+body.night .dy-stats{display:none!important}
+body.night .dy-receipt{
+  grid-column:1 / span 2;grid-row:1;margin:0;padding:14px 18px;
+  border-radius:3px
+}
+body.night .dy-receipt-head,body.night .dy-receipt-flow,
+body.night .dy-receipt-meta{display:none}
+body.night .dy-funnel{display:grid!important}
+body.night .dy-funnel-title{
+  margin-bottom:10px;font-family:"CM Mono",monospace;font-size:10px;
+  letter-spacing:.12em;color:#00e5ff
+}
+body.night .dy-funnel-grid{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px
+}
+body.night .dy-funnel-node{
+  display:flex;align-items:baseline;gap:10px;padding-left:14px;
+  border-left:1px solid var(--dy-border)
+}
+body.night .dy-funnel-node b{
+  font-family:"CM Orbitron",sans-serif;font-size:30px;font-weight:900;
+  line-height:1.1;color:var(--dy-text)
+}
+body.night .dy-funnel-node span{
+  font-size:11px;color:var(--dy-muted)
+}
+body.night .dy-funnel-node:nth-child(2) b{color:#ff2ea6}
+body.night .dy-funnel-node:nth-child(3) b{color:#39ff88}
+body.night .dy-healthbar,body.night .dy-changes{display:none!important}
+body.night .dy-timeline{grid-column:1;grid-row:2 / span 4;margin-top:0}
+body.night .dy-kb{
+  display:block;grid-column:2;grid-row:2;margin:0;padding:14px 16px;
+  border-radius:3px
+}
+body.night .dy-kb::before,body.night .dy-rssbar::before,
+body.night .dy-watch::before{
+  display:block;margin-bottom:9px;padding-bottom:7px;
+  border-bottom:1px solid var(--dy-border);
+  font-family:"CM Mono",monospace;font-size:10px;letter-spacing:.1em;
+  color:#00e5ff
+}
+body.night .dy-kb::before{content:"方向标签 / KNOWLEDGE TAGS"}
+body.night .dy-rssbar::before{content:"RSS 订阅 / FEEDS"}
+body.night .dy-watch::before{content:"项目动态速递 / UPSTREAM RADAR"}
+body.night .dy-kb-title{display:none}
+body.night .dy-kb-hint{margin-bottom:10px;font-family:"CM Chakra",sans-serif}
+body.night .dy-search{margin-left:0;width:100%;border-radius:2px}
+body.night .dy-tagcloud{gap:7px}
+body.night .dy-tagbtn{
+  border-radius:2px;font-family:"CM Mono",monospace;font-size:10.5px
+}
+body.night .dy-tagbtn::before{content:"[ "}
+body.night .dy-tagbtn::after{content:" ]"}
+body.night .dy-tagbtn.active{background:#00e5ff;border-color:#00e5ff;color:#05070b}
+body.night .dy-kb-status{font-family:"CM Mono",monospace}
+body.night .dy-rssbar{
+  display:block!important;grid-column:2;grid-row:3;margin:0;padding:14px 16px;
+  border-style:solid;border-radius:3px
+}
+body.night .dy-rssbar>div:first-child{display:none}
+body.night .dy-feed-links{display:block;margin-top:0}
+body.night .dy-feed-chip{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  width:100%;margin-bottom:6px;padding:6px 9px;
+  border-radius:2px;font-family:"CM Mono",monospace;font-size:10px
+}
+body.night .dy-feed-chip::before{content:attr(data-file);color:#00e5ff}
+body.night .dy-feed-chip svg{display:none}
+body.night .dy-watch{
+  grid-column:2;grid-row:4;margin:0;padding:14px 16px;border-radius:3px
+}
+body.night .dy-watch-head{display:none}
+body.night .dy-watch-list{display:flex;flex-direction:column;gap:6px;margin-top:10px}
+body.night .dy-witem{border-radius:2px;padding:7px 9px}
+body.night .dy-witem:nth-child(n+4){display:none}
+body.night .dy-witem-name{max-width:180px;font-family:"CM Mono",monospace;font-size:10.5px}
+body.night .dy-watch-note{font-family:"CM Mono",monospace;font-size:10px}
+body.night .dy-day-head h2{font-family:"CM Chakra",sans-serif;font-size:20px;font-weight:900}
+body.night .dy-card{border-radius:2px;padding:12px}
+body.night .dy-card-name{font-family:"CM Chakra",sans-serif}
+body.night .dy-verify{border-radius:2px}
+body.night .dy-morehint{
+  display:block!important;grid-column:1;grid-row:6;margin-top:2px;
+  font-family:"CM Mono",monospace;font-size:10px;color:var(--dy-muted)
+}
 @media (max-width:991px){
-  body.night .dy-kb{display:block}
+  body.night .dy-console{display:block}
+  body.night .dy-timeline{margin-top:18px}
+  body.night .dy-kb,body.night .dy-rssbar,body.night .dy-watch{margin-top:14px}
 }
 @media (prefers-reduced-motion:reduce){
   body.night::after{background:none}
@@ -670,6 +776,16 @@ JS = r"""
     }
   }
   apply();
+  // 03 号板顶部 HUD 时钟：只改文本，不影响主题外观切换
+  var hudClock=document.querySelector('.dy-hudbar-clock');
+  if(hudClock){
+    function tickClock(){
+      var d=new Date(), p=function(n){return (n<10?'0':'')+n;};
+      hudClock.textContent=p(d.getHours())+':'+p(d.getMinutes())+':'+p(d.getSeconds());
+    }
+    tickClock();
+    setInterval(tickClock,1000);
+  }
   var btn=document.getElementById('dy-theme');
   if(btn){btn.addEventListener('click',function(){
     document.cookie=(isNight()?'night=0':'night=1')+';path=/;max-age=31536000';
@@ -1278,6 +1394,13 @@ def receipt_html(verify: dict, days) -> str:
     rate = (total_added / total_checked * 100) if total_checked else 0
     return (
         '<section class="dy-receipt" aria-label="收录质量回执">'
+        '<div class="dy-funnel dy-design-only">'
+        '<div class="dy-funnel-title">当日收录漏斗 / TODAY FUNNEL</div>'
+        '<div class="dy-funnel-grid">'
+        f'<div class="dy-funnel-node"><b>{esc(stat.get("checked", 0))}</b><span>候选</span></div>'
+        f'<div class="dy-funnel-node"><b>{esc(stat.get("pass", 0))}</b><span>核验通过</span></div>'
+        f'<div class="dy-funnel-node"><b>{esc(stat.get("added", 0))}</b><span>收录</span></div>'
+        '</div></div>'
         '<div class="dy-receipt-head">'
         '<span class="dy-receipt-title">收录质量回执</span>'
         f'<span class="dy-receipt-date">最近核验日 {esc(latest)} · 每条均经 HTTP 实探、AI 相关性与去重校验</span>'
@@ -1357,6 +1480,11 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
         f"<style>{CSS}</style>",
         "</head>",
         "<body>",
+        '<div class="dy-hudbar dy-design-only">'
+        '<span class="dy-hudbar-dot" aria-hidden="true"></span>'
+        '<span class="dy-hudbar-title">SECTION 03 // DAILY INTEL FEED</span>'
+        f'<span class="dy-hudbar-right">DAYS {len(days)} · MIN 3 / DAY · {esc(latest)} · '
+        '<span class="dy-hudbar-clock">--:--:--</span></span></div>',
         '<header class="dy-top">',
         f'<a class="dy-back" href="/" title="返回 cyberMap 导航首页">{ICON_BACK}<span>cyberMap 导航</span></a>',
         '<span class="dy-brand">每日 AI 速递</span>',
@@ -1377,6 +1505,7 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
         f'<div class="dy-stat"><span>最近更新</span><strong>{esc(latest)}</strong></div>',
         f'<div class="dy-stat"><span>生成时间</span><strong>{generated.strftime("%m-%d %H:%M")}</strong></div>',
         "</div></section>",
+        '<div class="dy-console">',
         receipt_html(verify, days),
         healthbar_html(health),
         watchbar_html(updates),
@@ -1385,14 +1514,14 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
         '<div>订阅每天的新收录 · 全部类型地址 <code>' + esc(f"{root}/daily/feed.xml") +
         '</code>，也可按类型单独订阅（统一为 RSS 2.0）。</div>',
         '<div class="dy-feed-links"><span class="dy-flabel">订阅源</span>'
-        f'<a class="dy-feed-chip" href="/daily/feed.xml" title="全部类型">{ICON_RSS}<span>全部</span></a>'
+        f'<a class="dy-feed-chip" href="/daily/feed.xml" title="全部类型" data-file="feed.xml">{ICON_RSS}<span>全站聚合 · 每日一更</span></a>'
         + ''.join(
-            f'<a class="dy-feed-chip" href="/daily/{filename}" title="只订阅{label}">'
-            f'{ICON_RSS}<span>{label}</span></a>'
+            f'<a class="dy-feed-chip" href="/daily/{filename}" title="只订阅{label}" data-file="{filename}">'
+            f'{ICON_RSS}<span>{label}聚合</span></a>'
             for filename, (label, _cats) in CATEGORY_FEEDS.items()
         )
-        + f'<a class="dy-feed-chip" href="/daily/{UPDATES_FEED}" title="订阅已收录项目的更新动态">'
-        f'{ICON_RSS}<span>项目动态</span></a>',
+        + f'<a class="dy-feed-chip" href="/daily/{UPDATES_FEED}" title="订阅已收录项目的更新动态" data-file="{UPDATES_FEED}">'
+        f'{ICON_RSS}<span>项目动态流</span></a>',
         '</div></div>',
         knowledgebar_html(entries),
         '<div class="dy-timeline">',
@@ -1424,6 +1553,9 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
 
     parts += [
         "</div>",  # /dy-timeline
+        f'<div class="dy-morehint dy-design-only">↓ 回看 {len(days)} 天收录历史 · '
+        '每条附核验证据 · 时间轴支持标签过滤</div>',
+        "</div>",  # /dy-console
         '<footer class="dy-footer">',
         f'数据来源：<a href="{esc(root)}/">cyberMap</a> 全站导航分类，'
         "每条收录前均经过 HTTP 实探、GitHub 元数据与 AI 相关性核验；"
