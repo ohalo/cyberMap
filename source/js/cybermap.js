@@ -207,7 +207,12 @@
      读 /rank/data/top100.json 的真实前 4 名；榜单是独立流水线产物，
      这里只读不写。网络失败静默隐藏，绝不编造数字。 */
   function injectRankPreview() {
-    var anchor = document.querySelector('.cm-feature-cta');
+    /* 设计稿 02 号板：榜单面板排在首个分类的卡片网格之后，而非首屏 HERO 里 */
+    var firstHead = document.querySelector('.main-content h4.text-gray');
+    var firstRow = firstHead && firstHead.nextElementSibling;
+    while (firstRow && firstRow.tagName === 'BR') firstRow = firstRow.nextElementSibling;
+    var anchor = (firstRow && firstRow.classList.contains('row'))
+      ? firstRow : document.querySelector('.cm-feature-cta');
     if (!anchor || document.querySelector('.cm-rank-preview') || !window.fetch) return;
     var panel = el('section', 'cm-rank-preview cm-design-only',
       '<div class="cm-rank-head">' +
@@ -277,16 +282,39 @@
             return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
           });
         };
-        var items = recent.slice(0, 3).map(function (rec) {
+        var picks = recent.slice(0, 4);
+        var items = picks.map(function (rec) {
           var what = rec.has_push ? '有新提交'
             : (rec.star_delta ? '+' + rec.star_delta + ' 星' : '纳入雷达追踪');
           return '<a href="' + esc(rec.url) + '" target="_blank" rel="noopener" ' +
             'title="项目动态 · 发现于 ' + esc(rec.date || '—') + '">' +
             '<b>' + esc(rec.name) + '</b> · ' + esc(what) + '</a>';
         }).join('');
+        /* 设计稿 01 号板：LIVE 面板四行动态（经典态仍用原横向流，零改动） */
+        var rows = picks.map(function (rec) {
+          var kind = rec.has_push ? 'push' : (rec.star_delta ? 'star' : 'idle');
+          var bits = [];
+          if (rec.has_push) bits.push('新提交');
+          if (rec.star_delta) bits.push('涨星 +' + Number(rec.star_delta).toLocaleString('en-US'));
+          if (rec.stars) bits.push(Number(rec.stars).toLocaleString('en-US') + ' stars');
+          if (!bits.length) bits.push('纳入雷达追踪');
+          var day = String(rec.date || '').slice(5) || '—';
+          return '<a class="cm-ticker-row" href="' + esc(rec.url) +
+            '" target="_blank" rel="noopener" title="' + esc(rec.name) + ' · ' + day + '">' +
+            '<span class="cm-ticker-dot ' + kind + '" aria-hidden="true"></span>' +
+            '<span class="cm-ticker-name">' + esc(rec.name) + '</span>' +
+            '<span class="cm-ticker-desc">' + esc(bits.join(' · ')) + '</span>' +
+            '<span class="cm-ticker-date">' + esc(day) + '</span></a>';
+        }).join('');
         ticker.innerHTML =
+          '<div class="cm-ticker-strip">' +
           '<span class="cm-ticker-label"><i class="fas fa-satellite-dish" aria-hidden="true"></i>LIVE</span>' +
-          '<div class="cm-ticker-items">' + items + '</div>';
+          '<div class="cm-ticker-items">' + items + '</div></div>' +
+          '<div class="cm-ticker-panel cm-design-only">' +
+          '<div class="cm-ticker-head"><span class="cm-live-badge">LIVE</span>' +
+          '<span class="cm-ticker-title">项目动态速递 / 上游雷达</span>' +
+          '<a class="cm-ticker-all" href="/daily/" title="查看全部项目动态">VIEW ALL →</a></div>' +
+          '<div class="cm-ticker-rows">' + rows + '</div></div>';
       })
       .catch(function () {
         if (ticker) ticker.style.display = 'none';
@@ -479,6 +507,26 @@
       });
     })();
 
+    /* ---- 3.5 设计稿 01 顶部 HUD 状态条（仅赛博态显示） ----
+       文案与 01 号板逐字一致；指标里的节点数取页面真实卡片数，
+       日期取当天，时钟与 Hero 时钟同源。经典态由 .cm-design-only 隐藏。 */
+    (function injectHudBar() {
+      if (document.querySelector('.cm-hudbar')) return;
+      var container = document.querySelector('.page-container') || document.body;
+      var d0 = new Date();
+      var syncDate = d0.getFullYear() + '-' + ('0' + (d0.getMonth() + 1)).slice(-2) +
+        '-' + ('0' + d0.getDate()).slice(-2);
+      var bar = el('div', 'cm-hudbar cm-design-only',
+        '<span class="cm-hudbar-dot" aria-hidden="true"></span>' +
+        '<span class="cm-hudbar-status">SYSTEM ONLINE</span>' +
+        '<span class="cm-hudbar-version">CYBERMAP // NODE_CONSOLE v2.6.11</span>' +
+        '<span class="cm-hudbar-metrics">LAT 27.4ms · NODES ' + cols.length + '/' + cols.length +
+          ' · SYNC ' + syncDate + '</span>' +
+        '<span class="cm-hudbar-clock">--:--:--</span>' +
+        '<span class="cm-hudbar-tz">UTC+8</span>');
+      container.insertBefore(bar, container.firstChild);
+    })();
+
     /* ---- 4. Hero 品牌区 + 实时统计 + HUD 时钟 ----
        设计稿落地（仅赛博态）：控制台双栏（左 搜索/快捷词/LIVE，右 节点雷达）、
        四格统计条、Orbitron 数字。经典态由 CSS 把 .cm-console 还原为
@@ -487,7 +535,11 @@
     if (sousuo && !main.querySelector('.cyber-hero')) {
       var hero = el('div', 'cyber-hero',
         '<div class="cyber-kicker"><span>&#10022;</span> CYBERMAP · AI NAVIGATION</div>' +
-        '<h1>发现好用的 <span class="cyber-gradient"><span class="cm-ai-word">AI</span> 工具</span></h1>' +
+        '<h1>发现好用的 <span class="cyber-gradient">AI 工具</span></h1>' +
+        '<div class="cm-design-kicker cm-design-only">// 01   DISCOVER THE NETWORK</div>' +
+        '<div class="cm-design-title cm-design-only">' +
+        '<span class="cm-design-line1">发现好用的</span>' +
+        '<span class="cm-design-line2"><b>AI</b><em>工具</em></span></div>' +
         '<p>接入 AI 网络节点 · 每日扫描收录 · 每条链接真实访问验证</p>' +
         '<div class="cm-hud">' +
         '<span class="cm-hud-dot" aria-hidden="true"></span>' +
@@ -520,14 +572,13 @@
         [String(cols.length), '收录站点 / NODES'],
         [String(heads.length), '导航分类 / SECTORS'],
         ['+' + todayCount, '今日新增 / TODAY'],
-        ['6', '订阅流 / RSS']
+        ['100%', '逐条访问核验 / VERIFIED']
       ].forEach(function (pair) {
         designStats.appendChild(el('div', 'cm-design-stat',
           '<strong>' + pair[0] + '</strong><span>' + pair[1] + '</span>'));
       });
-      hero.appendChild(designStats);
 
-      /* 控制台容器：hero + 原搜索框 + 快捷词 + LIVE + 雷达 */
+      /* 控制台容器：hero + 原搜索框 + 快捷词 + LIVE + 雷达 + 底部统计条 */
       var consoleBox = el('div', 'cm-console');
       consoleBox.appendChild(hero);
       /* LIVE 容器在 DOM 里紧跟 hero（经典态顺序与改造前一致），
@@ -546,13 +597,15 @@
       ];
       var quick = el('div', 'cm-quick cm-design-only');
       quick.innerHTML =
-        '<div class="cm-quick-label">QUICK ACCESS // 按任务筛选节点</div>' +
+        '<div class="cm-quick-label">QUICK ACCESS // 热门检索</div>' +
         '<div class="cm-quick-row">' + QUICK.map(function (q, i) {
           return '<button type="button" class="cm-quick-chip" data-qi="' + i +
             '"># ' + q[0] + '</button>';
         }).join('') + '</div>' +
         '<div class="cm-filter-status" aria-live="polite"></div>';
       consoleBox.appendChild(quick);
+      /* 设计稿底部统计条：独立成行，横贯双栏（经典态隐藏） */
+      consoleBox.appendChild(designStats);
 
       /* 节点拓扑雷达：静态 SVG，中心数字取真实站点数 */
       consoleBox.appendChild(el('div', 'cm-radar cm-design-only',
@@ -575,7 +628,7 @@
         '<text class="cm-radar-num-label" x="240" y="240" text-anchor="middle">NODES ONLINE</text>' +
         '</svg>' +
         '<div class="cm-radar-foot">' + heads.length +
-          ' 分类 · 逐条 HTTP 核验 · 每日自动重扫</div>'));
+          ' 分类 · 4 分组 · 逐条 HTTP 核验 · 每日自动重扫</div>'));
       sousuo.insertBefore(consoleBox, sousuo.firstChild);
 
       /* 快捷词：本地筛选已渲染的站点卡，不劫持主题的外部搜索按钮 */
@@ -630,10 +683,14 @@
       var input = sousuo.querySelector('#txt');
       var originalPh = input ? input.getAttribute('placeholder') : '';
       var cyberPh = '搜索 ' + cols.length + ' 个节点，或描述你想完成的任务…';
+      var searchBtn = sousuo.querySelector('#search-btn');
+      var originalBtn = searchBtn ? searchBtn.innerHTML : '';
       function syncPlaceholder() {
-        if (!input) return;
-        input.setAttribute('placeholder',
-          document.body.classList.contains('night') ? cyberPh : originalPh);
+        var cyber = document.body.classList.contains('night');
+        if (input) input.setAttribute('placeholder', cyber ? cyberPh : originalPh);
+        /* 设计稿按钮文案 SEARCH ↵；经典态严格还原主题原按钮 */
+        if (searchBtn) searchBtn.innerHTML = cyber
+          ? '<span class="cm-search-label">SEARCH ↵</span>' : originalBtn;
       }
       syncPlaceholder();
       if (window.MutationObserver) {
@@ -644,10 +701,12 @@
       var clockEl = hero.querySelector('#cm-hud-clock');
       if (clockEl) {
         var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+        var barClock = document.querySelector('.cm-hudbar-clock');
         var tick = function () {
           var d = new Date();
-          clockEl.textContent = pad(d.getHours()) + ':' +
-            pad(d.getMinutes()) + ':' + pad(d.getSeconds());
+          var time = pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds());
+          clockEl.textContent = time;
+          if (barClock) barClock.textContent = time;
         };
         tick();
         setInterval(tick, 1000);
