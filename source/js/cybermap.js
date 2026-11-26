@@ -1054,10 +1054,87 @@
     document.body.classList.toggle('night', cyber);
   }
 
+  /* ---- 设计稿 05 号板：关于页正文赛博设计板 ----
+     仅 /about/ 生效；原文面板完整保留，新增 HUD / 标题 / 色卡 / 字体 /
+     组件 / 动效说明全部带 .cm-design-only，经典态隐藏、零改动。 */
+  function injectAboutDossier() {
+    if ((location.pathname || '').indexOf('/about') < 0) return;
+    var main = document.querySelector('.page-container .main-content');
+    if (!main || main.querySelector('.cm-about-dossier')) return;
+
+    var swatches = [
+      ['VOID', '#05070B', 'void'], ['SURFACE', '#0B121B', 'surface'],
+      ['EDGE', '#12303F', 'edge'], ['NEON-C', '#00E5FF', 'neonc'],
+      ['NEON-M', '#FF2EA6', 'neonm'], ['ONLINE', '#39FF88', 'online'],
+      ['IDLE', '#FFB020', 'idle'], ['TEXT', '#E6F5FF', 'text']
+    ].map(function (t, i) {
+      return '<div class="cm-about-swatch sw-' + t[2] + '">' +
+        '<span class="chip"></span><span class="lb">' +
+        ('0' + (i + 1)).slice(-2) + ' ' + t[0] + '</span><code>' + t[1] + '</code></div>';
+    }).join('');
+
+    var head = el('section', 'cm-about-dossier cm-about-head cm-design-only',
+      '<div class="cm-about-hud"><b>SECTION 06 // SYSTEM DOSSIER</b>' +
+      '<span>v1.0 &middot; 8 TOKENS &middot; 3 FONTS</span></div>' +
+      '<div class="cm-about-hero">' +
+      '<div class="cm-about-kicker">// 06 &nbsp; ABOUT THE NETWORK</div>' +
+      '<h1><span>关于本站</span></h1>' +
+      '<p>接入 AI 网络节点 &middot; 每日扫描收录 &middot; 每条链接真实访问验证</p>' +
+      '</div>');
+
+    var board = el('section', 'cm-about-dossier cm-about-board cm-design-only',
+      '<div class="cm-about-grid">' +
+      '<section class="cm-about-block">' +
+      '<h3><i>01</i> COLOR TOKENS <small>/ 60-30-10 分配</small></h3>' +
+      '<div class="cm-about-swatches">' + swatches + '</div>' +
+      '</section>' +
+      '<section class="cm-about-block">' +
+      '<h3><i>02</i> TYPE SYSTEM <small>/ 展示 &middot; 数据 &middot; 正文分别</small></h3>' +
+      '<div class="cm-about-type">' +
+      '<div class="t-display">Aa 263 &ndash; Orbitron Black</div>' +
+      '<div class="t-ui">Chakra Petch Semi Bold &mdash; 界面标题 / NODE CONSOLE</div>' +
+      '<div class="t-mono">JetBrains Mono &mdash; DATA / HUD / 16:52:08 / 263 nodes</div>' +
+      '<div class="t-body">Noto Sans SC &mdash; 正文阅读，行高 &ge; 1.7，对比度 12.4:1 (WCAG AAA)</div>' +
+      '</div></section>' +
+      '<section class="cm-about-block">' +
+      '<h3><i>03</i> COMPONENTS <small>/ 状态覆盖</small></h3>' +
+      '<div class="cm-about-cta">' +
+      '<a class="cm-about-btn primary" href="/">SEARCH &crarr;</a>' +
+      '<a class="cm-about-btn" href="/daily/feed.xml">订阅 RSS</a>' +
+      '<a class="cm-about-btn danger" href="https://github.com/ohalo/cyberMap/issues" ' +
+      'target="_blank" rel="noopener">举报失效</a>' +
+      '</div>' +
+      '<div class="cm-about-badges">' +
+      '<span class="ok">[ 已核验 VERIFIED ]</span>' +
+      '<span class="active">[ 本周活跃 ACTIVE ]</span>' +
+      '<span class="idle">[ 沉寂 N 月 IDLE ]</span>' +
+      '</div>' +
+      '<div class="cm-about-note">' +
+      '<b>站点卡片 &middot; 悬停辉光</b>' +
+      '<p>接入 AI 网络节点 &middot; 每日扫描收录 &middot; 每条链接真实访问验证</p>' +
+      '<small>18.2k stars &middot; 更新 2h 前 &middot; 310 字描述 &middot; ease-out 位移</small>' +
+      '</div></section>' +
+      '<section class="cm-about-block">' +
+      '<h3><i>04</i> MOTION &amp; ATMOSPHERE <small>/ 煽动与氛围</small></h3>' +
+      '<ul class="cm-about-motion">' +
+      '<li>入场序列：HUD 主标 &rarr; 数据框 &rarr; 雷达 &rarr; 卡片网格，错位 60/120ms &middot; ' +
+      'cubic-bezier(0.16, 1, 0.3, 1)</li>' +
+      '<li>氛围层：CRT 扫描线 &middot; 透视网格背景 &middot; 霓虹辉光（青/品红双层）&middot; ' +
+      '噪点颗粒，全部限定在装饰性作用区域</li>' +
+      '<li>降级与无障碍：prefers-reduced-motion 关闭全部动效，触控目标 &ge; 44px &middot; ' +
+      '正文对比 &ge; 4.5:1 (实测 12.4:1)</li>' +
+      '</ul></section></div>' +
+      '<div class="cm-about-num">06</div>');
+
+    main.insertBefore(head, main.firstChild);
+    main.appendChild(board);
+  }
+
   function start() {
     syncNightFromCookie(); /* 全站：先从 cookie 恢复赛博/经典态 */
     rebuildFooter();       /* 全站 footer，不依赖 .main-content */
     boot();                /* 首页专属增强，缺 .main-content 时自行返回 */
+    injectAboutDossier();  /* 关于页：05 号板正文设计板 */
     window.addEventListener('focus', syncNightFromCookie);
   }
 

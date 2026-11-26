@@ -2635,3 +2635,214 @@ body.night .cm-horizontal-design-nav .cm-site-links > a {
 }
 body.night .cm-horizontal-design-nav .cm-site-links > a:last-child { margin-right: 0; }
 body.night .cm-horizontal-design-nav .cm-site-links > a.is-active::after { bottom: 8px; }
+
+/* ==========================================================================
+   /about/ 正文 · 05 号板设计系统落地（仅 body.night 生效）
+   05 token 是唯一设计语言：VOID / SURFACE / EDGE / NEON-C / NEON-M /
+   ONLINE / IDLE / TEXT；字体 Orbitron / Chakra Petch / JetBrains Mono。
+   所有新增节点以 .cm-design-only 默认隐藏，经典态零改动。
+   ========================================================================== */
+body.night .cm-about-dossier.cm-design-only { display: block !important; }
+body.night .cm-about-dossier {
+  max-width: 1080px; margin: 0 auto; color: var(--cm-text-token);
+  font-family: "Noto Sans SC", "CM Chakra", sans-serif;
+}
+/* HUD 页眉：与 01-05 号板同一条 32px 状态带 */
+body.night .cm-about-hud {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 32px; padding: 0 14px; margin-bottom: 30px;
+  background: rgba(7, 18, 28, .92); border-bottom: 1px solid var(--cm-edge);
+  font-family: var(--cm-font-mono); font-size: 10px;
+  letter-spacing: .1em; color: #6b7f99;
+}
+body.night .cm-about-hud b { color: var(--cm-neon-c); font-weight: 700; }
+body.night .cm-about-hud span { font-size: 9px; }
+/* HERO：双行 kicker + 大标题 + 副标 */
+body.night .cm-about-hero { margin-bottom: 34px; }
+body.night .cm-about-kicker {
+  font-family: var(--cm-font-mono); font-size: 11px; letter-spacing: .16em;
+  color: var(--cm-neon-c); margin-bottom: 14px;
+}
+body.night .cm-about-hero h1 {
+  margin: 0 0 12px; font-family: "CM Chakra", sans-serif; font-weight: 600;
+  font-size: clamp(36px, 5vw, 56px); line-height: 1.1; color: var(--cm-text-token);
+  letter-spacing: .01em;
+}
+body.night .cm-about-hero p {
+  margin: 0; font-family: "CM Mono", monospace; font-size: 12px;
+  color: #8fa6b8; letter-spacing: .02em;
+}
+/* 正文原面板：换成 SURFACE 卡 + EDGE 描边，保留全部原文 */
+body.night .page-container .main-content .panel.panel-default {
+  background: var(--cm-surface) !important;
+  border: 1px solid var(--cm-edge) !important;
+  border-radius: 3px !important;
+  box-shadow: 0 12px 34px rgba(0, 0, 0, .34) !important;
+  margin-bottom: 22px !important;
+}
+body.night .page-container .main-content .panel-heading,
+body.night .page-container .main-content .panel-body {
+  background: transparent !important; color: var(--cm-text-token) !important;
+}
+body.night .page-container .main-content .panel-body {
+  padding: 22px 24px !important; font-size: 14px; line-height: 1.8;
+}
+body.night .page-container .main-content h4.text-gray {
+  margin: 0 !important; padding: 14px 24px !important;
+  background: rgba(0, 229, 255, .045) !important;
+  border-bottom: 1px solid var(--cm-edge) !important;
+  color: var(--cm-neon-c) !important;
+  font-family: "CM Chakra", sans-serif !important; font-weight: 600 !important;
+  font-size: 15px !important; letter-spacing: .04em;
+}
+body.night .page-container .main-content .panel-body p { color: #c6d8e4 !important; }
+body.night .page-container .main-content .panel-body strong { color: var(--cm-text-token) !important; }
+body.night .page-container .main-content .panel-body blockquote {
+  margin: 12px 0 !important; padding: 10px 16px !important;
+  border-left: 2px solid var(--cm-neon-c) !important;
+  background: rgba(0, 229, 255, .04) !important;
+  color: #c6d8e4 !important; font-size: 13px !important;
+}
+body.night .page-container .main-content .panel-body a {
+  color: var(--cm-neon-c) !important; text-decoration: none !important;
+  border-bottom: 1px dashed rgba(0, 229, 255, .4);
+}
+body.night .page-container .main-content .panel-body a:hover { color: var(--cm-neon-m) !important; }
+/* 站长联系卡：SURFACE + EDGE + 悬停霓虹 */
+body.night .page-container .main-content .xe-widget {
+  background: var(--cm-surface) !important; border: 1px solid var(--cm-edge) !important;
+  border-radius: 3px !important; transition: transform .3s cubic-bezier(.16,1,.3,1),
+  box-shadow .3s cubic-bezier(.16,1,.3,1) !important;
+}
+body.night .page-container .main-content .xe-widget:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 16px 30px rgba(0, 229, 255, .18) !important;
+}
+body.night .page-container .main-content .xe-user-name strong { color: var(--cm-text-token) !important; }
+body.night .page-container .main-content .xe-comment p { color: #8fa6b8 !important; }
+/* 设计板主体：4 块内容 + 右下 06 大字 */
+body.night .cm-about-grid {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 24px; align-items: start; margin-top: 34px;
+}
+body.night .cm-about-block {
+  background: var(--cm-surface); border: 1px solid var(--cm-edge);
+  border-radius: 3px; padding: 18px 20px;
+}
+body.night .cm-about-block:nth-child(3),
+body.night .cm-about-block:nth-child(4) { margin-left: 0; }
+body.night .cm-about-block h3 {
+  margin: 0 0 16px; font-family: var(--cm-font-mono); font-size: 11px;
+  font-weight: 700; letter-spacing: .12em; color: var(--cm-neon-c);
+}
+body.night .cm-about-block h3 i {
+  font-style: normal; color: var(--cm-neon-m); margin-right: 8px;
+}
+body.night .cm-about-block h3 small {
+  font-size: 10px; color: #6b7f99; letter-spacing: .04em; font-weight: 400;
+}
+/* 8 色色卡 */
+body.night .cm-about-swatches {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+body.night .cm-about-swatch { min-width: 0; }
+body.night .cm-about-swatch .chip {
+  display: block; height: 52px; border: 1px solid var(--cm-edge); border-radius: 2px;
+}
+body.night .cm-about-swatch.sw-void .chip { background: #05070b; }
+body.night .cm-about-swatch.sw-surface .chip { background: #0b121b; }
+body.night .cm-about-swatch.sw-edge .chip { background: #12303f; }
+body.night .cm-about-swatch.sw-neonc .chip { background: #00e5ff; }
+body.night .cm-about-swatch.sw-neonm .chip { background: #ff2ea6; }
+body.night .cm-about-swatch.sw-online .chip { background: #39ff88; }
+body.night .cm-about-swatch.sw-idle .chip { background: #ffb020; }
+body.night .cm-about-swatch.sw-text .chip { background: #e6f5ff; }
+body.night .cm-about-swatch .lb {
+  display: block; margin-top: 6px; font-family: var(--cm-font-mono);
+  font-size: 9px; color: #9db3c4; white-space: nowrap;
+  overflow: hidden; text-overflow: ellipsis;
+}
+body.night .cm-about-swatch code {
+  display: block; font-family: var(--cm-font-mono);
+  font-size: 9px; color: #6b7f99;
+}
+/* 字体样本 */
+body.night .cm-about-type > div {
+  padding: 5px 0; border-bottom: 1px dashed var(--cm-border);
+}
+body.night .cm-about-type > div:last-child { border-bottom: 0; }
+body.night .cm-about-type .t-display {
+  font-family: "CM Orbitron", sans-serif; font-weight: 900;
+  font-size: clamp(20px, 2.6vw, 34px); color: var(--cm-neon-c);
+  letter-spacing: .01em;
+}
+body.night .cm-about-type .t-ui {
+  font-family: "CM Chakra", sans-serif; font-weight: 600;
+  font-size: 14px; color: var(--cm-text-token);
+}
+body.night .cm-about-type .t-mono {
+  font-family: "CM Mono", monospace; font-size: 12px; color: #9db3c4;
+}
+body.night .cm-about-type .t-body { font-size: 12px; color: #8fa6b8; line-height: 1.7; }
+/* 组件按钮 + 状态徽章 */
+body.night .cm-about-cta { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; }
+body.night .cm-about-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 34px; padding: 0 16px; border-radius: 2px;
+  border: 1px solid var(--cm-edge); background: rgba(11, 18, 27, .86);
+  font-family: "CM Chakra", sans-serif; font-size: 12px; font-weight: 600;
+  color: var(--cm-text-token); text-decoration: none;
+  transition: transform .3s cubic-bezier(.16,1,.3,1), box-shadow .3s cubic-bezier(.16,1,.3,1);
+}
+body.night .cm-about-btn.primary {
+  background: var(--cm-neon-c); border-color: var(--cm-neon-c); color: #04121a;
+}
+body.night .cm-about-btn.danger { border-color: var(--cm-accent-2-border); color: var(--cm-neon-m); }
+body.night .cm-about-btn:hover {
+  transform: translateY(-2px); box-shadow: 0 10px 18px rgba(0, 229, 255, .18);
+}
+body.night .cm-about-badges {
+  display: flex; flex-wrap: wrap; gap: 18px; margin-bottom: 14px;
+  font-family: var(--cm-font-mono); font-size: 10px;
+}
+body.night .cm-about-badges .ok { color: var(--cm-online); }
+body.night .cm-about-badges .active { color: var(--cm-neon-c); }
+body.night .cm-about-badges .idle { color: var(--cm-idle); }
+body.night .cm-about-note {
+  border: 1px solid var(--cm-edge); border-radius: 3px;
+  background: rgba(0, 229, 255, .03); padding: 12px 14px;
+}
+body.night .cm-about-note b { font-family: "CM Chakra", sans-serif; font-size: 12px; color: var(--cm-text-token); }
+body.night .cm-about-note p { margin: 6px 0; font-size: 11px; color: #9db3c4; }
+body.night .cm-about-note small { font-family: var(--cm-font-mono); font-size: 10px; color: #6b7f99; }
+/* 动效说明 */
+body.night .cm-about-motion { margin: 0; padding: 0; list-style: none; }
+body.night .cm-about-motion li {
+  position: relative; padding: 6px 0 6px 14px; font-size: 12px;
+  line-height: 1.7; color: #9db3c4;
+}
+body.night .cm-about-motion li::before {
+  content: ""; position: absolute; left: 0; top: 14px;
+  width: 4px; height: 4px; background: var(--cm-neon-c);
+}
+/* 右下角 06 大字：与 05 号板同一装饰手法 */
+body.night .cm-about-num {
+  position: absolute; right: 34px; margin-top: -10px;
+  font-family: "CM Orbitron", sans-serif; font-weight: 900;
+  font-size: 120px; line-height: 1; color: rgba(18, 48, 63, .5);
+  pointer-events: none; user-select: none;
+}
+@media (max-width: 991px) {
+  body.night .cm-about-grid { grid-template-columns: 1fr; }
+  body.night .cm-about-num { display: none !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.night .cm-about-btn, body.night .cm-about-swatch { transition: none !important; }
+}
+
+/* 修正主题全局 code 默认白底污染色卡 HEX 标签 */
+body.night .cm-about-swatch code {
+  background: transparent !important; padding: 0 !important;
+  border: 0 !important; color: #6b7f99 !important;
+}
