@@ -2846,3 +2846,50 @@ body.night .cm-about-swatch code {
   background: transparent !important; padding: 0 !important;
   border: 0 !important; color: #6b7f99 !important;
 }
+
+/* ---- 正文原有内容块也按 05 号板卡片化（仅 body.night 生效） ----
+   JS 只加 .cm-about-card 与卡头，原文与链接零改动；经典态以下规则不生效。 */
+body.night .cm-about-card.cm-about-card {
+  position: relative;
+  background: var(--cm-surface) !important;
+  border: 1px solid var(--cm-edge) !important;
+  border-radius: 3px !important;
+  padding: 38px 18px 14px !important;
+  margin: 0 0 12px !important;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, .26) !important;
+  transition: transform .3s cubic-bezier(.16,1,.3,1),
+    box-shadow .3s cubic-bezier(.16,1,.3,1) !important;
+}
+body.night .cm-about-card.cm-about-card:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 16px 30px rgba(0, 229, 255, .16) !important;
+}
+body.night .cm-about-card-hd.cm-design-only {
+  position: absolute; left: 0; right: 0; top: 0;
+  display: flex !important; align-items: center; gap: 8px;
+  height: 26px; padding: 0 14px;
+  background: rgba(0, 229, 255, .045);
+  border-bottom: 1px solid var(--cm-edge);
+  font-family: var(--cm-font-mono); font-size: 10px;
+  letter-spacing: .1em; color: var(--cm-neon-c);
+}
+body.night .cm-about-card-hd i {
+  font-style: normal; color: var(--cm-neon-m); font-weight: 700;
+}
+body.night .cm-about-card-hd small {
+  font-size: 9px; color: #6b7f99; letter-spacing: .04em;
+}
+/* 正文段落块内文字层级：原文保留，只调颜色与行高 */
+body.night .cm-about-card p { color: #c6d8e4 !important; line-height: 1.8 !important; }
+body.night .cm-about-card strong { color: var(--cm-text-token) !important; }
+/* 站长卡：去掉主题蓝底与圆头像外的默认样式，卡头留白交给 .cm-about-card */
+body.night .xe-widget.cm-about-card {
+  background: var(--cm-surface) !important;
+  border-color: var(--cm-edge) !important;
+}
+body.night .xe-widget.cm-about-card .xe-comment p { color: #8fa6b8 !important; }
+/* blockquote 内两条已各自卡片化，去掉外层青色左边框与底色避免双框 */
+body.night .page-container .main-content .panel-body blockquote {
+  border-left: 0 !important; background: transparent !important;
+  padding: 0 !important; margin: 0 !important;
+}

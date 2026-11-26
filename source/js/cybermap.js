@@ -1128,6 +1128,33 @@
 
     main.insertBefore(head, main.firstChild);
     main.appendChild(board);
+    decorateAboutBody();
+  }
+
+  /* ---- 05 号板卡片化：正文原有的每段内容也做成同一套设计板卡片 ----
+     只加 class 与纯展示的卡头 div（.cm-design-only 经典态隐藏），
+     一个字都不改原文、不动任何链接；ID/事件/语义标签全部保留。 */
+  function decorateAboutBody() {
+    var panel = document.querySelector('.page-container .main-content .panel.panel-default');
+    if (!panel || panel.querySelector('.cm-about-card')) return;
+
+    var intro = panel.querySelector('.panel-body > .row > .col-sm-12 > p');
+    var quotes = Array.prototype.slice.call(panel.querySelectorAll('blockquote p'));
+    var maintainer = panel.querySelector('.xe-widget');
+
+    function card(node, num, en, zh) {
+      if (!node) return;
+      node.classList.add('cm-about-card');
+      node.insertBefore(el('div', 'cm-about-card-hd cm-design-only',
+        '<i>' + num + '</i> ' + en + ' <small>/ ' + zh + '</small>'), node.firstChild);
+    }
+
+    card(intro, '01', 'INTRO', '本站定位');
+    if (quotes[0]) card(quotes[0], '02', 'DAILY INTEL', '每日 AI 速递');
+    if (quotes[1]) card(quotes[1], '03', 'LEADERBOARD', '插件排行榜');
+    card(maintainer, '04', 'MAINTAINER', '站长');
+    if (quotes[2]) card(quotes[2], '05', 'REPOSITORY', '开源仓库');
+    if (quotes[3]) card(quotes[3], '06', 'STACK', '技术栈');
   }
 
   function start() {
