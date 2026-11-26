@@ -7,19 +7,19 @@
       "name": "对话与搜索"
     },
     {
-      "count": 15,
+      "count": 16,
       "group": "AI 工具箱",
       "key": "aiImage",
       "name": "图像与设计"
     },
     {
-      "count": 17,
+      "count": 19,
       "group": "AI 工具箱",
       "key": "aiVideo",
       "name": "视频与音频"
     },
     {
-      "count": 19,
+      "count": 22,
       "group": "AI 工具箱",
       "key": "aiCode",
       "name": "编程与开发"
@@ -43,13 +43,13 @@
       "name": "大语言模型"
     },
     {
-      "count": 22,
+      "count": 23,
       "group": "模型与开源",
       "key": "githubGPT",
       "name": "GitHub 项目"
     },
     {
-      "count": 30,
+      "count": 31,
       "group": "模型与开源",
       "key": "aiFrameworks",
       "name": "推理与训练框架"
@@ -61,7 +61,7 @@
       "name": "RAG 与知识库"
     },
     {
-      "count": 34,
+      "count": 36,
       "group": "模型与开源",
       "key": "agentFrameworks",
       "name": "智能体框架"
@@ -107,8 +107,8 @@
     "categories": 17,
     "groups": 4,
     "health_checked": 276,
-    "sites": 263,
-    "verified": 105
+    "sites": 273,
+    "verified": 115
   },
   "group_index": [
     {
@@ -120,7 +120,7 @@
         "aiOffice",
         "aiAgent"
       ],
-      "count": 104,
+      "count": 110,
       "name": "AI 工具箱"
     },
     {
@@ -131,7 +131,7 @@
         "ragKnowledge",
         "agentFrameworks"
       ],
-      "count": 120,
+      "count": 124,
       "name": "模型与开源"
     },
     {
@@ -459,6 +459,27 @@
     {
       "category": "aiImage",
       "category_name": "图像与设计",
+      "date": "2026-11-26",
+      "description": "视觉 AI 创作工作区，聚合五十多个图像与视频模型，自动比价路由到最低成本供应商按量计费。",
+      "group": "AI 工具箱",
+      "health": null,
+      "img": "https://www.scenetra.com/favicon.ico",
+      "name": "Scenetra",
+      "tags": [
+        "视频图像"
+      ],
+      "url": "https://www.scenetra.com",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-26T10:16:12+08:00",
+        "date": "2026-11-26",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "aiImage",
+      "category_name": "图像与设计",
       "date": "2026-11-25",
       "description": "面向游戏影视的 AI 3D 资产生成工具，用文本或图片生成带 PBR 贴图的生产级网格模型。",
       "group": "AI 工具箱",
@@ -708,6 +729,52 @@
       ],
       "url": "https://segment-anything.com/",
       "verified": null
+    },
+    {
+      "category": "aiVideo",
+      "category_name": "视频与音频",
+      "date": "2026-11-26",
+      "description": "开源智能体视频制作系统，从脚本自动生成素材、配音与剪辑，内置十二条流水线和数百项技能。",
+      "group": "AI 工具箱",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "calesthio/OpenMontage",
+      "tags": [
+        "视频图像",
+        "技能生态",
+        "语音"
+      ],
+      "url": "https://github.com/calesthio/OpenMontage",
+      "verified": {
+        "ai_hits": 5,
+        "checked_at": "2026-11-26T10:16:10+08:00",
+        "date": "2026-11-26",
+        "http_status": 0,
+        "stars": 83359
+      }
+    },
+    {
+      "category": "aiVideo",
+      "category_name": "视频与音频",
+      "date": "2026-11-26",
+      "description": "完全本地运行的开源配音工作室，支持声音克隆、音色设计、视频配音与转写，覆盖六百余种语言。",
+      "group": "AI 工具箱",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "debpalash/VoiceStudio",
+      "tags": [
+        "视频图像",
+        "本地运行",
+        "语音"
+      ],
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-26T10:17:54+08:00",
+        "date": "2026-11-26",
+        "http_status": 0,
+        "stars": 118422
+      }
     },
     {
       "category": "aiVideo",
@@ -1000,6 +1067,73 @@
       ],
       "url": "http://Elai.io",
       "verified": null
+    },
+    {
+      "category": "aiCode",
+      "category_name": "编程与开发",
+      "date": "2026-11-26",
+      "description": "Google Chrome 团队维护的 Web 开发指南，帮助编程智能体遵循现代浏览器最佳实践生成代码。",
+      "group": "AI 工具箱",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "GoogleChrome/modern-web-guidance-src",
+      "tags": [
+        "浏览器自动化",
+        "多智能体",
+        "代码开发"
+      ],
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-26T10:15:26+08:00",
+        "date": "2026-11-26",
+        "http_status": 0,
+        "stars": 11061
+      }
+    },
+    {
+      "category": "aiCode",
+      "category_name": "编程与开发",
+      "date": "2026-11-26",
+      "description": "远程控制 Claude Code、Codex 等编程智能体的工作台，可用手机或任意电脑随时审批任务。",
+      "group": "AI 工具箱",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "pingdotgg/t3code",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://github.com/pingdotgg/t3code",
+      "verified": {
+        "ai_hits": 5,
+        "checked_at": "2026-11-26T10:16:27+08:00",
+        "date": "2026-11-26",
+        "http_status": 0,
+        "stars": 79549
+      }
+    },
+    {
+      "category": "aiCode",
+      "category_name": "编程与开发",
+      "date": "2026-11-26",
+      "description": "编程智能体的设计语言与审查技能，用 polish、critique 等指令改善 AI 生成界面的视觉质量。",
+      "group": "AI 工具箱",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "pbakaus/impeccable",
+      "tags": [
+        "技能生态",
+        "前端 UI",
+        "代码开发"
+      ],
+      "url": "https://github.com/pbakaus/impeccable",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-26T10:16:56+08:00",
+        "date": "2026-11-26",
+        "http_status": 0,
+        "stars": 116929
+      }
     },
     {
       "category": "aiCode",
@@ -2230,6 +2364,29 @@
     {
       "category": "githubGPT",
       "category_name": "GitHub 项目",
+      "date": "2026-11-26",
+      "description": "开源大模型评测平台，覆盖推理、代码、安全与长上下文等基准，支持主流商业与开源模型。",
+      "group": "模型与开源",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "open-compass/opencompass",
+      "tags": [
+        "安全审计",
+        "推理引擎",
+        "代码开发"
+      ],
+      "url": "https://github.com/open-compass/opencompass",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-26T10:17:39+08:00",
+        "date": "2026-11-26",
+        "http_status": 0,
+        "stars": 7644
+      }
+    },
+    {
+      "category": "githubGPT",
+      "category_name": "GitHub 项目",
       "date": "2026-11-14",
       "description": "英伟达开源的生成式 3D 世界模型项目，可从输入图像生成可探索的三维场景，开放代码与预训练权重。",
       "group": "模型与开源",
@@ -2667,6 +2824,28 @@
       ],
       "url": "https://github.com/yetone/openai-translator",
       "verified": null
+    },
+    {
+      "category": "aiFrameworks",
+      "category_name": "推理与训练框架",
+      "date": "2026-11-26",
+      "description": "面向 NVIDIA Blackwell 显卡优化的本地推理引擎，支持百万上下文、原生视觉与推测解码。",
+      "group": "模型与开源",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "jesdga95/basalt",
+      "tags": [
+        "推理引擎",
+        "本地运行"
+      ],
+      "url": "https://github.com/jesdga95/basalt",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-26T10:15:40+08:00",
+        "date": "2026-11-26",
+        "http_status": 0,
+        "stars": 2118
+      }
     },
     {
       "category": "aiFrameworks",
@@ -3530,6 +3709,50 @@
       ],
       "url": "https://github.com/bhaskatripathi/pdfGPT",
       "verified": null
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-26",
+      "description": "分布式智能体环境运行时，用 Firecracker 微虚拟机实现毫秒级快照与分叉，用于大规模强化学习训练。",
+      "group": "模型与开源",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "kvcache-ai/AgentENV",
+      "tags": [
+        "教育课堂",
+        "训练微调"
+      ],
+      "url": "https://github.com/kvcache-ai/AgentENV",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-26T10:15:11+08:00",
+        "date": "2026-11-26",
+        "http_status": 0,
+        "stars": 3785
+      }
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-26",
+      "description": "通过 MCP 让 AI 操控真实 iPhone 或安卓手机的桌面工具，全程投屏录像并支持人工随时接管。",
+      "group": "模型与开源",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "DIYgod/Pinky",
+      "tags": [
+        "MCP",
+        "本地运行"
+      ],
+      "url": "https://github.com/DIYgod/Pinky",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-26T10:17:10+08:00",
+        "date": "2026-11-26",
+        "http_status": 0,
+        "stars": 2783
+      }
     },
     {
       "category": "agentFrameworks",

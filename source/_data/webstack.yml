@@ -293,6 +293,10 @@ aiChat:
     img: https://cybermap.halo26812.eu.org/favicon.ico
     description: 需要魔法,主打准确度,胡说八道概率低体验优于ChatGPT,免费不限量
 aiImage:
+  - name: Scenetra
+    url: https://www.scenetra.com
+    img: https://www.scenetra.com/favicon.ico
+    description: "视觉 AI 创作工作区，聚合五十多个图像与视频模型，自动比价路由到最低成本供应商按量计费。 · 2026-11-26 收录"
   - name: Hydrilla
     url: https://hydrilla.ai
     img: https://hydrilla.ai/favicon.ico
@@ -355,6 +359,14 @@ aiImage:
     description: Segment Anything是一个强大的实例分割模型,它可以根据输入提示(如点或框)生成高质量的对象遮罩,并可以用于生成图像中的所有对象的遮罩。它在1100万个遮罩和1100万张图像的大型数据集上进行了训练,在各种分割任务上的零样本性能非常强。
 
 aiVideo:
+  - name: calesthio/OpenMontage
+    url: https://github.com/calesthio/OpenMontage
+    img: https://github.com/favicon.ico
+    description: "开源智能体视频制作系统，从脚本自动生成素材、配音与剪辑，内置十二条流水线和数百项技能。 · 2026-11-26 收录"
+  - name: debpalash/VoiceStudio
+    url: https://github.com/debpalash/VoiceStudio
+    img: https://github.com/favicon.ico
+    description: "完全本地运行的开源配音工作室，支持声音克隆、音色设计、视频配音与转写，覆盖六百余种语言。 · 2026-11-26 收录"
   - name: dograh-hq/dograh
     url: https://github.com/dograh-hq/dograh
     img: https://github.com/favicon.ico
@@ -425,6 +437,18 @@ aiVideo:
     description: 这是一个AI视频工具,可以自动生成和编辑视频片段。
 
 aiCode:
+  - name: GoogleChrome/modern-web-guidance-src
+    url: https://github.com/GoogleChrome/modern-web-guidance-src
+    img: https://github.com/favicon.ico
+    description: "Google Chrome 团队维护的 Web 开发指南，帮助编程智能体遵循现代浏览器最佳实践生成代码。 · 2026-11-26 收录"
+  - name: pingdotgg/t3code
+    url: https://github.com/pingdotgg/t3code
+    img: https://github.com/favicon.ico
+    description: "远程控制 Claude Code、Codex 等编程智能体的工作台，可用手机或任意电脑随时审批任务。 · 2026-11-26 收录"
+  - name: pbakaus/impeccable
+    url: https://github.com/pbakaus/impeccable
+    img: https://github.com/favicon.ico
+    description: "编程智能体的设计语言与审查技能，用 polish、critique 等指令改善 AI 生成界面的视觉质量。 · 2026-11-26 收录"
   - name: Testsy
     url: https://testsy.dev
     img: https://cybermap.halo26812.eu.org/favicon.ico
@@ -724,6 +748,10 @@ GPTModels:
     description: Linly是一个中文NLP工具包,提供预训练语言模型、词典、数据集和工具。其主要目的是研究中文NLP,推动开源人工智能技术的发展。Linly通过集成多个中文NLP资源,能显著降低中文NLP建模的门槛,加速研究与开发过程。
 
 githubGPT:
+  - name: open-compass/opencompass
+    url: https://github.com/open-compass/opencompass
+    img: https://github.com/favicon.ico
+    description: "开源大模型评测平台，覆盖推理、代码、安全与长上下文等基准，支持主流商业与开源模型。 · 2026-11-26 收录"
   - name: nv-tlabs/lyra
     url: https://github.com/nv-tlabs/Lyra
     img: https://github.com/favicon.ico
@@ -814,6 +842,10 @@ githubGPT:
     img: https://github.com/favicon.ico
     description: 基于 ChatGPT API 的划词翻译浏览器插件和跨平台桌面端应用
 aiFrameworks:
+  - name: jesdga95/basalt
+    url: https://github.com/jesdga95/basalt
+    img: https://github.com/favicon.ico
+    description: "面向 NVIDIA Blackwell 显卡优化的本地推理引擎，支持百万上下文、原生视觉与推测解码。 · 2026-11-26 收录"
   - name: JustVugg/colibri
     url: https://github.com/JustVugg/colibri
     img: https://github.com/favicon.ico
@@ -1167,6 +1199,14 @@ ragKnowledge:
     description: 跟 PDF 文档进行一对一对话;自动切割内容,并使用强大的深度平均网络编码器来生成嵌入;对 PDF 内容执行语义搜索,并将最相关的嵌入传递给 Open AI;自定义逻辑,生成更精确的响应信息,速度要比 OpenAI 的快。
 
 agentFrameworks:
+  - name: kvcache-ai/AgentENV
+    url: https://github.com/kvcache-ai/AgentENV
+    img: https://github.com/favicon.ico
+    description: "分布式智能体环境运行时，用 Firecracker 微虚拟机实现毫秒级快照与分叉，用于大规模强化学习训练。 · 2026-11-26 收录"
+  - name: DIYgod/Pinky
+    url: https://github.com/DIYgod/Pinky
+    img: https://github.com/favicon.ico
+    description: "通过 MCP 让 AI 操控真实 iPhone 或安卓手机的桌面工具，全程投屏录像并支持人工随时接管。 · 2026-11-26 收录"
   - name: withcoral/coral
     url: https://github.com/withcoral/coral
     img: https://github.com/favicon.ico

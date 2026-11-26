@@ -326,6 +326,25 @@
         }
       ],
       "review": 0
+    },
+    "2026-11-26": {
+      "added": 10,
+      "checked": 15,
+      "fail": 1,
+      "pass": 13,
+      "rejected": [
+        {
+          "reason": "页面与仓库元数据中未检出 AI 相关性关键词",
+          "url": "https://github.com/ranxianglei/billion-context",
+          "verdict": "fail"
+        },
+        {
+          "reason": "GitHub 网页经本机代理不可达；仓库真实性由 GitHub API 元数据核验；GitHub stars < 200，需人工判断价值",
+          "url": "https://github.com/AstroVela/vane",
+          "verdict": "review"
+        }
+      ],
+      "review": 1
     }
   },
   "evidence": {
@@ -791,6 +810,24 @@
       "title": "GitHub - cactus-compute/cactus: Sub-50mb agentic, voice and vision intelligence for consumer devices. · GitHub",
       "verdict": "pass"
     },
+    "github.com/calesthio/openmontage": {
+      "ai_hits": 5,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude",
+        "copilot",
+        "openai"
+      ],
+      "checked_at": "2026-11-26T10:16:10+08:00",
+      "date": "2026-11-26",
+      "http_status": 0,
+      "license": "AGPL-3.0",
+      "pushed_at": "2026-11-16T06:55:27Z",
+      "stars": 83359,
+      "title": "",
+      "verdict": "pass"
+    },
     "github.com/chesterra/cccc": {
       "ai_hits": 6,
       "ai_keywords": [
@@ -903,6 +940,22 @@
       "title": "GitHub - D4Vinci/Scrapling: 🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don&#39;t be shy, join here: https://discord.gg/",
       "verdict": "pass"
     },
+    "github.com/debpalash/voicestudio": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "hugging\\s?face",
+        "text[- ]to[- ]"
+      ],
+      "checked_at": "2026-11-26T10:17:54+08:00",
+      "date": "2026-11-26",
+      "http_status": 0,
+      "license": "AGPL-3.0",
+      "pushed_at": "2026-11-25T19:44:39Z",
+      "stars": 118422,
+      "title": "",
+      "verdict": "pass"
+    },
     "github.com/deepseek-ai/dsh-superagent-prototype": {
       "ai_hits": 2,
       "ai_keywords": [
@@ -931,6 +984,22 @@
       "pushed_at": "2026-11-24T13:54:49Z",
       "stars": 461,
       "title": "GitHub - didi/helixharness: HelixHarness 提供完整的 AI Coding 工程化基础能力，还支持不同企业和团队结合自身的业务知识、工程规范和研发流程，持续构建和演进属于自己的专属 Harness · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/diygod/pinky": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude"
+      ],
+      "checked_at": "2026-11-26T10:17:10+08:00",
+      "date": "2026-11-26",
+      "http_status": 0,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-25T14:52:41Z",
+      "stars": 2783,
+      "title": "",
       "verdict": "pass"
     },
     "github.com/docling-project/docling": {
@@ -1193,6 +1262,20 @@
       "title": "GitHub - google/elephant-goldfish-model: Open-source plugin for designing and reviewing software with agents · GitHub",
       "verdict": "pass"
     },
+    "github.com/googlechrome/modern-web-guidance-src": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "agent"
+      ],
+      "checked_at": "2026-11-26T10:15:26+08:00",
+      "date": "2026-11-26",
+      "http_status": 0,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-25T20:51:52Z",
+      "stars": 11061,
+      "title": "",
+      "verdict": "pass"
+    },
     "github.com/graphify-labs/graphify": {
       "ai_hits": 4,
       "ai_keywords": [
@@ -1418,6 +1501,20 @@
       "title": "",
       "verdict": "pass"
     },
+    "github.com/jesdga95/basalt": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "inference"
+      ],
+      "checked_at": "2026-11-26T10:15:40+08:00",
+      "date": "2026-11-26",
+      "http_status": 0,
+      "license": "MIT",
+      "pushed_at": "2026-11-25T20:44:42Z",
+      "stars": 2118,
+      "title": "",
+      "verdict": "pass"
+    },
     "github.com/jingyaogong/minimind": {
       "ai_hits": 1,
       "ai_keywords": [
@@ -1553,6 +1650,21 @@
       "license": "NOASSERTION",
       "pushed_at": "2026-11-20T01:06:48Z",
       "stars": 852,
+      "title": "",
+      "verdict": "pass"
+    },
+    "github.com/kvcache-ai/agentenv": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-26T10:15:11+08:00",
+      "date": "2026-11-26",
+      "http_status": 0,
+      "license": "MIT",
+      "pushed_at": "2026-11-26T01:49:56Z",
+      "stars": 3785,
       "title": "",
       "verdict": "pass"
     },
@@ -1799,6 +1911,21 @@
       "title": "GitHub - nanocodexyz/nanocode: SDK for Frontier Embedded Agents. · GitHub",
       "verdict": "pass"
     },
+    "github.com/nkarasiak/qgis-mcp": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-26T10:15:55+08:00",
+      "date": "2026-11-26",
+      "http_status": 0,
+      "license": "GPL-2.0",
+      "pushed_at": "2026-11-23T09:14:40Z",
+      "stars": 460,
+      "title": "",
+      "verdict": "pass"
+    },
     "github.com/nousresearch/hermes-agent": {
       "ai_hits": 7,
       "ai_keywords": [
@@ -1817,6 +1944,22 @@
       "pushed_at": "2026-11-17T01:14:10Z",
       "stars": 263924,
       "title": "GitHub - NousResearch/hermes-agent: The agent that grows with you · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/nutlope/hallmark": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "claude",
+        "llm"
+      ],
+      "checked_at": "2026-11-26T10:16:42+08:00",
+      "date": "2026-11-26",
+      "http_status": 0,
+      "license": "MIT",
+      "pushed_at": "2026-11-11T11:56:16Z",
+      "stars": 61134,
+      "title": "",
       "verdict": "pass"
     },
     "github.com/nvidia-nemo/switchyard": {
@@ -1923,12 +2066,12 @@
         "llm",
         "openai"
       ],
-      "checked_at": "2026-11-22T09:55:07+08:00",
-      "date": "2026-11-22",
+      "checked_at": "2026-11-26T10:17:39+08:00",
+      "date": "2026-11-26",
       "http_status": 0,
       "license": "Apache-2.0",
-      "pushed_at": "2026-11-18T08:16:49Z",
-      "stars": 7610,
+      "pushed_at": "2026-11-24T09:43:42Z",
+      "stars": 7644,
       "title": "",
       "verdict": "pass"
     },
@@ -2028,6 +2171,39 @@
       "title": "",
       "verdict": "pass"
     },
+    "github.com/pbakaus/impeccable": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-26T10:16:56+08:00",
+      "date": "2026-11-26",
+      "http_status": 0,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-26T01:59:10Z",
+      "stars": 116929,
+      "title": "",
+      "verdict": "pass"
+    },
+    "github.com/pingdotgg/t3code": {
+      "ai_hits": 5,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "chatgpt",
+        "claude",
+        "gpt"
+      ],
+      "checked_at": "2026-11-26T10:16:27+08:00",
+      "date": "2026-11-26",
+      "http_status": 0,
+      "license": "MIT",
+      "pushed_at": "2026-11-26T02:14:19Z",
+      "stars": 79549,
+      "title": "",
+      "verdict": "pass"
+    },
     "github.com/primeintellect-ai/prime-agent": {
       "ai_hits": 2,
       "ai_keywords": [
@@ -2096,6 +2272,22 @@
       "license": "Apache-2.0",
       "pushed_at": "2026-11-19T00:53:00Z",
       "stars": 4165,
+      "title": "",
+      "verdict": "pass"
+    },
+    "github.com/scaleapi/agentenv-framework": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "llm"
+      ],
+      "checked_at": "2026-11-26T10:14:57+08:00",
+      "date": "2026-11-26",
+      "http_status": 0,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-26T00:56:59Z",
+      "stars": 452,
       "title": "",
       "verdict": "pass"
     },
@@ -2747,6 +2939,20 @@
       "title": "RigSpark: AI on the machines you already own",
       "verdict": "pass"
     },
+    "scenetra.com/": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "\\bai\\b"
+      ],
+      "checked_at": "2026-11-26T10:16:12+08:00",
+      "date": "2026-11-26",
+      "http_status": 200,
+      "license": null,
+      "pushed_at": null,
+      "stars": null,
+      "title": "Scenetra - Cheapest AI Image &amp; Video Generation, Best Price",
+      "verdict": "pass"
+    },
     "softsync.ai/": {
       "ai_hits": 1,
       "ai_keywords": [
@@ -2856,13 +3062,13 @@
   "schema": 1,
   "source": "cybermap-daily/state/reports/verify-YYYY-MM-DD.json",
   "totals": {
-    "added": 104,
-    "checked": 206,
-    "days": 13,
-    "fail": 19,
-    "pass": 164,
-    "review": 23,
-    "verified_sites": 159
+    "added": 114,
+    "checked": 221,
+    "days": 14,
+    "fail": 20,
+    "pass": 177,
+    "review": 24,
+    "verified_sites": 171
   },
   "warnings": []
 }

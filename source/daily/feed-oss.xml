@@ -6,8 +6,19 @@
     <description>cyberMap 每日核验收录的 AI 开源项目，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Wed, 25 Nov 2026 18:42:09 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 10:20:03 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 开源项目 · 2026-11-26（4 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-26</link>
+      <guid isPermaLink="false">cybermap-daily-开源项目-2026-11-26</guid>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 +0800</pubDate>
+      <description>open-compass/opencompass［GitHub 项目］开源大模型评测平台，覆盖推理、代码、安全与长上下文等基准，支持主流商业与开源模型。 — https://github.com/open-compass/opencompass
+jesdga95/basalt［推理与训练框架］面向 NVIDIA Blackwell 显卡优化的本地推理引擎，支持百万上下文、原生视觉与推测解码。 — https://github.com/jesdga95/basalt
+kvcache-ai/AgentENV［智能体框架］分布式智能体环境运行时，用 Firecracker 微虚拟机实现毫秒级快照与分叉，用于大规模强化学习训练。 — https://github.com/kvcache-ai/AgentENV
+DIYgod/Pinky［智能体框架］通过 MCP 让 AI 操控真实 iPhone 或安卓手机的桌面工具，全程投屏录像并支持人工随时接管。 — https://github.com/DIYgod/Pinky</description>
+      <category>开源项目</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 开源项目 · 2026-11-25（8 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-25</link>

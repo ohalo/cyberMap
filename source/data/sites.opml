@@ -27,6 +27,7 @@
         <outline type="link" text="perplexity" title="perplexity" url="https://www.perplexity.ai" htmlUrl="https://www.perplexity.ai" description="需要魔法,主打准确度,胡说八道概率低体验优于ChatGPT,免费不限量" />
       </outline>
       <outline text="图像与设计" title="图像与设计">
+        <outline type="link" text="Scenetra" title="Scenetra" url="https://www.scenetra.com" htmlUrl="https://www.scenetra.com" description="视觉 AI 创作工作区，聚合五十多个图像与视频模型，自动比价路由到最低成本供应商按量计费。" />
         <outline type="link" text="Hydrilla" title="Hydrilla" url="https://hydrilla.ai" htmlUrl="https://hydrilla.ai" description="面向游戏影视的 AI 3D 资产生成工具，用文本或图片生成带 PBR 贴图的生产级网格模型。" />
         <outline type="link" text="MerchantFloor" title="MerchantFloor" url="https://www.merchantfloor.com" htmlUrl="https://www.merchantfloor.com" description="面向小型 Shopify 商家的 AI 商品上架工具，上传产品图即可生成白底图、场景图与 SEO 描述并同步店铺。" />
         <outline type="link" text="YouArt" title="YouArt" url="https://youart.ai" htmlUrl="https://youart.ai" description="对话式 AI 创意平台，用智能体把需求拆成分镜与配音并在画布生成图像视频，支持多模型聚合与桌面版。" />
@@ -44,6 +45,8 @@
         <outline type="link" text="Segment Anything | Meta AI" title="Segment Anything | Meta AI" url="https://segment-anything.com/" htmlUrl="https://segment-anything.com/" description="Segment Anything是一个强大的实例分割模型,它可以根据输入提示(如点或框)生成高质量的对象遮罩,并可以用于生成图像中的所有对象的遮罩。它在1100万个遮罩和1100万张图像的大型数据集上进行了训练,在各种分割任务上的零样本性能非常强。" />
       </outline>
       <outline text="视频与音频" title="视频与音频">
+        <outline type="link" text="calesthio/OpenMontage" title="calesthio/OpenMontage" url="https://github.com/calesthio/OpenMontage" htmlUrl="https://github.com/calesthio/OpenMontage" description="开源智能体视频制作系统，从脚本自动生成素材、配音与剪辑，内置十二条流水线和数百项技能。" />
+        <outline type="link" text="debpalash/VoiceStudio" title="debpalash/VoiceStudio" url="https://github.com/debpalash/VoiceStudio" htmlUrl="https://github.com/debpalash/VoiceStudio" description="完全本地运行的开源配音工作室，支持声音克隆、音色设计、视频配音与转写，覆盖六百余种语言。" />
         <outline type="link" text="dograh-hq/dograh" title="dograh-hq/dograh" url="https://github.com/dograh-hq/dograh" htmlUrl="https://github.com/dograh-hq/dograh" description="开源自托管语音 AI 平台，可替代 Vapi 与 Retell，支持语音到语音或 LLM/STT/TTS、可视化流程编排、MCP 与电话接入。" />
         <outline type="link" text="browser-use/video-use" title="browser-use/video-use" url="https://github.com/browser-use/video-use" htmlUrl="https://github.com/browser-use/video-use" description="browser-use 团队开源的剪辑工具，让编码智能体通过对话完成视频剪辑与处理。" />
         <outline type="link" text="duixcom/Duix-Avatar" title="duixcom/Duix-Avatar" url="https://github.com/duixcom/Duix-Avatar" htmlUrl="https://github.com/duixcom/Duix-Avatar" description="真开源离线数字人工具包，支持用真人视频克隆形象与声音，本地生成数字人口播视频。" />
@@ -63,6 +66,9 @@
         <outline type="link" text="Elai" title="Elai" url="http://Elai.io" htmlUrl="http://Elai.io" description="这是一个AI视频工具,可以自动生成和编辑视频片段。" />
       </outline>
       <outline text="编程与开发" title="编程与开发">
+        <outline type="link" text="GoogleChrome/modern-web-guidance-src" title="GoogleChrome/modern-web-guidance-src" url="https://github.com/GoogleChrome/modern-web-guidance-src" htmlUrl="https://github.com/GoogleChrome/modern-web-guidance-src" description="Google Chrome 团队维护的 Web 开发指南，帮助编程智能体遵循现代浏览器最佳实践生成代码。" />
+        <outline type="link" text="pingdotgg/t3code" title="pingdotgg/t3code" url="https://github.com/pingdotgg/t3code" htmlUrl="https://github.com/pingdotgg/t3code" description="远程控制 Claude Code、Codex 等编程智能体的工作台，可用手机或任意电脑随时审批任务。" />
+        <outline type="link" text="pbakaus/impeccable" title="pbakaus/impeccable" url="https://github.com/pbakaus/impeccable" htmlUrl="https://github.com/pbakaus/impeccable" description="编程智能体的设计语言与审查技能，用 polish、critique 等指令改善 AI 生成界面的视觉质量。" />
         <outline type="link" text="Testsy" title="Testsy" url="https://testsy.dev" htmlUrl="https://testsy.dev" description="AI 质量测试智能体，接入编码智能体后在真实浏览器与移动模拟器验证功能并给出可分享证据。" />
         <outline type="link" text="alibaba/open-code-review" title="alibaba/open-code-review" url="https://github.com/alibaba/open-code-review" htmlUrl="https://github.com/alibaba/open-code-review" description="阿里开源的 AI 代码审查工具，读取 Git 差异给出行级评审意见，把确定性检查与大模型智能体结合，自动发现代码问题。" />
         <outline type="link" text="The-PR-Agent/pr-agent" title="The-PR-Agent/pr-agent" url="https://github.com/The-PR-Agent/pr-agent" htmlUrl="https://github.com/The-PR-Agent/pr-agent" description="开源AI代码审查助手，自动为拉取请求生成评审意见，支持多家大模型与主流代码托管平台。" />
@@ -146,6 +152,7 @@
         <outline type="link" text="Chinese-LLaMA基础模型;ChatFlow中文对话模型;NLP预训练/指令微调数据集" title="Chinese-LLaMA基础模型;ChatFlow中文对话模型;NLP预训练/指令微调数据集" url="https://github.com/CVI-SZU/Linly" htmlUrl="https://github.com/CVI-SZU/Linly" description="Linly是一个中文NLP工具包,提供预训练语言模型、词典、数据集和工具。其主要目的是研究中文NLP,推动开源人工智能技术的发展。Linly通过集成多个中文NLP资源,能显著降低中文NLP建模的门槛,加速研究与开发过程。" />
       </outline>
       <outline text="GitHub 项目" title="GitHub 项目">
+        <outline type="link" text="open-compass/opencompass" title="open-compass/opencompass" url="https://github.com/open-compass/opencompass" htmlUrl="https://github.com/open-compass/opencompass" description="开源大模型评测平台，覆盖推理、代码、安全与长上下文等基准，支持主流商业与开源模型。" />
         <outline type="link" text="nv-tlabs/lyra" title="nv-tlabs/lyra" url="https://github.com/nv-tlabs/Lyra" htmlUrl="https://github.com/nv-tlabs/Lyra" description="英伟达开源的生成式 3D 世界模型项目，可从输入图像生成可探索的三维场景，开放代码与预训练权重。" />
         <outline type="link" text="Juneo-Lab/decision-forge" title="Juneo-Lab/decision-forge" url="https://github.com/Juneo-Lab/decision-forge" htmlUrl="https://github.com/Juneo-Lab/decision-forge" description="将组织规章策略编译为可验证的决策训练数据，支持数据溯源，用于微调合规决策模型。" />
         <outline type="link" text="modelflare-ai/AnyModelBot" title="modelflare-ai/AnyModelBot" url="https://github.com/modelflare-ai/AnyModelBot" htmlUrl="https://github.com/modelflare-ai/AnyModelBot" description="本地优先的开源 AI 机器人，可接入 GPT、Claude、Gemini 等多种模型搭建专属对话助手。" />
@@ -170,6 +177,7 @@
         <outline type="link" text="yetone/openai-translator" title="yetone/openai-translator" url="https://github.com/yetone/openai-translator" htmlUrl="https://github.com/yetone/openai-translator" description="基于 ChatGPT API 的划词翻译浏览器插件和跨平台桌面端应用" />
       </outline>
       <outline text="推理与训练框架" title="推理与训练框架">
+        <outline type="link" text="jesdga95/basalt" title="jesdga95/basalt" url="https://github.com/jesdga95/basalt" htmlUrl="https://github.com/jesdga95/basalt" description="面向 NVIDIA Blackwell 显卡优化的本地推理引擎，支持百万上下文、原生视觉与推测解码。" />
         <outline type="link" text="JustVugg/colibri" title="JustVugg/colibri" url="https://github.com/JustVugg/colibri" htmlUrl="https://github.com/JustVugg/colibri" description="纯 C 编写的分层 MoE 推理引擎，热专家驻留 GPU、冷专家从 NVMe 流式加载，让超大模型跑在普通硬件上。" />
         <outline type="link" text="unslothai/unsloth" title="unslothai/unsloth" url="https://github.com/unslothai/unsloth" htmlUrl="https://github.com/unslothai/unsloth" description="本地运行与训练大语言模型及扩散模型的框架，支持 GGUF、MLX 与 Qwen、DeepSeek、FLUX 等模型微调。" />
         <outline type="link" text="Interactive-Active-AI/NextTransformer" title="Interactive-Active-AI/NextTransformer" url="https://github.com/Interactive-Active-AI/NextTransformer" htmlUrl="https://github.com/Interactive-Active-AI/NextTransformer" description="面向下一代 Transformer 与大模型的开源框架，提供算力对齐基准与架构自主研究能力。" />
@@ -219,6 +227,8 @@
         <outline type="link" text="集成GPT,开始跟PDF文档聊天" title="集成GPT,开始跟PDF文档聊天" url="https://github.com/bhaskatripathi/pdfGPT" htmlUrl="https://github.com/bhaskatripathi/pdfGPT" description="跟 PDF 文档进行一对一对话;自动切割内容,并使用强大的深度平均网络编码器来生成嵌入;对 PDF 内容执行语义搜索,并将最相关的嵌入传递给 Open AI;自定义逻辑,生成更精确的响应信息,速度要比 OpenAI 的快。" />
       </outline>
       <outline text="智能体框架" title="智能体框架">
+        <outline type="link" text="kvcache-ai/AgentENV" title="kvcache-ai/AgentENV" url="https://github.com/kvcache-ai/AgentENV" htmlUrl="https://github.com/kvcache-ai/AgentENV" description="分布式智能体环境运行时，用 Firecracker 微虚拟机实现毫秒级快照与分叉，用于大规模强化学习训练。" />
+        <outline type="link" text="DIYgod/Pinky" title="DIYgod/Pinky" url="https://github.com/DIYgod/Pinky" htmlUrl="https://github.com/DIYgod/Pinky" description="通过 MCP 让 AI 操控真实 iPhone 或安卓手机的桌面工具，全程投屏录像并支持人工随时接管。" />
         <outline type="link" text="withcoral/coral" title="withcoral/coral" url="https://github.com/withcoral/coral" htmlUrl="https://github.com/withcoral/coral" description="为 AI 智能体访问企业敏感系统提供执行护栏，按精细权限与自定义工具安全调用，减少 token 消耗。" />
         <outline type="link" text="get-bb/bb" title="get-bb/bb" url="https://github.com/get-bb/bb" htmlUrl="https://github.com/get-bb/bb" description="面向智能体的集成开发环境，围绕 Claude Code、Codex 等编码智能体构建，可自主迭代扩展能力。" />
         <outline type="link" text="mvanhorn/cli-printing-press" title="mvanhorn/cli-printing-press" url="https://github.com/mvanhorn/cli-printing-press" htmlUrl="https://github.com/mvanhorn/cli-printing-press" description="读取 API 文档自动生成面向 AI 智能体的命令行工具，内置 SQLite 同步、离线检索与组合洞察命令。" />

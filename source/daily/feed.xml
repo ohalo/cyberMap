@@ -6,8 +6,25 @@
     <description>cyberMap 每日核验收录的 AI 站点（开源项目、工具官网、模型框架、教程博客等），每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Wed, 25 Nov 2026 18:42:09 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 10:20:03 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 2026-11-26（10 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-26</link>
+      <guid isPermaLink="true">https://cybermap.halo26812.eu.org/daily/#day-2026-11-26</guid>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 +0800</pubDate>
+      <description>Scenetra［图像与设计］视觉 AI 创作工作区，聚合五十多个图像与视频模型，自动比价路由到最低成本供应商按量计费。 — https://www.scenetra.com
+calesthio/OpenMontage［视频与音频］开源智能体视频制作系统，从脚本自动生成素材、配音与剪辑，内置十二条流水线和数百项技能。 — https://github.com/calesthio/OpenMontage
+debpalash/VoiceStudio［视频与音频］完全本地运行的开源配音工作室，支持声音克隆、音色设计、视频配音与转写，覆盖六百余种语言。 — https://github.com/debpalash/VoiceStudio
+GoogleChrome/modern-web-guidance-src［编程与开发］Google Chrome 团队维护的 Web 开发指南，帮助编程智能体遵循现代浏览器最佳实践生成代码。 — https://github.com/GoogleChrome/modern-web-guidance-src
+pingdotgg/t3code［编程与开发］远程控制 Claude Code、Codex 等编程智能体的工作台，可用手机或任意电脑随时审批任务。 — https://github.com/pingdotgg/t3code
+pbakaus/impeccable［编程与开发］编程智能体的设计语言与审查技能，用 polish、critique 等指令改善 AI 生成界面的视觉质量。 — https://github.com/pbakaus/impeccable
+open-compass/opencompass［GitHub 项目］开源大模型评测平台，覆盖推理、代码、安全与长上下文等基准，支持主流商业与开源模型。 — https://github.com/open-compass/opencompass
+jesdga95/basalt［推理与训练框架］面向 NVIDIA Blackwell 显卡优化的本地推理引擎，支持百万上下文、原生视觉与推测解码。 — https://github.com/jesdga95/basalt
+kvcache-ai/AgentENV［智能体框架］分布式智能体环境运行时，用 Firecracker 微虚拟机实现毫秒级快照与分叉，用于大规模强化学习训练。 — https://github.com/kvcache-ai/AgentENV
+DIYgod/Pinky［智能体框架］通过 MCP 让 AI 操控真实 iPhone 或安卓手机的桌面工具，全程投屏录像并支持人工随时接管。 — https://github.com/DIYgod/Pinky</description>
+      <category>AI</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 2026-11-25（10 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-25</link>
