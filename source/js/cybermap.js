@@ -208,7 +208,16 @@
      分类导航由 .cm-matrix-rail 承担，所以这里把顶栏补成设计稿的
      cyber MAP + 五个页面入口。原 switch-mode 节点不移动，经典态零改动。 */
   function injectDesignNav() {
+    /* 首页/分类页用 .user-info-menu；文章/关于页用 .navbar-inner（horizontal-menu）。
+       两套顶栏都注入同一份设计导航，避免文章页赛博态仍是原主题浅色栏。 */
     var ul = document.querySelector('.user-info-navbar .user-info-menu');
+    if (!ul) {
+      var inner = document.querySelector('.navbar.horizontal-menu .navbar-inner');
+      if (inner && !inner.querySelector('.cm-site-brand')) {
+        ul = el('ul', 'user-info-menu cm-horizontal-design-nav');
+        inner.appendChild(ul);
+      }
+    }
     if (!ul || ul.querySelector('.cm-site-brand')) return;
     var here = (location.pathname || '/').replace(/\/+$/, '') || '/';
     var LINKS = [
@@ -235,11 +244,10 @@
      读 /rank/data/top100.json 的真实前 4 名；榜单是独立流水线产物，
      这里只读不写。网络失败静默隐藏，绝不编造数字。 */
   function injectRankPreview() {
-    /* 设计稿 02 号板：榜单是节点矩阵区的收尾面板——排在全部分类卡片之后、
-       RECENT NODES 脚注之前，绝不夹在分类导航与第一组卡片之间。
-       必须在 injectNodeMatrix 建好 .cm-matrix-main 之后调用；取不到矩阵时
+    /* 榜单面板放在 SECTION 02 // NODE MATRIX 标题条之上（整个 .cm-matrix
+       容器之前）。必须在 injectNodeMatrix 建好容器之后调用；取不到容器时
        退回首屏 CTA 之后，保证经典态与非首页不受影响。 */
-    var matrix = document.querySelector('.cm-matrix-main');
+    var matrix = document.querySelector('.cm-matrix');
     var anchor = matrix || document.querySelector('.cm-feature-cta');
     if (!anchor || document.querySelector('.cm-rank-preview') || !window.fetch) return;
     var panel = el('section', 'cm-rank-preview cm-design-only',
@@ -251,8 +259,8 @@
       '</div><div class="cm-rank-rows"></div>');
     panel.style.display = 'none';
     if (matrix) {
-      /* 追加到矩阵主列末尾：在最后一组分类卡片之后、.cm-matrix-foot 之前 */
-      matrix.appendChild(panel);
+      /* 插到 SECTION 02 // NODE MATRIX 容器之前，作为矩阵区的标题前置面板 */
+      matrix.parentNode.insertBefore(panel, matrix);
     } else {
       anchor.parentNode.insertBefore(panel, anchor.nextSibling);
     }
@@ -1036,9 +1044,21 @@
     injectRankPreview();
   }
 
+  /* ---- 全站 night 态兜底：主题的 footer.js 只在部分页面加载，
+       文章/关于页缺它时 body.night 不会从 cookie 恢复，导致赛博样式整页失效。
+       这里只按 cookie 同步 class（不写 cookie，避免改动主题默认逻辑），
+       并在窗口重新聚焦时对齐其它页面切换后的外观。幂等、经典态零改动。 */
+  function syncNightFromCookie() {
+    var m = document.cookie.match(/(?:^|;\s*)night\s*=\s*([^;]*)/);
+    var cyber = !!(m && m[1] === '1');
+    document.body.classList.toggle('night', cyber);
+  }
+
   function start() {
-    rebuildFooter(); /* 全站 footer，不依赖 .main-content */
-    boot();          /* 首页专属增强，缺 .main-content 时自行返回 */
+    syncNightFromCookie(); /* 全站：先从 cookie 恢复赛博/经典态 */
+    rebuildFooter();       /* 全站 footer，不依赖 .main-content */
+    boot();                /* 首页专属增强，缺 .main-content 时自行返回 */
+    window.addEventListener('focus', syncNightFromCookie);
   }
 
   if (document.readyState === 'loading') {

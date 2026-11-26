@@ -2605,3 +2605,33 @@ body.night .user-info-navbar .user-info-menu > li.switch-mode { margin-left: aut
   body.night .cm-site-links a { font-size: 11px; white-space: nowrap; }
   body.night .user-info-navbar .user-info-menu > li.switch-mode { margin-left: auto !important; }
 }
+
+/* ---- 文章/关于页赛博顶栏（horizontal-menu 结构，01 号板同一套 token） ----
+   这些页顶栏是 .navbar.horizontal-menu .navbar-inner，不是首页的 user-info-menu；
+   injectDesignNav() 会往 navbar-inner 注入 .cm-horizontal-design-nav。
+   经典态以下规则全部不生效，原主题浅色栏保持不变。 */
+body.night .navbar.horizontal-menu { background: var(--cm-topbar) !important; border-bottom: 1px solid var(--cm-border); }
+body.night .navbar.horizontal-menu .navbar-inner {
+  display: flex !important; align-items: center; gap: 26px;
+  height: 52px; padding: 0 34px;
+}
+body.night .navbar.horizontal-menu .navbar-brand { display: none !important; }
+body.night .navbar.horizontal-menu .github-corner { display: none !important; }
+body.night .cm-horizontal-design-nav {
+  display: flex !important; align-items: center; gap: 28px;
+  margin: 0; padding: 0; list-style: none; width: 100%;
+}
+body.night .cm-horizontal-design-nav .cm-site-brand,
+body.night .cm-horizontal-design-nav .cm-site-links { display: flex !important; }
+
+/* 关于页 horizontal-menu 的 li 被主题设成非 flex 项，gap 不生效；
+   改用直接 margin 保证五个入口间距，并让当前页高亮下划线可见。 */
+body.night .cm-horizontal-design-nav .cm-site-links > a {
+  display: inline-block !important;
+  margin-right: 28px;
+  padding: 0 !important;
+  line-height: 52px;
+  white-space: nowrap;
+}
+body.night .cm-horizontal-design-nav .cm-site-links > a:last-child { margin-right: 0; }
+body.night .cm-horizontal-design-nav .cm-site-links > a.is-active::after { bottom: 8px; }
