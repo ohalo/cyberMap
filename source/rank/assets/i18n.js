@@ -110,3 +110,67 @@
     boot();
   }
 })();
+
+/* ==========================================================================
+   cyberMap 设计稿 04 号板 · 排行榜详情页赛博增强
+   --------------------------------------------------------------------------
+   详情页 /rank/p/*、/rank/harness/p/* 只加载 i18n.js + rank-frame.js，
+   不加载 app.js —— app.js 里的 04 号板 HUD 注入在详情页从来不会执行。
+   本模块放在两页都加载的 i18n.js 末尾，仅对详情页、仅 body.night 注入
+   SECTION 04 HUD；05 token 由稳定的 style.css 提供（body.night.rank-embedded
+   覆盖 rank-frame.css 的旧靛蓝紫）。经典态全部不生效，零改动。
+   ========================================================================== */
+(function () {
+  'use strict';
+  if (!/\/[ph]\/[^/]+\.html$/.test(location.pathname)) return; // 只处理详情页
+  var STYLE_ID = 'cm-rank-detail-cyber-style';
+  if (document.getElementById(STYLE_ID)) return;                // 幂等
+
+  var css = '' +
+    '.cm-rank-detail-hud{display:none}' +
+    'body.night .cm-rank-detail-hud{' +
+      'display:flex!important;position:sticky;top:0;z-index:90;align-items:center;gap:12px;' +
+      'height:28px;padding:0 24px;background:#07121c;border-bottom:1px solid var(--cm-border);' +
+      'font-family:"CM Mono","JetBrains Mono",monospace;font-size:10px;letter-spacing:.1em;color:var(--cm-text-faint)}' +
+    'body.night .cm-rank-detail-hud::before{' +
+      'content:"";width:6px;height:6px;border-radius:50%;background:var(--cm-accent);box-shadow:0 0 8px var(--cm-accent)}' +
+    'body.night .cm-rank-detail-hud b{color:var(--cm-accent);font-weight:700}' +
+    'body.night .cm-rank-detail-hud .cm-rd-right{margin-left:auto}' +
+    'body.night .cm-rank-detail-hud .cm-rd-clock{' +
+      'font-family:"CM Orbitron",sans-serif;font-weight:900;color:var(--cm-accent)}' +
+    'body.night.rank-embedded .cm-rank-bar{top:28px}';
+
+  function injectStyle() {
+    var s = document.createElement('style');
+    s.id = STYLE_ID;
+    s.textContent = css;
+    document.head.appendChild(s);
+  }
+  function node(html) {
+    var box = document.createElement('div');
+    box.innerHTML = html;
+    return box.firstChild;
+  }
+  function tick() {
+    var c = document.querySelector('.cm-rd-clock');
+    if (!c) return;
+    var d = new Date(), p = function (n) { return (n < 10 ? '0' : '') + n; };
+    c.textContent = p(d.getHours()) + ':' + p(d.getMinutes()) + ':' + p(d.getSeconds());
+  }
+  function inject() {
+    if (!document.body || document.querySelector('.cm-rank-detail-hud')) return;
+    var isH = location.pathname.indexOf('/harness/') >= 0;
+    var hud = node('<div class="cm-rank-detail-hud">' +
+      '<b>SECTION 04 // ' + (isH ? 'HARNESS LEADERBOARD' : 'PLUGIN LEADERBOARD') + '</b>' +
+      '<span class="cm-rd-right">DATA DETAIL · LIVE <span class="cm-rd-clock">--:--:--</span></span></div>');
+    document.body.insertBefore(hud, document.body.firstChild);
+    tick();
+    setInterval(tick, 1000);
+  }
+  injectStyle();
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', inject);
+  } else {
+    inject();
+  }
+})();

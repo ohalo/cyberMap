@@ -147,6 +147,18 @@ html[lang="en"] .i18n-zh { display: none !important; }
    排行榜首页由 app.js 注入更完整的 04 号板，这里只补详情页缺失的
    token 覆盖与评分条/表格配色，避免靛蓝紫残留；经典态以下规则不生效。 */
 body.night.rank-embedded{
+  /* 05 设计 token：盖掉 rank-frame.css `body.night` 里的旧靛蓝紫
+     （--cm-accent:#7c8cff / --cm-glow-b:rgba(139,92,246) / --cm-topbar 蓝黑）。
+     body.night.rank-embedded 特异性(0,2,1) > body.night(0,1,1)，无需 !important；
+     主榜页 app.js 后插入同名 style，值一致，不冲突。 */
+  --cm-bg:#05070b;--cm-glow-a:rgba(0,229,255,.13);--cm-glow-b:rgba(255,46,166,.11);
+  --cm-grid:rgba(0,229,255,.055);--cm-surface:rgba(11,18,27,.78);--cm-surface-solid:#0b121b;
+  --cm-topbar:rgba(11,18,27,.82);--cm-border:rgba(18,48,63,.9);--cm-border-strong:#12303f;
+  --cm-text:#e6f5ff;--cm-text-soft:#b7c9df;--cm-text-muted:#8ba0bd;--cm-text-faint:#6b7f99;
+  --cm-accent:#00e5ff;--cm-accent-2:#ff2ea6;--cm-accent-soft:rgba(255,46,166,.55);
+  --cm-accent-wash:rgba(255,46,166,.12);--cm-chip:rgba(0,229,255,.12);
+  --cm-shadow-sm:0 2px 14px rgba(0,0,0,.4);--cm-shadow-topbar:0 10px 30px rgba(0,0,0,.45);
+  /* 排行榜自身变量（rank-frame.css 的 body.rank-embedded 由 var(--cm-*) 派生，这里显式兜底） */
   --blue:#00e5ff;--blue-bg:rgba(0,229,255,.12);
   --surface:rgba(11,18,27,.78);--surface-solid:#0b121b;
   --line:rgba(18,48,63,.9);--line2:#12303f;
