@@ -1138,6 +1138,7 @@
     var panel = document.querySelector('.page-container .main-content .panel.panel-default');
     if (!panel || panel.querySelector('.cm-about-card')) return;
 
+    var cyber = document.body.classList.contains('night');
     var intro = panel.querySelector('.panel-body > .row > .col-sm-12 > p');
     var quotes = Array.prototype.slice.call(panel.querySelectorAll('blockquote p'));
     var maintainer = panel.querySelector('.xe-widget');
@@ -1155,6 +1156,33 @@
     card(maintainer, '04', 'MAINTAINER', '站长');
     if (quotes[2]) card(quotes[2], '05', 'REPOSITORY', '开源仓库');
     if (quotes[3]) card(quotes[3], '06', 'STACK', '技术栈');
+
+    /* 章节条：boot() 给首页分类头加的「N 个站点」在关于页是 0，赛博态去掉，
+       再按 05 板补 mono 编号 + 右侧 meta；经典态保留原文不动。 */
+    var secs = Array.prototype.slice.call(panel.querySelectorAll('h4.text-gray'));
+    secs.forEach(function (h, i) {
+      h.classList.add('cm-about-sec');
+      if (cyber) {
+        var junk = h.querySelector('.cyber-count');
+        if (junk) junk.parentNode.removeChild(junk);
+      }
+      if (h.querySelector('.cm-about-sec-tag')) return;
+      h.insertBefore(el('span', 'cm-about-sec-tag cm-design-only',
+        '// ' + ('0' + (i + 1)).slice(-2)), h.firstChild);
+      h.appendChild(el('span', 'cm-about-sec-meta cm-design-only',
+        i === 0 ? 'NETWORK BRIEF' : 'CONTACT / REPOSITORY'));
+    });
+
+    /* 站长卡内部：头像方形化 + 名称/身份换成 05 字体层级 */
+    if (maintainer) {
+      maintainer.classList.add('cm-about-maintainer');
+      var avatar = maintainer.querySelector('.xe-user-img img');
+      var name = maintainer.querySelector('.xe-user-name');
+      var role = maintainer.querySelector('.xe-comment p');
+      if (avatar) avatar.classList.add('cm-about-avatar');
+      if (name) name.classList.add('cm-about-maint-name');
+      if (role) role.classList.add('cm-about-maint-role');
+    }
   }
 
   function start() {
