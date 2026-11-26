@@ -224,7 +224,7 @@
       "topics": 0,
       "org_backed": true
     },
-    "rank": 31
+    "rank": 32
   },
   {
     "id": "gemini-cli",
@@ -270,7 +270,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": "2026-11-25T02:37:26+00:00"
     },
-    "score": 78.83,
+    "score": 78.77,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -279,8 +279,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8841,
-        "contribution": 22.1
+        "normalized": 0.8816,
+        "contribution": 22.04
       },
       "maturity": {
         "weight": 0.2,
@@ -380,7 +380,7 @@
       "topics": 0,
       "org_backed": true
     },
-    "rank": 46
+    "rank": 47
   },
   {
     "id": "aider",
@@ -468,7 +468,7 @@
       "topics": 13,
       "org_backed": true
     },
-    "rank": 49
+    "rank": 50
   },
   {
     "id": "qwen-code",
@@ -777,7 +777,7 @@
       "topics": 0,
       "org_backed": true
     },
-    "rank": 58
+    "rank": 59
   },
   {
     "id": "hermes-agent",
@@ -985,7 +985,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 71.44,
+    "score": 71.38,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -994,8 +994,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8934,
-        "contribution": 22.34
+        "normalized": 0.891,
+        "contribution": 22.27
       },
       "maturity": {
         "weight": 0.2,
@@ -1021,7 +1021,7 @@
       "topics": 0,
       "org_backed": true
     },
-    "rank": 41
+    "rank": 43
   },
   {
     "id": "deepcode",
@@ -1063,7 +1063,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 77.56,
+    "score": 77.5,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -1072,8 +1072,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9205,
-        "contribution": 23.01
+        "normalized": 0.918,
+        "contribution": 22.95
       },
       "maturity": {
         "weight": 0.2,
@@ -1156,7 +1156,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 80.87,
+    "score": 80.81,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -1165,8 +1165,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9406,
-        "contribution": 23.52
+        "normalized": 0.9382,
+        "contribution": 23.45
       },
       "maturity": {
         "weight": 0.2,
@@ -1279,7 +1279,7 @@
       "topics": 12,
       "org_backed": false
     },
-    "rank": 44
+    "rank": 45
   },
   {
     "id": "ruflo",
@@ -1338,7 +1338,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 81.75,
+    "score": 81.69,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -1347,8 +1347,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.889,
-        "contribution": 22.22
+        "normalized": 0.8865,
+        "contribution": 22.16
       },
       "maturity": {
         "weight": 0.2,
@@ -1421,7 +1421,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 84.24,
+    "score": 84.18,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -1430,8 +1430,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9598,
-        "contribution": 24.0
+        "normalized": 0.9574,
+        "contribution": 23.93
       },
       "maturity": {
         "weight": 0.2,
@@ -1508,7 +1508,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 79.31,
+    "score": 79.25,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -1517,8 +1517,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.874,
-        "contribution": 21.85
+        "normalized": 0.8715,
+        "contribution": 21.79
       },
       "maturity": {
         "weight": 0.2,
@@ -1842,7 +1842,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 50.87,
+    "score": 50.81,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -1851,8 +1851,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9576,
-        "contribution": 23.94
+        "normalized": 0.9551,
+        "contribution": 23.88
       },
       "maturity": {
         "weight": 0.2,
@@ -1933,7 +1933,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 50.22,
+    "score": 50.16,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -1942,8 +1942,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7299,
-        "contribution": 18.25
+        "normalized": 0.7274,
+        "contribution": 18.19
       },
       "maturity": {
         "weight": 0.2,
@@ -2109,7 +2109,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 52.64,
+    "score": 52.58,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -2118,8 +2118,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8604,
-        "contribution": 21.51
+        "normalized": 0.858,
+        "contribution": 21.45
       },
       "maturity": {
         "weight": 0.2,
@@ -2292,7 +2292,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 55.24,
+    "score": 55.18,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -2301,8 +2301,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9108,
-        "contribution": 22.77
+        "normalized": 0.9084,
+        "contribution": 22.71
       },
       "maturity": {
         "weight": 0.2,
@@ -2377,7 +2377,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 85.0,
+    "score": 84.94,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -2386,8 +2386,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8998,
-        "contribution": 22.49
+        "normalized": 0.8973,
+        "contribution": 22.43
       },
       "maturity": {
         "weight": 0.2,
@@ -2628,7 +2628,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 53.54,
+    "score": 53.47,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -2637,8 +2637,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9551,
-        "contribution": 23.88
+        "normalized": 0.9526,
+        "contribution": 23.82
       },
       "maturity": {
         "weight": 0.2,
@@ -2711,7 +2711,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 57.21,
+    "score": 57.15,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -2720,8 +2720,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9058,
-        "contribution": 22.65
+        "normalized": 0.9034,
+        "contribution": 22.58
       },
       "maturity": {
         "weight": 0.2,
@@ -3442,7 +3442,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 71.62,
+    "score": 71.55,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -3451,8 +3451,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.869,
-        "contribution": 21.73
+        "normalized": 0.8666,
+        "contribution": 21.66
       },
       "maturity": {
         "weight": 0.2,
@@ -3478,7 +3478,7 @@
       "topics": 11,
       "org_backed": true
     },
-    "rank": 40
+    "rank": 41
   },
   {
     "id": "happy",
@@ -3562,7 +3562,7 @@
       "topics": 9,
       "org_backed": true
     },
-    "rank": 34
+    "rank": 35
   },
   {
     "id": "aionui",
@@ -3657,7 +3657,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 32
+    "rank": 33
   },
   {
     "id": "pi-desktop",
@@ -3747,7 +3747,7 @@
       "topics": 15,
       "org_backed": false
     },
-    "rank": 43
+    "rank": 44
   },
   {
     "id": "looptroop",
@@ -3800,7 +3800,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 56.34,
+    "score": 56.27,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -3809,8 +3809,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9084,
-        "contribution": 22.71
+        "normalized": 0.9059,
+        "contribution": 22.65
       },
       "maturity": {
         "weight": 0.2,
@@ -4106,7 +4106,7 @@
       "topics": 14,
       "org_backed": false
     },
-    "rank": 61
+    "rank": 62
   },
   {
     "id": "cowagent",
@@ -4162,7 +4162,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 86.97,
+    "score": 86.91,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -4171,8 +4171,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9677,
-        "contribution": 24.19
+        "normalized": 0.9652,
+        "contribution": 24.13
       },
       "maturity": {
         "weight": 0.2,
@@ -4469,7 +4469,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 50
+    "rank": 51
   },
   {
     "id": "rocketride",
@@ -4564,7 +4564,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 33
+    "rank": 34
   },
   {
     "id": "deer-flow",
@@ -4713,7 +4713,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 71.85,
+    "score": 71.79,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -4722,8 +4722,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.923,
-        "contribution": 23.07
+        "normalized": 0.9205,
+        "contribution": 23.01
       },
       "maturity": {
         "weight": 0.2,
@@ -4749,7 +4749,7 @@
       "topics": 17,
       "org_backed": true
     },
-    "rank": 38
+    "rank": 40
   },
   {
     "id": "soduwork",
@@ -4844,7 +4844,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 62
+    "rank": 63
   },
   {
     "id": "holaos",
@@ -4903,7 +4903,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 66.3,
+    "score": 66.24,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -4912,8 +4912,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9277,
-        "contribution": 23.19
+        "normalized": 0.9253,
+        "contribution": 23.13
       },
       "maturity": {
         "weight": 0.2,
@@ -4939,7 +4939,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 56
+    "rank": 57
   },
   {
     "id": "roubao",
@@ -5206,7 +5206,7 @@
       "topics": 16,
       "org_backed": true
     },
-    "rank": 52
+    "rank": 53
   },
   {
     "id": "qm",
@@ -5285,7 +5285,7 @@
       "topics": 4,
       "org_backed": true
     },
-    "rank": 60
+    "rank": 61
   },
   {
     "id": "trellis",
@@ -5329,7 +5329,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 61.78,
+    "score": 61.72,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -5338,8 +5338,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.5666,
-        "contribution": 14.17
+        "normalized": 0.5642,
+        "contribution": 14.1
       },
       "maturity": {
         "weight": 0.2,
@@ -5513,7 +5513,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 65.78,
+    "score": 65.72,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -5522,8 +5522,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8617,
-        "contribution": 21.54
+        "normalized": 0.8592,
+        "contribution": 21.48
       },
       "maturity": {
         "weight": 0.2,
@@ -5549,7 +5549,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 59
+    "rank": 60
   },
   {
     "id": "agentlas-os",
@@ -5608,7 +5608,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 61.1,
+    "score": 61.04,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -5617,8 +5617,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.94,
-        "contribution": 23.5
+        "normalized": 0.9376,
+        "contribution": 23.44
       },
       "maturity": {
         "weight": 0.2,
@@ -5730,7 +5730,7 @@
       "topics": 11,
       "org_backed": false
     },
-    "rank": 66
+    "rank": 67
   },
   {
     "id": "squadron",
@@ -5879,7 +5879,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 66.37,
+    "score": 66.31,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -5888,8 +5888,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8939,
-        "contribution": 22.35
+        "normalized": 0.8914,
+        "contribution": 22.29
       },
       "maturity": {
         "weight": 0.2,
@@ -5915,7 +5915,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 54
+    "rank": 56
   },
   {
     "id": "orkas",
@@ -5974,7 +5974,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 67.68,
+    "score": 67.61,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -5983,8 +5983,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9207,
-        "contribution": 23.02
+        "normalized": 0.9182,
+        "contribution": 22.96
       },
       "maturity": {
         "weight": 0.2,
@@ -6010,7 +6010,7 @@
       "topics": 20,
       "org_backed": false
     },
-    "rank": 51
+    "rank": 52
   },
   {
     "id": "5dive",
@@ -6069,7 +6069,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 58.36,
+    "score": 58.29,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -6078,8 +6078,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9136,
-        "contribution": 22.84
+        "normalized": 0.9111,
+        "contribution": 22.78
       },
       "maturity": {
         "weight": 0.2,
@@ -6152,7 +6152,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 77.17,
+    "score": 77.11,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -6161,8 +6161,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8792,
-        "contribution": 21.98
+        "normalized": 0.8767,
+        "contribution": 21.92
       },
       "maturity": {
         "weight": 0.2,
@@ -6188,7 +6188,7 @@
       "topics": 8,
       "org_backed": true
     },
-    "rank": 22
+    "rank": 23
   },
   {
     "id": "langgraph",
@@ -6494,7 +6494,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 81.81,
+    "score": 81.75,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -6503,8 +6503,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9234,
-        "contribution": 23.09
+        "normalized": 0.921,
+        "contribution": 23.02
       },
       "maturity": {
         "weight": 0.2,
@@ -6621,7 +6621,7 @@
       "topics": 16,
       "org_backed": true
     },
-    "rank": 23
+    "rank": 22
   },
   {
     "id": "agent-kit",
@@ -6760,7 +6760,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 57.6,
+    "score": 57.54,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -6769,8 +6769,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8515,
-        "contribution": 21.29
+        "normalized": 0.8491,
+        "contribution": 21.23
       },
       "maturity": {
         "weight": 0.2,
@@ -6852,7 +6852,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 87.88,
+    "score": 87.82,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -6861,8 +6861,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8986,
-        "contribution": 22.46
+        "normalized": 0.8961,
+        "contribution": 22.4
       },
       "maturity": {
         "weight": 0.2,
@@ -6943,7 +6943,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 50.62,
+    "score": 50.56,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -6952,8 +6952,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8736,
-        "contribution": 21.84
+        "normalized": 0.8712,
+        "contribution": 21.78
       },
       "maturity": {
         "weight": 0.2,
@@ -7188,7 +7188,7 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "topic:agent-harness",
-      "query_fetched_at": "2026-11-26T02:31:47+00:00",
+      "query_fetched_at": "2026-11-26T13:25:28+00:00",
       "npm_fetched_at": null
     },
     "score": 45.52,
@@ -7283,10 +7283,10 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "topic:agent-harness",
-      "query_fetched_at": "2026-11-26T02:31:47+00:00",
+      "query_fetched_at": "2026-11-26T13:25:28+00:00",
       "npm_fetched_at": null
     },
-    "score": 64.15,
+    "score": 64.09,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -7295,8 +7295,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8964,
-        "contribution": 22.41
+        "normalized": 0.8939,
+        "contribution": 22.35
       },
       "maturity": {
         "weight": 0.2,
@@ -7322,7 +7322,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 65
+    "rank": 66
   },
   {
     "id": "zhnt--loushang",
@@ -7378,7 +7378,7 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:agent-harness",
-      "query_fetched_at": "2026-11-26T02:31:47+00:00",
+      "query_fetched_at": "2026-11-26T13:25:28+00:00",
       "npm_fetched_at": null
     },
     "score": 58.81,
@@ -7467,10 +7467,10 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:agent-harness",
-      "query_fetched_at": "2026-11-26T02:31:47+00:00",
+      "query_fetched_at": "2026-11-26T13:25:28+00:00",
       "npm_fetched_at": null
     },
-    "score": 62.72,
+    "score": 62.66,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -7479,8 +7479,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8988,
-        "contribution": 22.47
+        "normalized": 0.8964,
+        "contribution": 22.41
       },
       "maturity": {
         "weight": 0.2,
@@ -7554,7 +7554,7 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:agent-harness",
-      "query_fetched_at": "2026-11-26T02:31:47+00:00",
+      "query_fetched_at": "2026-11-26T13:25:28+00:00",
       "npm_fetched_at": null
     },
     "score": 55.49,
@@ -7649,10 +7649,10 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:agent-harness",
-      "query_fetched_at": "2026-11-26T02:31:47+00:00",
+      "query_fetched_at": "2026-11-26T13:25:28+00:00",
       "npm_fetched_at": null
     },
-    "score": 51.7,
+    "score": 51.64,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -7661,8 +7661,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8692,
-        "contribution": 21.73
+        "normalized": 0.8667,
+        "contribution": 21.67
       },
       "maturity": {
         "weight": 0.2,
@@ -7744,7 +7744,7 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:agent-harness",
-      "query_fetched_at": "2026-11-26T02:31:47+00:00",
+      "query_fetched_at": "2026-11-26T13:25:28+00:00",
       "npm_fetched_at": null
     },
     "score": 56.34,
@@ -7826,7 +7826,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T02:31:53+00:00",
+      "query_fetched_at": "2026-11-26T13:25:35+00:00",
       "npm_fetched_at": null
     },
     "score": 90.34,
@@ -7912,7 +7912,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T02:31:53+00:00",
+      "query_fetched_at": "2026-11-26T13:25:35+00:00",
       "npm_fetched_at": null
     },
     "score": 63.31,
@@ -7954,18 +7954,18 @@
     "rank": 69
   },
   {
-    "id": "anus-dev--anus",
-    "name": "ANUS",
-    "slug": "anus-dev/anus",
+    "id": "janus-sh--janus",
+    "name": "Janus",
+    "slug": "janus-sh/janus",
     "category": "cli",
     "origin": "discovered",
     "confidence": "medium",
     "npm": null,
     "metrics": {
-      "stars": 6558,
+      "stars": 6556,
       "forks": 917,
-      "open_issues": 74,
-      "pushed_at": "2026-10-01T16:32:18Z",
+      "open_issues": 5,
+      "pushed_at": "2026-11-26T11:26:01Z",
       "created_at": "2025-03-09T18:45:54Z",
       "license": "MIT",
       "topics": [
@@ -7980,26 +7980,26 @@
         "terminal"
       ],
       "language": "JavaScript",
-      "homepage": "https://anus.dev",
+      "homepage": "",
       "description": "A free coding agent in your terminal. It runs on the smartest free model that is up today.",
-      "owner": "anus-dev",
+      "owner": "janus-sh",
       "owner_type": "Organization",
       "archived": false,
       "fork": false,
       "has_wiki": true,
       "has_pages": false,
-      "url": "https://github.com/anus-dev/ANUS",
+      "url": "https://github.com/janus-sh/Janus",
       "downloads": null
     },
     "evidence": {
       "repo_source": "discovery-search",
-      "repo_fetched_at": "2026-11-25T02:36:33+00:00",
+      "repo_fetched_at": "2026-11-26T13:26:10+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T02:31:53+00:00",
+      "query_fetched_at": "2026-11-26T13:25:35+00:00",
       "npm_fetched_at": null
     },
-    "score": 63.98,
+    "score": 74.85,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -8008,8 +8008,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.5479,
-        "contribution": 13.7
+        "normalized": 0.9828,
+        "contribution": 24.57
       },
       "maturity": {
         "weight": 0.2,
@@ -8035,7 +8035,7 @@
       "topics": 9,
       "org_backed": true
     },
-    "rank": 67
+    "rank": 31
   },
   {
     "id": "commandcodeai--command-code",
@@ -8084,7 +8084,7 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T02:31:53+00:00",
+      "query_fetched_at": "2026-11-26T13:25:35+00:00",
       "npm_fetched_at": null
     },
     "score": 62.13,
@@ -8169,7 +8169,7 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T02:31:53+00:00",
+      "query_fetched_at": "2026-11-26T13:25:35+00:00",
       "npm_fetched_at": null
     },
     "score": 55.16,
@@ -8251,10 +8251,10 @@
       "repo_fetched_at": "2026-11-25T02:41:11+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T02:31:53+00:00",
+      "query_fetched_at": "2026-11-26T13:25:35+00:00",
       "npm_fetched_at": null
     },
-    "score": 53.63,
+    "score": 53.57,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -8263,8 +8263,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.3224,
-        "contribution": 8.06
+        "normalized": 0.32,
+        "contribution": 8.0
       },
       "maturity": {
         "weight": 0.2,
@@ -8344,7 +8344,7 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T02:31:53+00:00",
+      "query_fetched_at": "2026-11-26T13:25:35+00:00",
       "npm_fetched_at": null
     },
     "score": 72.92,
@@ -8383,7 +8383,7 @@
       "topics": 18,
       "org_backed": true
     },
-    "rank": 35
+    "rank": 36
   },
   {
     "id": "itayinbarr--little-coder",
@@ -8431,10 +8431,10 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T02:31:53+00:00",
+      "query_fetched_at": "2026-11-26T13:25:35+00:00",
       "npm_fetched_at": null
     },
-    "score": 48.58,
+    "score": 48.52,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -8443,8 +8443,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.544,
-        "contribution": 13.6
+        "normalized": 0.5416,
+        "contribution": 13.54
       },
       "maturity": {
         "weight": 0.2,
@@ -8523,7 +8523,7 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T02:31:53+00:00",
+      "query_fetched_at": "2026-11-26T13:25:35+00:00",
       "npm_fetched_at": null
     },
     "score": 60.35,
@@ -8618,10 +8618,10 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T02:31:53+00:00",
+      "query_fetched_at": "2026-11-26T13:25:35+00:00",
       "npm_fetched_at": null
     },
-    "score": 61.37,
+    "score": 61.31,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -8630,8 +8630,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9526,
-        "contribution": 23.82
+        "normalized": 0.9502,
+        "contribution": 23.75
       },
       "maturity": {
         "weight": 0.2,
@@ -8703,10 +8703,10 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T02:31:53+00:00",
+      "query_fetched_at": "2026-11-26T13:25:35+00:00",
       "npm_fetched_at": null
     },
-    "score": 62.37,
+    "score": 62.3,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -8715,8 +8715,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9533,
-        "contribution": 23.83
+        "normalized": 0.9508,
+        "contribution": 23.77
       },
       "maturity": {
         "weight": 0.2,
@@ -8787,7 +8787,7 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T02:31:53+00:00",
+      "query_fetched_at": "2026-11-26T13:25:35+00:00",
       "npm_fetched_at": null
     },
     "score": 56.67,
@@ -8875,7 +8875,7 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T02:31:53+00:00",
+      "query_fetched_at": "2026-11-26T13:25:35+00:00",
       "npm_fetched_at": null
     },
     "score": 58.8,
@@ -8960,7 +8960,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T02:31:56+00:00",
+      "query_fetched_at": "2026-11-26T13:25:38+00:00",
       "npm_fetched_at": null
     },
     "score": 75.83,
@@ -9055,7 +9055,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T02:31:56+00:00",
+      "query_fetched_at": "2026-11-26T13:25:38+00:00",
       "npm_fetched_at": null
     },
     "score": 71.42,
@@ -9150,7 +9150,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T02:31:56+00:00",
+      "query_fetched_at": "2026-11-26T13:25:38+00:00",
       "npm_fetched_at": null
     },
     "score": 69.26,
@@ -9189,7 +9189,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 45
+    "rank": 46
   },
   {
     "id": "zai-org--zcode",
@@ -9224,10 +9224,10 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T02:31:56+00:00",
+      "query_fetched_at": "2026-11-26T13:25:38+00:00",
       "npm_fetched_at": null
     },
-    "score": 68.71,
+    "score": 68.64,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -9236,8 +9236,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9328,
-        "contribution": 23.32
+        "normalized": 0.9303,
+        "contribution": 23.26
       },
       "maturity": {
         "weight": 0.2,
@@ -9263,7 +9263,7 @@
       "topics": 0,
       "org_backed": true
     },
-    "rank": 48
+    "rank": 49
   },
   {
     "id": "truefoundry--trueforge",
@@ -9305,7 +9305,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T02:31:56+00:00",
+      "query_fetched_at": "2026-11-26T13:25:38+00:00",
       "npm_fetched_at": null
     },
     "score": 66.18,
@@ -9344,7 +9344,7 @@
       "topics": 6,
       "org_backed": true
     },
-    "rank": 57
+    "rank": 58
   },
   {
     "id": "phone-harness--phone-harness",
@@ -9386,7 +9386,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T02:31:56+00:00",
+      "query_fetched_at": "2026-11-26T13:25:38+00:00",
       "npm_fetched_at": null
     },
     "score": 62.44,
@@ -9468,10 +9468,10 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T02:31:56+00:00",
+      "query_fetched_at": "2026-11-26T13:25:38+00:00",
       "npm_fetched_at": null
     },
-    "score": 60.78,
+    "score": 60.71,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -9480,8 +9480,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7392,
-        "contribution": 18.48
+        "normalized": 0.7368,
+        "contribution": 18.42
       },
       "maturity": {
         "weight": 0.2,
@@ -9547,7 +9547,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T02:31:56+00:00",
+      "query_fetched_at": "2026-11-26T13:25:38+00:00",
       "npm_fetched_at": null
     },
     "score": 66.53,
@@ -9586,7 +9586,7 @@
       "topics": 4,
       "org_backed": true
     },
-    "rank": 53
+    "rank": 54
   },
   {
     "id": "simplexai-labs--linger",
@@ -9628,7 +9628,7 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T02:31:56+00:00",
+      "query_fetched_at": "2026-11-26T13:25:38+00:00",
       "npm_fetched_at": null
     },
     "score": 56.97,
@@ -9702,10 +9702,10 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T02:31:56+00:00",
+      "query_fetched_at": "2026-11-26T13:25:38+00:00",
       "npm_fetched_at": null
     },
-    "score": 56.75,
+    "score": 56.69,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -9714,8 +9714,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9431,
-        "contribution": 23.58
+        "normalized": 0.9406,
+        "contribution": 23.52
       },
       "maturity": {
         "weight": 0.2,
@@ -9741,7 +9741,7 @@
       "topics": 0,
       "org_backed": true
     },
-    "rank": 94
+    "rank": 95
   },
   {
     "id": "langroid--langroid",
@@ -9795,10 +9795,10 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T02:31:56+00:00",
+      "query_fetched_at": "2026-11-26T13:25:38+00:00",
       "npm_fetched_at": null
     },
-    "score": 72.7,
+    "score": 72.64,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -9807,8 +9807,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8592,
-        "contribution": 21.48
+        "normalized": 0.8567,
+        "contribution": 21.42
       },
       "maturity": {
         "weight": 0.2,
@@ -9834,7 +9834,7 @@
       "topics": 18,
       "org_backed": true
     },
-    "rank": 36
+    "rank": 37
   },
   {
     "id": "prism-shadow--penguin-harness",
@@ -9882,7 +9882,7 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T02:31:56+00:00",
+      "query_fetched_at": "2026-11-26T13:25:38+00:00",
       "npm_fetched_at": null
     },
     "score": 58.56,
@@ -9956,10 +9956,10 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T02:31:56+00:00",
+      "query_fetched_at": "2026-11-26T13:25:38+00:00",
       "npm_fetched_at": null
     },
-    "score": 58.49,
+    "score": 58.42,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -9968,8 +9968,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.86,
-        "contribution": 21.5
+        "normalized": 0.8575,
+        "contribution": 21.44
       },
       "maturity": {
         "weight": 0.2,
@@ -10049,7 +10049,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T02:32:01+00:00",
+      "query_fetched_at": "2026-11-26T13:26:09+00:00",
       "npm_fetched_at": null
     },
     "score": 75.29,
@@ -10123,7 +10123,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T02:32:01+00:00",
+      "query_fetched_at": "2026-11-26T13:26:09+00:00",
       "npm_fetched_at": null
     },
     "score": 68.75,
@@ -10162,7 +10162,7 @@
       "topics": 0,
       "org_backed": true
     },
-    "rank": 47
+    "rank": 48
   },
   {
     "id": "nasiko-labs--nasiko",
@@ -10209,10 +10209,10 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T02:32:01+00:00",
+      "query_fetched_at": "2026-11-26T13:26:09+00:00",
       "npm_fetched_at": null
     },
-    "score": 64.94,
+    "score": 64.88,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -10221,8 +10221,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8789,
-        "contribution": 21.97
+        "normalized": 0.8764,
+        "contribution": 21.91
       },
       "maturity": {
         "weight": 0.2,
@@ -10248,7 +10248,7 @@
       "topics": 11,
       "org_backed": true
     },
-    "rank": 63
+    "rank": 64
   },
   {
     "id": "open-multi-agent--open-multi-agent",
@@ -10303,10 +10303,10 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T02:32:01+00:00",
+      "query_fetched_at": "2026-11-26T13:26:09+00:00",
       "npm_fetched_at": null
     },
-    "score": 72.35,
+    "score": 72.29,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -10315,8 +10315,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9477,
-        "contribution": 23.69
+        "normalized": 0.9453,
+        "contribution": 23.63
       },
       "maturity": {
         "weight": 0.2,
@@ -10342,7 +10342,7 @@
       "topics": 19,
       "org_backed": true
     },
-    "rank": 37
+    "rank": 38
   },
   {
     "id": "openbitfun--openbitfun",
@@ -10391,7 +10391,7 @@
       "repo_fetched_at": "2026-11-25T02:41:11+00:00",
       "repo_note": null,
       "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T02:32:01+00:00",
+      "query_fetched_at": "2026-11-26T13:26:09+00:00",
       "npm_fetched_at": null
     },
     "score": 63.54,
@@ -10479,10 +10479,10 @@
       "repo_fetched_at": "2026-11-25T02:41:11+00:00",
       "repo_note": null,
       "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T02:32:01+00:00",
+      "query_fetched_at": "2026-11-26T13:26:09+00:00",
       "npm_fetched_at": null
     },
-    "score": 64.56,
+    "score": 64.5,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -10491,8 +10491,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9156,
-        "contribution": 22.89
+        "normalized": 0.9131,
+        "contribution": 22.83
       },
       "maturity": {
         "weight": 0.2,
@@ -10518,7 +10518,7 @@
       "topics": 13,
       "org_backed": true
     },
-    "rank": 64
+    "rank": 65
   },
   {
     "id": "exoharness--exo",
@@ -10557,7 +10557,7 @@
       "repo_fetched_at": "2026-11-25T02:41:11+00:00",
       "repo_note": null,
       "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T02:32:01+00:00",
+      "query_fetched_at": "2026-11-26T13:26:09+00:00",
       "npm_fetched_at": null
     },
     "score": 56.72,
@@ -10596,6 +10596,6 @@
       "topics": 3,
       "org_backed": true
     },
-    "rank": 95
+    "rank": 94
   }
 ]
