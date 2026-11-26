@@ -9,10 +9,7 @@
 <script src="assets/i18n.js"></script>
 <link rel="stylesheet" href="assets/rank-frame.css">
 </head>
-<body class="rank-embedded"><div class="cm-rank-hud cm-rank-design-only">
-  <span class="cm-rank-hud-title">SECTION 04 // PLUGIN LEADERBOARD</span>
-  <span class="cm-rank-hud-right">DATA UPDATED <span class="cm-rank-hud-date">—</span> · DAILY · <span class="cm-rank-hud-clock">--:--:--</span></span>
-</div><header class="cm-rank-bar">
+<body class="rank-embedded"><header class="cm-rank-bar">
   <a class="cm-rank-home" href="/" title="cyberMap home"><span class="i18n-zh"><span class='cm-rank-back'>←</span> cyberMap 导航</span><span class="i18n-en"><span class='cm-rank-back'>←</span> cyberMap Home</span></a>
   <nav class="cm-rank-nav" aria-label="Leaderboard navigation">
     <a href="/rank/" data-key="all"><span class="i18n-zh">总榜 Top 100</span><span class="i18n-en">Overall Top 100</span></a>
@@ -33,11 +30,6 @@
 
 <main class="wrap">
 <header class="site-head">
-  <div class="cm-rank-design-head cm-rank-design-only">
-    <span class="cm-rank-kicker">// 04   AI PLUGIN LEADERBOARD</span>
-    <span class="cm-rank-topnum">TOP 100</span>
-    <span class="cm-rank-subline">5 平台 · 综合分 + 涨星 + 活跃度 三维评分</span>
-  </div>
   <div>
     <h1><span class="i18n-zh">AI 插件排行榜</span><span class="i18n-en">AI Plugin Leaderboard</span></h1>
     <p class="sub"><span class="i18n-zh">Codex · Claude Code · dsh · WorkBuddy 的 AI Agent 插件生态，每日 08:00 更新，总榜与各平台分榜各取前 100。</span><span class="i18n-en">The AI agent plugin ecosystem for Codex · Claude Code · dsh · WorkBuddy, updated daily at 08:00 (UTC+8). Top 100 for the overall chart and each platform.</span></p>
@@ -83,15 +75,6 @@
 </div>
 <div id="list" class="list"><div class="loading i18n-zh">正在加载榜单数据…</div><div class="loading i18n-en">Loading leaderboard…</div></div>
 <div id="list-foot" class="list-foot"></div>
-
-<section class="cm-rank-scoring cm-rank-design-only" aria-label="三维评分模型">
-  <div class="cm-scoring-title">SCORING MATRIX / 三维评分模型 <span class="cm-scoring-source">DATA SOURCE / api.github.com 实探 · 每日 09:11 流水线重算</span></div>
-  <div class="cm-scoring-grid">
-    <div class="cm-scoring-node"><b>60%</b><span>生态权重<br>跨平台安装量与适配广度</span></div>
-    <div class="cm-scoring-node"><b>25%</b><span>涨星动能<br>GitHub stars 近 30 天增速</span></div>
-    <div class="cm-scoring-node"><b>15%</b><span>活跃度<br>最近提交与版本发布节奏</span></div>
-  </div>
-</section>
 
 <footer class="site-foot">
   <span class="i18n-zh">全部指标来自 GitHub REST / Search API 与 npm downloads API 的当日快照，第三方榜单数字不采信；每条记录都保留采集 query 与时间戳，可在详情页逐点回溯。分数是当日相对分位，跨日请比较排名与排名变化，不要比较分数绝对值。</span>
