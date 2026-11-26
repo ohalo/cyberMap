@@ -2547,7 +2547,10 @@ body.night .cm-scroll-hint:hover { text-decoration: underline; }
 body.night .page-container .sidebar-menu.fixed,
 body.night .sidebar-menu { display: none !important; }
 body.night .page-container .main-content { margin-left: 0 !important; }
-body.night .navbar.user-info-navbar { left: 0 !important; width: 100% !important; }
+/* 顶栏长条铺满视口：父级 .main-content 有 34px 左右 padding，navbar 靠
+   margin:0 -34px 抵消。这里若写 width:100% 只会等于父级 content 宽（视口-68），
+   右侧空出 68px；改回 auto 让负 margin 自然把它拉满整个视口。 */
+body.night .navbar.user-info-navbar { left: 0 !important; width: auto !important; }
 body.night .user-info-navbar .user-info-menu {
   display: flex !important;
   align-items: center;
@@ -2590,10 +2593,15 @@ body.night .cm-site-links a.is-active::after {
   height: 2px; background: var(--cm-neon-c);
   box-shadow: 0 0 10px var(--cm-neon-c);
 }
-body.night .user-info-navbar .user-info-menu > li.switch-mode { margin-left: auto; }
+/* 切换器必须贴顶栏最右端：主题的通用规则 `.user-info-menu > li{margin:0!important}`
+   会压掉普通 margin-left:auto，这里用同等特异性 + !important 把它推到右侧。 */
+.user-info-navbar .user-info-menu > li.cyber-top-gh-li { margin-left: 0 !important; }
+.user-info-navbar .user-info-menu > li.cm-site-brand,
+.user-info-navbar .user-info-menu > li.cm-site-links { margin-right: 0 !important; }
+body.night .user-info-navbar .user-info-menu > li.switch-mode { margin-left: auto !important; }
 @media (max-width: 991px) {
   body.night .user-info-navbar .user-info-menu { gap: 16px; padding: 0 14px; overflow-x: auto; }
   body.night .cm-site-links { gap: 14px; }
   body.night .cm-site-links a { font-size: 11px; white-space: nowrap; }
-  body.night .user-info-navbar .user-info-menu > li.switch-mode { margin-left: 0; }
+  body.night .user-info-navbar .user-info-menu > li.switch-mode { margin-left: auto !important; }
 }

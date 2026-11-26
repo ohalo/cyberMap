@@ -235,12 +235,12 @@
      读 /rank/data/top100.json 的真实前 4 名；榜单是独立流水线产物，
      这里只读不写。网络失败静默隐藏，绝不编造数字。 */
   function injectRankPreview() {
-    /* 设计稿 02 号板：榜单面板排在首个分类的卡片网格之后，而非首屏 HERO 里 */
-    var firstHead = document.querySelector('.main-content h4.text-gray');
-    var firstRow = firstHead && firstHead.nextElementSibling;
-    while (firstRow && firstRow.tagName === 'BR') firstRow = firstRow.nextElementSibling;
-    var anchor = (firstRow && firstRow.classList.contains('row'))
-      ? firstRow : document.querySelector('.cm-feature-cta');
+    /* 设计稿 02 号板：榜单是节点矩阵区的收尾面板——排在全部分类卡片之后、
+       RECENT NODES 脚注之前，绝不夹在分类导航与第一组卡片之间。
+       必须在 injectNodeMatrix 建好 .cm-matrix-main 之后调用；取不到矩阵时
+       退回首屏 CTA 之后，保证经典态与非首页不受影响。 */
+    var matrix = document.querySelector('.cm-matrix-main');
+    var anchor = matrix || document.querySelector('.cm-feature-cta');
     if (!anchor || document.querySelector('.cm-rank-preview') || !window.fetch) return;
     var panel = el('section', 'cm-rank-preview cm-design-only',
       '<div class="cm-rank-head">' +
@@ -250,7 +250,12 @@
       '<a class="cm-rank-cta" href="/rank/" title="查看完整榜单">完整榜单 TOP 100</a>' +
       '</div><div class="cm-rank-rows"></div>');
     panel.style.display = 'none';
-    anchor.parentNode.insertBefore(panel, anchor.nextSibling);
+    if (matrix) {
+      /* 追加到矩阵主列末尾：在最后一组分类卡片之后、.cm-matrix-foot 之前 */
+      matrix.appendChild(panel);
+    } else {
+      anchor.parentNode.insertBefore(panel, anchor.nextSibling);
+    }
 
     var esc = function (s) {
       return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -1024,11 +1029,11 @@
     /* ---- 10. LIVE 项目动态流：异步填充，失败静默隐藏 ---- */
     injectLiveTicker();
 
-    /* ---- 11. 设计稿榜单前置条：异步读真实 Top 4，失败静默隐藏 ---- */
-    injectRankPreview();
-
-    /* ---- 12. 设计稿 02 号板：分类矩阵控制台（最后搬运，保留榜单前置条位置） ---- */
+    /* ---- 11. 设计稿 02 号板：分类矩阵控制台（先建容器，榜单才能收尾插入） ---- */
     injectNodeMatrix(main, heads, cols);
+
+    /* ---- 12. 设计稿榜单收尾面板：异步读真实 Top 4，失败静默隐藏 ---- */
+    injectRankPreview();
   }
 
   function start() {
