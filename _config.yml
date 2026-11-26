@@ -37,6 +37,7 @@ skip_render:
   - 'rank/**'
   - 'daily/**'
   - 'data/**'
+  - 'weekly/**'
   - 'robots.txt'
   - 'sitemap.xml'
 

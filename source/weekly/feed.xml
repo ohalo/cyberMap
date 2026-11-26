@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>cyberMap · 每日收录周报</title>
+    <link>https://cybermap.halo26812.eu.org/weekly/</link>
+    <description>cyberMap 每周核验收录的 AI 站点摘要，每周一期。</description>
+    <language>zh-CN</language>
+    <generator>cybermap-daily/build_weekly.py</generator>
+    <ttl>10080</ttl>
+    <item>
+      <title>AI 收录周报 · 2026-11-23（33 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/weekly/</link>
+      <guid isPermaLink="false">cybermap-weekly-2026-11-23</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 +0800</pubDate>
+      <description>Scenetra［图像与设计］视觉 AI 创作工作区，聚合五十多个图像与视频模型，自动比价路由到最低成本供应商按量计费。 — https://www.scenetra.com
+calesthio/OpenMontage［视频与音频］开源智能体视频制作系统，从脚本自动生成素材、配音与剪辑，内置十二条流水线和数百项技能。 — https://github.com/calesthio/OpenMontage
+debpalash/VoiceStudio［视频与音频］完全本地运行的开源配音工作室，支持声音克隆、音色设计、视频配音与转写，覆盖六百余种语言。 — https://github.com/debpalash/VoiceStudio
+GoogleChrome/modern-web-guidance-src［编程与开发］Google Chrome 团队维护的 Web 开发指南，帮助编程智能体遵循现代浏览器最佳实践生成代码。 — https://github.com/GoogleChrome/modern-web-guidance-src
+pingdotgg/t3code［编程与开发］远程控制 Claude Code、Codex 等编程智能体的工作台，可用手机或任意电脑随时审批任务。 — https://github.com/pingdotgg/t3code
+pbakaus/impeccable［编程与开发］编程智能体的设计语言与审查技能，用 polish、critique 等指令改善 AI 生成界面的视觉质量。 — https://github.com/pbakaus/impeccable
+open-compass/opencompass［GitHub 项目］开源大模型评测平台，覆盖推理、代码、安全与长上下文等基准，支持主流商业与开源模型。 — https://github.com/open-compass/opencompass
+jesdga95/basalt［推理与训练框架］面向 NVIDIA Blackwell 显卡优化的本地推理引擎，支持百万上下文、原生视觉与推测解码。 — https://github.com/jesdga95/basalt
+kvcache-ai/AgentENV［智能体框架］分布式智能体环境运行时，用 Firecracker 微虚拟机实现毫秒级快照与分叉，用于大规模强化学习训练。 — https://github.com/kvcache-ai/AgentENV
+DIYgod/Pinky［智能体框架］通过 MCP 让 AI 操控真实 iPhone 或安卓手机的桌面工具，全程投屏录像并支持人工随时接管。 — https://github.com/DIYgod/Pinky
+Hydrilla［图像与设计］面向游戏影视的 AI 3D 资产生成工具，用文本或图片生成带 PBR 贴图的生产级网格模型。 — https://hydrilla.ai
+Testsy［编程与开发］AI 质量测试智能体，接入编码智能体后在真实浏览器与移动模拟器验证功能并给出可分享证据。 — https://testsy.dev
+Juneo-Lab/decision-forge［GitHub 项目］将组织规章策略编译为可验证的决策训练数据，支持数据溯源，用于微调合规决策模型。 — https://github.com/Juneo-Lab/decision-forge
+karpathy/nanochat［GitHub 项目］Karpathy 开源的从零实现 ChatGPT 全流程教学框架，约百美元成本即可完成预训练与推理。 — https://github.com/karpathy/nanochat
+withcoral/coral［智能体框架］为 AI 智能体访问企业敏感系统提供执行护栏，按精细权限与自定义工具安全调用，减少 token 消耗。 — https://github.com/withcoral/coral
+get-bb/bb［智能体框架］面向智能体的集成开发环境，围绕 Claude Code、Codex 等编码智能体构建，可自主迭代扩展能力。 — https://github.com/get-bb/bb
+mvanhorn/cli-printing-press［智能体框架］读取 API 文档自动生成面向 AI 智能体的命令行工具，内置 SQLite 同步、离线检索与组合洞察命令。 — https://github.com/mvanhorn/cli-printing-press
+didi/helixharness［智能体框架］滴滴开源的 AI 编码工程化框架，支持团队结合业务知识与研发流程持续构建专属 Harness。 — https://github.com/didi/helixharness
+eduwxyz/tucano［智能体框架］在本地组建 AI 智能体团队，可频道协作、写代码、互相评审，真实世界操作需人工确认。 — https://github.com/eduwxyz/tucano
+conorbronsdon/avoid-ai-writing［智能体框架］智能体技能插件，审查并改写文本去除 AI 写作痕迹，兼容 Claude Code、Codex、Hermes 等。 — https://github.com/conorbronsdon/avoid-ai-writing
+OLVA［办公与效率］无需以机器人身份入会的实时 AI 会议助手，提供多语转写、实时问答、对话辅导与可搜索的会议记忆。 — https://olva.ai
+Fairwai［智能体与自动化］AI 对话服务商，提供可自动接听的语音 Agent、网站聊天机器人与会议纪要生成，可电话直接试听。 — https://fairw.ai
+JustVugg/colibri［推理与训练框架］纯 C 编写的分层 MoE 推理引擎，热专家驻留 GPU、冷专家从 NVMe 流式加载，让超大模型跑在普通硬件上。 — https://github.com/JustVugg/colibri
+unslothai/unsloth［推理与训练框架］本地运行与训练大语言模型及扩散模型的框架，支持 GGUF、MLX 与 Qwen、DeepSeek、FLUX 等模型微调。 — https://github.com/unslothai/unsloth
+sybil-solutions/inference-optimisation-skill［推理与训练框架］自动调优本地 LLM 推理速度的 Agent 技能，用爬山法搜索解码、预填充与 KV 缓存的最优配置。 — https://github.com/sybil-solutions/inference-optimisation-skill
+simplexai-labs/linger［智能体框架］可完全跑在本机的开源个人智能体，自研 PolyStrata 引擎让大模型在消费级硬件上运行，数据留存本地。 — https://github.com/simplexai-labs/linger
+pydantic/pydantic-ai［智能体框架］Pydantic 官方 AI Agent 开发框架，端到端类型安全，支持实时语音、图像生成、嵌入与多模型接入。 — https://github.com/pydantic/pydantic-ai
+0xPlaygrounds/rig［智能体框架］用 Rust 构建模块化、可扩展 LLM 应用的框架，主打高性能与低延迟的 AI 应用开发。 — https://github.com/0xPlaygrounds/rig
+Denizen Blu One［对话与搜索］提供多模型统一订阅与 OpenAI 兼容 API 的在线 AI 服务，按年计费、不按 token 收费。 — https://denizenblu.com
+SoftSync AI［办公与效率］面向初创团队的 AI CRM，整合线索、会议纪要、邮件跟进与报表，支持 MCP 与 API 接入。 — https://softsync.ai
+modelflare-ai/AnyModelBot［GitHub 项目］本地优先的开源 AI 机器人，可接入 GPT、Claude、Gemini 等多种模型搭建专属对话助手。 — https://github.com/modelflare-ai/AnyModelBot
+JosssphZhou/poki［GitHub 项目］开源 iPhone 智能体应用，能读取屏幕并自动点击滑动，通过本地 MCP 自动化操作 iOS 设备。 — https://github.com/JosssphZhou/poki
+trpc-group/trpc-agent-go［智能体框架］腾讯开源的 Go 语言生产级智能体框架，支持图工作流、记忆、A2A 与 MCP 协议，内置评测与可观测能力。 — https://github.com/trpc-group/trpc-agent-go</description>
+      <category>AI 周报</category>
+    </item>
+    <item>
+      <title>AI 收录周报 · 2026-11-16（69 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/weekly/</link>
+      <guid isPermaLink="false">cybermap-weekly-2026-11-16</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 +0800</pubDate>
+      <description>dream-num/univer［办公与效率］AI 办公 SDK，为应用嵌入文档编辑、表格计算与多人协作能力，构建自研 AI Office。 — https://github.com/dream-num/univer
+microsoft/VibeVoice［大语言模型］微软开源的前沿语音 AI 模型，面向高质量语音生成与实时语音交互场景。 — https://github.com/microsoft/VibeVoice
+ZhuLinsen/daily_stock_analysis［GitHub 项目］LLM 驱动的多市场股票智能分析系统，聚合行情与新闻、生成决策看板并支持定时推送。 — https://github.com/ZhuLinsen/daily_stock_analysis
+Interactive-Active-AI/NextTransformer［推理与训练框架］面向下一代 Transformer 与大模型的开源框架，提供算力对齐基准与架构自主研究能力。 — https://github.com/Interactive-Active-AI/NextTransformer
+algorithmicsuperintelligence/optillm［推理与训练框架］LLM 推理优化代理，通过多种提示与缓存策略降低大模型调用成本并提升响应效率。 — https://github.com/algorithmicsuperintelligence/optillm
+eliasbiondo/antirion［推理与训练框架］开源 AI/LLM 网关，单文件内置控制台，统一路由、限流与观测多家大模型服务调用。 — https://github.com/eliasbiondo/antirion
+ag-ui-protocol/ag-ui［智能体框架］Agent-User Interaction 协议，为 AI 智能体与前端应用提供标准化的事件交互与状态同步接口。 — https://github.com/ag-ui-protocol/ag-ui
+ChromeDevTools/chrome-devtools-mcp［智能体框架］把 Chrome 开发者工具通过 MCP 暴露给编码智能体，支持页面调试、检查与交互自动化。 — https://github.com/ChromeDevTools/chrome-devtools-mcp
+NVIDIA/SkillEvaluator［智能体框架］英伟达开源的多层评估框架，用质量门槛与安全扫描检验 AI 智能体技能与插件。 — https://github.com/NVIDIA/SkillEvaluator
+Tencent/LoopForge［智能体框架］腾讯开源的自托管编码智能体交付工作流，编排 CodeBuddy、Codex 等并支持人工审批。 — https://github.com/Tencent/LoopForge
+GlobalGPT［对话与搜索］聚合 ChatGPT、Claude、Gemini 及图像视频模型的一站式订阅平台，用一个账号访问多款主流 AI 服务。 — https://glbgpt.com
+MerchantFloor［图像与设计］面向小型 Shopify 商家的 AI 商品上架工具，上传产品图即可生成白底图、场景图与 SEO 描述并同步店铺。 — https://www.merchantfloor.com
+higurashi-ai/Haru［大语言模型］低延迟多语言全双工语音对话模型，可边听边说，以 133 毫秒分块连续生成口语回应。 — https://github.com/higurashi-ai/Haru
+max-sixty/worktrunk［GitHub 项目］为并行 AI 编码智能体设计的 Git worktree 管理命令行工具，快速创建、切换与清理隔离工作区。 — https://github.com/max-sixty/worktrunk
+beenuar/AiSOC［GitHub 项目］开源 AI 安全运营中心，融合告警并用大模型智能体做威胁研判，覆盖 MITRE ATT&amp;CK 并留痕可回放。 — https://github.com/beenuar/AiSOC
+cactus-compute/cactus［推理与训练框架］面向消费级设备的轻量端侧推理库，体积不足 50MB，本地运行智能体、语音与视觉任务，无需云端。 — https://github.com/cactus-compute/cactus
+huawei-csl/MACaQ［推理与训练框架］华为开源的模型无关量化工具，面向 GGUF 与本地推理，可量化并运行文本、图像、视频与音频模型。 — https://github.com/huawei-csl/MACaQ
+alibaba/zvec［RAG 与知识库］阿里开源的轻量级进程内向量数据库，C++ 实现，直接嵌入应用即可做高速向量检索，面向 RAG 与边缘场景。 — https://github.com/alibaba/zvec
+yjid/kensaku［RAG 与知识库］开源本地文件检索工具，索引文档、代码和截图文字，支持 OCR 与语义搜索，可经只读 MCP 供智能体调用。 — https://github.com/yjid/kensaku
+deepseek-ai/dsh-superagent-prototype［智能体框架］DeepSeek 开源的自主智能体原型，采用 Router+Worker 双层架构，让编码 Agent 自行拆解任务、发现缺陷并提交修复 PR。 — https://github.com/deepseek-ai/dsh-superagent-prototype
+Planet AI［图像与设计］Planet 官方卫星影像 AI 探索器，用自然语言在地图上检索分析十年高分辨率影像，支持时序对比与深度研究智能体。 — https://ai.planet.com
+dograh-hq/dograh［视频与音频］开源自托管语音 AI 平台，可替代 Vapi 与 Retell，支持语音到语音或 LLM/STT/TTS、可视化流程编排、MCP 与电话接入。 — https://github.com/dograh-hq/dograh
+alibaba/open-code-review［编程与开发］阿里开源的 AI 代码审查工具，读取 Git 差异给出行级评审意见，把确定性检查与大模型智能体结合，自动发现代码问题。 — https://github.com/alibaba/open-code-review
+Activepieces/activepieces［智能体与自动化］开源自动化平台，用可视化流程连接 AI 智能体与数百款应用，支持自托管，用于搭建客服、运营等自动化工作流。 — https://github.com/Activepieces/activepieces
+Vricko［智能体与自动化］面向小企业的 AI 代理平台，一句话即可建站、撰写内容、发邮件与客服支持，每项任务留痕并设月度支出上限。 — https://app.vricko.app
+Turbofy［智能体与自动化］对话式 AI 应用构建平台，用自然语言生成带数据、认证与托管的生产级业务应用，并支持 MCP 连接外部编码智能体。 — https://turbofy.com
+Kimi API 开放平台［大语言模型］月之暗面 Kimi 大模型开放平台，提供长上下文、多模态与工具调用的 API，供开发者构建智能对话、代码生成与视觉推理应用。 — https://platform.kimi.com
+karakeep-app/karakeep［GitHub 项目］可自托管的全能收藏应用，支持链接、笔记与图片，提供 AI 自动打标和全文搜索。 — https://github.com/karakeep-app/karakeep
+mw00/project-maya［推理与训练框架］开源本地大模型推理引擎，通过 GPU、内存与固态盘三级分层调度权重，让数百 B 模型跑在消费级硬件，兼容 OpenAI/Anthropic API。 — https://github.com/mw00/project-maya
+Edge0-AI/Edge0［推理与训练框架］端侧基础模型与流式 MoE 推理框架，通过 SSD 流式权重与专家路由，让 145B 模型跑在笔记本、35B 跑在手机上。 — https://github.com/Edge0-AI/Edge0
+NVIDIA-NeMo/Switchyard［推理与训练框架］英伟达开源的 LLM 流量路由工具，保持原生 OpenAI/Anthropic API 兼容，可跨模型与供应商分发请求，便于选型、基准测试与成本优化。 — https://github.com/NVIDIA-NeMo/Switchyard
+onyx-dot-app/onyx［RAG 与知识库］开源企业 AI 搜索平台，可连接多种数据源做 RAG 检索问答，内置权限与连接器，用于搭建内部知识助手。 — https://github.com/onyx-dot-app/onyx
+docling-project/docling［RAG 与知识库］开源文档解析库，把 PDF、Word、HTML 等转为 Markdown/JSON 结构化数据，为生成式 AI 与 RAG 流程准备输入。 — https://github.com/docling-project/docling
+headroomlabs-ai/headroom［RAG 与知识库］在送入大模型前压缩工具输出、日志、文件与 RAG 分块，显著降低 token 消耗，提供库、代理与 MCP 服务三种形态。 — https://github.com/headroomlabs-ai/headroom
+aaif-goose/goose［智能体框架］可扩展的开源 AI 智能体，支持命令行、桌面与 API 多种形态，能连接任意大模型和 MCP 工具，自动完成开发与日常任务。 — https://github.com/aaif-goose/goose
+google-gemini/gemini-cli［智能体框架］谷歌开源的终端 AI 编码智能体，在命令行读写代码、执行 shell 命令并集成 MCP，支持 Gemini 模型辅助开发与调试。 — https://github.com/google-gemini/gemini-cli
+mastra-ai/mastra［智能体框架］现代 TypeScript AI 应用框架，内置智能体、RAG、评估与 MCP 支持，用于构建聊天机器人和 AI 驱动的应用。 — https://github.com/mastra-ai/mastra
+browser-use/video-use［视频与音频］browser-use 团队开源的剪辑工具，让编码智能体通过对话完成视频剪辑与处理。 — https://github.com/browser-use/video-use
+duixcom/Duix-Avatar［视频与音频］真开源离线数字人工具包，支持用真人视频克隆形象与声音，本地生成数字人口播视频。 — https://github.com/duixcom/Duix-Avatar
+browseros-ai/BrowserOS［智能体与自动化］开源智能体浏览器，基于 Chromium 内置本地大模型与自动化能力，主打隐私优先的浏览器任务代理。 — https://github.com/browseros-ai/BrowserOS
+jundot/omlx［推理与训练框架］面向苹果芯片的大模型推理服务器，支持连续批处理与 SSD 分层缓存，可从菜单栏管理。 — https://github.com/jundot/omlx
+raullenchai/Rapid-MLX［推理与训练框架］基于 MLX 的苹果芯片推理服务器，兼容 OpenAI 与 Anthropic 接口，专注编码智能体工具调用。 — https://github.com/raullenchai/Rapid-MLX
+Tencent/WeKnora［RAG 与知识库］腾讯开源大模型知识平台，把文档转成可溯源 RAG 问答、自主推理智能体与自动维护的 Wiki。 — https://github.com/Tencent/WeKnora
+YouArt［图像与设计］对话式 AI 创意平台，用智能体把需求拆成分镜与配音并在画布生成图像视频，支持多模型聚合与桌面版。 — https://youart.ai
+hugohe3/ppt-master［办公与效率］把文档或主题自动生成原生 PowerPoint 的开源工具，支持形状、图表、动画与模板套用。 — https://github.com/hugohe3/ppt-master
+云策 Omni［智能体与自动化］跨平台本地 AI 工作台，用模型加技能加插件组合让智能体完成开发、创作与自动化任务，数据存于本机。 — https://www.yuncehub.com
+THU-MAIC/OpenMAIC［GitHub 项目］清华开源的开放式多智能体互动课堂，一键生成含 AI 教师与同学、白板及讲解的沉浸式学习体验。 — https://github.com/THU-MAIC/OpenMAIC
+skyzh/tiny-llm［GitHub 项目］面向系统工程师的 Apple Silicon LLM 推理教学项目，用 Python 从零搭建迷你 vLLM 并运行 Qwen 模型。 — https://github.com/skyzh/tiny-llm
+jingyaogong/minimind［推理与训练框架］仅需 2 小时即可从零训练 6400 万参数小语言模型的开源项目，适合快速上手大模型训练全流程。 — https://github.com/jingyaogong/minimind
+flashml-org/FreeToken［推理与训练框架］把数据中心级模型服务带到桌面的开源引擎，可在个人电脑上本地运行超大规模语言模型。 — https://github.com/flashml-org/FreeToken
+RigSpark［推理与训练框架］开源本地 AI 选型工具，检测电脑内存与显卡后自动挑选可运行的大模型、图像、视频或语音模型并下载运行。 — https://rigspark.si
+infiniflow/ragflow［RAG 与知识库］面向智能体的原生 RAG 检索引擎，提供确定性解析、可解释引用与企业级知识库问答能力。 — https://github.com/infiniflow/ragflow
+Orkas-AI/Orkas［智能体框架］本地优先的开源多智能体桌面团队，指挥官把目标拆成待办并协调内置专家与主流编码智能体协同完成。 — https://github.com/Orkas-AI/Orkas
+cloudflare/security-audit-skill［智能体框架］Cloudflare 开源的编码智能体技能，执行多阶段安全审计并输出经独立验证、机器可读的漏洞发现结果。 — https://github.com/cloudflare/security-audit-skill
+nanocodexyz/nanocode［智能体框架］面向前沿嵌入式场景的智能体 SDK，提供可长期运行、支持代码模式的智能体开发接口与工具链。 — https://github.com/nanocodexyz/nanocode
+ChesterRa/cccc［智能体框架］零基础设施的编码智能体协调器，用群聊式已读与投递回执从手机远程调度多个智能体持续执行任务。 — https://github.com/ChesterRa/cccc
+mem0ai/mem0［智能体框架］为 AI 智能体提供持久化记忆层的开源基础设施，可跨会话记住用户偏好并注入相关上下文。 — https://github.com/mem0ai/mem0
+iflytek/skillhub［智能体框架］科大讯飞开源的企业级自托管智能体技能注册中心，支持技能包发布、版本管理与权限治理。 — https://github.com/iflytek/skillhub
+CopilotKit/CopilotKit［智能体框架］面向智能体与生成式 UI 的前端开发框架，支持 React、Angular 与移动端快速集成对话交互。 — https://github.com/CopilotKit/CopilotKit
+Clipwright［视频与音频］面向AI智能体的视频制作后端，通过MCP或API拆解热门短视频并生成带口播的广告MP4，渲染前先报价。 — https://clipwright.io
+The-PR-Agent/pr-agent［编程与开发］开源AI代码审查助手，自动为拉取请求生成评审意见，支持多家大模型与主流代码托管平台。 — https://github.com/The-PR-Agent/pr-agent
+NVIDIA/auto-ontology［GitHub 项目］英伟达开源的Python框架，为数据构建语义图谱推理层，实现确定性查询生成与可解释的LLM智能体分析。 — https://github.com/NVIDIA/auto-ontology
+homeassistant-ai/ha-mcp［GitHub 项目］通过MCP协议让Claude、ChatGPT等AI助手以自然语言配置和自动化Home Assistant智能家居设备。 — https://github.com/homeassistant-ai/ha-mcp
+FareedKhan-dev/kimi-k3-in-c［推理与训练框架］用纯C99实现的推理引擎，可在单核CPU、8GB内存中运行2.78万亿参数的Kimi K3大模型，零依赖。 — https://github.com/FareedKhan-dev/kimi-k3-in-c
+bytedance/deer-flow［智能体框架］字节跳动开源的长程超级智能体框架，集成沙箱、记忆、技能与子智能体，自主完成研究、编码与创作等多步任务。 — https://github.com/bytedance/deer-flow
+vercel-labs/agent-browser［智能体框架］Vercel开源的Rust浏览器自动化CLI，以无障碍树读取页面并让AI智能体逐步操作网页元素，失败即报错。 — https://github.com/vercel-labs/agent-browser
+heygen-com/hyperframes［视频与音频］HeyGen 开源的 TypeScript 视频渲染框架，把 HTML、CSS 与动画确定性输出为 MP4，供 AI 智能体批量生成视频。 — https://github.com/heygen-com/hyperframes
+Cognee［智能体与自动化］开源 AI 智能体记忆平台，用知识图谱与向量检索为大模型应用构建跨会话持久记忆，支持自托管与云服务。 — https://www.cognee.ai
+vercel-labs/agent-desktop［智能体框架］Vercel Labs 开源的命令行工具，通过系统无障碍树让 AI 智能体识别并操作桌面应用，支持无头运行与多平台。 — https://github.com/vercel-labs/agent-desktop</description>
+      <category>AI 周报</category>
+    </item>
+    <item>
+      <title>AI 收录周报 · 2026-11-09（12 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/weekly/</link>
+      <guid isPermaLink="false">cybermap-weekly-2026-11-09</guid>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 +0800</pubDate>
+      <description>magpie［对话与搜索］本地 AI 模型网关，统一接入 DeepSeek、Claude、Kimi 等模型订阅，供各类编码智能体按需切换。 — https://usemagpie.ai
+harry0703/MoneyPrinterTurbo［视频与音频］基于 AI 大模型自动生成文案、配音与字幕，一键合成高清短视频的开源工作流工具。 — https://github.com/harry0703/MoneyPrinterTurbo
+langflow-ai/langflow［智能体框架］可视化拖拽构建 AI 智能体与工作流的开源工具，支持接入主流大模型并部署为 API。 — https://github.com/langflow-ai/langflow
+webAI［对话与搜索］在 Mac 本地运行小模型的 AI 应用，可搭建多个 AI 专家（Persona）协作处理私有文档，数据不上云、不计 token 费。 — https://www.webai.com
+DomoAI［视频与音频］在线 AI 视频与动画创作平台，支持用文字、图片或视频素材完成生成、风格化与画质提升。 — https://domoai.app
+nv-tlabs/lyra［GitHub 项目］英伟达开源的生成式 3D 世界模型项目，可从输入图像生成可探索的三维场景，开放代码与预训练权重。 — https://github.com/nv-tlabs/Lyra
+TauricResearch/TradingAgents［GitHub 项目］基于多智能体大语言模型的金融交易框架，模拟分析师、研究员与交易员协作完成选股与投资决策。 — https://github.com/TauricResearch/TradingAgents
+github/spec-kit［GitHub 项目］GitHub 出品的规范驱动开发（SDD）工具包，用自然语言规范引导 AI 从需求到代码的分阶段实现。 — https://github.com/github/spec-kit
+openclaw/openclaw［智能体框架］开源个人 AI 助手，可在任意操作系统与平台上代用户执行真实任务，强调数据自持，MIT 协议。 — https://github.com/openclaw/openclaw
+Ollama［推理与训练框架］在本地或云端运行开源大模型的工具，支持 macOS、Windows、Linux，一条命令即可启动模型。 — https://ollama.com
+unclecode/crawl4ai［RAG 与知识库］面向大模型与 AI 智能体的开源网页抓取工具，把网页转成 LLM 就绪的 Markdown，支持自托管。 — https://github.com/unclecode/crawl4ai
+browser-use/browser-use［智能体框架］开源浏览器智能体框架，让大模型在真实浏览器中自动点击、输入并完成任务，兼容任意 LLM。 — https://github.com/browser-use/browser-use</description>
+      <category>AI 周报</category>
+    </item>
+  </channel>
+</rss>

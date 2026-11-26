@@ -1479,6 +1479,11 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
         '<link rel="alternate" type="application/rss+xml" '
         'title="cyberMap · 项目动态速递" href="/daily/' + UPDATES_FEED + '">'
     )
+    # 每周收录周报的独立订阅源（/weekly/feed.xml），与日流正交
+    alternates += (
+        '<link rel="alternate" type="application/rss+xml" '
+        'title="cyberMap · 每周收录周报" href="/weekly/feed.xml">'
+    )
     parts = [
         "<!doctype html>",
         '<html lang="zh-CN">',
@@ -1535,7 +1540,9 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
             for filename, (label, _cats) in CATEGORY_FEEDS.items()
         )
         + f'<a class="dy-feed-chip" href="/daily/{UPDATES_FEED}" title="订阅已收录项目的更新动态" data-file="{UPDATES_FEED}">'
-        f'{ICON_RSS}<span>项目动态流</span></a>',
+        f'{ICON_RSS}<span>项目动态流</span></a>'
+        + '<a class="dy-feed-chip" href="/weekly/" title="每周收录周报：本周新增 / 验证漏斗 / 活跃项目 / 方向分布" data-file="/weekly/">'
+        f'{ICON_RSS}<span>每周周报 · 一周一更</span></a>',
         '</div></div>',
         knowledgebar_html(entries),
         '<div class="dy-timeline">',
@@ -1798,6 +1805,9 @@ def main() -> None:
     for filename in feeds:
         if f'href="/daily/{filename}"' not in html_text:
             fail(f"index.html 缺少订阅入口 {filename}，未写入")
+    # 每周周报入口（页面 + 独立 RSS alternate）必须存在
+    if 'href="/weekly/"' not in html_text or 'href="/weekly/feed.xml"' not in html_text:
+        fail("index.html 缺少每周周报入口或 RSS alternate，未写入")
     # AI 发现知识库工具条必须存在（搜索框 + 标签云 + 每张卡片带方向标签）
     if 'class="dy-kb"' not in html_text or 'id="dy-search"' not in html_text:
         fail("index.html 缺少 AI 发现知识库工具条，未写入")
