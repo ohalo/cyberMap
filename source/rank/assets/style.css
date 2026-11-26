@@ -142,3 +142,30 @@ html[lang="en"] .i18n-zh { display: none !important; }
 }
 .cm-lang-float span{font-size:12px;font-weight:500;padding:4px 9px;border-radius:999px;opacity:.5;line-height:1}
 .cm-lang-float span.active{opacity:1;background:var(--blue-bg);color:var(--blue)}
+
+/* ===== 赛博态 05 token（仅 body.night，独立详情页也加载本稳定文件） =====
+   排行榜首页由 app.js 注入更完整的 04 号板，这里只补详情页缺失的
+   token 覆盖与评分条/表格配色，避免靛蓝紫残留；经典态以下规则不生效。 */
+body.night.rank-embedded{
+  --blue:#00e5ff;--blue-bg:rgba(0,229,255,.12);
+  --surface:rgba(11,18,27,.78);--surface-solid:#0b121b;
+  --line:rgba(18,48,63,.9);--line2:#12303f;
+  --text:#e6f5ff;--muted:#8ba0bd;--hint:#6b7f99;
+  --bg:#05070b;--accent:#ff2ea6;
+}
+body.night.rank-embedded .bar-fill{
+  background:linear-gradient(90deg,#00e5ff,#ff2ea6);
+  box-shadow:0 0 10px rgba(0,229,255,.35);
+}
+body.night.rank-embedded .bar-track{background:rgba(18,48,63,.9);border-radius:2px}
+body.night.rank-embedded .bar-val{color:var(--text);font-family:"JetBrains Mono",ui-monospace,monospace}
+body.night.rank-embedded h1,body.night.rank-embedded h2,body.night.rank-embedded h3{
+  font-family:"Chakra Petch","Noto Sans SC",sans-serif;color:var(--text);
+}
+body.night.rank-embedded table.info th,
+body.night.rank-embedded table.info td{border-bottom-color:var(--line2)}
+body.night.rank-embedded a{color:var(--blue)}
+body.night.rank-embedded .cm-lang-float{
+  border-color:var(--line2);background:var(--surface-solid);color:var(--muted);
+}
+body.night.rank-embedded .cm-lang-float span.active{background:var(--blue-bg);color:var(--blue)}

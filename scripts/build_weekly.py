@@ -260,8 +260,7 @@ def render_html(weeks, verify: dict, updates: dict, site_url: str, today: date) 
 <title>cyberMap · 每日收录周报</title>
 <meta name="description" content="cyberMap 每周 AI 站点收录摘要：本周新增、验证漏斗、最活跃项目与方向分布。">
 <link rel="alternate" type="application/rss+xml" title="cyberMap 周报" href="/weekly/feed.xml">
-<script>document.cookie.indexOf('night=1')>-1&&document.documentElement.classList.add('night');
-try{{document.write('<style>body.night{{}}')</style>}}catch(e){{}}</script>
+<script>document.cookie.indexOf('night=1')>-1&&document.documentElement.classList.add('night');</script>
 <style>{CSS}</style></head><body>
 <div class="wrap">
 <section class="hero">
