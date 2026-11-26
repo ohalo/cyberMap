@@ -7188,7 +7188,7 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "topic:agent-harness",
-      "query_fetched_at": "2026-11-26T13:25:28+00:00",
+      "query_fetched_at": "2026-11-26T13:38:46+00:00",
       "npm_fetched_at": null
     },
     "score": 45.52,
@@ -7283,7 +7283,7 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "topic:agent-harness",
-      "query_fetched_at": "2026-11-26T13:25:28+00:00",
+      "query_fetched_at": "2026-11-26T13:38:46+00:00",
       "npm_fetched_at": null
     },
     "score": 64.09,
@@ -7378,7 +7378,7 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:agent-harness",
-      "query_fetched_at": "2026-11-26T13:25:28+00:00",
+      "query_fetched_at": "2026-11-26T13:38:46+00:00",
       "npm_fetched_at": null
     },
     "score": 58.81,
@@ -7467,7 +7467,7 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:agent-harness",
-      "query_fetched_at": "2026-11-26T13:25:28+00:00",
+      "query_fetched_at": "2026-11-26T13:38:46+00:00",
       "npm_fetched_at": null
     },
     "score": 62.66,
@@ -7554,7 +7554,7 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:agent-harness",
-      "query_fetched_at": "2026-11-26T13:25:28+00:00",
+      "query_fetched_at": "2026-11-26T13:38:46+00:00",
       "npm_fetched_at": null
     },
     "score": 55.49,
@@ -7649,7 +7649,7 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:agent-harness",
-      "query_fetched_at": "2026-11-26T13:25:28+00:00",
+      "query_fetched_at": "2026-11-26T13:38:46+00:00",
       "npm_fetched_at": null
     },
     "score": 51.64,
@@ -7744,7 +7744,7 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:agent-harness",
-      "query_fetched_at": "2026-11-26T13:25:28+00:00",
+      "query_fetched_at": "2026-11-26T13:38:46+00:00",
       "npm_fetched_at": null
     },
     "score": 56.34,
@@ -7826,7 +7826,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T13:25:35+00:00",
+      "query_fetched_at": "2026-11-26T13:38:52+00:00",
       "npm_fetched_at": null
     },
     "score": 90.34,
@@ -7912,7 +7912,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T13:25:35+00:00",
+      "query_fetched_at": "2026-11-26T13:38:52+00:00",
       "npm_fetched_at": null
     },
     "score": 63.31,
@@ -7996,7 +7996,7 @@
       "repo_fetched_at": "2026-11-26T13:26:10+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T13:25:35+00:00",
+      "query_fetched_at": "2026-11-26T13:38:52+00:00",
       "npm_fetched_at": null
     },
     "score": 74.85,
@@ -8084,7 +8084,7 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T13:25:35+00:00",
+      "query_fetched_at": "2026-11-26T13:38:52+00:00",
       "npm_fetched_at": null
     },
     "score": 62.13,
@@ -8169,7 +8169,7 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T13:25:35+00:00",
+      "query_fetched_at": "2026-11-26T13:38:52+00:00",
       "npm_fetched_at": null
     },
     "score": 55.16,
@@ -8251,7 +8251,7 @@
       "repo_fetched_at": "2026-11-25T02:41:11+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T13:25:35+00:00",
+      "query_fetched_at": "2026-11-26T13:38:52+00:00",
       "npm_fetched_at": null
     },
     "score": 53.57,
@@ -8344,7 +8344,7 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T13:25:35+00:00",
+      "query_fetched_at": "2026-11-26T13:38:52+00:00",
       "npm_fetched_at": null
     },
     "score": 72.92,
@@ -8431,7 +8431,7 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T13:25:35+00:00",
+      "query_fetched_at": "2026-11-26T13:38:52+00:00",
       "npm_fetched_at": null
     },
     "score": 48.52,
@@ -8523,7 +8523,7 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T13:25:35+00:00",
+      "query_fetched_at": "2026-11-26T13:38:52+00:00",
       "npm_fetched_at": null
     },
     "score": 60.35,
@@ -8618,7 +8618,7 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T13:25:35+00:00",
+      "query_fetched_at": "2026-11-26T13:38:52+00:00",
       "npm_fetched_at": null
     },
     "score": 61.31,
@@ -8703,7 +8703,7 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T13:25:35+00:00",
+      "query_fetched_at": "2026-11-26T13:38:52+00:00",
       "npm_fetched_at": null
     },
     "score": 62.3,
@@ -8787,7 +8787,7 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T13:25:35+00:00",
+      "query_fetched_at": "2026-11-26T13:38:52+00:00",
       "npm_fetched_at": null
     },
     "score": 56.67,
@@ -8875,7 +8875,7 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-26T13:25:35+00:00",
+      "query_fetched_at": "2026-11-26T13:38:52+00:00",
       "npm_fetched_at": null
     },
     "score": 58.8,
@@ -8960,7 +8960,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T13:25:38+00:00",
+      "query_fetched_at": "2026-11-26T13:38:55+00:00",
       "npm_fetched_at": null
     },
     "score": 75.83,
@@ -9055,7 +9055,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T13:25:38+00:00",
+      "query_fetched_at": "2026-11-26T13:38:55+00:00",
       "npm_fetched_at": null
     },
     "score": 71.42,
@@ -9150,7 +9150,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T13:25:38+00:00",
+      "query_fetched_at": "2026-11-26T13:38:55+00:00",
       "npm_fetched_at": null
     },
     "score": 69.26,
@@ -9224,7 +9224,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T13:25:38+00:00",
+      "query_fetched_at": "2026-11-26T13:38:55+00:00",
       "npm_fetched_at": null
     },
     "score": 68.64,
@@ -9305,7 +9305,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T13:25:38+00:00",
+      "query_fetched_at": "2026-11-26T13:38:55+00:00",
       "npm_fetched_at": null
     },
     "score": 66.18,
@@ -9386,7 +9386,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T13:25:38+00:00",
+      "query_fetched_at": "2026-11-26T13:38:55+00:00",
       "npm_fetched_at": null
     },
     "score": 62.44,
@@ -9468,7 +9468,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T13:25:38+00:00",
+      "query_fetched_at": "2026-11-26T13:38:55+00:00",
       "npm_fetched_at": null
     },
     "score": 60.71,
@@ -9547,7 +9547,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T13:25:38+00:00",
+      "query_fetched_at": "2026-11-26T13:38:55+00:00",
       "npm_fetched_at": null
     },
     "score": 66.53,
@@ -9628,7 +9628,7 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T13:25:38+00:00",
+      "query_fetched_at": "2026-11-26T13:38:55+00:00",
       "npm_fetched_at": null
     },
     "score": 56.97,
@@ -9702,7 +9702,7 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T13:25:38+00:00",
+      "query_fetched_at": "2026-11-26T13:38:55+00:00",
       "npm_fetched_at": null
     },
     "score": 56.69,
@@ -9795,7 +9795,7 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T13:25:38+00:00",
+      "query_fetched_at": "2026-11-26T13:38:55+00:00",
       "npm_fetched_at": null
     },
     "score": 72.64,
@@ -9882,7 +9882,7 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T13:25:38+00:00",
+      "query_fetched_at": "2026-11-26T13:38:55+00:00",
       "npm_fetched_at": null
     },
     "score": 58.56,
@@ -9956,7 +9956,7 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T13:25:38+00:00",
+      "query_fetched_at": "2026-11-26T13:38:55+00:00",
       "npm_fetched_at": null
     },
     "score": 58.42,
@@ -10049,7 +10049,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T13:26:09+00:00",
+      "query_fetched_at": "2026-11-26T13:38:58+00:00",
       "npm_fetched_at": null
     },
     "score": 75.29,
@@ -10123,7 +10123,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T13:26:09+00:00",
+      "query_fetched_at": "2026-11-26T13:38:58+00:00",
       "npm_fetched_at": null
     },
     "score": 68.75,
@@ -10209,7 +10209,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T13:26:09+00:00",
+      "query_fetched_at": "2026-11-26T13:38:58+00:00",
       "npm_fetched_at": null
     },
     "score": 64.88,
@@ -10303,7 +10303,7 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T13:26:09+00:00",
+      "query_fetched_at": "2026-11-26T13:38:58+00:00",
       "npm_fetched_at": null
     },
     "score": 72.29,
@@ -10391,7 +10391,7 @@
       "repo_fetched_at": "2026-11-25T02:41:11+00:00",
       "repo_note": null,
       "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T13:26:09+00:00",
+      "query_fetched_at": "2026-11-26T13:38:58+00:00",
       "npm_fetched_at": null
     },
     "score": 63.54,
@@ -10479,7 +10479,7 @@
       "repo_fetched_at": "2026-11-25T02:41:11+00:00",
       "repo_note": null,
       "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T13:26:09+00:00",
+      "query_fetched_at": "2026-11-26T13:38:58+00:00",
       "npm_fetched_at": null
     },
     "score": 64.5,
@@ -10557,7 +10557,7 @@
       "repo_fetched_at": "2026-11-25T02:41:11+00:00",
       "repo_note": null,
       "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-26T13:26:09+00:00",
+      "query_fetched_at": "2026-11-26T13:38:58+00:00",
       "npm_fetched_at": null
     },
     "score": 56.72,

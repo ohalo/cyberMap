@@ -1,6 +1,6 @@
 {
   "date": "2026-11-26",
-  "generated_at": "2026-11-26T13:26:10+00:00",
+  "generated_at": "2026-11-26T13:38:59+00:00",
   "meta": {
     "total_harnesses": 123,
     "curated": 83,
@@ -49,49 +49,49 @@
       "history_baseline_date": "2026-11-25",
       "half_life_days": 90,
       "note": "momentum 首日缺失时从分母剔除并在剩余维度间重新归一；npm 下载量缺失时 reach 内部重新归一",
-      "scored_at": "2026-11-26T13:26:10+00:00"
+      "scored_at": "2026-11-26T13:38:59+00:00"
     },
     "collect": [
       {
         "query": "topic:agent-harness",
         "count": 100,
         "error": "",
-        "fetched_at": "2026-11-26T13:25:28+00:00"
+        "fetched_at": "2026-11-26T13:38:46+00:00"
       },
       {
         "query": "topic:ai-harness",
         "count": 100,
         "error": "",
-        "fetched_at": "2026-11-26T13:25:32+00:00"
+        "fetched_at": "2026-11-26T13:38:49+00:00"
       },
       {
         "query": "topic:coding-agent",
         "count": 100,
         "error": "",
-        "fetched_at": "2026-11-26T13:25:35+00:00"
+        "fetched_at": "2026-11-26T13:38:52+00:00"
       },
       {
         "query": "harness in:name,description stars:>500 pushed:>2026-08-01",
         "count": 100,
         "error": "",
-        "fetched_at": "2026-11-26T13:25:38+00:00"
+        "fetched_at": "2026-11-26T13:38:55+00:00"
       },
       {
         "query": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
         "count": 95,
         "error": "",
-        "fetched_at": "2026-11-26T13:26:09+00:00"
+        "fetched_at": "2026-11-26T13:38:58+00:00"
       },
       {
         "query": "superagent in:name,description stars:>500",
         "count": 11,
         "error": "",
-        "fetched_at": "2026-11-26T13:26:10+00:00"
+        "fetched_at": "2026-11-26T13:38:59+00:00"
       }
     ],
     "github": {
       "unique_repos": 123,
-      "cached": 122,
+      "cached": 123,
       "queried": 0,
       "batches": 0,
       "resolved": 0,
