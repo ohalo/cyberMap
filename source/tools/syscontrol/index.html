@@ -8,6 +8,7 @@
 <meta name="keywords" content="SysControl,局域网远程关机,远程关机,Flask Agent,Android 遥控器,飞牛 NAS 关机,自研工具,cyberMap">
 <link rel="canonical" href="https://cybermap.halo26812.eu.org/tools/syscontrol/">
 <link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css">
 <script>document.cookie.indexOf('night=1')>-1&&document.documentElement.classList.add('night');</script>
 <style>
 *,*::before,*::after{box-sizing:border-box}
@@ -115,6 +116,42 @@ td code{white-space:nowrap}
 .repo{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--sc-border-strong);border-radius:10px;
   padding:14px 16px;background:var(--sc-solid);margin:12px 0}
 .repo code{font-size:13px}
+/* 下载区 */
+.dl{border:1px solid var(--sc-border-strong);border-radius:12px;background:var(--sc-solid);
+  padding:18px 20px;margin:14px 0}
+.dl-top{display:flex;align-items:flex-start;gap:14px;flex-wrap:wrap}
+.dl-icon{width:46px;height:46px;flex:none;border-radius:11px;background:var(--sc-chip);
+  color:var(--sc-accent);display:grid;place-items:center;font-family:'Chakra Petch',var(--sc-font);
+  font-weight:700;font-size:17px;border:1px solid var(--sc-border)}
+.dl-main{flex:1;min-width:210px}
+.dl-name{font-size:15px;font-weight:700;margin-bottom:2px}
+.dl-sub{font-size:12px;color:var(--sc-muted)}
+.dl-btn{display:inline-flex;align-items:center;gap:7px;padding:11px 20px;border-radius:9px;
+  background:var(--sc-accent);color:#fff;font-weight:700;font-size:13px;border:1px solid var(--sc-accent)}
+body.night .dl-btn{color:#05070B}
+.dl-btn:hover{filter:brightness(1.1);text-decoration:none;color:#fff}
+body.night .dl-btn:hover{color:#05070B}
+.dl-meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:16px}
+.dl-meta div{border-top:1px solid var(--sc-border);padding-top:9px}
+.dl-meta b{display:block;font-size:11px;color:var(--sc-muted);font-weight:600;margin-bottom:2px}
+.dl-meta span{font-size:12.5px;color:var(--sc-soft)}
+.dl-sha{font-family:var(--sc-mono);font-size:11px;word-break:break-all;color:var(--sc-muted);margin-top:12px}
+/* 截图 */
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:14px 0}
+.shots figure{margin:0;border:1px solid var(--sc-border);border-radius:12px;background:var(--sc-solid);
+  padding:14px;text-align:center}
+.shots img{width:100%;height:auto;display:block;border-radius:8px}
+.shots figcaption{font-size:11.5px;color:var(--sc-muted);margin-top:9px}
+/* 留言板 */
+#waline{--waline-font-size:13px;--waline-white:var(--sc-solid);--waline-light-grey:#999;
+  --waline-dark-grey:#5f6368;--waline-theme-color:var(--sc-accent);--waline-active-color:var(--sc-accent);
+  --waline-color:var(--sc-soft);--waline-bg-color:var(--sc-solid);--waline-bg-color-light:var(--sc-code-bg);
+  --waline-bg-color-hover:var(--sc-chip);--waline-border-color:var(--sc-border-strong);
+  --waline-disable-bg-color:var(--sc-code-bg);--waline-disable-color:var(--sc-muted);
+  --waline-code-bg-color:var(--sc-code-bg);--waline-bq-color:var(--sc-chip);
+  --waline-avatar-radius:50%;--waline-box-shadow:none}
+#waline .wl-subscription,#waline .wl-copyright,#waline footer{display:none!important}
+#waline a{max-width:100%;word-break:break-word}
 .foot{border-top:1px solid var(--sc-border);padding:22px 20px 34px;text-align:center;color:var(--sc-muted);font-size:12px}
 .foot a{color:var(--sc-soft)}
 @font-face{font-family:'Chakra Petch';src:url('/fonts/cm-chakra-600-latin.woff2') format('woff2');font-display:swap}
@@ -153,7 +190,8 @@ body.night .toc b,body.night h3{font-family:'Chakra Petch',var(--sc-font)}
       <span>App: Kotlin / Compose（minSdk 33）</span><span>开源 · 源码可审计</span>
     </div>
     <div class="actions">
-      <a class="btn primary" href="https://github.com/ohalo/sysControl" target="_blank" rel="noopener">GitHub 仓库 ↗</a>
+      <a class="btn primary" href="#download">下载安卓 App ↓</a>
+      <a class="btn" href="https://github.com/ohalo/sysControl" target="_blank" rel="noopener">GitHub 仓库 ↗</a>
       <a class="btn" href="#install">看安装教程 ↓</a>
       <a class="btn" href="#config">config 配置</a>
     </div>
@@ -162,17 +200,62 @@ body.night .toc b,body.night h3{font-family:'Chakra Petch',var(--sc-font)}
   <div class="layout">
     <aside class="toc">
       <b>目录</b>
+      <a href="#download">下载 App</a>
       <a href="#why">它解决什么</a>
       <a href="#arch">工作原理</a>
       <a href="#feature">功能特性</a>
+      <a href="#screens">界面示意</a>
       <a href="#install">安装部署</a>
       <a href="#usage">如何使用</a>
       <a href="#config">配置字段</a>
       <a href="#security">安全提醒</a>
       <a href="#repo">仓库地址</a>
+      <a href="#comments">留言反馈</a>
     </aside>
 
     <div>
+      <section class="panel" id="download">
+        <h2><span class="dot"></span>下载安卓 App</h2>
+        <p>遥控器 App 以开源形式提供，直接从 GitHub 仓库下载安装即可。当前仅提供 Android 版本（需要 Android 13 及以上）。</p>
+        <div class="dl">
+          <div class="dl-top">
+            <div class="dl-icon">APK</div>
+            <div class="dl-main">
+              <div class="dl-name">SysControl 遥控器 · v1.0（Debug 版）</div>
+              <div class="dl-sub">包名 com.example.syscontrol · versionCode 1 · 从最新源码构建</div>
+            </div>
+            <a class="dl-btn" href="https://github.com/ohalo/sysControl/raw/main/releases/syscontrol-v1.0-debug.apk" download="syscontrol-v1.0-debug.apk">↓ 下载 APK</a>
+          </div>
+          <div class="dl-meta">
+            <div><b>文件大小</b><span>25,355,227 字节（约 24.2 MiB）</span></div>
+            <div><b>系统要求</b><span>Android 13（API 33）及以上</span></div>
+            <div><b>所需权限</b><span>仅网络访问 / WiFi 状态</span></div>
+            <div><b>构建时间</b><span>2026-11-27</span></div>
+          </div>
+          <div class="dl-sha">SHA-256：4a9eb190e72aece104f3c2c4d7235beea883e6461836cc7a0863b9855a7a151d</div>
+        </div>
+        <div class="callout"><b>安装前必看</b>：这是 Debug 签名版，首次安装时 Android 会提示「未知来源应用」，需要在系统设置里允许浏览器/文件管理器安装未知应用。App 本身不需要任何账号，也不会联网到外网——只有和电脑在同一个局域网才能控制。</div>
+        <h3>安装与使用四步</h3>
+        <ol>
+          <li><b>下载并安装</b>：手机上点上方下载按钮（或用手机浏览器打开仓库 <code>releases/</code> 目录），下载完成后点 APK 安装，允许「未知来源」。</li>
+          <li><b>同一局域网</b>：手机和要控制的电脑连同一个 WiFi / 子网。按上文把对应系统的 Agent 装好、改好 <code>config.json</code> 里的 <code>token</code>。</li>
+          <li><b>添加设备</b>：打开 App → 点右上角刷新图标自动扫描（发现设备后填 token 配对），或点「+」手动填名称 / IP / 端口 / token。系统类型默认自动识别。</li>
+          <li><b>关机</b>：设备卡片上绿灯表示在线，点卡片上的「关机」单独关这台；底部红色「一键全部关机（N 台在线）」并发关掉所有在线设备。</li>
+        </ol>
+        <div class="callout good"><b>为什么不下载就找不到？</b>：App 靠 mDNS 广播发现 Agent。如果路由器开了 AP 隔离或跨 VLAN 导致扫描不到，用「+」手动填电脑的局域网 IP 即可，功能完全一样。</div>
+      </section>
+
+      <section class="panel" id="screens">
+        <h2><span class="dot"></span>App 界面（依据 Ardot 设计稿绘制）</h2>
+        <p>下面是根据 SysControl 安卓端界面设计稿绘制的界面示意，展示四个主要场景。实际界面以 APK 运行效果为准。</p>
+        <div class="shots">
+          <figure>
+            <img src="/images/tools-syscontrol-ui.svg" alt="SysControl 界面示意图：设备列表、空状态、添加设备弹窗、扫描发现">
+            <figcaption>A1 设备列表 · A2 空状态 · A3 添加设备 · A4 扫描发现</figcaption>
+          </figure>
+        </div>
+      </section>
+
       <section class="panel" id="why">
         <h2><span class="dot"></span>它解决什么</h2>
         <p>电脑开着机却人在床上、在客厅、在另一个房间——不想为了关机专门走一趟。现成方案要么要装一整套远控软件、要么依赖公网账号，SysControl 走的是另一条路：</p>
@@ -358,6 +441,12 @@ cd sysControl/shutdown-agent
           <a class="btn" href="/tools/">← 返回工具列表</a>
         </div>
       </section>
+
+      <section class="panel" id="comments">
+        <h2><span class="dot"></span>留言与反馈</h2>
+        <p>遇到问题、有功能建议，或者想反馈使用体验，直接在下面留言。这是一个公开的留言板，其他使用者也能看到你的问题和答复。</p>
+        <div id="waline"></div>
+      </section>
     </div>
   </div>
 </main>
@@ -369,5 +458,18 @@ cd sysControl/shutdown-agent
 <script>
 function t(){var n=document.body.classList.toggle('night');document.cookie='night='+(n?1:0)+';path=/;max-age=31536000';location.reload();}
 if(document.documentElement.classList.contains('night'))document.body.classList.add('night');
+</script>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline',
+    serverURL: 'https://walinehaloblog.halo26812.eu.org/',
+    path: '/tools/syscontrol/',
+    lang: 'zh-CN',
+    pageview: false,
+    noCopyright: true,
+    noRss: true,
+    locale: { subText: '', subHint: '' }
+  });
 </script>
 </body></html>
