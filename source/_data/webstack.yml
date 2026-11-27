@@ -359,6 +359,10 @@ aiImage:
     description: Segment Anything是一个强大的实例分割模型,它可以根据输入提示(如点或框)生成高质量的对象遮罩,并可以用于生成图像中的所有对象的遮罩。它在1100万个遮罩和1100万张图像的大型数据集上进行了训练,在各种分割任务上的零样本性能非常强。
 
 aiVideo:
+  - name: Viggle
+    url: https://viggle.ai
+    img: https://viggle.ai/favicon.ico
+    description: "Viggle 的 AI 视频与 3D 创作平台，支持视频改写、3D 场景与角色动作生成。 · 2026-11-27 收录"
   - name: calesthio/OpenMontage
     url: https://github.com/calesthio/OpenMontage
     img: https://github.com/favicon.ico
@@ -437,6 +441,14 @@ aiVideo:
     description: 这是一个AI视频工具,可以自动生成和编辑视频片段。
 
 aiCode:
+  - name: github/gh-aw
+    url: https://github.com/github/gh-aw
+    img: https://github.com/favicon.ico
+    description: "GitHub 官方智能体工作流工具，用 Markdown 描述 CI 任务并编译成含推理步骤的 Actions。 · 2026-11-27 收录"
+  - name: microsoft/TokenEconomizer
+    url: https://github.com/microsoft/TokenEconomizer
+    img: https://github.com/favicon.ico
+    description: "微软等开源的编码智能体成本控制插件，从历史会话提炼经验以裁剪工具、减少重复 token 消耗。 · 2026-11-27 收录"
   - name: GoogleChrome/modern-web-guidance-src
     url: https://github.com/GoogleChrome/modern-web-guidance-src
     img: https://github.com/favicon.ico
@@ -748,6 +760,10 @@ GPTModels:
     description: Linly是一个中文NLP工具包,提供预训练语言模型、词典、数据集和工具。其主要目的是研究中文NLP,推动开源人工智能技术的发展。Linly通过集成多个中文NLP资源,能显著降低中文NLP建模的门槛,加速研究与开发过程。
 
 githubGPT:
+  - name: cloudflare/kitesurf
+    url: https://github.com/cloudflare/kitesurf
+    img: https://github.com/favicon.ico
+    description: "Cloudflare 开源的实验性浏览器引擎，运行于 Workers，为 AI 智能体提供低资源网页自动化。 · 2026-11-27 收录"
   - name: open-compass/opencompass
     url: https://github.com/open-compass/opencompass
     img: https://github.com/favicon.ico
@@ -969,6 +985,10 @@ aiFrameworks:
     description: "主流深度学习框架，提供张量计算与自动微分能力。"
 
 studyGPT:
+  - name: rasbt/LLMs-from-scratch
+    url: https://github.com/rasbt/LLMs-from-scratch
+    img: https://github.com/favicon.ico
+    description: "从零用 PyTorch 实现类 ChatGPT 大模型的渐进式教程，覆盖注意力机制、微调与指令对齐。 · 2026-11-27 收录"
   - name: 词图PromptTool - AI绘画资料管理网站
     url: https://www.prompttool.com/NovelAI
     img: https://www.prompttool.com/prompttool.ico
@@ -1121,6 +1141,10 @@ likeGPT:
     description: 填写你最喜欢使用的AI地址
 
 hotTools:
+  - name: "Pangram AI Detector"
+    url: https://www.pangram.com
+    img: https://www.pangram.com/favicon.ico
+    description: "AI 文本检测服务，识别 ChatGPT、Claude、Gemini 等生成的文章与文档内容。 · 2026-11-27 收录"
   - name: Spring-cloud-gateway 中文文档
     url: https://spring-cloud-gateway.lowff.net/
     img: https://app.gitbook.com/public/images/icon-512.png
@@ -1137,6 +1161,10 @@ myBlog:
     description: 寻找方向
 
 ragKnowledge:
+  - name: volcengine/OpenViking
+    url: https://github.com/volcengine/OpenViking
+    img: https://github.com/favicon.ico
+    description: "火山引擎开源的自演进上下文数据库，统一智能体记忆、RAG 检索与技能管理。 · 2026-11-27 收录"
   - name: alibaba/zvec
     url: https://github.com/alibaba/zvec
     img: https://github.com/favicon.ico
@@ -1199,6 +1227,18 @@ ragKnowledge:
     description: 跟 PDF 文档进行一对一对话;自动切割内容,并使用强大的深度平均网络编码器来生成嵌入;对 PDF 内容执行语义搜索,并将最相关的嵌入传递给 Open AI;自定义逻辑,生成更精确的响应信息,速度要比 OpenAI 的快。
 
 agentFrameworks:
+  - name: vercel-labs/ui
+    url: https://github.com/vercel-labs/ui
+    img: https://github.com/favicon.ico
+    description: "Vercel Labs 开源的智能体界面行为库，把键盘导航、焦点与弹层交互拆成跨框架可组合能力。 · 2026-11-27 收录"
+  - name: ruvnet/ruflo
+    url: https://github.com/ruvnet/ruflo
+    img: https://github.com/favicon.ico
+    description: "开源智能体基座，支持多智能体蜂群协作、持久记忆与 RAG 集成，可对接 Claude Code、Codex。 · 2026-11-27 收录"
+  - name: deepseek-ai/deepseek-harness
+    url: https://github.com/deepseek-ai/deepseek-harness
+    img: https://github.com/favicon.ico
+    description: "DeepSeek 官方插件化智能体宿主，以插件形式扩展编码智能体的工具、记忆与执行能力。 · 2026-11-27 收录"
   - name: kvcache-ai/AgentENV
     url: https://github.com/kvcache-ai/AgentENV
     img: https://github.com/favicon.ico

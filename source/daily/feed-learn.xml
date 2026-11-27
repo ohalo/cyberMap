@@ -6,7 +6,15 @@
     <description>cyberMap 每日核验收录的 AI 学习与资源，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Thu, 26 Nov 2026 11:41:44 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 11:17:58 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 学习与资源 · 2026-11-27（1 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-27</link>
+      <guid isPermaLink="false">cybermap-daily-学习与资源-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>rasbt/LLMs-from-scratch［提示词与教程］从零用 PyTorch 实现类 ChatGPT 大模型的渐进式教程，覆盖注意力机制、微调与指令对齐。 — https://github.com/rasbt/LLMs-from-scratch</description>
+      <category>学习与资源</category>
+    </item>
   </channel>
 </rss>

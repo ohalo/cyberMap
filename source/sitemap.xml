@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cybermap.halo26812.eu.org/</loc>
-    <lastmod>2026-11-26T02:19:57+00:00</lastmod>
+    <lastmod>2026-11-27T03:17:51+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,61 +14,61 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/daily/</loc>
-    <lastmod>2026-11-26T03:41:44+00:00</lastmod>
+    <lastmod>2026-11-27T03:17:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/data/</loc>
-    <lastmod>2026-11-26T02:51:15+00:00</lastmod>
+    <lastmod>2026-11-26T03:41:44+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/weekly/</loc>
-    <lastmod>2026-11-26T03:41:09+00:00</lastmod>
+    <lastmod>2026-11-26T04:01:35+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/daily/feed.xml</loc>
-    <lastmod>2026-11-26T03:41:44+00:00</lastmod>
+    <lastmod>2026-11-27T03:17:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/daily/feed-oss.xml</loc>
-    <lastmod>2026-11-26T03:41:44+00:00</lastmod>
+    <lastmod>2026-11-27T03:17:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/daily/feed-tool.xml</loc>
-    <lastmod>2026-11-26T03:41:44+00:00</lastmod>
+    <lastmod>2026-11-27T03:17:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/daily/feed-model.xml</loc>
-    <lastmod>2026-11-26T03:41:44+00:00</lastmod>
+    <lastmod>2026-11-27T03:17:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/daily/feed-learn.xml</loc>
-    <lastmod>2026-11-26T03:41:44+00:00</lastmod>
+    <lastmod>2026-11-27T03:17:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/daily/feed-updates.xml</loc>
-    <lastmod>2026-11-26T03:41:44+00:00</lastmod>
+    <lastmod>2026-11-27T03:17:58+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/weekly/feed.xml</loc>
-    <lastmod>2026-11-26T03:41:09+00:00</lastmod>
+    <lastmod>2026-11-26T04:01:35+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -92,61 +92,61 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/5dive.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/adk-python.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/agent-afk.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/agent-kit.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/agentlas-os.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/ai-openshell--openshell.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/aider.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/aionui.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/androoagi--starnet.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/antigmalabs--ante.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -158,19 +158,19 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/aster.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/autogen.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/autonomous-ai--openharness.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -188,31 +188,31 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/browser-use--browser-harness.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/browser-use.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/cc-haha.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/ccch1mneyyy--dsh-go.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/chachamaru127--claude-code-harness.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -224,7 +224,7 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/chock.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -236,13 +236,13 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/citadel.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/claude-code.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -254,7 +254,7 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/cline.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -266,25 +266,25 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/codewhale.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/codex.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/coleam00--archon.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/commandcodeai--command-code.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -296,25 +296,25 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/continue.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/copilot-chat.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/copilot-cli.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/cowagent.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -326,13 +326,13 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/crewai.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/cuga-agent.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -344,13 +344,13 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/deepagents.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/deepcode.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -362,13 +362,13 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/deepseek-harness.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/deer-flow.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -386,31 +386,31 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/dsh-app--dsha.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/dsh-desktop-alt.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/dsh-desktop.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/dsh-studio.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/ecc.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -422,19 +422,19 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/evoscientist--evoscientist.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/exoharness--exo.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/frink.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -446,43 +446,43 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/gemini-cli.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/grok-build.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/happy.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/harnessrouter.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/he-yufeng--corecoder.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/herdrdev--herdr.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/hermes-agent.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -494,13 +494,13 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/hive.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/holaos.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -530,13 +530,19 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/itayinbarr--little-coder.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cybermap.halo26812.eu.org/rank/harness/p/janus-sh--janus.html</loc>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/jcode.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -548,19 +554,19 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/kenryu42--cc-safety-net.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/kilocode.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/kimi-code.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -578,19 +584,19 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/langgraph.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/langroid--langroid.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/learn-claude-code.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -602,13 +608,13 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/lodyai--lody.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/looptroop.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -626,13 +632,13 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/mu.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/munder-difflin.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -650,19 +656,19 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/nanoclaw.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/nasiko-labs--nasiko.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/nimbalyst--nimbalyst.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -674,91 +680,91 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/omnigent.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/open-multi-agent--open-multi-agent.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/openai-agents.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/openbitfun--openbitfun.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/openclaw.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/opencode.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/openhands-sdk.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/openhands.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/openharness.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/openhuman.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/openinterpreter--openinterpreter.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/openrig.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/orca.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/orkas.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/peteromallet--desloppify.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -770,19 +776,19 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/phone-harness--phone-harness.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/pi-desktop.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/prism-shadow--penguin-harness.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -794,13 +800,13 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/proxysoul--empryo.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/psycheros.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -812,37 +818,37 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/qm.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/qwen-code.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/qwenaudio--qwen-audio-agent.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/qwenpaw.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/raven.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/reasonix.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -854,37 +860,37 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/revo.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/rocketride.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/roo-code.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/roubao.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/ruflo.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/sandbase-harness.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -896,61 +902,61 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/simplexai-labs--linger.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/soduwork.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/sol-pi.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/squadron.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/strands-agents--harness-sdk.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/superagent-ai--grok-cli.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/swe-agent.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/synapscli.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/tau.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/teaql--teaql-agent-kit.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -962,31 +968,31 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/the-open-engine--zeroshot.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/theloop.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/thirdlayerinc--autoagent.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/trellis.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/truefoundry--trueforge.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -998,13 +1004,13 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/twigpine--zero.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/uncut.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1016,7 +1022,7 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/waishnav--devspace.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1046,25 +1052,25 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/yao.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/zai-org--zcode.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/zaru-cli.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/harness/p/zhnt--loushang.html</loc>
-    <lastmod>2026-11-26T02:32:19+00:00</lastmod>
+    <lastmod>2026-11-26T13:39:01+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1100,1561 +1106,1549 @@
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/1panel-dev__1panel.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/1panel-dev__cordyscrm-skills.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/2026heshao__dsh-armory.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/62656456__ai-film-skills.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/88lin__workbuddy-auto-signin.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/adamplatin123__dsh-plugin-radar.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/adongwanai__learn-workbuddy.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/adsorgcn__workbuddy.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/adwmc__helm-d.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/agricidaniel__banana-claude.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/agricidaniel__claude-ads.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/agricidaniel__claude-blog.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/agricidaniel__claude-obsidian.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/agricidaniel__claude-seo.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/aisland-sjl__dsh-worktable.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/alchaincyf__huashu-design.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/alchaincyf__nuwa-skill.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/alexeyw__lot-map.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/amap-ml__longhorizon-harness.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/anbeime__skill.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/anionex__dsh-vision-toolkit.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/anthropics__claude-plugins-official.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/anthropics__skills.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/anywhere-labs__dsh-desktop.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/ark0n__codeman.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/atlassian__atlassian-mcp-server.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/aws__agent-toolkit-for-aws.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/babygoton__workdaddy.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/baihua2471__mcd-expiry-butler.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/beiyege-01__dsh-voice-ai-girlfriend.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/bhanunamikaze__agentic-seo-skill.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/bitwize-music-studio__claude-ai-music-skills.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/borissun0424-boop__zaoba.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/boshu2__agentops.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/botharness__deepseekbot.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/browser-act__skills.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/btluo1__cck.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/calebycj__codex-rehome.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/carlwangchina__zhigui-openclaw-ui-second-brain-skill.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/ccch1mneyyy__dsh-go.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/cclank__lanshu-create-ai-presenter-video.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/chatcut-inc__agent-plugin.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/chengshenyangtai__dsh-workbuddy-trae-qoder-connect.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/chipfighter__context-attachment-manager.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/chromedevtools__chrome-devtools-mcp.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/chuspeeism__dashi-taskboard.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://cybermap.halo26812.eu.org/rank/p/clarklevis1995__dsh-mobile.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/clickhouse__loom.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/cloudflare__skills.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/codeswithroh__tastemaker.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/confident-ai__deepeval.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/coreyhaines31__marketingskills.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/crafter-station__petdex.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/csyangwen__dsh-memory-evolve.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/cth9191__animate.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/danjdewhurst__story-skills.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/dataelement__bisheng.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/dataelement__dsh-desktop.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/dayuanjiang__next-ai-draw-io.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/dddmuc__dsh-free-search.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/deepseek-ai__deepseek-harness.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/denissergeevitch__agents-best-practices.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/devin-axis__deepseek-design.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/devin-axis__ipollowork.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/dietrichgebert__ponytail.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/dingminhua__dsh-connect-workbuddy.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/dsh-app__dsha.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/dsh-market__dsh-market.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/dsh-tauri__deepseek-harness-desktop.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/dunhkpcc__claude-guardian.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/duyunzhoudyz__dyz-gongwen-skills.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/ebony-vinyl__dsh-our-free-model.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/ebony-vinyl__eac-design-world.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/edison7009__echobird.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/eugeniughelbur__obsidian-second-brain.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/evanca__flutter-ai-rules.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/evermind-ai__everos.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/exa-labs__exa-mcp-server.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/expo__skills.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/eyaltoledano__claude-task-master.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://cybermap.halo26812.eu.org/rank/p/fabricioctelles__skills.html</loc>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/farion1231__cc-switch.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/fcakyon__claude-codex-settings.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/fei-craft__ds-bot.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/figma__mcp-server-guide.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/flizzywine__dsh-tavern.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/forcedotcom__sf-skills.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/foryourhealth111-pixel__vibe-skills.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/freestylefly__wesight.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/freyrswift__uastation.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/galleonlabs__hypergrok-trading-desk.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/gitroomhq__postiz-agent.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/glebis__claude-skills.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/gmickel__flow-next.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/google__elephant-goldfish-model.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/googlechrome__modern-web-guidance.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/hang-jin__editaplot.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/hanhan666666__codebuddy2openai.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/hanliang97__matrixmedia.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/harnessrouter__harnessrouter.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/haydenschmitty__floorplan.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/hellohub1212__dsh-windows-mcp.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/helloianneo__ian-xiaohei-illustrations.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/hex__claude-council.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/heygen-com__hyperframes.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/hmmhmmhm__daiso-mcp.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/hruiccc__ruic-oc-ferry.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/htdt__godogen.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/huggingface__skills.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/huzhengcai471-crypto__dsh-startup-secret.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/hyhmrright__brooks-lint.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/iamvicliu__agenthub.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/ianzhyh__workbuddy-to-dsh.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/ingvarconsulting__unica.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/jackwener__dsh-android.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/javis603__token-monitor.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/jesseovo__last30days-skill-cn.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/jiang198012__workbuddian.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/jnmetacode__agency-agents-zh.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/jordan-gibbs__hyperresearch.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/junxchan54-maker__mcd-cn-assistant.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/kaomei__stickman-video-director.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/kappaemme-git__codex-first-customer-finder-skill.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/kenryu42__cc-safety-net.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/kingcharleslzy-ai__dsh-purge.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/kiterlin__anti-defensive-writing.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/konnga__skill-buddy.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/lemomo-ai__lemo-opuscar.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/lemon177777__mcd-omni-assistant.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/lennney__stop-that-shit.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/leo-lilinxiao__codex-autoresearch.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/liangdabiao__whiteboard-teacher-video-motion.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/liguobao__ds-harness-remote.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://cybermap.halo26812.eu.org/rank/p/likenttt__garmin-connect-plugin-for-dsh.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/lingfengqaq__webnovel-writer.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/lipu-jpg__openwrite.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/liufelix2004__dsh-workbuddy.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/liustack__modlens.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/liustack__modsearch.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/liyue-aigc__female-portrait-director.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/lucide-icons__lucide.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/lynote-ai__ai-text-detector.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/manavarya09__design-extract.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/matlab__matlab-agentic-toolkit.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/matlab__simulink-agentic-toolkit.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/mattpocock__skills.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/memtensor__memmy-agent.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/memtensor__memos.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/meteornox__deepseek-balance-whale-widget.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/miaotofu01__study-mate.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/michael-denyer__pstack-claude.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/microsoft__azure-skills.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/microsoft__playwright-cli.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/microsoft__power-platform-skills.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/microsoftdocs__mcp.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/minglink__dsh-infinite-gen-5.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/mizzlelover__gongwen-gbt9704-skill.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/mksglu__context-mode.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/mladery__pojia-modifier.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/mmparko__dsh-purge.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/modelcontextprotocol__ext-apps.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/mvanhorn__last30days-skill.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/nanmicoder__dsh-agent-teams.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/nateherkai__scroll-craft.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/nexu-io__open-design.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/nexu-io__openmotion.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/ningbainb__deepseek-harness-desktop.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/ningzimu__image-to-editable-ppt-skill.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://cybermap.halo26812.eu.org/rank/p/nocobase__nocobase.html</loc>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/nolangz__pixel2motion.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/nowork-studio__notfair-plugin.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/nvidia__skills.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/nyldn__claude-octopus.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/obra__superpowers.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/oceanbase__powercontext.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/oil-oil__beautify-github-readme.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/oil-oil__draw-ui.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/oil-oil__oil-icon.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/oil-oil__oil-motion.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/oil-oil__oil-ui.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/omdsh-dev__dsh-browser.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/omdsh-dev__dsh-mnemon.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/onemoh__html-explainer.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/op7418__dsh-guizang-design.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/openinsighthq__openinsight.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/openosint__openosint.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/openqodex__openqodex.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/patch-gg__pixelfx.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/pc2005-cloud__dsh-pet.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/penglonghuang__chinese-novelist-skill.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/platonai__browser4.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/qingyuna__answer-me-with-html.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/referodesign__refero_skill.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/rehan-remade__universal-modder.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/rizriyz__luvus.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/rohitg00__pro-workflow.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/ryanzhangntu__codex-pacer.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/saya-ch__dsh-mobile.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/sethgammon__citadel.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/shanliuling__dsh-image-gen.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/shaobeichen__dsh-pocket.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/shengjidaguai-china__goutoujunshi.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/simonlin1212__vibe-astock.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/simonlin1212__vibe-research.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/sixtysevenlf__dsh-blender-plugin.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/small-tailqwq__dsh-deep-whale.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/smart-open__traeworkassistant.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/sno-ai__sno-station-skills.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/songconmaisaix31-design__mcpet.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/soulvon__anybridge.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/sourceweft__sourceweft.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/spacering-net__codeg.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/stripe__ai.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/strukto-ai__mirage.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/tanviet12__vbsec.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/techflag__workdsh.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/techysy__creditdaddy.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/tencent__browserskill.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/tencent__weknora.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/thedotmack__claude-mem.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/theqtcompanyrnd__agent-skills.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/threerocks__article2media.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://cybermap.halo26812.eu.org/rank/p/tobihagemann__turbo.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/tokenhungrymash__personalized-travel-guide-skill.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/tomsbin__mcd-fit-planner.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/tt-a1i__archify.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/unclecheng-li__ai_animation.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/urzeye__ophel.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/vercel-labs__agent-browser.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/vincentwei1021__anything2explainer.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/volcengine__openviking.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/vshulcz__deja-vu.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/wenlan-app__wenlan.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/whiteguo233__openbiliclaw.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/wicm84266964__buddy2api.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/wondelai__skills.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/wonderwhy-er__desktopcommandermcp.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/woniuniuniu__dsh-media-desk.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/wpsnote__wpsnote-skills.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/wshobson__agents.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/wuyoscar__gpt-image2-skill.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/xdtrees__dsh-xdpool.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/xiao24bei__xiaobei-skill.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/xixihhhh__ai-short-drama-skill.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/xiyasunny-blip__coregold-usdt-vcc-workbuddy-token-burn-control-guide.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/xmanrui__dsh-im.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/yexi-by__dsh-unrestricted.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/yikart__aitoearn.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/yishentu__claudian.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://cybermap.halo26812.eu.org/rank/p/youmind-openlab__nano-banana-pro-prompts-recommend-skill.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/yreidev__workbuddy2api-panel.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/ysr666__dsh-vision-router.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/z91772524-ai__pojia-next.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/zapier__mcp.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/zenstory-ai__video-recap-skills.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/zhu1090093659__dsh-web.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/zhukunpenglinyutong__desktop-cc-gui.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/zhuyansen__new-term-radar.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/zichuanlan__agent-purge.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/zilliztech__memsearch.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/zjp1997720__zhijian-ai-bluebook-workbuddy-harness.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cybermap.halo26812.eu.org/rank/p/zseven-w__openpencil.html</loc>
-    <lastmod>2026-11-26T02:23:49+00:00</lastmod>
+    <lastmod>2026-11-26T13:23:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

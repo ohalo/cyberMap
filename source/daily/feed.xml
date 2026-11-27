@@ -6,8 +6,25 @@
     <description>cyberMap 每日核验收录的 AI 站点（开源项目、工具官网、模型框架、教程博客等），每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Thu, 26 Nov 2026 11:41:44 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 11:17:58 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 2026-11-27（10 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-27</link>
+      <guid isPermaLink="true">https://cybermap.halo26812.eu.org/daily/#day-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>Viggle［视频与音频］Viggle 的 AI 视频与 3D 创作平台，支持视频改写、3D 场景与角色动作生成。 — https://viggle.ai
+github/gh-aw［编程与开发］GitHub 官方智能体工作流工具，用 Markdown 描述 CI 任务并编译成含推理步骤的 Actions。 — https://github.com/github/gh-aw
+microsoft/TokenEconomizer［编程与开发］微软等开源的编码智能体成本控制插件，从历史会话提炼经验以裁剪工具、减少重复 token 消耗。 — https://github.com/microsoft/TokenEconomizer
+cloudflare/kitesurf［GitHub 项目］Cloudflare 开源的实验性浏览器引擎，运行于 Workers，为 AI 智能体提供低资源网页自动化。 — https://github.com/cloudflare/kitesurf
+volcengine/OpenViking［RAG 与知识库］火山引擎开源的自演进上下文数据库，统一智能体记忆、RAG 检索与技能管理。 — https://github.com/volcengine/OpenViking
+vercel-labs/ui［智能体框架］Vercel Labs 开源的智能体界面行为库，把键盘导航、焦点与弹层交互拆成跨框架可组合能力。 — https://github.com/vercel-labs/ui
+ruvnet/ruflo［智能体框架］开源智能体基座，支持多智能体蜂群协作、持久记忆与 RAG 集成，可对接 Claude Code、Codex。 — https://github.com/ruvnet/ruflo
+deepseek-ai/deepseek-harness［智能体框架］DeepSeek 官方插件化智能体宿主，以插件形式扩展编码智能体的工具、记忆与执行能力。 — https://github.com/deepseek-ai/deepseek-harness
+rasbt/LLMs-from-scratch［提示词与教程］从零用 PyTorch 实现类 ChatGPT 大模型的渐进式教程，覆盖注意力机制、微调与指令对齐。 — https://github.com/rasbt/LLMs-from-scratch
+Pangram AI Detector［常用工具］AI 文本检测服务，识别 ChatGPT、Claude、Gemini 等生成的文章与文档内容。 — https://www.pangram.com</description>
+      <category>AI</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 2026-11-26（10 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-26</link>

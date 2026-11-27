@@ -6,14 +6,310 @@
     <description>已收录 AI 项目最近被检测到的新提交与涨星动态，来源上游变更雷达。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Thu, 26 Nov 2026 11:41:44 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 11:17:58 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>firecrawl/firecrawl · 新提交 · +927 星</title>
+      <link>https://github.com/firecrawl/firecrawl</link>
+      <guid isPermaLink="false">cybermap-change-github.com/firecrawl/firecrawl-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>firecrawl/firecrawl：新提交，+927 星。项目最近推送：2026-11-27 00:15 UTC。当前 stars：211.0k。发现日期：2026-11-27。项目地址：https://github.com/firecrawl/firecrawl</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>jingyaogong/minimind · 新提交 · +736 星</title>
+      <link>https://github.com/jingyaogong/minimind</link>
+      <guid isPermaLink="false">cybermap-change-github.com/jingyaogong/minimind-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>jingyaogong/minimind：新提交，+736 星。项目最近推送：2026-11-26 08:55 UTC。当前 stars：71.8k。发现日期：2026-11-27。项目地址：https://github.com/jingyaogong/minimind</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>github/spec-kit · 新提交 · +335 星</title>
+      <link>https://github.com/github/spec-kit</link>
+      <guid isPermaLink="false">cybermap-change-github.com/github/spec-kit-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>github/spec-kit：新提交，+335 星。项目最近推送：2026-11-26 21:54 UTC。当前 stars：151.7k。发现日期：2026-11-27。项目地址：https://github.com/github/spec-kit</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>ZhuLinsen/daily_stock_analysis · 新提交 · +289 星</title>
+      <link>https://github.com/ZhuLinsen/daily_stock_analysis</link>
+      <guid isPermaLink="false">cybermap-change-github.com/zhulinsen/daily_stock_analysis-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>ZhuLinsen/daily_stock_analysis：新提交，+289 星。项目最近推送：2026-11-27 03:17 UTC。当前 stars：74.9k。发现日期：2026-11-27。项目地址：https://github.com/ZhuLinsen/daily_stock_analysis</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>THU-MAIC/OpenMAIC · 新提交 · +240 星</title>
+      <link>https://github.com/THU-MAIC/OpenMAIC</link>
+      <guid isPermaLink="false">cybermap-change-github.com/thu-maic/openmaic-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>THU-MAIC/OpenMAIC：新提交，+240 星。项目最近推送：2026-11-27 03:16 UTC。当前 stars：44.7k。发现日期：2026-11-27。项目地址：https://github.com/THU-MAIC/OpenMAIC</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>NVIDIA/auto-ontology · 新提交 · +159 星</title>
+      <link>https://github.com/NVIDIA/auto-ontology</link>
+      <guid isPermaLink="false">cybermap-change-github.com/nvidia/auto-ontology-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>NVIDIA/auto-ontology：新提交，+159 星。项目最近推送：2026-11-26 19:13 UTC。当前 stars：15.1k。发现日期：2026-11-27。项目地址：https://github.com/NVIDIA/auto-ontology</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>beenuar/AiSOC · 新提交 · +152 星</title>
+      <link>https://github.com/beenuar/AiSOC</link>
+      <guid isPermaLink="false">cybermap-change-github.com/beenuar/aisoc-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>beenuar/AiSOC：新提交，+152 星。项目最近推送：2026-11-26 08:28 UTC。当前 stars：8.1k。发现日期：2026-11-27。项目地址：https://github.com/beenuar/AiSOC</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>sybil-solutions/inference-optimisation-skill · +119 星</title>
+      <link>https://github.com/sybil-solutions/inference-optimisation-skill</link>
+      <guid isPermaLink="false">cybermap-change-github.com/sybil-solutions/inference-optimisation-skill-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>sybil-solutions/inference-optimisation-skill：+119 星。项目最近推送：2026-11-16 18:40 UTC。当前 stars：2.8k。发现日期：2026-11-27。项目地址：https://github.com/sybil-solutions/inference-optimisation-skill</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>ollama/ollama · 新提交 · +112 星</title>
+      <link>https://github.com/ollama/ollama</link>
+      <guid isPermaLink="false">cybermap-change-github.com/ollama/ollama-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>ollama/ollama：新提交，+112 星。项目最近推送：2026-11-26 19:40 UTC。当前 stars：188.3k。发现日期：2026-11-27。项目地址：https://github.com/ollama/ollama</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>JustVugg/colibri · 新提交 · +103 星</title>
+      <link>https://github.com/JustVugg/colibri</link>
+      <guid isPermaLink="false">cybermap-change-github.com/justvugg/colibri-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>JustVugg/colibri：新提交，+103 星。项目最近推送：2026-11-26 17:24 UTC。当前 stars：53.6k。发现日期：2026-11-27。项目地址：https://github.com/JustVugg/colibri</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>TauricResearch/TradingAgents · +78 星</title>
+      <link>https://github.com/TauricResearch/TradingAgents</link>
+      <guid isPermaLink="false">cybermap-change-github.com/tauricresearch/tradingagents-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>TauricResearch/TradingAgents：+78 星。项目最近推送：2026-11-25 07:27 UTC。当前 stars：123.9k。发现日期：2026-11-27。项目地址：https://github.com/TauricResearch/TradingAgents</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>jesdga95/basalt · 新提交 · +77 星</title>
+      <link>https://github.com/jesdga95/basalt</link>
+      <guid isPermaLink="false">cybermap-change-github.com/jesdga95/basalt-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>jesdga95/basalt：新提交，+77 星。项目最近推送：2026-11-27 02:47 UTC。当前 stars：2.2k。发现日期：2026-11-27。项目地址：https://github.com/jesdga95/basalt</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>open-webui/open-webui · 新提交 · +70 星</title>
+      <link>https://github.com/open-webui/open-webui</link>
+      <guid isPermaLink="false">cybermap-change-github.com/open-webui/open-webui-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>open-webui/open-webui：新提交，+70 星。项目最近推送：2026-11-27 00:38 UTC。当前 stars：159.7k。发现日期：2026-11-27。项目地址：https://github.com/open-webui/open-webui</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>JosssphZhou/poki · 新提交 · +62 星</title>
+      <link>https://github.com/JosssphZhou/poki</link>
+      <guid isPermaLink="false">cybermap-change-github.com/josssphzhou/poki-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>JosssphZhou/poki：新提交，+62 星。项目最近推送：2026-11-27 02:52 UTC。当前 stars：2.1k。发现日期：2026-11-27。项目地址：https://github.com/JosssphZhou/poki</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>jundot/omlx · 新提交 · +58 星</title>
+      <link>https://github.com/jundot/omlx</link>
+      <guid isPermaLink="false">cybermap-change-github.com/jundot/omlx-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>jundot/omlx：新提交，+58 星。项目最近推送：2026-11-26 13:37 UTC。当前 stars：24.0k。发现日期：2026-11-27。项目地址：https://github.com/jundot/omlx</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>unslothai/unsloth · 新提交 · +55 星</title>
+      <link>https://github.com/unslothai/unsloth</link>
+      <guid isPermaLink="false">cybermap-change-github.com/unslothai/unsloth-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>unslothai/unsloth：新提交，+55 星。项目最近推送：2026-11-27 03:14 UTC。当前 stars：80.3k。发现日期：2026-11-27。项目地址：https://github.com/unslothai/unsloth</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>mw00/project-maya · 新提交 · +47 星</title>
+      <link>https://github.com/mw00/project-maya</link>
+      <guid isPermaLink="false">cybermap-change-github.com/mw00/project-maya-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>mw00/project-maya：新提交，+47 星。项目最近推送：2026-11-27 01:13 UTC。当前 stars：3.4k。发现日期：2026-11-27。项目地址：https://github.com/mw00/project-maya</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>NVIDIA-NeMo/Switchyard · 新提交 · +42 星</title>
+      <link>https://github.com/NVIDIA-NeMo/Switchyard</link>
+      <guid isPermaLink="false">cybermap-change-github.com/nvidia-nemo/switchyard-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>NVIDIA-NeMo/Switchyard：新提交，+42 星。项目最近推送：2026-11-26 15:03 UTC。当前 stars：3.7k。发现日期：2026-11-27。项目地址：https://github.com/NVIDIA-NeMo/Switchyard</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>FareedKhan-dev/kimi-k3-in-c · +34 星</title>
+      <link>https://github.com/FareedKhan-dev/kimi-k3-in-c</link>
+      <guid isPermaLink="false">cybermap-change-github.com/fareedkhan-dev/kimi-k3-in-c-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>FareedKhan-dev/kimi-k3-in-c：+34 星。项目最近推送：2026-11-16 10:23 UTC。当前 stars：12.7k。发现日期：2026-11-27。项目地址：https://github.com/FareedKhan-dev/kimi-k3-in-c</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>max-sixty/worktrunk · 新提交 · +32 星</title>
+      <link>https://github.com/max-sixty/worktrunk</link>
+      <guid isPermaLink="false">cybermap-change-github.com/max-sixty/worktrunk-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>max-sixty/worktrunk：新提交，+32 星。项目最近推送：2026-11-26 08:35 UTC。当前 stars：12.8k。发现日期：2026-11-27。项目地址：https://github.com/max-sixty/worktrunk</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>karpathy/nanochat · +32 星</title>
+      <link>https://github.com/karpathy/nanochat</link>
+      <guid isPermaLink="false">cybermap-change-github.com/karpathy/nanochat-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>karpathy/nanochat：+32 星。项目最近推送：2026-09-07 20:06 UTC。当前 stars：60.9k。发现日期：2026-11-27。项目地址：https://github.com/karpathy/nanochat</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>CherryHQ/cherry-studio · 新提交 · +26 星</title>
+      <link>https://github.com/CherryHQ/cherry-studio</link>
+      <guid isPermaLink="false">cybermap-change-github.com/cherryhq/cherry-studio-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>CherryHQ/cherry-studio：新提交，+26 星。项目最近推送：2026-11-27 03:17 UTC。当前 stars：53.9k。发现日期：2026-11-27。项目地址：https://github.com/CherryHQ/cherry-studio</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>karakeep-app/karakeep · +21 星</title>
+      <link>https://github.com/karakeep-app/karakeep</link>
+      <guid isPermaLink="false">cybermap-change-github.com/karakeep-app/karakeep-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>karakeep-app/karakeep：+21 星。项目最近推送：2026-11-25 21:57 UTC。当前 stars：30.9k。发现日期：2026-11-27。项目地址：https://github.com/karakeep-app/karakeep</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>flashml-org/FreeToken · 新提交 · +20 星</title>
+      <link>https://github.com/flashml-org/FreeToken</link>
+      <guid isPermaLink="false">cybermap-change-github.com/flashml-org/freetoken-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>flashml-org/FreeToken：新提交，+20 星。项目最近推送：2026-11-27 03:13 UTC。当前 stars：17.8k。发现日期：2026-11-27。项目地址：https://github.com/flashml-org/FreeToken</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>homeassistant-ai/ha-mcp · 新提交 · +13 星</title>
+      <link>https://github.com/homeassistant-ai/ha-mcp</link>
+      <guid isPermaLink="false">cybermap-change-github.com/homeassistant-ai/ha-mcp-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>homeassistant-ai/ha-mcp：新提交，+13 星。项目最近推送：2026-11-27 02:21 UTC。当前 stars：8.1k。发现日期：2026-11-27。项目地址：https://github.com/homeassistant-ai/ha-mcp</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>streamlit/streamlit · 新提交 · +9 星</title>
+      <link>https://github.com/streamlit/streamlit</link>
+      <guid isPermaLink="false">cybermap-change-github.com/streamlit/streamlit-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>streamlit/streamlit：新提交，+9 星。项目最近推送：2026-11-26 19:28 UTC。当前 stars：46.5k。发现日期：2026-11-27。项目地址：https://github.com/streamlit/streamlit</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>gradio-app/gradio · 新提交 · +8 星</title>
+      <link>https://github.com/gradio-app/gradio</link>
+      <guid isPermaLink="false">cybermap-change-github.com/gradio-app/gradio-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>gradio-app/gradio：新提交，+8 星。项目最近推送：2026-11-27 02:20 UTC。当前 stars：44.2k。发现日期：2026-11-27。项目地址：https://github.com/gradio-app/gradio</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>cactus-compute/cactus · +8 星</title>
+      <link>https://github.com/cactus-compute/cactus</link>
+      <guid isPermaLink="false">cybermap-change-github.com/cactus-compute/cactus-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>cactus-compute/cactus：+8 星。项目最近推送：2026-11-23 17:07 UTC。当前 stars：14.9k。发现日期：2026-11-27。项目地址：https://github.com/cactus-compute/cactus</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>Interactive-Active-AI/NextTransformer · 新提交 · +7 星</title>
+      <link>https://github.com/Interactive-Active-AI/NextTransformer</link>
+      <guid isPermaLink="false">cybermap-change-github.com/interactive-active-ai/nexttransformer-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>Interactive-Active-AI/NextTransformer：新提交，+7 星。项目最近推送：2026-11-26 10:06 UTC。当前 stars：505。发现日期：2026-11-27。项目地址：https://github.com/Interactive-Active-AI/NextTransformer</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>open-compass/opencompass · +2 星</title>
+      <link>https://github.com/open-compass/opencompass</link>
+      <guid isPermaLink="false">cybermap-change-github.com/open-compass/opencompass-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>open-compass/opencompass：+2 星。项目最近推送：2026-11-24 09:43 UTC。当前 stars：7.6k。发现日期：2026-11-27。项目地址：https://github.com/open-compass/opencompass</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>nv-tlabs/lyra · +2 星</title>
+      <link>https://github.com/nv-tlabs/Lyra</link>
+      <guid isPermaLink="false">cybermap-change-github.com/nv-tlabs/lyra-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>nv-tlabs/lyra：+2 星。项目最近推送：2026-07-20 17:07 UTC。当前 stars：2.9k。发现日期：2026-11-27。项目地址：https://github.com/nv-tlabs/Lyra</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>skyzh/tiny-llm · 新提交 · +2 星</title>
+      <link>https://github.com/skyzh/tiny-llm</link>
+      <guid isPermaLink="false">cybermap-change-github.com/skyzh/tiny-llm-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>skyzh/tiny-llm：新提交，+2 星。项目最近推送：2026-11-26 14:57 UTC。当前 stars：5.8k。发现日期：2026-11-27。项目地址：https://github.com/skyzh/tiny-llm</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>huawei-csl/MACaQ · +2 星</title>
+      <link>https://github.com/huawei-csl/MACaQ</link>
+      <guid isPermaLink="false">cybermap-change-github.com/huawei-csl/macaq-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>huawei-csl/MACaQ：+2 星。项目最近推送：2026-11-17 09:39 UTC。当前 stars：399。发现日期：2026-11-27。项目地址：https://github.com/huawei-csl/MACaQ</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>Segment Anything Model(SAM) · +1 星</title>
+      <link>https://github.com/facebookresearch/segment-anything/</link>
+      <guid isPermaLink="false">cybermap-change-github.com/facebookresearch/segment-anything-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>Segment Anything Model(SAM)：+1 星。项目最近推送：2024-09-18 17:46 UTC。当前 stars：55.2k。发现日期：2026-11-27。项目地址：https://github.com/facebookresearch/segment-anything/</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>modelflare-ai/AnyModelBot · 新提交</title>
+      <link>https://github.com/modelflare-ai/AnyModelBot</link>
+      <guid isPermaLink="false">cybermap-change-github.com/modelflare-ai/anymodelbot-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>modelflare-ai/AnyModelBot：新提交。项目最近推送：2026-11-26 03:57 UTC。当前 stars：5.0k。发现日期：2026-11-27。项目地址：https://github.com/modelflare-ai/AnyModelBot</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>Edge0-AI/Edge0 · 新提交</title>
+      <link>https://github.com/Edge0-AI/Edge0</link>
+      <guid isPermaLink="false">cybermap-change-github.com/edge0-ai/edge0-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>Edge0-AI/Edge0：新提交。项目最近推送：2026-11-26 14:40 UTC。当前 stars：10.7k。发现日期：2026-11-27。项目地址：https://github.com/Edge0-AI/Edge0</description>
+      <category>项目动态</category>
+    </item>
+    <item>
+      <title>raullenchai/Rapid-MLX · 新提交</title>
+      <link>https://github.com/raullenchai/Rapid-MLX</link>
+      <guid isPermaLink="false">cybermap-change-github.com/raullenchai/rapid-mlx-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>raullenchai/Rapid-MLX：新提交。项目最近推送：2026-11-27 02:49 UTC。当前 stars：4.2k。发现日期：2026-11-27。项目地址：https://github.com/raullenchai/Rapid-MLX</description>
+      <category>项目动态</category>
+    </item>
     <item>
       <title>NVIDIA/auto-ontology · 新提交 · +264 星</title>
       <link>https://github.com/NVIDIA/auto-ontology</link>
       <guid isPermaLink="false">cybermap-change-github.com/nvidia/auto-ontology-2026-11-26</guid>
       <pubDate>Thu, 26 Nov 2026 00:00:00 +0800</pubDate>
-      <description>NVIDIA/auto-ontology：新提交，+264 星。项目最近推送：2026-11-25 21:11 UTC。当前 stars：14.9k。发现日期：2026-11-26。项目地址：https://github.com/NVIDIA/auto-ontology</description>
+      <description>NVIDIA/auto-ontology：新提交，+264 星。项目最近推送：2026-11-26 19:13 UTC。当前 stars：15.1k。发现日期：2026-11-26。项目地址：https://github.com/NVIDIA/auto-ontology</description>
       <category>项目动态</category>
     </item>
     <item>
@@ -21,7 +317,7 @@
       <link>https://github.com/ZhuLinsen/daily_stock_analysis</link>
       <guid isPermaLink="false">cybermap-change-github.com/zhulinsen/daily_stock_analysis-2026-11-26</guid>
       <pubDate>Thu, 26 Nov 2026 00:00:00 +0800</pubDate>
-      <description>ZhuLinsen/daily_stock_analysis：新提交，+223 星。项目最近推送：2026-11-25 15:17 UTC。当前 stars：74.6k。发现日期：2026-11-26。项目地址：https://github.com/ZhuLinsen/daily_stock_analysis</description>
+      <description>ZhuLinsen/daily_stock_analysis：新提交，+223 星。项目最近推送：2026-11-27 03:17 UTC。当前 stars：74.9k。发现日期：2026-11-26。项目地址：https://github.com/ZhuLinsen/daily_stock_analysis</description>
       <category>项目动态</category>
     </item>
     <item>
@@ -29,303 +325,7 @@
       <link>https://github.com/JosssphZhou/poki</link>
       <guid isPermaLink="false">cybermap-change-github.com/josssphzhou/poki-2026-11-26</guid>
       <pubDate>Thu, 26 Nov 2026 00:00:00 +0800</pubDate>
-      <description>JosssphZhou/poki：新提交，+168 星。项目最近推送：2026-11-25 23:35 UTC。当前 stars：2.1k。发现日期：2026-11-26。项目地址：https://github.com/JosssphZhou/poki</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>sybil-solutions/inference-optimisation-skill · +137 星</title>
-      <link>https://github.com/sybil-solutions/inference-optimisation-skill</link>
-      <guid isPermaLink="false">cybermap-change-github.com/sybil-solutions/inference-optimisation-skill-2026-11-26</guid>
-      <pubDate>Thu, 26 Nov 2026 00:00:00 +0800</pubDate>
-      <description>sybil-solutions/inference-optimisation-skill：+137 星。项目最近推送：2026-11-16 18:40 UTC。当前 stars：2.7k。发现日期：2026-11-26。项目地址：https://github.com/sybil-solutions/inference-optimisation-skill</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>beenuar/AiSOC · 新提交 · +130 星</title>
-      <link>https://github.com/beenuar/AiSOC</link>
-      <guid isPermaLink="false">cybermap-change-github.com/beenuar/aisoc-2026-11-26</guid>
-      <pubDate>Thu, 26 Nov 2026 00:00:00 +0800</pubDate>
-      <description>beenuar/AiSOC：新提交，+130 星。项目最近推送：2026-11-26 02:14 UTC。当前 stars：7.9k。发现日期：2026-11-26。项目地址：https://github.com/beenuar/AiSOC</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>THU-MAIC/OpenMAIC · 新提交 · +61 星</title>
-      <link>https://github.com/THU-MAIC/OpenMAIC</link>
-      <guid isPermaLink="false">cybermap-change-github.com/thu-maic/openmaic-2026-11-26</guid>
-      <pubDate>Thu, 26 Nov 2026 00:00:00 +0800</pubDate>
-      <description>THU-MAIC/OpenMAIC：新提交，+61 星。项目最近推送：2026-11-26 02:18 UTC。当前 stars：44.4k。发现日期：2026-11-26。项目地址：https://github.com/THU-MAIC/OpenMAIC</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>homeassistant-ai/ha-mcp · 新提交 · +58 星</title>
-      <link>https://github.com/homeassistant-ai/ha-mcp</link>
-      <guid isPermaLink="false">cybermap-change-github.com/homeassistant-ai/ha-mcp-2026-11-26</guid>
-      <pubDate>Thu, 26 Nov 2026 00:00:00 +0800</pubDate>
-      <description>homeassistant-ai/ha-mcp：新提交，+58 星。项目最近推送：2026-11-26 01:23 UTC。当前 stars：8.1k。发现日期：2026-11-26。项目地址：https://github.com/homeassistant-ai/ha-mcp</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>karakeep-app/karakeep · 新提交 · +21 星</title>
-      <link>https://github.com/karakeep-app/karakeep</link>
-      <guid isPermaLink="false">cybermap-change-github.com/karakeep-app/karakeep-2026-11-26</guid>
-      <pubDate>Thu, 26 Nov 2026 00:00:00 +0800</pubDate>
-      <description>karakeep-app/karakeep：新提交，+21 星。项目最近推送：2026-11-25 21:57 UTC。当前 stars：30.9k。发现日期：2026-11-26。项目地址：https://github.com/karakeep-app/karakeep</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>max-sixty/worktrunk · 新提交 · +9 星</title>
-      <link>https://github.com/max-sixty/worktrunk</link>
-      <guid isPermaLink="false">cybermap-change-github.com/max-sixty/worktrunk-2026-11-26</guid>
-      <pubDate>Thu, 26 Nov 2026 00:00:00 +0800</pubDate>
-      <description>max-sixty/worktrunk：新提交，+9 星。项目最近推送：2026-11-25 09:54 UTC。当前 stars：12.7k。发现日期：2026-11-26。项目地址：https://github.com/max-sixty/worktrunk</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>NVIDIA-NeMo/Switchyard · 新提交 · +8 星</title>
-      <link>https://github.com/NVIDIA-NeMo/Switchyard</link>
-      <guid isPermaLink="false">cybermap-change-github.com/nvidia-nemo/switchyard-2026-11-26</guid>
-      <pubDate>Thu, 26 Nov 2026 00:00:00 +0800</pubDate>
-      <description>NVIDIA-NeMo/Switchyard：新提交，+8 星。项目最近推送：2026-11-25 23:32 UTC。当前 stars：3.7k。发现日期：2026-11-26。项目地址：https://github.com/NVIDIA-NeMo/Switchyard</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>modelflare-ai/AnyModelBot · +4 星</title>
-      <link>https://github.com/modelflare-ai/AnyModelBot</link>
-      <guid isPermaLink="false">cybermap-change-github.com/modelflare-ai/anymodelbot-2026-11-26</guid>
-      <pubDate>Thu, 26 Nov 2026 00:00:00 +0800</pubDate>
-      <description>modelflare-ai/AnyModelBot：+4 星。项目最近推送：2026-11-24 18:35 UTC。当前 stars：5.0k。发现日期：2026-11-26。项目地址：https://github.com/modelflare-ai/AnyModelBot</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>cloudflare/security-audit-skill · +410 星</title>
-      <link>https://github.com/cloudflare/security-audit-skill</link>
-      <guid isPermaLink="false">cybermap-change-github.com/cloudflare/security-audit-skill-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>cloudflare/security-audit-skill：+410 星。项目最近推送：2026-09-14 19:29 UTC。当前 stars：78.0k。发现日期：2026-11-25。项目地址：https://github.com/cloudflare/security-audit-skill</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>sybil-solutions/inference-optimisation-skill · +372 星</title>
-      <link>https://github.com/sybil-solutions/inference-optimisation-skill</link>
-      <guid isPermaLink="false">cybermap-change-github.com/sybil-solutions/inference-optimisation-skill-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>sybil-solutions/inference-optimisation-skill：+372 星。项目最近推送：2026-11-16 18:40 UTC。当前 stars：2.7k。发现日期：2026-11-25。项目地址：https://github.com/sybil-solutions/inference-optimisation-skill</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>alibaba/open-code-review · 新提交 · +344 星</title>
-      <link>https://github.com/alibaba/open-code-review</link>
-      <guid isPermaLink="false">cybermap-change-github.com/alibaba/open-code-review-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>alibaba/open-code-review：新提交，+344 星。项目最近推送：2026-11-24 16:19 UTC。当前 stars：56.1k。发现日期：2026-11-25。项目地址：https://github.com/alibaba/open-code-review</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>ZhuLinsen/daily_stock_analysis · 新提交 · +326 星</title>
-      <link>https://github.com/ZhuLinsen/daily_stock_analysis</link>
-      <guid isPermaLink="false">cybermap-change-github.com/zhulinsen/daily_stock_analysis-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>ZhuLinsen/daily_stock_analysis：新提交，+326 星。项目最近推送：2026-11-25 15:17 UTC。当前 stars：74.6k。发现日期：2026-11-25。项目地址：https://github.com/ZhuLinsen/daily_stock_analysis</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>beenuar/AiSOC · 新提交 · +224 星</title>
-      <link>https://github.com/beenuar/AiSOC</link>
-      <guid isPermaLink="false">cybermap-change-github.com/beenuar/aisoc-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>beenuar/AiSOC：新提交，+224 星。项目最近推送：2026-11-26 02:14 UTC。当前 stars：7.9k。发现日期：2026-11-25。项目地址：https://github.com/beenuar/AiSOC</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>dream-num/univer · 新提交 · +224 星</title>
-      <link>https://github.com/dream-num/univer</link>
-      <guid isPermaLink="false">cybermap-change-github.com/dream-num/univer-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>dream-num/univer：新提交，+224 星。项目最近推送：2026-11-25 01:24 UTC。当前 stars：31.7k。发现日期：2026-11-25。项目地址：https://github.com/dream-num/univer</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>ag-ui-protocol/ag-ui · 新提交 · +183 星</title>
-      <link>https://github.com/ag-ui-protocol/ag-ui</link>
-      <guid isPermaLink="false">cybermap-change-github.com/ag-ui-protocol/ag-ui-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>ag-ui-protocol/ag-ui：新提交，+183 星。项目最近推送：2026-11-24 22:29 UTC。当前 stars：21.6k。发现日期：2026-11-25。项目地址：https://github.com/ag-ui-protocol/ag-ui</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>simplexai-labs/linger · 新提交 · +182 星</title>
-      <link>https://github.com/simplexai-labs/linger</link>
-      <guid isPermaLink="false">cybermap-change-github.com/simplexai-labs/linger-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>simplexai-labs/linger：新提交，+182 星。项目最近推送：2026-11-25 00:47 UTC。当前 stars：4.4k。发现日期：2026-11-25。项目地址：https://github.com/simplexai-labs/linger</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>ChromeDevTools/chrome-devtools-mcp · 新提交 · +181 星</title>
-      <link>https://github.com/ChromeDevTools/chrome-devtools-mcp</link>
-      <guid isPermaLink="false">cybermap-change-github.com/chromedevtools/chrome-devtools-mcp-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>ChromeDevTools/chrome-devtools-mcp：新提交，+181 星。项目最近推送：2026-11-24 19:53 UTC。当前 stars：59.2k。发现日期：2026-11-25。项目地址：https://github.com/ChromeDevTools/chrome-devtools-mcp</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>Tencent/LoopForge · 新提交 · +117 星</title>
-      <link>https://github.com/Tencent/LoopForge</link>
-      <guid isPermaLink="false">cybermap-change-github.com/tencent/loopforge-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>Tencent/LoopForge：新提交，+117 星。项目最近推送：2026-11-25 01:22 UTC。当前 stars：6.0k。发现日期：2026-11-25。项目地址：https://github.com/Tencent/LoopForge</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>headroomlabs-ai/headroom · 新提交 · +107 星</title>
-      <link>https://github.com/headroomlabs-ai/headroom</link>
-      <guid isPermaLink="false">cybermap-change-github.com/headroomlabs-ai/headroom-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>headroomlabs-ai/headroom：新提交，+107 星。项目最近推送：2026-11-25 00:43 UTC。当前 stars：80.8k。发现日期：2026-11-25。项目地址：https://github.com/headroomlabs-ai/headroom</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>deepseek-ai/dsh-superagent-prototype · +105 星</title>
-      <link>https://github.com/deepseek-ai/dsh-superagent-prototype</link>
-      <guid isPermaLink="false">cybermap-change-github.com/deepseek-ai/dsh-superagent-prototype-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>deepseek-ai/dsh-superagent-prototype：+105 星。项目最近推送：2026-11-03 09:29 UTC。当前 stars：24.5k。发现日期：2026-11-25。项目地址：https://github.com/deepseek-ai/dsh-superagent-prototype</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>THU-MAIC/OpenMAIC · 新提交 · +76 星</title>
-      <link>https://github.com/THU-MAIC/OpenMAIC</link>
-      <guid isPermaLink="false">cybermap-change-github.com/thu-maic/openmaic-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>THU-MAIC/OpenMAIC：新提交，+76 星。项目最近推送：2026-11-26 02:18 UTC。当前 stars：44.4k。发现日期：2026-11-25。项目地址：https://github.com/THU-MAIC/OpenMAIC</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>Tencent/WeKnora · 新提交 · +57 星</title>
-      <link>https://github.com/Tencent/WeKnora</link>
-      <guid isPermaLink="false">cybermap-change-github.com/tencent/weknora-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>Tencent/WeKnora：新提交，+57 星。项目最近推送：2026-11-24 07:37 UTC。当前 stars：38.1k。发现日期：2026-11-25。项目地址：https://github.com/Tencent/WeKnora</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>infiniflow/ragflow · 新提交 · +56 星</title>
-      <link>https://github.com/infiniflow/ragflow</link>
-      <guid isPermaLink="false">cybermap-change-github.com/infiniflow/ragflow-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>infiniflow/ragflow：新提交，+56 星。项目最近推送：2026-11-24 13:09 UTC。当前 stars：94.7k。发现日期：2026-11-25。项目地址：https://github.com/infiniflow/ragflow</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>docling-project/docling · 新提交 · +51 星</title>
-      <link>https://github.com/docling-project/docling</link>
-      <guid isPermaLink="false">cybermap-change-github.com/docling-project/docling-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>docling-project/docling：新提交，+51 星。项目最近推送：2026-11-24 17:50 UTC。当前 stars：71.0k。发现日期：2026-11-25。项目地址：https://github.com/docling-project/docling</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>aaif-goose/goose · 新提交 · +47 星</title>
-      <link>https://github.com/aaif-goose/goose</link>
-      <guid isPermaLink="false">cybermap-change-github.com/aaif-goose/goose-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>aaif-goose/goose：新提交，+47 星。项目最近推送：2026-11-25 01:02 UTC。当前 stars：57.0k。发现日期：2026-11-25。项目地址：https://github.com/aaif-goose/goose</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>NVIDIA/SkillEvaluator · 新提交 · +46 星</title>
-      <link>https://github.com/NVIDIA/SkillEvaluator</link>
-      <guid isPermaLink="false">cybermap-change-github.com/nvidia/skillevaluator-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>NVIDIA/SkillEvaluator：新提交，+46 星。项目最近推送：2026-11-25 01:48 UTC。当前 stars：4.5k。发现日期：2026-11-25。项目地址：https://github.com/NVIDIA/SkillEvaluator</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>browser-use/video-use · +40 星</title>
-      <link>https://github.com/browser-use/video-use</link>
-      <guid isPermaLink="false">cybermap-change-github.com/browser-use/video-use-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>browser-use/video-use：+40 星。项目最近推送：2026-10-08 22:17 UTC。当前 stars：31.5k。发现日期：2026-11-25。项目地址：https://github.com/browser-use/video-use</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>google-gemini/gemini-cli · 新提交 · +40 星</title>
-      <link>https://github.com/google-gemini/gemini-cli</link>
-      <guid isPermaLink="false">cybermap-change-github.com/google-gemini/gemini-cli-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>google-gemini/gemini-cli：新提交，+40 星。项目最近推送：2026-11-25 01:08 UTC。当前 stars：109.1k。发现日期：2026-11-25。项目地址：https://github.com/google-gemini/gemini-cli</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>karakeep-app/karakeep · 新提交 · +31 星</title>
-      <link>https://github.com/karakeep-app/karakeep</link>
-      <guid isPermaLink="false">cybermap-change-github.com/karakeep-app/karakeep-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>karakeep-app/karakeep：新提交，+31 星。项目最近推送：2026-11-25 21:57 UTC。当前 stars：30.9k。发现日期：2026-11-25。项目地址：https://github.com/karakeep-app/karakeep</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>JosssphZhou/poki · 新提交 · +27 星</title>
-      <link>https://github.com/JosssphZhou/poki</link>
-      <guid isPermaLink="false">cybermap-change-github.com/josssphzhou/poki-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>JosssphZhou/poki：新提交，+27 星。项目最近推送：2026-11-25 23:35 UTC。当前 stars：2.1k。发现日期：2026-11-25。项目地址：https://github.com/JosssphZhou/poki</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>mastra-ai/mastra · 新提交 · +26 星</title>
-      <link>https://github.com/mastra-ai/mastra</link>
-      <guid isPermaLink="false">cybermap-change-github.com/mastra-ai/mastra-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>mastra-ai/mastra：新提交，+26 星。项目最近推送：2026-11-25 01:57 UTC。当前 stars：29.8k。发现日期：2026-11-25。项目地址：https://github.com/mastra-ai/mastra</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>Orkas-AI/Orkas · 新提交 · +24 星</title>
-      <link>https://github.com/Orkas-AI/Orkas</link>
-      <guid isPermaLink="false">cybermap-change-github.com/orkas-ai/orkas-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>Orkas-AI/Orkas：新提交，+24 星。项目最近推送：2026-11-24 22:25 UTC。当前 stars：9.6k。发现日期：2026-11-25。项目地址：https://github.com/Orkas-AI/Orkas</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>max-sixty/worktrunk · 新提交 · +22 星</title>
-      <link>https://github.com/max-sixty/worktrunk</link>
-      <guid isPermaLink="false">cybermap-change-github.com/max-sixty/worktrunk-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>max-sixty/worktrunk：新提交，+22 星。项目最近推送：2026-11-25 09:54 UTC。当前 stars：12.7k。发现日期：2026-11-25。项目地址：https://github.com/max-sixty/worktrunk</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>Activepieces/activepieces · 新提交 · +15 星</title>
-      <link>https://github.com/Activepieces/activepieces</link>
-      <guid isPermaLink="false">cybermap-change-github.com/activepieces/activepieces-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>Activepieces/activepieces：新提交，+15 星。项目最近推送：2026-11-25 01:31 UTC。当前 stars：25.7k。发现日期：2026-11-25。项目地址：https://github.com/Activepieces/activepieces</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>0xPlaygrounds/rig · 新提交 · +13 星</title>
-      <link>https://github.com/0xPlaygrounds/rig</link>
-      <guid isPermaLink="false">cybermap-change-github.com/0xplaygrounds/rig-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>0xPlaygrounds/rig：新提交，+13 星。项目最近推送：2026-11-25 01:41 UTC。当前 stars：9.3k。发现日期：2026-11-25。项目地址：https://github.com/0xPlaygrounds/rig</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>nanocodexyz/nanocode · 新提交 · +13 星</title>
-      <link>https://github.com/nanocodexyz/nanocode</link>
-      <guid isPermaLink="false">cybermap-change-github.com/nanocodexyz/nanocode-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>nanocodexyz/nanocode：新提交，+13 星。项目最近推送：2026-11-25 00:05 UTC。当前 stars：834。发现日期：2026-11-25。项目地址：https://github.com/nanocodexyz/nanocode</description>
-      <category>项目动态</category>
-    </item>
-    <item>
-      <title>onyx-dot-app/onyx · 新提交 · +13 星</title>
-      <link>https://github.com/onyx-dot-app/onyx</link>
-      <guid isPermaLink="false">cybermap-change-github.com/onyx-dot-app/onyx-2026-11-25</guid>
-      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
-      <description>onyx-dot-app/onyx：新提交，+13 星。项目最近推送：2026-11-25 01:56 UTC。当前 stars：33.5k。发现日期：2026-11-25。项目地址：https://github.com/onyx-dot-app/onyx</description>
+      <description>JosssphZhou/poki：新提交，+168 星。项目最近推送：2026-11-27 02:52 UTC。当前 stars：2.1k。发现日期：2026-11-26。项目地址：https://github.com/JosssphZhou/poki</description>
       <category>项目动态</category>
     </item>
   </channel>

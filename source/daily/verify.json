@@ -345,6 +345,30 @@
         }
       ],
       "review": 1
+    },
+    "2026-11-27": {
+      "added": 10,
+      "checked": 15,
+      "fail": 2,
+      "pass": 12,
+      "rejected": [
+        {
+          "reason": "GitHub stars < 200，需人工判断价值",
+          "url": "https://github.com/xuxueli/xxl-ai",
+          "verdict": "review"
+        },
+        {
+          "reason": "页面与仓库元数据中未检出 AI 相关性关键词",
+          "url": "https://github.com/apple-aiml-research/ml-halo",
+          "verdict": "fail"
+        },
+        {
+          "reason": "页面与仓库元数据中未检出 AI 相关性关键词",
+          "url": "https://flashdata.dev",
+          "verdict": "fail"
+        }
+      ],
+      "review": 1
     }
   },
   "evidence": {
@@ -861,6 +885,20 @@
       "title": "",
       "verdict": "pass"
     },
+    "github.com/cloudflare/kitesurf": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "agent"
+      ],
+      "checked_at": "2026-11-27T11:16:56+08:00",
+      "date": "2026-11-27",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-26T20:43:01Z",
+      "stars": 2643,
+      "title": "GitHub - cloudflare/kitesurf: Kitesurf is an experimental browser engine that runs on Cloudflare Workers. · GitHub",
+      "verdict": "pass"
+    },
     "github.com/cloudflare/security-audit-skill": {
       "ai_hits": 1,
       "ai_keywords": [
@@ -954,6 +992,21 @@
       "pushed_at": "2026-11-25T19:44:39Z",
       "stars": 118422,
       "title": "",
+      "verdict": "pass"
+    },
+    "github.com/deepseek-ai/deepseek-harness": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-27T11:17:05+08:00",
+      "date": "2026-11-27",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-22T11:00:05Z",
+      "stars": 287682,
+      "title": "GitHub - deepseek-ai/deepseek-harness: DeepSeek Harness: Everything is a Plugin. · GitHub",
       "verdict": "pass"
     },
     "github.com/deepseek-ai/dsh-superagent-prototype": {
@@ -1183,6 +1236,22 @@
       "pushed_at": "2026-11-25T01:30:58Z",
       "stars": 5989,
       "title": "GitHub - get-bb/bb: The agent IDE that builds itself · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/github/gh-aw": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "agent",
+        "claude",
+        "copilot"
+      ],
+      "checked_at": "2026-11-27T11:16:58+08:00",
+      "date": "2026-11-27",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-27T03:08:26Z",
+      "stars": 5706,
+      "title": "GitHub - github/gh-aw: GitHub Agentic Workflows · GitHub",
       "verdict": "pass"
     },
     "github.com/github/spec-kit": {
@@ -1764,6 +1833,23 @@
       "title": "",
       "verdict": "pass"
     },
+    "github.com/microsoft/tokeneconomizer": {
+      "ai_hits": 4,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "anthropic",
+        "claude"
+      ],
+      "checked_at": "2026-11-27T11:17:00+08:00",
+      "date": "2026-11-27",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-25T22:46:46Z",
+      "stars": 8150,
+      "title": "GitHub - microsoft/TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents · GitHub",
+      "verdict": "pass"
+    },
     "github.com/microsoft/vibevoice": {
       "ai_hits": 1,
       "ai_keywords": [
@@ -1785,12 +1871,12 @@
         "agent",
         "claude"
       ],
-      "checked_at": "2026-11-17T09:16:32+08:00",
-      "date": "2026-11-17",
+      "checked_at": "2026-11-27T11:17:03+08:00",
+      "date": "2026-11-27",
       "http_status": 200,
       "license": "Apache-2.0",
-      "pushed_at": "2026-11-16T22:55:46Z",
-      "stars": 24210,
+      "pushed_at": "2026-11-27T00:10:51Z",
+      "stars": 28200,
       "title": "GitHub - milind-soni/OpenMausBot: Open-source Grok Bot alternative with a virtual machine that bots can use · GitHub",
       "verdict": "pass"
     },
@@ -2246,12 +2332,12 @@
         "gpt",
         "llm"
       ],
-      "checked_at": "2026-11-15T09:15:46+08:00",
-      "date": "2026-11-15",
+      "checked_at": "2026-11-27T11:17:06+08:00",
+      "date": "2026-11-27",
       "http_status": 200,
       "license": "NOASSERTION",
-      "pushed_at": "2026-11-09T14:59:09Z",
-      "stars": 108416,
+      "pushed_at": "2026-11-26T15:25:17Z",
+      "stars": 109103,
       "title": "GitHub - rasbt/LLMs-from-scratch: Implement a ChatGPT-like LLM in PyTorch from scratch, step by step · GitHub",
       "verdict": "pass"
     },
@@ -2273,6 +2359,23 @@
       "pushed_at": "2026-11-19T00:53:00Z",
       "stars": 4165,
       "title": "",
+      "verdict": "pass"
+    },
+    "github.com/ruvnet/ruflo": {
+      "ai_hits": 4,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude",
+        "rag\\b"
+      ],
+      "checked_at": "2026-11-27T11:17:02+08:00",
+      "date": "2026-11-27",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-26T14:25:45Z",
+      "stars": 82513,
+      "title": "GitHub - ruvnet/ruflo: 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive",
       "verdict": "pass"
     },
     "github.com/scaleapi/agentenv-framework": {
@@ -2668,6 +2771,21 @@
       "title": "GitHub - vercel-labs/agent-desktop: Computer use CLI for AI agents · GitHub",
       "verdict": "pass"
     },
+    "github.com/vercel-labs/ui": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-27T11:16:57+08:00",
+      "date": "2026-11-27",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-27T03:16:56Z",
+      "stars": 7677,
+      "title": "GitHub - vercel-labs/ui: A library of behaviors for agents to build and drive the next generation of user interfaces. · GitHub",
+      "verdict": "pass"
+    },
     "github.com/vercel/eve": {
       "ai_hits": 1,
       "ai_keywords": [
@@ -2680,6 +2798,22 @@
       "pushed_at": "2026-11-21T01:09:00Z",
       "stars": 6031,
       "title": "GitHub - vercel/eve: The Open Framework for Building Agents · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/volcengine/openviking": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "rag\\b"
+      ],
+      "checked_at": "2026-11-27T11:16:59+08:00",
+      "date": "2026-11-27",
+      "http_status": 200,
+      "license": "AGPL-3.0",
+      "pushed_at": "2026-11-27T03:13:13Z",
+      "stars": 42886,
+      "title": "GitHub - volcengine/OpenViking: Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills. · GitHub",
       "verdict": "pass"
     },
     "github.com/wanxingai/lightagent": {
@@ -2866,6 +3000,20 @@
       "title": "AI Product Photos &amp; Descriptions - Try it free | MerchantFloor",
       "verdict": "pass"
     },
+    "mythesis.ai/": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "\\bai\\b"
+      ],
+      "checked_at": "2026-11-27T11:17:18+08:00",
+      "date": "2026-11-27",
+      "http_status": 200,
+      "license": null,
+      "pushed_at": null,
+      "stars": null,
+      "title": "Thesis: an investment thesis tracker for your stocks",
+      "verdict": "pass"
+    },
     "ollama.com/": {
       "ai_hits": 2,
       "ai_keywords": [
@@ -2893,6 +3041,23 @@
       "pushed_at": null,
       "stars": null,
       "title": "OLVA - Live Context AI Meeting Assistant",
+      "verdict": "pass"
+    },
+    "pangram.com/": {
+      "ai_hits": 4,
+      "ai_keywords": [
+        "\\bai\\b",
+        "chatgpt",
+        "claude",
+        "gpt"
+      ],
+      "checked_at": "2026-11-27T11:17:14+08:00",
+      "date": "2026-11-27",
+      "http_status": 200,
+      "license": null,
+      "pushed_at": null,
+      "stars": null,
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude &amp; Gemini | Pangram",
       "verdict": "pass"
     },
     "platform.kimi.com/": {
@@ -3014,6 +3179,21 @@
       "title": "magpieï¼Claude CodeãCodexãGemini CLI çæ¨¡åä¸å¤åæ¢",
       "verdict": "pass"
     },
+    "viggle.ai/": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "neural"
+      ],
+      "checked_at": "2026-11-27T11:17:15+08:00",
+      "date": "2026-11-27",
+      "http_status": 200,
+      "license": null,
+      "pushed_at": null,
+      "stars": null,
+      "title": "Viggle | Neural World Engine for Video and 3D",
+      "verdict": "pass"
+    },
     "webai.com/": {
       "ai_hits": 1,
       "ai_keywords": [
@@ -3062,13 +3242,13 @@
   "schema": 1,
   "source": "cybermap-daily/state/reports/verify-YYYY-MM-DD.json",
   "totals": {
-    "added": 114,
-    "checked": 221,
-    "days": 14,
-    "fail": 20,
-    "pass": 177,
-    "review": 24,
-    "verified_sites": 171
+    "added": 124,
+    "checked": 236,
+    "days": 15,
+    "fail": 22,
+    "pass": 189,
+    "review": 25,
+    "verified_sites": 181
   },
   "warnings": []
 }

@@ -13,13 +13,13 @@
       "name": "图像与设计"
     },
     {
-      "count": 19,
+      "count": 20,
       "group": "AI 工具箱",
       "key": "aiVideo",
       "name": "视频与音频"
     },
     {
-      "count": 22,
+      "count": 24,
       "group": "AI 工具箱",
       "key": "aiCode",
       "name": "编程与开发"
@@ -43,7 +43,7 @@
       "name": "大语言模型"
     },
     {
-      "count": 23,
+      "count": 24,
       "group": "模型与开源",
       "key": "githubGPT",
       "name": "GitHub 项目"
@@ -55,19 +55,19 @@
       "name": "推理与训练框架"
     },
     {
-      "count": 15,
+      "count": 16,
       "group": "模型与开源",
       "key": "ragKnowledge",
       "name": "RAG 与知识库"
     },
     {
-      "count": 36,
+      "count": 39,
       "group": "模型与开源",
       "key": "agentFrameworks",
       "name": "智能体框架"
     },
     {
-      "count": 16,
+      "count": 17,
       "group": "学习与资源",
       "key": "studyGPT",
       "name": "提示词与教程"
@@ -91,7 +91,7 @@
       "name": "社区与问卷"
     },
     {
-      "count": 2,
+      "count": 3,
       "group": "站点与常用",
       "key": "hotTools",
       "name": "常用工具"
@@ -107,8 +107,8 @@
     "categories": 17,
     "groups": 4,
     "health_checked": 276,
-    "sites": 273,
-    "verified": 115
+    "sites": 283,
+    "verified": 125
   },
   "group_index": [
     {
@@ -120,7 +120,7 @@
         "aiOffice",
         "aiAgent"
       ],
-      "count": 110,
+      "count": 113,
       "name": "AI 工具箱"
     },
     {
@@ -131,7 +131,7 @@
         "ragKnowledge",
         "agentFrameworks"
       ],
-      "count": 124,
+      "count": 129,
       "name": "模型与开源"
     },
     {
@@ -141,7 +141,7 @@
         "aiNav",
         "likeGPT"
       ],
-      "count": 36,
+      "count": 37,
       "name": "学习与资源"
     },
     {
@@ -149,7 +149,7 @@
         "hotTools",
         "myBlog"
       ],
-      "count": 3,
+      "count": 4,
       "name": "站点与常用"
     }
   ],
@@ -733,6 +733,27 @@
     {
       "category": "aiVideo",
       "category_name": "视频与音频",
+      "date": "2026-11-27",
+      "description": "Viggle 的 AI 视频与 3D 创作平台，支持视频改写、3D 场景与角色动作生成。",
+      "group": "AI 工具箱",
+      "health": null,
+      "img": "https://viggle.ai/favicon.ico",
+      "name": "Viggle",
+      "tags": [
+        "视频图像"
+      ],
+      "url": "https://viggle.ai",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-27T11:17:15+08:00",
+        "date": "2026-11-27",
+        "http_status": 200,
+        "stars": null
+      }
+    },
+    {
+      "category": "aiVideo",
+      "category_name": "视频与音频",
       "date": "2026-11-26",
       "description": "开源智能体视频制作系统，从脚本自动生成素材、配音与剪辑，内置十二条流水线和数百项技能。",
       "group": "AI 工具箱",
@@ -1067,6 +1088,48 @@
       ],
       "url": "http://Elai.io",
       "verified": null
+    },
+    {
+      "category": "aiCode",
+      "category_name": "编程与开发",
+      "date": "2026-11-27",
+      "description": "GitHub 官方智能体工作流工具，用 Markdown 描述 CI 任务并编译成含推理步骤的 Actions。",
+      "group": "AI 工具箱",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "github/gh-aw",
+      "tags": [
+        "推理引擎"
+      ],
+      "url": "https://github.com/github/gh-aw",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-27T11:16:58+08:00",
+        "date": "2026-11-27",
+        "http_status": 200,
+        "stars": 5706
+      }
+    },
+    {
+      "category": "aiCode",
+      "category_name": "编程与开发",
+      "date": "2026-11-27",
+      "description": "微软等开源的编码智能体成本控制插件，从历史会话提炼经验以裁剪工具、减少重复 token 消耗。",
+      "group": "AI 工具箱",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "microsoft/TokenEconomizer",
+      "tags": [
+        "AI 应用"
+      ],
+      "url": "https://github.com/microsoft/TokenEconomizer",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-27T11:17:00+08:00",
+        "date": "2026-11-27",
+        "http_status": 200,
+        "stars": 8150
+      }
     },
     {
       "category": "aiCode",
@@ -2364,6 +2427,27 @@
     {
       "category": "githubGPT",
       "category_name": "GitHub 项目",
+      "date": "2026-11-27",
+      "description": "Cloudflare 开源的实验性浏览器引擎，运行于 Workers，为 AI 智能体提供低资源网页自动化。",
+      "group": "模型与开源",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "cloudflare/kitesurf",
+      "tags": [
+        "浏览器自动化"
+      ],
+      "url": "https://github.com/cloudflare/kitesurf",
+      "verified": {
+        "ai_hits": 1,
+        "checked_at": "2026-11-27T11:16:56+08:00",
+        "date": "2026-11-27",
+        "http_status": 200,
+        "stars": 2643
+      }
+    },
+    {
+      "category": "githubGPT",
+      "category_name": "GitHub 项目",
       "date": "2026-11-26",
       "description": "开源大模型评测平台，覆盖推理、代码、安全与长上下文等基准，支持主流商业与开源模型。",
       "group": "模型与开源",
@@ -3432,6 +3516,29 @@
     {
       "category": "ragKnowledge",
       "category_name": "RAG 与知识库",
+      "date": "2026-11-27",
+      "description": "火山引擎开源的自演进上下文数据库，统一智能体记忆、RAG 检索与技能管理。",
+      "group": "模型与开源",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "volcengine/OpenViking",
+      "tags": [
+        "RAG 检索",
+        "记忆",
+        "技能生态"
+      ],
+      "url": "https://github.com/volcengine/OpenViking",
+      "verified": {
+        "ai_hits": 3,
+        "checked_at": "2026-11-27T11:16:59+08:00",
+        "date": "2026-11-27",
+        "http_status": 200,
+        "stars": 42886
+      }
+    },
+    {
+      "category": "ragKnowledge",
+      "category_name": "RAG 与知识库",
       "date": "2026-11-21",
       "description": "阿里开源的轻量级进程内向量数据库，C++ 实现，直接嵌入应用即可做高速向量检索，面向 RAG 与边缘场景。",
       "group": "模型与开源",
@@ -3709,6 +3816,71 @@
       ],
       "url": "https://github.com/bhaskatripathi/pdfGPT",
       "verified": null
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-27",
+      "description": "Vercel Labs 开源的智能体界面行为库，把键盘导航、焦点与弹层交互拆成跨框架可组合能力。",
+      "group": "模型与开源",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "vercel-labs/ui",
+      "tags": [
+        "前端 UI"
+      ],
+      "url": "https://github.com/vercel-labs/ui",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-27T11:16:57+08:00",
+        "date": "2026-11-27",
+        "http_status": 200,
+        "stars": 7677
+      }
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-27",
+      "description": "开源智能体基座，支持多智能体蜂群协作、持久记忆与 RAG 集成，可对接 Claude Code、Codex。",
+      "group": "模型与开源",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "ruvnet/ruflo",
+      "tags": [
+        "RAG 检索",
+        "记忆",
+        "多智能体"
+      ],
+      "url": "https://github.com/ruvnet/ruflo",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-27T11:17:02+08:00",
+        "date": "2026-11-27",
+        "http_status": 200,
+        "stars": 82513
+      }
+    },
+    {
+      "category": "agentFrameworks",
+      "category_name": "智能体框架",
+      "date": "2026-11-27",
+      "description": "DeepSeek 官方插件化智能体宿主，以插件形式扩展编码智能体的工具、记忆与执行能力。",
+      "group": "模型与开源",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "deepseek-ai/deepseek-harness",
+      "tags": [
+        "记忆"
+      ],
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "verified": {
+        "ai_hits": 2,
+        "checked_at": "2026-11-27T11:17:05+08:00",
+        "date": "2026-11-27",
+        "http_status": 200,
+        "stars": 287682
+      }
     },
     {
       "category": "agentFrameworks",
@@ -4475,6 +4647,27 @@
     {
       "category": "studyGPT",
       "category_name": "提示词与教程",
+      "date": "2026-11-27",
+      "description": "从零用 PyTorch 实现类 ChatGPT 大模型的渐进式教程，覆盖注意力机制、微调与指令对齐。",
+      "group": "学习与资源",
+      "health": null,
+      "img": "https://github.com/favicon.ico",
+      "name": "rasbt/LLMs-from-scratch",
+      "tags": [
+        "训练微调"
+      ],
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "verified": {
+        "ai_hits": 6,
+        "checked_at": "2026-11-27T11:17:06+08:00",
+        "date": "2026-11-27",
+        "http_status": 200,
+        "stars": 109103
+      }
+    },
+    {
+      "category": "studyGPT",
+      "category_name": "提示词与教程",
       "date": null,
       "description": "词图PromptTool - AI绘画资料管理网站",
       "group": "学习与资源",
@@ -5015,6 +5208,27 @@
       ],
       "url": "https://fmhitm4i2c.feishu.cn/share/base/form/shrcnVmzXGaoLJWDf84a8fstb7c",
       "verified": null
+    },
+    {
+      "category": "hotTools",
+      "category_name": "常用工具",
+      "date": "2026-11-27",
+      "description": "AI 文本检测服务，识别 ChatGPT、Claude、Gemini 等生成的文章与文档内容。",
+      "group": "站点与常用",
+      "health": null,
+      "img": "https://www.pangram.com/favicon.ico",
+      "name": "Pangram AI Detector",
+      "tags": [
+        "办公文档"
+      ],
+      "url": "https://www.pangram.com",
+      "verified": {
+        "ai_hits": 4,
+        "checked_at": "2026-11-27T11:17:14+08:00",
+        "date": "2026-11-27",
+        "http_status": 200,
+        "stars": null
+      }
     },
     {
       "category": "hotTools",

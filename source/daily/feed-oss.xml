@@ -6,8 +6,20 @@
     <description>cyberMap 每日核验收录的 AI 开源项目，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Thu, 26 Nov 2026 11:41:44 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 11:17:58 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 开源项目 · 2026-11-27（5 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-27</link>
+      <guid isPermaLink="false">cybermap-daily-开源项目-2026-11-27</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0800</pubDate>
+      <description>cloudflare/kitesurf［GitHub 项目］Cloudflare 开源的实验性浏览器引擎，运行于 Workers，为 AI 智能体提供低资源网页自动化。 — https://github.com/cloudflare/kitesurf
+volcengine/OpenViking［RAG 与知识库］火山引擎开源的自演进上下文数据库，统一智能体记忆、RAG 检索与技能管理。 — https://github.com/volcengine/OpenViking
+vercel-labs/ui［智能体框架］Vercel Labs 开源的智能体界面行为库，把键盘导航、焦点与弹层交互拆成跨框架可组合能力。 — https://github.com/vercel-labs/ui
+ruvnet/ruflo［智能体框架］开源智能体基座，支持多智能体蜂群协作、持久记忆与 RAG 集成，可对接 Claude Code、Codex。 — https://github.com/ruvnet/ruflo
+deepseek-ai/deepseek-harness［智能体框架］DeepSeek 官方插件化智能体宿主，以插件形式扩展编码智能体的工具、记忆与执行能力。 — https://github.com/deepseek-ai/deepseek-harness</description>
+      <category>开源项目</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 开源项目 · 2026-11-26（4 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-26</link>
