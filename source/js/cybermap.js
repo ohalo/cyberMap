@@ -105,6 +105,7 @@
             '<div class="cm-footer-col"><h5>站点功能</h5>' +
               '<a href="/rank/">AI 插件榜</a>' +
               '<a href="/daily/">每日速递</a>' +
+              '<a href="/tools/">自研小工具</a>' +
               '<a href="/daily/feed.xml">RSS 订阅</a></div>' +
             '<div class="cm-footer-col"><h5>更多</h5>' +
               '<a href="/about/">关于本站</a>' +
@@ -222,7 +223,7 @@
     var here = (location.pathname || '/').replace(/\/+$/, '') || '/';
     var LINKS = [
       ['/', '首页'], ['/daily/', '每日速递'], ['/rank/', '插件榜'],
-      ['/data/', '开放数据'], ['/about/', '关于']
+      ['/data/', '开放数据'], ['/tools/', '自研工具'], ['/about/', '关于']
     ];
     var brand = el('li', 'cm-site-brand cm-design-only',
       '<a href="/" aria-label="cyberMap 首页">' +
@@ -1182,6 +1183,19 @@
       if (avatar) avatar.classList.add('cm-about-avatar');
       if (name) name.classList.add('cm-about-maint-name');
       if (role) role.classList.add('cm-about-maint-role');
+    }
+
+    /* 经典态入口：关于页正文加一行自研工具文字链（赛博态顶栏另有入口）。
+       只新增一个段落，不动原文任何字句/链接；幂等由 class 判断保证。 */
+    var pbody = panel.querySelector('.panel-body');
+    if (pbody && !pbody.querySelector('.cm-about-tools-link')) {
+      var toolsNote = el('p', 'cm-about-tools-link',
+        '除了收录别人的项目，我也写自己的小工具：' +
+        '<a href="/tools/">自研小工具 →</a>（含完整使用教程与开源地址）');
+      toolsNote.style.margin = '18px 0 0';
+      toolsNote.style.fontSize = '13px';
+      toolsNote.style.color = cyber ? '#a8c4d4' : '#45526b';
+      pbody.appendChild(toolsNote);
     }
   }
 

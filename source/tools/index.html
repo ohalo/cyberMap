@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>自研小工具 · cyberMap</title>
+<meta name="description" content="cyberMap 自研小工具列表：局域网远程关机工具 SysControl，附架构说明、完整使用教程与开源仓库地址。">
+<meta name="keywords" content="自研工具,局域网远程关机,SysControl,开源,cyberMap">
+<link rel="canonical" href="https://cybermap.halo26812.eu.org/tools/">
+<link rel="icon" href="/favicon.ico">
+<script>document.cookie.indexOf('night=1')>-1&&document.documentElement.classList.add('night');</script>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --tl-font:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+  --tl-bg:#f4f7fc;--tl-surface:rgba(255,255,255,.88);--tl-solid:#fff;
+  --tl-border:rgba(15,23,42,.09);--tl-border-strong:rgba(15,23,42,.16);
+  --tl-text:#1b2436;--tl-soft:#45526b;--tl-muted:#6b7790;
+  --tl-accent:#4f46e5;--tl-accent-2:#06b6d4;--tl-chip:rgba(79,70,229,.09);
+  --tl-good:#16a34a;--tl-good-bg:rgba(22,163,74,.10);
+  --tl-shadow:0 4px 18px rgba(19,32,62,.055),0 1px 2px rgba(19,32,62,.04);
+  --tl-shadow-hover:0 16px 34px rgba(38,52,92,.13),0 3px 8px rgba(38,52,92,.06);
+  --tl-glow:rgba(56,189,248,.18);
+}
+body.night{
+  --tl-bg:#05070B;--tl-surface:rgba(11,18,27,.82);--tl-solid:#0B121B;
+  --tl-border:#12303F;--tl-border-strong:#1d4a5e;
+  --tl-text:#E6F5FF;--tl-soft:#a8c4d4;--tl-muted:#7d9cae;
+  --tl-accent:#00E5FF;--tl-accent-2:#FF2EA6;--tl-chip:rgba(0,229,255,.08);
+  --tl-good:#39FF88;--tl-good-bg:rgba(57,255,136,.10);
+  --tl-shadow:0 6px 24px rgba(0,0,0,.35);--tl-shadow-hover:0 14px 34px rgba(0,229,255,.10);
+  --tl-glow:rgba(0,229,255,.13);
+}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--tl-bg);color:var(--tl-text);font-family:var(--tl-font);
+  -webkit-font-smoothing:antialiased;line-height:1.65;
+  background-image:radial-gradient(820px 520px at 6% -10%,var(--tl-glow),transparent 60%)}
+a{color:var(--tl-accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.topbar{border-bottom:1px solid var(--tl-border);background:var(--tl-surface);
+  backdrop-filter:blur(12px);position:sticky;top:0;z-index:20}
+.topbar-inner{max-width:1080px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.brand{font-weight:800;font-size:17px;letter-spacing:-.02em;color:var(--tl-text)}
+.brand span{color:var(--tl-accent)}
+.navlinks{display:flex;gap:18px;flex-wrap:wrap;margin-left:auto}
+.navlinks a{color:var(--tl-soft);font-size:13px;font-weight:500}
+.navlinks a.active,.navlinks a:hover{color:var(--tl-accent);text-decoration:none}
+.switch{border:1px solid var(--tl-border-strong);background:var(--tl-solid);color:var(--tl-soft);
+  border-radius:999px;padding:6px 14px;font-size:12px;cursor:pointer;font-family:inherit}
+.switch:hover{border-color:var(--tl-accent);color:var(--tl-accent)}
+main{padding:38px 0 80px}
+.cyber-only{display:none}
+body.night .cyber-only{display:block}
+.eyebrow{font-size:11px;letter-spacing:.18em;color:var(--tl-accent-2);font-weight:700;text-transform:uppercase}
+body.night .eyebrow{font-family:'Chakra Petch',var(--tl-font);letter-spacing:.24em}
+.hero{position:relative;overflow:hidden;border:1px solid var(--tl-border);border-radius:18px;
+  background:var(--tl-surface);padding:34px 34px 30px;box-shadow:var(--tl-shadow)}
+.hero::after{content:"";position:absolute;right:-70px;top:-70px;width:260px;height:260px;border-radius:50%;
+  background:radial-gradient(circle,var(--tl-glow),transparent 70%);pointer-events:none}
+.hero h1{margin:10px 0 6px;font-size:32px;line-height:1.22;letter-spacing:-.02em}
+.hero h1 b{color:var(--tl-accent)}
+.hero p{margin:6px 0 0;color:var(--tl-soft);font-size:14px;max-width:760px}
+.hero .meta{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:6px 13px;border-radius:999px;
+  border:1px solid var(--tl-border-strong);font-size:12px;color:var(--tl-soft);background:var(--tl-solid)}
+.pill.on{border-color:var(--tl-good);background:var(--tl-good-bg);color:var(--tl-good);font-weight:600}
+.sec-head{margin:38px 0 16px;display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.sec-head h2{margin:0;font-size:19px}
+.sec-head span{font-size:12px;color:var(--tl-muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:18px}
+.card{position:relative;display:flex;flex-direction:column;border:1px solid var(--tl-border);border-radius:16px;
+  background:var(--tl-surface);padding:22px;box-shadow:var(--tl-shadow);transition:transform .22s cubic-bezier(.16,1,.3,1),box-shadow .22s,border-color .22s}
+.card:hover{transform:translateY(-3px);box-shadow:var(--tl-shadow-hover);border-color:var(--tl-accent);text-decoration:none}
+.card-top{display:flex;align-items:center;gap:13px}
+.icon{width:46px;height:46px;flex:none;border-radius:12px;display:grid;place-items:center;
+  background:var(--tl-chip);color:var(--tl-accent);border:1px solid var(--tl-border)}
+.icon svg{width:24px;height:24px}
+.card h3{margin:0;font-size:18px;color:var(--tl-text)}
+.card h3 small{display:block;font-size:11px;color:var(--tl-muted);font-weight:500;margin-top:2px;letter-spacing:.06em}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin:16px 0 10px}
+.tag{font-size:11px;padding:3px 9px;border-radius:6px;background:var(--tl-chip);color:var(--tl-accent);border:1px solid var(--tl-border)}
+.card p{margin:0;color:var(--tl-soft);font-size:13.5px;flex:1}
+.feat{display:flex;gap:6px;flex-wrap:wrap;margin:14px 0 18px}
+.feat i{font-style:normal;font-size:11px;color:var(--tl-muted)}
+.feat i::before{content:"·";margin-right:6px;color:var(--tl-accent)}
+.actions{display:flex;gap:9px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:8px 15px;border-radius:9px;
+  font-size:12.5px;font-weight:600;border:1px solid var(--tl-border-strong);color:var(--tl-soft);background:var(--tl-solid)}
+.btn:hover{text-decoration:none;border-color:var(--tl-accent);color:var(--tl-accent)}
+.btn.primary{background:var(--tl-accent);border-color:var(--tl-accent);color:#fff}
+body.night .btn.primary{color:#05070B}
+.btn.primary:hover{filter:brightness(1.1);color:#fff}
+body.night .btn.primary:hover{color:#05070B}
+.soon{border:1px dashed var(--tl-border-strong);border-radius:16px;padding:22px;display:flex;
+  flex-direction:column;align-items:center;justify-content:center;text-align:center;color:var(--tl-muted);min-height:210px}
+.soon b{color:var(--tl-soft);font-size:14px;margin-bottom:4px}
+.soon span{font-size:12px}
+.note{margin-top:30px;border:1px solid var(--tl-border);border-left:3px solid var(--tl-accent-2);
+  border-radius:10px;background:var(--tl-surface);padding:15px 18px;color:var(--tl-soft);font-size:13px}
+.foot{border-top:1px solid var(--tl-border);padding:22px 20px 34px;text-align:center;
+  color:var(--tl-muted);font-size:12px}
+.foot a{color:var(--tl-soft)}
+@font-face{font-family:'Chakra Petch';src:url('/fonts/cm-chakra-600-latin.woff2') format('woff2');font-display:swap}
+@font-face{font-family:'JetBrains Mono';src:url('/fonts/cm-jetbrains-latin.woff2') format('woff2');font-display:swap}
+@font-face{font-family:'Orbitron';src:url('/fonts/cm-orbitron-latin.woff2') format('woff2');font-display:swap}
+body.night .hero h1,body.night .brand,body.night .sec-head h2{font-family:'Orbitron','Chakra Petch',var(--tl-font)}
+body.night .card h3,body.night .pill,body.night .btn{font-family:'Chakra Petch',var(--tl-font)}
+@media(max-width:680px){
+  .hero{padding:26px 20px}.hero h1{font-size:26px}.navlinks{gap:12px;width:100%;margin-left:0}
+  .topbar-inner{padding:10px 16px}
+}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="topbar-inner">
+  <a class="brand" href="/">cyber<span>MAP</span></a>
+  <nav class="navlinks">
+    <a href="/">首页</a><a href="/daily/">每日速递</a><a href="/rank/">插件榜</a>
+    <a href="/data/">开放数据</a><a class="active" href="/tools/">自研工具</a><a href="/about/">关于</a>
+  </nav>
+  <button class="switch" type="button" onclick="t()" title="切换经典 / 赛博主题">切换主题</button>
+</div></header>
+
+<main class="wrap">
+  <div class="cyber-only eyebrow" style="margin:18px 0 6px">// SECTION 06 —— SELF-BUILT TOOLS</div>
+  <section class="hero">
+    <div class="eyebrow">Self-built Utilities</div>
+    <h1>自研<b>小工具</b></h1>
+    <p>这里收录我自己写、自己用的小工具。每个都附带设计思路、完整使用步骤和开源仓库地址——不藏着掖着，能跑就开源。</p>
+    <div class="meta">
+      <span class="pill on">● 开源可查</span>
+      <span class="pill">局域网优先</span>
+      <span class="pill">零服务费</span>
+      <span class="pill">1 个工具</span>
+    </div>
+  </section>
+
+  <div class="sec-head"><h2>全部工具</h2><span>按最近更新排序</span></div>
+  <div class="grid">
+    <div class="card">
+      <div class="card-top">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="11" rx="2"/><path d="M8 19h8M12 15v4"/><path d="M9 9l2 2 4-4"/>
+          </svg>
+        </div>
+        <h3><a href="/tools/syscontrol/" style="color:inherit">SysControl</a><small>REMOTE SHUTDOWN · v1.0.0</small></h3>
+      </div>
+      <div class="tags"><span class="tag">局域网</span><span class="tag">远程关机</span><span class="tag">Python + Kotlin</span><span class="tag">开源</span></div>
+      <p>手机一键关掉局域网里的 Windows / macOS / 飞牛 NAS。Flask Agent 常驻被控端，Android App 发带 Token 的请求，纯局域网、免费、可控。</p>
+      <div class="feat"><i>Token 鉴权</i><i>mDNS 自动发现</i><i>一键全关</i><i>先应答后关机</i><i>防爆破限速</i></div>
+      <div class="actions">
+        <a class="btn primary" href="/tools/syscontrol/">查看完整教程 →</a>
+        <a class="btn" href="https://github.com/ohalo/sysControl" target="_blank" rel="noopener">GitHub 仓库 ↗</a>
+      </div>
+    </div>
+
+    <div class="soon"><b>更多工具持续沉淀中</b><span>有新工具会先在这里列表，再补详情页</span></div>
+  </div>
+
+  <div class="note">所有工具均由个人维护，代码公开可审计。涉及局域网权限、系统命令的工具请务必先看安全说明再部署。</div>
+</main>
+
+<div class="foot">
+  <a href="/">cyberMap</a> · <a href="/daily/">每日速递</a> · <a href="/data/">开放数据</a> · <a href="/about/">关于本站</a>
+  <br>https://cybermap.halo26812.eu.org/tools/
+</div>
+<script>
+function t(){var n=document.body.classList.toggle('night');document.cookie='night='+(n?1:0)+';path=/;max-age=31536000';location.reload();}
+if(document.documentElement.classList.contains('night'))document.body.classList.add('night');
+</script>
+</body></html>

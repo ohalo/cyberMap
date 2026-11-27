@@ -38,6 +38,7 @@ skip_render:
   - 'daily/**'
   - 'data/**'
   - 'weekly/**'
+  - 'tools/**'
   - 'robots.txt'
   - 'sitemap.xml'
 
