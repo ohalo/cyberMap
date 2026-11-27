@@ -256,6 +256,28 @@ def render_opml(payload: dict) -> str:
     return '<?xml version="1.0" encoding="UTF-8"?>\n' + ET.tostring(root, encoding="unicode") + "\n"
 
 
+# 赛博态全站顶栏：与首页 injectDesignNav() 同一品牌 + 六个入口
+CM_HEX = ('<svg viewBox="0 0 32 32" aria-hidden="true">'
+          '<path d="M16 2 28 9v14l-12 7L4 23V9z" fill="none" stroke="currentColor" stroke-width="2"/>'
+          '<path d="M16 8 23 12v8l-7 4-7-4v-8z" fill="currentColor" opacity=".25"/></svg>')
+
+
+def unified_nav() -> tuple[str, str]:
+    links = [('/', '首页'), ('/daily/', '每日速递'), ('/rank/', '插件榜'),
+             ('/data/', '开放数据'), ('/tools/', '自研工具'), ('/about/', '关于')]
+    parts = []
+    for href, label in links:
+        cls = ' class="is-active"' if href == '/data/' else ''
+        parts.append(f'<a href="{href}"{cls}>{label}</a>')
+    brand = ('<a class="brand cm-u-brand cm-u-only" href="/" aria-label="cyberMap 首页">'
+             + CM_HEX + '<b><i>cyber</i> MAP</b></a>')
+    nav = '<nav class="cm-u-links cm-u-only" aria-label="全站导航">' + ''.join(parts) + '</nav>'
+    return brand, nav
+
+
+UNIFIED_BRAND, UNIFIED_LINKS = unified_nav()
+
+
 PAGE_CSS = r"""
 *,*::before,*::after{box-sizing:border-box}
 :root{
@@ -335,7 +357,8 @@ body.night .dy-data-design-only{display:flex!important}
 body.night::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:9999;
  background:repeating-linear-gradient(0deg,rgba(0,0,0,.12) 0 1px,transparent 1px 3px);opacity:.42}
 body.night .top{top:28px;background:rgba(11,18,27,.9);border-bottom:1px solid #12303f}
-body.night .top .brand{font-family:"CM Orbitron",sans-serif;font-weight:900;letter-spacing:.04em;color:var(--accent)}
+body.night .top .brand,body.night .top .spacer{display:none}
+body.night .top .brand.cm-u-brand{display:inline-flex!important}
 body.night .btn{border-radius:2px;border-color:#12303f;background:rgba(11,18,27,.86);
  font-family:"CM Mono","JetBrains Mono",monospace;font-size:11px;letter-spacing:.05em}
 body.night .btn:hover{color:var(--accent2);border-color:var(--accent2)}
@@ -411,15 +434,19 @@ def render_html(payload: dict) -> str:
 <link rel="icon" href="/favicon.ico">
 <style>@font-face{{font-family:"CM Orbitron";src:url("/fonts/cm-orbitron-latin.woff2") format("woff2");font-style:normal;font-weight:400 900;font-display:swap}}@font-face{{font-family:"CM Chakra";src:url("/fonts/cm-chakra-600-latin.woff2") format("woff2");font-style:normal;font-weight:600;font-display:swap}}@font-face{{font-family:"CM Mono";src:url("/fonts/cm-jetbrains-latin.woff2") format("woff2");font-style:normal;font-weight:400 700;font-display:swap}}</style>
 <script>try{{if(document.cookie.split('; ').indexOf('night=1')>=0)document.documentElement.classList.add('night')}}catch(e){{}}</script>
-<style>{PAGE_CSS}</style>
+<style>{PAGE_CSS}</style><link rel="stylesheet" href="/css/cm-unified-header.css">
 </head>
 <body>
-<div class="dy-data-design-only" style="position:sticky;top:0;z-index:19;display:none;align-items:center;gap:12px;height:28px;padding:0 24px;background:#07121c;border-bottom:1px solid #12303f;font-family:'CM Mono','JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;color:#6b7f99" id="dyDataHud"><b style="color:#00e5ff">SECTION 05 // OPEN DATA LAYER</b><span style="margin-left:auto;font-family:'CM Orbitron',sans-serif;font-weight:900;color:#00e5ff">{e(str(c['sites']))} NODES · {e(str(c['categories']))} SECTORS</span></div>
-<header class="top">
+<div class="dy-data-design-only cm-u-hud cm-u-only" id="dyDataHud"><b>SECTION 05 // OPEN DATA LAYER</b><span class="cm-u-hud-right">{e(str(c['sites']))} NODES · {e(str(c['categories']))} SECTORS</span></div>
+<header class="top cm-u-nav">
   <div class="brand">cyberMap / data</div>
+  {UNIFIED_BRAND}
+  {UNIFIED_LINKS}
   <div class="spacer"></div>
+  <span class="cm-u-util">
   <a class="btn" href="/">返回首页</a>
   <button class="btn" id="themeBtn" type="button">切换主题</button>
+  </span>
 </header>
 <div class="wrap">
   <section class="hero">

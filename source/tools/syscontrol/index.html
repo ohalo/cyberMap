@@ -165,16 +165,25 @@ body.night .toc b,body.night h3{font-family:'Chakra Petch',var(--sc-font)}
   .hero{padding:26px 20px}.hero h1{font-size:27px}
   section.panel{padding:20px 18px}.navlinks{gap:12px}
 }
+/* 赛博态顶栏交给 cm-unified-header.css：经典结构原样保留 */
+body.night .topbar-inner{display:contents}
+body.night .brand.sc-classic-brand{display:none}
+body.night .navlinks{margin-left:0}
+/* HUD 已显示 SECTION 06，隐藏正文里重复的旧 eyebrow */
+body.night .cyber-only.eyebrow{display:none}
 </style>
+<link rel="stylesheet" href="/css/cm-unified-header.css">
 </head>
 <body>
-<header class="topbar"><div class="topbar-inner">
-  <a class="brand" href="/">cyber<span>MAP</span></a>
-  <nav class="navlinks">
+<div class="cm-u-hud cm-u-only"><b>SECTION 06 // TOOL DOSSIER</b><span class="cm-u-hud-right">/TOOLS · SYSCONTROL</span></div>
+<header class="topbar cm-u-nav"><div class="topbar-inner">
+  <a class="brand sc-classic-brand" href="/">cyber<span>MAP</span></a>
+  <a class="cm-u-brand cm-u-only" href="/" aria-label="cyberMap 首页"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 28 9v14l-12 7L4 23V9z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 8 23 12v8l-7 4-7-4v-8z" fill="currentColor" opacity=".25"/></svg><b><i>cyber</i> MAP</b></a>
+  <nav class="navlinks cm-u-links">
     <a href="/">首页</a><a href="/daily/">每日速递</a><a href="/rank/">插件榜</a>
-    <a href="/data/">开放数据</a><a href="/tools/">自研工具</a><a href="/about/">关于</a>
+    <a href="/data/">开放数据</a><a class="is-active" href="/tools/">自研工具</a><a href="/about/">关于</a>
   </nav>
-  <button class="switch" type="button" onclick="t()" title="切换经典 / 赛博主题">切换主题</button>
+  <span class="cm-u-util"><button class="switch" type="button" onclick="t()" title="切换经典 / 赛博主题">切换主题</button></span>
 </div></header>
 
 <main class="wrap">

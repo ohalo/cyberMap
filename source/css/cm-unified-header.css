@@ -1,0 +1,92 @@
+/* ==========================================================================
+   cyberMap · 赛博模式全局顶栏统一组件（SECTION 05 设计语言）
+   --------------------------------------------------------------------------
+   基准 = 首页 injectDesignNav() 的 cyber MAP + 六个全站入口。
+   只作用于 body.night；经典态零改动。各独立页引入本文件后，把原有顶栏
+   容器加上 .cm-u-nav、原 HUD 加上 .cm-u-hud，再放入 .cm-u-brand /
+   .cm-u-links / .cm-u-util 三段结构即可获得与首页一致的菜单栏。
+   ========================================================================== */
+@font-face{font-family:"CM Orbitron";src:url("/fonts/cm-orbitron-latin.woff2") format("woff2");font-weight:400 900;font-display:swap}
+@font-face{font-family:"CM Chakra";src:url("/fonts/cm-chakra-600-latin.woff2") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"CM Mono";src:url("/fonts/cm-jetbrains-latin.woff2") format("woff2");font-weight:400 700;font-display:swap}
+
+/* 仅赛博态显示的新增节点（经典态彻底隐藏） */
+.cm-u-only{display:none!important}
+body.night .cm-u-only{display:flex!important}
+/* 功能按钮外层包装：经典态透明，赛博态才成为右侧 util 组 */
+.cm-u-util{display:contents}
+
+/* ---- 28px HUD 细条：各页 SECTION 编号不同，但排版与 token 一致 ---- */
+body.night .cm-u-hud{
+  position:sticky;top:0;z-index:90;
+  display:flex!important;align-items:center;gap:12px;height:28px;
+  padding:0 clamp(16px,4vw,42px);
+  background:#07121c;border-bottom:1px solid #12303f;
+  font-family:"CM Mono",monospace;font-size:10px;letter-spacing:.1em;
+  color:#6b7f99;white-space:nowrap;overflow:hidden;
+}
+body.night .cm-u-hud::before{
+  content:"";width:6px;height:6px;flex:none;border-radius:50%;
+  background:#39ff88;box-shadow:0 0 8px #39ff88;
+}
+body.night .cm-u-hud b{color:#00e5ff;font-weight:700}
+body.night .cm-u-hud .cm-u-hud-right{margin-left:auto;overflow:hidden;text-overflow:ellipsis}
+body.night .cm-u-hud .cm-u-hud-clock{font-family:"CM Orbitron",sans-serif;color:#00e5ff;font-weight:900}
+
+/* ---- 52px 主导航：品牌 + 六个全站入口 + 功能/切换器 ---- */
+body.night .cm-u-nav{
+  position:sticky;top:28px;z-index:89;
+  display:flex!important;align-items:center;gap:32px;height:52px;
+  padding:0 34px;background:rgba(11,18,27,.92);
+  border-bottom:1px solid #12303f;
+  -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+}
+body.night .cm-u-brand{
+  display:inline-flex;align-items:center;gap:8px;flex:none;
+  color:#00e5ff;text-decoration:none!important;
+}
+body.night .cm-u-brand svg{width:24px;height:24px;flex:none}
+body.night .cm-u-brand b{
+  font-family:"CM Orbitron",sans-serif;font-size:17px;font-weight:900;
+  letter-spacing:.04em;color:#e6f5ff;white-space:nowrap;
+}
+body.night .cm-u-brand b i{font-style:normal;color:#00e5ff}
+body.night .cm-u-links{
+  display:flex;align-items:center;gap:28px;flex:0 1 auto;min-width:0;
+}
+body.night .cm-u-links a{
+  position:relative;display:inline-block;flex:none;
+  font-family:"CM Chakra","Chakra Petch",sans-serif;font-size:12px;font-weight:600;
+  color:#8ba0bd;text-decoration:none!important;white-space:nowrap;
+  transition:color .2s cubic-bezier(.16,1,.3,1);
+}
+body.night .cm-u-links a:hover,
+body.night .cm-u-links a.is-active{color:#00e5ff}
+body.night .cm-u-links a.is-active::after{
+  content:"";position:absolute;left:0;right:0;bottom:-17px;height:2px;
+  background:#00e5ff;box-shadow:0 0 10px #00e5ff;
+}
+body.night .cm-u-util{
+  display:flex;align-items:center;gap:8px;margin-left:auto;flex:none;
+}
+body.night .cm-u-util a,
+body.night .cm-u-util button{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:5px 10px;border:1px solid #12303f;border-radius:2px;
+  background:rgba(11,18,27,.86);color:#8ba0bd;cursor:pointer;
+  font-family:"CM Mono",monospace;font-size:10.5px;letter-spacing:.04em;
+  text-decoration:none!important;line-height:1.4;
+  transition:color .2s cubic-bezier(.16,1,.3,1),border-color .2s;
+}
+body.night .cm-u-util a:hover,
+body.night .cm-u-util button:hover{color:#ff2ea6;border-color:#ff2ea6}
+body.night .cm-u-util svg{width:14px;height:14px;flex:none;fill:currentColor}
+body.night .cm-u-util .is-active{color:#00e5ff;border-color:#00e5ff}
+
+/* 窄屏：菜单可横向滚动，切换器始终可见 */
+@media (max-width:991px){
+  body.night .cm-u-nav{gap:16px;padding:0 14px;overflow-x:auto}
+  body.night .cm-u-links{gap:14px}
+  body.night .cm-u-links a{font-size:11px}
+  body.night .cm-u-util{position:sticky;right:0;background:rgba(11,18,27,.96)}
+}

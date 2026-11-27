@@ -62,6 +62,28 @@ OUT_REL = Path("source/weekly")
 WEEKS_TO_SHOW = 8          # 页面滚动展示最近 8 周
 TOP_ACTIVE = 10            # 活跃项目 Top10
 
+# 赛博态全站顶栏：与首页 injectDesignNav() 同一品牌 + 六个入口
+CM_HEX = ('<svg viewBox="0 0 32 32" aria-hidden="true">'
+          '<path d="M16 2 28 9v14l-12 7L4 23V9z" fill="none" stroke="currentColor" stroke-width="2"/>'
+          '<path d="M16 8 23 12v8l-7 4-7-4v-8z" fill="currentColor" opacity=".25"/></svg>')
+
+
+def unified_nav() -> tuple[str, str]:
+    links = [('/', '首页'), ('/daily/', '每日速递'), ('/rank/', '插件榜'),
+             ('/data/', '开放数据'), ('/tools/', '自研工具'), ('/about/', '关于')]
+    parts = []
+    for href, label in links:
+        # 周报属于每日速递系列，赛博态高亮「每日速递」
+        cls = ' class="is-active"' if href == '/daily/' else ''
+        parts.append(f'<a href="{href}"{cls}>{label}</a>')
+    brand = ('<a class="cm-u-brand cm-u-only" href="/" aria-label="cyberMap 首页">'
+             + CM_HEX + '<b><i>cyber</i> MAP</b></a>')
+    nav = '<nav class="cm-u-links cm-u-only" aria-label="全站导航">' + ''.join(parts) + '</nav>'
+    return brand, nav
+
+
+UNIFIED_BRAND, UNIFIED_LINKS = unified_nav()
+
 
 # ---------------------------------------------------------------- 内联样式
 CSS = r"""
@@ -141,6 +163,10 @@ a{color:var(--wk-accent);text-decoration:none}a:hover{text-decoration:underline}
 .empty{color:var(--wk-muted);font-size:13px;padding:8px 0}
 .foot{text-align:center;color:var(--wk-muted);font-size:11.5px;margin-top:28px}
 .switch{cursor:pointer;user-select:none}
+/* 赛博态启用 cm-unified-header.css 的全站顶栏，隐藏 hero 内重复的旧导航 */
+body.night .hero .nav{display:none}
+body.night .hero{border-radius:3px}
+body.night .hero .eyebrow{font-family:"CM Mono",monospace}
 @media(max-width:820px){.grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:24px}}
 """
 
@@ -261,7 +287,13 @@ def render_html(weeks, verify: dict, updates: dict, site_url: str, today: date) 
 <meta name="description" content="cyberMap 每周 AI 站点收录摘要：本周新增、验证漏斗、最活跃项目与方向分布。">
 <link rel="alternate" type="application/rss+xml" title="cyberMap 周报" href="/weekly/feed.xml">
 <script>document.cookie.indexOf('night=1')>-1&&document.documentElement.classList.add('night');</script>
-<style>{CSS}</style></head><body>
+<style>{CSS}</style><link rel="stylesheet" href="/css/cm-unified-header.css"></head><body>
+<div class="cm-u-hud cm-u-only"><b>SECTION 03B // WEEKLY DIGEST</b><span class="cm-u-hud-right">ISO WEEK · AUTO AGGREGATED · {esc(site_url)}</span></div>
+<header class="cm-u-nav cm-u-only">
+{UNIFIED_BRAND}
+{UNIFIED_LINKS}
+<span class="cm-u-util"><a href="/weekly/feed.xml">RSS</a><button type="button" onclick="t()">切换主题</button></span>
+</header>
 <div class="wrap">
 <section class="hero">
   <div class="eyebrow">CYBERMAP / WEEKLY DIGEST</div>

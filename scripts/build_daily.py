@@ -598,6 +598,10 @@ body.night .dy-top{
   border-bottom:1px solid rgba(0,229,255,.22);
   background:rgba(7,14,23,.88);
 }
+/* 赛博态顶栏交给 cm-unified-header.css：隐藏 daily 专属的旧栏内元素 */
+body.night .dy-top .dy-back,
+body.night .dy-top .dy-brand,
+body.night .dy-top .dy-top-spacer{display:none}
 body.night .dy-hero::before{
   content:"SECTION 03 // DAILY INTEL FEED   ·   VERIFIED DAILY DISCOVERIES";
   display:block;margin-bottom:14px;padding-bottom:7px;
@@ -930,6 +934,27 @@ ICON_BACK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-w
 ICON_RSS = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9h-3a6 6 0 0 0-6-6v-3zm0-6a15 15 0 0 1 15 15h-3A12 12 0 0 0 4 8V5zm1.8 12.2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>'
 ICON_MOON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.3 3a9 9 0 1 0 8.7 11.4A7.2 7.2 0 0 1 12.3 3z"/></svg>'
 ICON_SEARCH = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.8l-.3-.3a6.5 6.5 0 1 0-.7.7l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/></svg>'
+
+# 赛博态全站顶栏：与首页 injectDesignNav() 同一品牌 + 六个入口
+CM_HEX = ('<svg viewBox="0 0 32 32" aria-hidden="true">'
+          '<path d="M16 2 28 9v14l-12 7L4 23V9z" fill="none" stroke="currentColor" stroke-width="2"/>'
+          '<path d="M16 8 23 12v8l-7 4-7-4v-8z" fill="currentColor" opacity=".25"/></svg>')
+
+
+def unified_nav(active: str) -> tuple[str, str]:
+    links = [('/', '首页'), ('/daily/', '每日速递'), ('/rank/', '插件榜'),
+             ('/data/', '开放数据'), ('/tools/', '自研工具'), ('/about/', '关于')]
+    parts = []
+    for href, label in links:
+        cls = ' class="is-active"' if href.rstrip('/') == active.rstrip('/') else ''
+        parts.append(f'<a href="{href}"{cls}>{label}</a>')
+    brand = ('<a class="cm-u-brand cm-u-only" href="/" aria-label="cyberMap 首页">'
+             + CM_HEX + '<b><i>cyber</i> MAP</b></a>')
+    nav = '<nav class="cm-u-links cm-u-only" aria-label="全站导航">' + ''.join(parts) + '</nav>'
+    return brand, nav
+
+
+UNIFIED_BRAND, UNIFIED_LINKS = unified_nav('/daily/')
 
 
 # ---------------------------------------------------------------- 数据读取
@@ -1627,20 +1652,23 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
         '<link rel="alternate" type="application/rss+xml" title="cyberMap 每日 AI 速递" href="/daily/feed.xml">',
         alternates,
         f"<style>{CSS}</style>",
+        '<link rel="stylesheet" href="/css/cm-unified-header.css">',
         "</head>",
         "<body>",
-        '<div class="dy-hudbar dy-design-only">'
-        '<span class="dy-hudbar-dot" aria-hidden="true"></span>'
-        '<span class="dy-hudbar-title">SECTION 03 // DAILY INTEL FEED</span>'
+        '<div class="dy-hudbar dy-design-only cm-u-hud">'
+        '<b class="dy-hudbar-title">SECTION 03 // DAILY INTEL FEED</b>'
         f'<span class="dy-hudbar-right">DAYS {len(days)} · MIN 3 / DAY · {esc(latest)} · '
         '<span class="dy-hudbar-clock">--:--:--</span></span></div>',
-        '<header class="dy-top">',
+        '<header class="dy-top cm-u-nav">',
         f'<a class="dy-back" href="/" title="返回 cyberMap 导航首页">{ICON_BACK}<span>cyberMap 导航</span></a>',
+        UNIFIED_BRAND,
+        UNIFIED_LINKS,
         '<span class="dy-brand">每日 AI 速递</span>',
         '<span class="dy-top-spacer"></span>',
+        '<span class="cm-u-util">',
         f'<a class="dy-top-link" href="/daily/feed.xml" title="RSS 2.0 订阅源">{ICON_RSS}<span>RSS 订阅</span></a>',
         f'<button class="dy-theme" id="dy-theme" type="button" title="切换外观：经典模式 / 赛博模式" aria-label="切换外观：经典模式或赛博模式">{ICON_MOON}</button>',
-        "</header>",
+        "</span></header>",
         '<main class="dy-wrap">',
         '<section class="dy-hero">',
         '<span class="dy-kicker">每日更新 · 逐条核验</span>',
