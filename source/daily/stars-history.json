@@ -1,0 +1,1958 @@
+{
+  "generated_at": "2026-11-27T11:17:52+08:00",
+  "note": "只归档采集器真实观测到的 stars（changes 中的 star 点与最近一次探测值）；同一天去重取最后观测值；单点项目仅建基线不进涨星榜；不伪造任何历史。",
+  "ranking": [
+    "github.com/alibaba/open-code-review",
+    "github.com/zhulinsen/daily_stock_analysis",
+    "github.com/nvidia/auto-ontology",
+    "github.com/dream-num/univer",
+    "github.com/cloudflare/security-audit-skill",
+    "github.com/ag-ui-protocol/ag-ui",
+    "github.com/chromedevtools/chrome-devtools-mcp",
+    "github.com/tencent/loopforge",
+    "github.com/thu-maic/openmaic",
+    "github.com/beenuar/aisoc",
+    "github.com/sybil-solutions/inference-optimisation-skill",
+    "github.com/deepseek-ai/dsh-superagent-prototype"
+  ],
+  "repos": {
+    "github.com/0xplaygrounds/rig": {
+      "category": "dailyAI_oss",
+      "days": 1,
+      "delta": 0,
+      "latest": 9254,
+      "name": "0xPlaygrounds/rig",
+      "points": [
+        {
+          "date": "2026-11-25",
+          "stars": 9254
+        }
+      ],
+      "span": [
+        "2026-11-25",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/0xPlaygrounds/rig"
+    },
+    "github.com/aaif-goose/goose": {
+      "category": "dailyAI_oss",
+      "days": 3,
+      "delta": 76,
+      "latest": 56957,
+      "name": "aaif-goose/goose",
+      "points": [
+        {
+          "date": "2026-11-23",
+          "stars": 56881
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 56910
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 56957
+        }
+      ],
+      "span": [
+        "2026-11-23",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/aaif-goose/goose"
+    },
+    "github.com/activepieces/activepieces": {
+      "category": "dailyAI_oss",
+      "days": 3,
+      "delta": 28,
+      "latest": 25710,
+      "name": "Activepieces/activepieces",
+      "points": [
+        {
+          "date": "2026-11-23",
+          "stars": 25682
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 25695
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 25710
+        }
+      ],
+      "span": [
+        "2026-11-23",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/Activepieces/activepieces"
+    },
+    "github.com/ag-ui-protocol/ag-ui": {
+      "category": "dailyAI_oss",
+      "days": 3,
+      "delta": 365,
+      "latest": 21576,
+      "name": "ag-ui-protocol/ag-ui",
+      "points": [
+        {
+          "date": "2026-11-23",
+          "stars": 21211
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 21393
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 21576
+        }
+      ],
+      "span": [
+        "2026-11-23",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/ag-ui-protocol/ag-ui"
+    },
+    "github.com/algorithmicsuperintelligence/optillm": {
+      "category": "aiFrameworks",
+      "days": 1,
+      "delta": 0,
+      "latest": 4345,
+      "name": "algorithmicsuperintelligence/optillm",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 4345
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/algorithmicsuperintelligence/optillm"
+    },
+    "github.com/alibaba/open-code-review": {
+      "category": "dailyAI_oss",
+      "days": 3,
+      "delta": 628,
+      "latest": 56061,
+      "name": "alibaba/open-code-review",
+      "points": [
+        {
+          "date": "2026-11-23",
+          "stars": 55433
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 55717
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 56061
+        }
+      ],
+      "span": [
+        "2026-11-23",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/alibaba/open-code-review"
+    },
+    "github.com/alibaba/zvec": {
+      "category": "dailyAI_oss",
+      "days": 3,
+      "delta": 6,
+      "latest": 16284,
+      "name": "alibaba/zvec",
+      "points": [
+        {
+          "date": "2026-11-23",
+          "stars": 16278
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 16281
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 16284
+        }
+      ],
+      "span": [
+        "2026-11-23",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/alibaba/zvec"
+    },
+    "github.com/beenuar/aisoc": {
+      "category": "githubGPT",
+      "days": 3,
+      "delta": 282,
+      "latest": 8089,
+      "name": "beenuar/AiSOC",
+      "points": [
+        {
+          "date": "2026-11-25",
+          "stars": 7807
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 7937
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 8089
+        }
+      ],
+      "span": [
+        "2026-11-25",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/beenuar/AiSOC"
+    },
+    "github.com/browser-use/video-use": {
+      "category": "dailyAI_oss",
+      "days": 2,
+      "delta": 40,
+      "latest": 31534,
+      "name": "browser-use/video-use",
+      "points": [
+        {
+          "date": "2026-11-24",
+          "stars": 31494
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 31534
+        }
+      ],
+      "span": [
+        "2026-11-24",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/browser-use/video-use"
+    },
+    "github.com/browseros-ai/browseros": {
+      "category": "dailyAI_oss",
+      "days": 2,
+      "delta": 6,
+      "latest": 14471,
+      "name": "browseros-ai/BrowserOS",
+      "points": [
+        {
+          "date": "2026-11-24",
+          "stars": 14465
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 14471
+        }
+      ],
+      "span": [
+        "2026-11-24",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/browseros-ai/BrowserOS"
+    },
+    "github.com/bytedance/deer-flow": {
+      "category": "dailyAI_oss",
+      "days": 1,
+      "delta": 0,
+      "latest": 85708,
+      "name": "bytedance/deer-flow",
+      "points": [
+        {
+          "date": "2026-11-24",
+          "stars": 85708
+        }
+      ],
+      "span": [
+        "2026-11-24",
+        "2026-11-24"
+      ],
+      "url": "https://github.com/bytedance/deer-flow"
+    },
+    "github.com/cactus-compute/cactus": {
+      "category": "aiFrameworks",
+      "days": 1,
+      "delta": 0,
+      "latest": 14920,
+      "name": "cactus-compute/cactus",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 14920
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/cactus-compute/cactus"
+    },
+    "github.com/cherryhq/cherry-studio": {
+      "category": "githubGPT",
+      "days": 1,
+      "delta": 0,
+      "latest": 53911,
+      "name": "CherryHQ/cherry-studio",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 53911
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/CherryHQ/cherry-studio"
+    },
+    "github.com/chesterra/cccc": {
+      "category": "dailyAI_oss",
+      "days": 1,
+      "delta": 0,
+      "latest": 1345,
+      "name": "ChesterRa/cccc",
+      "points": [
+        {
+          "date": "2026-11-25",
+          "stars": 1345
+        }
+      ],
+      "span": [
+        "2026-11-25",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/ChesterRa/cccc"
+    },
+    "github.com/chromedevtools/chrome-devtools-mcp": {
+      "category": "dailyAI_oss",
+      "days": 3,
+      "delta": 364,
+      "latest": 59222,
+      "name": "ChromeDevTools/chrome-devtools-mcp",
+      "points": [
+        {
+          "date": "2026-11-23",
+          "stars": 58858
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 59041
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 59222
+        }
+      ],
+      "span": [
+        "2026-11-23",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+    },
+    "github.com/cloudflare/kitesurf": {
+      "category": "githubGPT",
+      "days": 1,
+      "delta": 0,
+      "latest": 2643,
+      "name": "cloudflare/kitesurf",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 2643
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/cloudflare/kitesurf"
+    },
+    "github.com/cloudflare/security-audit-skill": {
+      "category": "dailyAI_oss",
+      "days": 2,
+      "delta": 410,
+      "latest": 77988,
+      "name": "cloudflare/security-audit-skill",
+      "points": [
+        {
+          "date": "2026-11-24",
+          "stars": 77578
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 77988
+        }
+      ],
+      "span": [
+        "2026-11-24",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/cloudflare/security-audit-skill"
+    },
+    "github.com/conorbronsdon/avoid-ai-writing": {
+      "category": "dailyAI_oss",
+      "days": 1,
+      "delta": 0,
+      "latest": 6265,
+      "name": "conorbronsdon/avoid-ai-writing",
+      "points": [
+        {
+          "date": "2026-11-25",
+          "stars": 6265
+        }
+      ],
+      "span": [
+        "2026-11-25",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/conorbronsdon/avoid-ai-writing"
+    },
+    "github.com/copilotkit/copilotkit": {
+      "category": "dailyAI_oss",
+      "days": 1,
+      "delta": 0,
+      "latest": 38919,
+      "name": "CopilotKit/CopilotKit",
+      "points": [
+        {
+          "date": "2026-11-24",
+          "stars": 38919
+        }
+      ],
+      "span": [
+        "2026-11-24",
+        "2026-11-24"
+      ],
+      "url": "https://github.com/CopilotKit/CopilotKit"
+    },
+    "github.com/deepseek-ai/dsh-superagent-prototype": {
+      "category": "dailyAI_oss",
+      "days": 3,
+      "delta": 237,
+      "latest": 24481,
+      "name": "deepseek-ai/dsh-superagent-prototype",
+      "points": [
+        {
+          "date": "2026-11-23",
+          "stars": 24244
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 24376
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 24481
+        }
+      ],
+      "span": [
+        "2026-11-23",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype"
+    },
+    "github.com/didi/helixharness": {
+      "category": "dailyAI_oss",
+      "days": 1,
+      "delta": 0,
+      "latest": 461,
+      "name": "didi/helixharness",
+      "points": [
+        {
+          "date": "2026-11-25",
+          "stars": 461
+        }
+      ],
+      "span": [
+        "2026-11-25",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/didi/helixharness"
+    },
+    "github.com/docling-project/docling": {
+      "category": "dailyAI_oss",
+      "days": 2,
+      "delta": 51,
+      "latest": 70991,
+      "name": "docling-project/docling",
+      "points": [
+        {
+          "date": "2026-11-24",
+          "stars": 70940
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 70991
+        }
+      ],
+      "span": [
+        "2026-11-24",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/docling-project/docling"
+    },
+    "github.com/dograh-hq/dograh": {
+      "category": "dailyAI_oss",
+      "days": 2,
+      "delta": 7,
+      "latest": 6258,
+      "name": "dograh-hq/dograh",
+      "points": [
+        {
+          "date": "2026-11-24",
+          "stars": 6251
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 6258
+        }
+      ],
+      "span": [
+        "2026-11-24",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/dograh-hq/dograh"
+    },
+    "github.com/dream-num/univer": {
+      "category": "dailyAI_oss",
+      "days": 3,
+      "delta": 411,
+      "latest": 31699,
+      "name": "dream-num/univer",
+      "points": [
+        {
+          "date": "2026-11-23",
+          "stars": 31288
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 31475
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 31699
+        }
+      ],
+      "span": [
+        "2026-11-23",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/dream-num/univer"
+    },
+    "github.com/duixcom/duix-avatar": {
+      "category": "dailyAI_oss",
+      "days": 2,
+      "delta": 8,
+      "latest": 16438,
+      "name": "duixcom/Duix-Avatar",
+      "points": [
+        {
+          "date": "2026-11-24",
+          "stars": 16430
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 16438
+        }
+      ],
+      "span": [
+        "2026-11-24",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/duixcom/Duix-Avatar"
+    },
+    "github.com/edge0-ai/edge0": {
+      "category": "aiFrameworks",
+      "days": 1,
+      "delta": 0,
+      "latest": 10696,
+      "name": "Edge0-AI/Edge0",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 10696
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/Edge0-AI/Edge0"
+    },
+    "github.com/eduwxyz/tucano": {
+      "category": "dailyAI_oss",
+      "days": 1,
+      "delta": 0,
+      "latest": 460,
+      "name": "eduwxyz/tucano",
+      "points": [
+        {
+          "date": "2026-11-25",
+          "stars": 460
+        }
+      ],
+      "span": [
+        "2026-11-25",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/eduwxyz/tucano"
+    },
+    "github.com/eliasbiondo/antirion": {
+      "category": "aiFrameworks",
+      "days": 3,
+      "delta": 2,
+      "latest": 432,
+      "name": "eliasbiondo/antirion",
+      "points": [
+        {
+          "date": "2026-11-23",
+          "stars": 430
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 432
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 432
+        }
+      ],
+      "span": [
+        "2026-11-23",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/eliasbiondo/antirion"
+    },
+    "github.com/facebookresearch/segment-anything": {
+      "category": "githubGPT",
+      "days": 1,
+      "delta": 0,
+      "latest": 55183,
+      "name": "Segment Anything Model(SAM)",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 55183
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/facebookresearch/segment-anything/"
+    },
+    "github.com/fareedkhan-dev/kimi-k3-in-c": {
+      "category": "aiFrameworks",
+      "days": 1,
+      "delta": 0,
+      "latest": 12716,
+      "name": "FareedKhan-dev/kimi-k3-in-c",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 12716
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c"
+    },
+    "github.com/firecrawl/firecrawl": {
+      "category": "githubGPT",
+      "days": 1,
+      "delta": 0,
+      "latest": 211032,
+      "name": "firecrawl/firecrawl",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 211032
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/firecrawl/firecrawl"
+    },
+    "github.com/flashml-org/freetoken": {
+      "category": "aiFrameworks",
+      "days": 1,
+      "delta": 0,
+      "latest": 17802,
+      "name": "flashml-org/FreeToken",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 17802
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/flashml-org/FreeToken"
+    },
+    "github.com/get-bb/bb": {
+      "category": "dailyAI_oss",
+      "days": 1,
+      "delta": 0,
+      "latest": 5989,
+      "name": "get-bb/bb",
+      "points": [
+        {
+          "date": "2026-11-25",
+          "stars": 5989
+        }
+      ],
+      "span": [
+        "2026-11-25",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/get-bb/bb"
+    },
+    "github.com/ggml-org/llama.cpp": {
+      "category": "aiFrameworks",
+      "days": 1,
+      "delta": 0,
+      "latest": 136420,
+      "name": "ggml-org/llama.cpp",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 136420
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp"
+    },
+    "github.com/github/spec-kit": {
+      "category": "githubGPT",
+      "days": 1,
+      "delta": 0,
+      "latest": 151728,
+      "name": "github/spec-kit",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 151728
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/github/spec-kit"
+    },
+    "github.com/google-gemini/gemini-cli": {
+      "category": "dailyAI_oss",
+      "days": 2,
+      "delta": 40,
+      "latest": 109068,
+      "name": "google-gemini/gemini-cli",
+      "points": [
+        {
+          "date": "2026-11-24",
+          "stars": 109028
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 109068
+        }
+      ],
+      "span": [
+        "2026-11-24",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/google-gemini/gemini-cli"
+    },
+    "github.com/gradio-app/gradio": {
+      "category": "githubGPT",
+      "days": 1,
+      "delta": 0,
+      "latest": 44163,
+      "name": "gradio-app/gradio",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 44163
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/gradio-app/gradio"
+    },
+    "github.com/harry0703/moneyprinterturbo": {
+      "category": "dailyAI_oss",
+      "days": 1,
+      "delta": 0,
+      "latest": 145101,
+      "name": "harry0703/MoneyPrinterTurbo",
+      "points": [
+        {
+          "date": "2026-11-23",
+          "stars": 145101
+        }
+      ],
+      "span": [
+        "2026-11-23",
+        "2026-11-23"
+      ],
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo"
+    },
+    "github.com/headroomlabs-ai/headroom": {
+      "category": "dailyAI_oss",
+      "days": 2,
+      "delta": 107,
+      "latest": 80781,
+      "name": "headroomlabs-ai/headroom",
+      "points": [
+        {
+          "date": "2026-11-24",
+          "stars": 80674
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 80781
+        }
+      ],
+      "span": [
+        "2026-11-24",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/headroomlabs-ai/headroom"
+    },
+    "github.com/heygen-com/hyperframes": {
+      "category": "dailyAI_oss",
+      "days": 1,
+      "delta": 0,
+      "latest": 88313,
+      "name": "heygen-com/hyperframes",
+      "points": [
+        {
+          "date": "2026-11-23",
+          "stars": 88313
+        }
+      ],
+      "span": [
+        "2026-11-23",
+        "2026-11-23"
+      ],
+      "url": "https://github.com/heygen-com/hyperframes"
+    },
+    "github.com/homeassistant-ai/ha-mcp": {
+      "category": "githubGPT",
+      "days": 2,
+      "delta": 13,
+      "latest": 8141,
+      "name": "homeassistant-ai/ha-mcp",
+      "points": [
+        {
+          "date": "2026-11-26",
+          "stars": 8128
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 8141
+        }
+      ],
+      "span": [
+        "2026-11-26",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/homeassistant-ai/ha-mcp"
+    },
+    "github.com/huawei-csl/macaq": {
+      "category": "aiFrameworks",
+      "days": 1,
+      "delta": 0,
+      "latest": 399,
+      "name": "huawei-csl/MACaQ",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 399
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/huawei-csl/MACaQ"
+    },
+    "github.com/huggingface/transformers": {
+      "category": "aiFrameworks",
+      "days": 1,
+      "delta": 0,
+      "latest": 169383,
+      "name": "huggingface/transformers",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 169383
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/huggingface/transformers"
+    },
+    "github.com/hugohe3/ppt-master": {
+      "category": "dailyAI_oss",
+      "days": 1,
+      "delta": 0,
+      "latest": 79600,
+      "name": "hugohe3/ppt-master",
+      "points": [
+        {
+          "date": "2026-11-24",
+          "stars": 79600
+        }
+      ],
+      "span": [
+        "2026-11-24",
+        "2026-11-24"
+      ],
+      "url": "https://github.com/hugohe3/ppt-master"
+    },
+    "github.com/iflytek/skillhub": {
+      "category": "dailyAI_oss",
+      "days": 1,
+      "delta": 0,
+      "latest": 5483,
+      "name": "iflytek/skillhub",
+      "points": [
+        {
+          "date": "2026-11-24",
+          "stars": 5483
+        }
+      ],
+      "span": [
+        "2026-11-24",
+        "2026-11-24"
+      ],
+      "url": "https://github.com/iflytek/skillhub"
+    },
+    "github.com/infiniflow/ragflow": {
+      "category": "dailyAI_oss",
+      "days": 2,
+      "delta": 56,
+      "latest": 94663,
+      "name": "infiniflow/ragflow",
+      "points": [
+        {
+          "date": "2026-11-24",
+          "stars": 94607
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 94663
+        }
+      ],
+      "span": [
+        "2026-11-24",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/infiniflow/ragflow"
+    },
+    "github.com/interactive-active-ai/nexttransformer": {
+      "category": "aiFrameworks",
+      "days": 1,
+      "delta": 0,
+      "latest": 505,
+      "name": "Interactive-Active-AI/NextTransformer",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 505
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/Interactive-Active-AI/NextTransformer"
+    },
+    "github.com/jesdga95/basalt": {
+      "category": "aiFrameworks",
+      "days": 1,
+      "delta": 0,
+      "latest": 2195,
+      "name": "jesdga95/basalt",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 2195
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/jesdga95/basalt"
+    },
+    "github.com/jingyaogong/minimind": {
+      "category": "aiFrameworks",
+      "days": 1,
+      "delta": 0,
+      "latest": 71756,
+      "name": "jingyaogong/minimind",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 71756
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/jingyaogong/minimind"
+    },
+    "github.com/josssphzhou/poki": {
+      "category": "githubGPT",
+      "days": 3,
+      "delta": 230,
+      "latest": 2148,
+      "name": "JosssphZhou/poki",
+      "points": [
+        {
+          "date": "2026-11-25",
+          "stars": 1918
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 2086
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 2148
+        }
+      ],
+      "span": [
+        "2026-11-25",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/JosssphZhou/poki"
+    },
+    "github.com/jundot/omlx": {
+      "category": "aiFrameworks",
+      "days": 1,
+      "delta": 0,
+      "latest": 24019,
+      "name": "jundot/omlx",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 24019
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/jundot/omlx"
+    },
+    "github.com/juneo-lab/decision-forge": {
+      "category": "githubGPT",
+      "days": 1,
+      "delta": 0,
+      "latest": 352,
+      "name": "Juneo-Lab/decision-forge",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 352
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/Juneo-Lab/decision-forge"
+    },
+    "github.com/justvugg/colibri": {
+      "category": "aiFrameworks",
+      "days": 1,
+      "delta": 0,
+      "latest": 53605,
+      "name": "JustVugg/colibri",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 53605
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/JustVugg/colibri"
+    },
+    "github.com/karakeep-app/karakeep": {
+      "category": "githubGPT",
+      "days": 4,
+      "delta": 73,
+      "latest": 30874,
+      "name": "karakeep-app/karakeep",
+      "points": [
+        {
+          "date": "2026-11-24",
+          "stars": 30801
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 30832
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 30853
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 30874
+        }
+      ],
+      "span": [
+        "2026-11-24",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/karakeep-app/karakeep"
+    },
+    "github.com/karpathy/nanochat": {
+      "category": "githubGPT",
+      "days": 1,
+      "delta": 0,
+      "latest": 60926,
+      "name": "karpathy/nanochat",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 60926
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/karpathy/nanochat"
+    },
+    "github.com/langflow-ai/langflow": {
+      "category": "dailyAI_oss",
+      "days": 1,
+      "delta": 0,
+      "latest": 156854,
+      "name": "langflow-ai/langflow",
+      "points": [
+        {
+          "date": "2026-11-23",
+          "stars": 156854
+        }
+      ],
+      "span": [
+        "2026-11-23",
+        "2026-11-23"
+      ],
+      "url": "https://github.com/langflow-ai/langflow"
+    },
+    "github.com/mastra-ai/mastra": {
+      "category": "dailyAI_oss",
+      "days": 2,
+      "delta": 26,
+      "latest": 29797,
+      "name": "mastra-ai/mastra",
+      "points": [
+        {
+          "date": "2026-11-24",
+          "stars": 29771
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 29797
+        }
+      ],
+      "span": [
+        "2026-11-24",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/mastra-ai/mastra"
+    },
+    "github.com/max-sixty/worktrunk": {
+      "category": "githubGPT",
+      "days": 3,
+      "delta": 41,
+      "latest": 12780,
+      "name": "max-sixty/worktrunk",
+      "points": [
+        {
+          "date": "2026-11-25",
+          "stars": 12739
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 12748
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 12780
+        }
+      ],
+      "span": [
+        "2026-11-25",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/max-sixty/worktrunk"
+    },
+    "github.com/mem0ai/mem0": {
+      "category": "dailyAI_oss",
+      "days": 1,
+      "delta": 0,
+      "latest": 69391,
+      "name": "mem0ai/mem0",
+      "points": [
+        {
+          "date": "2026-11-24",
+          "stars": 69391
+        }
+      ],
+      "span": [
+        "2026-11-24",
+        "2026-11-24"
+      ],
+      "url": "https://github.com/mem0ai/mem0"
+    },
+    "github.com/modelflare-ai/anymodelbot": {
+      "category": "githubGPT",
+      "days": 4,
+      "delta": 8,
+      "latest": 5002,
+      "name": "modelflare-ai/AnyModelBot",
+      "points": [
+        {
+          "date": "2026-11-24",
+          "stars": 4994
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 5005
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 5009
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 5002
+        }
+      ],
+      "span": [
+        "2026-11-24",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/modelflare-ai/AnyModelBot"
+    },
+    "github.com/mvanhorn/cli-printing-press": {
+      "category": "dailyAI_oss",
+      "days": 1,
+      "delta": 0,
+      "latest": 5049,
+      "name": "mvanhorn/cli-printing-press",
+      "points": [
+        {
+          "date": "2026-11-25",
+          "stars": 5049
+        }
+      ],
+      "span": [
+        "2026-11-25",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/mvanhorn/cli-printing-press"
+    },
+    "github.com/mw00/project-maya": {
+      "category": "aiFrameworks",
+      "days": 1,
+      "delta": 0,
+      "latest": 3406,
+      "name": "mw00/project-maya",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 3406
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/mw00/project-maya"
+    },
+    "github.com/nanocodexyz/nanocode": {
+      "category": "dailyAI_oss",
+      "days": 2,
+      "delta": 13,
+      "latest": 834,
+      "name": "nanocodexyz/nanocode",
+      "points": [
+        {
+          "date": "2026-11-24",
+          "stars": 821
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 834
+        }
+      ],
+      "span": [
+        "2026-11-24",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/nanocodexyz/nanocode"
+    },
+    "github.com/nv-tlabs/lyra": {
+      "category": "githubGPT",
+      "days": 1,
+      "delta": 0,
+      "latest": 2898,
+      "name": "nv-tlabs/lyra",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 2898
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/nv-tlabs/Lyra"
+    },
+    "github.com/nvidia-nemo/switchyard": {
+      "category": "aiFrameworks",
+      "days": 3,
+      "delta": 50,
+      "latest": 3727,
+      "name": "NVIDIA-NeMo/Switchyard",
+      "points": [
+        {
+          "date": "2026-11-25",
+          "stars": 3677
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 3685
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 3727
+        }
+      ],
+      "span": [
+        "2026-11-25",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/NVIDIA-NeMo/Switchyard"
+    },
+    "github.com/nvidia/auto-ontology": {
+      "category": "githubGPT",
+      "days": 3,
+      "delta": 423,
+      "latest": 15099,
+      "name": "NVIDIA/auto-ontology",
+      "points": [
+        {
+          "date": "2026-11-24",
+          "stars": 14676
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 14940
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 15099
+        }
+      ],
+      "span": [
+        "2026-11-24",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/NVIDIA/auto-ontology"
+    },
+    "github.com/nvidia/skillevaluator": {
+      "category": "dailyAI_oss",
+      "days": 3,
+      "delta": 107,
+      "latest": 4502,
+      "name": "NVIDIA/SkillEvaluator",
+      "points": [
+        {
+          "date": "2026-11-23",
+          "stars": 4395
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 4456
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 4502
+        }
+      ],
+      "span": [
+        "2026-11-23",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/NVIDIA/SkillEvaluator"
+    },
+    "github.com/ollama/ollama": {
+      "category": "aiFrameworks",
+      "days": 1,
+      "delta": 0,
+      "latest": 188255,
+      "name": "ollama/ollama",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 188255
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/ollama/ollama"
+    },
+    "github.com/onyx-dot-app/onyx": {
+      "category": "dailyAI_oss",
+      "days": 3,
+      "delta": 26,
+      "latest": 33530,
+      "name": "onyx-dot-app/onyx",
+      "points": [
+        {
+          "date": "2026-11-23",
+          "stars": 33504
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 33517
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 33530
+        }
+      ],
+      "span": [
+        "2026-11-23",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/onyx-dot-app/onyx"
+    },
+    "github.com/open-compass/opencompass": {
+      "category": "githubGPT",
+      "days": 1,
+      "delta": 0,
+      "latest": 7646,
+      "name": "open-compass/opencompass",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 7646
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/open-compass/opencompass"
+    },
+    "github.com/open-webui/open-webui": {
+      "category": "githubGPT",
+      "days": 1,
+      "delta": 0,
+      "latest": 159650,
+      "name": "open-webui/open-webui",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 159650
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/open-webui/open-webui"
+    },
+    "github.com/orkas-ai/orkas": {
+      "category": "dailyAI_oss",
+      "days": 2,
+      "delta": 24,
+      "latest": 9585,
+      "name": "Orkas-AI/Orkas",
+      "points": [
+        {
+          "date": "2026-11-24",
+          "stars": 9561
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 9585
+        }
+      ],
+      "span": [
+        "2026-11-24",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/Orkas-AI/Orkas"
+    },
+    "github.com/pydantic/pydantic-ai": {
+      "category": "dailyAI_oss",
+      "days": 1,
+      "delta": 0,
+      "latest": 21370,
+      "name": "pydantic/pydantic-ai",
+      "points": [
+        {
+          "date": "2026-11-25",
+          "stars": 21370
+        }
+      ],
+      "span": [
+        "2026-11-25",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/pydantic/pydantic-ai"
+    },
+    "github.com/raullenchai/rapid-mlx": {
+      "category": "aiFrameworks",
+      "days": 1,
+      "delta": 0,
+      "latest": 4188,
+      "name": "raullenchai/Rapid-MLX",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 4188
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/raullenchai/Rapid-MLX"
+    },
+    "github.com/sgl-project/sglang": {
+      "category": "aiFrameworks",
+      "days": 1,
+      "delta": 0,
+      "latest": 39110,
+      "name": "sgl-project/sglang",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 39110
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/sgl-project/sglang"
+    },
+    "github.com/simplexai-labs/linger": {
+      "category": "dailyAI_oss",
+      "days": 1,
+      "delta": 0,
+      "latest": 4384,
+      "name": "simplexai-labs/linger",
+      "points": [
+        {
+          "date": "2026-11-25",
+          "stars": 4384
+        }
+      ],
+      "span": [
+        "2026-11-25",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/simplexai-labs/linger"
+    },
+    "github.com/skyzh/tiny-llm": {
+      "category": "githubGPT",
+      "days": 1,
+      "delta": 0,
+      "latest": 5814,
+      "name": "skyzh/tiny-llm",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 5814
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/skyzh/tiny-llm"
+    },
+    "github.com/streamlit/streamlit": {
+      "category": "githubGPT",
+      "days": 1,
+      "delta": 0,
+      "latest": 46517,
+      "name": "streamlit/streamlit",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 46517
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/streamlit/streamlit"
+    },
+    "github.com/sybil-solutions/inference-optimisation-skill": {
+      "category": "aiFrameworks",
+      "days": 3,
+      "delta": 256,
+      "latest": 2827,
+      "name": "sybil-solutions/inference-optimisation-skill",
+      "points": [
+        {
+          "date": "2026-11-25",
+          "stars": 2571
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 2708
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 2827
+        }
+      ],
+      "span": [
+        "2026-11-25",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/sybil-solutions/inference-optimisation-skill"
+    },
+    "github.com/tauricresearch/tradingagents": {
+      "category": "githubGPT",
+      "days": 1,
+      "delta": 0,
+      "latest": 123856,
+      "name": "TauricResearch/TradingAgents",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 123856
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/TauricResearch/TradingAgents"
+    },
+    "github.com/tencent/loopforge": {
+      "category": "dailyAI_oss",
+      "days": 3,
+      "delta": 315,
+      "latest": 6003,
+      "name": "Tencent/LoopForge",
+      "points": [
+        {
+          "date": "2026-11-23",
+          "stars": 5688
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 5886
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 6003
+        }
+      ],
+      "span": [
+        "2026-11-23",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/Tencent/LoopForge"
+    },
+    "github.com/tencent/weknora": {
+      "category": "dailyAI_oss",
+      "days": 2,
+      "delta": 57,
+      "latest": 38147,
+      "name": "Tencent/WeKnora",
+      "points": [
+        {
+          "date": "2026-11-24",
+          "stars": 38090
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 38147
+        }
+      ],
+      "span": [
+        "2026-11-24",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/Tencent/WeKnora"
+    },
+    "github.com/the-pr-agent/pr-agent": {
+      "category": "dailyAI_oss",
+      "days": 1,
+      "delta": 0,
+      "latest": 16572,
+      "name": "The-PR-Agent/pr-agent",
+      "points": [
+        {
+          "date": "2026-11-23",
+          "stars": 16572
+        }
+      ],
+      "span": [
+        "2026-11-23",
+        "2026-11-23"
+      ],
+      "url": "https://github.com/The-PR-Agent/pr-agent"
+    },
+    "github.com/thu-maic/openmaic": {
+      "category": "githubGPT",
+      "days": 3,
+      "delta": 301,
+      "latest": 44687,
+      "name": "THU-MAIC/OpenMAIC",
+      "points": [
+        {
+          "date": "2026-11-25",
+          "stars": 44386
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 44447
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 44687
+        }
+      ],
+      "span": [
+        "2026-11-25",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/THU-MAIC/OpenMAIC"
+    },
+    "github.com/trpc-group/trpc-agent-go": {
+      "category": "dailyAI_oss",
+      "days": 2,
+      "delta": 1,
+      "latest": 1944,
+      "name": "trpc-group/trpc-agent-go",
+      "points": [
+        {
+          "date": "2026-11-24",
+          "stars": 1943
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 1944
+        }
+      ],
+      "span": [
+        "2026-11-24",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/trpc-group/trpc-agent-go"
+    },
+    "github.com/unslothai/unsloth": {
+      "category": "aiFrameworks",
+      "days": 1,
+      "delta": 0,
+      "latest": 80318,
+      "name": "unslothai/unsloth",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 80318
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/unslothai/unsloth"
+    },
+    "github.com/vercel-labs/agent-browser": {
+      "category": "dailyAI_oss",
+      "days": 1,
+      "delta": 0,
+      "latest": 53437,
+      "name": "vercel-labs/agent-browser",
+      "points": [
+        {
+          "date": "2026-11-23",
+          "stars": 53437
+        }
+      ],
+      "span": [
+        "2026-11-23",
+        "2026-11-23"
+      ],
+      "url": "https://github.com/vercel-labs/agent-browser"
+    },
+    "github.com/vercel-labs/agent-desktop": {
+      "category": "dailyAI_oss",
+      "days": 1,
+      "delta": 0,
+      "latest": 26168,
+      "name": "vercel-labs/agent-desktop",
+      "points": [
+        {
+          "date": "2026-11-23",
+          "stars": 26168
+        }
+      ],
+      "span": [
+        "2026-11-23",
+        "2026-11-23"
+      ],
+      "url": "https://github.com/vercel-labs/agent-desktop"
+    },
+    "github.com/vllm-project/vllm": {
+      "category": "aiFrameworks",
+      "days": 1,
+      "delta": 0,
+      "latest": 97655,
+      "name": "vllm-project/vllm",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 97655
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/vllm-project/vllm"
+    },
+    "github.com/withcoral/coral": {
+      "category": "dailyAI_oss",
+      "days": 1,
+      "delta": 0,
+      "latest": 5030,
+      "name": "withcoral/coral",
+      "points": [
+        {
+          "date": "2026-11-25",
+          "stars": 5030
+        }
+      ],
+      "span": [
+        "2026-11-25",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/withcoral/coral"
+    },
+    "github.com/yetone/openai-translator": {
+      "category": "githubGPT",
+      "days": 1,
+      "delta": 0,
+      "latest": 25080,
+      "name": "yetone/openai-translator",
+      "points": [
+        {
+          "date": "2026-11-27",
+          "stars": 25080
+        }
+      ],
+      "span": [
+        "2026-11-27",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/yetone/openai-translator"
+    },
+    "github.com/yjid/kensaku": {
+      "category": "dailyAI_oss",
+      "days": 3,
+      "delta": 13,
+      "latest": 1917,
+      "name": "yjid/kensaku",
+      "points": [
+        {
+          "date": "2026-11-23",
+          "stars": 1904
+        },
+        {
+          "date": "2026-11-24",
+          "stars": 1909
+        },
+        {
+          "date": "2026-11-25",
+          "stars": 1917
+        }
+      ],
+      "span": [
+        "2026-11-23",
+        "2026-11-25"
+      ],
+      "url": "https://github.com/yjid/kensaku"
+    },
+    "github.com/zhulinsen/daily_stock_analysis": {
+      "category": "githubGPT",
+      "days": 3,
+      "delta": 512,
+      "latest": 74861,
+      "name": "ZhuLinsen/daily_stock_analysis",
+      "points": [
+        {
+          "date": "2026-11-25",
+          "stars": 74349
+        },
+        {
+          "date": "2026-11-26",
+          "stars": 74572
+        },
+        {
+          "date": "2026-11-27",
+          "stars": 74861
+        }
+      ],
+      "span": [
+        "2026-11-25",
+        "2026-11-27"
+      ],
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis"
+    }
+  },
+  "schema": 1,
+  "site": "https://cybermap.halo26812.eu.org",
+  "source": "source/daily/updates.json :: repos[*].changes(kind=star) + last_checked/stars",
+  "summary": {
+    "baseline_only": 55,
+    "observed_dates": 5,
+    "repos": 93,
+    "total_points": 156,
+    "window_days": 30,
+    "with_trend": 38
+  },
+  "warnings": []
+}

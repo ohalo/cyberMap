@@ -57,6 +57,7 @@ OUT_REL = Path("source/daily")
 VERIFY_REL = Path("source/daily/verify.json")
 HEALTH_REL = Path("source/daily/health.json")
 UPDATES_REL = Path("source/daily/updates.json")
+PULSE_REL = Path("source/daily/stars-history.json")
 
 # 分类 -> (中文标签, 短名)。顺序决定同一天内卡片的展示顺序。
 # 覆盖全部 20 个分类：每日收录按性质路由进常设分类，
@@ -761,6 +762,43 @@ body.night .dy-morehint{
   body.night .dy-hero::before,body.night .dy-kicker,body.night .dy-hero h1,
   body.night .dy-hero p,body.night .dy-stats{animation:none!important}
 }
+/* 项目脉搏时间机器：经典态涨星榜 + 迷你曲线 */
+.dy-pulse{margin:14px 0 4px;padding:14px 18px;border-radius:14px;
+  border:1px solid var(--dy-border);background:var(--dy-surface);box-shadow:var(--dy-shadow)}
+.dy-pulse-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.dy-pulse-title{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:750;color:var(--dy-text)}
+.dy-pulse-sub{font-size:11px;color:var(--dy-muted)}
+.dy-pulse-time{margin-left:auto;font-size:11px;color:var(--dy-muted)}
+.dy-pulse-list{margin-top:11px;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px}
+.dy-pulse-row{display:flex;align-items:center;gap:9px;padding:8px 10px;
+  border:1px solid var(--dy-border);border-radius:10px;background:var(--dy-solid)}
+.dy-pulse-row:hover{border-color:var(--dy-accent);box-shadow:var(--dy-shadow)}
+.dy-pulse-rank{font:700 11px var(--dy-font);color:var(--dy-muted);min-width:18px}
+.dy-pulse-name{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  font-size:12px;font-weight:650;color:var(--dy-soft)}
+.dy-pulse-spark{width:78px;height:24px;flex:0 0 78px;overflow:visible}
+.dy-pulse-spark-line{fill:none;stroke:var(--dy-accent-2);stroke-width:1.6;
+  stroke-linecap:round;stroke-linejoin:round}
+.dy-pulse-spark-base{stroke:var(--dy-border-strong);stroke-width:1.4}
+.dy-pulse-spark-dot{fill:var(--dy-good)}
+.dy-pulse-delta{font:750 11px var(--dy-font);color:var(--dy-good);white-space:nowrap}
+.dy-pulse-note{margin-top:10px;font-size:11px;color:var(--dy-muted);line-height:1.6}
+/* 赛博态：放在右侧栏第 5 行，沿用 05 token / CM Mono / NEON-C */
+body.night .dy-pulse{grid-column:2;grid-row:5;margin:0;padding:14px 16px;border-radius:3px}
+body.night .dy-pulse::before{display:block;margin-bottom:9px;padding-bottom:7px;
+  border-bottom:1px solid var(--dy-border);font-family:"CM Mono",monospace;
+  font-size:10px;letter-spacing:.1em;color:#00e5ff;content:"项目脉搏 / STAR PULSE"}
+body.night .dy-pulse-head{display:none}
+body.night .dy-pulse-list{display:flex;flex-direction:column;gap:6px;margin-top:0}
+body.night .dy-pulse-row:nth-child(n+7){display:none}
+body.night .dy-pulse-row{border-radius:2px;padding:7px 9px;background:transparent}
+body.night .dy-pulse-rank{font-family:"CM Orbitron",monospace;color:#ff2ea6}
+body.night .dy-pulse-name{font-family:"CM Mono",monospace;font-size:10.5px;color:var(--dy-text)}
+body.night .dy-pulse-spark-line{stroke:#00e5ff}
+body.night .dy-pulse-spark-dot{fill:#39ff88}
+body.night .dy-pulse-delta{font-family:"CM Orbitron",monospace;color:#39ff88}
+body.night .dy-pulse-note{font-family:"CM Mono",monospace;font-size:10px}
+@media (max-width:991px){body.night .dy-pulse{margin-top:14px}}
 """
 
 JS = r"""
@@ -970,6 +1008,19 @@ def load_updates(path: Path) -> tuple[dict, list[str]]:
         return data, []
     except (OSError, json.JSONDecodeError, ValueError) as exc:
         return {}, [f"updates.json 读取失败，已跳过上游变更雷达：{exc}"]
+
+
+def load_pulse(path: Path) -> tuple[dict, list[str]]:
+    """读取项目脉搏（stars 历史快照）。文件缺失/损坏时优雅降级为不渲染该模块。"""
+    if not path.is_file():
+        return {}, []
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(data, dict) or not isinstance(data.get("repos"), dict):
+            raise ValueError("stars-history.json 结构不完整")
+        return data, []
+    except (OSError, json.JSONDecodeError, ValueError) as exc:
+        return {}, [f"stars-history.json 读取失败，已跳过项目脉搏模块：{exc}"]
 
 
 def load_entries(data_file: Path) -> tuple[list[dict], list[str]]:
@@ -1349,6 +1400,84 @@ def changes_html(updates: dict) -> str:
     )
 
 
+def pulse_spark_svg(points: list[dict]) -> str:
+    """迷你 SVG 星标曲线：只画真实观测点，单点时画基线圆点不画趋势线。"""
+    width, height = 78, 24
+    values = []
+    for point in points or []:
+        try:
+            values.append(int(point["stars"]))
+        except (KeyError, TypeError, ValueError):
+            continue
+    if not values:
+        return ""
+    if len(values) < 2:
+        return ('<svg class="dy-pulse-spark" viewBox="0 0 78 24" aria-hidden="true">'
+                '<line class="dy-pulse-spark-base" x1="2" y1="18" x2="76" y2="18"/>'
+                '<circle class="dy-pulse-spark-dot" cx="8" cy="18" r="2.5"/></svg>')
+    lo, hi = min(values), max(values)
+    span = hi - lo or 1
+    coords = []
+    for idx, value in enumerate(values):
+        x = 2.0 + idx * (width - 4.0) / (len(values) - 1)
+        y = height - 3.0 - (value - lo) / span * (height - 6.0)
+        coords.append(f"{x:.1f},{y:.1f}")
+    last_x, last_y = coords[-1].split(",")
+    points_attr = " ".join(coords)
+    return (
+        '<svg class="dy-pulse-spark" viewBox="0 0 78 24" aria-hidden="true" preserveAspectRatio="none">'
+        f'<polyline class="dy-pulse-spark-line" points="{points_attr}"/>'
+        f'<circle class="dy-pulse-spark-dot" cx="{last_x}" cy="{last_y}" r="2.4"/></svg>'
+    )
+
+
+def pulse_html(pulse: dict) -> str:
+    """项目脉搏时间机器：近 30 天涨星榜 + 每个项目迷你 SVG 曲线。
+
+    数据完全来自 stars-history.json（由 updates.json 的真实观测点归档），
+    零新增探测、不伪造历史。冷启动只有单点基线时不渲染空榜单。
+    """
+    if not pulse:
+        return ""
+    repos = pulse.get("repos") or {}
+    ranking = [key for key in (pulse.get("ranking") or []) if key in repos]
+    if not ranking:
+        return ""
+    summary = pulse.get("summary") or {}
+    generated = (pulse.get("generated_at") or "").replace("T", " ")[:16]
+    rows = []
+    for idx, key in enumerate(ranking[:9], 1):
+        repo = repos[key]
+        name = repo.get("name") or key
+        url = repo.get("url") or ""
+        delta = int(repo.get("delta") or 0)
+        days = int(repo.get("days") or 0)
+        span = repo.get("span") or []
+        meta = f"{days} 个观测点 · {' → '.join(span)}"
+        rows.append(
+            f'<a class="dy-pulse-row" href="{esc(url)}" target="_blank" rel="noopener noreferrer" '
+            f'title="{esc(name)}：近 30 天 +{delta} 星，{esc(meta)}">'
+            f'<span class="dy-pulse-rank">{idx:02d}</span>'
+            f'<span class="dy-pulse-name">{esc(name)}</span>'
+            f'{pulse_spark_svg(repo.get("points"))}'
+            f'<span class="dy-pulse-delta">+{delta}★</span></a>'
+        )
+    return (
+        '<section class="dy-pulse" aria-label="项目脉搏时间机器">'
+        '<div class="dy-pulse-head">'
+        '<span class="dy-pulse-title"><i class="dy-watch-dot"></i>项目脉搏 · 近 30 天涨星</span>'
+        f'<span class="dy-pulse-sub">{summary.get("with_trend", 0)} 个项目有趋势 · '
+        f'{summary.get("baseline_only", 0)} 个仅建基线</span>'
+        f'<span class="dy-pulse-time">更新 {esc(generated)}</span>'
+        '</div>'
+        f'<div class="dy-pulse-list">{"".join(rows)}</div>'
+        '<div class="dy-pulse-note">曲线与涨星数只来自采集器真实观测到的星标点，同一天去重取最后观测值；'
+        f'当前共 {summary.get("observed_dates", 0)} 个观测日，数据随每日采集自然积累，不伪造历史。'
+        '完整序列：<a href="/daily/stars-history.json" style="color:var(--dy-accent);font-weight:650">stars-history.json</a></div>'
+        '</section>'
+    )
+
+
 def knowledgebar_html(entries: list[dict]) -> str:
     """AI 发现知识库工具条：搜索框 + 方向标签云，筛选下方时间轴。
 
@@ -1461,10 +1590,11 @@ def card_html(item: dict, evidence: dict, health: dict | None = None,
 
 def build_html(entries: list[dict], days, undated, site_url: str, generated: datetime,
                verify: dict | None = None, health: dict | None = None,
-               updates: dict | None = None) -> str:
+               updates: dict | None = None, pulse: dict | None = None) -> str:
     verify = verify or {}
     health = health or {}
     updates = updates or {}
+    pulse = pulse or {}
     evidence = verify.get("evidence") or {}
     health_sites = health.get("sites") or {}
     dated_count = sum(len(v) for _, v in days)
@@ -1517,7 +1647,8 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
         "<h1>每日 AI 速递</h1>",
         "<p>每天从公开来源核验后至少收录 3 个 AI 站点（合格候选多则多收），按性质归入首页最合适的分类（开源项目 / 工具官网 / 模型框架 / 提示词与教程 / 技术博客等）。"
         "这里按收录日期倒序回看，每条都附可核验的证据；下方知识库可按方向标签筛选或站内搜索，"
-        "「项目动态速递」则汇总已收录项目的最近提交与涨星，让沉淀下来的站点随时可查、更新可见。</p>",
+        "「项目动态速递」汇总已收录项目的最近提交与涨星，「项目脉搏」用真实观测点画出近 30 天星标走势，"
+        "让沉淀下来的站点随时可查、更新可见。</p>",
         '<div class="dy-stats">',
         f'<div class="dy-stat"><span>累计收录</span><strong>{len(entries)}</strong></div>',
         f'<div class="dy-stat"><span>每日期数</span><strong>{len(days)}</strong></div>',
@@ -1529,6 +1660,7 @@ def build_html(entries: list[dict], days, undated, site_url: str, generated: dat
         healthbar_html(health),
         watchbar_html(updates),
         changes_html(updates),
+        pulse_html(pulse),
         '<div class="dy-rssbar">',
         '<div>订阅每天的新收录 · 全部类型地址 <code>' + esc(f"{root}/daily/feed.xml") +
         '</code>，也可按类型单独订阅（统一为 RSS 2.0）。</div>',
@@ -1751,6 +1883,8 @@ def main() -> None:
     health_map = health.get("sites") or {}
     updates, update_warnings = load_updates(repo / UPDATES_REL)
     warnings += update_warnings
+    pulse, pulse_warnings = load_pulse(repo / PULSE_REL)
+    warnings += pulse_warnings
     days, undated = group_by_day(entries)
     generated = datetime.now(CST)
     summary = {
@@ -1771,6 +1905,9 @@ def main() -> None:
         "watch_recent": len(updates.get("recent") or []),
         "watch_bar": bool((updates.get("summary") or {}).get("total_repos")),
         "changes_feed": bool(updates.get("recent")),
+        "pulse_repos": len(pulse.get("repos") or {}),
+        "pulse_ranking": len(pulse.get("ranking") or []),
+        "pulse_module": bool(pulse.get("ranking")),
         "fresh_badges": sum(
             1 for e in entries
             if freshness_label(
@@ -1784,7 +1921,8 @@ def main() -> None:
         print(json.dumps({**summary, "check_only": True}, ensure_ascii=False, indent=2))
         return
 
-    html_text = build_html(entries, days, undated, site_url, generated, verify, health, updates)
+    html_text = build_html(entries, days, undated, site_url, generated,
+                           verify, health, updates, pulse)
     # 混合全量流 + 四份分类流（按性质大类聚合多个分类），共用同一套过滤/渲染逻辑
     feeds = {"feed.xml": build_feed(days, site_url, generated)}
     for filename, (label, cats) in CATEGORY_FEEDS.items():
@@ -1832,6 +1970,12 @@ def main() -> None:
     # 有已跟踪仓库时，卡片新鲜度徽章必须渲染出来（防止读到数据但没用上）
     if (updates.get("repos") or {}) and 'class="dy-fresh ' not in html_text:
         fail("index.html 卡片缺少站点新鲜度徽章，未写入")
+    # 有涨星榜数据时，项目脉搏模块与迷你曲线必须渲染（防止读到数据但没用上）
+    if pulse.get("ranking"):
+        if 'class="dy-pulse"' not in html_text or 'class="dy-pulse-spark' not in html_text:
+            fail("index.html 缺少项目脉搏模块或迷你曲线，未写入")
+        if 'href="/daily/stars-history.json"' not in html_text:
+            fail("index.html 缺少 stars-history.json 数据入口，未写入")
 
     index_path = out_dir / "index.html"
     try:
