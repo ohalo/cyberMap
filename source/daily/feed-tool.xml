@@ -6,8 +6,19 @@
     <description>cyberMap 每日核验收录的 AI 工具官网，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Fri, 27 Nov 2026 11:25:19 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 10:46:47 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 工具官网 · 2026-11-28（4 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-28</link>
+      <guid isPermaLink="false">cybermap-daily-工具官网-2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 +0800</pubDate>
+      <description>mdiri-ai/SoduWork［编程与开发］多智能体开发工作台：以请求单与验收标准为核心，不同 AI 模型分别执行与交叉审查，人类最终签核。 — https://github.com/mdiri-ai/SoduWork
+pierridotite/mobile-agent-testers［编程与开发］用编码智能体在 iOS 模拟器与安卓仿真器上并行测试移动应用，自动发现流程、翻译与无障碍缺陷。 — https://github.com/pierridotite/mobile-agent-testers
+iflytek/astron-rpa［智能体与自动化］科大讯飞开源的 Agent-ready RPA 套件，把遗留系统的 GUI 操作封装成可供智能体调用的自动化动作。 — https://github.com/iflytek/astron-rpa
+HKUDS/CLI-Anything［智能体与自动化］让所有软件智能体原生的工具集，把现有 CLI 软件包装成智能体可直接调用的接口，配套 CLI-Hub 目录。 — https://github.com/HKUDS/CLI-Anything</description>
+      <category>工具官网</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 工具官网 · 2026-11-27（4 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-27</link>

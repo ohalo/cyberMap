@@ -369,6 +369,30 @@
         }
       ],
       "review": 1
+    },
+    "2026-11-28": {
+      "added": 10,
+      "checked": 16,
+      "fail": 2,
+      "pass": 13,
+      "rejected": [
+        {
+          "reason": "GitHub stars < 200，需人工判断价值",
+          "url": "https://github.com/replit/amuse",
+          "verdict": "review"
+        },
+        {
+          "reason": "页面与仓库元数据中未检出 AI 相关性关键词",
+          "url": "https://github.com/modelcontextprotocol/registry",
+          "verdict": "fail"
+        },
+        {
+          "reason": "页面与仓库元数据中未检出 AI 相关性关键词",
+          "url": "https://github.com/cursor/plugins",
+          "verdict": "fail"
+        }
+      ],
+      "review": 1
     }
   },
   "evidence": {
@@ -572,6 +596,37 @@
       "pushed_at": "2026-11-21T01:41:53Z",
       "stars": 1853,
       "title": "GitHub - agentes-chat/agentes-chat: Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex,",
+      "verdict": "pass"
+    },
+    "github.com/agnesai-labs/agnes-harness": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "agent"
+      ],
+      "checked_at": "2026-11-28T10:40:49+08:00",
+      "date": "2026-11-28",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-27T09:45:01Z",
+      "stars": 3289,
+      "title": "GitHub - AgnesAI-Labs/agnes-harness: Agnes Harness: A pluggable agent harness for Forward Deployed Engineering (FDE). Built for trust. Made for the real world. · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/alesha-pro/llm.asm": {
+      "ai_hits": 4,
+      "ai_keywords": [
+        "gpt",
+        "inference",
+        "llm",
+        "transformer"
+      ],
+      "checked_at": "2026-11-28T10:41:01+08:00",
+      "date": "2026-11-28",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-27T20:40:20Z",
+      "stars": 2257,
+      "title": "GitHub - alesha-pro/llm.asm: Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM ",
       "verdict": "pass"
     },
     "github.com/algorithmicsuperintelligence/optillm": {
@@ -927,6 +982,23 @@
       "pushed_at": "2026-11-18T02:08:45Z",
       "stars": 41187,
       "title": "GitHub - codewhale-hq/Codewhale: An open-source coding agent for your terminal, written in Rust. It works with any model, can split one task across several agents, and every line o",
+      "verdict": "pass"
+    },
+    "github.com/conardli/garden-skills": {
+      "ai_hits": 4,
+      "ai_keywords": [
+        "agent",
+        "claude",
+        "gpt",
+        "rag\\b"
+      ],
+      "checked_at": "2026-11-28T10:40:57+08:00",
+      "date": "2026-11-28",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-19T12:10:48Z",
+      "stars": 15921,
+      "title": "GitHub - ConardLi/garden-skills: ConardLi&#39;s open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more. · GitHub",
       "verdict": "pass"
     },
     "github.com/conorbronsdon/avoid-ai-writing": {
@@ -1331,6 +1403,20 @@
       "title": "GitHub - google/elephant-goldfish-model: Open-source plugin for designing and reviewing software with agents · GitHub",
       "verdict": "pass"
     },
+    "github.com/google/skills": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "agent"
+      ],
+      "checked_at": "2026-11-28T10:41:05+08:00",
+      "date": "2026-11-28",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-27T22:22:41Z",
+      "stars": 24827,
+      "title": "GitHub - google/skills: Agent Skills for Google products and technologies · GitHub",
+      "verdict": "pass"
+    },
     "github.com/googlechrome/modern-web-guidance-src": {
       "ai_hits": 1,
       "ai_keywords": [
@@ -1428,6 +1514,20 @@
       "title": "GitHub - higurashi-ai/Haru: Haru: a low-latency, multilingual, full-duplex spoken dialogue model · GitHub",
       "verdict": "pass"
     },
+    "github.com/hkuds/cli-anything": {
+      "ai_hits": 1,
+      "ai_keywords": [
+        "agent"
+      ],
+      "checked_at": "2026-11-28T10:41:03+08:00",
+      "date": "2026-11-28",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-20T10:05:15Z",
+      "stars": 67049,
+      "title": "GitHub - HKUDS/CLI-Anything: &quot;CLI-Anything: Making ALL Software Agent-Native&quot; -- CLI-Hub: https://clianything.cc/ · GitHub",
+      "verdict": "pass"
+    },
     "github.com/hkuds/nanobot": {
       "ai_hits": 3,
       "ai_keywords": [
@@ -1505,6 +1605,22 @@
       "pushed_at": "2026-11-17T12:30:58Z",
       "stars": 77962,
       "title": "GitHub - hugohe3/ppt-master: AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand",
+      "verdict": "pass"
+    },
+    "github.com/iflytek/astron-rpa": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "llm"
+      ],
+      "checked_at": "2026-11-28T10:40:54+08:00",
+      "date": "2026-11-28",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-27T09:18:28Z",
+      "stars": 5245,
+      "title": "GitHub - iflytek/astron-rpa: Agent-ready RPA suite with out-of-the-box automation tools. Built for individuals and enterprises. · GitHub",
       "verdict": "pass"
     },
     "github.com/iflytek/skillhub": {
@@ -1662,6 +1778,22 @@
       "title": "",
       "verdict": "pass"
     },
+    "github.com/k-dense-ai/scientific-agent-skills": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude"
+      ],
+      "checked_at": "2026-11-28T10:40:56+08:00",
+      "date": "2026-11-28",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-23T09:18:27Z",
+      "stars": 58704,
+      "title": "GitHub - K-Dense-AI/scientific-agent-skills: Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-us",
+      "verdict": "pass"
+    },
     "github.com/karakeep-app/karakeep": {
       "ai_hits": 1,
       "ai_keywords": [
@@ -1785,6 +1917,22 @@
       "pushed_at": "2026-11-21T01:39:39Z",
       "stars": 12674,
       "title": "GitHub - max-sixty/worktrunk: Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/mdiri-ai/soduwork": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude"
+      ],
+      "checked_at": "2026-11-28T10:40:58+08:00",
+      "date": "2026-11-28",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-27T12:01:09Z",
+      "stars": 8812,
+      "title": "GitHub - mdiri-ai/SoduWork: The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted. · GitHub",
       "verdict": "pass"
     },
     "github.com/mem0ai/mem0": {
@@ -1926,6 +2074,22 @@
       "pushed_at": "2026-11-24T21:41:20Z",
       "stars": 5049,
       "title": "GitHub - mvanhorn/cli-printing-press: Every API has a secret identity. This finds it, absorbs every feature from every competing tool, then builds the GOAT CLI — designed for AI ag",
+      "verdict": "pass"
+    },
+    "github.com/mvanhorn/last30days-skill": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "llm"
+      ],
+      "checked_at": "2026-11-28T10:41:10+08:00",
+      "date": "2026-11-28",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-27T06:30:50Z",
+      "stars": 76399,
+      "title": "GitHub - mvanhorn/last30days-skill: AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary · GitHub",
       "verdict": "pass"
     },
     "github.com/mw00/project-maya": {
@@ -2078,6 +2242,21 @@
       "pushed_at": "2026-11-16T21:21:09Z",
       "stars": 13318,
       "title": "GitHub - NVIDIA/auto-ontology: Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better ",
+      "verdict": "pass"
+    },
+    "github.com/nvidia/openshell": {
+      "ai_hits": 2,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent"
+      ],
+      "checked_at": "2026-11-28T10:40:48+08:00",
+      "date": "2026-11-28",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-27T18:23:52Z",
+      "stars": 21995,
+      "title": "GitHub - ai-openshell/openshell: OpenShell is the safe, private runtime for autonomous AI agents. · GitHub",
       "verdict": "pass"
     },
     "github.com/nvidia/skillevaluator": {
@@ -2272,6 +2451,22 @@
       "title": "",
       "verdict": "pass"
     },
+    "github.com/pierridotite/mobile-agent-testers": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude"
+      ],
+      "checked_at": "2026-11-28T10:41:00+08:00",
+      "date": "2026-11-28",
+      "http_status": 200,
+      "license": "MIT",
+      "pushed_at": "2026-11-27T20:03:00Z",
+      "stars": 2621,
+      "title": "GitHub - pierridotite/mobile-agent-testers: 20 AI testers on 20 different phones, in parallel, on GitHub&#39;s free runners: Claude Code agents on iOS Simulators and Android emulat",
+      "verdict": "pass"
+    },
     "github.com/pingdotgg/t3code": {
       "ai_hits": 5,
       "ai_keywords": [
@@ -2359,6 +2554,23 @@
       "pushed_at": "2026-11-19T00:53:00Z",
       "stars": 4165,
       "title": "",
+      "verdict": "pass"
+    },
+    "github.com/rohitg00/agentmemory": {
+      "ai_hits": 4,
+      "ai_keywords": [
+        "\\bai\\b",
+        "agent",
+        "claude",
+        "copilot"
+      ],
+      "checked_at": "2026-11-28T10:41:08+08:00",
+      "date": "2026-11-28",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-27T17:32:09Z",
+      "stars": 30635,
+      "title": "GitHub - rohitg00/agentmemory: #1 Persistent memory for AI coding agents based on real-world benchmarks · GitHub",
       "verdict": "pass"
     },
     "github.com/ruvnet/ruflo": {
@@ -2476,6 +2688,22 @@
       "pushed_at": "2026-11-16T13:30:17Z",
       "stars": 5752,
       "title": "GitHub - skyzh/tiny-llm: learn LLM inference system on Apple Silicon for systems engineers: build a tiny vLLM + Qwen · GitHub",
+      "verdict": "pass"
+    },
+    "github.com/sous-labs/songe": {
+      "ai_hits": 3,
+      "ai_keywords": [
+        "agent",
+        "fine[- ]?tun",
+        "llm"
+      ],
+      "checked_at": "2026-11-28T10:41:06+08:00",
+      "date": "2026-11-28",
+      "http_status": 200,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-27T23:32:22Z",
+      "stars": 927,
+      "title": "GitHub - sous-labs/songe: A training engine for your local model, using your idle compute · GitHub",
       "verdict": "pass"
     },
     "github.com/stablyai/orca": {
@@ -3242,13 +3470,13 @@
   "schema": 1,
   "source": "cybermap-daily/state/reports/verify-YYYY-MM-DD.json",
   "totals": {
-    "added": 124,
-    "checked": 236,
-    "days": 15,
-    "fail": 22,
-    "pass": 189,
-    "review": 25,
-    "verified_sites": 181
+    "added": 134,
+    "checked": 252,
+    "days": 16,
+    "fail": 24,
+    "pass": 202,
+    "review": 26,
+    "verified_sites": 194
   },
   "warnings": []
 }

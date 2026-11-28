@@ -67,6 +67,8 @@
         <outline type="link" text="Elai" title="Elai" url="http://Elai.io" htmlUrl="http://Elai.io" description="这是一个AI视频工具,可以自动生成和编辑视频片段。" />
       </outline>
       <outline text="编程与开发" title="编程与开发">
+        <outline type="link" text="mdiri-ai/SoduWork" title="mdiri-ai/SoduWork" url="https://github.com/mdiri-ai/SoduWork" htmlUrl="https://github.com/mdiri-ai/SoduWork" description="多智能体开发工作台：以请求单与验收标准为核心，不同 AI 模型分别执行与交叉审查，人类最终签核。" />
+        <outline type="link" text="pierridotite/mobile-agent-testers" title="pierridotite/mobile-agent-testers" url="https://github.com/pierridotite/mobile-agent-testers" htmlUrl="https://github.com/pierridotite/mobile-agent-testers" description="用编码智能体在 iOS 模拟器与安卓仿真器上并行测试移动应用，自动发现流程、翻译与无障碍缺陷。" />
         <outline type="link" text="github/gh-aw" title="github/gh-aw" url="https://github.com/github/gh-aw" htmlUrl="https://github.com/github/gh-aw" description="GitHub 官方智能体工作流工具，用 Markdown 描述 CI 任务并编译成含推理步骤的 Actions。" />
         <outline type="link" text="microsoft/TokenEconomizer" title="microsoft/TokenEconomizer" url="https://github.com/microsoft/TokenEconomizer" htmlUrl="https://github.com/microsoft/TokenEconomizer" description="微软等开源的编码智能体成本控制插件，从历史会话提炼经验以裁剪工具、减少重复 token 消耗。" />
         <outline type="link" text="GoogleChrome/modern-web-guidance-src" title="GoogleChrome/modern-web-guidance-src" url="https://github.com/GoogleChrome/modern-web-guidance-src" htmlUrl="https://github.com/GoogleChrome/modern-web-guidance-src" description="Google Chrome 团队维护的 Web 开发指南，帮助编程智能体遵循现代浏览器最佳实践生成代码。" />
@@ -115,6 +117,8 @@
         <outline type="link" text="Otter.ai" title="Otter.ai" url="http://Otter.ai" htmlUrl="http://Otter.ai" description="这是一个AI会议工具,可以自动记录、转录和总结会议" />
       </outline>
       <outline text="智能体与自动化" title="智能体与自动化">
+        <outline type="link" text="iflytek/astron-rpa" title="iflytek/astron-rpa" url="https://github.com/iflytek/astron-rpa" htmlUrl="https://github.com/iflytek/astron-rpa" description="科大讯飞开源的 Agent-ready RPA 套件，把遗留系统的 GUI 操作封装成可供智能体调用的自动化动作。" />
+        <outline type="link" text="HKUDS/CLI-Anything" title="HKUDS/CLI-Anything" url="https://github.com/HKUDS/CLI-Anything" htmlUrl="https://github.com/HKUDS/CLI-Anything" description="让所有软件智能体原生的工具集，把现有 CLI 软件包装成智能体可直接调用的接口，配套 CLI-Hub 目录。" />
         <outline type="link" text="Activepieces/activepieces" title="Activepieces/activepieces" url="https://github.com/Activepieces/activepieces" htmlUrl="https://github.com/Activepieces/activepieces" description="开源自动化平台，用可视化流程连接 AI 智能体与数百款应用，支持自托管，用于搭建客服、运营等自动化工作流。" />
         <outline type="link" text="browseros-ai/BrowserOS" title="browseros-ai/BrowserOS" url="https://github.com/browseros-ai/BrowserOS" htmlUrl="https://github.com/browseros-ai/BrowserOS" description="开源智能体浏览器，基于 Chromium 内置本地大模型与自动化能力，主打隐私优先的浏览器任务代理。" />
         <outline type="link" text="Vricko" title="Vricko" url="https://app.vricko.app" htmlUrl="https://app.vricko.app" description="面向小企业的 AI 代理平台，一句话即可建站、撰写内容、发邮件与客服支持，每项任务留痕并设月度支出上限。" />
@@ -155,6 +159,8 @@
         <outline type="link" text="Chinese-LLaMA基础模型;ChatFlow中文对话模型;NLP预训练/指令微调数据集" title="Chinese-LLaMA基础模型;ChatFlow中文对话模型;NLP预训练/指令微调数据集" url="https://github.com/CVI-SZU/Linly" htmlUrl="https://github.com/CVI-SZU/Linly" description="Linly是一个中文NLP工具包,提供预训练语言模型、词典、数据集和工具。其主要目的是研究中文NLP,推动开源人工智能技术的发展。Linly通过集成多个中文NLP资源,能显著降低中文NLP建模的门槛,加速研究与开发过程。" />
       </outline>
       <outline text="GitHub 项目" title="GitHub 项目">
+        <outline type="link" text="K-Dense-AI/scientific-agent-skills" title="K-Dense-AI/scientific-agent-skills" url="https://github.com/K-Dense-AI/scientific-agent-skills" htmlUrl="https://github.com/K-Dense-AI/scientific-agent-skills" description="科研智能体技能库，覆盖实验设计、数据分析与科研流程自动化，配套 arXiv 技术报告。" />
+        <outline type="link" text="google/skills" title="google/skills" url="https://github.com/google/skills" htmlUrl="https://github.com/google/skills" description="Google 官方智能体技能集，为 Google 产品与技术提供遵循 Agent Skills 开放标准的可复用技能。" />
         <outline type="link" text="cloudflare/kitesurf" title="cloudflare/kitesurf" url="https://github.com/cloudflare/kitesurf" htmlUrl="https://github.com/cloudflare/kitesurf" description="Cloudflare 开源的实验性浏览器引擎，运行于 Workers，为 AI 智能体提供低资源网页自动化。" />
         <outline type="link" text="open-compass/opencompass" title="open-compass/opencompass" url="https://github.com/open-compass/opencompass" htmlUrl="https://github.com/open-compass/opencompass" description="开源大模型评测平台，覆盖推理、代码、安全与长上下文等基准，支持主流商业与开源模型。" />
         <outline type="link" text="nv-tlabs/lyra" title="nv-tlabs/lyra" url="https://github.com/nv-tlabs/Lyra" htmlUrl="https://github.com/nv-tlabs/Lyra" description="英伟达开源的生成式 3D 世界模型项目，可从输入图像生成可探索的三维场景，开放代码与预训练权重。" />
@@ -181,6 +187,8 @@
         <outline type="link" text="yetone/openai-translator" title="yetone/openai-translator" url="https://github.com/yetone/openai-translator" htmlUrl="https://github.com/yetone/openai-translator" description="基于 ChatGPT API 的划词翻译浏览器插件和跨平台桌面端应用" />
       </outline>
       <outline text="推理与训练框架" title="推理与训练框架">
+        <outline type="link" text="alesha-pro/llm.asm" title="alesha-pro/llm.asm" url="https://github.com/alesha-pro/llm.asm" htmlUrl="https://github.com/alesha-pro/llm.asm" description="纯 x86-64 汇编极限工程合集：12KB Qwen3 推理引擎、22KB 裸机启动系统与 32KB Mini-GPT 训练器，零依赖。" />
+        <outline type="link" text="sous-labs/songe" title="sous-labs/songe" url="https://github.com/sous-labs/songe" htmlUrl="https://github.com/sous-labs/songe" description="本地模型夜间训练引擎：把日常纠正与重试提炼成练习，闲置算力蒸馏小适配器，考核通过才换版本。" />
         <outline type="link" text="jesdga95/basalt" title="jesdga95/basalt" url="https://github.com/jesdga95/basalt" htmlUrl="https://github.com/jesdga95/basalt" description="面向 NVIDIA Blackwell 显卡优化的本地推理引擎，支持百万上下文、原生视觉与推测解码。" />
         <outline type="link" text="JustVugg/colibri" title="JustVugg/colibri" url="https://github.com/JustVugg/colibri" htmlUrl="https://github.com/JustVugg/colibri" description="纯 C 编写的分层 MoE 推理引擎，热专家驻留 GPU、冷专家从 NVMe 流式加载，让超大模型跑在普通硬件上。" />
         <outline type="link" text="unslothai/unsloth" title="unslothai/unsloth" url="https://github.com/unslothai/unsloth" htmlUrl="https://github.com/unslothai/unsloth" description="本地运行与训练大语言模型及扩散模型的框架，支持 GGUF、MLX 与 Qwen、DeepSeek、FLUX 等模型微调。" />
@@ -232,6 +240,8 @@
         <outline type="link" text="集成GPT,开始跟PDF文档聊天" title="集成GPT,开始跟PDF文档聊天" url="https://github.com/bhaskatripathi/pdfGPT" htmlUrl="https://github.com/bhaskatripathi/pdfGPT" description="跟 PDF 文档进行一对一对话;自动切割内容,并使用强大的深度平均网络编码器来生成嵌入;对 PDF 内容执行语义搜索,并将最相关的嵌入传递给 Open AI;自定义逻辑,生成更精确的响应信息,速度要比 OpenAI 的快。" />
       </outline>
       <outline text="智能体框架" title="智能体框架">
+        <outline type="link" text="NVIDIA/OpenShell" title="NVIDIA/OpenShell" url="https://github.com/NVIDIA/OpenShell" htmlUrl="https://github.com/NVIDIA/OpenShell" description="NVIDIA 开源的智能体安全运行时，用内核级沙箱与外部策略监督隔离智能体执行，保护凭据与出站流量。" />
+        <outline type="link" text="AgnesAI-Labs/agnes-harness" title="AgnesAI-Labs/agnes-harness" url="https://github.com/AgnesAI-Labs/agnes-harness" htmlUrl="https://github.com/AgnesAI-Labs/agnes-harness" description="双系统智能体运行底座：9B 小模型负责工具选择等高频决策，大模型负责意图拆解与异常兜底。" />
         <outline type="link" text="vercel-labs/ui" title="vercel-labs/ui" url="https://github.com/vercel-labs/ui" htmlUrl="https://github.com/vercel-labs/ui" description="Vercel Labs 开源的智能体界面行为库，把键盘导航、焦点与弹层交互拆成跨框架可组合能力。" />
         <outline type="link" text="ruvnet/ruflo" title="ruvnet/ruflo" url="https://github.com/ruvnet/ruflo" htmlUrl="https://github.com/ruvnet/ruflo" description="开源智能体基座，支持多智能体蜂群协作、持久记忆与 RAG 集成，可对接 Claude Code、Codex。" />
         <outline type="link" text="deepseek-ai/deepseek-harness" title="deepseek-ai/deepseek-harness" url="https://github.com/deepseek-ai/deepseek-harness" htmlUrl="https://github.com/deepseek-ai/deepseek-harness" description="DeepSeek 官方插件化智能体宿主，以插件形式扩展编码智能体的工具、记忆与执行能力。" />

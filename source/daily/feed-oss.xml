@@ -6,8 +6,21 @@
     <description>cyberMap 每日核验收录的 AI 开源项目，每天一期。</description>
     <language>zh-CN</language>
     <generator>cybermap-daily/build_daily.py</generator>
-    <lastBuildDate>Fri, 27 Nov 2026 11:25:19 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 10:46:47 +0800</lastBuildDate>
     <ttl>1440</ttl>
+    <item>
+      <title>每日 AI 速递 · 开源项目 · 2026-11-28（6 个站点）</title>
+      <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-28</link>
+      <guid isPermaLink="false">cybermap-daily-开源项目-2026-11-28</guid>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 +0800</pubDate>
+      <description>K-Dense-AI/scientific-agent-skills［GitHub 项目］科研智能体技能库，覆盖实验设计、数据分析与科研流程自动化，配套 arXiv 技术报告。 — https://github.com/K-Dense-AI/scientific-agent-skills
+google/skills［GitHub 项目］Google 官方智能体技能集，为 Google 产品与技术提供遵循 Agent Skills 开放标准的可复用技能。 — https://github.com/google/skills
+alesha-pro/llm.asm［推理与训练框架］纯 x86-64 汇编极限工程合集：12KB Qwen3 推理引擎、22KB 裸机启动系统与 32KB Mini-GPT 训练器，零依赖。 — https://github.com/alesha-pro/llm.asm
+sous-labs/songe［推理与训练框架］本地模型夜间训练引擎：把日常纠正与重试提炼成练习，闲置算力蒸馏小适配器，考核通过才换版本。 — https://github.com/sous-labs/songe
+NVIDIA/OpenShell［智能体框架］NVIDIA 开源的智能体安全运行时，用内核级沙箱与外部策略监督隔离智能体执行，保护凭据与出站流量。 — https://github.com/NVIDIA/OpenShell
+AgnesAI-Labs/agnes-harness［智能体框架］双系统智能体运行底座：9B 小模型负责工具选择等高频决策，大模型负责意图拆解与异常兜底。 — https://github.com/AgnesAI-Labs/agnes-harness</description>
+      <category>开源项目</category>
+    </item>
     <item>
       <title>每日 AI 速递 · 开源项目 · 2026-11-27（5 个站点）</title>
       <link>https://cybermap.halo26812.eu.org/daily/#day-2026-11-27</link>

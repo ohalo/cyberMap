@@ -441,6 +441,14 @@ aiVideo:
     description: 这是一个AI视频工具,可以自动生成和编辑视频片段。
 
 aiCode:
+  - name: mdiri-ai/SoduWork
+    url: https://github.com/mdiri-ai/SoduWork
+    img: https://github.com/favicon.ico
+    description: "多智能体开发工作台：以请求单与验收标准为核心，不同 AI 模型分别执行与交叉审查，人类最终签核。 · 2026-11-28 收录"
+  - name: pierridotite/mobile-agent-testers
+    url: https://github.com/pierridotite/mobile-agent-testers
+    img: https://github.com/favicon.ico
+    description: "用编码智能体在 iOS 模拟器与安卓仿真器上并行测试移动应用，自动发现流程、翻译与无障碍缺陷。 · 2026-11-28 收录"
   - name: github/gh-aw
     url: https://github.com/github/gh-aw
     img: https://github.com/favicon.ico
@@ -621,6 +629,14 @@ aiOffice:
     description: 这是一个AI会议工具,可以自动记录、转录和总结会议
 
 aiAgent:
+  - name: iflytek/astron-rpa
+    url: https://github.com/iflytek/astron-rpa
+    img: https://github.com/favicon.ico
+    description: "科大讯飞开源的 Agent-ready RPA 套件，把遗留系统的 GUI 操作封装成可供智能体调用的自动化动作。 · 2026-11-28 收录"
+  - name: HKUDS/CLI-Anything
+    url: https://github.com/HKUDS/CLI-Anything
+    img: https://github.com/favicon.ico
+    description: "让所有软件智能体原生的工具集，把现有 CLI 软件包装成智能体可直接调用的接口，配套 CLI-Hub 目录。 · 2026-11-28 收录"
   - name: Activepieces/activepieces
     url: https://github.com/Activepieces/activepieces
     img: https://github.com/favicon.ico
@@ -760,6 +776,14 @@ GPTModels:
     description: Linly是一个中文NLP工具包,提供预训练语言模型、词典、数据集和工具。其主要目的是研究中文NLP,推动开源人工智能技术的发展。Linly通过集成多个中文NLP资源,能显著降低中文NLP建模的门槛,加速研究与开发过程。
 
 githubGPT:
+  - name: K-Dense-AI/scientific-agent-skills
+    url: https://github.com/K-Dense-AI/scientific-agent-skills
+    img: https://github.com/favicon.ico
+    description: "科研智能体技能库，覆盖实验设计、数据分析与科研流程自动化，配套 arXiv 技术报告。 · 2026-11-28 收录"
+  - name: google/skills
+    url: https://github.com/google/skills
+    img: https://github.com/favicon.ico
+    description: "Google 官方智能体技能集，为 Google 产品与技术提供遵循 Agent Skills 开放标准的可复用技能。 · 2026-11-28 收录"
   - name: cloudflare/kitesurf
     url: https://github.com/cloudflare/kitesurf
     img: https://github.com/favicon.ico
@@ -858,6 +882,14 @@ githubGPT:
     img: https://github.com/favicon.ico
     description: 基于 ChatGPT API 的划词翻译浏览器插件和跨平台桌面端应用
 aiFrameworks:
+  - name: alesha-pro/llm.asm
+    url: https://github.com/alesha-pro/llm.asm
+    img: https://github.com/favicon.ico
+    description: "纯 x86-64 汇编极限工程合集：12KB Qwen3 推理引擎、22KB 裸机启动系统与 32KB Mini-GPT 训练器，零依赖。 · 2026-11-28 收录"
+  - name: sous-labs/songe
+    url: https://github.com/sous-labs/songe
+    img: https://github.com/favicon.ico
+    description: "本地模型夜间训练引擎：把日常纠正与重试提炼成练习，闲置算力蒸馏小适配器，考核通过才换版本。 · 2026-11-28 收录"
   - name: jesdga95/basalt
     url: https://github.com/jesdga95/basalt
     img: https://github.com/favicon.ico
@@ -1227,6 +1259,14 @@ ragKnowledge:
     description: 跟 PDF 文档进行一对一对话;自动切割内容,并使用强大的深度平均网络编码器来生成嵌入;对 PDF 内容执行语义搜索,并将最相关的嵌入传递给 Open AI;自定义逻辑,生成更精确的响应信息,速度要比 OpenAI 的快。
 
 agentFrameworks:
+  - name: NVIDIA/OpenShell
+    url: https://github.com/NVIDIA/OpenShell
+    img: https://github.com/favicon.ico
+    description: "NVIDIA 开源的智能体安全运行时，用内核级沙箱与外部策略监督隔离智能体执行，保护凭据与出站流量。 · 2026-11-28 收录"
+  - name: AgnesAI-Labs/agnes-harness
+    url: https://github.com/AgnesAI-Labs/agnes-harness
+    img: https://github.com/favicon.ico
+    description: "双系统智能体运行底座：9B 小模型负责工具选择等高频决策，大模型负责意图拆解与异常兜底。 · 2026-11-28 收录"
   - name: vercel-labs/ui
     url: https://github.com/vercel-labs/ui
     img: https://github.com/favicon.ico
