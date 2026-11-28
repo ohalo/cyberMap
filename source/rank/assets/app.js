@@ -237,10 +237,59 @@
       'body.night.rank-embedded .row .badges,body.night.rank-embedded .row .stars{display:none}' +
       'body.night .cm-cyber-scoring-grid{grid-template-columns:1fr;gap:10px}}';
 
+  /* 全站统一顶栏：榜单业务栏补上首页同款品牌 + 六个入口，样式只作用于赛博态 */
+  var unifiedCss = '' +
+    'body.night .cm-rank-bar{position:sticky;top:28px;z-index:89;gap:32px;height:52px;padding:0 34px;' +
+      'background:rgba(11,18,27,.92);border-bottom:1px solid #12303f;' +
+      '-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}' +
+    'body.night .cm-rank-bar .cm-rank-home{display:none!important}' +
+    'body.night .cm-rank-bar .cm-rank-nav{gap:20px}' +
+    'body.night .cm-rank-bar .cm-rank-nav a{position:relative;padding:0;border:0;border-radius:0;' +
+      'background:transparent;font-family:"CM Chakra","Chakra Petch",sans-serif;font-size:12px;font-weight:600}' +
+    'body.night .cm-rank-bar .cm-rank-nav a.on{background:transparent;border:0;color:#00e5ff}' +
+    'body.night .cm-rank-bar .cm-rank-nav a.on::after{content:"";position:absolute;left:0;right:0;bottom:-17px;' +
+      'height:2px;background:#00e5ff;box-shadow:0 0 10px #00e5ff}' +
+    'body.night .cm-rank-bar .cm-rank-side{margin-left:auto}' +
+    'body.night .cm-rank-bar .cm-rank-stamp{border:1px solid #12303f;border-radius:2px;' +
+      'background:rgba(11,18,27,.86);font-family:"CM Mono",monospace;font-size:10.5px;color:#8ba0bd}' +
+    'body.night .cm-rank-bar .cm-rank-lang,body.night .cm-rank-bar .cm-rank-theme{' +
+      'border:1px solid #12303f;border-radius:2px;background:rgba(11,18,27,.86);color:#8ba0bd}' +
+    '@media(max-width:991px){body.night .cm-rank-bar{gap:16px;padding:0 14px;overflow-x:auto}}';
+
+  var UNIFIED_BRAND = '<a class="cm-u-brand cm-u-only" href="/" aria-label="cyberMap 首页">' +
+    '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 28 9v14l-12 7L4 23V9z" ' +
+    'fill="none" stroke="currentColor" stroke-width="2"/>' +
+    '<path d="M16 8 23 12v8l-7 4-7-4v-8z" fill="currentColor" opacity=".25"/></svg>' +
+    '<b><i>cyber</i> MAP</b></a>';
+  var UNIFIED_LINKS = '<nav class="cm-u-links cm-u-only" aria-label="全站导航">' +
+    '<a href="/">首页</a><a href="/daily/">每日速递</a><a class="is-active" href="/rank/">插件榜</a>' +
+    '<a href="/data/">开放数据</a><a href="/tools/">自研工具</a><a href="/about/">关于</a></nav>';
+
+  function injectUnifiedHeader() {
+    if (!document.getElementById('cm-u-header-css')) {
+      var l = document.createElement('link');
+      l.id = 'cm-u-header-css';
+      l.rel = 'stylesheet';
+      l.href = '/css/cm-unified-header.css';
+      document.head.appendChild(l);
+    }
+    var bar = document.querySelector('.cm-rank-bar');
+    if (!bar || bar.querySelector('.cm-u-brand')) return;
+    var home = bar.querySelector('.cm-rank-home');
+    if (home) home.insertAdjacentHTML('afterend', UNIFIED_BRAND + UNIFIED_LINKS);
+    var side = bar.querySelector('.cm-rank-side');
+    if (side && !side.parentNode.classList.contains('cm-u-util')) {
+      var util = document.createElement('span');
+      util.className = 'cm-u-util';
+      side.parentNode.insertBefore(util, side);
+      util.appendChild(side);
+    }
+  }
+
   function injectStyle() {
     var s = document.createElement('style');
     s.id = STYLE_ID;
-    s.textContent = css;
+    s.textContent = css + unifiedCss;
     document.head.appendChild(s);
   }
 
@@ -261,7 +310,7 @@
     if (document.querySelector('.cm-rank-cyber-hud')) return;
     var body = document.body;
 
-    var hud = node('<div class="cm-rank-cyber-hud cm-rank-cyber-node">' +
+    var hud = node('<div class="cm-rank-cyber-hud cm-rank-cyber-node cm-u-hud">' +
       '<b>SECTION 04 // PLUGIN LEADERBOARD</b>' +
       '<span class="cm-rank-cyber-right">DATA UPDATED ' +
       '<span class="cm-rank-cyber-date">—</span> · DAILY · ' +
@@ -295,6 +344,7 @@
         dateEl.textContent = statDate.textContent;
       }
     };
+    injectUnifiedHeader();
     syncDate();
     setTimeout(syncDate, 600);
     tick();

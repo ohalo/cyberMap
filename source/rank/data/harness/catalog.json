@@ -40,7 +40,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 85.24,
+    "score": 85.06,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -49,8 +49,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9573,
-        "contribution": 23.93
+        "normalized": 0.9499,
+        "contribution": 23.75
       },
       "maturity": {
         "weight": 0.2,
@@ -59,8 +59,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4581,
-        "contribution": 6.87
+        "normalized": 0.4586,
+        "contribution": 6.88
       },
       "momentum": {
         "weight": 0.1,
@@ -114,7 +114,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": "2026-11-25T02:37:26+00:00"
     },
-    "score": 71.65,
+    "score": 71.47,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -123,8 +123,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7117,
-        "contribution": 17.79
+        "normalized": 0.7041,
+        "contribution": 17.6
       },
       "maturity": {
         "weight": 0.2,
@@ -133,8 +133,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.7523,
-        "contribution": 11.28
+        "normalized": 0.7529,
+        "contribution": 11.29
       },
       "momentum": {
         "weight": 0.1,
@@ -188,7 +188,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": "2026-11-25T02:37:26+00:00"
     },
-    "score": 74.21,
+    "score": 74.03,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -197,8 +197,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.692,
-        "contribution": 17.3
+        "normalized": 0.6844,
+        "contribution": 17.11
       },
       "maturity": {
         "weight": 0.2,
@@ -207,8 +207,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.7249,
-        "contribution": 10.87
+        "normalized": 0.7255,
+        "contribution": 10.88
       },
       "momentum": {
         "weight": 0.1,
@@ -270,7 +270,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": "2026-11-25T02:37:26+00:00"
     },
-    "score": 78.59,
+    "score": 78.4,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -279,8 +279,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.874,
-        "contribution": 21.85
+        "normalized": 0.8664,
+        "contribution": 21.66
       },
       "maturity": {
         "weight": 0.2,
@@ -289,8 +289,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.7227,
-        "contribution": 10.84
+        "normalized": 0.7233,
+        "contribution": 10.85
       },
       "momentum": {
         "weight": 0.1,
@@ -344,7 +344,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": "2026-11-25T02:37:27+00:00"
     },
-    "score": 68.97,
+    "score": 68.79,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -353,8 +353,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8149,
-        "contribution": 20.37
+        "normalized": 0.8074,
+        "contribution": 20.18
       },
       "maturity": {
         "weight": 0.2,
@@ -363,8 +363,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.7156,
-        "contribution": 10.73
+        "normalized": 0.7162,
+        "contribution": 10.74
       },
       "momentum": {
         "weight": 0.1,
@@ -432,7 +432,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 68.6,
+    "score": 68.58,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -441,8 +441,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.1423,
-        "contribution": 3.56
+        "normalized": 0.1413,
+        "contribution": 3.53
       },
       "maturity": {
         "weight": 0.2,
@@ -519,7 +519,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 75.44,
+    "score": 75.26,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -528,8 +528,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7166,
-        "contribution": 17.91
+        "normalized": 0.709,
+        "contribution": 17.73
       },
       "maturity": {
         "weight": 0.2,
@@ -538,7 +538,7 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.6844,
+        "normalized": 0.6849,
         "contribution": 10.27
       },
       "momentum": {
@@ -593,7 +593,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 62.0,
+    "score": 61.82,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -602,8 +602,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.6895,
-        "contribution": 17.24
+        "normalized": 0.682,
+        "contribution": 17.05
       },
       "maturity": {
         "weight": 0.2,
@@ -612,8 +612,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5036,
-        "contribution": 7.55
+        "normalized": 0.5041,
+        "contribution": 7.56
       },
       "momentum": {
         "weight": 0.1,
@@ -667,7 +667,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 62.98,
+    "score": 62.88,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -676,8 +676,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.6585,
-        "contribution": 16.46
+        "normalized": 0.6545,
+        "contribution": 16.36
       },
       "maturity": {
         "weight": 0.2,
@@ -686,8 +686,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4745,
-        "contribution": 7.12
+        "normalized": 0.4751,
+        "contribution": 7.13
       },
       "momentum": {
         "weight": 0.1,
@@ -741,7 +741,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 65.92,
+    "score": 65.74,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -750,8 +750,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.6994,
-        "contribution": 17.48
+        "normalized": 0.6918,
+        "contribution": 17.3
       },
       "maturity": {
         "weight": 0.2,
@@ -829,7 +829,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 78.83,
+    "score": 78.65,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -838,8 +838,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.6945,
-        "contribution": 17.36
+        "normalized": 0.6869,
+        "contribution": 17.17
       },
       "maturity": {
         "weight": 0.2,
@@ -848,8 +848,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.6701,
-        "contribution": 10.05
+        "normalized": 0.6707,
+        "contribution": 10.06
       },
       "momentum": {
         "weight": 0.1,
@@ -911,7 +911,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": "2026-11-25T02:37:27+00:00"
     },
-    "score": 78.66,
+    "score": 78.48,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -920,8 +920,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7953,
-        "contribution": 19.88
+        "normalized": 0.7877,
+        "contribution": 19.69
       },
       "maturity": {
         "weight": 0.2,
@@ -930,8 +930,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.6016,
-        "contribution": 9.02
+        "normalized": 0.6022,
+        "contribution": 9.03
       },
       "momentum": {
         "weight": 0.1,
@@ -985,7 +985,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 71.2,
+    "score": 71.03,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -994,8 +994,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8835,
-        "contribution": 22.09
+        "normalized": 0.8761,
+        "contribution": 21.9
       },
       "maturity": {
         "weight": 0.2,
@@ -1004,8 +1004,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5315,
-        "contribution": 7.97
+        "normalized": 0.5321,
+        "contribution": 7.98
       },
       "momentum": {
         "weight": 0.1,
@@ -1063,7 +1063,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 77.32,
+    "score": 77.08,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -1072,8 +1072,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9106,
-        "contribution": 22.76
+        "normalized": 0.9007,
+        "contribution": 22.52
       },
       "maturity": {
         "weight": 0.2,
@@ -1082,8 +1082,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.7079,
-        "contribution": 10.62
+        "normalized": 0.7085,
+        "contribution": 10.63
       },
       "momentum": {
         "weight": 0.1,
@@ -1156,7 +1156,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 80.62,
+    "score": 80.38,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -1165,8 +1165,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9305,
-        "contribution": 23.26
+        "normalized": 0.9205,
+        "contribution": 23.01
       },
       "maturity": {
         "weight": 0.2,
@@ -1175,8 +1175,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.571,
-        "contribution": 8.56
+        "normalized": 0.5715,
+        "contribution": 8.57
       },
       "momentum": {
         "weight": 0.1,
@@ -1243,7 +1243,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 69.21,
+    "score": 69.03,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -1252,8 +1252,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7338,
-        "contribution": 18.34
+        "normalized": 0.7262,
+        "contribution": 18.16
       },
       "maturity": {
         "weight": 0.2,
@@ -1262,8 +1262,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5786,
-        "contribution": 8.68
+        "normalized": 0.5792,
+        "contribution": 8.69
       },
       "momentum": {
         "weight": 0.1,
@@ -1338,7 +1338,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 81.5,
+    "score": 81.32,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -1347,8 +1347,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8789,
-        "contribution": 21.97
+        "normalized": 0.8713,
+        "contribution": 21.78
       },
       "maturity": {
         "weight": 0.2,
@@ -1357,8 +1357,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.6975,
-        "contribution": 10.46
+        "normalized": 0.6981,
+        "contribution": 10.47
       },
       "momentum": {
         "weight": 0.1,
@@ -1421,7 +1421,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 84.0,
+    "score": 83.82,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -1430,8 +1430,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9499,
-        "contribution": 23.75
+        "normalized": 0.9425,
+        "contribution": 23.56
       },
       "maturity": {
         "weight": 0.2,
@@ -1440,8 +1440,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5715,
-        "contribution": 8.57
+        "normalized": 0.5721,
+        "contribution": 8.58
       },
       "momentum": {
         "weight": 0.1,
@@ -1508,7 +1508,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 79.07,
+    "score": 78.89,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -1517,8 +1517,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8639,
-        "contribution": 21.6
+        "normalized": 0.8565,
+        "contribution": 21.41
       },
       "maturity": {
         "weight": 0.2,
@@ -1527,8 +1527,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5545,
-        "contribution": 8.32
+        "normalized": 0.5551,
+        "contribution": 8.33
       },
       "momentum": {
         "weight": 0.1,
@@ -1601,7 +1601,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 53.18,
+    "score": 53.06,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -1610,8 +1610,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7179,
-        "contribution": 17.95
+        "normalized": 0.7114,
+        "contribution": 17.78
       },
       "maturity": {
         "weight": 0.2,
@@ -1620,8 +1620,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.2705,
-        "contribution": 4.06
+        "normalized": 0.2711,
+        "contribution": 4.07
       },
       "momentum": {
         "weight": 0.1,
@@ -1683,7 +1683,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 54.96,
+    "score": 54.8,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -1692,8 +1692,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9077,
-        "contribution": 22.69
+        "normalized": 0.9009,
+        "contribution": 22.52
       },
       "maturity": {
         "weight": 0.2,
@@ -1702,8 +1702,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5227,
-        "contribution": 7.84
+        "normalized": 0.5233,
+        "contribution": 7.85
       },
       "momentum": {
         "weight": 0.1,
@@ -1766,7 +1766,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 46.74,
+    "score": 46.6,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -1775,8 +1775,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.5825,
-        "contribution": 14.56
+        "normalized": 0.5768,
+        "contribution": 14.42
       },
       "maturity": {
         "weight": 0.2,
@@ -1785,7 +1785,7 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.469,
+        "normalized": 0.4696,
         "contribution": 7.04
       },
       "momentum": {
@@ -1842,7 +1842,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 50.63,
+    "score": 50.45,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -1851,8 +1851,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9475,
-        "contribution": 23.69
+        "normalized": 0.9401,
+        "contribution": 23.5
       },
       "maturity": {
         "weight": 0.2,
@@ -1861,8 +1861,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4548,
-        "contribution": 6.82
+        "normalized": 0.4553,
+        "contribution": 6.83
       },
       "momentum": {
         "weight": 0.1,
@@ -1933,7 +1933,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 50.04,
+    "score": 49.92,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -1942,8 +1942,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7222,
-        "contribution": 18.06
+        "normalized": 0.7171,
+        "contribution": 17.93
       },
       "maturity": {
         "weight": 0.2,
@@ -1952,8 +1952,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.446,
-        "contribution": 6.69
+        "normalized": 0.4466,
+        "contribution": 6.7
       },
       "momentum": {
         "weight": 0.1,
@@ -2018,7 +2018,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 50.38,
+    "score": 50.23,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -2027,8 +2027,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8682,
-        "contribution": 21.7
+        "normalized": 0.8619,
+        "contribution": 21.55
       },
       "maturity": {
         "weight": 0.2,
@@ -2037,8 +2037,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4427,
-        "contribution": 6.64
+        "normalized": 0.4433,
+        "contribution": 6.65
       },
       "momentum": {
         "weight": 0.1,
@@ -2109,7 +2109,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 52.41,
+    "score": 52.19,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -2118,8 +2118,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8511,
-        "contribution": 21.28
+        "normalized": 0.8419,
+        "contribution": 21.05
       },
       "maturity": {
         "weight": 0.2,
@@ -2128,8 +2128,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4142,
-        "contribution": 6.21
+        "normalized": 0.4148,
+        "contribution": 6.22
       },
       "momentum": {
         "weight": 0.1,
@@ -2201,7 +2201,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 50.63,
+    "score": 50.45,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -2210,8 +2210,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7557,
-        "contribution": 18.89
+        "normalized": 0.7483,
+        "contribution": 18.71
       },
       "maturity": {
         "weight": 0.2,
@@ -2220,8 +2220,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5266,
-        "contribution": 7.9
+        "normalized": 0.5271,
+        "contribution": 7.91
       },
       "momentum": {
         "weight": 0.1,
@@ -2292,7 +2292,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 55.0,
+    "score": 54.82,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -2301,8 +2301,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9008,
-        "contribution": 22.52
+        "normalized": 0.8933,
+        "contribution": 22.33
       },
       "maturity": {
         "weight": 0.2,
@@ -2311,8 +2311,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4362,
-        "contribution": 6.54
+        "normalized": 0.4367,
+        "contribution": 6.55
       },
       "momentum": {
         "weight": 0.1,
@@ -2328,7 +2328,7 @@
       "topics": 16,
       "org_backed": false
     },
-    "rank": 100
+    "rank": null
   },
   {
     "id": "learn-claude-code",
@@ -2377,7 +2377,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 84.78,
+    "score": 84.62,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -2386,8 +2386,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8905,
-        "contribution": 22.26
+        "normalized": 0.8837,
+        "contribution": 22.09
       },
       "maturity": {
         "weight": 0.2,
@@ -2396,8 +2396,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.6827,
-        "contribution": 10.24
+        "normalized": 0.6833,
+        "contribution": 10.25
       },
       "momentum": {
         "weight": 0.1,
@@ -2459,7 +2459,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 79.47,
+    "score": 79.29,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -2468,8 +2468,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8392,
-        "contribution": 20.98
+        "normalized": 0.8318,
+        "contribution": 20.8
       },
       "maturity": {
         "weight": 0.2,
@@ -2478,8 +2478,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.931,
-        "contribution": 13.96
+        "normalized": 0.9315,
+        "contribution": 13.97
       },
       "momentum": {
         "weight": 0.1,
@@ -2543,7 +2543,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 84.57,
+    "score": 84.39,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -2552,8 +2552,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8322,
-        "contribution": 20.8
+        "normalized": 0.8246,
+        "contribution": 20.61
       },
       "maturity": {
         "weight": 0.2,
@@ -2562,8 +2562,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.9419,
-        "contribution": 14.13
+        "normalized": 0.9425,
+        "contribution": 14.14
       },
       "momentum": {
         "weight": 0.1,
@@ -2628,7 +2628,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 53.29,
+    "score": 53.11,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -2637,8 +2637,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9451,
-        "contribution": 23.63
+        "normalized": 0.9376,
+        "contribution": 23.44
       },
       "maturity": {
         "weight": 0.2,
@@ -2647,8 +2647,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4329,
-        "contribution": 6.49
+        "normalized": 0.4334,
+        "contribution": 6.5
       },
       "momentum": {
         "weight": 0.1,
@@ -2711,7 +2711,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 56.98,
+    "score": 56.81,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -2720,8 +2720,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8962,
-        "contribution": 22.41
+        "normalized": 0.8891,
+        "contribution": 22.23
       },
       "maturity": {
         "weight": 0.2,
@@ -2730,8 +2730,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5381,
-        "contribution": 8.07
+        "normalized": 0.5386,
+        "contribution": 8.08
       },
       "momentum": {
         "weight": 0.1,
@@ -2747,7 +2747,7 @@
       "topics": 8,
       "org_backed": false
     },
-    "rank": 92
+    "rank": 91
   },
   {
     "id": "agent-afk",
@@ -2806,7 +2806,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 49.58,
+    "score": 49.39,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -2815,8 +2815,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7018,
-        "contribution": 17.55
+        "normalized": 0.6943,
+        "contribution": 17.36
       },
       "maturity": {
         "weight": 0.2,
@@ -2825,8 +2825,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4959,
-        "contribution": 7.44
+        "normalized": 0.4964,
+        "contribution": 7.45
       },
       "momentum": {
         "weight": 0.1,
@@ -2880,7 +2880,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 58.62,
+    "score": 58.44,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -2889,8 +2889,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8076,
-        "contribution": 20.19
+        "normalized": 0.8,
+        "contribution": 20.0
       },
       "maturity": {
         "weight": 0.2,
@@ -2899,8 +2899,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4471,
-        "contribution": 6.71
+        "normalized": 0.4477,
+        "contribution": 6.72
       },
       "momentum": {
         "weight": 0.1,
@@ -2954,7 +2954,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 80.79,
+    "score": 80.62,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -2963,8 +2963,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7704,
-        "contribution": 19.26
+        "normalized": 0.763,
+        "contribution": 19.07
       },
       "maturity": {
         "weight": 0.2,
@@ -2973,8 +2973,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.8789,
-        "contribution": 13.18
+        "normalized": 0.8795,
+        "contribution": 13.19
       },
       "momentum": {
         "weight": 0.1,
@@ -3028,7 +3028,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 43.97,
+    "score": 43.96,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -3037,8 +3037,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.1309,
-        "contribution": 3.27
+        "normalized": 0.1301,
+        "contribution": 3.25
       },
       "maturity": {
         "weight": 0.2,
@@ -3047,8 +3047,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5648,
-        "contribution": 8.47
+        "normalized": 0.5653,
+        "contribution": 8.48
       },
       "momentum": {
         "weight": 0.1,
@@ -3117,7 +3117,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 76.27,
+    "score": 76.1,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -3126,8 +3126,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7385,
-        "contribution": 18.46
+        "normalized": 0.731,
+        "contribution": 18.28
       },
       "maturity": {
         "weight": 0.2,
@@ -3136,8 +3136,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.7436,
-        "contribution": 11.15
+        "normalized": 0.7441,
+        "contribution": 11.16
       },
       "momentum": {
         "weight": 0.1,
@@ -3197,7 +3197,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 80.76,
+    "score": 80.57,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -3206,8 +3206,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7902,
-        "contribution": 19.75
+        "normalized": 0.7827,
+        "contribution": 19.57
       },
       "maturity": {
         "weight": 0.2,
@@ -3271,7 +3271,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 38.11,
+    "score": 38.1,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -3280,8 +3280,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.1994,
-        "contribution": 4.99
+        "normalized": 0.1985,
+        "contribution": 4.96
       },
       "maturity": {
         "weight": 0.2,
@@ -3290,8 +3290,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4432,
-        "contribution": 6.65
+        "normalized": 0.4437,
+        "contribution": 6.66
       },
       "momentum": {
         "weight": 0.1,
@@ -3356,7 +3356,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 74.83,
+    "score": 74.64,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -3365,8 +3365,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.842,
-        "contribution": 21.05
+        "normalized": 0.8344,
+        "contribution": 20.86
       },
       "maturity": {
         "weight": 0.2,
@@ -3375,8 +3375,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4581,
-        "contribution": 6.87
+        "normalized": 0.4586,
+        "contribution": 6.88
       },
       "momentum": {
         "weight": 0.1,
@@ -3442,7 +3442,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 71.37,
+    "score": 71.19,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -3451,8 +3451,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.859,
-        "contribution": 21.48
+        "normalized": 0.8515,
+        "contribution": 21.29
       },
       "maturity": {
         "weight": 0.2,
@@ -3461,8 +3461,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4581,
-        "contribution": 6.87
+        "normalized": 0.4586,
+        "contribution": 6.88
       },
       "momentum": {
         "weight": 0.1,
@@ -3526,7 +3526,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 73.79,
+    "score": 73.61,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -3535,8 +3535,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7289,
-        "contribution": 18.22
+        "normalized": 0.7213,
+        "contribution": 18.03
       },
       "maturity": {
         "weight": 0.2,
@@ -3545,8 +3545,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.6723,
-        "contribution": 10.08
+        "normalized": 0.6729,
+        "contribution": 10.09
       },
       "momentum": {
         "weight": 0.1,
@@ -3621,7 +3621,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 74.02,
+    "score": 73.88,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -3630,8 +3630,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.6416,
-        "contribution": 16.04
+        "normalized": 0.6356,
+        "contribution": 15.89
       },
       "maturity": {
         "weight": 0.2,
@@ -3640,8 +3640,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.6614,
-        "contribution": 9.92
+        "normalized": 0.6619,
+        "contribution": 9.93
       },
       "momentum": {
         "weight": 0.1,
@@ -3711,7 +3711,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 70.87,
+    "score": 70.68,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -3720,8 +3720,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7682,
-        "contribution": 19.21
+        "normalized": 0.7607,
+        "contribution": 19.02
       },
       "maturity": {
         "weight": 0.2,
@@ -3800,7 +3800,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 56.09,
+    "score": 55.91,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -3809,8 +3809,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8984,
-        "contribution": 22.46
+        "normalized": 0.8909,
+        "contribution": 22.27
       },
       "maturity": {
         "weight": 0.2,
@@ -3819,8 +3819,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5474,
-        "contribution": 8.21
+        "normalized": 0.5479,
+        "contribution": 8.22
       },
       "momentum": {
         "weight": 0.1,
@@ -3886,7 +3886,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 48.53,
+    "score": 48.44,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -3895,8 +3895,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.6835,
-        "contribution": 17.09
+        "normalized": 0.6793,
+        "contribution": 16.98
       },
       "maturity": {
         "weight": 0.2,
@@ -3905,8 +3905,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.457,
-        "contribution": 6.85
+        "normalized": 0.4575,
+        "contribution": 6.86
       },
       "momentum": {
         "weight": 0.1,
@@ -3981,7 +3981,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 53.18,
+    "score": 53.0,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -3990,8 +3990,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7926,
-        "contribution": 19.81
+        "normalized": 0.7853,
+        "contribution": 19.63
       },
       "maturity": {
         "weight": 0.2,
@@ -4000,8 +4000,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.434,
-        "contribution": 6.51
+        "normalized": 0.4345,
+        "contribution": 6.52
       },
       "momentum": {
         "weight": 0.1,
@@ -4070,7 +4070,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 65.19,
+    "score": 65.01,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -4079,8 +4079,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8295,
-        "contribution": 20.74
+        "normalized": 0.822,
+        "contribution": 20.55
       },
       "maturity": {
         "weight": 0.2,
@@ -4089,8 +4089,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5321,
-        "contribution": 7.98
+        "normalized": 0.5326,
+        "contribution": 7.99
       },
       "momentum": {
         "weight": 0.1,
@@ -4162,7 +4162,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 86.72,
+    "score": 86.53,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -4171,8 +4171,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9576,
-        "contribution": 23.94
+        "normalized": 0.95,
+        "contribution": 23.75
       },
       "maturity": {
         "weight": 0.2,
@@ -4247,7 +4247,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 76.38,
+    "score": 76.2,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -4256,8 +4256,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.751,
-        "contribution": 18.78
+        "normalized": 0.7434,
+        "contribution": 18.59
       },
       "maturity": {
         "weight": 0.2,
@@ -4266,7 +4266,7 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5644,
+        "normalized": 0.5649,
         "contribution": 8.47
       },
       "momentum": {
@@ -4338,7 +4338,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 75.57,
+    "score": 75.39,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -4347,8 +4347,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7608,
-        "contribution": 19.02
+        "normalized": 0.7533,
+        "contribution": 18.83
       },
       "maturity": {
         "weight": 0.2,
@@ -4357,8 +4357,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5512,
-        "contribution": 8.27
+        "normalized": 0.5518,
+        "contribution": 8.28
       },
       "momentum": {
         "weight": 0.1,
@@ -4433,7 +4433,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 67.77,
+    "score": 67.59,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -4442,8 +4442,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7656,
-        "contribution": 19.14
+        "normalized": 0.7581,
+        "contribution": 18.95
       },
       "maturity": {
         "weight": 0.2,
@@ -4452,8 +4452,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4986,
-        "contribution": 7.48
+        "normalized": 0.4992,
+        "contribution": 7.49
       },
       "momentum": {
         "weight": 0.1,
@@ -4528,7 +4528,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 73.85,
+    "score": 73.67,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -4537,8 +4537,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7631,
-        "contribution": 19.08
+        "normalized": 0.7556,
+        "contribution": 18.89
       },
       "maturity": {
         "weight": 0.2,
@@ -4547,7 +4547,7 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5584,
+        "normalized": 0.5589,
         "contribution": 8.38
       },
       "momentum": {
@@ -4621,7 +4621,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 83.93,
+    "score": 83.75,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -4630,8 +4630,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8346,
-        "contribution": 20.87
+        "normalized": 0.8271,
+        "contribution": 20.68
       },
       "maturity": {
         "weight": 0.2,
@@ -4640,7 +4640,7 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.7118,
+        "normalized": 0.7123,
         "contribution": 10.68
       },
       "momentum": {
@@ -4713,7 +4713,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 71.6,
+    "score": 71.35,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -4722,8 +4722,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.913,
-        "contribution": 22.83
+        "normalized": 0.9032,
+        "contribution": 22.58
       },
       "maturity": {
         "weight": 0.2,
@@ -4808,7 +4808,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 64.79,
+    "score": 64.61,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -4817,8 +4817,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7805,
-        "contribution": 19.51
+        "normalized": 0.773,
+        "contribution": 19.32
       },
       "maturity": {
         "weight": 0.2,
@@ -4827,8 +4827,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4159,
-        "contribution": 6.24
+        "normalized": 0.4164,
+        "contribution": 6.25
       },
       "momentum": {
         "weight": 0.1,
@@ -4903,7 +4903,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 66.06,
+    "score": 65.89,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -4912,8 +4912,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.918,
-        "contribution": 22.95
+        "normalized": 0.9107,
+        "contribution": 22.77
       },
       "maturity": {
         "weight": 0.2,
@@ -4922,8 +4922,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.537,
-        "contribution": 8.05
+        "normalized": 0.5375,
+        "contribution": 8.06
       },
       "momentum": {
         "weight": 0.1,
@@ -4998,7 +4998,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 57.48,
+    "score": 57.33,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -5007,8 +5007,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.728,
-        "contribution": 18.2
+        "normalized": 0.7217,
+        "contribution": 18.04
       },
       "maturity": {
         "weight": 0.2,
@@ -5017,8 +5017,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5934,
-        "contribution": 8.9
+        "normalized": 0.594,
+        "contribution": 8.91
       },
       "momentum": {
         "weight": 0.1,
@@ -5034,7 +5034,7 @@
       "topics": 20,
       "org_backed": false
     },
-    "rank": 89
+    "rank": 88
   },
   {
     "id": "psycheros",
@@ -5079,7 +5079,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 42.4,
+    "score": 42.27,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -5088,8 +5088,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.5501,
-        "contribution": 13.75
+        "normalized": 0.5446,
+        "contribution": 13.62
       },
       "maturity": {
         "weight": 0.2,
@@ -5098,8 +5098,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5096,
-        "contribution": 7.64
+        "normalized": 0.5101,
+        "contribution": 7.65
       },
       "momentum": {
         "weight": 0.1,
@@ -5170,7 +5170,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 67.27,
+    "score": 67.09,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -5179,8 +5179,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.6969,
-        "contribution": 17.42
+        "normalized": 0.6893,
+        "contribution": 17.23
       },
       "maturity": {
         "weight": 0.2,
@@ -5189,8 +5189,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4926,
-        "contribution": 7.39
+        "normalized": 0.4932,
+        "contribution": 7.4
       },
       "momentum": {
         "weight": 0.1,
@@ -5249,7 +5249,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 65.25,
+    "score": 65.07,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -5258,8 +5258,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7215,
-        "contribution": 18.04
+        "normalized": 0.7139,
+        "contribution": 17.85
       },
       "maturity": {
         "weight": 0.2,
@@ -5268,8 +5268,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4663,
-        "contribution": 6.99
+        "normalized": 0.4668,
+        "contribution": 7.0
       },
       "momentum": {
         "weight": 0.1,
@@ -5329,7 +5329,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 61.63,
+    "score": 61.54,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -5338,8 +5338,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.5601,
-        "contribution": 14.0
+        "normalized": 0.5561,
+        "contribution": 13.9
       },
       "maturity": {
         "weight": 0.2,
@@ -5348,8 +5348,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5671,
-        "contribution": 8.51
+        "normalized": 0.5677,
+        "contribution": 8.52
       },
       "momentum": {
         "weight": 0.1,
@@ -5418,7 +5418,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 66.16,
+    "score": 66.0,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -5427,8 +5427,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.6559,
-        "contribution": 16.4
+        "normalized": 0.649,
+        "contribution": 16.22
       },
       "maturity": {
         "weight": 0.2,
@@ -5437,8 +5437,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5748,
-        "contribution": 8.62
+        "normalized": 0.5753,
+        "contribution": 8.63
       },
       "momentum": {
         "weight": 0.1,
@@ -5513,7 +5513,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 65.54,
+    "score": 65.36,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -5522,8 +5522,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8516,
-        "contribution": 21.29
+        "normalized": 0.8442,
+        "contribution": 21.1
       },
       "maturity": {
         "weight": 0.2,
@@ -5532,8 +5532,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5041,
-        "contribution": 7.56
+        "normalized": 0.5047,
+        "contribution": 7.57
       },
       "momentum": {
         "weight": 0.1,
@@ -5608,7 +5608,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 60.87,
+    "score": 60.69,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -5617,8 +5617,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9303,
-        "contribution": 23.26
+        "normalized": 0.923,
+        "contribution": 23.08
       },
       "maturity": {
         "weight": 0.2,
@@ -5627,7 +5627,7 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4964,
+        "normalized": 0.497,
         "contribution": 7.45
       },
       "momentum": {
@@ -5694,7 +5694,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 63.87,
+    "score": 63.69,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -5703,8 +5703,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7484,
-        "contribution": 18.71
+        "normalized": 0.7409,
+        "contribution": 18.52
       },
       "maturity": {
         "weight": 0.2,
@@ -5713,8 +5713,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5315,
-        "contribution": 7.97
+        "normalized": 0.5321,
+        "contribution": 7.98
       },
       "momentum": {
         "weight": 0.1,
@@ -5784,7 +5784,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 50.95,
+    "score": 50.79,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -5793,8 +5793,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7855,
-        "contribution": 19.64
+        "normalized": 0.7785,
+        "contribution": 19.46
       },
       "maturity": {
         "weight": 0.2,
@@ -5803,8 +5803,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5693,
-        "contribution": 8.54
+        "normalized": 0.5699,
+        "contribution": 8.55
       },
       "momentum": {
         "weight": 0.1,
@@ -5879,7 +5879,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 66.12,
+    "score": 65.94,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -5888,8 +5888,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8838,
-        "contribution": 22.09
+        "normalized": 0.8762,
+        "contribution": 21.91
       },
       "maturity": {
         "weight": 0.2,
@@ -5898,8 +5898,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4603,
-        "contribution": 6.9
+        "normalized": 0.4608,
+        "contribution": 6.91
       },
       "momentum": {
         "weight": 0.1,
@@ -5974,7 +5974,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 67.43,
+    "score": 67.19,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -5983,8 +5983,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9107,
-        "contribution": 22.77
+        "normalized": 0.9007,
+        "contribution": 22.52
       },
       "maturity": {
         "weight": 0.2,
@@ -5993,8 +5993,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5162,
-        "contribution": 7.74
+        "normalized": 0.5167,
+        "contribution": 7.75
       },
       "momentum": {
         "weight": 0.1,
@@ -6069,7 +6069,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 58.11,
+    "score": 57.93,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -6078,8 +6078,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9035,
-        "contribution": 22.59
+        "normalized": 0.8959,
+        "contribution": 22.4
       },
       "maturity": {
         "weight": 0.2,
@@ -6088,8 +6088,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5074,
-        "contribution": 7.61
+        "normalized": 0.5079,
+        "contribution": 7.62
       },
       "momentum": {
         "weight": 0.1,
@@ -6105,7 +6105,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 87
+    "rank": 86
   },
   {
     "id": "deepagents",
@@ -6152,7 +6152,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 76.93,
+    "score": 76.75,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -6161,8 +6161,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.869,
-        "contribution": 21.73
+        "normalized": 0.8615,
+        "contribution": 21.54
       },
       "maturity": {
         "weight": 0.2,
@@ -6171,8 +6171,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.6674,
-        "contribution": 10.01
+        "normalized": 0.6679,
+        "contribution": 10.02
       },
       "momentum": {
         "weight": 0.1,
@@ -6245,7 +6245,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 83.13,
+    "score": 82.94,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -6254,8 +6254,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8418,
-        "contribution": 21.05
+        "normalized": 0.8343,
+        "contribution": 20.86
       },
       "maturity": {
         "weight": 0.2,
@@ -6325,7 +6325,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 86.0,
+    "score": 85.82,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -6334,8 +6334,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7975,
-        "contribution": 19.94
+        "normalized": 0.7901,
+        "contribution": 19.75
       },
       "maturity": {
         "weight": 0.2,
@@ -6410,7 +6410,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 62.06,
+    "score": 61.93,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -6419,8 +6419,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7204,
-        "contribution": 18.01
+        "normalized": 0.7139,
+        "contribution": 17.85
       },
       "maturity": {
         "weight": 0.2,
@@ -6448,7 +6448,7 @@
       "topics": 10,
       "org_backed": true
     },
-    "rank": 74
+    "rank": 73
   },
   {
     "id": "openai-agents",
@@ -6494,7 +6494,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 81.56,
+    "score": 81.38,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -6503,8 +6503,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9133,
-        "contribution": 22.83
+        "normalized": 0.9057,
+        "contribution": 22.64
       },
       "maturity": {
         "weight": 0.2,
@@ -6513,7 +6513,7 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.743,
+        "normalized": 0.7436,
         "contribution": 11.15
       },
       "momentum": {
@@ -6585,7 +6585,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 76.96,
+    "score": 76.78,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -6594,8 +6594,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.783,
-        "contribution": 19.57
+        "normalized": 0.7754,
+        "contribution": 19.39
       },
       "maturity": {
         "weight": 0.2,
@@ -6604,8 +6604,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.7315,
-        "contribution": 10.97
+        "normalized": 0.7321,
+        "contribution": 10.98
       },
       "momentum": {
         "weight": 0.1,
@@ -6665,7 +6665,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 45.58,
+    "score": 45.57,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -6674,8 +6674,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.1352,
-        "contribution": 3.38
+        "normalized": 0.1345,
+        "contribution": 3.36
       },
       "maturity": {
         "weight": 0.2,
@@ -6684,8 +6684,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.8049,
-        "contribution": 12.07
+        "normalized": 0.8055,
+        "contribution": 12.08
       },
       "momentum": {
         "weight": 0.1,
@@ -6760,7 +6760,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 57.36,
+    "score": 57.19,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -6769,8 +6769,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8417,
-        "contribution": 21.04
+        "normalized": 0.8344,
+        "contribution": 20.86
       },
       "maturity": {
         "weight": 0.2,
@@ -6779,8 +6779,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4762,
-        "contribution": 7.14
+        "normalized": 0.4767,
+        "contribution": 7.15
       },
       "momentum": {
         "weight": 0.1,
@@ -6796,7 +6796,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 90
+    "rank": 89
   },
   {
     "id": "browser-use",
@@ -6852,7 +6852,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 87.64,
+    "score": 87.46,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -6861,8 +6861,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8885,
-        "contribution": 22.21
+        "normalized": 0.881,
+        "contribution": 22.03
       },
       "maturity": {
         "weight": 0.2,
@@ -6871,8 +6871,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.8148,
-        "contribution": 12.22
+        "normalized": 0.8153,
+        "contribution": 12.23
       },
       "momentum": {
         "weight": 0.1,
@@ -6943,7 +6943,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 50.38,
+    "score": 50.21,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -6952,8 +6952,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8639,
-        "contribution": 21.6
+        "normalized": 0.8566,
+        "contribution": 21.42
       },
       "maturity": {
         "weight": 0.2,
@@ -6962,8 +6962,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4252,
-        "contribution": 6.38
+        "normalized": 0.4258,
+        "contribution": 6.39
       },
       "momentum": {
         "weight": 0.1,
@@ -7038,7 +7038,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 57.79,
+    "score": 57.61,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -7047,8 +7047,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.6992,
-        "contribution": 17.48
+        "normalized": 0.6917,
+        "contribution": 17.29
       },
       "maturity": {
         "weight": 0.2,
@@ -7057,8 +7057,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.6422,
-        "contribution": 9.63
+        "normalized": 0.6427,
+        "contribution": 9.64
       },
       "momentum": {
         "weight": 0.1,
@@ -7074,7 +7074,7 @@
       "topics": 20,
       "org_backed": true
     },
-    "rank": 88
+    "rank": 87
   },
   {
     "id": "openhands-sdk",
@@ -7115,7 +7115,7 @@
       "query_fetched_at": null,
       "npm_fetched_at": null
     },
-    "score": 57.19,
+    "score": 57.01,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -7124,8 +7124,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.6846,
-        "contribution": 17.12
+        "normalized": 0.6771,
+        "contribution": 16.93
       },
       "maturity": {
         "weight": 0.2,
@@ -7134,8 +7134,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.6526,
-        "contribution": 9.79
+        "normalized": 0.6532,
+        "contribution": 9.8
       },
       "momentum": {
         "weight": 0.1,
@@ -7151,7 +7151,7 @@
       "topics": 2,
       "org_backed": true
     },
-    "rank": 91
+    "rank": 90
   },
   {
     "id": "peteromallet--desloppify",
@@ -7188,20 +7188,20 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "topic:agent-harness",
-      "query_fetched_at": "2026-11-27T03:21:42+00:00",
+      "query_fetched_at": "2026-11-28T03:35:05+00:00",
       "npm_fetched_at": null
     },
-    "score": 45.39,
+    "score": 45.19,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.3544,
-        "contribution": 10.63
+        "normalized": 0.3518,
+        "contribution": 10.55
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.5354,
-        "contribution": 13.38
+        "normalized": 0.5299,
+        "contribution": 13.25
       },
       "maturity": {
         "weight": 0.2,
@@ -7210,7 +7210,7 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5584,
+        "normalized": 0.5589,
         "contribution": 8.38
       },
       "momentum": {
@@ -7283,10 +7283,10 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "topic:agent-harness",
-      "query_fetched_at": "2026-11-27T03:21:42+00:00",
+      "query_fetched_at": "2026-11-28T03:35:05+00:00",
       "npm_fetched_at": null
     },
-    "score": 63.91,
+    "score": 63.73,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -7295,8 +7295,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8863,
-        "contribution": 22.16
+        "normalized": 0.8787,
+        "contribution": 21.97
       },
       "maturity": {
         "weight": 0.2,
@@ -7305,8 +7305,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5847,
-        "contribution": 8.77
+        "normalized": 0.5852,
+        "contribution": 8.78
       },
       "momentum": {
         "weight": 0.1,
@@ -7378,10 +7378,10 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:agent-harness",
-      "query_fetched_at": "2026-11-27T03:21:42+00:00",
+      "query_fetched_at": "2026-11-28T03:35:05+00:00",
       "npm_fetched_at": null
     },
-    "score": 58.63,
+    "score": 58.45,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -7390,8 +7390,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8324,
-        "contribution": 20.81
+        "normalized": 0.8248,
+        "contribution": 20.62
       },
       "maturity": {
         "weight": 0.2,
@@ -7400,7 +7400,7 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4997,
+        "normalized": 0.5003,
         "contribution": 7.5
       },
       "momentum": {
@@ -7467,10 +7467,10 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:agent-harness",
-      "query_fetched_at": "2026-11-27T03:21:42+00:00",
+      "query_fetched_at": "2026-11-28T03:35:05+00:00",
       "npm_fetched_at": null
     },
-    "score": 62.47,
+    "score": 62.29,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -7479,8 +7479,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8887,
-        "contribution": 22.22
+        "normalized": 0.8811,
+        "contribution": 22.03
       },
       "maturity": {
         "weight": 0.2,
@@ -7489,7 +7489,7 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5858,
+        "normalized": 0.5863,
         "contribution": 8.79
       },
       "momentum": {
@@ -7554,10 +7554,10 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:agent-harness",
-      "query_fetched_at": "2026-11-27T03:21:42+00:00",
+      "query_fetched_at": "2026-11-28T03:35:05+00:00",
       "npm_fetched_at": null
     },
-    "score": 55.32,
+    "score": 55.15,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -7566,8 +7566,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7142,
-        "contribution": 17.86
+        "normalized": 0.7072,
+        "contribution": 17.68
       },
       "maturity": {
         "weight": 0.2,
@@ -7576,8 +7576,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.491,
-        "contribution": 7.36
+        "normalized": 0.4915,
+        "contribution": 7.37
       },
       "momentum": {
         "weight": 0.1,
@@ -7649,10 +7649,10 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:agent-harness",
-      "query_fetched_at": "2026-11-27T03:21:42+00:00",
+      "query_fetched_at": "2026-11-28T03:35:05+00:00",
       "npm_fetched_at": null
     },
-    "score": 51.47,
+    "score": 51.3,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -7661,8 +7661,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8596,
-        "contribution": 21.49
+        "normalized": 0.8526,
+        "contribution": 21.32
       },
       "maturity": {
         "weight": 0.2,
@@ -7671,8 +7671,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5485,
-        "contribution": 8.23
+        "normalized": 0.549,
+        "contribution": 8.24
       },
       "momentum": {
         "weight": 0.1,
@@ -7744,10 +7744,10 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:agent-harness",
-      "query_fetched_at": "2026-11-27T03:21:42+00:00",
+      "query_fetched_at": "2026-11-28T03:35:05+00:00",
       "npm_fetched_at": null
     },
-    "score": 56.15,
+    "score": 55.97,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -7756,8 +7756,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.739,
-        "contribution": 18.47
+        "normalized": 0.7313,
+        "contribution": 18.28
       },
       "maturity": {
         "weight": 0.2,
@@ -7766,7 +7766,7 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.463,
+        "normalized": 0.4636,
         "contribution": 6.95
       },
       "momentum": {
@@ -7826,10 +7826,10 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-27T03:21:48+00:00",
+      "query_fetched_at": "2026-11-28T03:35:10+00:00",
       "npm_fetched_at": null
     },
-    "score": 90.15,
+    "score": 89.96,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -7838,8 +7838,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9648,
-        "contribution": 24.12
+        "normalized": 0.9573,
+        "contribution": 23.93
       },
       "maturity": {
         "weight": 0.2,
@@ -7912,10 +7912,10 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-27T03:21:48+00:00",
+      "query_fetched_at": "2026-11-28T03:35:10+00:00",
       "npm_fetched_at": null
     },
-    "score": 63.13,
+    "score": 62.95,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -7924,8 +7924,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7582,
-        "contribution": 18.95
+        "normalized": 0.7507,
+        "contribution": 18.77
       },
       "maturity": {
         "weight": 0.2,
@@ -7934,8 +7934,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4181,
-        "contribution": 6.27
+        "normalized": 0.4186,
+        "contribution": 6.28
       },
       "momentum": {
         "weight": 0.1,
@@ -7996,10 +7996,10 @@
       "repo_fetched_at": "2026-11-26T13:26:10+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-27T03:21:48+00:00",
+      "query_fetched_at": "2026-11-28T03:35:10+00:00",
       "npm_fetched_at": null
     },
-    "score": 74.67,
+    "score": 74.48,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -8008,8 +8008,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9751,
-        "contribution": 24.38
+        "normalized": 0.9674,
+        "contribution": 24.19
       },
       "maturity": {
         "weight": 0.2,
@@ -8018,8 +8018,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.7441,
-        "contribution": 11.16
+        "normalized": 0.7447,
+        "contribution": 11.17
       },
       "momentum": {
         "weight": 0.1,
@@ -8084,10 +8084,10 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-27T03:21:48+00:00",
+      "query_fetched_at": "2026-11-28T03:35:10+00:00",
       "npm_fetched_at": null
     },
-    "score": 61.95,
+    "score": 61.78,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -8096,8 +8096,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.6678,
-        "contribution": 16.7
+        "normalized": 0.6608,
+        "contribution": 16.52
       },
       "maturity": {
         "weight": 0.2,
@@ -8169,10 +8169,10 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-27T03:21:48+00:00",
+      "query_fetched_at": "2026-11-28T03:35:10+00:00",
       "npm_fetched_at": null
     },
-    "score": 54.99,
+    "score": 54.84,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -8181,8 +8181,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7386,
-        "contribution": 18.47
+        "normalized": 0.7319,
+        "contribution": 18.3
       },
       "maturity": {
         "weight": 0.2,
@@ -8191,8 +8191,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4575,
-        "contribution": 6.86
+        "normalized": 0.4581,
+        "contribution": 6.87
       },
       "momentum": {
         "weight": 0.1,
@@ -8208,7 +8208,7 @@
       "topics": 10,
       "org_backed": true
     },
-    "rank": null
+    "rank": 100
   },
   {
     "id": "superagent-ai--grok-cli",
@@ -8251,10 +8251,10 @@
       "repo_fetched_at": "2026-11-25T02:41:11+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-27T03:21:48+00:00",
+      "query_fetched_at": "2026-11-28T03:35:10+00:00",
       "npm_fetched_at": null
     },
-    "score": 53.54,
+    "score": 53.51,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -8263,8 +8263,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.3184,
-        "contribution": 7.96
+        "normalized": 0.3168,
+        "contribution": 7.92
       },
       "maturity": {
         "weight": 0.2,
@@ -8273,8 +8273,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.6745,
-        "contribution": 10.12
+        "normalized": 0.6751,
+        "contribution": 10.13
       },
       "momentum": {
         "weight": 0.1,
@@ -8344,10 +8344,10 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-27T03:21:48+00:00",
+      "query_fetched_at": "2026-11-28T03:35:10+00:00",
       "npm_fetched_at": null
     },
-    "score": 72.76,
+    "score": 72.6,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -8356,8 +8356,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8648,
-        "contribution": 21.62
+        "normalized": 0.8584,
+        "contribution": 21.46
       },
       "maturity": {
         "weight": 0.2,
@@ -8431,10 +8431,10 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-27T03:21:48+00:00",
+      "query_fetched_at": "2026-11-28T03:35:10+00:00",
       "npm_fetched_at": null
     },
-    "score": 48.44,
+    "score": 48.36,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -8443,8 +8443,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.538,
-        "contribution": 13.45
+        "normalized": 0.5344,
+        "contribution": 13.36
       },
       "maturity": {
         "weight": 0.2,
@@ -8453,8 +8453,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.526,
-        "contribution": 7.89
+        "normalized": 0.5266,
+        "contribution": 7.9
       },
       "momentum": {
         "weight": 0.1,
@@ -8523,10 +8523,10 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-27T03:21:48+00:00",
+      "query_fetched_at": "2026-11-28T03:35:10+00:00",
       "npm_fetched_at": null
     },
-    "score": 60.17,
+    "score": 59.98,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -8535,8 +8535,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.6947,
-        "contribution": 17.37
+        "normalized": 0.6871,
+        "contribution": 17.18
       },
       "maturity": {
         "weight": 0.2,
@@ -8545,8 +8545,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.6153,
-        "contribution": 9.23
+        "normalized": 0.6159,
+        "contribution": 9.24
       },
       "momentum": {
         "weight": 0.1,
@@ -8618,10 +8618,10 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-27T03:21:48+00:00",
+      "query_fetched_at": "2026-11-28T03:35:10+00:00",
       "npm_fetched_at": null
     },
-    "score": 61.13,
+    "score": 60.95,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -8630,8 +8630,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9426,
-        "contribution": 23.57
+        "normalized": 0.9351,
+        "contribution": 23.38
       },
       "maturity": {
         "weight": 0.2,
@@ -8640,8 +8640,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5847,
-        "contribution": 8.77
+        "normalized": 0.5852,
+        "contribution": 8.78
       },
       "momentum": {
         "weight": 0.1,
@@ -8703,10 +8703,10 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-27T03:21:48+00:00",
+      "query_fetched_at": "2026-11-28T03:35:10+00:00",
       "npm_fetched_at": null
     },
-    "score": 62.12,
+    "score": 61.87,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -8715,8 +8715,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9431,
-        "contribution": 23.58
+        "normalized": 0.933,
+        "contribution": 23.32
       },
       "maturity": {
         "weight": 0.2,
@@ -8725,8 +8725,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5315,
-        "contribution": 7.97
+        "normalized": 0.5321,
+        "contribution": 7.98
       },
       "momentum": {
         "weight": 0.1,
@@ -8742,7 +8742,7 @@
       "topics": 10,
       "org_backed": false
     },
-    "rank": 73
+    "rank": 74
   },
   {
     "id": "lodyai--lody",
@@ -8787,10 +8787,10 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-27T03:21:48+00:00",
+      "query_fetched_at": "2026-11-28T03:35:10+00:00",
       "npm_fetched_at": null
     },
-    "score": 56.48,
+    "score": 56.3,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -8799,8 +8799,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7169,
-        "contribution": 17.92
+        "normalized": 0.7092,
+        "contribution": 17.73
       },
       "maturity": {
         "weight": 0.2,
@@ -8809,8 +8809,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4614,
-        "contribution": 6.92
+        "normalized": 0.4619,
+        "contribution": 6.93
       },
       "momentum": {
         "weight": 0.1,
@@ -8826,7 +8826,7 @@
       "topics": 9,
       "org_backed": true
     },
-    "rank": 96
+    "rank": 95
   },
   {
     "id": "twigpine--zero",
@@ -8875,10 +8875,10 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "topic:coding-agent",
-      "query_fetched_at": "2026-11-27T03:21:48+00:00",
+      "query_fetched_at": "2026-11-28T03:35:10+00:00",
       "npm_fetched_at": null
     },
-    "score": 58.62,
+    "score": 58.44,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -8887,8 +8887,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7828,
-        "contribution": 19.57
+        "normalized": 0.7753,
+        "contribution": 19.38
       },
       "maturity": {
         "weight": 0.2,
@@ -8897,8 +8897,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5003,
-        "contribution": 7.5
+        "normalized": 0.5008,
+        "contribution": 7.51
       },
       "momentum": {
         "weight": 0.1,
@@ -8960,10 +8960,10 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-27T03:21:50+00:00",
+      "query_fetched_at": "2026-11-28T03:35:13+00:00",
       "npm_fetched_at": null
     },
-    "score": 75.65,
+    "score": 75.47,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -8972,8 +8972,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8445,
-        "contribution": 21.11
+        "normalized": 0.8369,
+        "contribution": 20.92
       },
       "maturity": {
         "weight": 0.2,
@@ -8982,8 +8982,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.7605,
-        "contribution": 11.41
+        "normalized": 0.7611,
+        "contribution": 11.42
       },
       "momentum": {
         "weight": 0.1,
@@ -9055,10 +9055,10 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-27T03:21:50+00:00",
+      "query_fetched_at": "2026-11-28T03:35:13+00:00",
       "npm_fetched_at": null
     },
-    "score": 71.24,
+    "score": 71.06,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -9067,8 +9067,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7928,
-        "contribution": 19.82
+        "normalized": 0.7852,
+        "contribution": 19.63
       },
       "maturity": {
         "weight": 0.2,
@@ -9077,8 +9077,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5227,
-        "contribution": 7.84
+        "normalized": 0.5233,
+        "contribution": 7.85
       },
       "momentum": {
         "weight": 0.1,
@@ -9150,10 +9150,10 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-27T03:21:50+00:00",
+      "query_fetched_at": "2026-11-28T03:35:13+00:00",
       "npm_fetched_at": null
     },
-    "score": 69.08,
+    "score": 68.9,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -9162,8 +9162,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.6967,
-        "contribution": 17.42
+        "normalized": 0.6892,
+        "contribution": 17.23
       },
       "maturity": {
         "weight": 0.2,
@@ -9172,8 +9172,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.7079,
-        "contribution": 10.62
+        "normalized": 0.7085,
+        "contribution": 10.63
       },
       "momentum": {
         "weight": 0.1,
@@ -9224,10 +9224,10 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-27T03:21:50+00:00",
+      "query_fetched_at": "2026-11-28T03:35:13+00:00",
       "npm_fetched_at": null
     },
-    "score": 68.46,
+    "score": 68.29,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -9236,8 +9236,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9228,
-        "contribution": 23.07
+        "normalized": 0.9155,
+        "contribution": 22.89
       },
       "maturity": {
         "weight": 0.2,
@@ -9246,8 +9246,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4373,
-        "contribution": 6.56
+        "normalized": 0.4378,
+        "contribution": 6.57
       },
       "momentum": {
         "weight": 0.1,
@@ -9305,10 +9305,10 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-27T03:21:50+00:00",
+      "query_fetched_at": "2026-11-28T03:35:13+00:00",
       "npm_fetched_at": null
     },
-    "score": 66.0,
+    "score": 65.82,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -9317,8 +9317,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8197,
-        "contribution": 20.49
+        "normalized": 0.8122,
+        "contribution": 20.3
       },
       "maturity": {
         "weight": 0.2,
@@ -9327,8 +9327,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4696,
-        "contribution": 7.04
+        "normalized": 0.4701,
+        "contribution": 7.05
       },
       "momentum": {
         "weight": 0.1,
@@ -9386,10 +9386,10 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-27T03:21:50+00:00",
+      "query_fetched_at": "2026-11-28T03:35:13+00:00",
       "npm_fetched_at": null
     },
-    "score": 62.26,
+    "score": 62.08,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -9398,8 +9398,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8123,
-        "contribution": 20.31
+        "normalized": 0.8048,
+        "contribution": 20.12
       },
       "maturity": {
         "weight": 0.2,
@@ -9408,8 +9408,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4614,
-        "contribution": 6.92
+        "normalized": 0.4619,
+        "contribution": 6.93
       },
       "momentum": {
         "weight": 0.1,
@@ -9468,10 +9468,10 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-27T03:21:50+00:00",
+      "query_fetched_at": "2026-11-28T03:35:13+00:00",
       "npm_fetched_at": null
     },
-    "score": 60.58,
+    "score": 60.44,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -9480,8 +9480,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7309,
-        "contribution": 18.27
+        "normalized": 0.7251,
+        "contribution": 18.13
       },
       "maturity": {
         "weight": 0.2,
@@ -9490,8 +9490,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.491,
-        "contribution": 7.36
+        "normalized": 0.4915,
+        "contribution": 7.37
       },
       "momentum": {
         "weight": 0.1,
@@ -9547,10 +9547,10 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-27T03:21:50+00:00",
+      "query_fetched_at": "2026-11-28T03:35:13+00:00",
       "npm_fetched_at": null
     },
-    "score": 66.35,
+    "score": 66.17,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -9559,8 +9559,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8393,
-        "contribution": 20.98
+        "normalized": 0.8319,
+        "contribution": 20.8
       },
       "maturity": {
         "weight": 0.2,
@@ -9569,8 +9569,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5671,
-        "contribution": 8.51
+        "normalized": 0.5677,
+        "contribution": 8.52
       },
       "momentum": {
         "weight": 0.1,
@@ -9628,10 +9628,10 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-27T03:21:50+00:00",
+      "query_fetched_at": "2026-11-28T03:35:13+00:00",
       "npm_fetched_at": null
     },
-    "score": 56.78,
+    "score": 56.6,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -9640,8 +9640,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8026,
-        "contribution": 20.07
+        "normalized": 0.7951,
+        "contribution": 19.88
       },
       "maturity": {
         "weight": 0.2,
@@ -9650,8 +9650,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4093,
-        "contribution": 6.14
+        "normalized": 0.4099,
+        "contribution": 6.15
       },
       "momentum": {
         "weight": 0.1,
@@ -9667,7 +9667,7 @@
       "topics": 6,
       "org_backed": true
     },
-    "rank": 93
+    "rank": 92
   },
   {
     "id": "thirdlayerinc--autoagent",
@@ -9702,10 +9702,10 @@
       "repo_fetched_at": "2026-11-26T02:32:02+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-27T03:21:50+00:00",
+      "query_fetched_at": "2026-11-28T03:35:13+00:00",
       "npm_fetched_at": null
     },
-    "score": 56.51,
+    "score": 56.27,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -9714,8 +9714,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.933,
-        "contribution": 23.32
+        "normalized": 0.923,
+        "contribution": 23.07
       },
       "maturity": {
         "weight": 0.2,
@@ -9724,8 +9724,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.531,
-        "contribution": 7.96
+        "normalized": 0.5315,
+        "contribution": 7.97
       },
       "momentum": {
         "weight": 0.1,
@@ -9741,7 +9741,7 @@
       "topics": 0,
       "org_backed": true
     },
-    "rank": 95
+    "rank": 96
   },
   {
     "id": "langroid--langroid",
@@ -9795,10 +9795,10 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-27T03:21:50+00:00",
+      "query_fetched_at": "2026-11-28T03:35:13+00:00",
       "npm_fetched_at": null
     },
-    "score": 72.45,
+    "score": 72.26,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -9807,8 +9807,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8492,
-        "contribution": 21.23
+        "normalized": 0.8417,
+        "contribution": 21.04
       },
       "maturity": {
         "weight": 0.2,
@@ -9882,10 +9882,10 @@
       "repo_fetched_at": "2026-11-25T02:46:22+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-27T03:21:50+00:00",
+      "query_fetched_at": "2026-11-28T03:35:13+00:00",
       "npm_fetched_at": null
     },
-    "score": 58.38,
+    "score": 58.2,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -9894,8 +9894,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7756,
-        "contribution": 19.39
+        "normalized": 0.768,
+        "contribution": 19.2
       },
       "maturity": {
         "weight": 0.2,
@@ -9904,7 +9904,7 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4718,
+        "normalized": 0.4723,
         "contribution": 7.08
       },
       "momentum": {
@@ -9924,62 +9924,62 @@
     "rank": 85
   },
   {
-    "id": "chachamaru127--claude-code-harness",
-    "name": "claude-code-harness",
-    "slug": "chachamaru127/claude-code-harness",
+    "id": "agnesai-labs--agnes-harness",
+    "name": "agnes-harness",
+    "slug": "agnesai-labs/agnes-harness",
     "category": "framework",
     "origin": "discovered",
     "confidence": "medium",
     "npm": null,
     "metrics": {
-      "stars": 3223,
-      "forks": 308,
-      "open_issues": 9,
-      "pushed_at": "2026-11-16T01:25:00Z",
-      "created_at": "2025-12-12T03:57:21Z",
-      "license": "MIT",
+      "stars": 3293,
+      "forks": 327,
+      "open_issues": 5,
+      "pushed_at": "2026-11-27T09:45:01Z",
+      "created_at": "2026-09-22T17:18:54Z",
+      "license": "Apache-2.0",
       "topics": [],
-      "language": "Shell",
+      "language": "TypeScript",
       "homepage": null,
-      "description": "Claude Code Dedicated Development Harness - Achieving High-Quality Development Through an Autonomous Plan→Work→Review Cycle",
-      "owner": "Chachamaru127",
-      "owner_type": "User",
+      "description": "Agnes Harness: A pluggable agent harness for Forward Deployed Engineering (FDE). Built for trust. Made for the real world.",
+      "owner": "AgnesAI-Labs",
+      "owner_type": "Organization",
       "archived": false,
       "fork": false,
-      "has_wiki": true,
+      "has_wiki": false,
       "has_pages": false,
-      "url": "https://github.com/Chachamaru127/claude-code-harness",
+      "url": "https://github.com/AgnesAI-Labs/agnes-harness",
       "downloads": null
     },
     "evidence": {
       "repo_source": "discovery-search",
-      "repo_fetched_at": "2026-11-25T02:46:22+00:00",
+      "repo_fetched_at": "2026-11-28T03:35:16+00:00",
       "repo_note": null,
       "discovered_by": "harness in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-27T03:21:50+00:00",
+      "query_fetched_at": "2026-11-28T03:35:13+00:00",
       "npm_fetched_at": null
     },
-    "score": 58.26,
+    "score": 56.57,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.3039,
-        "contribution": 9.12
+        "normalized": 0.3146,
+        "contribution": 9.44
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8506,
-        "contribution": 21.27
+        "normalized": 0.9431,
+        "contribution": 23.58
       },
       "maturity": {
         "weight": 0.2,
-        "normalized": 0.7,
-        "contribution": 14.0
+        "normalized": 0.6,
+        "contribution": 12.0
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5918,
-        "contribution": 8.88
+        "normalized": 0.4367,
+        "contribution": 6.55
       },
       "momentum": {
         "weight": 0.1,
@@ -9991,11 +9991,11 @@
     "star_delta": 0,
     "maturity_detail": {
       "license": true,
-      "docs": true,
+      "docs": false,
       "topics": 0,
-      "org_backed": false
+      "org_backed": true
     },
-    "rank": 86
+    "rank": 93
   },
   {
     "id": "herdrdev--herdr",
@@ -10049,10 +10049,10 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-27T03:21:53+00:00",
+      "query_fetched_at": "2026-11-28T03:35:15+00:00",
       "npm_fetched_at": null
     },
-    "score": 75.12,
+    "score": 74.95,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -10061,8 +10061,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8077,
-        "contribution": 20.19
+        "normalized": 0.8006,
+        "contribution": 20.01
       },
       "maturity": {
         "weight": 0.2,
@@ -10071,8 +10071,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5342,
-        "contribution": 8.01
+        "normalized": 0.5348,
+        "contribution": 8.02
       },
       "momentum": {
         "weight": 0.1,
@@ -10123,10 +10123,10 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-27T03:21:53+00:00",
+      "query_fetched_at": "2026-11-28T03:35:15+00:00",
       "npm_fetched_at": null
     },
-    "score": 68.57,
+    "score": 68.39,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -10135,8 +10135,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7436,
-        "contribution": 18.59
+        "normalized": 0.7361,
+        "contribution": 18.4
       },
       "maturity": {
         "weight": 0.2,
@@ -10145,8 +10145,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5512,
-        "contribution": 8.27
+        "normalized": 0.5518,
+        "contribution": 8.28
       },
       "momentum": {
         "weight": 0.1,
@@ -10209,10 +10209,10 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-27T03:21:53+00:00",
+      "query_fetched_at": "2026-11-28T03:35:15+00:00",
       "npm_fetched_at": null
     },
-    "score": 64.7,
+    "score": 64.52,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -10221,8 +10221,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.8689,
-        "contribution": 21.72
+        "normalized": 0.8614,
+        "contribution": 21.53
       },
       "maturity": {
         "weight": 0.2,
@@ -10231,8 +10231,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5578,
-        "contribution": 8.37
+        "normalized": 0.5584,
+        "contribution": 8.38
       },
       "momentum": {
         "weight": 0.1,
@@ -10303,10 +10303,10 @@
       "repo_fetched_at": "2026-11-25T02:36:33+00:00",
       "repo_note": null,
       "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-27T03:21:53+00:00",
+      "query_fetched_at": "2026-11-28T03:35:15+00:00",
       "npm_fetched_at": null
     },
-    "score": 72.1,
+    "score": 71.93,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -10315,8 +10315,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9377,
-        "contribution": 23.44
+        "normalized": 0.9302,
+        "contribution": 23.26
       },
       "maturity": {
         "weight": 0.2,
@@ -10325,8 +10325,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5321,
-        "contribution": 7.98
+        "normalized": 0.5326,
+        "contribution": 7.99
       },
       "momentum": {
         "weight": 0.1,
@@ -10391,20 +10391,20 @@
       "repo_fetched_at": "2026-11-25T02:41:11+00:00",
       "repo_note": null,
       "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-27T03:21:53+00:00",
+      "query_fetched_at": "2026-11-28T03:35:15+00:00",
       "npm_fetched_at": null
     },
-    "score": 63.36,
+    "score": 63.1,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.3405,
-        "contribution": 10.21
+        "normalized": 0.338,
+        "contribution": 10.14
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7879,
-        "contribution": 19.7
+        "normalized": 0.7803,
+        "contribution": 19.51
       },
       "maturity": {
         "weight": 0.2,
@@ -10413,8 +10413,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5633,
-        "contribution": 8.45
+        "normalized": 0.5638,
+        "contribution": 8.46
       },
       "momentum": {
         "weight": 0.1,
@@ -10479,20 +10479,20 @@
       "repo_fetched_at": "2026-11-25T02:41:11+00:00",
       "repo_note": null,
       "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-27T03:21:53+00:00",
+      "query_fetched_at": "2026-11-28T03:35:15+00:00",
       "npm_fetched_at": null
     },
-    "score": 64.32,
+    "score": 63.91,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
-        "normalized": 0.3222,
-        "contribution": 9.67
+        "normalized": 0.3165,
+        "contribution": 9.5
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.9056,
-        "contribution": 22.64
+        "normalized": 0.8958,
+        "contribution": 22.39
       },
       "maturity": {
         "weight": 0.2,
@@ -10501,8 +10501,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.4674,
-        "contribution": 7.01
+        "normalized": 0.4679,
+        "contribution": 7.02
       },
       "momentum": {
         "weight": 0.1,
@@ -10557,10 +10557,10 @@
       "repo_fetched_at": "2026-11-25T02:41:11+00:00",
       "repo_note": null,
       "discovered_by": "agent runtime in:name,description stars:>500 pushed:>2026-08-01",
-      "query_fetched_at": "2026-11-27T03:21:53+00:00",
+      "query_fetched_at": "2026-11-28T03:35:15+00:00",
       "npm_fetched_at": null
     },
-    "score": 56.54,
+    "score": 56.36,
     "score_breakdown": {
       "reach": {
         "weight": 0.3,
@@ -10569,8 +10569,8 @@
       },
       "activity": {
         "weight": 0.25,
-        "normalized": 0.7189,
-        "contribution": 17.97
+        "normalized": 0.7114,
+        "contribution": 17.78
       },
       "maturity": {
         "weight": 0.2,
@@ -10579,8 +10579,8 @@
       },
       "longevity": {
         "weight": 0.15,
-        "normalized": 0.5047,
-        "contribution": 7.57
+        "normalized": 0.5052,
+        "contribution": 7.58
       },
       "momentum": {
         "weight": 0.1,
