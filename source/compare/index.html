@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>同类项目对比矩阵 · cyberMap</title>
+<meta name="description" content="cyberMap 同类 AI 项目横向对比：同分类同方向的站点并排看 stars、涨星、推送、健康与收录日期，数据随每日收录自动重建。">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" href="/favicon.ico">
+<link rel="canonical" href="https://cybermap.halo26812.eu.org/compare/">
+<style>@font-face{font-family:"CM Orbitron";src:url("/fonts/cm-orbitron-latin.woff2") format("woff2");font-style:normal;font-weight:400 900;font-display:swap}@font-face{font-family:"CM Chakra";src:url("/fonts/cm-chakra-600-latin.woff2") format("woff2");font-style:normal;font-weight:600;font-display:swap}@font-face{font-family:"CM Mono";src:url("/fonts/cm-jetbrains-latin.woff2") format("woff2");font-style:normal;font-weight:400 700;font-display:swap}</style>
+<script>try{if(document.cookie.split('; ').indexOf('night=1')>=0)document.documentElement.classList.add('night')}catch(e){}</script>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+ --bg:#f4f7fc;--surface:rgba(255,255,255,.86);--solid:#fff;
+ --border:rgba(15,23,42,.09);--border2:rgba(15,23,42,.15);
+ --text:#1b2436;--soft:#45526b;--muted:#6b7790;
+ --accent:#4f46e5;--accent2:#06b6d4;--chip:rgba(79,70,229,.09);
+ --glow-a:rgba(56,189,248,.20);--glow-b:rgba(167,139,250,.18);
+ --shadow:0 4px 18px rgba(19,32,62,.055);--code:#0f1830;
+ --online:#16a34a;--idle:#d97706;--down:#dc2626;
+}
+body.night{
+ /* 设计稿 05 号板：VOID/SURFACE/EDGE/NEON-C/NEON-M/ONLINE/IDLE/TEXT */
+ --bg:#05070b;--surface:rgba(11,18,27,.82);--solid:#0b121b;
+ --border:rgba(18,48,63,.9);--border2:#12303f;
+ --text:#e6f5ff;--soft:#b7c9df;--muted:#8ba0bd;
+ --accent:#00e5ff;--accent2:#ff2ea6;--chip:rgba(0,229,255,.12);
+ --glow-a:rgba(0,229,255,.13);--glow-b:rgba(255,46,166,.11);
+ --shadow:0 8px 28px rgba(0,0,0,.45);--code:#050912;
+ --online:#39ff88;--idle:#ffb020;--down:#ff5c5c;
+}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif;
+ color:var(--text);background:var(--bg);
+ background-image:radial-gradient(900px 600px at 8% -8%,var(--glow-a),transparent 62%),
+ radial-gradient(800px 560px at 96% 4%,var(--glow-b),transparent 60%);
+ background-attachment:fixed;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:980px;margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+.top{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:14px;
+ padding:12px clamp(16px,4vw,40px);background:var(--surface);
+ border-bottom:1px solid var(--border);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.top .brand{font-weight:600;font-size:15px}
+.top .spacer{flex:1}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border-radius:9px;
+ border:1px solid var(--border2);background:var(--solid);font-size:13px;color:var(--soft);cursor:pointer}
+.btn:hover{color:var(--accent);border-color:var(--accent)}
+.hero{padding:56px 0 26px}
+.hero h1{margin:0 0 12px;font-size:30px;font-weight:600;letter-spacing:-.02em}
+.hero p{margin:0;color:var(--soft);font-size:15px;max-width:760px}
+.tag{display:inline-block;padding:3px 10px;border-radius:20px;background:var(--chip);
+ color:var(--accent);font-size:12px;margin-bottom:14px}
+.rail{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 34px}
+.rail a{padding:5px 11px;border-radius:8px;border:1px solid var(--border2);
+ background:var(--solid);font-size:12px;color:var(--soft)}
+.rail a:hover{color:var(--accent);border-color:var(--accent)}
+.cmp-group{background:var(--surface);border:1px solid var(--border);border-radius:14px;
+ box-shadow:var(--shadow);margin:0 0 30px;overflow:hidden}
+.cmp-head{padding:18px 20px 12px;border-bottom:1px solid var(--border)}
+.cmp-head .meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.cmp-head .cat{font-size:12px;color:var(--accent);background:var(--chip);padding:2px 9px;border-radius:14px}
+.cmp-head .cnt{font-size:12px;color:var(--muted)}
+.cmp-head h2{margin:8px 0 0;font-size:18px;font-weight:600}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{text-align:left;padding:11px 16px;border-bottom:1px solid var(--border);vertical-align:top}
+th{color:var(--muted);font-weight:500;background:var(--chip);white-space:nowrap;font-size:12px}
+tr:last-child td{border-bottom:0}
+td.name{min-width:200px}
+td.name a{font-weight:600}
+td.name a:hover{color:var(--accent)}
+td.name .desc{display:block;color:var(--soft);font-size:12px;margin-top:3px;max-width:340px}
+.num{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;white-space:nowrap}
+.best .num,.best a{color:var(--accent);font-weight:700}
+.up{color:var(--online)}
+.badge{display:inline-block;padding:1px 7px;border-radius:10px;font-size:10px;margin-left:6px;
+ border:1px solid var(--border2)}
+.badge.new{color:var(--accent2);border-color:var(--accent2)}
+.badge.ok{color:var(--online)} .badge.down{color:var(--down)} .badge.un{color:var(--idle)}
+.foot{padding:30px 0 50px;color:var(--muted);font-size:12px;border-top:1px solid var(--border)}
+@media(max-width:720px){th,td{padding:9px 10px}td.name .desc{max-width:180px}}
+/* ---- 设计稿 05 号板：对比矩阵赛博态（仅 body.night 生效，经典态零改动） ---- */
+.dy-cmp-design-only{display:none!important}
+body.night .dy-cmp-design-only{display:flex!important}
+body.night::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:9999;
+ background:repeating-linear-gradient(0deg,rgba(0,0,0,.12) 0 1px,transparent 1px 3px);opacity:.42}
+body.night .top{top:28px;background:rgba(11,18,27,.9);border-bottom:1px solid #12303f}
+body.night .top .brand,body.night .top .spacer{display:none}
+body.night .top .brand.cm-u-brand{display:inline-flex!important}
+body.night .btn,body.night .rail a{border-radius:2px;border-color:#12303f;background:rgba(11,18,27,.86);
+ font-family:"CM Mono","JetBrains Mono",monospace;font-size:11px;letter-spacing:.05em}
+body.night .btn:hover,body.night .rail a:hover{color:var(--accent2);border-color:var(--accent2)}
+body.night .wrap{max-width:1180px}
+body.night .tag{border-radius:2px;font-family:"CM Mono","JetBrains Mono",monospace;
+ font-size:10px;letter-spacing:.1em;color:var(--accent)}
+body.night .hero h1{font-family:"CM Orbitron",sans-serif;font-weight:900;
+ font-size:clamp(30px,3.4vw,44px);letter-spacing:-.02em}
+body.night .hero p{font-size:13px;color:var(--muted)}
+body.night .cmp-group{border-radius:3px;border-color:#12303f}
+body.night .cmp-head h2{font-family:"CM Chakra","Chakra Petch",sans-serif;font-weight:600;letter-spacing:.02em}
+body.night .cmp-head .cat{border-radius:2px;font-family:"CM Mono","JetBrains Mono",monospace;font-size:10px;letter-spacing:.08em}
+body.night th{font-family:"CM Mono","JetBrains Mono",monospace;font-size:11px;letter-spacing:.06em;color:var(--accent)}
+body.night td.name a{font-family:"CM Chakra","Chakra Petch",sans-serif;font-weight:600}
+body.night .best .num,body.night .best a{color:var(--accent)}
+body.night .badge{border-radius:2px;font-family:"CM Mono","JetBrains Mono",monospace}
+@media (prefers-reduced-motion:reduce){body.night::after{background:none}}
+</style><link rel="stylesheet" href="/css/cm-unified-header.css">
+</head>
+<body>
+<div class="dy-cmp-design-only cm-u-hud cm-u-only" id="dyCmpHud"><b>SECTION 05 // COMPARISON MATRIX</b><span class="cm-u-hud-right">12 GROUPS · 47 NODES</span></div>
+<header class="top cm-u-nav">
+  <div class="brand">cyberMap / compare</div>
+  <a class="brand cm-u-brand cm-u-only" href="/" aria-label="cyberMap 首页"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 28 9v14l-12 7L4 23V9z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 8 23 12v8l-7 4-7-4v-8z" fill="currentColor" opacity=".25"/></svg><b><i>cyber</i> MAP</b></a>
+  <nav class="cm-u-links cm-u-only" aria-label="全站导航"><a href="/">首页</a><a href="/daily/">每日速递</a><a href="/rank/">插件榜</a><a href="/data/">开放数据</a><a href="/compare/" class="is-active">对比矩阵</a><a href="/tools/">自研工具</a><a href="/about/">关于</a></nav>
+  <div class="spacer"></div>
+  <span class="cm-u-util">
+  <a class="btn" href="/">返回首页</a>
+  <button class="btn" id="themeBtn" type="button">切换主题</button>
+  </span>
+</header>
+<div class="wrap">
+  <section class="hero">
+    <div class="tag">Comparison matrix · 每天随收录自动重建</div>
+    <h1>同类项目对比矩阵</h1>
+    <p>同分类、同方向标签的 AI 项目自动聚成对比组，一张表并排看 12 组 47 个节点：stars、近 24h / 7d 涨星、最近推送、健康态与收录日期。数据全部来自站内既有验证证据与上游雷达，零额外探测。</p>
+    <nav class="rail" aria-label="对比组导航"><a href="#cmp-00">推理与训练框架 · 推理引擎</a><a href="#cmp-01">视频与音频 · 视频图像</a><a href="#cmp-02">GitHub 项目 · AI 应用</a><a href="#cmp-03">RAG 与知识库 · RAG 检索</a><a href="#cmp-04">智能体框架 · 安全审计</a><a href="#cmp-05">智能体框架 · 多智能体</a><a href="#cmp-06">智能体框架 · 记忆</a><a href="#cmp-07">智能体框架 · MCP</a><a href="#cmp-08">GitHub 项目 · 教育课堂</a><a href="#cmp-09">智能体框架 · AI 应用</a><a href="#cmp-10">智能体框架 · 浏览器自动化</a><a href="#cmp-11">推理与训练框架 · 训练微调</a></nav>
+  </section>
+  <section class="cmp-group" id="cmp-00">
+    <div class="cmp-head">
+      <div class="meta"><span class="cat">模型与开源 / 推理与训练框架</span><span class="cnt">方向：推理引擎</span><span class="cnt">组内共 20 个，展示前 4 个</span></div>
+      <h2>推理与训练框架 × 推理引擎</h2>
+    </div>
+    <table>
+      <thead><tr><th>站点</th><th>Stars</th><th>24h 涨星</th><th>7d 涨星</th><th>最近推送</th><th>健康</th><th>收录</th></tr></thead>
+      <tbody>
+        <tr class="best">
+          <td class="name"><a href="https://github.com/JustVugg/colibri" target="_blank" rel="noopener">JustVugg/colibri</a><span class="badge new">NEW</span><span class="desc">纯 C 编写的分层 MoE 推理引擎，热专家驻留 GPU、冷专家从 NVMe 流式加载，让超大模型跑在普通硬件上。</span></td>
+          <td class="num">53,168</td>
+          <td><span class="num up">+151</span></td>
+          <td><span class="num up">+254</span></td>
+          <td class="num">2026-11-27</td>
+          <td><span class="badge un">未复检</span></td>
+          <td class="num">2026-11-24</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/jundot/omlx" target="_blank" rel="noopener">jundot/omlx</a><span class="badge new">NEW</span><span class="desc">面向苹果芯片的大模型推理服务器，支持连续批处理与 SSD 分层缓存，可从菜单栏管理。</span></td>
+          <td class="num">23,739</td>
+          <td>—</td>
+          <td><span class="num up">+58</span></td>
+          <td class="num">2026-11-26</td>
+          <td><span class="badge un">未复检</span></td>
+          <td class="num">2026-11-19</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/flashml-org/FreeToken" target="_blank" rel="noopener">flashml-org/FreeToken</a><span class="badge new">NEW</span><span class="desc">把数据中心级模型服务带到桌面的开源引擎，可在个人电脑上本地运行超大规模语言模型。</span></td>
+          <td class="num">17,275</td>
+          <td>—</td>
+          <td><span class="num up">+20</span></td>
+          <td class="num">2026-11-27</td>
+          <td><span class="badge un">未复检</span></td>
+          <td class="num">2026-11-18</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/cactus-compute/cactus" target="_blank" rel="noopener">cactus-compute/cactus</a><span class="badge new">NEW</span><span class="desc">面向消费级设备的轻量端侧推理库，体积不足 50MB，本地运行智能体、语音与视觉任务，无需云端。</span></td>
+          <td class="num">14,858</td>
+          <td><span class="num up">+32</span></td>
+          <td><span class="num up">+40</span></td>
+          <td class="num">2026-11-23</td>
+          <td><span class="badge un">未复检</span></td>
+          <td class="num">2026-11-21</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="cmp-group" id="cmp-01">
+    <div class="cmp-head">
+      <div class="meta"><span class="cat">AI 工具箱 / 视频与音频</span><span class="cnt">方向：视频图像</span><span class="cnt">组内共 16 个，展示前 4 个</span></div>
+      <h2>视频与音频 × 视频图像</h2>
+    </div>
+    <table>
+      <thead><tr><th>站点</th><th>Stars</th><th>24h 涨星</th><th>7d 涨星</th><th>最近推送</th><th>健康</th><th>收录</th></tr></thead>
+      <tbody>
+        <tr class="best">
+          <td class="name"><a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" rel="noopener">harry0703/MoneyPrinterTurbo</a><span class="badge new">NEW</span><span class="desc">基于 AI 大模型自动生成文案、配音与字幕，一键合成高清短视频的开源工作流工具。</span></td>
+          <td class="num">143,590</td>
+          <td>—</td>
+          <td>—</td>
+          <td class="num">—</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-15</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/debpalash/VoiceStudio" target="_blank" rel="noopener">debpalash/VoiceStudio</a><span class="badge new">NEW</span><span class="desc">完全本地运行的开源配音工作室，支持声音克隆、音色设计、视频配音与转写，覆盖六百余种语言。</span></td>
+          <td class="num">118,422</td>
+          <td>—</td>
+          <td>—</td>
+          <td class="num">—</td>
+          <td>—</td>
+          <td class="num">2026-11-26</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/heygen-com/hyperframes" target="_blank" rel="noopener">heygen-com/hyperframes</a><span class="badge new">NEW</span><span class="desc">HeyGen 开源的 TypeScript 视频渲染框架，把 HTML、CSS 与动画确定性输出为 MP4，供 AI 智能体批量生成视频。</span></td>
+          <td class="num">84,753</td>
+          <td>—</td>
+          <td>—</td>
+          <td class="num">—</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-16</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/calesthio/OpenMontage" target="_blank" rel="noopener">calesthio/OpenMontage</a><span class="badge new">NEW</span><span class="desc">开源智能体视频制作系统，从脚本自动生成素材、配音与剪辑，内置十二条流水线和数百项技能。</span></td>
+          <td class="num">83,359</td>
+          <td>—</td>
+          <td>—</td>
+          <td class="num">—</td>
+          <td>—</td>
+          <td class="num">2026-11-26</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="cmp-group" id="cmp-02">
+    <div class="cmp-head">
+      <div class="meta"><span class="cat">模型与开源 / GitHub 项目</span><span class="cnt">方向：AI 应用</span><span class="cnt">组内共 5 个，展示前 4 个</span></div>
+      <h2>GitHub 项目 × AI 应用</h2>
+    </div>
+    <table>
+      <thead><tr><th>站点</th><th>Stars</th><th>24h 涨星</th><th>7d 涨星</th><th>最近推送</th><th>健康</th><th>收录</th></tr></thead>
+      <tbody>
+        <tr class="best">
+          <td class="name"><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener">firecrawl/firecrawl</a><span class="desc">把网站抓取并转成 LLM 就绪数据的开源服务与 API。</span></td>
+          <td class="num">201,367</td>
+          <td><span class="num up">+927</span></td>
+          <td><span class="num up">+1626</span></td>
+          <td class="num">2026-11-28</td>
+          <td><span class="badge un">未复检</span></td>
+          <td class="num">—</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/ZhuLinsen/daily_stock_analysis" target="_blank" rel="noopener">ZhuLinsen/daily_stock_analysis</a><span class="badge new">NEW</span><span class="desc">LLM 驱动的多市场股票智能分析系统，聚合行情与新闻、生成决策看板并支持定时推送。</span></td>
+          <td class="num">73,639</td>
+          <td><span class="num up">+289</span></td>
+          <td><span class="num up">+675</span></td>
+          <td class="num">2026-11-28</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-22</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/streamlit/streamlit" target="_blank" rel="noopener">streamlit/streamlit</a><span class="desc">把 Python 脚本快速变成数据应用的开源框架。</span></td>
+          <td class="num">46,527</td>
+          <td><span class="num up">+10</span></td>
+          <td><span class="num up">+19</span></td>
+          <td class="num">2026-11-27</td>
+          <td><span class="badge un">未复检</span></td>
+          <td class="num">—</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/karakeep-app/karakeep" target="_blank" rel="noopener">karakeep-app/karakeep</a><span class="badge new">NEW</span><span class="desc">可自托管的全能收藏应用，支持链接、笔记与图片，提供 AI 自动打标和全文搜索。</span></td>
+          <td class="num">30,705</td>
+          <td><span class="num up">+15</span></td>
+          <td><span class="num up">+88</span></td>
+          <td class="num">2026-11-28</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-20</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="cmp-group" id="cmp-03">
+    <div class="cmp-head">
+      <div class="meta"><span class="cat">模型与开源 / RAG 与知识库</span><span class="cnt">方向：RAG 检索</span><span class="cnt">组内共 10 个，展示前 4 个</span></div>
+      <h2>RAG 与知识库 × RAG 检索</h2>
+    </div>
+    <table>
+      <thead><tr><th>站点</th><th>Stars</th><th>24h 涨星</th><th>7d 涨星</th><th>最近推送</th><th>健康</th><th>收录</th></tr></thead>
+      <tbody>
+        <tr class="best">
+          <td class="name"><a href="https://github.com/infiniflow/ragflow" target="_blank" rel="noopener">infiniflow/ragflow</a><span class="badge new">NEW</span><span class="desc">面向智能体的原生 RAG 检索引擎，提供确定性解析、可解释引用与企业级知识库问答能力。</span></td>
+          <td class="num">94,337</td>
+          <td>—</td>
+          <td><span class="num up">+114</span></td>
+          <td class="num">2026-11-24</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-18</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/headroomlabs-ai/headroom" target="_blank" rel="noopener">headroomlabs-ai/headroom</a><span class="badge new">NEW</span><span class="desc">在送入大模型前压缩工具输出、日志、文件与 RAG 分块，显著降低 token 消耗，提供库、代理与 MCP 服务三种形态。</span></td>
+          <td class="num">80,175</td>
+          <td>—</td>
+          <td><span class="num up">+261</span></td>
+          <td class="num">2026-11-25</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-20</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/volcengine/OpenViking" target="_blank" rel="noopener">volcengine/OpenViking</a><span class="badge new">NEW</span><span class="desc">火山引擎开源的自演进上下文数据库，统一智能体记忆、RAG 检索与技能管理。</span></td>
+          <td class="num">42,886</td>
+          <td>—</td>
+          <td>—</td>
+          <td class="num">—</td>
+          <td>—</td>
+          <td class="num">2026-11-27</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/onyx-dot-app/onyx" target="_blank" rel="noopener">onyx-dot-app/onyx</a><span class="badge new">NEW</span><span class="desc">开源企业 AI 搜索平台，可连接多种数据源做 RAG 检索问答，内置权限与连接器，用于搭建内部知识助手。</span></td>
+          <td class="num">33,469</td>
+          <td>—</td>
+          <td><span class="num up">+29</span></td>
+          <td class="num">2026-11-25</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-20</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="cmp-group" id="cmp-04">
+    <div class="cmp-head">
+      <div class="meta"><span class="cat">模型与开源 / 智能体框架</span><span class="cnt">方向：安全审计</span><span class="cnt">组内共 5 个，展示前 4 个</span></div>
+      <h2>智能体框架 × 安全审计</h2>
+    </div>
+    <table>
+      <thead><tr><th>站点</th><th>Stars</th><th>24h 涨星</th><th>7d 涨星</th><th>最近推送</th><th>健康</th><th>收录</th></tr></thead>
+      <tbody>
+        <tr class="best">
+          <td class="name"><a href="https://github.com/cloudflare/security-audit-skill" target="_blank" rel="noopener">cloudflare/security-audit-skill</a><span class="badge new">NEW</span><span class="desc">Cloudflare 开源的编码智能体技能，执行多阶段安全审计并输出经独立验证、机器可读的漏洞发现结果。</span></td>
+          <td class="num">74,846</td>
+          <td>—</td>
+          <td><span class="num up">+864</span></td>
+          <td class="num">—</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-18</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/NVIDIA/OpenShell" target="_blank" rel="noopener">NVIDIA/OpenShell</a><span class="badge new">NEW</span><span class="desc">NVIDIA 开源的智能体安全运行时，用内核级沙箱与外部策略监督隔离智能体执行，保护凭据与出站流量。</span></td>
+          <td class="num">21,995</td>
+          <td>—</td>
+          <td>—</td>
+          <td class="num">—</td>
+          <td>—</td>
+          <td class="num">2026-11-28</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/pydantic/pydantic-ai" target="_blank" rel="noopener">pydantic/pydantic-ai</a><span class="badge new">NEW</span><span class="desc">Pydantic 官方 AI Agent 开发框架，端到端类型安全，支持实时语音、图像生成、嵌入与多模型接入。</span></td>
+          <td class="num">21,357</td>
+          <td>—</td>
+          <td><span class="num up">+13</span></td>
+          <td class="num">2026-11-25</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-24</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/withcoral/coral" target="_blank" rel="noopener">withcoral/coral</a><span class="badge new">NEW</span><span class="desc">为 AI 智能体访问企业敏感系统提供执行护栏，按精细权限与自定义工具安全调用，减少 token 消耗。</span></td>
+          <td class="num">5,031</td>
+          <td>—</td>
+          <td>—</td>
+          <td class="num">—</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-25</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="cmp-group" id="cmp-05">
+    <div class="cmp-head">
+      <div class="meta"><span class="cat">模型与开源 / 智能体框架</span><span class="cnt">方向：多智能体</span><span class="cnt">组内共 5 个，展示前 4 个</span></div>
+      <h2>智能体框架 × 多智能体</h2>
+    </div>
+    <table>
+      <thead><tr><th>站点</th><th>Stars</th><th>24h 涨星</th><th>7d 涨星</th><th>最近推送</th><th>健康</th><th>收录</th></tr></thead>
+      <tbody>
+        <tr class="best">
+          <td class="name"><a href="https://github.com/Orkas-AI/Orkas" target="_blank" rel="noopener">Orkas-AI/Orkas</a><span class="badge new">NEW</span><span class="desc">本地优先的开源多智能体桌面团队，指挥官把目标拆成待办并协调内置专家与主流编码智能体协同完成。</span></td>
+          <td class="num">9,434</td>
+          <td>—</td>
+          <td><span class="num up">+41</span></td>
+          <td class="num">2026-11-24</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-18</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/Tencent/LoopForge" target="_blank" rel="noopener">Tencent/LoopForge</a><span class="badge new">NEW</span><span class="desc">腾讯开源的自托管编码智能体交付工作流，编排 CodeBuddy、Codex 等并支持人工审批。</span></td>
+          <td class="num">5,523</td>
+          <td>—</td>
+          <td><span class="num up">+476</span></td>
+          <td class="num">2026-11-25</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-22</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/ChesterRa/cccc" target="_blank" rel="noopener">ChesterRa/cccc</a><span class="badge new">NEW</span><span class="desc">零基础设施的编码智能体协调器，用群聊式已读与投递回执从手机远程调度多个智能体持续执行任务。</span></td>
+          <td class="num">1,337</td>
+          <td>—</td>
+          <td><span class="num up">+2</span></td>
+          <td class="num">2026-11-25</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-18</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/didi/helixharness" target="_blank" rel="noopener">didi/helixharness</a><span class="badge new">NEW</span><span class="desc">滴滴开源的 AI 编码工程化框架，支持团队结合业务知识与研发流程持续构建专属 Harness。</span></td>
+          <td class="num">461</td>
+          <td>—</td>
+          <td>—</td>
+          <td class="num">—</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-25</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="cmp-group" id="cmp-06">
+    <div class="cmp-head">
+      <div class="meta"><span class="cat">模型与开源 / 智能体框架</span><span class="cnt">方向：记忆</span></div>
+      <h2>智能体框架 × 记忆</h2>
+    </div>
+    <table>
+      <thead><tr><th>站点</th><th>Stars</th><th>24h 涨星</th><th>7d 涨星</th><th>最近推送</th><th>健康</th><th>收录</th></tr></thead>
+      <tbody>
+        <tr class="best">
+          <td class="name"><a href="https://github.com/deepseek-ai/deepseek-harness" target="_blank" rel="noopener">deepseek-ai/deepseek-harness</a><span class="badge new">NEW</span><span class="desc">DeepSeek 官方插件化智能体宿主，以插件形式扩展编码智能体的工具、记忆与执行能力。</span></td>
+          <td class="num">287,682</td>
+          <td>—</td>
+          <td>—</td>
+          <td class="num">—</td>
+          <td>—</td>
+          <td class="num">2026-11-27</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/bytedance/deer-flow" target="_blank" rel="noopener">bytedance/deer-flow</a><span class="badge new">NEW</span><span class="desc">字节跳动开源的长程超级智能体框架，集成沙箱、记忆、技能与子智能体，自主完成研究、编码与创作等多步任务。</span></td>
+          <td class="num">85,408</td>
+          <td>—</td>
+          <td><span class="num up">+85</span></td>
+          <td class="num">2026-11-24</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-17</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/mem0ai/mem0" target="_blank" rel="noopener">mem0ai/mem0</a><span class="badge new">NEW</span><span class="desc">为 AI 智能体提供持久化记忆层的开源基础设施，可跨会话记住用户偏好并注入相关上下文。</span></td>
+          <td class="num">69,142</td>
+          <td>—</td>
+          <td><span class="num up">+39</span></td>
+          <td class="num">2026-11-23</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-18</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/trpc-group/trpc-agent-go" target="_blank" rel="noopener">trpc-group/trpc-agent-go</a><span class="badge new">NEW</span><span class="desc">腾讯开源的 Go 语言生产级智能体框架，支持图工作流、记忆、A2A 与 MCP 协议，内置评测与可观测能力。</span></td>
+          <td class="num">1,940</td>
+          <td>—</td>
+          <td><span class="num up">+4</span></td>
+          <td class="num">2026-11-24</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-23</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="cmp-group" id="cmp-07">
+    <div class="cmp-head">
+      <div class="meta"><span class="cat">模型与开源 / 智能体框架</span><span class="cnt">方向：MCP</span></div>
+      <h2>智能体框架 × MCP</h2>
+    </div>
+    <table>
+      <thead><tr><th>站点</th><th>Stars</th><th>24h 涨星</th><th>7d 涨星</th><th>最近推送</th><th>健康</th><th>收录</th></tr></thead>
+      <tbody>
+        <tr class="best">
+          <td class="name"><a href="https://github.com/google-gemini/gemini-cli" target="_blank" rel="noopener">google-gemini/gemini-cli</a><span class="badge new">NEW</span><span class="desc">谷歌开源的终端 AI 编码智能体，在命令行读写代码、执行 shell 命令并集成 MCP，支持 Gemini 模型辅助开发与调试。</span></td>
+          <td class="num">108,945</td>
+          <td>—</td>
+          <td><span class="num up">+60</span></td>
+          <td class="num">2026-11-25</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-20</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/ChromeDevTools/chrome-devtools-mcp" target="_blank" rel="noopener">ChromeDevTools/chrome-devtools-mcp</a><span class="badge new">NEW</span><span class="desc">把 Chrome 开发者工具通过 MCP 暴露给编码智能体，支持页面调试、检查与交互自动化。</span></td>
+          <td class="num">58,699</td>
+          <td>—</td>
+          <td><span class="num up">+523</span></td>
+          <td class="num">2026-11-24</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-22</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/aaif-goose/goose" target="_blank" rel="noopener">aaif-goose/goose</a><span class="badge new">NEW</span><span class="desc">可扩展的开源 AI 智能体，支持命令行、桌面与 API 多种形态，能连接任意大模型和 MCP 工具，自动完成开发与日常任务。</span></td>
+          <td class="num">56,795</td>
+          <td>—</td>
+          <td><span class="num up">+99</span></td>
+          <td class="num">2026-11-25</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-20</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/DIYgod/Pinky" target="_blank" rel="noopener">DIYgod/Pinky</a><span class="badge new">NEW</span><span class="desc">通过 MCP 让 AI 操控真实 iPhone 或安卓手机的桌面工具，全程投屏录像并支持人工随时接管。</span></td>
+          <td class="num">2,783</td>
+          <td>—</td>
+          <td>—</td>
+          <td class="num">—</td>
+          <td>—</td>
+          <td class="num">2026-11-26</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="cmp-group" id="cmp-08">
+    <div class="cmp-head">
+      <div class="meta"><span class="cat">模型与开源 / GitHub 项目</span><span class="cnt">方向：教育课堂</span></div>
+      <h2>GitHub 项目 × 教育课堂</h2>
+    </div>
+    <table>
+      <thead><tr><th>站点</th><th>Stars</th><th>24h 涨星</th><th>7d 涨星</th><th>最近推送</th><th>健康</th><th>收录</th></tr></thead>
+      <tbody>
+        <tr class="best">
+          <td class="name"><a href="https://github.com/karpathy/nanochat" target="_blank" rel="noopener">karpathy/nanochat</a><span class="badge new">NEW</span><span class="desc">Karpathy 开源的从零实现 ChatGPT 全流程教学框架，约百美元成本即可完成预训练与推理。</span></td>
+          <td class="num">60,839</td>
+          <td><span class="num up">+26</span></td>
+          <td><span class="num up">+58</span></td>
+          <td class="num">2026-09-07</td>
+          <td><span class="badge un">未复检</span></td>
+          <td class="num">2026-11-25</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/gradio-app/gradio" target="_blank" rel="noopener">gradio-app/gradio</a><span class="desc">用几行 Python 为机器学习模型生成 Web 演示界面。</span></td>
+          <td class="num">44,174</td>
+          <td><span class="num up">+11</span></td>
+          <td><span class="num up">+19</span></td>
+          <td class="num">2026-11-27</td>
+          <td><span class="badge un">未复检</span></td>
+          <td class="num">—</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/THU-MAIC/OpenMAIC" target="_blank" rel="noopener">THU-MAIC/OpenMAIC</a><span class="badge new">NEW</span><span class="desc">清华开源的开放式多智能体互动课堂，一键生成含 AI 教师与同学、白板及讲解的沉浸式学习体验。</span></td>
+          <td class="num">43,839</td>
+          <td><span class="num up">+240</span></td>
+          <td><span class="num up">+516</span></td>
+          <td class="num">2026-11-27</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-18</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/skyzh/tiny-llm" target="_blank" rel="noopener">skyzh/tiny-llm</a><span class="badge new">NEW</span><span class="desc">面向系统工程师的 Apple Silicon LLM 推理教学项目，用 Python 从零搭建迷你 vLLM 并运行 Qwen 模型。</span></td>
+          <td class="num">5,752</td>
+          <td><span class="num up">+1</span></td>
+          <td><span class="num up">+3</span></td>
+          <td class="num">2026-11-27</td>
+          <td><span class="badge un">未复检</span></td>
+          <td class="num">2026-11-18</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="cmp-group" id="cmp-09">
+    <div class="cmp-head">
+      <div class="meta"><span class="cat">模型与开源 / 智能体框架</span><span class="cnt">方向：AI 应用</span><span class="cnt">组内共 5 个，展示前 4 个</span></div>
+      <h2>智能体框架 × AI 应用</h2>
+    </div>
+    <table>
+      <thead><tr><th>站点</th><th>Stars</th><th>24h 涨星</th><th>7d 涨星</th><th>最近推送</th><th>健康</th><th>收录</th></tr></thead>
+      <tbody>
+        <tr class="best">
+          <td class="name"><a href="https://github.com/n8n-io/n8n" target="_blank" rel="noopener">n8n-io/n8n</a><span class="desc">可自托管的工作流自动化工具，支持 AI 与数百种集成。</span></td>
+          <td class="num">210,354</td>
+          <td>—</td>
+          <td>—</td>
+          <td class="num">—</td>
+          <td><span class="badge un">未复检</span></td>
+          <td class="num">—</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/langflow-ai/langflow" target="_blank" rel="noopener">langflow-ai/langflow</a><span class="badge new">NEW</span><span class="desc">可视化拖拽构建 AI 智能体与工作流的开源工具，支持接入主流大模型并部署为 API。</span></td>
+          <td class="num">156,644</td>
+          <td>—</td>
+          <td>—</td>
+          <td class="num">—</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-15</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/AgnesAI-Labs/agnes-harness" target="_blank" rel="noopener">AgnesAI-Labs/agnes-harness</a><span class="badge new">NEW</span><span class="desc">双系统智能体运行底座：9B 小模型负责工具选择等高频决策，大模型负责意图拆解与异常兜底。</span></td>
+          <td class="num">3,289</td>
+          <td>—</td>
+          <td>—</td>
+          <td class="num">—</td>
+          <td>—</td>
+          <td class="num">2026-11-28</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/langchain-ai/langchain" target="_blank" rel="noopener">langchain-ai/langchain</a><span class="desc">构建大模型应用的开源框架，提供链、工具与智能体抽象。</span></td>
+          <td class="num">—</td>
+          <td>—</td>
+          <td>—</td>
+          <td class="num">—</td>
+          <td><span class="badge un">未复检</span></td>
+          <td class="num">—</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="cmp-group" id="cmp-10">
+    <div class="cmp-head">
+      <div class="meta"><span class="cat">模型与开源 / 智能体框架</span><span class="cnt">方向：浏览器自动化</span></div>
+      <h2>智能体框架 × 浏览器自动化</h2>
+    </div>
+    <table>
+      <thead><tr><th>站点</th><th>Stars</th><th>24h 涨星</th><th>7d 涨星</th><th>最近推送</th><th>健康</th><th>收录</th></tr></thead>
+      <tbody>
+        <tr class="best">
+          <td class="name"><a href="https://github.com/browser-use/browser-use" target="_blank" rel="noopener">browser-use/browser-use</a><span class="badge new">NEW</span><span class="desc">开源浏览器智能体框架，让大模型在真实浏览器中自动点击、输入并完成任务，兼容任意 LLM。</span></td>
+          <td class="num">120,878</td>
+          <td>—</td>
+          <td>—</td>
+          <td class="num">—</td>
+          <td><span class="badge un">未复检</span></td>
+          <td class="num">2026-11-13</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/vercel-labs/agent-browser" target="_blank" rel="noopener">vercel-labs/agent-browser</a><span class="badge new">NEW</span><span class="desc">Vercel开源的Rust浏览器自动化CLI，以无障碍树读取页面并让AI智能体逐步操作网页元素，失败即报错。</span></td>
+          <td class="num">52,030</td>
+          <td>—</td>
+          <td>—</td>
+          <td class="num">—</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-17</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/vercel-labs/agent-desktop" target="_blank" rel="noopener">vercel-labs/agent-desktop</a><span class="badge new">NEW</span><span class="desc">Vercel Labs 开源的命令行工具，通过系统无障碍树让 AI 智能体识别并操作桌面应用，支持无头运行与多平台。</span></td>
+          <td class="num">24,188</td>
+          <td>—</td>
+          <td>—</td>
+          <td class="num">—</td>
+          <td><span class="badge ok">OK</span></td>
+          <td class="num">2026-11-16</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="cmp-group" id="cmp-11">
+    <div class="cmp-head">
+      <div class="meta"><span class="cat">模型与开源 / 推理与训练框架</span><span class="cnt">方向：训练微调</span></div>
+      <h2>推理与训练框架 × 训练微调</h2>
+    </div>
+    <table>
+      <thead><tr><th>站点</th><th>Stars</th><th>24h 涨星</th><th>7d 涨星</th><th>最近推送</th><th>健康</th><th>收录</th></tr></thead>
+      <tbody>
+        <tr class="best">
+          <td class="name"><a href="https://github.com/unslothai/unsloth" target="_blank" rel="noopener">unslothai/unsloth</a><span class="badge new">NEW</span><span class="desc">本地运行与训练大语言模型及扩散模型的框架，支持 GGUF、MLX 与 Qwen、DeepSeek、FLUX 等模型微调。</span></td>
+          <td class="num">80,102</td>
+          <td><span class="num up">+77</span></td>
+          <td><span class="num up">+132</span></td>
+          <td class="num">2026-11-28</td>
+          <td><span class="badge un">未复检</span></td>
+          <td class="num">2026-11-24</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/jingyaogong/minimind" target="_blank" rel="noopener">jingyaogong/minimind</a><span class="badge new">NEW</span><span class="desc">仅需 2 小时即可从零训练 6400 万参数小语言模型的开源项目，适合快速上手大模型训练全流程。</span></td>
+          <td class="num">66,051</td>
+          <td><span class="num up">+736</span></td>
+          <td><span class="num up">+736</span></td>
+          <td class="num">2026-11-26</td>
+          <td><span class="badge un">未复检</span></td>
+          <td class="num">2026-11-18</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/sous-labs/songe" target="_blank" rel="noopener">sous-labs/songe</a><span class="badge new">NEW</span><span class="desc">本地模型夜间训练引擎：把日常纠正与重试提炼成练习，闲置算力蒸馏小适配器，考核通过才换版本。</span></td>
+          <td class="num">927</td>
+          <td>—</td>
+          <td>—</td>
+          <td class="num">—</td>
+          <td>—</td>
+          <td class="num">2026-11-28</td>
+        </tr>
+        <tr>
+          <td class="name"><a href="https://github.com/huggingface/transformers" target="_blank" rel="noopener">huggingface/transformers</a><span class="desc">主流预训练模型库，统一加载与训练各类 Transformer 模型。</span></td>
+          <td class="num">—</td>
+          <td>—</td>
+          <td>—</td>
+          <td class="num">—</td>
+          <td><span class="badge un">未复检</span></td>
+          <td class="num">—</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="foot">
+    对比组由 cyberMap 每日收录流水线自动生成 · stars 以 api.github.com 实探证据为准 · 涨星与推送来自上游变更雷达 updates.json · 分类与标签同站内导航一致。
+  </section>
+</div>
+<script>
+(function(){
+  function isNight(){return document.cookie.split('; ').indexOf('night=1')>=0}
+  function apply(){document.body.classList.toggle('night',isNight())}
+  apply();
+  document.getElementById('themeBtn').addEventListener('click',function(){
+    document.cookie='night='+(isNight()?'0':'1')+';path=/;max-age=31536000';
+    apply();
+  });
+})();
+</script>
+</body>
+</html>

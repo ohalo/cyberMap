@@ -405,6 +405,12 @@ def render_html(payload: dict) -> str:
         <h3>每日速递</h3>
         <p>按日期回看每天新增的 AI 站点，带核验徽章、质量回执与分类订阅 RSS。</p>
         <div class="path">/daily/</div>
+      </a>
+      <a class="card" href="/compare/">
+        <div class="ext">HTML · text/html</div>
+        <h3>对比矩阵</h3>
+        <p>同分类同方向的同类项目自动聚组，并排看 stars、24h/7d 涨星、推送与健康态。</p>
+        <div class="path">/compare/</div>
       </a>"""
 
     field_rows = [
@@ -463,7 +469,7 @@ def render_html(payload: dict) -> str:
   </section>
 
   <section class="sec">
-    <h2>三份产物</h2>
+    <h2>数据产物</h2>
     <p class="hint">全部静态文件，无需鉴权，直接 GET 即可。数据随每日收录重建。</p>
     <div class="grid">
 {cards}
@@ -568,7 +574,7 @@ def validate(payload: dict, json_text: str, opml_text: str, html_text: str) -> l
     if len(groups) != payload["counts"]["groups"]:
         raise ValueError("sites.opml 父分组 outline 数不符")
 
-    for marker in ("/data/sites.json", "/data/sites.opml", "字段表", "调用示例", str(total)):
+    for marker in ("/data/sites.json", "/data/sites.opml", "字段表", "调用示例", "数据产物", "对比矩阵", str(total)):
         if marker not in html_text:
             raise ValueError(f"index.html 缺少关键内容：{marker}")
     return [f"schema={SCHEMA}", f"sites={total}", f"opml_leaves={len(leaves)}"]

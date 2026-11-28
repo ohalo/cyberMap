@@ -54,7 +54,7 @@ def collect(repo: Path) -> tuple[list[dict], list[str], dict]:
     """收集 URL 清单。返回 (url 记录, 警告, 分类计数)。"""
     urls: list[dict] = []
     warnings: list[str] = []
-    counts = {"home": 0, "en": 0, "daily": 0, "data": 0, "weekly": 0, "tools": 0, "feed": 0, "rank": 0, "rank_detail": 0}
+    counts = {"home": 0, "en": 0, "daily": 0, "data": 0, "weekly": 0, "compare": 0, "tools": 0, "feed": 0, "rank": 0, "rank_detail": 0}
 
     def add(path: str, src: Path, priority: str, freq: str, kind: str):
         if not src.is_file():
@@ -77,6 +77,8 @@ def collect(repo: Path) -> tuple[list[dict], list[str], dict]:
     add("/data/", repo / "source/data/index.html", "0.7", "daily", "data")
     # 每日收录周报 /weekly/，由 build_weekly.py 生成（每周一聚合）
     add("/weekly/", repo / "source/weekly/index.html", "0.7", "weekly", "weekly")
+    # 同类项目对比矩阵 /compare/，由 build_compare.py 生成（随每日收录重建）
+    add("/compare/", repo / "source/compare/index.html", "0.7", "daily", "compare")
     # 自研小工具：列表页 + 每个工具的详情页（静态手写，不随每日流水线重建）
     add("/tools/", repo / "source/tools/index.html", "0.7", "monthly", "tools")
     add("/tools/syscontrol/", repo / "source/tools/syscontrol/index.html", "0.7", "monthly", "tools")
